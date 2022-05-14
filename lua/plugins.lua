@@ -6,6 +6,7 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-tree.lua' -- File explorer
   use 'rcarriga/nvim-notify' -- Notifications plugin
   use 'nvim-lualine/lualine.nvim' -- Status line
+  use 'romgrk/barbar.nvim' -- Buffers bar
 
   use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
