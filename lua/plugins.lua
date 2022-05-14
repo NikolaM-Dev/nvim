@@ -4,7 +4,6 @@ return require('packer').startup(function()
   use 'NikolaM-Dev/nvim-base16.lua' -- Themes
   use 'kyazdani42/nvim-web-devicons' -- Web devicons
   use 'kyazdani42/nvim-tree.lua' -- File explorer
-  use 'rcarriga/nvim-notify' -- Notifications plugin
   use 'nvim-lualine/lualine.nvim' -- Status line
   use 'romgrk/barbar.nvim' -- Buffers bar
 
