@@ -14,6 +14,7 @@ return require('packer').startup(function()
   } -- Fuzzy finder
 
   use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
+  use 'williamboman/nvim-lsp-installer' -- Lsp installer
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
   use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
