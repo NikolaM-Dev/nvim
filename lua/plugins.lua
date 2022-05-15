@@ -8,6 +8,10 @@ return require('packer').startup(function()
   use 'romgrk/barbar.nvim' -- Buffers bar
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- TreeSitter
   use 'p00f/nvim-ts-rainbow' -- Bracket pairs
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  } -- Fuzzy finder
 
   use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
