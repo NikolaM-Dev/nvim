@@ -29,8 +29,11 @@ local leader_map = function()
 end
 
 local load_core = function()
+  local pack = require('core.pack')
   createdir()
   leader_map()
+
+  pack.ensure_plugins()
 end
 
 load_core()
