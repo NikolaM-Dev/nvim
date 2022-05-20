@@ -34,6 +34,7 @@ local load_core = function()
   leader_map()
 
   pack.ensure_plugins()
+  require('core.options')
 end
 
 load_core()
