@@ -13,17 +13,17 @@ local createdir = function()
   -- There only check once that If cache_dir exists
   -- Then I don't want to check subs dir exists
   if vim.fn.isdirectory(global.cache_dir) == 0 then
-    os.execute("mkdir -p " .. global.cache_dir)
+    os.execute('mkdir -p ' .. global.cache_dir)
     for _, d in pairs(data_dir) do
       if vim.fn.isdirectory(d) == 0 then
-        os.execute("mkdir -p " .. d)
+        os.execute('mkdir -p ' .. d)
       end
     end
   end
 end
 
 local leader_map = function()
-  vim.g.mapleader = " "
+  vim.g.mapleader = ' '
   vim.api.nvim_set_keymap('n', ' ', '', { noremap = true })
   vim.api.nvim_set_keymap('x', ' ', '', { noremap = true })
 end
