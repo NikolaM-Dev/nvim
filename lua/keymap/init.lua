@@ -11,6 +11,10 @@ local plug_map = {
   ['n|<leader>pu'] = map_cr('PackerUpdate'):with_silent():with_noremap():with_nowait(),
   ['n|<leader>pi'] = map_cr('PackerInstall'):with_silent():with_noremap():with_nowait(),
   ['n|<leader>pc'] = map_cr('PackerClean'):with_silent():with_noremap():with_nowait(),
+
+  -- Plugin nvim-tree
+  ['n|<Leader>e']  = map_cr('NvimTreeToggle'):with_noremap():with_silent(),
+  ['n|<Leader>F']  = map_cr('NvimTreeFindFile'):with_noremap():with_silent(),
 };
 
 bind.nvim_load_mapping(plug_map)
