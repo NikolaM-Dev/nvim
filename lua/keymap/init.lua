@@ -7,10 +7,10 @@ require('keymap.config')
 
 local plug_map = {
   -- Packer
-  ["n|<leader>ps"] = map_cr("PackerSync"):with_silent():with_noremap():with_nowait(),
-  ["n|<leader>pu"] = map_cr("PackerUpdate"):with_silent():with_noremap():with_nowait(),
-  ["n|<leader>pi"] = map_cr("PackerInstall"):with_silent():with_noremap():with_nowait(),
-  ["n|<leader>pc"] = map_cr("PackerClean"):with_silent():with_noremap():with_nowait(),
+  ['n|<leader>ps'] = map_cr('PackerSync'):with_silent():with_noremap():with_nowait(),
+  ['n|<leader>pu'] = map_cr('PackerUpdate'):with_silent():with_noremap():with_nowait(),
+  ['n|<leader>pi'] = map_cr('PackerInstall'):with_silent():with_noremap():with_nowait(),
+  ['n|<leader>pc'] = map_cr('PackerClean'):with_silent():with_noremap():with_nowait(),
 };
 
 bind.nvim_load_mapping(plug_map)
