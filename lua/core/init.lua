@@ -38,6 +38,7 @@ local load_core = function()
   require('core.mapping')
   require('keymap')
   require('core.event')
+  pack.load_compile()
 end
 
 load_core()
