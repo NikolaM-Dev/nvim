@@ -1,5 +1,10 @@
 local config = {}
 
+function config.base46()
+  local base46 = require('base46')
+  base46.setup({ theme = 'gruvchad' })
+end
+
 function config.nvim_tree()
   -- On Ready Event for Lazy Loading work
   require('nvim-tree.events').on_nvim_tree_ready(
