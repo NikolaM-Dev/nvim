@@ -48,7 +48,11 @@ function Packer:load_packer()
   packer.reset()
   local use = packer.use
   self:load_plugins()
-  use({ 'wbthomason/packer.nvim', opt = true })
+  use({
+    'wbthomason/packer.nvim',
+    event = 'VimEnter',
+    opt   = true,
+  })
   for _, repo in ipairs(self.repos) do
     use(repo)
   end
