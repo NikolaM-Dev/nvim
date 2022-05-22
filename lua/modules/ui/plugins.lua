@@ -1,15 +1,14 @@
 local ui = {}
 local conf = require('modules.ui.config')
 
-ui['kyazdani42/nvim-web-devicons'] = { opt = false }
+ui['kyazdani42/nvim-web-devicons'] = {}
 
-ui['glepnir/zephyr-nvim'] = {
-  config = [[vim.cmd('colorscheme zephyr')]]
+ui['CanKolay3499/base46'] = {
+  config = conf.base46,
 }
 
 ui['kyazdani42/nvim-tree.lua'] = {
-  opt = true,
-  cmd = { 'NvimTreeToggle' },
+  cmd    = { 'NvimTreeToggle' },
   config = conf.nvim_tree,
 }
 
