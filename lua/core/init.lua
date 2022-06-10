@@ -6,6 +6,8 @@ end
 
 local load_core = function()
 	leader_map()
+
+	require('core.options')
 end
 
 load_core()
