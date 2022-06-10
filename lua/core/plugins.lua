@@ -42,7 +42,7 @@ return packer.startup(function(use)
 	use('wbthomason/packer.nvim') -- Have packer manage itself
 	use('nvim-lua/popup.nvim') -- An implementation of the Popup API from vim in Neovim
 	use('nvim-lua/plenary.nvim') -- Useful lua functions used in lots of plugins
-	-- use('folke/tokyonight.nvim') -- color scheme for Neovim
+	use('folke/tokyonight.nvim') -- color scheme for Neovim
 
 	-- use('windwp/nvim-autopairs') -- Autopairs, integrates with both cmp and treesitter
 	-- use('numToStr/Comment.nvim') -- Easily comment stuff

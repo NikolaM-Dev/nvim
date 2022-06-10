@@ -10,6 +10,8 @@ local load_core = function()
 	require('core.options')
 	require('core.mappings')
 	require('core.plugins')
+
+	require('modules')
 end
 
 load_core()
