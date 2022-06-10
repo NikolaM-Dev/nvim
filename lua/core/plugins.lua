@@ -32,6 +32,11 @@ end
 -- Have packer use a popup window
 packer.init({
 	display = {
+		working_sym = 'ﰭ',
+		error_sym = '',
+		done_sym = '',
+		removed_sym = '',
+		moved_sym = 'ﰳ',
 		open_fn = function()
 			return require('packer.util').float({ border = 'rounded' })
 		end,
