@@ -73,6 +73,12 @@ return packer.startup(function(use)
 	-- Telescope
 	use('nvim-telescope/telescope.nvim')
 
+	-- Treesitter
+	use({
+		'nvim-treesitter/nvim-treesitter',
+		run = ':TSUpdate',
+	})
+
 	-- use('windwp/nvim-autopairs') -- Autopairs, integrates with both cmp and treesitter
 	-- use('numToStr/Comment.nvim') -- Easily comment stuff
 	-- use('kyazdani42/nvim-web-devicons')
@@ -92,12 +98,6 @@ return packer.startup(function(use)
 	-- -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
 	-- use('lunarvim/darkplus.nvim')
 
-
-	-- -- Treesitter
-	-- use({
-	-- 	'nvim-treesitter/nvim-treesitter',
-	-- 	run = ':TSUpdate',
-	-- })
 	-- use('JoosepAlviste/nvim-ts-context-commentstring')
 
 	-- Git
