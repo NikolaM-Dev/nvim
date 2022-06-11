@@ -87,14 +87,14 @@ return packer.startup(function(use)
 	use('windwp/nvim-autopairs') -- Autopairs, integrates with both cmp and treesitter
 	use('numToStr/Comment.nvim') -- Easily comment stuff
 	use('kyazdani42/nvim-web-devicons') -- Web devicons
+	use('kyazdani42/nvim-tree.lua') -- Tree view for files
+	use('lewis6991/impatient.nvim') -- Cache files for faster loading
 
-	-- use('kyazdani42/nvim-tree.lua') -- Tree view for files
 	-- use('akinsho/bufferline.nvim')
 	-- use('moll/vim-bbye')
 	-- use('nvim-lualine/lualine.nvim')
 	-- use('akinsho/toggleterm.nvim')
 	-- use('ahmedkhalf/project.nvim')
-	-- use('lewis6991/impatient.nvim')
 	-- use('lukas-reineke/indent-blankline.nvim')
 	-- use('goolord/alpha-nvim')
 	-- use('antoinemadec/FixCursorHold.nvim') -- This is needed to fix lsp doc highlight
