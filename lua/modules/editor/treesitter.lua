@@ -14,4 +14,5 @@ configs.setup({
 	},
 	autopairs = { enable = true },
 	indent = { enable = true },
+	context_commentstring = { enable = true },
 })
