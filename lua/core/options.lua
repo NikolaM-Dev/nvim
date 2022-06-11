@@ -1,6 +1,7 @@
 local options = {
 	backup = false, -- create backup files
 	clipboard = 'unnamedplus', -- use system clipboard
+	colorcolumn = '80', -- maximum column length for color highlighting
 	cursorline = true, -- highlight current line
 	fileencoding = 'utf-8', -- file encoding for the current buffer
 	mouse = 'a', -- mouse support
