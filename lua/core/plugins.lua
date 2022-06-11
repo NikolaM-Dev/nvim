@@ -86,9 +86,9 @@ return packer.startup(function(use)
 	-- Utilities
 	use('windwp/nvim-autopairs') -- Autopairs, integrates with both cmp and treesitter
 	use('numToStr/Comment.nvim') -- Easily comment stuff
+	use('kyazdani42/nvim-web-devicons') -- Web devicons
 
-	-- use('kyazdani42/nvim-web-devicons')
-	-- use('kyazdani42/nvim-tree.lua')
+	-- use('kyazdani42/nvim-tree.lua') -- Tree view for files
 	-- use('akinsho/bufferline.nvim')
 	-- use('moll/vim-bbye')
 	-- use('nvim-lualine/lualine.nvim')
