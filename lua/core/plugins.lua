@@ -78,8 +78,10 @@ return packer.startup(function(use)
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate',
 	})
+	use('JoosepAlviste/nvim-ts-context-commentstring') -- setting the commentstring based on the cursor location in a file
 
 	use('windwp/nvim-autopairs') -- Autopairs, integrates with both cmp and treesitter
+	use('numToStr/Comment.nvim') -- Easily comment stuff
 
 	-- use('numToStr/Comment.nvim') -- Easily comment stuff
 	-- use('kyazdani42/nvim-web-devicons')
