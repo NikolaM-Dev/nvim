@@ -70,6 +70,9 @@ return packer.startup(function(use)
 	-- use('tamago324/nlsp-settings.nvim') -- language server settings defined in json for
 	-- use('jose-elias-alvarez/null-ls.nvim') -- for formatters and linters
 
+	-- Telescope
+	use('nvim-telescope/telescope.nvim')
+
 	-- use('windwp/nvim-autopairs') -- Autopairs, integrates with both cmp and treesitter
 	-- use('numToStr/Comment.nvim') -- Easily comment stuff
 	-- use('kyazdani42/nvim-web-devicons')
@@ -89,8 +92,6 @@ return packer.startup(function(use)
 	-- -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
 	-- use('lunarvim/darkplus.nvim')
 
-	-- -- Telescope
-	-- use('nvim-telescope/telescope.nvim')
 
 	-- -- Treesitter
 	-- use({
