@@ -80,10 +80,13 @@ return packer.startup(function(use)
 	})
 	use('JoosepAlviste/nvim-ts-context-commentstring') -- setting the commentstring based on the cursor location in a file
 
+	-- Git
+	use('lewis6991/gitsigns.nvim')
+
+	-- Utilities
 	use('windwp/nvim-autopairs') -- Autopairs, integrates with both cmp and treesitter
 	use('numToStr/Comment.nvim') -- Easily comment stuff
 
-	-- use('numToStr/Comment.nvim') -- Easily comment stuff
 	-- use('kyazdani42/nvim-web-devicons')
 	-- use('kyazdani42/nvim-tree.lua')
 	-- use('akinsho/bufferline.nvim')
@@ -95,16 +98,6 @@ return packer.startup(function(use)
 	-- use('lukas-reineke/indent-blankline.nvim')
 	-- use('goolord/alpha-nvim')
 	-- use('antoinemadec/FixCursorHold.nvim') -- This is needed to fix lsp doc highlight
-	-- use('folke/which-key.nvim')
-
-	-- -- Colorschemes
-	-- -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-	-- use('lunarvim/darkplus.nvim')
-
-	-- use('JoosepAlviste/nvim-ts-context-commentstring')
-
-	-- Git
-	-- use('lewis6991/gitsigns.nvim')
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
