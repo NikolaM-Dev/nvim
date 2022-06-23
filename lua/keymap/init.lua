@@ -5,6 +5,9 @@ local keymap = vim.api.nvim_set_keymap
 keymap('n', '<leader>ff', ':lua require"telescope.builtin".find_files()<CR>', opts)
 keymap('n', '<leader>fg', ':lua require"telescope.builtin".live_grep()<CR>', opts)
 
+-- Explorer
+keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
+
 -- local bind = require('keymap.bind')
 -- local map_cr = bind.map_cr
 -- local map_cu = bind.map_cu
