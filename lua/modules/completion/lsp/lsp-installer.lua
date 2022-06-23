@@ -4,7 +4,12 @@ if not status_ok then
 end
 
 local servers = {
+	'angularls',
+	'emmet_ls',
+	'gopls',
+	'html',
 	'sumneko_lua',
+	'tsserver',
 }
 
 local settings = {
