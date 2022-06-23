@@ -38,7 +38,7 @@ packer.init({
 		removed_sym = '',
 		moved_sym = 'ﰳ',
 		open_fn = function()
-			return require('packer.util').float({ border = 'rounded' })
+			return require('packer.util').float({ border = 'single' })
 		end,
 	},
 })
