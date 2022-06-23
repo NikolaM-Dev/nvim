@@ -10,8 +10,7 @@ map('n', '<C-l>', '<C-w>l', opts)
 
 map('n', '<C-s>', ':w<CR>', opts)
 map('n', '<C-q>', ':q<CR>', opts)
-
-map('n', '<esc><esc>', ':nohlsearch<CR>', opts)
+map('n', '<ESC>', ':nohlsearch<CR>', opts)
 
 -- Insert
 map('i', '<C-s>', '<ESC>:w<CR>', opts)
