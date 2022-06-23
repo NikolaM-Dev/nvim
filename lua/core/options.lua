@@ -12,6 +12,7 @@ local options = {
 	swapfile = false, -- creates a swapfile
 	wrap = false, -- wrap lines
 	writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
+	laststatus = 3, -- always and ONLY the last window a status line
 }
 
 for o, v in pairs(options) do
