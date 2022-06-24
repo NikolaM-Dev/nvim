@@ -75,10 +75,7 @@ return packer.startup(function(use)
 	use('nvim-telescope/telescope.nvim')
 
 	-- Treesitter
-	use({
-		'nvim-treesitter/nvim-treesitter',
-		run = ':TSUpdate',
-	})
+	use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
 	use('JoosepAlviste/nvim-ts-context-commentstring') -- Setting the commentstring based on the cursor location in a file
 
 	-- Git
@@ -92,6 +89,9 @@ return packer.startup(function(use)
 	use('lewis6991/impatient.nvim') -- Cache files for faster loading
 	use('norcalli/nvim-colorizer.lua') -- Color highlighter
 	use('glepnir/galaxyline.nvim') -- Status line
+
+	-- Languages
+	use('glepnir/smartinput.nvim') -- Change your input char to any you want
 
 	-- use('akinsho/bufferline.nvim')
 	-- use('moll/vim-bbye')
