@@ -90,6 +90,7 @@ return packer.startup(function(use)
 	use('kyazdani42/nvim-tree.lua') -- Tree view for files
 	use('lewis6991/impatient.nvim') -- Cache files for faster loading
 	use('norcalli/nvim-colorizer.lua') -- Color highlighter
+	use('glepnir/galaxyline.nvim') -- Status line
 
 	-- use('akinsho/bufferline.nvim')
 	-- use('moll/vim-bbye')
