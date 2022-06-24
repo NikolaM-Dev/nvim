@@ -89,6 +89,7 @@ return packer.startup(function(use)
 	use('lewis6991/impatient.nvim') -- Cache files for faster loading
 	use('norcalli/nvim-colorizer.lua') -- Color highlighter
 	use('glepnir/galaxyline.nvim') -- Status line
+	use('lukas-reineke/indent-blankline.nvim') -- Indent guides
 
 	-- Languages
 	use('glepnir/smartinput.nvim') -- Change your input char to any you want
@@ -98,7 +99,6 @@ return packer.startup(function(use)
 	-- use('nvim-lualine/lualine.nvim')
 	-- use('akinsho/toggleterm.nvim')
 	-- use('ahmedkhalf/project.nvim')
-	-- use('lukas-reineke/indent-blankline.nvim')
 	-- use('goolord/alpha-nvim')
 	-- use('antoinemadec/FixCursorHold.nvim') -- This is needed to fix lsp doc highlight
 
