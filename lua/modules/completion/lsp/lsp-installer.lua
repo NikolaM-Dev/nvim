@@ -8,6 +8,7 @@ local servers = {
 	'emmet_ls',
 	'gopls',
 	'html',
+	'jsonls',
 	'sumneko_lua',
 	'tsserver',
 }
