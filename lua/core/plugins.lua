@@ -90,6 +90,7 @@ return packer.startup(function(use)
 	use('norcalli/nvim-colorizer.lua') -- Color highlighter
 	use('glepnir/galaxyline.nvim') -- Status line
 	use('lukas-reineke/indent-blankline.nvim') -- Indent guides
+	use('antoinemadec/FixCursorHold.nvim') -- Fix CursorHold Performance
 
 	-- Languages
 	use('glepnir/smartinput.nvim') -- Change your input char to any you want
@@ -100,7 +101,6 @@ return packer.startup(function(use)
 	-- use('akinsho/toggleterm.nvim')
 	-- use('ahmedkhalf/project.nvim')
 	-- use('goolord/alpha-nvim')
-	-- use('antoinemadec/FixCursorHold.nvim') -- This is needed to fix lsp doc highlight
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
