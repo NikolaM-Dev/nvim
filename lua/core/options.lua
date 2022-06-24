@@ -8,6 +8,7 @@ local options = {
 	mouse = 'a', -- mouse support
 	number = true, -- show line numbers
 	relativenumber = true, -- show relative numbers
+	showmode = false, -- removes the text indicating the mode
 	splitbelow = true, -- split window below
 	splitright = true, -- split window right
 	swapfile = false, -- creates a swapfile
