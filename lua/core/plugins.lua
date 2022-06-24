@@ -19,8 +19,7 @@ end
 vim.cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-  augroup end
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync augroup end
 ]])
 
 -- Use a protected call so we don't error out on first use
@@ -49,24 +48,25 @@ return packer.startup(function(use)
 	use('nvim-lua/plenary.nvim') -- Useful lua functions used in lots of plugins
 	use('nvim-lua/popup.nvim') -- An implementation of the Popup API from vim in Neovim
 
-	use('folke/tokyonight.nvim') -- color scheme for Neovim
+	use('folke/tokyonight.nvim') -- Color scheme for Neovim
+	use('glepnir/zephyr-nvim') -- Glepnir color scheme
 
 	-- cmp plugins
-	use('hrsh7th/cmp-buffer') -- buffer completions
-	use('hrsh7th/cmp-cmdline') -- cmdline completions
-	use('hrsh7th/cmp-nvim-lsp') -- lsp completions
-	use('hrsh7th/cmp-nvim-lua') -- lsp comletions for nvim lua
-	use('hrsh7th/cmp-path') -- path completions
+	use('hrsh7th/cmp-buffer') -- Buffer completions
+	use('hrsh7th/cmp-cmdline') -- Cmdline completions
+	use('hrsh7th/cmp-nvim-lsp') -- Lsp completions
+	use('hrsh7th/cmp-nvim-lua') -- Lsp comletions for nvim lua
+	use('hrsh7th/cmp-path') -- Path completions
 	use('hrsh7th/nvim-cmp') -- The completion plugin
-	use('saadparwaiz1/cmp_luasnip') -- snippet completions
+	use('saadparwaiz1/cmp_luasnip') -- Snippet completions
 
 	-- snippets
-	use('L3MON4D3/LuaSnip') --snippet engine
+	use('L3MON4D3/LuaSnip') -- Snippet engine
 	-- use('rafamadriz/friendly-snippets') -- a bunch of snippets to use
 
 	-- LSP
-	use('neovim/nvim-lspconfig') -- enable LSP
-	use('williamboman/nvim-lsp-installer') -- simple to use language server installer
+	use('neovim/nvim-lspconfig') -- Enable LSP
+	use('williamboman/nvim-lsp-installer') -- Simple to use language server installer
 	-- use('tamago324/nlsp-settings.nvim') -- language server settings defined in json for
 	-- use('jose-elias-alvarez/null-ls.nvim') -- for formatters and linters
 
@@ -78,7 +78,7 @@ return packer.startup(function(use)
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate',
 	})
-	use('JoosepAlviste/nvim-ts-context-commentstring') -- setting the commentstring based on the cursor location in a file
+	use('JoosepAlviste/nvim-ts-context-commentstring') -- Setting the commentstring based on the cursor location in a file
 
 	-- Git
 	use('lewis6991/gitsigns.nvim')
