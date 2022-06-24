@@ -157,7 +157,7 @@ gls.right[2] = {
 gls.right[3] = {
 	GitIcon = {
 		provider = function()
-			return ' '
+			return '  '
 		end,
 		condition = condition.check_git_workspace,
 		highlight = { colors.violet, colors.bg, 'bold' },
@@ -175,6 +175,14 @@ gls.right[4] = {
 }
 
 gls.right[5] = {
+	Separator = {
+		provider = function()
+			return ' '
+		end,
+	},
+}
+
+gls.right[6] = {
 	DiffAdd = {
 		condition = condition.hide_in_width,
 		highlight = { colors.green, colors.bg },
@@ -182,7 +190,7 @@ gls.right[5] = {
 		provider = 'DiffAdd',
 	},
 }
-gls.right[6] = {
+gls.right[7] = {
 	DiffModified = {
 		condition = condition.hide_in_width,
 		highlight = { colors.orange, colors.bg },
@@ -190,7 +198,7 @@ gls.right[6] = {
 		provider = 'DiffModified',
 	},
 }
-gls.right[7] = {
+gls.right[8] = {
 	DiffRemove = {
 		condition = condition.hide_in_width,
 		highlight = { colors.red, colors.bg },
@@ -199,7 +207,7 @@ gls.right[7] = {
 	},
 }
 
-gls.right[8] = {
+gls.right[9] = {
 	RainbowBlue = {
 		provider = function()
 			return ' ▊'
