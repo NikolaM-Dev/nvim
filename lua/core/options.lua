@@ -22,3 +22,6 @@ local options = {
 for o, v in pairs(options) do
 	vim.opt[o] = v
 end
+
+vim.cmd([[set winbar=%=%m\ %f]])  -- winbar => right | changes | separator | path file
+vim.cmd([[autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o]]) -- Disables autocommenting on new line
