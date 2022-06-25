@@ -8,13 +8,25 @@ map('n', '<C-j>', '<C-w>j', opts)
 map('n', '<C-k>', '<C-w>k', opts)
 map('n', '<C-l>', '<C-w>l', opts)
 
+-- Resize with arrows
+map('n', '<C-Up>', ':resize -2<CR>', opts)
+map('n', '<C-Down>', ':resize +2<CR>', opts)
+map('n', '<C-Left>', ':vertical resize -2<CR>', opts)
+map('n', '<C-Right>', ':vertical resize +2<CR>', opts)
+
+-- Centralized search
+map('n', 'n', 'nzzzv', opts)
+map('n', 'N', 'Nzzzv', opts)
+
 map('n', '<C-s>', ':w<CR>', opts)
 map('n', '<C-q>', ':q<CR>', opts)
+
 map('n', '<ESC>', ':nohlsearch<CR>', opts)
+map('n', '<M-r>', ':luafile %<CR>', opts)
 
 -- Insert
 map('i', '<C-s>', '<ESC>:w<CR>', opts)
-map('i', '<C-q>', '<ESC>:q<CR>', opts)
+map('i', '<C-q>', '<ESC>:wq<CR>', opts)
 map('i', '<C-k>', '<ESC>O', opts)
 map('i', '<C-j>', '<ESC>o', opts)
 map('i', 'ii', '<ESC>', opts)
@@ -23,6 +35,9 @@ map('i', 'ii', '<ESC>', opts)
 -- Stay in indent mode
 map('v', '<', '<gv', opts)
 map('v', '>', '>gv', opts)
+
+-- Sort
+map('v', '<leader>s', ':!sort<CR>', opts)
 
 -- 	['n|<A-[>'] = map_cr('vertical resize -5'):with_silent(),
 -- 	['n|<A-]>'] = map_cr('vertical resize +5'):with_silent(),
