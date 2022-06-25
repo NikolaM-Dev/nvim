@@ -24,26 +24,8 @@ map('i', 'ii', '<ESC>', opts)
 map('v', '<', '<gv', opts)
 map('v', '>', '>gv', opts)
 
--- -- default map
--- local def_map = {
--- 	-- Vim map
--- 	['n|<C-x>k'] = map_cr('bdelete'):with_noremap():with_silent(),
--- 	['n|<C-s>'] = map_cu('write'):with_noremap(),
--- 	['n|Y'] = map_cmd('y$'),
--- 	['n|]w'] = map_cu('WhitespaceNext'):with_noremap(),
--- 	['n|[w'] = map_cu('WhitespacePrev'):with_noremap(),
--- 	['n|]b'] = map_cu('bp'):with_noremap(),
--- 	['n|[b'] = map_cu('bn'):with_noremap(),
--- 	['n|<Space>cw'] = map_cu([[silent! keeppatterns %substitute/\s\+$//e]]):with_noremap():with_silent(),
--- 	['n|<C-h>'] = map_cmd('<C-w>h'):with_noremap(),
--- 	['n|<C-l>'] = map_cmd('<C-w>l'):with_noremap(),
--- 	['n|<C-j>'] = map_cmd('<C-w>j'):with_noremap(),
--- 	['n|<C-k>'] = map_cmd('<C-w>k'):with_noremap(),
 -- 	['n|<A-[>'] = map_cr('vertical resize -5'):with_silent(),
 -- 	['n|<A-]>'] = map_cr('vertical resize +5'):with_silent(),
--- 	['n|<C-q>'] = map_cmd(':wq<CR>'),
--- 	['n|<Leader>ss'] = map_cu('SessionSave'):with_noremap(),
--- 	['n|<Leader>sl'] = map_cu('SessionLoad'):with_noremap(),
 -- 	-- Insert
 -- 	['i|<C-w>'] = map_cmd('<C-[>diwa'):with_noremap(),
 -- 	['i|<C-h>'] = map_cmd('<BS>'):with_noremap(),

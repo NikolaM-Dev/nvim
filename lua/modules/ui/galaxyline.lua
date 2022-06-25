@@ -16,6 +16,7 @@ gls.left[1] = {
 		highlight = { colors.blue, colors.bg },
 	},
 }
+
 gls.left[2] = {
 	ViMode = {
 		provider = function()
@@ -47,6 +48,7 @@ gls.left[2] = {
 		end,
 	},
 }
+
 gls.left[3] = {
 	FileSize = {
 		condition = condition.buffer_not_empty,
@@ -54,6 +56,7 @@ gls.left[3] = {
 		provider = 'FileSize',
 	},
 }
+
 gls.left[4] = {
 	FileIcon = {
 		condition = condition.buffer_not_empty,
@@ -95,6 +98,7 @@ gls.left[8] = {
 		provider = 'DiagnosticError',
 	},
 }
+
 gls.left[9] = {
 	DiagnosticWarn = {
 		highlight = { colors.yellow, colors.bg },
@@ -190,6 +194,7 @@ gls.right[6] = {
 		provider = 'DiffAdd',
 	},
 }
+
 gls.right[7] = {
 	DiffModified = {
 		condition = condition.hide_in_width,
@@ -198,6 +203,7 @@ gls.right[7] = {
 		provider = 'DiffModified',
 	},
 }
+
 gls.right[8] = {
 	DiffRemove = {
 		condition = condition.hide_in_width,
