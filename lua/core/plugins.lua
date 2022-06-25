@@ -95,13 +95,6 @@ return packer.startup(function(use)
 	-- Languages
 	use('glepnir/smartinput.nvim') -- Change your input char to any you want
 
-	-- use('akinsho/bufferline.nvim')
-	-- use('moll/vim-bbye')
-	-- use('nvim-lualine/lualine.nvim')
-	-- use('akinsho/toggleterm.nvim')
-	-- use('ahmedkhalf/project.nvim')
-	-- use('goolord/alpha-nvim')
-
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
