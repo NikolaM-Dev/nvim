@@ -80,6 +80,7 @@ return packer.startup(function(use)
 
 	-- Git
 	use('lewis6991/gitsigns.nvim')
+	use('tpope/vim-fugitive')
 
 	-- Utilities
 	use('windwp/nvim-autopairs') -- Autopairs, integrates with both cmp and treesitter
