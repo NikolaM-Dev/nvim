@@ -92,9 +92,12 @@ return packer.startup(function(use)
 	use('glepnir/galaxyline.nvim') -- Status line
 	use('lukas-reineke/indent-blankline.nvim') -- Indent guides
 	use('antoinemadec/FixCursorHold.nvim') -- Fix CursorHold Performance
+	use('folke/todo-comments.nvim') -- Highlight, list and search todo comments in your projects
 
 	-- Languages
 	use('glepnir/smartinput.nvim') -- Change your input char to any you want
+	use('ray-x/go.nvim') -- Modern go plugin
+	use('ray-x/guihua.lua') -- Recommanded if need floating window support
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

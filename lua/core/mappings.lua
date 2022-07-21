@@ -21,6 +21,8 @@ map('n', 'N', 'Nzzzv', opts)
 map('n', '<C-s>', ':w<CR>', opts)
 map('n', '<C-q>', ':q<CR>', opts)
 
+map('n', '<leader>fm', ':!stylua .<CR><CR>', opts)
+
 map('n', '<ESC>', ':nohlsearch<CR>', opts)
 map('n', '<M-r>', ':luafile %<CR>', opts)
 

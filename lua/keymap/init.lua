@@ -2,9 +2,10 @@ local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 -- Telescope
-keymap('n', '<leader>ff', ':lua require"telescope.builtin".git_files()<CR>', opts)
+keymap('n', '<leader>ff', ':lua require"telescope.builtin".find_files()<CR>', opts)
 keymap('n', '<leader>fg', ':lua require"telescope.builtin".live_grep()<CR>', opts)
 keymap('n', '<leader>man', ':lua require"telescope.builtin".man_pages()<CR>', opts)
+keymap('n', '<leader>tdo', ':TodoTelescope<CR>', opts)
 
 keymap('n', '<leader>gbc', ':lua require"telescope.builtin".git_bcommits()<CR>', opts)
 keymap('n', '<leader>gb', ':lua require"telescope.builtin".git_branches()<CR>', opts)

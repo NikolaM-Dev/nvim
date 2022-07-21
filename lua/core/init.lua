@@ -13,6 +13,7 @@ local load_core = function()
 
 	require('modules')
 	require('keymap')
+	require('core.event')
 end
 
 load_core()

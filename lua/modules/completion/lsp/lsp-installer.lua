@@ -4,13 +4,16 @@ if not status_ok then
 end
 
 local servers = {
-	'angularls',
+	'bashls',
+	'dockerls',
 	'emmet_ls',
+	'golangci_lint_ls',
 	'gopls',
 	'html',
 	'jsonls',
 	'sumneko_lua',
 	'tsserver',
+	'vimls',
 }
 
 local settings = {
