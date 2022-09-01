@@ -1,4 +1,3 @@
-require('modules.ui.colorscheme')
 require('modules.ui.gitsigns')
 require('modules.ui.explorer')
 require('modules.ui.telescope')
