@@ -88,7 +88,6 @@ return packer.startup(function(use)
 	use('lewis6991/impatient.nvim') -- Cache files for faster loading
 	use('norcalli/nvim-colorizer.lua') -- Color highlighter
 	use('glepnir/galaxyline.nvim') -- Status line
-	use('lukas-reineke/indent-blankline.nvim') -- Indent guides
 	use('antoinemadec/FixCursorHold.nvim') -- Fix CursorHold Performance
 
 	-- Languages
