@@ -91,7 +91,7 @@ return packer.startup(function(use)
 	use('antoinemadec/FixCursorHold.nvim') -- Fix CursorHold Performance
 
 	-- Languages
-	use('glepnir/smartinput.nvim') -- Change your input char to any you want
+	use('glepnir/mcc.nvim') -- Change your input char to any you want
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
