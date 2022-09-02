@@ -6,7 +6,8 @@ local opts = keymap.new_opts
 local noremap = keymap.noremap
 
 nmap({
-	{ '<leader>ga', cmd('G add --all'), opts(noremap) },
+	{ '<leader>ga', cmd('G add %'), opts(noremap) },
+	{ '<leader>gal', cmd('G add --all'), opts(noremap) },
 	{ '<leader>gap', cmd('G add % -p'), opts(noremap) },
 	{ '<leader>gbm', ':G branch -m ', opts(noremap) },
 	{ '<leader>gca', cmd(':G commit --amend'), opts(noremap) },
