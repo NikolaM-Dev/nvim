@@ -30,3 +30,12 @@ autocmd({ 'Filetype' }, {
 		vim.cmd('syntax off')
 	end,
 })
+
+-- disables autocommenting on new lines
+autocmd({ 'FileType' }, {
+	group = nikola_group,
+	pattern = '*',
+	callback = function()
+		vim.cmd('setlocal formatoptions-=cro')
+	end,
+})
