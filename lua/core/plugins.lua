@@ -89,6 +89,7 @@ return packer.startup(function(use)
 	use('norcalli/nvim-colorizer.lua') -- Color highlighter
 	use('glepnir/galaxyline.nvim') -- Status line
 	use('antoinemadec/FixCursorHold.nvim') -- Fix CursorHold Performance
+	use('NTBBloodbath/rest.nvim') -- Rest client
 
 	-- Languages
 	use('glepnir/mcc.nvim') -- Change your input char to any you want
