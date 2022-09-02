@@ -82,7 +82,7 @@ return packer.startup(function(use)
 
 	-- Utilities
 	use('windwp/nvim-autopairs') -- Autopairs, integrates with both cmp and treesitter
-	use('numToStr/Comment.nvim') -- Easily comment stuff
+	use('tpope/vim-commentary') -- Easily comment stuff
 	use('kyazdani42/nvim-web-devicons') -- Web devicons
 	use('kyazdani42/nvim-tree.lua') -- Tree view for files
 	use('lewis6991/impatient.nvim') -- Cache files for faster loading
