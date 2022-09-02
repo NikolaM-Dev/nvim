@@ -1,4 +1,12 @@
 local options = {
+	listchars = {
+		-- eol = '¬',
+		extends = '→',
+		nbsp = '+',
+		precedes = '←',
+		tab = '| ',
+		trail = '·',
+	},
 	backup = false, -- create backup files
 	clipboard = 'unnamedplus', -- use system clipboard
 	colorcolumn = '80', -- maximum column length for color highlighting
@@ -16,7 +24,8 @@ local options = {
 	swapfile = false, -- creates a swapfile
 	termguicolors = true, -- set term gui colors (most terminals support this)
 	timeoutlen = 300, -- time to wait for a mapped sequence to complete (in milliseconds)
-	updatetime=50, -- improve user experience updating more frequently
+	updatetime = 50, -- improve user experience updating more frequently
+	winbar = '%=%m %f',
 	wrap = false, -- wrap lines
 	writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 }
@@ -24,6 +33,3 @@ local options = {
 for o, v in pairs(options) do
 	vim.opt[o] = v
 end
-
-vim.cmd([[set winbar=%=%m\ %f]]) -- winbar => right | changes | separator | path file
-vim.cmd([[autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o]]) -- Disables autocommenting on new line
