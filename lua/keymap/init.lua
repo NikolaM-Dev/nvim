@@ -63,7 +63,7 @@ nmap({
 	{ '<C-k>w', cmd('%bd|e#'), opts(noremap, silent) },
 
 	-- reload luafile
-	{ '<M-r>', cmd('luafile %'), opts(noremap) },
+	{ '<A-r>', cmd('luafile %'), opts(noremap) },
 
 	-- remove highligths
 	{ '<ESC>', cmd('noh'), opts(noremap) },
