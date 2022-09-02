@@ -46,6 +46,9 @@ return packer.startup(function(use)
 
 	use('nvim-lua/plenary.nvim') -- Useful lua functions used in lots of plugins
 	use('nvim-lua/popup.nvim') -- An implementation of the Popup API from vim in Neovim
+	use('nvim-telescope/telescope.nvim')
+
+	use('ThePrimeagen/harpoon')
 
 	use('folke/tokyonight.nvim') -- Color scheme for Neovim
 	use('glepnir/zephyr-nvim') -- Glepnir color scheme
@@ -66,11 +69,6 @@ return packer.startup(function(use)
 	-- LSP
 	use('neovim/nvim-lspconfig') -- Enable LSP
 	use('williamboman/nvim-lsp-installer') -- Simple to use language server installer
-	-- use('tamago324/nlsp-settings.nvim') -- language server settings defined in json for
-	-- use('jose-elias-alvarez/null-ls.nvim') -- for formatters and linters
-
-	-- Telescope
-	use('nvim-telescope/telescope.nvim')
 
 	-- Treesitter
 	use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
