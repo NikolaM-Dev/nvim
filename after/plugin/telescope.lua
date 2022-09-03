@@ -24,6 +24,7 @@ nmap({
 	{ '<Leader>gbc', cmd('Telescope git_bcommits'), opts(noremap, silent) },
 	{ '<Leader>gb', cmd('Telescope git_branches'), opts(noremap, silent) },
 	{ '<Leader>gc', cmd('Telescope git_commits'), opts(noremap, silent) },
+	{ '<Leader>gs', cmd('Telescope git_status'), opts(noremap, silent) },
 	{ '<Leader>gst', cmd('Telescope git_stash'), opts(noremap, silent) },
 	{ '<Leader>man', cmd('Telescope man_pages'), opts(noremap, silent) },
 })
