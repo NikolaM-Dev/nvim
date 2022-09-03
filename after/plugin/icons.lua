@@ -466,6 +466,11 @@ nvim_web_devicons.set_icon({
 		icon = 'ﬓ',
 		name = 'Rasi',
 	},
+	sql = {
+		color = '#ffca28',
+		icon = '',
+		name = 'Sql',
+	},
 })
 
 nvim_web_devicons.set_default_icon('', '#42a5f5')
