@@ -46,9 +46,13 @@ return packer.startup(function(use)
 
 	use('nvim-lua/plenary.nvim') -- Useful lua functions used in lots of plugins
 	use('nvim-lua/popup.nvim') -- An implementation of the Popup API from vim in Neovim
-	use('nvim-telescope/telescope.nvim')
+	use('nvim-telescope/telescope.nvim') -- About Find, Filter, Preview, Pick. All lua, all the time
 
-	use('ThePrimeagen/harpoon')
+	use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
+	use('nvim-treesitter/nvim-treesitter-context') -- Show code context
+
+	use('lewis6991/gitsigns.nvim') -- Git integration for buffers
+	use('tpope/vim-fugitive') -- A Git wrapper so awesome, it should be illegal
 
 	use('folke/tokyonight.nvim') -- Color scheme for Neovim
 	use('glepnir/zephyr-nvim') -- Glepnir color scheme
@@ -71,15 +75,7 @@ return packer.startup(function(use)
 	use('williamboman/nvim-lsp-installer') -- Simple to use language server installer
 
 	-- Treesitter
-	use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
-	use('JoosepAlviste/nvim-ts-context-commentstring') -- Setting the commentstring based on the cursor location in a file
 
-	-- Git
-	use('lewis6991/gitsigns.nvim')
-	use('tpope/vim-fugitive')
-
-	-- Utilities
-	use('windwp/nvim-autopairs') -- Autopairs, integrates with both cmp and treesitter
 	use('tpope/vim-commentary') -- Easily comment stuff
 	use('kyazdani42/nvim-web-devicons') -- Web devicons
 	use('kyazdani42/nvim-tree.lua') -- Tree view for files
@@ -91,6 +87,8 @@ return packer.startup(function(use)
 
 	-- Languages
 	use('glepnir/mcc.nvim') -- Change your input char to any you want
+
+	use('ThePrimeagen/harpoon')
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
