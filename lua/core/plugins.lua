@@ -59,6 +59,7 @@ return packer.startup(function(use)
 	use('lewis6991/gitsigns.nvim') -- Git integration for buffers
 	use('tpope/vim-fugitive') -- A Git wrapper so awesome, it should be illegal
 
+	use('folke/todo-comments.nvim') -- Highlight, list and search todo comments in your projects
 	use('folke/tokyonight.nvim') -- Color scheme for Neovim
 	use('glepnir/zephyr-nvim') -- Glepnir color scheme
 
