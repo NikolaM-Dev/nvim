@@ -56,12 +56,19 @@ return packer.startup(function(use)
 	use('nvim-treesitter/nvim-treesitter-textobjects') -- Syntax aware text-objects, select, move, swap, and peek support
 	use('JoosepAlviste/nvim-ts-context-commentstring') -- Commentstring based on the cursor location in a file
 
+	use('neovim/nvim-lspconfig') -- Enable LSP
+	use('williamboman/nvim-lsp-installer') -- Simple to use language server installer
+
 	use('lewis6991/gitsigns.nvim') -- Git integration for buffers
 	use('tpope/vim-fugitive') -- A Git wrapper so awesome, it should be illegal
 
 	use('folke/todo-comments.nvim') -- Highlight, list and search todo comments in your projects
 	use('folke/tokyonight.nvim') -- Color scheme for Neovim
+	use('glepnir/galaxyline.nvim') -- Status line
 	use('glepnir/zephyr-nvim') -- Glepnir color scheme
+	use('kyazdani42/nvim-tree.lua') -- Tree view for files
+	use('kyazdani42/nvim-web-devicons') -- Web devicons
+	use('norcalli/nvim-colorizer.lua') -- Color highlighter
 
 	-- cmp plugins
 	use('hrsh7th/cmp-buffer') -- Buffer completions
@@ -76,25 +83,12 @@ return packer.startup(function(use)
 	use('L3MON4D3/LuaSnip') -- Snippet engine
 	-- use('rafamadriz/friendly-snippets') -- a bunch of snippets to use
 
-	-- LSP
-	use('neovim/nvim-lspconfig') -- Enable LSP
-	use('williamboman/nvim-lsp-installer') -- Simple to use language server installer
-
-	-- Treesitter
-
-	use('tpope/vim-commentary') -- Easily comment stuff
-	use('kyazdani42/nvim-web-devicons') -- Web devicons
-	use('kyazdani42/nvim-tree.lua') -- Tree view for files
-	use('lewis6991/impatient.nvim') -- Cache files for faster loading
-	use('norcalli/nvim-colorizer.lua') -- Color highlighter
-	use('glepnir/galaxyline.nvim') -- Status line
 	use('antoinemadec/FixCursorHold.nvim') -- Fix CursorHold Performance
-	use('NTBBloodbath/rest.nvim') -- Rest client
-
-	-- Languages
 	use('glepnir/mcc.nvim') -- Change your input char to any you want
-
-	use('ThePrimeagen/harpoon')
+	use('lewis6991/impatient.nvim') -- Cache files for faster loading
+	use('NTBBloodbath/rest.nvim') -- Rest client
+	use('ThePrimeagen/harpoon') -- ThePrimagen tool for productivie in files
+	use('tpope/vim-commentary') -- Easily comment stuff
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
