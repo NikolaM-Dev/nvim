@@ -50,6 +50,7 @@ return packer.startup(function(use)
 
 	use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
 	use('nvim-treesitter/nvim-treesitter-context') -- Show code context
+	use('nvim-treesitter/nvim-treesitter-textobjects') -- Syntax aware text-objects, select, move, swap, and peek support
 
 	use('lewis6991/gitsigns.nvim') -- Git integration for buffers
 	use('tpope/vim-fugitive') -- A Git wrapper so awesome, it should be illegal
