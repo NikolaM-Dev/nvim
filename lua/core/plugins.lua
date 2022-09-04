@@ -46,7 +46,10 @@ return packer.startup(function(use)
 
 	use('nvim-lua/plenary.nvim') -- Useful lua functions used in lots of plugins
 	use('nvim-lua/popup.nvim') -- An implementation of the Popup API from vim in Neovim
+
 	use('nvim-telescope/telescope.nvim') -- About Find, Filter, Preview, Pick. All lua, all the time
+	use('nvim-telescope/telescope-file-browser.nvim') -- File Browser extension for telescope
+	use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }) -- About FZF sorter for telescope written in c
 
 	use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
 	use('nvim-treesitter/nvim-treesitter-context') -- Show code context
