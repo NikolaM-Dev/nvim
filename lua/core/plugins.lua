@@ -59,10 +59,9 @@ return packer.startup(function(use)
 	use('neovim/nvim-lspconfig') -- Enable LSP
 	use('williamboman/nvim-lsp-installer') -- Simple to use language server installer
 
-	use('davidsierradz/cmp-conventionalcommits') -- Autocompleting git commits with conventional commits type
 	use('hrsh7th/cmp-buffer') -- Buffer completions
-	use('hrsh7th/cmp-cmdline') -- Cmdline completions
 	use('hrsh7th/cmp-calc') -- Source for math calculation
+	use('hrsh7th/cmp-cmdline') -- Cmdline completions
 	use('hrsh7th/cmp-nvim-lsp') -- Lsp completions
 	use('hrsh7th/cmp-nvim-lsp-signature-help') -- signature-help
 	use('hrsh7th/cmp-nvim-lua') -- Lsp comletions for nvim lua
