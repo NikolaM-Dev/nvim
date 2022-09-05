@@ -197,6 +197,7 @@ nvim_tree.setup({
 		custom = { '.git' },
 		exclude = {
 			'fugitive.lua',
+			'gitcommit.json',
 			'.gitignore',
 			'gitsings.lua',
 		},
