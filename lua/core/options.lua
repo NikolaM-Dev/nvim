@@ -4,7 +4,7 @@ local options = {
 		extends = '→',
 		nbsp = '+',
 		precedes = '←',
-		tab = '| ',
+		tab = '┆ ',
 		trail = '·',
 	},
 	backup = false, -- create backup files
@@ -13,7 +13,6 @@ local options = {
 	cursorline = true, -- highlight current line
 	fileencoding = 'utf-8', -- file encoding for the current buffer
 	laststatus = 3, -- always and ONLY the last window a status line
-	listchars = 'tab:»·,nbsp:+,trail:·,extends:→,precedes:←', -- strings to use in list mode
 	list = true, -- useful to see the difference between tabs and spaces and for trailing blanks
 	mouse = 'a', -- mouse support
 	number = true, -- show line numbers
