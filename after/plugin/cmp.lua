@@ -132,8 +132,7 @@ cmp.setup({
 
 cmp.setup.filetype('gitcommit', {
 	sources = cmp.config.sources({
-		{ name = 'conventionalcommits' },
-	}, {
+		{ name = 'luasnip' },
 		{ name = 'buffer' },
 	}),
 })
