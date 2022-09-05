@@ -59,6 +59,18 @@ return packer.startup(function(use)
 	use('neovim/nvim-lspconfig') -- Enable LSP
 	use('williamboman/nvim-lsp-installer') -- Simple to use language server installer
 
+	use('davidsierradz/cmp-conventionalcommits') -- Autocompleting git commits with conventional commits type
+	use('hrsh7th/cmp-buffer') -- Buffer completions
+	use('hrsh7th/cmp-cmdline') -- Cmdline completions
+	use('hrsh7th/cmp-calc') -- Source for math calculation
+	use('hrsh7th/cmp-nvim-lsp') -- Lsp completions
+	use('hrsh7th/cmp-nvim-lsp-signature-help') -- signature-help
+	use('hrsh7th/cmp-nvim-lua') -- Lsp comletions for nvim lua
+	use('hrsh7th/cmp-path') -- Path completions
+	use('hrsh7th/nvim-cmp') -- The completion plugin
+	use('L3MON4D3/LuaSnip') -- Snippet engine
+	use('saadparwaiz1/cmp_luasnip') -- Snippet completions
+
 	use('lewis6991/gitsigns.nvim') -- Git integration for buffers
 	use('tpope/vim-fugitive') -- A Git wrapper so awesome, it should be illegal
 
@@ -69,19 +81,6 @@ return packer.startup(function(use)
 	use('kyazdani42/nvim-tree.lua') -- Tree view for files
 	use('kyazdani42/nvim-web-devicons') -- Web devicons
 	use('norcalli/nvim-colorizer.lua') -- Color highlighter
-
-	-- cmp plugins
-	use('hrsh7th/cmp-buffer') -- Buffer completions
-	use('hrsh7th/cmp-cmdline') -- Cmdline completions
-	use('hrsh7th/cmp-nvim-lsp') -- Lsp completions
-	use('hrsh7th/cmp-nvim-lua') -- Lsp comletions for nvim lua
-	use('hrsh7th/cmp-path') -- Path completions
-	use('hrsh7th/nvim-cmp') -- The completion plugin
-	use('saadparwaiz1/cmp_luasnip') -- Snippet completions
-
-	-- snippets
-	use('L3MON4D3/LuaSnip') -- Snippet engine
-	-- use('rafamadriz/friendly-snippets') -- a bunch of snippets to use
 
 	use('antoinemadec/FixCursorHold.nvim') -- Fix CursorHold Performance
 	use('glepnir/mcc.nvim') -- Change your input char to any you want
