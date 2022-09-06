@@ -58,8 +58,9 @@ return packer.startup(function(use)
 	use('nvim-treesitter/nvim-treesitter-textobjects') -- Syntax aware text-objects, select, move, swap, and peek support
 	use('JoosepAlviste/nvim-ts-context-commentstring') -- Commentstring based on the cursor location in a file
 
-	use('neovim/nvim-lspconfig') -- Enable LSP
-	use('williamboman/nvim-lsp-installer') -- Simple to use language server installer
+	use('neovim/nvim-lspconfig') -- Configurations for Nvim LSP
+	use('williamboman/mason.nvim') -- Easily install and manage LSP servers, DAP servers, linters, and formatters.
+	use('williamboman/mason-lspconfig.nvim') -- That makes it easier to use lspconfig with mason.nvim
 
 	use('hrsh7th/cmp-buffer') -- Buffer completions
 	use('hrsh7th/cmp-calc') -- Source for math calculation
