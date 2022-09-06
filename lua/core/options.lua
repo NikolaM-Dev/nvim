@@ -24,7 +24,7 @@ local options = {
 	termguicolors = true, -- set term gui colors (most terminals support this)
 	timeoutlen = 300, -- time to wait for a mapped sequence to complete (in milliseconds)
 	updatetime = 50, -- improve user experience updating more frequently
-	winbar = '%=%m %f',
+	winbar = '%=%m %f', -- The window bar is a bar that's shown at the top of every window with it enabled
 	wrap = false, -- wrap lines
 	writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 }
