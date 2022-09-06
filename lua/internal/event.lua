@@ -6,7 +6,7 @@ local nikola_group = autogrup('NikolaGroup', { clear = true })
 autocmd({ 'BufWritePre' }, {
 	group = nikola_group,
 	pattern = '*',
-	command = '%s/\\s\\+$//e',
+	command = '%s/\vs+$|\n+%$//e',
 })
 
 -- TODO: Refactor
