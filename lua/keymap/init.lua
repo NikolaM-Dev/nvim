@@ -2,8 +2,8 @@ local keymap = require('core.keymap')
 
 local cmap, imap, nmap, vmap, xmap = keymap.cmap, keymap.imap, keymap.nmap, keymap.vmap, keymap.xmap
 local cmd = keymap.cmd
+local noremap, silent = keymap.noremap, keymap.silent
 local opts = keymap.new_opts
-local silent, noremap = keymap.silent, keymap.noremap
 
 -- use space as leader key
 vim.g.mapleader = ' '
@@ -66,7 +66,7 @@ nmap({
 	{ '<A-r>', cmd('luafile %'), opts(noremap) },
 
 	-- remove highligths
-	{ '<ESC>', cmd('noh'), opts(noremap) },
+	{ '<ESC>', ':noh<CR><CR>', opts(noremap, silent) },
 })
 
 vmap({
