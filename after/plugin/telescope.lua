@@ -3,6 +3,13 @@ if not status_ok then
 	return
 end
 
+local keymap = require('core.keymap')
+
+local cmd = keymap.cmd
+local nmap = keymap.nmap
+local opts = keymap.new_opts
+local silent, noremap = keymap.silent, keymap.noremap
+
 telescope.setup({
 	defaults = {
 		entry_prefix = '  ',
@@ -83,13 +90,6 @@ telescope.setup({
 
 telescope.load_extension('file_browser')
 telescope.load_extension('fzf')
-
-local keymap = require('core.keymap')
-
-local cmd = keymap.cmd
-local nmap = keymap.nmap
-local opts = keymap.new_opts
-local silent, noremap = keymap.silent, keymap.noremap
 
 nmap({
 	{
