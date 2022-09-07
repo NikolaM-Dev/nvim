@@ -41,4 +41,4 @@ luac.out
 
 # Nvim
 .vscode
-plugin
+plugin/packer_compiled.lua

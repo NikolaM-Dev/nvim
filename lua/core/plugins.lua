@@ -32,14 +32,14 @@ end
 -- Have packer use a popup window
 packer.init({
 	display = {
-		working_sym = 'ﰭ',
-		error_sym = '',
-		done_sym = '',
-		removed_sym = '',
-		moved_sym = 'ﰳ',
 		open_fn = function()
-			return require('packer.util').float({ border = 'single' })
+			return require('packer.util').float({ border = 'rounded' })
 		end,
+		done_sym = '',
+		error_sym = '',
+		moved_sym = 'ﰳ',
+		removed_sym = '',
+		working_sym = 'ﰭ',
 	},
 })
 
@@ -49,58 +49,48 @@ return packer.startup(function(use)
 	use('nvim-lua/plenary.nvim') -- Useful lua functions used in lots of plugins
 	use('nvim-lua/popup.nvim') -- An implementation of the Popup API from vim in Neovim
 
-	use('folke/tokyonight.nvim') -- Color scheme for Neovim
-	use('glepnir/zephyr-nvim') -- Glepnir color scheme
+	use('nvim-telescope/telescope.nvim') -- About Find, Filter, Preview, Pick. All lua, all the time
+	use('nvim-telescope/telescope-file-browser.nvim') -- File Browser extension for telescope
+	use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }) -- About FZF sorter for telescope written in c
 
-	-- cmp plugins
+	use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
+	use('nvim-treesitter/nvim-treesitter-context') -- Show code context
+	use('nvim-treesitter/nvim-treesitter-textobjects') -- Syntax aware text-objects, select, move, swap, and peek support
+	use('JoosepAlviste/nvim-ts-context-commentstring') -- Commentstring based on the cursor location in a file
+
+	use('neovim/nvim-lspconfig') -- Configurations for Nvim LSP
+	use('williamboman/mason.nvim') -- Easily install and manage LSP servers, DAP servers, linters, and formatters.
+	use('williamboman/mason-lspconfig.nvim') -- That makes it easier to use lspconfig with mason.nvim
+
 	use('hrsh7th/cmp-buffer') -- Buffer completions
+	use('hrsh7th/cmp-calc') -- Source for math calculation
 	use('hrsh7th/cmp-cmdline') -- Cmdline completions
 	use('hrsh7th/cmp-nvim-lsp') -- Lsp completions
+	use('hrsh7th/cmp-nvim-lsp-signature-help') -- signature-help
 	use('hrsh7th/cmp-nvim-lua') -- Lsp comletions for nvim lua
 	use('hrsh7th/cmp-path') -- Path completions
 	use('hrsh7th/nvim-cmp') -- The completion plugin
+	use('L3MON4D3/LuaSnip') -- Snippet engine
 	use('saadparwaiz1/cmp_luasnip') -- Snippet completions
 
-	-- snippets
-	use('L3MON4D3/LuaSnip') -- Snippet engine
-	-- use('rafamadriz/friendly-snippets') -- a bunch of snippets to use
+	use('windwp/nvim-autopairs') -- Autopairs
+	use('lewis6991/gitsigns.nvim') -- Git integration for buffers
+	use('tpope/vim-fugitive') -- A Git wrapper so awesome, it should be illegal
 
-	-- LSP
-	use('neovim/nvim-lspconfig') -- Enable LSP
-	use('williamboman/nvim-lsp-installer') -- Simple to use language server installer
-	-- use('tamago324/nlsp-settings.nvim') -- language server settings defined in json for
-	-- use('jose-elias-alvarez/null-ls.nvim') -- for formatters and linters
-
-	-- Telescope
-	use('nvim-telescope/telescope.nvim')
-
-	-- Treesitter
-	use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
-	use('JoosepAlviste/nvim-ts-context-commentstring') -- Setting the commentstring based on the cursor location in a file
-
-	-- Git
-	use('lewis6991/gitsigns.nvim')
-
-	-- Utilities
-	use('windwp/nvim-autopairs') -- Autopairs, integrates with both cmp and treesitter
-	use('numToStr/Comment.nvim') -- Easily comment stuff
-	use('kyazdani42/nvim-web-devicons') -- Web devicons
-	use('kyazdani42/nvim-tree.lua') -- Tree view for files
-	use('lewis6991/impatient.nvim') -- Cache files for faster loading
-	use('norcalli/nvim-colorizer.lua') -- Color highlighter
+	use('folke/todo-comments.nvim') -- Highlight, list and search todo comments in your projects
+	use('folke/tokyonight.nvim') -- Color scheme for Neovim
 	use('glepnir/galaxyline.nvim') -- Status line
-	use('lukas-reineke/indent-blankline.nvim') -- Indent guides
+	use('glepnir/zephyr-nvim') -- Glepnir color scheme
+	use('kyazdani42/nvim-tree.lua') -- Tree view for files
+	use('kyazdani42/nvim-web-devicons') -- Web devicons
+	use('norcalli/nvim-colorizer.lua') -- Color highlighter
+
 	use('antoinemadec/FixCursorHold.nvim') -- Fix CursorHold Performance
-
-	-- Languages
-	use('glepnir/smartinput.nvim') -- Change your input char to any you want
-
-	-- use('akinsho/bufferline.nvim')
-	-- use('moll/vim-bbye')
-	-- use('nvim-lualine/lualine.nvim')
-	-- use('akinsho/toggleterm.nvim')
-	-- use('ahmedkhalf/project.nvim')
-	-- use('goolord/alpha-nvim')
+	use('glepnir/mcc.nvim') -- Change your input char to any you want
+	use('lewis6991/impatient.nvim') -- Cache files for faster loading
+	use('NTBBloodbath/rest.nvim') -- Rest client
+	use('ThePrimeagen/harpoon') -- ThePrimagen tool for productivie in files
+	use('tpope/vim-commentary') -- Easily comment stuff
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
