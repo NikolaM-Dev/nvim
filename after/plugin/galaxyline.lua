@@ -94,7 +94,7 @@ gls.left[7] = {
 gls.left[8] = {
 	DiagnosticError = {
 		highlight = { colors.red, colors.bg },
-		icon = '  ',
+		icon = '  ',
 		provider = 'DiagnosticError',
 	},
 }
@@ -110,7 +110,7 @@ gls.left[9] = {
 gls.left[10] = {
 	DiagnosticHint = {
 		highlight = { colors.cyan, colors.bg },
-		icon = '  ',
+		icon = '  ',
 		provider = 'DiagnosticHint',
 	},
 }
@@ -118,7 +118,7 @@ gls.left[10] = {
 gls.left[11] = {
 	DiagnosticInfo = {
 		highlight = { colors.blue, colors.bg },
-		icon = '  ',
+		icon = '  ',
 		provider = 'DiagnosticInfo',
 	},
 }
@@ -132,7 +132,7 @@ gls.mid[1] = {
 			end
 			return true
 		end,
-		highlight = { colors.yellow, colors.bg, 'bold' },
+		highlight = { colors.violet, colors.bg, 'bold' },
 		icon = ' LSP:',
 		provider = 'GetLspClient',
 	},
@@ -180,6 +180,7 @@ gls.right[4] = {
 
 gls.right[5] = {
 	Separator = {
+		highlight = { colors.fg, colors.bg, 'bold' },
 		provider = function()
 			return ' '
 		end,

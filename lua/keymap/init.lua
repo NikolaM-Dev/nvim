@@ -1,30 +1,79 @@
-local opts = { noremap = true, silent = true }
-local keymap = vim.api.nvim_set_keymap
+local keymap = require('core.keymap')
 
--- Telescope
-keymap('n', '<leader>ff', ':lua require"telescope.builtin".git_files()<CR>', opts)
-keymap('n', '<leader>fg', ':lua require"telescope.builtin".live_grep()<CR>', opts)
-keymap('n', '<leader>man', ':lua require"telescope.builtin".man_pages()<CR>', opts)
+local cmap, imap, nmap, vmap, xmap = keymap.cmap, keymap.imap, keymap.nmap, keymap.vmap, keymap.xmap
+local cmd = keymap.cmd
+local noremap, silent = keymap.noremap, keymap.silent
+local opts = keymap.new_opts
 
-keymap('n', '<leader>gbc', ':lua require"telescope.builtin".git_bcommits()<CR>', opts)
-keymap('n', '<leader>gb', ':lua require"telescope.builtin".git_branches()<CR>', opts)
-keymap('n', '<leader>gc', ':lua require"telescope.builtin".git_commits()<CR>', opts)
-keymap('n', '<leader>gs', ':lua require"telescope.builtin".git_status()<CR>', opts)
-keymap('n', '<leader>gst', ':lua require"telescope.builtin".git_stash()<CR>', opts)
+-- use space as leader key
+vim.g.mapleader = ' '
 
--- Fugitive
-keymap('n', '<leader>ga', ':G add --all<CR>', opts)
-keymap('n', '<leader>gap', ':G add % -p<CR>', opts)
-keymap('n', '<leader>g', ':G<CR>', opts)
-keymap('n', '<leader>gca', ':G commit --amend<CR>', opts)
-keymap('n', '<leader>gi', ':G init<CR>', opts)
-keymap('n', '<leader>gp', ':G push<CR>', opts)
-keymap('n', '<leader>gpl', ':G pull<CR>', opts)
-keymap('n', '<leader>gpo', ':G push origin -u HEAD<CR>', opts)
-keymap('n', '<leader>gu', ':G reset --soft HEAD~1<CR>', opts) -- undo
+-- leaderkey
+nmap({ ' ', '', opts(noremap) })
+xmap({ ' ', '', opts(noremap) })
 
--- Explorer
-keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
+cmap({
+	{ '<C-b>', '<Left>', opts(noremap) },
+	{ '<C-f>', '<Right>', opts(noremap) },
+	{ '<C-a>', '<Home>', opts(noremap) },
+	{ '<C-e>', '<End>', opts(noremap) },
+	{ '<C-d>', '<Del>', opts(noremap) },
+	{ '<C-h>', '<BS>', opts(noremap) },
+})
 
--- Packer
-keymap('n', '<leader>ps', ':PackerSync<CR>', opts)
+imap({
+	-- save
+	{ '<C-s>', '<ESC>:w<CR>', opts(noremap) },
+
+	-- quit & save
+	{ '<C-q>', '<ESC>:wq<CR>', opts(noremap) },
+
+	-- insert line below
+	{ '<C-j>', '<ESC>o', opts(noremap) },
+
+	-- insert line above
+	{ '<C-k>', '<ESC>O', opts(noremap) },
+
+	-- back to normal mode
+	{ 'ii', '<ESC>', opts(noremap) },
+})
+
+nmap({
+	-- save
+	{ '<C-s>', cmd('write'), opts(noremap) },
+
+	-- quit
+	{ '<C-q>', cmd('q'), opts(noremap) },
+
+	-- centralized search
+	{ 'n', 'nzzzv', opts(noremap) },
+	{ 'N', 'Nzzzv', opts(noremap) },
+
+	-- centralized scroll
+	{ '<C-u>', '<C-u>zz', opts(noremap) },
+	{ '<C-d>', '<C-d>zz', opts(noremap) },
+
+	-- window jump
+	{ '<C-h>', '<C-w>h', opts(noremap) },
+	{ '<C-j>', '<C-w>j', opts(noremap) },
+	{ '<C-k>', '<C-w>k', opts(noremap) },
+	{ '<C-l>', '<C-w>l', opts(noremap) },
+
+	-- delete all buffers
+	{ '<C-k>w', cmd('%bd|e#'), opts(noremap, silent) },
+
+	-- reload luafile
+	{ '<A-r>', cmd('luafile %'), opts(noremap) },
+
+	-- remove highligths
+	{ '<ESC>', ':noh<CR><CR>', opts(noremap, silent) },
+})
+
+vmap({
+	-- sort
+	{ '<leader>s', ':!sort<CR>', opts(noremap) },
+
+	-- stay in indent mode
+	{ '<', '<gv', opts(noremap) },
+	{ '>', '>gv', opts(noremap) },
+})
