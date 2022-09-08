@@ -251,6 +251,11 @@ nvim_web_devicons.set_icon({
 		icon = '',
 		name = 'TsTestFile',
 	},
+	['test.tsx'] = {
+		color = '#00bcd4',
+		icon = '',
+		name = 'TsxTestFile',
+	},
 	['spec.js'] = {
 		color = '#ffca28',
 		icon = '',
@@ -260,6 +265,11 @@ nvim_web_devicons.set_icon({
 		color = '#ffca28',
 		icon = '',
 		name = 'JsTestFile',
+	},
+	['test.jsx'] = {
+		color = '#00bcd4',
+		icon = '',
+		name = 'JsxTestFile',
 	},
 	['png'] = {
 		color = '#26a69a',
