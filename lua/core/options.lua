@@ -1,9 +1,10 @@
 local options = {
 	listchars = {
 		-- eol = '¬',
-		extends = '→',
-		nbsp = '+',
-		precedes = '←',
+		extends = '»',
+		nbsp = '␣',
+		precedes = '«',
+		space = ' ',
 		tab = '┆ ',
 		trail = '·',
 	},
