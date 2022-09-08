@@ -243,22 +243,22 @@ nvim_web_devicons.set_icon({
 	},
 	['spec.ts'] = {
 		color = '#0288d1',
-		icon = 'ﭧ',
+		icon = '',
 		name = 'TsSpecFile',
 	},
 	['test.ts'] = {
 		color = '#0288d1',
-		icon = 'ﭧ',
+		icon = '',
 		name = 'TsTestFile',
 	},
 	['spec.js'] = {
 		color = '#ffca28',
-		icon = 'ﭧ',
+		icon = '',
 		name = 'JsSpecFile',
 	},
 	['test.js'] = {
 		color = '#ffca28',
-		icon = 'ﭧ',
+		icon = '',
 		name = 'JsTestFile',
 	},
 	['png'] = {
