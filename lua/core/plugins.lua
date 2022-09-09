@@ -83,7 +83,7 @@ return packer.startup(function(use)
 	use('glepnir/zephyr-nvim') -- Glepnir color scheme
 	use('kyazdani42/nvim-tree.lua') -- Tree view for files
 	use('kyazdani42/nvim-web-devicons') -- Web devicons
-	use('norcalli/nvim-colorizer.lua') -- Color highlighter
+	use('NvChad/nvim-colorizer.lua') -- Color highlighter
 
 	use('antoinemadec/FixCursorHold.nvim') -- Fix CursorHold Performance
 	use('glepnir/mcc.nvim') -- Change your input char to any you want
