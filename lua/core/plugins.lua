@@ -84,6 +84,7 @@ return packer.startup(function(use)
 	use('kyazdani42/nvim-tree.lua') -- Tree view for files
 	use('kyazdani42/nvim-web-devicons') -- Web devicons
 	use('NvChad/nvim-colorizer.lua') -- Color highlighter
+	use('folke/trouble.nvim') -- A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing
 
 	use('antoinemadec/FixCursorHold.nvim') -- Fix CursorHold Performance
 	use('glepnir/mcc.nvim') -- Change your input char to any you want
