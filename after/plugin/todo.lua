@@ -69,6 +69,6 @@ todo_comments.setup({
 })
 
 nmap({
-	{ '<leader><leader>to', cmd('TodoTelescope '), opts(noremap) },
-	{ '<leader>to', cmd('TodoQuickFix'), opts(noremap) },
+	{ '<leader>to', cmd('TodoTelescope'), opts(noremap) },
+	{ '<leader>xo', cmd('TodoTrouble'), opts(noremap) },
 })
