@@ -9,17 +9,6 @@ autocmd({ 'BufWritePre' }, {
 	command = '%s/\vs+$|\n+%$//e',
 })
 
--- TODO: Refactor
--- mormat on save in lua
-autocmd({ 'FileType' }, {
-	group = nikola_group,
-	pattern = 'lua',
-	callback = function()
-		local buff = tonumber(vim.fn.expand('<abuf>'), 10)
-		vim.keymap.set('n', '<C-s>', ':w<CR> :silent !stylua .<CR>', { noremap = true, buffer = buff })
-	end,
-})
-
 -- disable default syntax in these file.
 -- when file is larged ,load regex syntax
 -- highlight will cause very slow
