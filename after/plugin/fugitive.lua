@@ -14,8 +14,10 @@ nmap({
 	{ '<leader>g', cmd(':G'), opts(noremap) },
 	{ '<leader>gfa', cmd(':G fetch --all -p'), opts(noremap) },
 	{ '<leader>gi', cmd(':G init'), opts(noremap) },
+	{ '<leader>gm', ':G merge --no-ff --no-edit ', opts(noremap) },
 	{ '<leader>gp', cmd(':G push'), opts(noremap) },
 	{ '<leader>gpl', cmd(':G pull'), opts(noremap) },
 	{ '<leader>gpo', cmd(':G push origin -u HEAD'), opts(noremap) },
 	{ '<leader>gu', ':G reset --soft HEAD~1', opts(noremap) },
+	{ '<leader><leader>gst', ':G stash -um ', opts(noremap) },
 })
