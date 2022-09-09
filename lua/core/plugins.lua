@@ -74,6 +74,8 @@ return packer.startup(function(use)
 	use('saadparwaiz1/cmp_luasnip') -- Snippet completions
 
 	use('windwp/nvim-autopairs') -- Autopairs
+	use('windwp/nvim-ts-autotag') -- Use treesitter to auto close and auto rename html tag
+
 	use('lewis6991/gitsigns.nvim') -- Git integration for buffers
 	use('tpope/vim-fugitive') -- A Git wrapper so awesome, it should be illegal
 
