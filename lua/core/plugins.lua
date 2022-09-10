@@ -94,6 +94,7 @@ return packer.startup(function(use)
 	use('ThePrimeagen/harpoon') -- ThePrimagen tool for productivie in files
 	use('tpope/vim-commentary') -- Easily comment stuff
 	use('mbbill/undotree') -- The undo history visualizer for VIM
+	use('max397574/better-escape.nvim') -- Escape from insert mode without delay when typing
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
