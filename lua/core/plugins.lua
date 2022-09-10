@@ -95,6 +95,7 @@ return packer.startup(function(use)
 	use('tpope/vim-commentary') -- Easily comment stuff
 	use('mbbill/undotree') -- The undo history visualizer for VIM
 	use('max397574/better-escape.nvim') -- Escape from insert mode without delay when typing
+	use({ 'phaazon/hop.nvim', branch = 'v2' }) -- Neovim motions on speed!
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
