@@ -38,6 +38,7 @@ packer.init({
 		removed_sym = '',
 		working_sym = 'ﰭ',
 	},
+	max_jobs = 20,
 })
 
 return packer.startup(function(use)
