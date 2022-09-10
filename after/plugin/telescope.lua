@@ -111,6 +111,7 @@ nmap({
 	{ '<leader>ff', cmd('Telescope find_files'), opts(noremap, silent) },
 	{ '<leader>fg', cmd('Telescope git_files'), opts(noremap, silent) },
 	{ '<leader>fh', cmd('Telescope help_tags'), opts(noremap, silent) },
+	{ '<leader>fk', cmd('Telescope keymaps'), opts(noremap, silent) },
 	{ '<leader>fo', cmd('Telescope oldfiles'), opts(noremap, silent) },
 	{ '<leader>fw', cmd('Telescope grep_string'), opts(noremap, silent) },
 	{ '<leader>gbb', cmd('Telescope git_bcommits'), opts(noremap, silent) },
