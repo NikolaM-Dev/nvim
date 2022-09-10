@@ -201,6 +201,11 @@ nvim_web_devicons.set_icon({
 		icon = 'ﮰ',
 		name = 'AngularController',
 	},
+	['component.ts'] = {
+		color = '#0288d1',
+		icon = 'ﮰ',
+		name = 'AngularComponent',
+	},
 	['module.ts'] = {
 		color = '#e53935',
 		icon = 'ﮰ',
