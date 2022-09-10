@@ -39,6 +39,7 @@ rest.setup({
 })
 
 vim.api.nvim_create_autocmd({ 'Filetype' }, {
+	group = _G.nikola_group,
 	pattern = 'http',
 	callback = function()
 		local buff = tonumber(vim.fn.expand('<abuf>'), 10)
