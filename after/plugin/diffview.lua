@@ -4,8 +4,9 @@ if not status_ok then
 end
 
 local keymap = require('core.keymap')
-
 local actions = require('diffview.actions')
+
+local autocmd = vim.api.nvim_create_autocmd
 local cmd = keymap.cmd
 local nmap = keymap.nmap
 local opts = keymap.new_opts
@@ -190,12 +191,8 @@ nmap({
 	{ '<leader>bh', cmd('DiffviewFileHistory %'), opts(noremap, silent) },
 })
 
-local autocmd = vim.api.nvim_create_autocmd
-local autogrup = vim.api.nvim_create_augroup
-local nikola_group = autogrup('NikolaGroup', { clear = true })
-
 autocmd({ 'Filetype' }, {
-	group = nikola_group,
+	group = _G.nikola_group,
 	pattern = 'DiffviewFiles',
 	callback = function()
 		local buff = tonumber(vim.fn.expand('<abuf>'), 10)
@@ -205,7 +202,7 @@ autocmd({ 'Filetype' }, {
 })
 
 autocmd({ 'Filetype' }, {
-	group = nikola_group,
+	group = _G.nikola_group,
 	pattern = 'DiffviewFileHistory',
 	callback = function()
 		local buff = tonumber(vim.fn.expand('<abuf>'), 10)
