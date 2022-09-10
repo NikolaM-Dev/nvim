@@ -3,6 +3,13 @@ if not status_ok then
 	return
 end
 
+local keymap = require('core.keymap')
+
+local cmd = keymap.cmd
+local nmap = keymap.nmap
+local noremap = keymap.noremap
+local opts = keymap.new_opts
+
 mason.setup({
 	ui = {
 		-- Whether to automatically check for new versions when opening the :Mason window.
@@ -89,3 +96,5 @@ mason_lspconfig.setup({
 		automatic_installation = true,
 	},
 })
+
+nmap({ '<leader>m', cmd('Mason'), opts(noremap) })
