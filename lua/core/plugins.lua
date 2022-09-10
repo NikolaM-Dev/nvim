@@ -93,6 +93,7 @@ return packer.startup(function(use)
 	use('NTBBloodbath/rest.nvim') -- Rest client
 	use('ThePrimeagen/harpoon') -- ThePrimagen tool for productivie in files
 	use('tpope/vim-commentary') -- Easily comment stuff
+	use('mbbill/undotree') -- The undo history visualizer for VIM
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
