@@ -6,9 +6,9 @@ end
 local keymap = require('core.keymap')
 
 local cmd = keymap.cmd
-local nmap = keymap.nmap
-local opts = keymap.new_opts
+local nmap, vmap = keymap.nmap, keymap.vmap
 local noremap = keymap.noremap
+local opts = keymap.new_opts
 
 hop.setup({ keys = 'etovxqpdygfblzhckisuran' })
 
@@ -16,3 +16,5 @@ nmap({
 	{ 'f', cmd('HopWord'), opts(noremap) },
 	{ 'F', cmd('HopChar2'), opts(noremap) },
 })
+
+vmap({ 'f', cmd('HopWord'), opts(noremap) })
