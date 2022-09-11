@@ -97,6 +97,7 @@ return packer.startup(function(use)
 	use('max397574/better-escape.nvim') -- Escape from insert mode without delay when typing
 	use({ 'phaazon/hop.nvim', branch = 'v2' }) -- Neovim motions on speed!
 	use({ 'iamcco/markdown-preview.nvim', ft = 'markdown', run = 'cd app && yarn install' }) -- Markdown preview
+	use('matze/vim-move') -- Plugin to move lines and selections up and down
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
