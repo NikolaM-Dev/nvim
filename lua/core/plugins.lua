@@ -96,6 +96,7 @@ return packer.startup(function(use)
 	use('mbbill/undotree') -- The undo history visualizer for VIM
 	use('max397574/better-escape.nvim') -- Escape from insert mode without delay when typing
 	use({ 'phaazon/hop.nvim', branch = 'v2' }) -- Neovim motions on speed!
+	use({ 'iamcco/markdown-preview.nvim', ft = 'markdown', run = 'cd app && yarn install' }) -- Markdown preview
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
