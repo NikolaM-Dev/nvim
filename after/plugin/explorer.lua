@@ -194,13 +194,8 @@ nvim_tree.setup({
 	},
 	filters = {
 		dotfiles = false,
-		custom = { '.git' },
-		exclude = {
-			'fugitive.lua',
-			'gitcommit.json',
-			'.gitignore',
-			'gitsings.lua',
-		},
+		custom = { '^.git$' },
+		exclude = {},
 	},
 	filesystem_watchers = {
 		enable = true,
