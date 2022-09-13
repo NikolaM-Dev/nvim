@@ -81,7 +81,6 @@ return packer.startup(function(use)
 	use('folke/todo-comments.nvim') -- Highlight, list and search todo comments in your projects
 	use('folke/tokyonight.nvim') -- Color scheme for Neovim
 	use('glepnir/galaxyline.nvim') -- Status line
-	use('glepnir/zephyr-nvim') -- Glepnir color scheme
 	use('kyazdani42/nvim-tree.lua') -- Tree view for files
 	use('kyazdani42/nvim-web-devicons') -- Web devicons
 	use('NvChad/nvim-colorizer.lua') -- Color highlighter
