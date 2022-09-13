@@ -98,6 +98,7 @@ return packer.startup(function(use)
 	use({ 'phaazon/hop.nvim', branch = 'v2' }) -- Neovim motions on speed!
 	use({ 'iamcco/markdown-preview.nvim', ft = 'markdown', run = 'cd app && yarn install' }) -- Markdown preview
 	use('matze/vim-move') -- Plugin to move lines and selections up and down
+	use('RRethy/vim-illuminate') -- Automatically highlighting other uses of the word under the cursor using either LSP, Tree-sitter, or regex matching
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
