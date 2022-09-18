@@ -43,7 +43,7 @@ diffview.setup({
 		},
 		merge_tool = {
 			-- Config for conflicted files in diff views during a merge or rebase.
-			layout = 'diff3_horizontal',
+			layout = 'diff4_mixed',
 			disable_diagnostics = true, -- Temporarily disable diagnostics for conflict buffers while in the view.
 		},
 		file_history = {
@@ -101,8 +101,8 @@ diffview.setup({
 			['<leader>e'] = actions.focus_files, -- Bring focus to the file panel
 			['<leader>b'] = actions.toggle_files, -- Toggle the file panel.
 			['g<C-x>'] = actions.cycle_layout, -- Cycle through available layouts.
-			['[x'] = actions.prev_conflict, -- In the merge_tool: jump to the previous conflict
-			[']x'] = actions.next_conflict, -- In the merge_tool: jump to the next conflict
+			['ck'] = actions.prev_conflict, -- In the merge_tool: jump to the previous conflict
+			['cj'] = actions.next_conflict, -- In the merge_tool: jump to the next conflict
 			['<leader>co'] = actions.conflict_choose('ours'), -- Choose the OURS version of a conflict
 			['<leader>ct'] = actions.conflict_choose('theirs'), -- Choose the THEIRS version of a conflict
 			['<leader>cb'] = actions.conflict_choose('base'), -- Choose the BASE version of a conflict
