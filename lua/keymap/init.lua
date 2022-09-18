@@ -82,6 +82,9 @@ vmap({
 	-- sort
 	{ '<leader>s', ':!sort<CR>', opts(noremap) },
 
+	-- format json in http filetypes
+	{ '<leader>jq', ':!jq<CR>', opts(noremap, silent) },
+
 	-- rename
 	{ '<leader><leader>s', ':s///gI<Left><Left><Left><Left>', opts(noremap) },
 
