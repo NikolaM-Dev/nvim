@@ -85,7 +85,6 @@ return packer.startup(function(use)
 	use('kyazdani42/nvim-web-devicons') -- Web devicons
 	use('NvChad/nvim-colorizer.lua') -- Color highlighter
 	use('folke/trouble.nvim') -- A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing
-
 	use('antoinemadec/FixCursorHold.nvim') -- Fix CursorHold Performance
 	use('glepnir/mcc.nvim') -- Change your input char to any you want
 	use('lewis6991/impatient.nvim') -- Cache files for faster loading
@@ -99,6 +98,7 @@ return packer.startup(function(use)
 	use({ 'iamcco/markdown-preview.nvim', ft = 'markdown', run = 'cd app && yarn install' }) -- Markdown preview
 	use('matze/vim-move') -- Plugin to move lines and selections up and down
 	use('RRethy/vim-illuminate') -- Automatically highlighting other uses of the word under the cursor using either LSP, Tree-sitter, or regex matching
+	use('folke/zen-mode.nvim') -- Clean and elegant distraction-free writing for NeoVim
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
