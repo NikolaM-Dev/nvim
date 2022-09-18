@@ -68,8 +68,8 @@ nmap({
 	{ '<C-Right>', ':vertical resize +2<CR>', opts(noremap, silent) },
 	{ '<C-Up>', ':resize -2<CR>', opts(noremap, silent) },
 
-	-- reload luafile
-	{ '<A-r>', cmd('luafile %'), opts(noremap) },
+	-- fast reload
+	{ '<A-r>', cmd('so'), opts(noremap) },
 
 	-- remove highligths
 	{ '<ESC>', ':noh<CR><CR>', opts(noremap, silent) },
