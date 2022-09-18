@@ -197,7 +197,7 @@ autocmd({ 'Filetype' }, {
 	callback = function()
 		local buff = tonumber(vim.fn.expand('<abuf>'), 10)
 
-		vim.keymap.set('n', '<leader>q', cmd('DiffviewClose'), { noremap = true, buffer = buff })
+		vim.keymap.set('n', '<C-q>', cmd('DiffviewClose'), { noremap = true, buffer = buff })
 	end,
 })
 
@@ -207,6 +207,6 @@ autocmd({ 'Filetype' }, {
 	callback = function()
 		local buff = tonumber(vim.fn.expand('<abuf>'), 10)
 
-		vim.keymap.set('n', '<leader>q', cmd('DiffviewClose'), { noremap = true, buffer = buff })
+		vim.keymap.set('n', '<C-q>', cmd('DiffviewClose'), { noremap = true, buffer = buff })
 	end,
 })
