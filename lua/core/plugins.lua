@@ -100,6 +100,8 @@ return packer.startup(function(use)
 	use('matze/vim-move') -- Plugin to move lines and selections up and down
 	use('RRethy/vim-illuminate') -- Automatically highlighting other uses of the word under the cursor using either LSP, Tree-sitter, or regex matching
 	use('folke/zen-mode.nvim') -- Clean and elegant distraction-free writing for NeoVim
+	use('lalitmee/browse.nvim') -- Browse for anything using your choice of method
+	use('stevearc/dressing.nvim') -- Neovim plugin to improve the default vim.ui interfaces
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
