@@ -15,6 +15,7 @@ nmap({
 	{ '<leader>g', cmd(':G'), opts(noremap) },
 	{ '<leader>gfa', cmd(':G fetch --all -p'), opts(noremap) },
 	{ '<leader>gi', cmd(':G init'), opts(noremap) },
+	{ '<leader>gma', cmd(':G merge --abort'), opts(noremap) },
 	{ '<leader>gm', ':G merge --no-ff --no-edit ', opts(noremap) },
 	{ '<leader>gp', cmd(':G push'), opts(noremap) },
 	{ '<leader>gpl', cmd(':G pull'), opts(noremap) },
