@@ -45,7 +45,7 @@ nmap({
 	-- quit
 	{ '<C-q>', cmd('q'), opts(noremap) },
 
-	-- quitall
+	-- quit all
 	{ '<leader>q', cmd('qall'), opts(noremap) },
 
 	-- centralized search
@@ -61,6 +61,12 @@ nmap({
 	{ '<C-j>', '<C-w>j', opts(noremap) },
 	{ '<C-k>', '<C-w>k', opts(noremap) },
 	{ '<C-l>', '<C-w>l', opts(noremap) },
+
+	-- resize window
+	{ '<C-Down>', ':resize +2<CR>', opts(noremap, silent) },
+	{ '<C-Left>', ':vertical resize -2<CR>', opts(noremap, silent) },
+	{ '<C-Right>', ':vertical resize +2<CR>', opts(noremap, silent) },
+	{ '<C-Up>', ':resize -2<CR>', opts(noremap, silent) },
 
 	-- reload luafile
 	{ '<A-r>', cmd('luafile %'), opts(noremap) },
