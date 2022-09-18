@@ -59,9 +59,6 @@ nmap({
 	{ '<C-k>', '<C-w>k', opts(noremap) },
 	{ '<C-l>', '<C-w>l', opts(noremap) },
 
-	-- delete all buffers
-	{ '<C-k>w', cmd('%bd|e#'), opts(noremap, silent) },
-
 	-- reload luafile
 	{ '<A-r>', cmd('luafile %'), opts(noremap) },
 
