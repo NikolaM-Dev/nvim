@@ -11,6 +11,7 @@ nmap({
 	{ '<leader>gap', cmd('G add % -p'), opts(noremap) },
 	{ '<leader>gbm', ':G branch -m ', opts(noremap) },
 	{ '<leader>gca', cmd(':G commit --amend'), opts(noremap) },
+	{ '<leader>gcm', cmd(':G commit'), opts(noremap) },
 	{ '<leader>g', cmd(':G'), opts(noremap) },
 	{ '<leader>gfa', cmd(':G fetch --all -p'), opts(noremap) },
 	{ '<leader>gi', cmd(':G init'), opts(noremap) },
