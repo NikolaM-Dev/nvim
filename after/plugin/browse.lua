@@ -21,6 +21,7 @@ local bookmarks = {
 	'https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md',
 	'https://github.com/NikolaM-Dev',
 	'https://github.com/NikolaM-Dev/dotfiles',
+	'https://github.com/rockerBOO/awesome-neovim',
 	'https://github.com/ThePrimeagen/.dotfiles/tree/master/nvim/.config/nvim',
 	'https://twitter.com/home',
 	'https://www.twitch.tv',
