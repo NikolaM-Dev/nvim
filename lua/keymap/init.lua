@@ -64,11 +64,17 @@ nmap({
 
 	-- remove highligths
 	{ '<ESC>', ':noh<CR><CR>', opts(noremap, silent) },
+
+	-- rename
+	{ '<leader>s', ':%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>', opts(noremap) },
 })
 
 vmap({
 	-- sort
 	{ '<leader>s', ':!sort<CR>', opts(noremap) },
+
+	-- rename
+	{ '<leader><leader>s', ':s///gI<Left><Left><Left><Left>', opts(noremap) },
 
 	-- stay in indent mode
 	{ '<', '<gv', opts(noremap) },
