@@ -45,6 +45,9 @@ nmap({
 	-- quit
 	{ '<C-q>', cmd('q'), opts(noremap) },
 
+	-- quitall
+	{ '<leader>q', cmd('qall'), opts(noremap) },
+
 	-- centralized search
 	{ 'n', 'nzzzv', opts(noremap) },
 	{ 'N', 'Nzzzv', opts(noremap) },
