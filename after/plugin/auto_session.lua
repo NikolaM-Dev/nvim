@@ -15,3 +15,5 @@ auto_session.setup({
 	-- the configs below are lua only
 	bypass_session_save_file_types = nil,
 })
+
+vim.opt.sessionoptions = 'blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal'
