@@ -186,7 +186,7 @@ diffview.setup({
 })
 
 nmap({
-	{ '<leader>d', cmd('DiffviewOpen'), opts(noremap, silent) },
+	{ '<leader>gd', cmd('DiffviewOpen'), opts(noremap, silent) },
 	{ '<leader>h', cmd('DiffviewFileHistory'), opts(noremap, silent) },
 	{ '<leader>bh', cmd('DiffviewFileHistory %'), opts(noremap, silent) },
 })
@@ -197,7 +197,7 @@ autocmd({ 'Filetype' }, {
 	callback = function()
 		local buff = tonumber(vim.fn.expand('<abuf>'), 10)
 
-		vim.keymap.set('n', '<leader>d', cmd('DiffviewClose'), { noremap = true, buffer = buff })
+		vim.keymap.set('n', '<leader>q', cmd('DiffviewClose'), { noremap = true, buffer = buff })
 	end,
 })
 
@@ -207,6 +207,6 @@ autocmd({ 'Filetype' }, {
 	callback = function()
 		local buff = tonumber(vim.fn.expand('<abuf>'), 10)
 
-		vim.keymap.set('n', '<leader>h', cmd('DiffviewClose'), { noremap = true, buffer = buff })
+		vim.keymap.set('n', '<leader>q', cmd('DiffviewClose'), { noremap = true, buffer = buff })
 	end,
 })
