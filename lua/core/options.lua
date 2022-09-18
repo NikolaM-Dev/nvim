@@ -40,6 +40,8 @@ local options = {
 	tabstop = 4, -- insert <x> spaces for a tab
 	termguicolors = true, -- set term gui colors (most terminals support this)
 	timeoutlen = 300, -- time to wait for a mapped sequence to complete (in milliseconds)
+	undodir = os.getenv('HOME') .. '/.cache/nvim/undodir', -- undodir path
+	undofile = true, -- make undo file
 	updatetime = 50, -- improve user experience updating more frequently
 	winbar = '%=%m %f', -- The window bar is a bar that's shown at the top of every window with it enabled
 	wrap = false, -- wrap lines
