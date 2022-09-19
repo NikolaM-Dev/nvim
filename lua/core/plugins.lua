@@ -103,6 +103,7 @@ return packer.startup(function(use)
 	use('lalitmee/browse.nvim') -- Browse for anything using your choice of method
 	use('stevearc/dressing.nvim') -- Neovim plugin to improve the default vim.ui interfaces
 	use('rmagatti/auto-session') -- A small automated session manager for Neovim
+	use('mg979/vim-visual-multi') -- Multi cursor
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
