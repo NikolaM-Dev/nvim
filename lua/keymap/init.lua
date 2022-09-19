@@ -63,10 +63,10 @@ nmap({
 	{ '<C-l>', '<C-w>l', opts(noremap) },
 
 	-- resize window
-	{ '<C-Down>', ':resize +2<CR>', opts(noremap, silent) },
-	{ '<C-Left>', ':vertical resize -2<CR>', opts(noremap, silent) },
-	{ '<C-Right>', ':vertical resize +2<CR>', opts(noremap, silent) },
-	{ '<C-Up>', ':resize -2<CR>', opts(noremap, silent) },
+	{ '<A-H>', ':vertical resize -2<CR>', opts(noremap, silent) },
+	{ '<A-J>', ':resize +2<CR>', opts(noremap, silent) },
+	{ '<A-K>', ':resize -2<CR>', opts(noremap, silent) },
+	{ '<A-L>', ':vertical resize +2<CR>', opts(noremap, silent) },
 
 	-- fast reload
 	{ '<A-r>', cmd('so'), opts(noremap) },
