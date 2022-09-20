@@ -16,7 +16,7 @@ mason.setup({
 		check_outdated_packages_on_open = true,
 
 		-- The border to use for the UI window. Accepts same border values as |nvim_open_win()|.
-		border = 'none',
+		border = 'rounded',
 
 		icons = {
 			-- The list icon to use for installed servers.
@@ -84,7 +84,20 @@ mason_lspconfig.setup({
 	{
 		-- A list of servers to automatically install if they're not already installed. Example: { "rust_analyzer@nightly", "sumneko_lua" }
 		-- This setting has no relation with the `automatic_installation` setting.
-		ensure_installed = {},
+		ensure_installed = {
+			'emmet_ls',
+			'eslint_d',
+			'gopls',
+			'html',
+			'jsonls',
+			'prettierd',
+			'stylua',
+			'sumneko_lua',
+			'tailwindcss',
+			'taplo',
+			'tsserver',
+			'vimls',
+		},
 
 		-- Whether servers that are set up (via lspconfig) should be automatically installed if they're not already installed.
 		-- This setting has no relation with the `ensure_installed` setting.
