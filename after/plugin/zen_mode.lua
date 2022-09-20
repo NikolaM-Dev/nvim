@@ -52,10 +52,7 @@ zen_mode.setup({
 		},
 	},
 	-- callback where you can add custom code when the Zen window opens
-	on_open = function(win)
-		print(win)
-		vim.opt.laststatus = 3
-	end,
+	on_open = function(win) end,
 	-- callback where you can add custom code when the Zen window closes
 	on_close = function() end,
 })
