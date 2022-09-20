@@ -186,10 +186,10 @@ nvim_tree.setup({
 		show_on_dirs = false,
 		debounce_delay = 50,
 		icons = {
-			error = '',
-			hint = '',
-			info = '',
-			warning = '',
+			error = '',
+			hint = '',
+			info = '',
+			warning = '',
 		},
 	},
 	filters = {
