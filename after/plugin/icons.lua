@@ -135,6 +135,11 @@ nvim_web_devicons.set_icon({
 		icon = '',
 		name = 'GitModules',
 	},
+	['.gitkeep'] = {
+		color = '#e64a19',
+		icon = '',
+		name = 'GitKeep',
+	},
 	['diff'] = {
 		color = '#e64a19',
 		cterm_color = '59',
