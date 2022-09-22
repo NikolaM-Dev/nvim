@@ -82,6 +82,8 @@ local servers = {
 	'jsonls',
 	'tailwindcss',
 	'taplo',
+	'vimls',
+	'yamlls',
 }
 
 for _, server in pairs(servers) do
