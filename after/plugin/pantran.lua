@@ -17,6 +17,11 @@ pantran.setup({
 			default_target = 'es',
 		},
 	},
+	window = {
+		window_config = {
+			border = 'rounded',
+		},
+	},
 })
 
 nmap({
