@@ -8,7 +8,7 @@ local load_core = function()
 
 	require('keymap')
 
-	require('internal.event')
+	require('internal')
 end
 
 load_core()
