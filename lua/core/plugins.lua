@@ -59,6 +59,7 @@ return packer.startup(function(use)
 	use('neovim/nvim-lspconfig') -- Configurations for Nvim LSP
 	use('williamboman/mason.nvim') -- Easily install and manage LSP servers, DAP servers, linters, and formatters.
 	use('williamboman/mason-lspconfig.nvim') -- That makes it easier to use lspconfig with mason.nvim
+	use('glepnir/lspsaga.nvim') -- Lsp puglin by glepnir
 
 	use('hrsh7th/cmp-buffer') -- Buffer completions
 	use('hrsh7th/cmp-calc') -- Source for math calculation
