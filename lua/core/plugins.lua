@@ -103,6 +103,8 @@ return packer.startup(function(use)
 	use('stevearc/dressing.nvim') -- Neovim plugin to improve the default vim.ui interfaces
 	use('mg979/vim-visual-multi') -- Multi cursor
 	use('potamides/pantran.nvim') -- Use your favorite machine translation engines without having to leave your favorite editor
+	use('tpope/vim-surround') -- Delete/change/add parentheses/quotes/XML-tags/much more with ease
+	use('tpope/vim-repeat') -- Enable repeating supported plugin maps with "."
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
