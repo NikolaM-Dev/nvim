@@ -60,9 +60,9 @@ trouble.setup({
 
 nmap({
 	{ 'gR', cmd('TroubleToggle lsp_references'), opts(noremap, silent) },
-	{ '<leader>xd', cmd('TroubleToggle document_diagnostics'), opts(noremap, silent) },
-	{ '<leader>xl', cmd('TroubleToggle loclist'), opts(noremap, silent) },
-	{ '<leader>xq', cmd('TroubleToggle quickfix'), opts(noremap, silent) },
-	{ '<leader>xw', cmd('TroubleToggle workspace_diagnostics'), opts(noremap, silent) },
-	{ '<leader>xx', cmd('TroubleToggle'), opts(noremap, silent) },
+	{ '<leader>;d', cmd('TroubleToggle document_diagnostics'), opts(noremap, silent) },
+	{ '<leader>;l', cmd('TroubleToggle loclist'), opts(noremap, silent) },
+	{ '<leader>;q', cmd('TroubleToggle quickfix'), opts(noremap, silent) },
+	{ '<leader>;w', cmd('TroubleToggle workspace_diagnostics'), opts(noremap, silent) },
+	{ '<leader>;x', cmd('TroubleToggle'), opts(noremap, silent) },
 })
