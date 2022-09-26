@@ -4,8 +4,17 @@ if not status_ok then
 end
 
 local colors = require('galaxyline.theme').default
+
+local ok, _ = pcall(require, 'tokyonight')
+if ok then
+	colors = require('tokyonight.colors').setup()
+end
+
 local condition = require('galaxyline.condition')
 local gls = galaxyline.section
+
+-- change the separations between left and mid & right and mid to transparent
+vim.cmd('highlight StatusLine guibg=#00000000')
 galaxyline.short_line_list = { 'NvimTree', 'vista', 'dbui', 'packer' }
 
 gls.left[1] = {
@@ -34,9 +43,9 @@ gls.left[2] = {
 				n = colors.red,
 				no = colors.red,
 				r = colors.cyan,
-				R = colors.violet,
+				R = colors.magenta,
 				rm = colors.cyan,
-				Rv = colors.violet,
+				Rv = colors.magenta,
 				s = colors.orange,
 				S = colors.orange,
 				t = colors.red,
@@ -102,7 +111,7 @@ gls.left[8] = {
 gls.left[9] = {
 	DiagnosticWarn = {
 		highlight = { colors.yellow, colors.bg },
-		icon = '  ',
+		icon = '   ',
 		provider = 'DiagnosticWarn',
 	},
 }
@@ -126,13 +135,13 @@ gls.left[11] = {
 gls.mid[1] = {
 	ShowLspClient = {
 		condition = function()
-			local tbl = { ['dashboard'] = true, [''] = true }
+			local tbl = { dashboard = true, [''] = true }
 			if tbl[vim.bo.filetype] then
 				return false
 			end
 			return true
 		end,
-		highlight = { colors.violet, colors.bg, 'bold' },
+		highlight = { colors.magenta, colors.bg, 'bold' },
 		icon = ' LSP:',
 		provider = 'GetLspClient',
 	},
@@ -161,10 +170,10 @@ gls.right[2] = {
 gls.right[3] = {
 	GitIcon = {
 		provider = function()
-			return '  '
+			return '  ' -- 
 		end,
 		condition = condition.check_git_workspace,
-		highlight = { colors.violet, colors.bg, 'bold' },
+		highlight = { colors.magenta, colors.bg, 'bold' },
 		separator = ' ',
 		separator_highlight = { 'NONE', colors.bg },
 	},
@@ -173,7 +182,7 @@ gls.right[3] = {
 gls.right[4] = {
 	GitBranch = {
 		condition = condition.check_git_workspace,
-		highlight = { colors.violet, colors.bg, 'bold' },
+		highlight = { colors.magenta, colors.bg, 'bold' },
 		provider = 'GitBranch',
 	},
 }
