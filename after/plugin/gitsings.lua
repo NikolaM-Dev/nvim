@@ -59,11 +59,11 @@ gitsigns.setup({
 	max_file_length = 40000,
 	preview_config = {
 		-- Options passed to nvim_open_win
-		border = 'single',
-		style = 'minimal',
+		border = 'rounded',
+		col = 1,
 		relative = 'cursor',
 		row = 0,
-		col = 1,
+		style = 'minimal',
 	},
 	yadm = {
 		enable = false,
