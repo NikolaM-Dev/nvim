@@ -116,7 +116,6 @@ nmap({
 	{ 'gh', cmd('Lspsaga lsp_finder'), opts(noremap, silent) },
 	{ 'gr', cmd('Lspsaga rename'), opts(noremap, silent) },
 	{ 'gs', cmd('Lspsaga signature_help'), opts(noremap, silent) },
-	{ 'K', cmd('Lspsaga hover_doc'), opts(silent) },
 	{ '<Leader>o', cmd('LSoutlineToggle'), opts(noremap, silent) },
 })
 
