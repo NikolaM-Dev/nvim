@@ -7,8 +7,8 @@ local keymap = require('core.keymap')
 
 local cmd = keymap.cmd
 local nmap = keymap.nmap
-local opts = keymap.new_opts
 local noremap, silent = keymap.noremap, keymap.silent
+local opts = keymap.new_opts
 
 trouble.setup({
 	position = 'bottom', -- position of the list can be: bottom, top, left, right

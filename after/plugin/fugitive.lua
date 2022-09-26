@@ -2,8 +2,8 @@ local keymap = require('core.keymap')
 
 local cmd = keymap.cmd
 local nmap = keymap.nmap
-local opts = keymap.new_opts
 local noremap = keymap.noremap
+local opts = keymap.new_opts
 
 nmap({
 	{ '<leader>ga', cmd('G add %'), opts(noremap) },
