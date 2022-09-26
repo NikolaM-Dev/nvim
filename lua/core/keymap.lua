@@ -105,11 +105,11 @@ local function map(mod)
 	end
 end
 
-keymap.nmap = map('n')
-keymap.imap = map('i')
-keymap.cmap = map('c')
-keymap.vmap = map('v')
-keymap.xmap = map('x')
-keymap.tmap = map('t')
+keymap.nmap = map('n') -- normal
+keymap.imap = map('i') -- inset
+keymap.cmap = map('c') -- command
+keymap.vmap = map('v') -- visual
+keymap.xmap = map('x') -- visual block
+keymap.tmap = map('t') -- term
 
 return keymap
