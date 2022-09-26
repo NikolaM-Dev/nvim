@@ -15,6 +15,7 @@ browse.setup({
 })
 
 local bookmarks = {
+	'https://github.com/adalessa/dotfiles/tree/main/nvim/.config/nvim',
 	'https://github.com/ChristianChiarulli/nvim',
 	'https://github.com/glepnir/nvim',
 	'https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md',
@@ -23,6 +24,8 @@ local bookmarks = {
 	'https://github.com/NikolaM-Dev/dotfiles',
 	'https://github.com/rockerBOO/awesome-neovim',
 	'https://github.com/ThePrimeagen/.dotfiles/tree/master/nvim/.config/nvim',
+	'https://mail.google.com/mail/u/0/#inbox',
+	'https://mail.google.com/mail/u/1/#inbox',
 	'https://twitter.com/home',
 	'https://www.twitch.tv',
 }
