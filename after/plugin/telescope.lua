@@ -105,6 +105,7 @@ nmap({
 		end,
 		opts(noremap, silent),
 	},
+	{ '<C-f>', cmd('Telescope current_buffer_fuzzy_find'), opts(noremap, silent) },
 	{ '<leader>b', cmd('Telescope buffers'), opts(noremap, silent) },
 	{ '<leader>fa', cmd('Telescope live_grep'), opts(noremap, silent) },
 	{ '<leader>fd', cmd('Telescope diagnostics'), opts(noremap, silent) },
