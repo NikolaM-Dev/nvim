@@ -109,6 +109,7 @@ return packer.startup(function(use)
 	use('tpope/vim-repeat') -- Enable repeating supported plugin maps with "."
 	use('AckslD/nvim-neoclip.lua') -- Clipboard manager neovim plugin with telescope integration
 	use({ 'kkharji/sqlite.lua', module = 'sqlite' }) -- SQLite LuaJIT binding with a very simple api
+	use('p00f/nvim-ts-rainbow') -- Rainbow parentheses for neovim using tree-sitter
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
