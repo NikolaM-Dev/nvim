@@ -28,6 +28,7 @@ local bookmarks = {
 	'https://mail.google.com/mail/u/1/#inbox',
 	'https://twitter.com/home',
 	'https://www.twitch.tv',
+	'https://www.youtube.com',
 }
 
 nmap({
