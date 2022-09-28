@@ -50,6 +50,7 @@ lspconfig['sumneko_lua'].setup({
 })
 
 local servers = {
+	'cssls',
 	'emmet_ls',
 	'gopls',
 	'html',
