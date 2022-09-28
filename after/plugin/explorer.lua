@@ -193,7 +193,7 @@ nvim_tree.setup({
 	},
 	filters = {
 		dotfiles = false,
-		custom = { '^.git$' },
+		custom = { '^.git$', '^node_modules$' },
 		exclude = {},
 	},
 	filesystem_watchers = {
