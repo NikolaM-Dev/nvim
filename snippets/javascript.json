@@ -1,0 +1,188 @@
+{
+  "forEach": {
+    "prefix": "fe",
+    "body": "${1:iterable}.forEach((${2:item}) => ${0})"
+  },
+  "map": {
+    "prefix": "map",
+    "body": "${1:iterable}.map((${2:item}) => ${0})"
+  },
+  "reduce": {
+    "prefix": "reduce",
+    "body": "${1:iterable}.reduce((${2:previous}, ${3:current}) => {\n\t${0}\n}${4:, initial})"
+  },
+  "filter": {
+    "prefix": "filter",
+    "body": "${1:iterable}.filter((${2:item}) => ${0})"
+  },
+  "find": {
+    "prefix": "find",
+    "body": "${1:iterable}.find((${2:item}) => ${0})"
+  },
+  "try/catch": {
+    "prefix": "tc",
+    "body": "try {\n\t${0}\n} catch (error) {}"
+  },
+  "export": {
+    "prefix": "e",
+    "body": "export "
+  },
+  "await": {
+    "prefix": "a",
+    "body": "await "
+  },
+  "await Promise.all": {
+    "prefix": "apa",
+    "body": "await Promise.all([$1])"
+  },
+  "console.log()": {
+    "prefix": "cl",
+    "body": "console.log($1)"
+  },
+  "console.error('')": {
+    "prefix": "ce",
+    "body": "console.error(${1:error})"
+  },
+  "import moduleName from 'module'": {
+    "prefix": "imp",
+    "body": "import ${2:moduleName} from '${1:module}'"
+  },
+  "const moduleName = require('module')": {
+    "prefix": "req",
+    "body": "const ${2:moduleName} = require('${1:module}')"
+  },
+  "const { moduleName } = require('module')": {
+    "prefix": "reqd",
+    "body": "const { ${2:moduleName} } = require('${1:module}')"
+  },
+  "import { destructuredModule } from 'module'": {
+    "prefix": "imd",
+    "body": "import { $2 } from '${1:module}'"
+  },
+  "() => {}": {
+    "prefix": "fn",
+    "body": "const ${1:name} = ($2) => $3"
+  },
+  "async () => {}": {
+    "prefix": "afn",
+    "body": "const ${1:name} = async ($2)} => $3"
+  },
+  "const name = value": {
+    "prefix": "c",
+    "body": "const ${1:name} = ${2:value}"
+  },
+  "let name = value": {
+    "prefix": "l",
+    "body": "let ${1:name} = ${2:value}"
+  },
+  "const name =  { value }": {
+    "prefix": "obj",
+    "body": "const ${1:name} = {\n\t$2\n}"
+  },
+  "const name =  [ value, ]": {
+    "prefix": "arr",
+    "body": "const ${1:name} = [${2:value}]"
+  },
+  "const { name } = value": {
+    "prefix": "des",
+    "body": "const { $2 } = $1"
+  },
+  "const [name] = value": {
+    "prefix": "desa",
+    "body": "const [ $2 ] = $1"
+  },
+  "export default": {
+    "prefix": "ed",
+    "body": "export default ${1:$TM_FILENAME_BASE}"
+  },
+  "module.exports = {}": {
+    "prefix": "me",
+    "body": "module.exports = { ${1:$TM_FILENAME_BASE} }"
+  },
+  "describe": {
+    "prefix": "desc",
+    "body": [
+      "describe('Tests on ${1:TM_FILENAME_BASE}', () => {",
+      "\t$0",
+      "})",
+      ""
+    ]
+  },
+  "testBlock": {
+    "prefix": "test",
+    "body": [
+      "test('should $1', () => {",
+      "\t$0",
+      "})"
+    ]
+  },
+  "testAsyncBlock": {
+    "prefix": "testa",
+    "body": [
+      "test('should $1', async () => {",
+      "\t$0",
+      "})"
+    ]
+  },
+  "itBlock": {
+    "prefix": "it",
+    "body": [
+      "it('should $1', () => {",
+      "\t$0",
+      "})"
+    ]
+  },
+  "itAsyncBlock": {
+    "prefix": "ita",
+    "body": [
+      "it('should $1', async () => {",
+      "\t$0",
+      "})"
+    ]
+  },
+  "util function": {
+    "prefix": "ut",
+    "body": [
+      "export const ${1:$TM_FILENAME_BASE} = () => {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "fragment": {
+    "prefix": "fm",
+    "body": "<>\n\t${1:foo}\n</>"
+  },
+  "rfc": {
+    "prefix": "rfc",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = () => {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t<h1>${1:{TM_FILENAME_BASE}</h1>",
+      "\t\t\t$0",
+      "\t\t</>",
+      "\t)",
+      "}",
+      "",
+      "${1:{TM_FILENAME_BASE}.propTypes = {}"
+    ]
+  },
+  "useState": {
+    "prefix": "us",
+    "body": "const [$1, set$2] = useState($3)"
+  },
+  "useEffect": {
+    "prefix": "ue",
+    "body": [
+      "useEffect(() => {",
+      "  ${1:first}",
+      "",
+      "  return () => {",
+      "    ${2:second}",
+      "  }",
+      "}, [${3:third}])"
+    ]
+  }
+}
