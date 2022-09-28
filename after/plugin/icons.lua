@@ -256,6 +256,11 @@ nvim_web_devicons.set_icon({
 		icon = '',
 		name = 'TsSpecFile',
 	},
+	['spec.tsx'] = {
+		color = '#00bcd4',
+		icon = '',
+		name = 'TsxSpecFile',
+	},
 	['test.ts'] = {
 		color = '#0288d1',
 		icon = '',
@@ -270,6 +275,11 @@ nvim_web_devicons.set_icon({
 		color = '#ffca28',
 		icon = '',
 		name = 'JsSpecFile',
+	},
+	['spec.jsx'] = {
+		color = '#00bcd4',
+		icon = '',
+		name = 'JsxSpecFile',
 	},
 	['test.js'] = {
 		color = '#ffca28',
@@ -490,6 +500,11 @@ nvim_web_devicons.set_icon({
 		color = '#ffca28',
 		icon = '',
 		name = 'Sql',
+	},
+	astro = {
+		color = '#ff6d00',
+		icon = '',
+		name = 'Astro',
 	},
 })
 
