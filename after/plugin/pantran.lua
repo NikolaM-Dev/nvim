@@ -14,7 +14,10 @@ pantran.setup({
 	default_engine = 'google',
 	engines = {
 		google = {
-			default_target = 'es',
+			fallback = {
+				default_source = 'es',
+				default_target = 'en',
+			},
 		},
 	},
 	window = {
