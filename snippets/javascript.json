@@ -102,7 +102,7 @@
   "describe": {
     "prefix": "desc",
     "body": [
-      "describe('Tests on ${1:TM_FILENAME_BASE}', () => {",
+      "describe('Tests on ${1:$TM_FILENAME_BASE}', () => {",
       "\t$0",
       "})",
       ""
