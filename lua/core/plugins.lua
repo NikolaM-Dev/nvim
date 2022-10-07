@@ -111,7 +111,6 @@ return packer.startup(function(use)
 	use({ 'kkharji/sqlite.lua', module = 'sqlite' }) -- SQLite LuaJIT binding with a very simple api
 	use('p00f/nvim-ts-rainbow') -- Rainbow parentheses for neovim using tree-sitter
 	use('aserowy/tmux.nvim') -- About tmux integration for nvim features pane movement and resizing
-	-- use('declancm/windex.nvim')
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
