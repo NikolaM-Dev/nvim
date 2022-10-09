@@ -85,6 +85,7 @@ nmap({
 	-- tmux
 	{ '<leader>tv', ':silent !tmux split-window -h -c <CR>', opts(noremap, silent) },
 	{ '<leader>ts', ':silent !tmux split-window -v -c <CR>', opts(noremap, silent) },
+	{ '<leader>z', ':silent !tmux resize-pane -Z<CR>', opts(noremap, silent) },
 })
 
 vmap({
