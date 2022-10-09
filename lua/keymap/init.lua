@@ -81,10 +81,11 @@ nmap({
 	{ '<leader>s', ':%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>', opts(noremap) },
 
 	-- tt
-	{ '<leader>fm', ':silent !tmux display-popup -E "tt"<CR><CR>', opts(noremap, silent) },
+	{ '<leader>fm', ':silent !tmux display-popup -E "tt"<CR>', opts(noremap, silent) },
+
 	-- tmux
-	{ '<leader>tv', ':silent !tmux split-window -h -c <CR>', opts(noremap, silent) },
-	{ '<leader>ts', ':silent !tmux split-window -v -c <CR>', opts(noremap, silent) },
+	{ '<leader>ts', ':silent !tmux split-window -v -c<CR>', opts(noremap, silent) },
+	{ '<leader>tv', ':silent !tmux split-window -h -c<CR>', opts(noremap, silent) },
 	{ '<leader>z', ':silent !tmux resize-pane -Z<CR>', opts(noremap, silent) },
 })
 
