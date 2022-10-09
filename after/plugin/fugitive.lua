@@ -18,6 +18,7 @@ nmap({
 	{ '<leader>gma', cmd(':G merge --abort'), opts(noremap) },
 	{ '<leader>gm', ':G merge --no-ff --no-edit ', opts(noremap) },
 	{ '<leader>gp', cmd(':G push'), opts(noremap) },
+	{ '<leader>gpf', cmd(':G push origin -f HEAD'), opts(noremap) },
 	{ '<leader>gpl', cmd(':G pull'), opts(noremap) },
 	{ '<leader>gpo', cmd(':G push origin -u HEAD'), opts(noremap) },
 	{ '<leader>gu', ':G reset --soft HEAD~1', opts(noremap) },
