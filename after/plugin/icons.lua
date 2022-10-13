@@ -331,6 +331,17 @@ nvim_web_devicons.set_icon({
 		icon = '',
 		name = 'Eslint',
 	},
+	['.eslintrc.json'] = {
+		color = '#7986cb',
+		icon = '',
+		name = 'EslintJson',
+	},
+
+	['.eslintrc.js'] = {
+		color = '#7986cb',
+		icon = '',
+		name = 'EslintJs',
+	},
 	['.prettierrc'] = {
 		color = '#56b3b4',
 		icon = '',
