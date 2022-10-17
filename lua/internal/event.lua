@@ -2,13 +2,6 @@ local autocmd = vim.api.nvim_create_autocmd
 local autogrup = vim.api.nvim_create_augroup
 _G.nikola_group = autogrup('NikolaGroup', { clear = true })
 
--- trim white spaces
-autocmd({ 'BufWritePre' }, {
-	group = nikola_group,
-	pattern = '*',
-	command = '%s/\\s\\+$//e',
-})
-
 -- disable default syntax in these file.
 -- when file is larged ,load regex syntax
 -- highlight will cause very slow
