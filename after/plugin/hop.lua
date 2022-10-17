@@ -12,9 +12,6 @@ local opts = keymap.new_opts
 
 hop.setup({ keys = 'etovxqpdygfblzhckisuran' })
 
-nmap({
-	{ 'f', cmd('HopWord'), opts(noremap) },
-	{ 'F', cmd('HopChar2'), opts(noremap) },
-})
+nmap({ 'f', cmd('HopWord'), opts(noremap) })
 
 vmap({ 'f', cmd('HopWord'), opts(noremap) })
