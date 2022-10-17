@@ -99,7 +99,6 @@ return packer.startup(function(use)
 	use({ 'phaazon/hop.nvim', branch = 'v2' }) -- Neovim motions on speed!
 	use({ 'iamcco/markdown-preview.nvim', ft = 'markdown', run = 'cd app && yarn install' }) -- Markdown preview
 	use('fedepujol/move.nvim') -- Gain the power to move lines and blocks and auto-indent them
-	use('RRethy/vim-illuminate') -- Automatically highlighting other uses of the word under the cursor using either LSP, Tree-sitter, or regex matching
 	use('folke/zen-mode.nvim') -- Clean and elegant distraction-free writing for NeoVim
 	use('lalitmee/browse.nvim') -- Browse for anything using your choice of method
 	use('stevearc/dressing.nvim') -- Neovim plugin to improve the default vim.ui interfaces
@@ -111,6 +110,7 @@ return packer.startup(function(use)
 	use({ 'kkharji/sqlite.lua', module = 'sqlite' }) -- SQLite LuaJIT binding with a very simple api
 	use('p00f/nvim-ts-rainbow') -- Rainbow parentheses for neovim using tree-sitter
 	use('aserowy/tmux.nvim') -- About tmux integration for nvim features pane movement and resizing
+	use('echasnovski/mini.nvim') -- Automatic highlighting of word under cursor
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
