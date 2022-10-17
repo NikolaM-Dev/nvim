@@ -92,7 +92,6 @@ return packer.startup(function(use)
 	use('lewis6991/impatient.nvim') -- Cache files for faster loading
 	use('NTBBloodbath/rest.nvim') -- Rest client
 	use('ThePrimeagen/harpoon') -- ThePrimagen tool for productivie in files
-	use('tpope/vim-commentary') -- Easily comment stuff
 	use('jose-elias-alvarez/null-ls.nvim') -- Inject LSP diagnostics, code actions, and more via Lua
 	use('mbbill/undotree') -- The undo history visualizer for VIM
 	use('max397574/better-escape.nvim') -- Escape from insert mode without delay when typing
