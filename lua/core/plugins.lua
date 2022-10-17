@@ -73,7 +73,6 @@ return packer.startup(function(use)
 	use('L3MON4D3/LuaSnip') -- Snippet engine
 	use('saadparwaiz1/cmp_luasnip') -- Snippet completions
 
-	use('windwp/nvim-autopairs') -- Autopairs
 	use('windwp/nvim-ts-autotag') -- Use treesitter to auto close and auto rename html tag
 
 	use('lewis6991/gitsigns.nvim') -- Git integration for buffers
