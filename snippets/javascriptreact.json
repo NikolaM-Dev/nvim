@@ -1,0 +1,39 @@
+{
+  "fragment": {
+    "prefix": "fm",
+    "body": "<>\n\t${1:foo}\n</>"
+  },
+  "rfc": {
+    "prefix": "rfc",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = () => {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t<h1>${1:{TM_FILENAME_BASE}</h1>",
+      "\t\t\t$0",
+      "\t\t</>",
+      "\t)",
+      "}",
+      "",
+      "${1:{TM_FILENAME_BASE}.propTypes = {}"
+    ]
+  },
+  "useState": {
+    "prefix": "us",
+    "body": "const [$1, set$2] = useState($3)"
+  },
+  "useEffect": {
+    "prefix": "ue",
+    "body": [
+      "useEffect(() => {",
+      "  ${1:first}",
+      "",
+      "  return () => {",
+      "    ${2:second}",
+      "  }",
+      "}, [${3:third}])"
+    ]
+  }
+}
