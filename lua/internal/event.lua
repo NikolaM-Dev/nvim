@@ -21,3 +21,15 @@ autocmd({ 'FileType' }, {
 		vim.cmd('setlocal formatoptions-=cro')
 	end,
 })
+
+-- highlight yank
+autocmd('TextYankPost', {
+	group = _G.nikola_group,
+	pattern = '*',
+	callback = function()
+		vim.highlight.on_yank({
+			higroup = 'IncSearch',
+			timeout = 40,
+		})
+	end,
+})
