@@ -12,8 +12,8 @@ nmap({
 })
 
 vmap({
-	{ '<A-H>', ':MoveHChar(-1)<CR>', opts(noremap, silent) },
-	{ '<A-J>', ':MoveLine(1)<CR>', opts(noremap, silent) },
-	{ '<A-K>', ':MoveLine(-1)<CR>', opts(noremap, silent) },
-	{ '<A-L>', ':MoveHChar(1)<CR>', opts(noremap, silent) },
+	{ '<A-H>', ':MoveHBlock(-1)<CR>', opts(noremap, silent) },
+	{ '<A-J>', ':MoveBlock(1)<CR>', opts(noremap, silent) },
+	{ '<A-K>', ':MoveBlock(-1)<CR>', opts(noremap, silent) },
+	{ '<A-L>', ':MoveHBlock(1)<CR>', opts(noremap, silent) },
 })
