@@ -8,3 +8,5 @@ trailspace.setup({
 	-- useful to not show trailing whitespace where it usually doesn't matter.
 	only_in_normal_buffers = true,
 })
+
+vim.cmd([[highlight! MiniTrailspace guibg=#24283b guifg=#414868]])
