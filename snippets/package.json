@@ -24,6 +24,10 @@
       {
         "language": "text",
         "path": "./mit.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./readme.json"
       }
     ]
   }
