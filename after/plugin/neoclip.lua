@@ -35,7 +35,7 @@ neoclip.setup({
 				paste = '<c-p>',
 				paste_behind = '<c-k>',
 				replay = '<c-q>', -- replay a macro
-				delete = '<c-d>', -- delete an entry
+				delete = '<c-x>', -- delete an entry
 				custom = {},
 			},
 			n = {
