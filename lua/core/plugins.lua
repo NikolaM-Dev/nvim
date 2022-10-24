@@ -59,6 +59,7 @@ return packer.startup(function(use)
 	use('neovim/nvim-lspconfig') -- Configurations for Nvim LSP
 	use('williamboman/mason.nvim') -- Easily install and manage LSP servers, DAP servers, linters, and formatters.
 	use('williamboman/mason-lspconfig.nvim') -- That makes it easier to use lspconfig with mason.nvim
+	use('jayp0521/mason-null-ls.nvim') -- Mason-null-ls bridges mason.nvim with the null-ls
 	use('glepnir/lspsaga.nvim') -- Lsp puglin by glepnir
 	use('https://git.sr.ht/~whynothugo/lsp_lines.nvim') -- Renders diagnostics using virtual lines on top of the real line of cod
 
