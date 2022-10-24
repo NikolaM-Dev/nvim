@@ -3,6 +3,11 @@ if not status_ok then
 	return
 end
 
+local mason_lspconfig_status, mason_lspconfig = pcall(require, 'mason-lspconfig')
+if not mason_lspconfig_status then
+	return
+end
+
 local keymap = require('core.keymap')
 
 local cmd = keymap.cmd
@@ -75,29 +80,20 @@ mason.setup({
 	},
 })
 
-local ok, mason_lspconfig = pcall(require, 'mason-lspconfig')
-if not ok then
-	return
-end
-
 mason_lspconfig.setup({
-	{
-		-- A list of servers to automatically install if they're not already installed. Example: { "rust_analyzer@nightly", "sumneko_lua" }
-		-- This setting has no relation with the `automatic_installation` setting.
-		ensure_installed = {
-			'emmet_ls',
-			'eslint_d',
-			'gopls',
-			'html',
-			'jsonls',
-			'prettierd',
-			'stylua',
-			'sumneko_lua',
-			'tailwindcss',
-			'taplo',
-			'tsserver',
-			'vimls',
-		},
+	ensure_installed = {
+		'emmet_ls',
+		'gopls',
+		'html',
+		'jsonls',
+		'sumneko_lua',
+		'tailwindcss',
+		'taplo',
+		'tsserver',
+		'vimls',
+	},
+	automatic_installation = true,
+})
 
 		-- Whether servers that are set up (via lspconfig) should be automatically installed if they're not already installed.
 		-- This setting has no relation with the `ensure_installed` setting.
