@@ -8,6 +8,11 @@ if not mason_lspconfig_status then
 	return
 end
 
+local mason_null_ls_status, mason_null_ls = pcall(require, 'mason-null-ls')
+if not mason_null_ls_status then
+	return
+end
+
 local keymap = require('core.keymap')
 
 local cmd = keymap.cmd
@@ -95,15 +100,13 @@ mason_lspconfig.setup({
 	automatic_installation = true,
 })
 
-		-- Whether servers that are set up (via lspconfig) should be automatically installed if they're not already installed.
-		-- This setting has no relation with the `ensure_installed` setting.
-		-- Can either be:
-		--   - false: Servers are not automatically installed.
-		--   - true: All servers set up via lspconfig are automatically installed.
-		--   - { exclude: string[] }: All servers set up via lspconfig, except the ones provided in the list, are automatically installed.
-		--       Example: automatic_installation = { exclude = { "rust_analyzer", "solargraph" } }
-		automatic_installation = true,
+mason_null_ls.setup({
+	ensure_installed = {
+		'eslint_d',
+		'prettier',
+		'stylua',
 	},
+	automatic_installation = true,
 })
 
 nmap({ '<leader>m', cmd('Mason'), opts(noremap) })
