@@ -40,6 +40,12 @@ local on_attach = function(client, bufnr)
 
 	vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
 	vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
+
+	if client.name == 'tsserver' then
+		keymap.set('n', '<leader>oi', ':TypescriptOrganizeImports<CR>')
+		keymap.set('n', '<leader>rf', ':TypescriptRenameFile<CR>')
+		keymap.set('n', '<leader>ru', ':TypescriptRemoveUnused<CR>')
+	end
 end
 
 typescript.setup({
