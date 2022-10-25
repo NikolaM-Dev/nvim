@@ -62,6 +62,7 @@ return packer.startup(function(use)
 	use('jayp0521/mason-null-ls.nvim') -- Mason-null-ls bridges mason.nvim with the null-ls
 	use('glepnir/lspsaga.nvim') -- Lsp puglin by glepnir
 	use('https://git.sr.ht/~whynothugo/lsp_lines.nvim') -- Renders diagnostics using virtual lines on top of the real line of cod
+	use('jose-elias-alvarez/typescript.nvim') -- A Lua plugin, written in TypeScript, to write TypeScript
 
 	use('hrsh7th/cmp-buffer') -- Buffer completions
 	use('hrsh7th/cmp-calc') -- Source for math calculation
