@@ -87,6 +87,7 @@ mason.setup({
 
 mason_lspconfig.setup({
 	ensure_installed = {
+		'cssls',
 		'emmet_ls',
 		'gopls',
 		'html',
