@@ -8,6 +8,11 @@ if not status_cmp_ok then
 	return
 end
 
+local typescript_setup, typescript = pcall(require, 'typescript')
+if not typescript_setup then
+	return
+end
+
 local keymap = require('core.keymap')
 
 local cmd = keymap.cmd
@@ -37,10 +42,15 @@ local on_attach = function(client, bufnr)
 	vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
 end
 
-lspconfig['tsserver'].setup({
-	capabilities = capabilities,
-	init_options = { importModuleSpecifierPreference = 'relative' },
-	on_attach = on_attach,
+typescript.setup({
+	disable_commands = false, -- prevent the plugin from creating Vim commands
+	debug = false, -- enable debug logging for commands
+	go_to_source_definition = { fallback = true }, -- fall back to standard LSP definition on failure
+	server = {
+		capabilities = capabilities,
+		init_options = { importModuleSpecifierPreference = 'relative' },
+		on_attach = on_attach,
+	},
 })
 
 lspconfig['sumneko_lua'].setup({
@@ -79,7 +89,7 @@ vim.diagnostic.config({
 	underline = true,
 	update_in_insert = false,
 	virtual_lines = false,
-	virtual_text = { prefix = '' }, -- 
+	virtual_text = { prefix = '' }, --  
 })
 
 vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, {
