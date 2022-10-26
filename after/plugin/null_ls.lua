@@ -4,6 +4,9 @@ if not status then
 end
 
 local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
+local code_actions = null_ls.builtins.code_actions
+local diagnostics = null_ls.builtins.diagnostics
+local formatting = null_ls.builtins.formatting
 
 null_ls.setup({
 	sources = {
@@ -11,11 +14,15 @@ null_ls.setup({
 			extra_args = { '--single-quote', '--trailing-comma', 'all' },
 			extra_filetypes = { 'toml' },
 		}),
-		null_ls.builtins.code_actions.eslint_d,
+		diagnostics.eslint_d.with({
 			-- only enable eslint if root has .eslintrc.js
 			condition = function(utils)
 				return utils.root_has_file('.eslintrc.js') -- change file extension if you use something else
 			end,
+		}),
+		code_actions.eslint_d,
+		formatting.eslint_d,
+		formatting.stylua,
 	},
 	on_attach = function(current_client, bufnr)
 		if current_client.supports_method('textDocument/formatting') then
