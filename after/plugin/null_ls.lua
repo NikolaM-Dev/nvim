@@ -12,10 +12,10 @@ null_ls.setup({
 			extra_filetypes = { 'toml' },
 		}),
 		null_ls.builtins.code_actions.eslint_d,
-		null_ls.builtins.diagnostics.eslint_d,
-		null_ls.builtins.diagnostics.yamllint,
-		null_ls.builtins.formatting.eslint_d,
-		null_ls.builtins.formatting.stylua,
+			-- only enable eslint if root has .eslintrc.js
+			condition = function(utils)
+				return utils.root_has_file('.eslintrc.js') -- change file extension if you use something else
+			end,
 	},
 	on_attach = function(current_client, bufnr)
 		if current_client.supports_method('textDocument/formatting') then
