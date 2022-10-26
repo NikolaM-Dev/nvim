@@ -7,7 +7,7 @@ local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
 
 null_ls.setup({
 	sources = {
-		null_ls.builtins.formatting.prettierd.with({
+		formatting.prettier.with({
 			extra_args = { '--single-quote', '--trailing-comma', 'all' },
 			extra_filetypes = { 'toml' },
 		}),
