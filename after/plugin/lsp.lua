@@ -42,9 +42,14 @@ local on_attach = function(client, bufnr)
 	vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
 
 	if client.name == 'tsserver' then
-		keymap.set('n', '<leader>oi', ':TypescriptOrganizeImports<CR>')
-		keymap.set('n', '<leader>rf', ':TypescriptRenameFile<CR>')
-		keymap.set('n', '<leader>ru', ':TypescriptRemoveUnused<CR>')
+		nmap({
+			{ '<leader>am', cmd('TypescriptAddMissingImports'), opts(noremap, silent) },
+			{ '<leader>gD', cmd('TypescriptGoToSourceDefinition'), opts(noremap, silent) },
+			{ '<leader><leader>fa', cmd('TypescriptFixAll'), opts(noremap, silent) },
+			{ '<leader>oi', cmd('TypescriptOrganizeImports'), opts(noremap, silent) },
+			{ '<leader>rf', cmd('TypescriptRenameFile'), opts(noremap, silent) },
+			{ '<leader>ru', cmd('TypescriptRemoveUnused'), opts(noremap, silent) },
+		})
 	end
 end
 
