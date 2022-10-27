@@ -108,12 +108,11 @@ lspsaga.init_lsp_saga({
 })
 
 nmap({
-	{ '<leader>dj', cmd('Lspsaga diagnostic_jump_next'), opts(noremap, silent) },
-	{ '<leader>dk', cmd('Lspsaga diagnostic_jump_prev'), opts(noremap, silent) },
 	{ 'ga', cmd('Lspsaga code_action'), opts(noremap, silent) },
-	{ 'gD', cmd('Lspsaga peek_definition'), opts(noremap, silent) },
 	{ 'gh', cmd('Lspsaga lsp_finder'), opts(noremap, silent) },
 	{ 'gr', cmd('Lspsaga rename'), opts(noremap, silent) },
+	{ '<leader>dj', cmd('Lspsaga diagnostic_jump_next'), opts(noremap, silent) },
+	{ '<leader>dk', cmd('Lspsaga diagnostic_jump_prev'), opts(noremap, silent) },
 	{ '<Leader>o', cmd('LSoutlineToggle'), opts(noremap, silent) },
 })
 
