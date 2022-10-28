@@ -95,7 +95,6 @@ return packer.startup(function(use)
 	use('ThePrimeagen/harpoon') -- ThePrimagen tool for productivie in files
 	use('jose-elias-alvarez/null-ls.nvim') -- Inject LSP diagnostics, code actions, and more via Lua
 	use('mbbill/undotree') -- The undo history visualizer for VIM
-	use('max397574/better-escape.nvim') -- Escape from insert mode without delay when typing
 	use({ 'phaazon/hop.nvim', branch = 'v2' }) -- Neovim motions on speed!
 	use({ 'iamcco/markdown-preview.nvim', ft = 'markdown', run = 'cd app && yarn install' }) -- Markdown preview
 	use('fedepujol/move.nvim') -- Gain the power to move lines and blocks and auto-indent them
