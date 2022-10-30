@@ -41,7 +41,7 @@ tokyonight.setup({
 	on_highlights = function(highlights, colors) end,
 })
 
-local ok, _ = pcall(vim.cmd, 'colorscheme ' .. colorscheme)
+local ok, _ = pcall(vim.api.nvim_command, 'colorscheme ' .. colorscheme)
 if not ok then
 	vim.notify('colorscheme ' .. colorscheme .. ' not found!')
 	return
