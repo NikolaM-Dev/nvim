@@ -33,9 +33,6 @@ imap({
 
 	-- insert line above
 	{ '<C-k>', '<ESC>O', opts(noremap) },
-
-	-- back to normal mode
-	{ 'ii', '<ESC>', opts(noremap) },
 })
 
 nmap({
