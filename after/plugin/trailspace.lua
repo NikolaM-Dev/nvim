@@ -9,4 +9,4 @@ trailspace.setup({
 	only_in_normal_buffers = true,
 })
 
-vim.cmd([[highlight! MiniTrailspace guibg=#24283b guifg=#414868]])
+vim.api.nvim_command('highlight! MiniTrailspace guibg=#24283b guifg=#414868')
