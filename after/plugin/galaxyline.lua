@@ -11,11 +11,10 @@ if ok then
 end
 
 local condition = require('galaxyline.condition')
-local cmd = vim.api.nvim_command
 local gls = galaxyline.section
 
 -- change the separations between left and mid & right and mid to transparent
-cmd('highlight StatusLine guibg=#00000000')
+vim.api.nvim_command('highlight StatusLine guibg=#00000000')
 galaxyline.short_line_list = { 'NvimTree', 'vista', 'dbui', 'packer' }
 
 gls.left[1] = {
@@ -53,7 +52,7 @@ gls.left[2] = {
 				v = colors.blue,
 				V = colors.blue,
 			}
-			cmd('hi GalaxyViMode guifg=' .. mode_color[vim.fn.mode()] .. ' guibg=' .. colors.bg)
+			vim.api.nvim_command('hi GalaxyViMode guifg=' .. mode_color[vim.fn.mode()] .. ' guibg=' .. colors.bg)
 			return '  '
 		end,
 	},
