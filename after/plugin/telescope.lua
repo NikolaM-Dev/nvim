@@ -70,13 +70,10 @@ telescope.setup({
 		},
 	},
 	pickers = {
-		bufffers = { initial_mode = 'normal' },
-		diagnostics = { initial_mode = 'normal' },
 		find_files = { hidden = true },
 		git_bcommits = { initial_mode = 'normal' },
 		git_branches = { initial_mode = 'normal' },
 		git_commits = { initial_mode = 'normal' },
-		git_status = { initial_mode = 'normal' },
 	},
 	extensions = {
 		fzf = {
