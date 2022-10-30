@@ -1,5 +1,6 @@
 local autocmd = vim.api.nvim_create_autocmd
 local autogrup = vim.api.nvim_create_augroup
+local cmd = vim.api.nvim_command
 _G.nikola_group = autogrup('NikolaGroup', { clear = true })
 
 -- disable default syntax in these file.
@@ -9,7 +10,7 @@ autocmd({ 'Filetype' }, {
 	group = _G.nikola_group,
 	pattern = '*.c,*.cpp,*.lua,*.go,*.rs,*.py,*.ts,*.tsx',
 	callback = function()
-		vim.cmd('syntax off')
+		cmd('syntax off')
 	end,
 })
 
@@ -18,7 +19,7 @@ autocmd({ 'FileType' }, {
 	group = _G.nikola_group,
 	pattern = '*',
 	callback = function()
-		vim.cmd('setlocal formatoptions-=cro')
+		cmd('setlocal formatoptions-=cro')
 	end,
 })
 
