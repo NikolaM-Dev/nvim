@@ -79,11 +79,6 @@ nmap({
 
 	-- tt
 	{ '<leader>fm', ':silent !tmux display-popup -E "tt"<CR>', opts(noremap, silent) },
-
-	-- tmux
-	{ '<leader>ts', ':silent !tmux split-window -v -c<CR>', opts(noremap, silent) },
-	{ '<leader>tv', ':silent !tmux split-window -h -c<CR>', opts(noremap, silent) },
-	{ '<leader>z', ':silent !tmux resize-pane -Z<CR>', opts(noremap, silent) },
 })
 
 vmap({
