@@ -22,6 +22,8 @@ null_ls.setup({
 		}),
 		code_actions.eslint_d,
 		formatting.eslint_d,
+		formatting.gofumpt,
+		formatting.goimports,
 		formatting.stylua,
 	},
 	on_attach = function(current_client, bufnr)
