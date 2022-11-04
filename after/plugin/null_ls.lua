@@ -21,6 +21,7 @@ null_ls.setup({
 			end,
 		}),
 		code_actions.eslint_d,
+		diagnostics.staticcheck,
 		formatting.eslint_d,
 		formatting.gofumpt,
 		formatting.goimports,
