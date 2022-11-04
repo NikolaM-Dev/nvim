@@ -107,6 +107,7 @@ mason_null_ls.setup({
 		'gofumpt',
 		'goimports',
 		'prettier',
+		'staticcheck',
 		'stylua',
 	},
 	automatic_installation = true,
