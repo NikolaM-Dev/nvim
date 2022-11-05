@@ -4,5 +4,5 @@ if not status_ok then
 end
 
 mcc.setup({
-	go = { ';', ':=', ';' },
+	go = { ';', ':= ', ';' },
 })
