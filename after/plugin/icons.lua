@@ -17,12 +17,12 @@ nvim_web_devicons.set_icon({
 	['go.mod'] = {
 		color = '#ec407a',
 		icon = '',
-		name = 'Gomod',
+		name = 'GoMod',
 	},
 	['go.sum'] = {
 		color = '#ec407a',
 		icon = '',
-		name = 'Gomod',
+		name = 'GoSum',
 	},
 	['Dockerfile'] = {
 		color = '#0087c9',
