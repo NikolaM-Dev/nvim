@@ -517,6 +517,11 @@ nvim_web_devicons.set_icon({
 		icon = '',
 		name = 'Astro',
 	},
+	tmpl = {
+		color = '#00acc1',
+		icon = '',
+		name = 'Tmpl',
+	},
 })
 
 nvim_web_devicons.set_default_icon('', '#42a5f5')
