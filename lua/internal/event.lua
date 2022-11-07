@@ -22,6 +22,15 @@ autocmd({ 'FileType' }, {
 	end,
 })
 
+-- go tmpl
+autocmd({ 'BufWinEnter' }, {
+	group = _G.nikola_group,
+	pattern = '*.tmpl',
+	callback = function()
+		vim.api.nvim_command('set filetype=html')
+	end,
+})
+
 -- highlight yank
 autocmd('TextYankPost', {
 	group = _G.nikola_group,
