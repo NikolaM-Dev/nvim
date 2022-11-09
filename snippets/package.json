@@ -28,6 +28,10 @@
       {
         "language": "markdown",
         "path": "./readme.json"
+      },
+      {
+        "language": "go",
+        "path": "./go.json"
       }
     ]
   }
