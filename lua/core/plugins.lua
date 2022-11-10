@@ -86,15 +86,16 @@ return packer.startup(function(use)
 	use('tpope/vim-fugitive') -- A Git wrapper so awesome, it should be illegal
 	use('sindrets/diffview.nvim') -- Single tabpage interface for easily cycling through diffs for all modified files for any git rev.
 
+	use('AckslD/nvim-neoclip.lua') -- Clipboard manager neovim plugin with telescope integration
 	use('folke/trouble.nvim') -- A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing
 	use('glepnir/mcc.nvim') -- Change your input char to any you want
 	use({ 'iamcco/markdown-preview.nvim', ft = 'markdown', run = 'cd app && yarn install' }) -- Markdown preview
+	use('kevinhwang91/nvim-ufo') -- Not UFO in the sky, but an ultra fold in Neovim
+	use('lalitmee/browse.nvim') -- Browse for anything using your choice of method
 	use('mbbill/undotree') -- The undo history visualizer for VIM
 	use('NTBBloodbath/rest.nvim') -- Rest client
-	use('windwp/nvim-ts-autotag') -- Use treesitter to auto close and auto rename html tag
 	use('potamides/pantran.nvim') -- Use your favorite machine translation engines without having to leave your favorite editor
-	use('AckslD/nvim-neoclip.lua') -- Clipboard manager neovim plugin with telescope integration
-	use('lalitmee/browse.nvim') -- Browse for anything using your choice of method
+	use('windwp/nvim-ts-autotag') -- Use treesitter to auto close and auto rename html tag
 
 	use('folke/todo-comments.nvim') -- Highlight, list and search todo comments in your projects
 	use('folke/tokyonight.nvim') -- Color scheme for Neovim
