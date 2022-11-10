@@ -44,12 +44,13 @@ packer.init({
 return packer.startup(function(use)
 	use('wbthomason/packer.nvim') -- Have packer manage itself
 
-	use('nvim-lua/plenary.nvim') -- Useful lua functions used in lots of plugins
-	use('nvim-lua/popup.nvim') -- An implementation of the Popup API from vim in Neovim
 	use('antoinemadec/FixCursorHold.nvim') -- Fix CursorHold Performance
 	use('echasnovski/mini.nvim') -- Library of 20+ independent Lua modules improving overall Neovim
+	use('kevinhwang91/promise-async') -- Promise & Async in Lua
 	use({ 'kkharji/sqlite.lua', module = 'sqlite' }) -- SQLite LuaJIT binding with a very simple api
 	use('lewis6991/impatient.nvim') -- Cache files for faster loading
+	use('nvim-lua/plenary.nvim') -- Useful lua functions used in lots of plugins
+	use('nvim-lua/popup.nvim') -- An implementation of the Popup API from vim in Neovim
 	use('tpope/vim-repeat') -- Enable repeating supported plugin maps with "."
 
 	use('nvim-telescope/telescope.nvim') -- About Find, Filter, Preview, Pick. All lua, all the time
