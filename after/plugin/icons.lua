@@ -347,6 +347,11 @@ nvim_web_devicons.set_icon({
 		icon = '',
 		name = 'Prettier',
 	},
+	['.prettierignore'] = {
+		color = '#56b3b4',
+		icon = '',
+		name = 'PrettierIgnore',
+	},
 	['angular.json'] = {
 		color = '#e53935',
 		icon = 'ﮰ',
