@@ -176,6 +176,16 @@ nvim_web_devicons.set_icon({
 		icon = '',
 		name = 'Env',
 	},
+	production = {
+		color = '#fbc02d',
+		icon = '',
+		name = 'ViteProductionEnv',
+	},
+	testing = {
+		color = '#fbc02d',
+		icon = '',
+		name = 'ViteQaEnv',
+	},
 	['.env'] = {
 		color = '#fbc02d',
 		icon = '',
