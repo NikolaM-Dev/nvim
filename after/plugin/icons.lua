@@ -64,6 +64,11 @@ nvim_web_devicons.set_icon({
 		icon = '',
 		name = 'LICENSE',
 	},
+	['LICENSE.md'] = {
+		color = '#ff5722',
+		icon = '',
+		name = 'LICENSEMD',
+	},
 	json = {
 		color = '#fbc02d',
 		icon = 'ﬥ',
