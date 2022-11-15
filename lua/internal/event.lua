@@ -31,6 +31,24 @@ autocmd({ 'BufWinEnter' }, {
 	end,
 })
 
+-- vite qa enviroment
+autocmd({ 'BufWinEnter' }, {
+	group = _G.nikola_group,
+	pattern = '.env.testing',
+	callback = function()
+		vim.api.nvim_command('set filetype=sh')
+	end,
+})
+
+-- vite production enviroment
+autocmd({ 'BufWinEnter' }, {
+	group = _G.nikola_group,
+	pattern = '.env.production',
+	callback = function()
+		vim.api.nvim_command('set filetype=sh')
+	end,
+})
+
 -- highlight yank
 autocmd('TextYankPost', {
 	group = _G.nikola_group,
