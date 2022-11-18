@@ -6,7 +6,7 @@ end
 local keymap = require('core.keymap')
 
 local cmd = keymap.cmd
-local nmap = keymap.nmap
+local nmap, vmap = keymap.nmap, keymap.vmap
 local noremap, silent = keymap.noremap, keymap.silent
 local opts = keymap.new_opts
 
@@ -121,3 +121,5 @@ nmap({
 	{ '<leader>gst', cmd('Telescope git_stash'), opts(noremap, silent) },
 	{ '<leader>man', cmd('Telescope man_pages'), opts(noremap, silent) },
 })
+
+vmap({ '<leader>fw', cmd('Telescope grep_string'), opts(noremap, silent) })
