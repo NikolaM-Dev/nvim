@@ -92,6 +92,7 @@ return packer.startup(function(use)
 	use({ 'iamcco/markdown-preview.nvim', ft = 'markdown', run = 'cd app && yarn install' }) -- Markdown preview
 	use('kevinhwang91/nvim-ufo') -- Not UFO in the sky, but an ultra fold in Neovim
 	use('lalitmee/browse.nvim') -- Browse for anything using your choice of method
+	use('max397574/better-escape.nvim') -- Escape from insert mode without delay when typing
 	use('mbbill/undotree') -- The undo history visualizer for VIM
 	use('NTBBloodbath/rest.nvim') -- Rest client
 	use('potamides/pantran.nvim') -- Use your favorite machine translation engines without having to leave your favorite editor
