@@ -3,6 +3,11 @@ if not status then
 	return
 end
 
+local typescript_status, typescript_code_actions = pcall(require, 'typescript.extensions.null-ls.code-actions')
+if not typescript_status then
+	return
+end
+
 local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
 local code_actions = null_ls.builtins.code_actions
 local diagnostics = null_ls.builtins.diagnostics
@@ -26,6 +31,7 @@ null_ls.setup({
 		formatting.gofumpt,
 		formatting.goimports,
 		formatting.stylua,
+		typescript_code_actions,
 	},
 	on_attach = function(current_client, bufnr)
 		if current_client.supports_method('textDocument/formatting') then
