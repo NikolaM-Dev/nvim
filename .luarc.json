@@ -1,12 +1,5 @@
 {
   "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
-  "Lua.diagnostics.disable": [
-    "undefined-doc-name"
-  ],
-  "Lua.diagnostics.globals": [
-    "border",
-    "path",
-    "use",
-    "vim"
-  ]
+  "Lua.diagnostics.disable": ["undefined-doc-name"],
+  "Lua.diagnostics.globals": ["border", "path", "use", "vim"]
 }
