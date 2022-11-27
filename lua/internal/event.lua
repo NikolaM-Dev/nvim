@@ -78,7 +78,7 @@ autocmd({ 'BufEnter' }, {
 			path = path:gsub(vim.env.HOME, '~')
 			val = val .. '%#WinbarPath#' .. path .. '%*'
 			vim.api.nvim_set_hl(0, 'WinbarNvimTreeIcon', { fg = colors.blue })
-			vim.api.nvim_set_hl(0, 'WinbarPath', { fg = colors.magenta })
+			vim.api.nvim_set_hl(0, 'WinbarPath', { fg = colors.magenta, bold = true })
 			vim.api.nvim_win_set_option(0, 'winbar', val)
 		end
 	end,
