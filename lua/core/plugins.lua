@@ -82,6 +82,9 @@ return packer.startup(function(use)
 	use('L3MON4D3/LuaSnip') -- Snippet engine
 	use('saadparwaiz1/cmp_luasnip') -- Snippet completions
 
+	use('mfussenegger/nvim-dap') -- Debug Adapter Protocol client
+	use('rcarriga/nvim-dap-ui') -- A UI for nvim-dap
+
 	use('lewis6991/gitsigns.nvim') -- Git integration for buffers
 	use('tpope/vim-fugitive') -- A Git wrapper so awesome, it should be illegal
 	use('sindrets/diffview.nvim') -- Single tabpage interface for easily cycling through diffs for all modified files for any git rev.
