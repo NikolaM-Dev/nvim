@@ -101,6 +101,7 @@ return packer.startup(function(use)
 	use('potamides/pantran.nvim') -- Use your favorite machine translation engines without having to leave your favorite editor
 	use('windwp/nvim-ts-autotag') -- Use treesitter to auto close and auto rename html tag
 	use('Darazaki/indent-o-matic') -- Dumb automatic fast indentation detection for Neovim written in Lua
+	use('chaoren/vim-wordmotion') -- More useful word motions for Vim
 
 	use('folke/todo-comments.nvim') -- Highlight, list and search todo comments in your projects
 	use('folke/tokyonight.nvim') -- Color scheme for Neovim
