@@ -117,6 +117,7 @@ cmp.setup({
 		{ name = 'nvim_lua' },
 		{ name = 'luasnip' },
 		{ name = 'nvim_lsp_signature_help' },
+		{ name = 'rg', keyword_length = 3 },
 		{ name = 'buffer' },
 		{ name = 'path' },
 		{ name = 'calc' },
