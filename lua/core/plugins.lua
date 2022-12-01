@@ -80,6 +80,7 @@ return packer.startup(function(use)
 	use('hrsh7th/cmp-path') -- Path completions
 	use('hrsh7th/nvim-cmp') -- The completion plugin
 	use('L3MON4D3/LuaSnip') -- Snippet engine
+	use('lukas-reineke/cmp-rg') -- Ripgrep source for nvim-cmp
 	use('saadparwaiz1/cmp_luasnip') -- Snippet completions
 
 	use('mfussenegger/nvim-dap') -- Debug Adapter Protocol client
