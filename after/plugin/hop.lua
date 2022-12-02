@@ -10,7 +10,7 @@ local nmap, vmap = keymap.nmap, keymap.vmap
 local noremap = keymap.noremap
 local opts = keymap.new_opts
 
-hop.setup({ keys = 'asdfjkl;ghqweruiopty' })
+hop.setup({ keys = 'asdghklqwertyuiopzxcvbnmfj' })
 
 nmap({ 'f', cmd('HopWord'), opts(noremap) })
 
