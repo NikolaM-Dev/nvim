@@ -23,7 +23,7 @@ local bookmarks = {
 	'https://github.com/NikolaM-Dev',
 	'https://github.com/NikolaM-Dev/dotfiles',
 	'https://github.com/rockerBOO/awesome-neovim',
-	'https://github.com/ThePrimeagen/.dotfiles/tree/master/nvim/.config/nvim',
+	'https://github.com/ThePrimeagen/init.lua',
 	'https://mail.google.com/mail/u/0/#inbox',
 	'https://mail.google.com/mail/u/1/#inbox',
 	'https://twitter.com/home',
