@@ -37,10 +37,7 @@ configs.setup({
 	},
 	autotag = { enable = true },
 	context_commentstring = { enable = true },
-	rainbow = {
-		enable = true,
-		extended_mode = false,
-	},
+	rainbow = { enable = true, extended_mode = false },
 	textobjects = {
 		select = {
 			enable = true,
