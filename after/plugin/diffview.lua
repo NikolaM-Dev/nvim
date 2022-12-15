@@ -193,7 +193,7 @@ diffview.setup({
 
 nmap({
 	{ '<leader>gd', cmd('DiffviewOpen'), opts(noremap, silent) },
-	{ '<leader>h', cmd('DiffviewFileHistory'), opts(noremap, silent) },
+	{ '<leader>gh', cmd('DiffviewFileHistory'), opts(noremap, silent) },
 	{ '<leader>bh', cmd('DiffviewFileHistory %'), opts(noremap, silent) },
 })
 
