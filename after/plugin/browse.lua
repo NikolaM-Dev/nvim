@@ -33,32 +33,9 @@ local bookmarks = {
 }
 
 nmap({
-	{
-		'<leader>bb',
-		function()
-			browse.open_bookmarks({ bookmarks = bookmarks })
-		end,
-		opts(noremap),
-	},
-	{
-		'<leader>bf',
-		function()
-			browse.input_search()
-		end,
-		opts(noremap),
-	},
-	{
-		'<leader>bm',
-		function()
-			browse.mdn.search()
-		end,
-		opts(noremap),
-	},
-	{
-		'<leader>bd',
-		function()
-			browse.devdocs.search_with_filetype()
-		end,
-		opts(noremap),
-	},
+	'<leader>bb',
+	function()
+		browse.open_bookmarks({ bookmarks = bookmarks })
+	end,
+	opts(noremap),
 })
