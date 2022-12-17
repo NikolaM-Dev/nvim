@@ -39,6 +39,9 @@ nmap({
 	-- save
 	{ '<C-s>', cmd('write'), opts(noremap) },
 
+	-- save all
+	{ '<leader>w', cmd('wall'), opts(noremap) },
+
 	-- quit
 	{ '<C-q>', cmd('q'), opts(noremap) },
 
