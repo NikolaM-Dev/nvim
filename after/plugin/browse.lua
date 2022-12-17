@@ -26,6 +26,7 @@ local bookmarks = {
 	'https://github.com/ThePrimeagen/init.lua',
 	'https://mail.google.com/mail/u/0/#inbox',
 	'https://mail.google.com/mail/u/1/#inbox',
+	'https://main.d2xuop51ekcwbf.amplifyapp.com',
 	'https://twitter.com/home',
 	'https://www.twitch.tv',
 	'https://www.youtube.com',
