@@ -91,8 +91,6 @@ return packer.startup(function(use)
 	use('tpope/vim-fugitive') -- A Git wrapper so awesome, it should be illegal
 
 	use('AckslD/nvim-neoclip.lua') -- Clipboard manager neovim plugin with telescope integration
-	use('chaoren/vim-wordmotion') -- More useful word motions for Vim
-	use('Darazaki/indent-o-matic') -- Dumb automatic fast indentation detection for Neovim written in Lua
 	use('folke/trouble.nvim') -- A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing
 	use('glepnir/mcc.nvim') -- Change your input char to any you want
 	use({ 'iamcco/markdown-preview.nvim', ft = 'markdown', run = 'cd app && yarn install' }) -- Markdown preview
