@@ -174,7 +174,7 @@ diffview.setup({
 				{ desc = 'Flatten empty subdirectories in tree listing style.' },
 			},
 			{ 'n', '<2-LeftMouse>', actions.select_entry, { desc = 'Open the diff for the selected entry.' } },
-			{ 'n', '-', actions.toggle_stage_entry, { desc = 'Stage / unstage the selected entry.' } },
+			{ 'n', 's', actions.toggle_stage_entry, { desc = 'Stage / unstage the selected entry.' } },
 			{ 'n', '<c-b>', actions.scroll_view(-0.25), { desc = 'Scroll the view up' } },
 			{ 'n', '<c-f>', actions.scroll_view(0.25), { desc = 'Scroll the view down' } },
 			{ 'n', '<cr>', actions.focus_entry, { desc = 'Open the diff for the selected entry.' } },
