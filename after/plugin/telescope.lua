@@ -86,23 +86,10 @@ telescope.setup({
 	},
 })
 
-telescope.load_extension('file_browser')
 telescope.load_extension('fzf')
 telescope.load_extension('neoclip')
 
 nmap({
-	{
-		'<leader>fb',
-		function()
-			telescope.extensions.file_browser.file_browser({
-				grouped = true,
-				hidden = true,
-				initial_mode = 'normal',
-				path = '%:p:h',
-			})
-		end,
-		opts(noremap, silent),
-	},
 	{ '<C-f>', cmd('Telescope current_buffer_fuzzy_find'), opts(noremap, silent) },
 	{ '<leader>b', cmd('Telescope buffers'), opts(noremap, silent) },
 	{ '<leader>fa', cmd('Telescope live_grep'), opts(noremap, silent) },
