@@ -54,7 +54,6 @@ return packer.startup(function(use)
 	use('tpope/vim-repeat') -- Enable repeating supported plugin maps with "."
 
 	use('nvim-telescope/telescope.nvim') -- About Find, Filter, Preview, Pick. All lua, all the time
-	use('nvim-telescope/telescope-file-browser.nvim') -- File Browser extension for telescope
 	use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }) -- About FZF sorter for telescope written in c
 
 	use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
