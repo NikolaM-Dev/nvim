@@ -6,7 +6,7 @@ end
 local keymap = require('core.keymap')
 
 local cmd = keymap.cmd
-local nmap, tmap = keymap.nmap, keymap.tmap
+local nmap = keymap.nmap
 local noremap, silent = keymap.noremap, keymap.silent
 local opts = keymap.new_opts
 
@@ -115,5 +115,3 @@ nmap({
 	{ '<leader>dk', cmd('Lspsaga diagnostic_jump_prev'), opts(noremap, silent) },
 	{ '<Leader>o', cmd('LSoutlineToggle'), opts(noremap, silent) },
 })
-
-tmap({ '<A-d>', [[<C-\><C-n>:Lspsaga close_floaterm<CR>]], opts(noremap, silent) })
