@@ -84,3 +84,20 @@ autocmd({ 'BufEnter' }, {
 		end
 	end,
 })
+
+-- save folds
+autocmd('BufWinLeave', {
+	pattern = '*.*',
+	callback = function()
+		vim.cmd.mkview()
+	end,
+})
+
+-- load folds
+autocmd('BufWinEnter', {
+	group = _G.nikola_group,
+	pattern = '*.*',
+	callback = function()
+		vim.cmd.loadview({ mods = { emsg_silent = true } })
+	end,
+})
