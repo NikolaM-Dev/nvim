@@ -78,7 +78,7 @@ return packer.startup(function(use)
 	use('hrsh7th/cmp-nvim-lua') -- Lsp comletions for nvim lua
 	use('hrsh7th/cmp-path') -- Path completions
 	use('hrsh7th/nvim-cmp') -- The completion plugin
-	use({ 'jackieaskins/cmp-emmet', run = 'npm run release' })
+	use({ 'jackieaskins/cmp-emmet', run = 'npm run release' }) -- Nvim-cmp source for Emmet.
 	use('L3MON4D3/LuaSnip') -- Snippet engine
 	use('lukas-reineke/cmp-rg') -- Ripgrep source for nvim-cmp
 	use('saadparwaiz1/cmp_luasnip') -- Snippet completions
