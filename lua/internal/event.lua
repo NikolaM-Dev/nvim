@@ -66,6 +66,7 @@ autocmd('TextYankPost', {
 	end,
 })
 
+-- change NvimTree winbar
 autocmd({ 'BufEnter' }, {
 	group = _G.nikola_group,
 	pattern = '*',
