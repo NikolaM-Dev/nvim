@@ -10,62 +10,72 @@ local nmap = keymap.nmap
 local noremap = keymap.noremap
 local opts = keymap.new_opts
 
+local bufferOptions = {
+	-- When `false`, the buffer won't be created.
+	enabled = true,
+	-- Hexadecimal color code to override the current background color of the buffer. (e.g. #24273A)
+	backgroundColor = nil,
+	-- buffer-scoped options: any `vim.bo` options is accepted here.
+	bo = {
+		filetype = 'no-neck-pain',
+		buftype = 'nofile',
+		bufhidden = 'hide',
+		modifiable = false,
+		buflisted = false,
+		swapfile = false,
+	},
+	-- window-scoped options: any `vim.wo` options is accepted here.
+	wo = {
+		cursorline = false,
+		cursorcolumn = true,
+		number = false,
+		relativenumber = false,
+		foldenable = false,
+		list = false,
+	},
+}
+
 no_neck_pain.setup({
 	-- The width of the focused buffer when enabling NNP.
 	-- If the available window size is less than `width`, the buffer will take the whole screen.
-	width = 120,
+	width = 100,
 	-- Prints useful logs about what event are triggered, and reasons actions are executed.
 	debug = false,
 	-- Disables NNP if the last valid buffer in the list has been closed.
 	disableOnLastBuffer = false,
 	-- When `true`, disabling NNP kills every split/vsplit buffers except the main NNP buffer.
 	killAllBuffersOnDisable = false,
-	-- Options related to the side buffers.
+	--- Common options that are set to both buffers, for option scoped to the `left` and/or `right` buffer, see `buffers.left` and `buffers.right`.
+	--- See |NoNeckPain.bufferOptions|.
 	buffers = {
-		-- The background options of the side buffer(s).
-		background = {
-			-- Hexadecimal color code to override the current background color of the buffer. (e.g. #24273A)
-			-- popular theme are supported by their name:
-			-- - catppuccin-frappe
-			-- - catppuccin-latte
-			-- - catppuccin-macchiato
-			-- - catppuccin-mocha
-			-- - tokyonight-day
-			-- - tokyonight-moon
-			-- - tokyonight-night
-			-- - tokyonight-storm
-			-- - rose-pine
-			-- - rose-pine-moon
-			-- - rose-pine-dawn
-			colorCode = nil,
-		},
-		-- When `false`, the `left` padding buffer won't be created.
-		left = true,
-		-- When `false`, the `right` padding buffer won't be created.
-		right = true,
 		-- When `true`, the side buffers will be named `no-neck-pain-left` and `no-neck-pain-right` respectively.
-		showName = false,
-		-- The buffer options when creating the buffer.
-		options = {
-			-- Buffer-scoped options, below are the default values, but any `vim.bo` options are valid and will be forwarded to the buffer creation.
-			bo = {
-				filetype = 'no-neck-pain',
-				buftype = 'nofile',
-				bufhidden = 'hide',
-				modifiable = false,
-				buflisted = false,
-				swapfile = false,
-			},
-			-- Window-scoped options, below are the default values, but any `vim.wo` options are valid and will be forwarded to the buffer creation.
-			wo = {
-				cursorline = false,
-				cursorcolumn = true,
-				number = false,
-				relativenumber = false,
-				foldenable = false,
-				list = false,
-			},
+		setNames = false,
+		-- Hexadecimal color code to override the current background color of the buffer. (e.g. #24273A)
+		backgroundColor = nil,
+		-- buffer-scoped options: any `vim.bo` options is accepted here.
+		bo = {
+			filetype = 'no-neck-pain',
+			buftype = 'nofile',
+			bufhidden = 'hide',
+			modifiable = false,
+			buflisted = false,
+			swapfile = false,
 		},
+		-- window-scoped options: any `vim.wo` options is accepted here.
+		wo = {
+			cursorline = false,
+			cursorcolumn = true,
+			number = false,
+			relativenumber = false,
+			foldenable = false,
+			list = false,
+		},
+		--- Options applied to the `left` buffer, the options defined here overrides the ones at the root of the `buffers` level.
+		--- See |NoNeckPain.bufferOptions|.
+		left = bufferOptions,
+		--- Options applied to the `right` buffer, the options defined here overrides the ones at the root of the `buffers` level.
+		--- See |NoNeckPain.bufferOptions|.
+		right = bufferOptions,
 	},
 	-- lists supported integrations that might clash with `no-neck-pain.nvim`'s behavior
 	integrations = {
