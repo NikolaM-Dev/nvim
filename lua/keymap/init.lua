@@ -79,9 +79,6 @@ nmap({
 
 	-- rename
 	{ '<leader>s', ':%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>', opts(noremap) },
-
-	-- tt
-	{ '<leader>fm', ':silent !tmux display-popup -E "tt"<CR>', opts(noremap, silent) },
 })
 
 vmap({
