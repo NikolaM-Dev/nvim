@@ -57,11 +57,11 @@ lspsaga.init_lsp_saga({
 	-- you may need to increase this value
 	finder_request_timeout = 1500,
 	finder_action_keys = {
-		open = 'o',
-		vsplit = 's',
-		split = 'i',
+		open = { 'o', '<CR>' },
+		quit = { 'q', '<ESC>' },
+		split = '<C-x>',
 		tabe = 't',
-		quit = 'q',
+		vsplit = '<C-v>',
 	},
 	code_action_keys = {
 		quit = 'q',
