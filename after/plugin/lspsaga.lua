@@ -113,5 +113,4 @@ nmap({
 	{ 'gr', cmd('Lspsaga rename'), opts(noremap, silent) },
 	{ '<leader>dj', cmd('Lspsaga diagnostic_jump_next'), opts(noremap, silent) },
 	{ '<leader>dk', cmd('Lspsaga diagnostic_jump_prev'), opts(noremap, silent) },
-	{ '<Leader>o', cmd('LSoutlineToggle'), opts(noremap, silent) },
 })
