@@ -75,7 +75,7 @@ lspsaga.init_lsp_saga({
 		quit = 'q',
 	},
 	rename_action_quit = '<C-c>',
-	rename_in_select = false,
+	rename_in_select = true,
 	-- show symbols in winbar must nightly
 	symbol_in_winbar = {
 		in_custom = true,
