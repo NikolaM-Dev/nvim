@@ -542,6 +542,11 @@ nvim_web_devicons.set_icon({
 		icon = '',
 		name = 'Tmpl',
 	},
+	Makefile = {
+		color = '#FF5252',
+		icon = '',
+		name = 'Makefile',
+	},
 })
 
 nvim_web_devicons.set_default_icon('', '#42a5f5')
