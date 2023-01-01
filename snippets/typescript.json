@@ -1,0 +1,22 @@
+{
+  "export interface": {
+    "prefix": "ei",
+    "body": "export interface I${1:Foo} {$0}"
+  },
+  "export enum": {
+    "prefix": "ee",
+    "body": "export enum E${1:Foo} {$0}"
+  },
+  "export type": {
+    "prefix": "et",
+    "body": "export type E${1:Foo} = $0;"
+  },
+  "type enum like a key": {
+    "prefix": "telk",
+    "body": "{ [key in ${1:Enum}]: string }"
+  },
+  "type generic with an interface": {
+    "prefix": "tgwi",
+    "body": "[key in keyof ${1:Generic}]: ${1:Generic}[key]"
+  }
+}
