@@ -19,6 +19,10 @@
     "body": "style(${1:scope}): $0",
     "description": "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)"
   },
+  "style change formatting": {
+    "prefix": "scf",
+    "body": "style(${1:scope}): Change formatting"
+  },
   "refactor": {
     "prefix": "refactor",
     "body": "refactor(${1:scope}): $0",
