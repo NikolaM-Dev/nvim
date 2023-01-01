@@ -6,7 +6,7 @@ local options = {
 		nbsp = '␣',
 		precedes = '«',
 		space = ' ',
-		tab = '┆ ',
+		tab = '│ ',
 		trail = '·',
 	},
 	backup = false, -- create backup files
