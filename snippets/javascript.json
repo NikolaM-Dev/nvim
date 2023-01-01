@@ -75,11 +75,11 @@
     "prefix": "l",
     "body": "let ${1:name} = ${2:value}"
   },
-  "const name =  { value }": {
+  "const name = { value }": {
     "prefix": "obj",
     "body": "const ${1:name} = {\n\t$2\n}"
   },
-  "const name =  [ value, ]": {
+  "const name = [ value, ]": {
     "prefix": "arr",
     "body": "const ${1:name} = [${2:value}]"
   },
@@ -110,42 +110,22 @@
   },
   "testBlock": {
     "prefix": "test",
-    "body": [
-      "test('should $1', () => {",
-      "\t$0",
-      "})"
-    ]
+    "body": ["test('should $1', () => {", "\t$0", "})"]
   },
   "testAsyncBlock": {
     "prefix": "testa",
-    "body": [
-      "test('should $1', async () => {",
-      "\t$0",
-      "})"
-    ]
+    "body": ["test('should $1', async () => {", "\t$0", "})"]
   },
   "itBlock": {
     "prefix": "it",
-    "body": [
-      "it('should $1', () => {",
-      "\t$0",
-      "})"
-    ]
+    "body": ["it('should $1', () => {", "\t$0", "})"]
   },
   "itAsyncBlock": {
     "prefix": "ita",
-    "body": [
-      "it('should $1', async () => {",
-      "\t$0",
-      "})"
-    ]
+    "body": ["it('should $1', async () => {", "\t$0", "})"]
   },
   "util function": {
     "prefix": "ut",
-    "body": [
-      "export const ${1:$TM_FILENAME_BASE} = () => {",
-      "\t$0",
-      "}"
-    ]
+    "body": ["export const ${1:$TM_FILENAME_BASE} = () => {", "\t$0", "};"]
   }
 }
