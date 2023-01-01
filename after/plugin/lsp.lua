@@ -99,7 +99,7 @@ vim.diagnostic.config({
 	underline = true,
 	update_in_insert = false,
 	virtual_lines = false,
-	virtual_text = { prefix = '' }, --  
+	virtual_text = { prefix = '🔥' },
 })
 
 vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, {
