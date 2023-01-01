@@ -27,8 +27,17 @@
       },
       {
         "language": "typescriptreact",
+        "path": "./javascript.json"
+      },
+      {
+        "language": "typescriptreact",
         "path": "./typescript.json"
       },
+      {
+        "language": "typescriptreact",
+        "path": "./typescriptreact.json"
+      },
+      {
         "language": "text",
         "path": "./mit.json"
       },
