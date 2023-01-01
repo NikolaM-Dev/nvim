@@ -9,7 +9,7 @@
   },
   "export type": {
     "prefix": "et",
-    "body": "export type E${1:Foo} = $0;"
+    "body": "export type T${1:Foo} = $0"
   },
   "type enum like a key": {
     "prefix": "telk",
