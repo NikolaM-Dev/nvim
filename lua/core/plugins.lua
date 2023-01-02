@@ -87,7 +87,7 @@ return packer.startup(function(use)
 	use('rcarriga/nvim-dap-ui') -- A UI for nvim-dap
 
 	use('lewis6991/gitsigns.nvim') -- Git integration for buffers
-	use('sindrets/diffview.nvim') -- Single tabpage interface for easily cycling through diffs for all modified files for any git rev.
+	use('sindrets/diffview.nvim') -- Single tabpage interface for easily cycling through diffs for all modified files for any git rev
 	use('tpope/vim-fugitive') -- A Git wrapper so awesome, it should be illegal
 
 	use('AckslD/nvim-neoclip.lua') -- Clipboard manager neovim plugin with telescope integration
