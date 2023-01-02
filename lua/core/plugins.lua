@@ -92,6 +92,7 @@ return packer.startup(function(use)
 
 	use('AckslD/nvim-neoclip.lua') -- Clipboard manager neovim plugin with telescope integration
 	use('folke/trouble.nvim') -- A pretty diagnostics, references, telescope results, quickfix and location list to help you solve all the trouble your code is causing
+	use('glepnir/mutchar.nvim') -- A neovim plugin that change type character to other characters accroding rules and filter
 	use({ 'iamcco/markdown-preview.nvim', ft = 'markdown', run = 'cd app && yarn install' }) -- Markdown preview
 	use('kevinhwang91/nvim-ufo') -- Not UFO in the sky, but an ultra fold in Neovim
 	use('lalitmee/browse.nvim') -- Browse for anything using your choice of method
