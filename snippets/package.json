@@ -50,9 +50,11 @@
         "path": "./go.json"
       },
       {
-        "language": "css",
+        "language": [
+          "css",
+          "scss"
+        ],
         "path": "./css.json"
-      },
       }
     ]
   }
