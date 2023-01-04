@@ -107,8 +107,8 @@ return packer.startup(function(use)
 	use('folke/todo-comments.nvim') -- Highlight, list and search todo comments in your projects
 	use('folke/tokyonight.nvim') -- Color scheme for Neovim
 	use('glepnir/galaxyline.nvim') -- Status line
-	use('kyazdani42/nvim-tree.lua') -- Tree view for files
-	use('kyazdani42/nvim-web-devicons') -- Web devicons
+	use('nvim-tree/nvim-tree.lua') -- Tree view for files
+	use('nvim-tree/nvim-web-devicons') -- Web devicons
 	use('NvChad/nvim-colorizer.lua') -- Color highlighter
 	use('p00f/nvim-ts-rainbow') -- Rainbow parentheses for neovim using tree-sitter
 	use({ 'shortcuts/no-neck-pain.nvim', tag = '*' }) -- Dead simple plugin to center the currently focused buffer to the middle of the screen
