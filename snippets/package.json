@@ -6,11 +6,12 @@
         "path": "./gitcommit.json"
       },
       {
-        "language": "javascript",
-        "path": "./javascript.json"
-      },
-      {
-        "language": "javascriptreact",
+        "language": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact"
+        ],
         "path": "./javascript.json"
       },
       {
@@ -18,19 +19,10 @@
         "path": "./javascriptreact.json"
       },
       {
-        "language": "typescript",
-        "path": "./javascript.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./typescript.json"
-      },
-      {
-        "language": "typescriptreact",
-        "path": "./javascript.json"
-      },
-      {
-        "language": "typescriptreact",
+        "language": [
+          "typescript",
+          "typescriptreact"
+        ],
         "path": "./typescript.json"
       },
       {
