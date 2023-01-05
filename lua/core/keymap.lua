@@ -106,7 +106,7 @@ local function map(mod)
 end
 
 keymap.nmap = map('n') -- normal
-keymap.imap = map('i') -- inset
+keymap.imap = map('i') -- insert
 keymap.cmap = map('c') -- command
 keymap.vmap = map('v') -- visual
 keymap.xmap = map('x') -- visual block
