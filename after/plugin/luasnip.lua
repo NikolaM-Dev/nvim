@@ -11,3 +11,15 @@ luasnip.config.set_config({
 pcall(function()
 	require('luasnip.loaders.from_vscode').lazy_load({ paths = { './snippets/' } })
 end)
+
+vim.keymap.set({ 'i', 's' }, '<C-l>', function()
+	if luasnip.choice_active() then
+		luasnip.change_choice(1)
+	end
+end)
+
+vim.keymap.set({ 'i', 's' }, '<C-h>', function()
+	if luasnip.choice_active() then
+		luasnip.change_choice(-1)
+	end
+end)
