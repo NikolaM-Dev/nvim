@@ -111,7 +111,7 @@ return packer.startup(function(use)
 	use('kyazdani42/nvim-web-devicons') -- Web devicons
 	use('NvChad/nvim-colorizer.lua') -- Color highlighter
 	use('p00f/nvim-ts-rainbow') -- Rainbow parentheses for neovim using tree-sitter
-	use('shortcuts/no-neck-pain.nvim') -- Dead simple plugin to center the currently focused buffer to the middle of the screen
+	use({ 'shortcuts/no-neck-pain.nvim', tag = '*' }) -- Dead simple plugin to center the currently focused buffer to the middle of the screen
 
 	use('aserowy/tmux.nvim') -- About tmux integration for nvim features pane movement and resizing
 	use('fedepujol/move.nvim') -- Gain the power to move lines and blocks and auto-indent them
