@@ -58,7 +58,6 @@ return packer.startup(function(use)
 
 	use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
 	use('nvim-treesitter/nvim-treesitter-context') -- Show code context
-	use('nvim-treesitter/nvim-treesitter-textobjects') -- Syntax aware text-objects, select, move, swap, and peek support
 	use('JoosepAlviste/nvim-ts-context-commentstring') -- Commentstring based on the cursor location in a file
 
 	use('glepnir/lspsaga.nvim') -- Lsp puglin by glepnir
