@@ -99,7 +99,6 @@ return packer.startup(function(use)
 	use('mbbill/undotree') -- The undo history visualizer for VIM
 	use('NTBBloodbath/rest.nvim') -- Rest client
 	use('potamides/pantran.nvim') -- Use your favorite machine translation engines without having to leave your favorite editor
-	use('tpope/vim-sleuth') -- Heuristically set buffer options
 	use('windwp/nvim-spectre') -- Find the enemy and replace them with dark power
 	use('windwp/nvim-ts-autotag') -- Use treesitter to auto close and auto rename html tag
 
