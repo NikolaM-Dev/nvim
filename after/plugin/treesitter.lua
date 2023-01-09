@@ -38,15 +38,4 @@ configs.setup({
 	autotag = { enable = true },
 	context_commentstring = { enable = true },
 	rainbow = { enable = true, extended_mode = false },
-	textobjects = {
-		select = {
-			enable = true,
-			keymaps = {
-				['af'] = '@function.outer',
-				['if'] = '@function.inner',
-				['ac'] = '@class.outer',
-				['ic'] = '@class.inner',
-			},
-		},
-	},
 })
