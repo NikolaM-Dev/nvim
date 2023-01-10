@@ -19,7 +19,9 @@ comment.setup({
 	-- Hook functions to be executed at certain stage of commenting
 	hooks = {
 		-- Before successful commenting. Does nothing by default.
-		pre = function() end,
+		pre = function()
+			require('ts_context_commentstring.internal').update_commentstring()
+		end,
 		-- After successful commenting. Does nothing by default.
 		post = function() end,
 	},
