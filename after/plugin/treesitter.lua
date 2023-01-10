@@ -39,7 +39,7 @@ configs.setup({
 		additional_vim_regex_highlighting = false,
 	},
 	autotag = { enable = true },
-	context_commentstring = { enable = true },
+	context_commentstring = { enable = true, enable_autocmd = false },
 	indent = { enable = true },
 	rainbow = { enable = true, extended_mode = false },
 })
