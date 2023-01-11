@@ -62,7 +62,7 @@ return packer.startup(function(use)
 
 	use('glepnir/lspsaga.nvim') -- Lsp puglin by glepnir
 	use('https://git.sr.ht/~whynothugo/lsp_lines.nvim') -- Renders diagnostics using virtual lines on top of the real line of cod
-	use('jayp0521/mason-null-ls.nvim') -- Mason-null-ls bridges mason.nvim with the null-ls
+	use('jay-babu/mason-null-ls.nvim') -- Mason-null-ls bridges mason.nvim with the null-ls
 	use('jose-elias-alvarez/null-ls.nvim') -- Inject LSP diagnostics, code actions, and more via Lua
 	use('jose-elias-alvarez/typescript.nvim') -- A Lua plugin, written in TypeScript, to write TypeScript
 	use('neovim/nvim-lspconfig') -- Configurations for Nvim LSP
