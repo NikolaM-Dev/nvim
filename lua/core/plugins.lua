@@ -102,6 +102,7 @@ return packer.startup(function(use)
 	use('windwp/nvim-spectre') -- Find the enemy and replace them with dark power
 	use('windwp/nvim-ts-autotag') -- Use treesitter to auto close and auto rename html tag
 
+	use('b0o/incline.nvim') -- Floating statuslines for Neovim
 	use('folke/todo-comments.nvim') -- Highlight, list and search todo comments in your projects
 	use('folke/tokyonight.nvim') -- Color scheme for Neovim
 	use('glepnir/galaxyline.nvim') -- Status line
