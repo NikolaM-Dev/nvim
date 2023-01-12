@@ -3,6 +3,8 @@ if not status_ok then
 	return
 end
 
+local colors = require('tokyonight.colors').setup()
+
 incline.setup({
 	debounce_threshold = {
 		falling = 50,
@@ -14,7 +16,7 @@ incline.setup({
 		only_win = false,
 	},
 	highlight = {
-		groups = { InclineNormal = { guifg = '#c0caf5', guibg = '#24283b' } },
+		groups = { InclineNormal = { guifg = colors.fg, guibg = colors.bg } },
 	},
 	ignore = {
 		buftypes = 'special',
@@ -29,7 +31,7 @@ incline.setup({
 		local modified = vim.api.nvim_buf_get_option(props.buf, 'modified') and 'ﭦ  ' or ''
 
 		return {
-			{ modified, guifg = '#ff9e64' },
+			{ modified, guifg = colors.orange },
 			{ ft_icon, guifg = ft_color },
 			{ ' ' },
 			{ filename },
