@@ -109,8 +109,11 @@ lspsaga.init_lsp_saga({
 
 nmap({
 	{ 'ga', cmd('Lspsaga code_action'), opts(noremap, silent) },
+	{ 'gd', cmd('Lspsaga goto_definition'), opts(noremap, silent) },
 	{ 'gh', cmd('Lspsaga lsp_finder'), opts(noremap, silent) },
 	{ 'gr', cmd('Lspsaga rename'), opts(noremap, silent) },
 	{ '<leader>dj', cmd('Lspsaga diagnostic_jump_next'), opts(noremap, silent) },
 	{ '<leader>dk', cmd('Lspsaga diagnostic_jump_prev'), opts(noremap, silent) },
 })
+
+vim.keymap.set({ 'n', 't' }, '<A-d>', cmd('Lspsaga term_toggle'))
