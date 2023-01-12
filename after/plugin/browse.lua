@@ -17,6 +17,8 @@ browse.setup({
 local bookmarks = {
 	'https://github.com/adalessa/dotfiles/tree/main/nvim/.config/nvim',
 	'https://github.com/ChristianChiarulli/nvim',
+	'https://github.com/folke/dot',
+	'https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors.lua',
 	'https://github.com/glepnir/nvim',
 	'https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md',
 	'https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md',
