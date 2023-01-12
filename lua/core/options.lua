@@ -45,7 +45,6 @@ local options = {
 	undodir = os.getenv('HOME') .. '/.cache/nvim/undodir', -- undodir path
 	undofile = true, -- make undo file
 	updatetime = 50, -- improve user experience updating more frequently
-	winbar = '%=%m %f', -- The window bar is a bar that's shown at the top of every window with it enabled
 	wrap = false, -- wrap lines
 	writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 }
