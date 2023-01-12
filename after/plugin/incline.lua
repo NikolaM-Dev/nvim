@@ -26,7 +26,7 @@ incline.setup({
 		wintypes = 'special',
 	},
 	render = function(props)
-		local filename = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ':t')
+		local filename = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ':p:.')
 		local ft_icon, ft_color = require('nvim-web-devicons').get_icon_color(filename)
 		local modified = vim.api.nvim_buf_get_option(props.buf, 'modified') and 'ﭦ  ' or ''
 
