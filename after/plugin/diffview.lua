@@ -20,8 +20,8 @@ diffview.setup({
 	show_help_hints = false, -- Show hints for how to open the help panel
 	watch_index = true, -- Update views and index buffers when the git index changes.
 	icons = { -- Only applies when use_icons is true.
-		folder_closed = '',
-		folder_open = '',
+		folder_closed = '',
+		folder_open = 'ﱮ',
 	},
 	signs = {
 		done = '',
