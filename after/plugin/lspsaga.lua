@@ -3,6 +3,7 @@ if not status_ok then
 	return
 end
 
+local colors = require('tokyonight.colors').setup()
 local keymap = require('core.keymap')
 
 local cmd = keymap.cmd
@@ -46,19 +47,31 @@ lspsaga.setup({
 		show_file = true,
 		folder_level = 1,
 	},
-	-- show outline
-	show_outline = {
-		win_position = 'right',
-		--set special filetype win that outline window split.like NvimTree neotree
-		-- defx, db_ui
-		win_with = '',
-		win_width = 30,
-		auto_enter = true,
-		auto_preview = true,
-		virt_text = '┃',
-		jump_key = 'o',
-		-- auto refresh when change buffer
-		auto_refresh = true,
+	ui = {
+		theme = 'round',
+		border = 'rounded',
+		winblend = 0,
+		expand = '',
+		collapse = '',
+		preview = ' ',
+		code_action = '💡',
+		diagnostic = '🔴 ',
+		incoming = ' ',
+		outgoing = ' ',
+		colors = {
+			normal_bg = colors.bg,
+			title_bg = colors.blue,
+			black = colors.bg,
+			blue = colors.blue,
+			cyan = colors.cyan,
+			green = colors.green,
+			magenta = colors.magenta,
+			orange = colors.orange,
+			purple = colors.purple,
+			red = colors.bg,
+			white = colors.fg,
+			yellow = colors.yellow,
+		},
 	},
 })
 
