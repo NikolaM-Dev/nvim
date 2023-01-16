@@ -53,8 +53,9 @@ return packer.startup(function(use)
 	use('nvim-lua/popup.nvim') -- An implementation of the Popup API from vim in Neovim
 	use('tpope/vim-repeat') -- Enable repeating supported plugin maps with "."
 
-	use('nvim-telescope/telescope.nvim') -- About Find, Filter, Preview, Pick. All lua, all the time
+	use('danielfalk/smart-open.nvim') -- Neovim plugin for fast file-finding
 	use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }) -- About FZF sorter for telescope written in c
+	use('nvim-telescope/telescope.nvim') -- About Find, Filter, Preview, Pick. All lua, all the time
 
 	use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
 	use('nvim-treesitter/nvim-treesitter-context') -- Show code context
