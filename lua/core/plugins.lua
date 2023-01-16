@@ -113,7 +113,6 @@ return packer.startup(function(use)
 	use({ 'shortcuts/no-neck-pain.nvim', tag = '*' }) -- Dead simple plugin to center the currently focused buffer to the middle of the screen
 
 	use('aserowy/tmux.nvim') -- About tmux integration for nvim features pane movement and resizing
-	use('fedepujol/move.nvim') -- Gain the power to move lines and blocks and auto-indent them
 	use('mg979/vim-visual-multi') -- Multi cursor
 	use({ 'phaazon/hop.nvim', branch = 'v2' }) -- Neovim motions on speed!
 	use('ThePrimeagen/harpoon') -- ThePrimagen tool for productivie in files
