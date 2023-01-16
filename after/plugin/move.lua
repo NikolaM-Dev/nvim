@@ -1,19 +1,20 @@
-local keymap = require('core.keymap')
+local status_ok, move = pcall(require, 'mini.move')
+if not status_ok then
+	return
+end
 
-local nmap, vmap = keymap.nmap, keymap.vmap
-local noremap, silent = keymap.noremap, keymap.silent
-local opts = keymap.new_opts
+move.setup({
+	mappings = {
+		-- Move visual selection in Visual mode. Defaults are Alt (Meta) + hjkl.
+		down = '<M-J>',
+		left = '<M-H>',
+		right = '<M-L>',
+		up = '<M-K>',
 
-nmap({
-	{ '<A-H>', ':MoveHChar(-1)<CR>', opts(noremap, silent) },
-	{ '<A-J>', ':MoveLine(1)<CR>', opts(noremap, silent) },
-	{ '<A-K>', ':MoveLine(-1)<CR>', opts(noremap, silent) },
-	{ '<A-L>', ':MoveHChar(1)<CR>', opts(noremap, silent) },
-})
-
-vmap({
-	{ '<A-H>', ':MoveHBlock(-1)<CR>', opts(noremap, silent) },
-	{ '<A-J>', ':MoveBlock(1)<CR>', opts(noremap, silent) },
-	{ '<A-K>', ':MoveBlock(-1)<CR>', opts(noremap, silent) },
-	{ '<A-L>', ':MoveHBlock(1)<CR>', opts(noremap, silent) },
+		-- Move current line in Normal mode
+		line_down = '<M-J>',
+		line_left = '<M-H>',
+		line_right = '<M-L>',
+		line_up = '<M-K>',
+	},
 })
