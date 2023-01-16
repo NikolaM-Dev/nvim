@@ -83,11 +83,18 @@ telescope.setup({
 			case_mode = 'smart_case', -- or "ignore_case" or "respect_case"
 			-- the default case_mode is "smart_case"
 		},
+		{
+			show_scores = false,
+			max_unindexed = 6500,
+			ignore_patterns = { '*.git/*', '*/tmp/*' },
+			disable_devicons = false,
+		},
 	},
 })
 
 telescope.load_extension('fzf')
 telescope.load_extension('neoclip')
+telescope.load_extension('smart_open')
 
 nmap({
 	{ '<C-f>', cmd('Telescope current_buffer_fuzzy_find'), opts(noremap, silent) },
