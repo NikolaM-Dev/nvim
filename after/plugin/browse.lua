@@ -15,6 +15,7 @@ browse.setup({
 })
 
 local bookmarks = {
+	'https://docs.payvalida.com/documentacion',
 	'https://github.com/adalessa/dotfiles/tree/main/nvim/.config/nvim',
 	'https://github.com/ChristianChiarulli/nvim',
 	'https://github.com/folke/dot',
