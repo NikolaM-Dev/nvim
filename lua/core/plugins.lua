@@ -116,6 +116,7 @@ return packer.startup(function(use)
 	use('mg979/vim-visual-multi') -- Multi cursor
 	use({ 'phaazon/hop.nvim', branch = 'v2' }) -- Neovim motions on speed!
 	use('ThePrimeagen/harpoon') -- ThePrimagen tool for productivie in files
+	use('wellle/targets.vim') -- Vim plugin that provides additional text objects
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
