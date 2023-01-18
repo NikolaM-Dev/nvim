@@ -85,6 +85,7 @@ cmp.setup({
 			return vim_item
 		end,
 	},
+	performance = { debounce = 40, throttle = 40, fetching_timeout = 300 },
 	mapping = cmp.mapping.preset.insert({
 		['<Tab>'] = cmp.mapping(function(fallback)
 			if cmp.visible() then
