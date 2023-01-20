@@ -547,6 +547,31 @@ nvim_web_devicons.set_icon({
 		icon = '',
 		name = 'Makefile',
 	},
+	['vite.config.js'] = {
+		color = '#ffab00',
+		icon = '',
+		name = 'ViteConfig',
+	},
+	['vite.config.ts'] = {
+		color = '#ffab00',
+		icon = '',
+		name = 'ViteConfigTs',
+	},
+	['nest-cli.json'] = {
+		color = '#ff5252',
+		icon = '',
+		name = 'NestCli',
+	},
+	['tailwind.config.js'] = {
+		color = '#4db6ac',
+		icon = '󱏿',
+		name = 'TailwindConfig',
+	},
+	['babel.config.js'] = {
+		color = '#fdd835',
+		icon = '󰨥',
+		name = 'BabelConfig',
+	},
 })
 
 nvim_web_devicons.set_default_icon('', '#42a5f5')
