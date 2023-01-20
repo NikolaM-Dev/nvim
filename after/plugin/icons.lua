@@ -208,7 +208,7 @@ nvim_web_devicons.set_icon({
 	},
 	['.editorconfig'] = {
 		color = '#b5c3c9',
-		icon = 'ﯯ',
+		icon = '',
 		name = 'EditorConfig',
 	},
 	md = {
@@ -343,33 +343,33 @@ nvim_web_devicons.set_icon({
 	},
 	['.eslintignore'] = {
 		color = '#7986cb',
-		icon = '',
+		icon = '󰱺',
 		name = 'EslintIgnore',
 	},
 	['.eslintrc'] = {
 		color = '#7986cb',
-		icon = '',
+		icon = '󰱺',
 		name = 'Eslint',
 	},
 	['.eslintrc.json'] = {
 		color = '#7986cb',
-		icon = '',
+		icon = '󰱺',
 		name = 'EslintJson',
 	},
 
 	['.eslintrc.js'] = {
 		color = '#7986cb',
-		icon = '',
+		icon = '󰱺',
 		name = 'EslintJs',
 	},
 	['.prettierrc'] = {
 		color = '#56b3b4',
-		icon = '',
+		icon = '',
 		name = 'Prettier',
 	},
 	['.prettierignore'] = {
 		color = '#56b3b4',
-		icon = '',
+		icon = '',
 		name = 'PrettierIgnore',
 	},
 	['angular.json'] = {
