@@ -166,6 +166,11 @@ nvim_web_devicons.set_icon({
 		icon = '',
 		name = 'PackageLock',
 	},
+	['pnpm-lock.yaml'] = {
+		icon = '',
+		color = '#ffb300',
+		name = 'PnpmLock',
+	},
 	['yarn.lock'] = {
 		color = '#0288d1',
 		icon = '',
