@@ -68,7 +68,7 @@ lspsaga.setup({
 			magenta = colors.magenta,
 			orange = colors.orange,
 			purple = colors.purple,
-			red = colors.bg,
+			red = colors.red,
 			white = colors.fg,
 			yellow = colors.yellow,
 		},
