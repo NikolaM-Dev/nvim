@@ -1,6 +1,5 @@
 return {
 	'stevearc/dressing.nvim',
-	lazy = true,
 	init = function()
 		---@diagnostic disable-next-line: duplicate-set-field
 		vim.ui.select = function(...)
@@ -12,5 +11,12 @@ return {
 			require('lazy').load({ plugins = { 'dressing.nvim' } })
 			return vim.ui.input(...)
 		end
+
+		require('dressing').setup({
+			input = {
+				relative = 'editor',
+				prefer_width = 60,
+			},
+		})
 	end,
 }
