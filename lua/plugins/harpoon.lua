@@ -53,4 +53,7 @@ return {
 			},
 		}
 	end,
+	config = function()
+		require('harpoon').setup()
+	end,
 }
