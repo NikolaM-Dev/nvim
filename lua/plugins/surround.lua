@@ -1,7 +1,7 @@
 return {
 	'echasnovski/mini.surround',
 	event = 'VeryLazy',
-	config = function(_, opts)
-		require('mini.surround').setup(opts)
+	config = function()
+		require('mini.surround').setup()
 	end,
 }
