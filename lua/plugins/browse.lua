@@ -29,7 +29,5 @@ return {
 			end,
 		},
 	},
-	config = function()
-		require('browse').setup()
-	end,
+	config = true,
 }
