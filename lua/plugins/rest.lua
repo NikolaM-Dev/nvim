@@ -6,4 +6,7 @@ return {
 		{ '<leader>rp', '<cmd>RestNvimPreview<cr>', desc = 'Preview the request cURL command' },
 		{ '<leader>rl', '<cmd>RestNvimLast<cr>', desc = 'Re-Run the last request' },
 	},
+	config = function()
+		require('rest-nvim').setup()
+	end,
 }
