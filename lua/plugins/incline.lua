@@ -1,10 +1,10 @@
 return {
 	'b0o/incline.nvim',
 	event = 'BufReadPre',
-	opts = function()
+	config = function()
 		local c = require('tokyonight.colors').setup()
 
-		return {
+		require('incline').setup({
 			highlight = { groups = { InclineNormal = { guifg = c.fg, guibg = c.bg } } },
 			render = function(props)
 				local filename = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ':p:.')
@@ -22,6 +22,6 @@ return {
 				margin = { horizontal = 0, vertical = 0 },
 				padding = { left = 1, right = 0 },
 			},
-		}
+		})
 	end,
 }
