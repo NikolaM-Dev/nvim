@@ -17,7 +17,7 @@ require('lazy').setup('plugins', {
 	defaults = { lazy = true },
 	install = { colorscheme = { 'tokyonight' } },
 	performance = {
-		cache = { enabled = false },
+		cache = { enabled = true },
 		rtp = {
 			disabled_plugins = {
 				'2html_plugin',
