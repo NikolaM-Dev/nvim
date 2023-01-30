@@ -9,4 +9,7 @@ return {
 			desc = 'Replace in files (Spectre)',
 		},
 	},
+	config = function()
+		require('spectre').setup()
+	end,
 }
