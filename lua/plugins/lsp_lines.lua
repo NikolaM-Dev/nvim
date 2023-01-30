@@ -8,4 +8,7 @@ return {
 			end,
 		},
 	},
+	config = function()
+		require('lsp_lines').setup()
+	end,
 }
