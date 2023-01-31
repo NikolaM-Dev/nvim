@@ -31,7 +31,7 @@ map('v', '<', '<gv')
 map('v', '>', '>gv')
 
 -- Sort
-map({ 'n', 'v' }, '<leader>s', '<cmd>!sort<cr>', { desc = 'Sort' })
+map('v', '<leader>s', ':!sort<cr>', { desc = 'Sort' })
 
 -- Save
 map('n', '<C-s>', '<cmd>write<cr>', { desc = 'Write' })
