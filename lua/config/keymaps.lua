@@ -61,4 +61,5 @@ map('n', 'N', 'Nzzzv', { desc = 'Previous centralized' })
 map('n', 'n', 'nzzzv', { desc = 'Next search centralized' })
 
 -- Lazy
-map('n', '<leader>l', '<cmd>:Lazy<cr>', { desc = 'Lazy' })
+map('n', '<leader>lp', '<cmd>Lazy profile<cr>', { desc = 'Lazy profile' })
+map('n', '<leader>lu', '<cmd>Lazy update<cr>', { desc = 'Lazy update' })
