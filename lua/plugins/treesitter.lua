@@ -5,7 +5,6 @@ return {
 		event = 'BufReadPost',
 		dependencies = {
 			'mrjones2014/nvim-ts-rainbow',
-			'nvim-treesitter/nvim-treesitter-context',
 			'windwp/nvim-ts-autotag',
 		},
 		keys = {
