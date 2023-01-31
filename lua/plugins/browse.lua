@@ -1,6 +1,6 @@
 local bookmarks = {
 	'https://docs.payvalida.com/documentacion',
-	'https://github.com/adalessa/dotfiles/tree/main/nvim/.config/nvim',
+	'https://github.com/adalessa/dotfiles/tree/lazy/nvim/.config/nvim',
 	'https://github.com/ChristianChiarulli/nvim',
 	'https://github.com/folke/dot',
 	'https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors.lua',
