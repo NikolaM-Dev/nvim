@@ -26,6 +26,7 @@ return {
 					end,
 				},
 				auto_install = true,
+				autotag = { enable = true },
 				context_commentstring = { enable = true, enable_autocmd = false },
 				ensure_installed = 'all',
 				indent = { enable = true },
