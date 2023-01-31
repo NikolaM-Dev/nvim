@@ -156,33 +156,6 @@ return {
 		end,
 	},
 
-	-- formatters
-	{
-		'jose-elias-alvarez/null-ls.nvim',
-		event = 'BufReadPre',
-		dependencies = { 'mason.nvim' },
-		keys = { { '<leader>cN', '<cmd>NullLsInfo<cr>', desc = 'Null-LS Info' } },
-		opts = function()
-			local nls = require('null-ls')
-			return {
-				sources = {
-					nls.builtins.formatting.black.with({ extra_args = { '--fast' } }),
-					nls.builtins.formatting.shfmt,
-					nls.builtins.formatting.deno_fmt,
-					nls.builtins.diagnostics.proselint,
-				},
-				nls.register({
-					name = 'more_actions',
-					method = { nls.methods.CODE_ACTION },
-					filetypes = { '_all' },
-					generator = {
-						fn = require('ts-node-action').available_actions,
-					},
-				}),
-			}
-		end,
-	},
-
 	-- cmdline tools and lsp servers
 	{
 
