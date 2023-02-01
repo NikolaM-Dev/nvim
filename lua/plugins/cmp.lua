@@ -3,16 +3,16 @@ return {
 	event = 'InsertEnter',
 	dependencies = {
 		'hrsh7th/cmp-buffer',
+		'hrsh7th/cmp-calc',
 		'hrsh7th/cmp-cmdline',
+		'hrsh7th/cmp-nvim-lsp-signature-help',
 		'hrsh7th/cmp-nvim-lsp',
 		'hrsh7th/cmp-nvim-lua',
 		'hrsh7th/cmp-path',
-		'jalvesaq/cmp-nvim-r',
+		'lukas-reineke/cmp-rg',
 		'saadparwaiz1/cmp_luasnip',
-		'max397574/cmp-greek',
-		'hrsh7th/cmp-emoji',
+		{ 'jackieaskins/cmp-emmet', build = 'npm run release' },
 	},
-
 	config = function()
 		local check_backspace = function()
 			local col = vim.fn.col('.') - 1
@@ -20,69 +20,51 @@ return {
 		end
 
 		local has_words_before = function()
+			---@diagnostic disable-next-line: deprecated
 			local line, col = unpack(vim.api.nvim_win_get_cursor(0))
 			return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match('%s') == nil
 		end
 
 		local kind_icons = {
-			Text = '',
-			Method = 'm',
-			Function = '',
-			Constructor = '',
-			Field = '',
-			Variable = '',
-			Class = '',
-			Interface = '',
-			Module = '',
-			Property = '',
-			Unit = '',
-			Value = '',
-			Enum = '',
-			Keyword = '',
-			Snippet = '',
-			Color = '',
+			Class = '',
+			Color = '',
+			Constant = '',
+			Constructor = '',
+			Enum = '',
+			EnumMember = '',
+			Event = '',
+			Field = '',
 			File = '',
-			Reference = '',
-			Folder = '',
-			EnumMember = '',
-			Constant = '',
-			Struct = '',
-			Event = '',
+			Folder = 'ﱮ',
+			Function = '',
+			Interface = '',
+			Keyword = '',
+			Method = '',
+			Module = '',
 			Operator = '',
+			Property = '',
+			Reference = '',
+			Snippet = '',
+			Struct = '',
+			Text = '',
 			TypeParameter = '',
+			Unit = '',
+			Value = '',
+			Variable = '',
 		}
 
-		-- Setup nvim-cmp.
 		local cmp = require('cmp')
 		local luasnip = require('luasnip')
 
 		cmp.setup({
-			enabled = function()
-				-- disable autocompletion in prompt (wasn't playing well with telescope)
-				local buftype = vim.api.nvim_buf_get_option(0, 'buftype')
-				if buftype == 'prompt' then
-					return false
-				end
-
-				local context = require('cmp.config.context')
-				-- disable autocompletion in comments
-				return not context.in_treesitter_capture('comment') and not context.in_syntax_group('Comment')
-			end,
-
-			completion = {
-				completeopt = 'menu,menuone,noselect',
-			},
 			snippet = {
 				expand = function(args)
-					require('luasnip').lsp_expand(args.body)
+					luasnip.lsp_expand(args.body)
 				end,
 			},
+			completion = { completeopt = 'menu,menuone,noselect' },
+			performance = { debounce = 40, throttle = 40, fetching_timeout = 300 },
 			mapping = cmp.mapping.preset.insert({
-				['<C-b>'] = cmp.mapping.scroll_docs(-4),
-				['<C-f>'] = cmp.mapping.scroll_docs(4),
-				['<C-Space>'] = cmp.mapping.complete(),
-				['<C-e>'] = cmp.mapping.abort(),
-				['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 				['<Tab>'] = cmp.mapping(function(fallback)
 					if cmp.visible() then
 						cmp.select_next_item()
@@ -103,51 +85,31 @@ return {
 						fallback()
 					end
 				end, { 'i', 's' }),
+				['<C-c>'] = cmp.mapping.abort(),
+				['<C-d>'] = cmp.mapping.scroll_docs(4),
+				['<C-Space>'] = cmp.mapping.complete(),
+				['<C-u>'] = cmp.mapping.scroll_docs(-4),
+				['<CR>'] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 			}),
 			sources = cmp.config.sources({
 				{ name = 'nvim_lsp', max_item_count = 10 },
 				{ name = 'nvim_lua' },
-				{
-					name = 'buffer',
-					-- get words from visible buffers
-					option = {
-						keyword_length = 5,
-						max_item_count = 3,
-						get_bufnrs = function()
-							local bufs = {}
-							for _, win in ipairs(vim.api.nvim_list_wins()) do
-								bufs[vim.api.nvim_win_get_buf(win)] = true
-							end
-							return vim.tbl_keys(bufs)
-						end,
-					},
-				},
-				{ name = 'cmp_nvim_r' },
-				{ name = 'luasnip', keyword_length = 3, max_item_count = 3 },
+				{ name = 'luasnip', max_item_count = 3 },
+				{ name = 'emmet' },
+				{ name = 'nvim_lsp_signature_help' },
+				{ name = 'buffer' },
 				{ name = 'path' },
-				{ name = 'greek' },
-				{ name = 'emoji' },
+				{ name = 'calc' },
 			}),
 			formatting = {
-				fields = { 'kind', 'abbr', 'menu' },
-				format = function(entry, vim_item)
-					vim_item.kind = string.format('%s', kind_icons[vim_item.kind])
-					vim_item.menu = ({
-						nvim_lsp = '[LSP]',
-						luasnip = '[Snippet]',
-						buffer = '[Buffer]',
-						path = '[Path]',
-						cmp_nvim_r = '[R]',
-						nvim_lua = '[Lua]',
-						greek = '[Greek]',
-						emoji = '[Emoji]',
-					})[entry.source.name]
+				format = function(_, vim_item)
+					vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind)
 					return vim_item
 				end,
 			},
 			window = {
-				documentation = cmp.config.window.bordered(),
-				completion = cmp.config.window.bordered(),
+				documentation = { border = 'rounded' },
+				completion = { border = 'rounded', scrollbar = false },
 			},
 			experimental = {
 				ghost_text = {
@@ -155,17 +117,28 @@ return {
 				},
 			},
 		})
+
+		cmp.setup.filetype('gitcommit', {
+			sources = cmp.config.sources({
+				{ name = 'luasnip' },
+				{ name = 'buffer' },
+				{ name = 'rg' },
+			}),
+		})
+
 		cmp.setup.cmdline({ '/', '?' }, {
 			mapping = cmp.mapping.preset.cmdline(),
 			sources = {
-				{ name = 'buffer' },
+				{ name = 'buffer', max_item_count = 10 },
+				{ name = 'rg', max_item_count = 10 },
 			},
 		})
+
 		cmp.setup.cmdline(':', {
 			mapping = cmp.mapping.preset.cmdline(),
 			sources = cmp.config.sources({
 				{ name = 'path' },
-				{ name = 'cmdline' },
+				{ name = 'cmdline', max_item_count = 10 },
 			}),
 		})
 	end,
