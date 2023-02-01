@@ -9,7 +9,7 @@ function M.setup_signs()
 	end
 end
 
-function M.setup_ui()
+function M.setup_lsp()
 	require('lspconfig.ui.windows').default_options.border = 'rounded'
 
 	vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, {
@@ -21,6 +21,11 @@ function M.setup_ui()
 		focusable = false,
 		relative = 'cursor',
 	})
+end
+
+function M.setup()
+	M.setup_lsp()
+	M.setup_signs()
 end
 
 return M
