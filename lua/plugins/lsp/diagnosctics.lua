@@ -1,6 +1,6 @@
 local M = {}
 
-function M.setup_diagnostic()
+function M.setup()
 	local diagnostics = {
 		severity_sort = true,
 		virtual_text = { prefix = '🔥', spacing = 2 },
