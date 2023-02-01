@@ -11,6 +11,7 @@ local bookmarks = {
 	'https://github.com/NikolaM-Dev/dotfiles',
 	'https://github.com/rockerBOO/awesome-neovim',
 	'https://github.com/ThePrimeagen/init.lua',
+	'https://github.com/wuelnerdotexe/nvim',
 	'https://mail.google.com/mail/u/0/#inbox',
 	'https://mail.google.com/mail/u/1/#inbox',
 	'https://main.d2xuop51ekcwbf.amplifyapp.com',
