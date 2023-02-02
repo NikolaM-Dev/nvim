@@ -90,7 +90,27 @@ autocmd('BufWinEnter', {
 		vim.cmd.loadview({ mods = { emsg_silent = true } })
 	end,
 })
--- Help in vertical split
+
+-- q to quit these filetypes
+autocmd({ 'FileType' }, {
+	pattern = {
+		'checkhealth',
+		'help',
+		'lspinfo',
+		'man',
+		'notify',
+		'PlenaryTestPopup',
+		'qf',
+		'spectre_panel',
+		'startuptime',
+		'tsplayground',
+	},
+	callback = function(event)
+		vim.bo[event.buf].buflisted = false
+		vim.keymap.set('n', 'q', '<cmd>close<cr>', { buffer = event.buf, silent = true })
+	end,
+})
+
 -- Open in vertical split
 autocmd({ 'FileType' }, {
 	group = _G.nikola_group,
