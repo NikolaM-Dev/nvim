@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
 	spec = {
 		{ import = 'plugins' },
+		{ import = 'plugins.langs.typescript' },
 	},
 	change_detection = { enabled = false, notify = false },
 	checker = { enabled = true, notify = false },
