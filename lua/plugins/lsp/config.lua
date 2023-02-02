@@ -47,10 +47,24 @@ function M.on_attach(on_attach)
 	})
 end
 
-function M.setup_stuffs()
-	setup_signs()
-	setup_lsp_handlers()
-	setup_diagnostics()
+local function setup(server)
+	local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
+	local server_opts = M.servers[server] or {}
+
+	server_opts.capabilities = capabilities
+
+	if M.setup[server] then
+		if M.setup[server](server, server_opts) then
+			return
+		end
+	elseif M.setup['*'] then
+		if M.setup['*'](server, server_opts) then
+			return
+		end
+	end
+
+	require('lspconfig')[server].setup(server_opts)
+end
 end
 
 return M
