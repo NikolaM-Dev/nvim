@@ -2,22 +2,19 @@ return {
 	'nvim-lualine/lualine.nvim',
 	event = 'VeryLazy',
 	config = function()
-
--- Color table for highlights
--- stylua: ignore
-local colors = {
-  bg       = '#202328',
-  fg       = '#bbc2cf',
-  yellow   = '#ECBE7B',
-  cyan     = '#008080',
-  darkblue = '#081633',
-  green    = '#98be65',
-  orange   = '#FF8800',
-  violet   = '#a9a1e1',
-  magenta  = '#c678dd',
-  blue     = '#51afef',
-  red      = '#ec5f67',
-}
+		local colors = {
+			bg = '#202328',
+			blue = '#51afef',
+			cyan = '#008080',
+			darkblue = '#081633',
+			fg = '#bbc2cf',
+			green = '#98be65',
+			magenta = '#c678dd',
+			orange = '#FF8800',
+			red = '#ec5f67',
+			violet = '#a9a1e1',
+			yellow = '#ECBE7B',
+		}
 
 		local conditions = {
 			buffer_not_empty = function()
