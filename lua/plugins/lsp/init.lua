@@ -15,6 +15,7 @@ return {
 				cssls = {},
 				gopls = {},
 				html = {},
+				jsonls = {},
 				sumneko_lua = { settings = { Lua = { telemetry = { enable = false } } } },
 				tailwindcss = {},
 				vimls = {},
