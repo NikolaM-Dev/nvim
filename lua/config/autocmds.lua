@@ -34,19 +34,10 @@ autocmd({ 'BufWinEnter' }, {
 	end,
 })
 
--- vite qa enviroment
+-- vite enviroment
 autocmd({ 'BufWinEnter' }, {
 	group = _G.nikola_group,
-	pattern = '.env.testing',
-	callback = function()
-		vim.api.nvim_command('set filetype=sh')
-	end,
-})
-
--- vite production enviroment
-autocmd({ 'BufWinEnter' }, {
-	group = _G.nikola_group,
-	pattern = '.env.production',
+	pattern = '.env.*',
 	callback = function()
 		vim.api.nvim_command('set filetype=sh')
 	end,
