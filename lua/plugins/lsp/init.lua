@@ -7,54 +7,10 @@ return {
 			{ 'folke/neodev.nvim', opts = { experimental = { pathStrict = true } } },
 			'williamboman/mason-lspconfig.nvim',
 		},
+		---@class PluginLspOpts
 		opts = {
-			signs = {
-				Error = ' ',
-				Warn = ' ',
-				Hint = ' ',
-				Info = ' ',
-			},
-			capabilities = {
-				textDocument = {
-					foldingRange = {
-						dynamicRegistration = false,
-						lineFoldingOnly = true,
-					},
-				},
-			},
-			-- Automatically format on save
-			autoformat = true,
-			-- options for vim.lsp.buf.format
-			-- `bufnr` and `filter` is handled by the LazyVim formatter,
-			-- but can be also overriden when specified
-			format = {
-				formatting_options = nil,
-				timeout_ms = nil,
-			},
-			diagnostics = {
-				virtual_text = {
-					source = 'always',
-					prefix = '■',
-					severity = {
-						min = vim.diagnostic.severity.ERROR,
-					},
-				},
-				underline = {
-					severity = {
-						min = vim.diagnostic.severity.HINT,
-					},
-				},
-				update_in_insert = false,
-				severity_sort = true,
-				float = {
-					focusable = true,
-					style = 'minimal',
-					border = 'rounded',
-					source = 'always',
-					header = '',
-					prefix = '',
-				},
-			},
+			-- LSP Server Settings
+			---@type lspconfig.options
 			servers = {
 				-- mason = false, -- set to false if you don't want this server to be installed with mason
 				bashls = {
