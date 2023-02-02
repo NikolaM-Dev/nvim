@@ -33,7 +33,16 @@ local function setup_diagnostics()
 	vim.diagnostic.config(diagnostics)
 end
 
-function M.setup()
+-- LSP on_attach
+function M.on_attach(on_attach)
+	vim.api.nvim_create_autocmd('LspAttach', {
+		callback = function(args)
+			local buffer = args.buf
+			local client = vim.lsp.get_client_by_id(args.data.client_id)
+			on_attach(client, buffer)
+		end,
+	})
+end
 	setup_signs()
 	setup_lsp_handlers()
 	setup_diagnostics()
