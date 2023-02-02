@@ -28,8 +28,8 @@ map('n', '<A-l>', '<cmd>vertical resize +2<cr>', { desc = 'Increase window width
 map({ 'i', 'n' }, '<esc>', '<cmd>noh<cr><esc>', { desc = 'Escape and clear hlsearch' })
 
 -- Better indenting
-map('v', '<', '<gv')
-map('v', '>', '>gv')
+map('v', '<', '<gv', { desc = 'Indent Left' })
+map('v', '>', '>gv', { desc = 'Indent right' })
 
 -- Sort
 map('v', '<leader>s', ':!sort<cr>', { desc = 'Sort' })
