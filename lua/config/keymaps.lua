@@ -65,3 +65,8 @@ map('n', 'n', 'nzzzv', { desc = 'Next search centralized' })
 -- Lazy
 map('n', '<leader>lp', '<cmd>Lazy profile<cr>', { desc = 'Lazy profile' })
 map('n', '<leader>lu', '<cmd>Lazy update<cr>', { desc = 'Lazy update' })
+
+-- Lsp
+map('n', '<Leader>li', '<cmd>LspInfo<cr>', { desc = 'Lsp Info' })
+map('n', '<Leader>ll', '<cmd>LspLog<cr>', { desc = 'Lsp Log' })
+map('n', '<Leader>lr', '<cmd>LspRestart<cr>', { desc = 'Lsp Restart' })
