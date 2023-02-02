@@ -7,7 +7,7 @@ return {
 		require('incline').setup({
 			highlight = { groups = { InclineNormal = { guifg = c.fg, guibg = c.bg } } },
 			render = function(props)
-				local filename = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ':p:.')
+				local filename = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ':t')
 				local ft_icon, ft_color = require('nvim-web-devicons').get_icon_color(filename)
 				local modified = vim.api.nvim_buf_get_option(props.buf, 'modified') and '  ' or ''
 
