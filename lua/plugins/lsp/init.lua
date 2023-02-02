@@ -1,17 +1,10 @@
 return {
-	-- lspconfig
 	{
 		'neovim/nvim-lspconfig',
 		event = 'BufReadPre',
 		dependencies = {
 			'mason.nvim',
 			'williamboman/mason-lspconfig.nvim',
-			{
-				'hrsh7th/cmp-nvim-lsp',
-				cond = function()
-					require('util').has('nvim-cmp')
-				end,
-			},
 		},
 		opts = {
 			signs = {
