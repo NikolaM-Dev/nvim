@@ -12,32 +12,12 @@ return {
 			-- LSP Server Settings
 			---@type lspconfig.options
 			servers = {
-				-- mason = false, -- set to false if you don't want this server to be installed with mason
-				bashls = {
-					filetypes = { 'sh', 'zsh' },
-				},
+				cssls = {},
+				gopls = {},
 				html = {},
-				sumneko_lua = {
-					settings = {
-						Lua = {
-							runtime = {
-								version = 'LuaJIT',
-							},
-							workspace = {
-								library = {
-									[vim.fn.expand('$VIMRUNTIME/lua')] = true,
-								},
-								checkThirdParty = false,
-								diagnostics = {
-									globals = { 'vim' },
-								},
-							},
-							completion = {
-								callSnippet = 'Replace',
-							},
-						},
-					},
-				},
+				sumneko_lua = { settings = { Lua = { telemetry = { enable = false } } } },
+				tailwindcss = {},
+				vimls = {},
 			},
 			-- you can do any additional lsp server setup here
 			-- return true if you don't want this server to be setup with lspconfig
