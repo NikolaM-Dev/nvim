@@ -10,7 +10,6 @@ return {
 			view = {
 				mappings = {
 					list = {
-						{ key = 'd', action = 'trash' },
 						{ key = 'f', action = '' },
 						{ key = 'F', action = '' },
 						{ key = 'o', action = 'cd' },
