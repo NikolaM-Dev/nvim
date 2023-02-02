@@ -58,7 +58,7 @@ map('n', '<leader>q', '<cmd>tabclose<cr>', { desc = 'Close tab' })
 map('i', '<C-q>', '<esc><cmd>wq<cr>', { desc = 'Quit' })
 
 -- Quit all
-map('n', '<leader><leader>q', '<cmd>qall<cr>', { desc = 'Quit all' })
+map('n', '<leader>q', '<cmd>qall<cr>', { desc = 'Quit all' })
 
 -- Quit without save
 map('n', '<leader>z', '<cmd>q!<cr>', { desc = 'Quit without save' })
