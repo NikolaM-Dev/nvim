@@ -6,6 +6,7 @@ return {
 			function()
 				require('lsp_lines').toggle()
 			end,
+			desc = 'Show diagnostics using virtual lines',
 		},
 	},
 	config = function()
