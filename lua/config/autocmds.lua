@@ -4,8 +4,6 @@ if not status_ok then
 end
 
 local autocmd = vim.api.nvim_create_autocmd
-local autogroup = vim.api.nvim_create_augroup
-_G.nikola_group = autogroup('NikolaGroup', { clear = true })
 
 -- disable default syntax in these file.
 -- when file is larged ,load regex syntax
