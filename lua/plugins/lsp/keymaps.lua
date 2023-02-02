@@ -3,10 +3,8 @@ local M = {}
 M._keys = nil
 
 function M.get()
-	local format = require('plugins.lsp.format').format
 	M._keys = M._keys
 		or {
-
 			{ '<leader>cd', vim.diagnostic.open_float, desc = 'Line Diagnostics' },
 			{ 'gl', vim.diagnostic.open_float, desc = 'Line Diagnostics' },
 			{ '<leader>cl', '<cmd>LspInfo<cr>', desc = 'Lsp Info' },
@@ -27,9 +25,6 @@ function M.get()
 			{ '[w', M.diagnostic_goto(false, 'WARN'), desc = 'Prev Warning' },
 			{ '<leader>ca', vim.lsp.buf.code_action, desc = 'Code Action', mode = { 'n', 'v' }, has = 'codeAction' },
 			{ 'gm', M.format_range_operator, desc = 'Format Range', mode = { 'n', 'v' } },
-			{ '<leader>cf', format, desc = 'Format Document', has = 'documentFormatting' },
-			{ '=', format, desc = 'Format Document', has = 'documentFormatting' },
-			{ '<leader>cf', format, desc = 'Format Range', mode = 'v', has = 'documentRangeFormatting' },
 			{ '<leader>cr', M.rename, expr = true, desc = 'Rename', has = 'rename' },
 		}
 	return M._keys
