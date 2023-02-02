@@ -1,6 +1,7 @@
 local M = {}
 
-local function setup_signs()
+M.servers = {}
+M.setup = {}
 	local signs = { Error = '', Hint = '', Info = '', Warn = '' }
 
 	for name, icon in pairs(signs) do
