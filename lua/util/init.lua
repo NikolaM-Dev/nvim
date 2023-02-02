@@ -17,30 +17,6 @@ function M.has(plugin)
 	return require('lazy.core.config').plugins[plugin] ~= nil
 end
 
--- Toggle diagnostics
-local enabled = true
-function M.toggle_diagnostics()
-	enabled = not enabled
-	if enabled then
-		vim.diagnostic.enable()
-		require('lazy.core.util').info('Enabled diagnostics', { title = 'Diagnostics' })
-	else
-		vim.diagnostic.disable()
-		require('lazy.core.util').warn('Disabled diagnostics', { title = 'Diagnostics' })
-	end
-end
-
--- LSP on_attach
-function M.on_attach(on_attach)
-	vim.api.nvim_create_autocmd('LspAttach', {
-		callback = function(args)
-			local buffer = args.buf
-			local client = vim.lsp.get_client_by_id(args.data.client_id)
-			on_attach(client, buffer)
-		end,
-	})
-end
-
 -- Toggle opts
 function M.toggle(option, silent, values)
 	if values then
