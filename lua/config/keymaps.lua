@@ -49,10 +49,13 @@ map({ 'i', 'n', 's', 'v' }, '<C-s>', '<cmd>w<cr><esc>', { desc = 'Save file' })
 map('n', '<leader>w', '<cmd>wall<cr>', { desc = 'Write all' })
 
 -- Quit
-map('n', '<C-q>', '<cmd>q<cr>', { desc = 'Quit' })
+map('n', '<C-q>', function()
+	if #vim.fn.gettabinfo() > 1 then
+		return vim.cmd.tabclose()
+	end
 
--- Close tab
-map('n', '<leader>q', '<cmd>tabclose<cr>', { desc = 'Close tab' })
+	vim.cmd.quit()
+end, { desc = 'Quit' })
 
 -- Quit & save
 map('i', '<C-q>', '<esc><cmd>wq<cr>', { desc = 'Quit' })
