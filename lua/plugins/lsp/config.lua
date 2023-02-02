@@ -65,6 +65,27 @@ local function setup(server)
 
 	require('lspconfig')[server].setup(server_opts)
 end
+
+function M.setup_servers()
+	local mlsp = require('mason-lspconfig')
+	local available = mlsp.get_available_servers()
+	local ensure_installed = {} ---@type string[]
+
+	for server, server_opts in pairs(M.servers) do
+		if server_opts then
+			server_opts = server_opts == true and {} or server_opts
+
+			-- run manual setup if "mason = false" or if this is a server that cannot be installed with mason-lspconfig
+			if server_opts.mason == false or not vim.tbl_contains(available, server) then
+				setup(server)
+			else
+				ensure_installed[#ensure_installed + 1] = server
+			end
+		end
+	end
+
+	mlsp.setup({ ensure_installed = ensure_installed })
+	mlsp.setup_handlers({ setup })
 end
 
 return M
