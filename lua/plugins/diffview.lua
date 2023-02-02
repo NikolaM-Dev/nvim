@@ -6,8 +6,6 @@ return {
 		{ '<leader>gd', '<cmd>DiffviewOpen<cr>', desc = 'Git Diff (Diffview)' },
 	},
 	config = function()
-		local a = require('diffview.actions')
-
 		require('diffview').setup({
 			show_help_hints = false,
 			icons = {
