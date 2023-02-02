@@ -28,6 +28,7 @@ return {
 			function()
 				require('browse').open_bookmarks({ bookmarks = bookmarks })
 			end,
+			desc = 'Bookmarks (Browse)',
 		},
 	},
 	config = true,
