@@ -99,3 +99,12 @@ autocmd('BufWinEnter', {
 		vim.cmd.loadview({ mods = { emsg_silent = true } })
 	end,
 })
+-- Help in vertical split
+-- Open in vertical split
+autocmd({ 'FileType' }, {
+	group = _G.nikola_group,
+	pattern = { 'gitcommit', 'help' },
+	callback = function()
+		vim.cmd.wincmd('L')
+	end,
+})
