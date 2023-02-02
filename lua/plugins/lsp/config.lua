@@ -43,6 +43,8 @@ function M.on_attach(on_attach)
 		end,
 	})
 end
+
+function M.setup_stuffs()
 	setup_signs()
 	setup_lsp_handlers()
 	setup_diagnostics()
