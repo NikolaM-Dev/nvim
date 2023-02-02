@@ -11,6 +11,7 @@ return {
 			function()
 				require('telescope').extensions.smart_open.smart_open({ cwd_only = true })
 			end,
+			desc = 'Find smart open',
 		},
 		{ '<C-f>', '<cmd>Telescope find_files<cr>', desc = 'find_files' },
 		{ '<leader>b', '<cmd>Telescope buffers<cr>', desc = 'buffers' },
