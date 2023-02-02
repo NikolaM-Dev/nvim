@@ -32,22 +32,15 @@ return {
 				-- ["*"] = function(server, opts) end,
 			},
 		},
-		---@diagnostic disable-next-line: unused-local
-		config = function(plugin, opts)
-			-- setup autoformat
-			require('plugins.lsp.format').autoformat = opts.autoformat
-			-- setup  keymaps
-			require('util').on_attach(function(client, buffer)
-				require('plugins.lsp.format').on_attach(client, buffer)
+		---@param opts PluginLspOpts
+		config = function(_, opts)
+			local config = require('plugins.lsp.config')
+
+			config.on_attach(function(client, buffer)
 				require('plugins.lsp.keymaps').on_attach(client, buffer)
 			end)
 
-			-- diagnostics
-			for name, icon in pairs(opts.signs) do
-				name = 'DiagnosticSign' .. name
-				vim.fn.sign_define(name, { text = icon, texthl = name, numhl = '' })
-			end
-			vim.diagnostic.config(opts.diagnostics)
+			config.setup_stuffs()
 
 			local servers = opts.servers
 			local capabilities =
@@ -71,11 +64,11 @@ return {
 			local mlsp = require('mason-lspconfig')
 			local available = mlsp.get_available_servers()
 
-			local ensure_installed = {}
+			local ensure_installed = {} ---@type string[]
 			for server, server_opts in pairs(servers) do
 				if server_opts then
 					server_opts = server_opts == true and {} or server_opts
-					-- run manual setup if mason=false or if this is a server that cannot be installed with mason-lspconfig
+					-- run manual setup if "mason = false" or if this is a server that cannot be installed with mason-lspconfig
 					if server_opts.mason == false or not vim.tbl_contains(available, server) then
 						setup(server)
 					else
@@ -84,8 +77,8 @@ return {
 				end
 			end
 
-			require('mason-lspconfig').setup({ ensure_installed = ensure_installed })
-			require('mason-lspconfig').setup_handlers({ setup })
+			mlsp.setup({ ensure_installed = ensure_installed })
+			mlsp.setup_handlers({ setup })
 		end,
 	},
 }
