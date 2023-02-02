@@ -1,6 +1,6 @@
 local M = {}
 
-function M.signs()
+local function setup_signs()
 	local signs = { Error = '', Hint = '', Info = '', Warn = '' }
 
 	for name, icon in pairs(signs) do
@@ -9,7 +9,7 @@ function M.signs()
 	end
 end
 
-function M.lsp_handlers()
+local function setup_lsp_handlers()
 	require('lspconfig.ui.windows').default_options.border = 'rounded'
 
 	vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, {
@@ -23,7 +23,7 @@ function M.lsp_handlers()
 	})
 end
 
-function M.diagnostics()
+local function setup_diagnostics()
 	local diagnostics = {
 		severity_sort = true,
 		virtual_text = { prefix = '🔥', spacing = 2 },
@@ -34,9 +34,9 @@ function M.diagnostics()
 end
 
 function M.setup()
-	M.signs()
-	M.lsp_handlers()
-	M.diagnostics()
+	setup_signs()
+	setup_lsp_handlers()
+	setup_diagnostics()
 end
 
 return M
