@@ -21,35 +21,35 @@ return {
 				function()
 					require('harpoon.ui').nav_file(1)
 				end,
-				'Navigation to file 1',
+				desc = 'Navigation to file 1',
 			},
 			{
 				'<leader>2',
 				function()
 					require('harpoon.ui').nav_file(2)
 				end,
-				'Navigation to file 2',
+				desc = 'Navigation to file 2',
 			},
 			{
 				'<leader>3',
 				function()
 					require('harpoon.ui').nav_file(3)
 				end,
-				'Navigation to file 3',
+				desc = 'Navigation to file 3',
 			},
 			{
 				'<leader>4',
 				function()
 					require('harpoon.ui').nav_file(4)
 				end,
-				'Navigation to file 4',
+				desc = 'Navigation to file 4',
 			},
 			{
 				'<leader>5',
 				function()
 					require('harpoon.ui').nav_file(5)
 				end,
-				'Navigation to file 5',
+				desc = 'Navigation to file 5',
 			},
 		}
 	end,
