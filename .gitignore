@@ -42,3 +42,4 @@ luac.out
 # Nvim
 .vscode
 plugin/packer_compiled.lua
+lazy-lock.json
