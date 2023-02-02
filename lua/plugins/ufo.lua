@@ -5,10 +5,10 @@ return {
 	init = function()
 		vim.keymap.set('n', 'zR', function()
 			require('ufo').openAllFolds()
-		end)
+		end, { desc = 'Open All Folds' })
 		vim.keymap.set('n', 'zM', function()
 			require('ufo').closeAllFolds()
-		end)
+		end, { desc = 'Close All Folds' })
 
 		require('ufo').setup({ open_fold_hl_timeout = 40 })
 	end,
