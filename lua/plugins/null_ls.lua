@@ -28,7 +28,6 @@ return {
 				f.gofumpt,
 				f.goimports,
 				f.stylua,
-				-- typescript_code_actions,
 			},
 			on_attach = function(current_client, bufnr)
 				if current_client.supports_method('textDocument/formatting') then
