@@ -9,6 +9,9 @@ return {
 		vim.keymap.set('n', 'zM', function()
 			require('ufo').closeAllFolds()
 		end, { desc = 'Close All Folds' })
+		vim.keymap.set('n', 'zp', function()
+			require('ufo').peekFoldedLinesUnderCursor()
+		end, { desc = 'Peek Fold' })
 
 		require('ufo').setup({ open_fold_hl_timeout = 40 })
 	end,
