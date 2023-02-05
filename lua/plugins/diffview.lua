@@ -1,9 +1,9 @@
 return {
 	'sindrets/diffview.nvim',
 	keys = {
-		{ '<leader>bh', '<cmd>DiffviewFileHistory %<cr>', desc = 'File History' },
-		{ '<leader>bh', '<cmd>DiffviewFileHistory<cr>', desc = 'Workspace History' },
 		{ '<leader>gd', '<cmd>DiffviewOpen<cr>', desc = 'Git Diff (Diffview)' },
+		{ '<leader>gH', '<cmd>DiffviewFileHistory %<cr>', desc = 'File History' },
+		{ '<leader>gh', '<cmd>DiffviewFileHistory<cr>', desc = 'Workspace History' },
 	},
 	config = function()
 		require('diffview').setup({
