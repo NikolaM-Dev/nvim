@@ -19,6 +19,7 @@ require('lazy').setup({
 	change_detection = { enabled = true, notify = false },
 	checker = { enabled = true, notify = false },
 	defaults = { lazy = true },
+	diff = { cmd = 'diffview.nvim' },
 	install = { colorscheme = { 'tokyonight' } },
 	performance = {
 		cache = { enabled = true },
