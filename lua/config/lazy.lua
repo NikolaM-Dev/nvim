@@ -16,7 +16,7 @@ require('lazy').setup({
 		{ import = 'plugins' },
 		{ import = 'plugins.langs.typescript' },
 	},
-	change_detection = { enabled = false, notify = false },
+	change_detection = { enabled = true, notify = false },
 	checker = { enabled = true, notify = false },
 	defaults = { lazy = true },
 	install = { colorscheme = { 'tokyonight' } },
