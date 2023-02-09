@@ -1,6 +1,6 @@
 return {
 	'hrsh7th/nvim-cmp',
-	event = 'InsertEnter',
+	event = 'VimEnter',
 	dependencies = {
 		'hrsh7th/cmp-buffer',
 		'hrsh7th/cmp-calc',
