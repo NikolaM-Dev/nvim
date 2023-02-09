@@ -54,14 +54,6 @@ function M.on_attach(client, buffer)
 	end
 end
 
-function M.rename()
-	if pcall(require, 'inc_rename') then
-		return ':IncRename ' .. vim.fn.expand('<cword>')
-	else
-		vim.lsp.buf.rename()
-	end
-end
-
 function M.format_range_operator()
 	local old_func = vim.go.operatorfunc
 	_G.op_func_formatting = function()
