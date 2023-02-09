@@ -1,10 +1,12 @@
 local M = {}
 
+---@type PluginLspKeys
 M._keys = nil
 
+---@return (LazyKeys|{has?:string})[]
 function M.get()
 	M._keys = M._keys
-		or {
+		---@class PluginLspKeys
 			{ '<leader>cd', vim.diagnostic.open_float, desc = 'Line Diagnostics' },
 			{ 'gl', vim.diagnostic.open_float, desc = 'Line Diagnostics' },
 			{ '<leader>cl', '<cmd>LspInfo<cr>', desc = 'Lsp Info' },
@@ -32,7 +34,7 @@ end
 
 function M.on_attach(client, buffer)
 	local Keys = require('lazy.core.handler.keys')
-	local keymaps = {}
+	local keymaps = {} ---@type table<string,LazyKeys|{has?:string}>
 
 	for _, value in ipairs(M.get()) do
 		local keys = Keys.parse(value)
