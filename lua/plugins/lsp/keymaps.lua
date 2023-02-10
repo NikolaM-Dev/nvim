@@ -5,9 +5,9 @@ M._keys = nil
 
 ---@return (LazyKeys|{has?:string})[]
 function M.get()
-	M._keys = M._keys
+	if not M._keys then
 		---@class PluginLspKeys
-			{ '<leader>cd', vim.diagnostic.open_float, desc = 'Line Diagnostics' },
+		M._keys = {
 			{ 'gl', vim.diagnostic.open_float, desc = 'Line Diagnostics' },
 			{ '<leader>cl', '<cmd>LspInfo<cr>', desc = 'Lsp Info' },
 			{ '<leader>dd', '<cmd>Telescope diagnostics<cr>', desc = 'Telescope Diagnostics' },
@@ -29,6 +29,8 @@ function M.get()
 			{ 'gm', M.format_range_operator, desc = 'Format Range', mode = { 'n', 'v' } },
 			{ '<leader>cr', M.rename, expr = true, desc = 'Rename', has = 'rename' },
 		}
+	end
+
 	return M._keys
 end
 
