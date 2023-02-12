@@ -1,6 +1,7 @@
 return {
 	'nvim-telescope/telescope.nvim',
-	event = 'VeryLazy',
+	cmd = 'Telescope',
+	version = false,
 	dependencies = {
 		'danielfalk/smart-open.nvim',
 		{ 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
