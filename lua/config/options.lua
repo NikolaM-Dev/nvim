@@ -58,6 +58,7 @@ local options = {
 	updatetime = 40, -- improve user experience updating more frequently
 	whichwrap = 'bs<>[]hl', -- which "horizontal" keys are allowed to travel to prev/next line
 	wildmode = 'longest:full,full', -- Command-line completion mode
+	winbar = '%=%m %f', -- the window bar is a bar that's shown at the top of every window with it enabled
 	wrap = false, -- wrap lines
 	writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 }
