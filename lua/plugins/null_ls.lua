@@ -1,6 +1,6 @@
 return {
 	'jose-elias-alvarez/null-ls.nvim',
-	event = 'BufReadPre',
+	event = { 'BufReadPre', 'BufNewFile' },
 	keys = { { '<leader>cN', '<cmd>NullLsInfo<cr>', desc = 'Null-LS Info' } },
 	config = function()
 		local nls = require('null-ls')
