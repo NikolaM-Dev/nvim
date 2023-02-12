@@ -16,7 +16,7 @@ return {
 				gopls = {},
 				html = {},
 				jsonls = {},
-				sumneko_lua = { settings = { Lua = { telemetry = { enable = false } } } },
+				lua_ls = { settings = { Lua = { telemetry = { enable = false } } } },
 				tailwindcss = {},
 				vimls = {},
 			},
@@ -56,6 +56,7 @@ return {
 			config.signs()
 			config.lsp_handlers()
 			config.diagnostics()
+			config.temp_fix_lspconfig_rename()
 			config.setup_servers()
 		end,
 	},
