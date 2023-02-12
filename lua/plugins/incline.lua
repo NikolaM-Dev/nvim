@@ -1,5 +1,6 @@
 return {
 	'b0o/incline.nvim',
+	enabled = false,
 	event = 'BufReadPre',
 	config = function()
 		local c = require('tokyonight.colors').setup()
