@@ -1,5 +1,4 @@
 return {
-
 	'williamboman/mason.nvim',
 	cmd = 'Mason',
 	keys = { { '<leader>cM', '<cmd>Mason<cr>', desc = 'Mason' } },
