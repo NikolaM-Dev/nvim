@@ -41,6 +41,7 @@ local options = {
 	shiftwidth = 4, -- the number of spaces inserted for each indentation
 	showbreak = '↳  ', -- string to put at the start of lines that have been wrapped
 	showmode = false, -- removes the text indicating the mode
+	showtabline = 0, -- remove tab page label
 	signcolumn = 'yes', -- always show the sign column, otherwise it would shift the text each time
 	smartcase = true, -- difference between lower and upper case letters
 	smartindent = true, -- make indenting smarter again
