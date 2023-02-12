@@ -1,7 +1,8 @@
 return {
 	'nvim-treesitter/nvim-treesitter',
 	build = ':TSUpdate',
-	event = 'BufReadPost',
+	event = { 'BufReadPost', 'BufNewFile' },
+	version = false,
 	dependencies = {
 		'mrjones2014/nvim-ts-rainbow',
 		'windwp/nvim-ts-autotag',
