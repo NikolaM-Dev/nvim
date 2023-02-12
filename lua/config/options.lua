@@ -32,6 +32,7 @@ local options = {
 	ignorecase = true, -- ignore case in search patterns
 	inccommand = 'split', -- Incrementally show effects of commands, opens split
 	incsearch = true, -- while typing a search command, show where the pattern,
+	joinspaces = false, -- No double spaces with join after a dot
 	laststatus = 3, -- always and ONLY the last window a status line
 	list = true, -- useful to see the difference between tabs and spaces and for trailing blanks
 	mouse = 'a', -- mouse support
