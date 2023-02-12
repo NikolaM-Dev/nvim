@@ -9,27 +9,20 @@ function M.get()
 		---@class PluginLspKeys
 		-- TODO: Change to lspsaga
 		M._keys = {
-			{ 'ga', vim.lsp.buf.code_action, desc = 'Code Action', mode = { 'n', 'v' }, has = 'codeAction' },
+			{ '<A-k>', vim.lsp.buf.signature_help, mode = 'i', desc = 'Signature Help', has = 'signatureHelp' },
 			{ 'gd', '<cmd>Telescope lsp_definitions<cr>', desc = 'Goto Definition' },
 			{ 'gD', vim.lsp.buf.declaration, desc = 'Goto Declaration' },
-			{ 'gh', '<cmd>Telescope lsp_references<cr>', desc = 'References' },
 			{ 'gI', '<cmd>Telescope lsp_implementations<cr>', desc = 'Goto Implementation' },
 			{ 'gK', vim.lsp.buf.signature_help, desc = 'Signature Help', has = 'signatureHelp' },
-			{ 'gl', vim.diagnostic.open_float, desc = 'Line Diagnostics' },
-			{ 'gr', vim.lsp.buf.rename, expr = true, desc = 'Rename', has = 'rename' },
 			{ 'gt', '<cmd>Telescope lsp_type_definitions<cr>', desc = 'Goto Type Definition' },
-			{ 'K', vim.lsp.buf.hover, desc = 'Hover' },
-			{ '<leader>dd', '<cmd>Telescope diagnostics<cr>', desc = 'Telescope Diagnostics' },
-			{ '<leader>dj', M.diagnostic_goto(true), desc = 'Next Diagnostic' },
-			{ '<leader>dk', M.diagnostic_goto(false), desc = 'Prev Diagnostic' },
 			{ '<leader>Ej', M.diagnostic_goto(true, 'ERROR'), desc = 'Next Error' },
 			{ '<leader>Ek', M.diagnostic_goto(false, 'ERROR'), desc = 'Prev Error' },
+			{ '<leader>K', vim.lsp.buf.hover, desc = 'Hover' },
 			{ '<leader>li', '<cmd>LspInfo<cr>', desc = 'Lsp Info' },
 			{ '<Leader>ll', '<cmd>LspLog<cr>', desc = 'Lsp Log' },
 			{ '<Leader>lr', '<cmd>LspRestart<cr>', desc = 'Lsp Restart' },
 			{ '<leader>wj', M.diagnostic_goto(true, 'WARN'), desc = 'Next Warning' },
 			{ '<leader>wk', M.diagnostic_goto(false, 'WARN'), desc = 'Prev Warning' },
-			{ '<A-k>', vim.lsp.buf.signature_help, mode = 'i', desc = 'Signature Help', has = 'signatureHelp' },
 		}
 	end
 
