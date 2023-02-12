@@ -47,6 +47,7 @@ local options = {
 	smartindent = true, -- make indenting smarter again
 	softtabstop = 4, -- number of spaces that a tab
 	splitbelow = true, -- split window below
+	splitkeep = 'screen', -- stabilize screen position on split
 	splitright = true, -- split window right
 	swapfile = false, -- creates a swapfile
 	tabstop = 4, -- insert <x> spaces for a tab
@@ -55,6 +56,8 @@ local options = {
 	undodir = os.getenv('HOME') .. '/.cache/nvim/undodir', -- undodir path
 	undofile = true, -- make undo file
 	updatetime = 40, -- improve user experience updating more frequently
+	whichwrap = 'bs<>[]hl', -- which "horizontal" keys are allowed to travel to prev/next line
+	wildmode = 'longest:full,full', -- Command-line completion mode
 	wrap = false, -- wrap lines
 	writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 }
