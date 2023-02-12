@@ -9,6 +9,14 @@ local options = {
 		tab = '│ ',
 		trail = '·',
 	},
+	fillchars = {
+		diff = '╱',
+		eob = ' ',
+		fold = ' ',
+		foldclose = '',
+		foldopen = '',
+		foldsep = ' ',
+	},
 	backup = false, -- create backup files
 	clipboard = 'unnamedplus', -- use system clipboard
 	colorcolumn = '81', -- maximum column length for color highlighting
