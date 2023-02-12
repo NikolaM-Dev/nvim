@@ -29,13 +29,14 @@ local function format()
 	}, {}))
 end
 
-function M.on_attach(client, buf)
-	-- dont format if client disabled it
-	if
-		client.config
+local function has_disable_capabilities(client)
+	return client.config
 		and client.config.capabilities
 		and client.config.capabilities.documentFormattingProvider == false
-	then
+end
+
+function M.on_attach(client, buf)
+	if has_disable_capabilities() then
 		return
 	end
 
