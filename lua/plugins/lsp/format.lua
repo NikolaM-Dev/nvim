@@ -36,7 +36,7 @@ local function has_disable_capabilities(client)
 end
 
 function M.on_attach(client, buf)
-	if has_disable_capabilities() then
+	if has_disable_capabilities(client) then
 		return
 	end
 
