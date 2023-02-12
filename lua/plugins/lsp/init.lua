@@ -56,7 +56,6 @@ return {
 			config.signs()
 			config.lsp_handlers()
 			config.diagnostics()
-			config.temp_fix_lspconfig_rename()
 			config.setup_servers()
 		end,
 	},
