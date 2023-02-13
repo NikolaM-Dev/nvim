@@ -45,8 +45,9 @@ return {
 					},
 				},
 			},
-			update_focused_file = { enable = true },
 			filters = { custom = { '^.git$', '^node_modules$' } },
+			git = { ignore = false },
+			update_focused_file = { enable = true },
 		})
 	end,
 }
