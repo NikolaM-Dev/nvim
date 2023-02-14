@@ -45,7 +45,7 @@ return {
 					},
 				},
 			},
-			filters = { custom = { '^.git$', '^node_modules$' } },
+			filters = { custom = { '^.git$', '^node_modules$', '^dist$' } },
 			git = { ignore = false },
 			update_focused_file = { enable = true },
 		})
