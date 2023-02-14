@@ -114,9 +114,11 @@ autocmd({ 'FileType' }, {
 -- Open in vertical split
 autocmd({ 'FileType' }, {
 	group = _G.nikola_group,
-	pattern = { 'gitcommit', 'help' },
+	pattern = { 'help' },
 	callback = function()
 		vim.cmd.wincmd('L')
 	end,
+})
+
 -- fzf redraw
 autocmd('VimResized', { pattern = '*', command = 'lua require("fzf-lua").redraw()' })
