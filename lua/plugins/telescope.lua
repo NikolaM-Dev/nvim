@@ -31,7 +31,7 @@ return {
 		{ '<leader>gs', '<cmd>Telescope git_status<cr>', desc = 'git_status' },
 		{ '<leader>gst', '<cmd>Telescope git_stash<cr>', desc = 'git_stash' },
 		{ '<leader>man', '<cmd>Telescope man_pages<cr>', desc = 'man_pages' },
-		{ '<leader>U', '<cmd>Telescope undo<cr>', desc = 'undo' },
+		{ '<leader>u', '<cmd>Telescope undo<cr>', desc = 'undo' },
 	},
 	config = function()
 		local telescope = require('telescope')
