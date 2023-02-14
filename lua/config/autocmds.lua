@@ -118,4 +118,5 @@ autocmd({ 'FileType' }, {
 	callback = function()
 		vim.cmd.wincmd('L')
 	end,
-})
+-- fzf redraw
+autocmd('VimResized', { pattern = '*', command = 'lua require("fzf-lua").redraw()' })
