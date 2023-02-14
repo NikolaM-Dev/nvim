@@ -3,6 +3,7 @@ local bookmarks = {
 	awesome = 'https://github.com/rockerBOO/awesome-neovim',
 	cris_at_machine = 'https://github.com/ChristianChiarulli/nvim',
 	dots = 'https://github.com/NikolaM-Dev/dotfiles',
+	fbearoff = 'https://github.com/fbearoff/dotfiles/tree/master/nvim/.config/nvim',
 	folke = 'https://github.com/folke/dot/tree/master/nvim',
 	glepnir = 'https://github.com/glepnir/nvim',
 	juan_david = 'https://mail.google.com/mail/u/0/#inbox',
