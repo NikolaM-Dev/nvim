@@ -109,7 +109,11 @@ return {
 			},
 			window = {
 				documentation = { border = 'rounded' },
-				completion = { border = 'rounded', scrollbar = false },
+				completion = {
+					border = 'rounded',
+					scrollbar = false,
+					winhighlight = 'Normal:CmpPmenu,CursorLine:PmenuSel,Search:None',
+				},
 			},
 			experimental = {
 				ghost_text = {
