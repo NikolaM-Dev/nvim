@@ -67,3 +67,12 @@ map('n', 'n', 'nzzzv', { desc = 'Next search centralized' })
 -- Lazy
 map('n', '<leader>lp', '<cmd>Lazy profile<cr>', { desc = 'Lazy profile' })
 map('n', '<leader>lu', '<cmd>Lazy update<cr>', { desc = 'Lazy update' })
+
+-- Add undo break-points
+map('i', '!', '!<c-g>u')
+map('i', ',', ',<c-g>u')
+map('i', '-', '-<c-g>u')
+map('i', '.', '.<c-g>u')
+map('i', ';', ';<c-g>u')
+map('i', '?', '?<c-g>u')
+map('i', '_', '_<c-g>u')
