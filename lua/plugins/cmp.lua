@@ -63,7 +63,7 @@ return {
 				end,
 			},
 			completion = { completeopt = 'menu,menuone,noselect' },
-			performance = { debounce = 40, throttle = 40, fetching_timeout = 300 },
+			performance = { debounce = 20, throttle = 20, fetching_timeout = 284 },
 			mapping = cmp.mapping.preset.insert({
 				['<Tab>'] = cmp.mapping(function(fallback)
 					if cmp.visible() then
