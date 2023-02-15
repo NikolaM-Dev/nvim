@@ -76,3 +76,17 @@ map('i', '.', '.<c-g>u')
 map('i', ';', ';<c-g>u')
 map('i', '?', '?<c-g>u')
 map('i', '_', '_<c-g>u')
+
+-- Rename all occurrences in the file
+vim.keymap.set(
+	'n',
+	'<leader>s',
+	':%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>',
+	{ desc = 'Rename all occurrences in the file' }
+)
+vim.keymap.set(
+	'v',
+	'<leader><leader>s',
+	':s///gI<Left><Left><Left><Left>',
+	{ desc = 'Rename all occurrences in the file (v)' }
+)
