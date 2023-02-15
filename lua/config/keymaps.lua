@@ -44,6 +44,26 @@ map('n', '<C-q>', function()
 		return vim.cmd.tabclose()
 	end
 
+	if #vim.fn.gettabinfo()[1].windows > 1 then
+		local buffers = vim.fn.getbufinfo()
+		local flag = false
+
+		for _, b in pairs(buffers) do
+			if string.find(b.name, 'gitsigns://') then
+				vim.api.nvim_buf_call(b.bufnr, function()
+					vim.cmd.bdelete()
+					flag = true
+				end)
+
+				break
+			end
+		end
+
+		if flag then
+			return
+		end
+	end
+
 	vim.cmd.quit()
 end, { desc = 'Quit' })
 
