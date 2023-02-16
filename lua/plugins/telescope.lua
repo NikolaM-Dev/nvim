@@ -44,12 +44,6 @@ return {
 				find_files = { hidden = true },
 				git_files = { show_untracked = true },
 			},
-			extensions = {
-				undo = {
-					layout_strategy = 'vertical',
-					layout_config = { preview_height = 0.7 },
-				},
-			},
 		})
 
 		telescope.load_extension('fzf')
