@@ -2,7 +2,7 @@ return {
 	'nvim-tree/nvim-tree.lua',
 	cmd = 'NvimTreeToggle',
 	keys = {
-		{ '<leader>e', '<cmd>NvimTreeToggle<CR>', desc = 'Explorer' },
+		{ '<leader>e', '<cmd>NvimTreeToggle .<CR>', desc = 'Explorer' },
 		{ '<leader><leader>e', '<cmd>NvimTreeCollapse<CR>', desc = 'Collapse recursively' },
 	},
 	config = function()
