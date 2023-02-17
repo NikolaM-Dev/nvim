@@ -4,7 +4,6 @@ return {
 	version = false,
 	dependencies = {
 		'danielfalk/smart-open.nvim',
-		'debugloop/telescope-undo.nvim',
 		{ 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
 	},
 	keys = {
@@ -31,7 +30,6 @@ return {
 		{ '<leader>gs', '<cmd>Telescope git_status<cr>', desc = 'git_status' },
 		{ '<leader>gst', '<cmd>Telescope git_stash<cr>', desc = 'git_stash' },
 		{ '<leader>man', '<cmd>Telescope man_pages<cr>', desc = 'man_pages' },
-		{ '<leader>u', '<cmd>Telescope undo<cr>', desc = 'undo' },
 	},
 	config = function()
 		local telescope = require('telescope')
@@ -57,6 +55,5 @@ return {
 		telescope.load_extension('fzf')
 		telescope.load_extension('neoclip')
 		telescope.load_extension('smart_open')
-		telescope.load_extension('undo')
 	end,
 }
