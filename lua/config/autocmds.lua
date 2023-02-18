@@ -104,3 +104,11 @@ autocmd('VimResized', { pattern = '*', command = 'lua require("fzf-lua").redraw(
 
 -- check if we need to reload the file when it changed
 autocmd({ 'FocusGained', 'TermClose', 'TermLeave' }, { command = 'checktime', group = _G.augroup('checktime') })
+
+-- resize splits if window got resized
+autocmd({ 'VimResized' }, {
+	group = _G.augroup('resize_splits'),
+	callback = function()
+		vim.cmd('tabdo wincmd =')
+	end,
+})
