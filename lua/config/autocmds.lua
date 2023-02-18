@@ -4,7 +4,7 @@ local autocmd = vim.api.nvim_create_autocmd
 -- when file is larged ,load regex syntax
 -- highlight will cause very slow
 autocmd({ 'Filetype' }, {
-	group = _G.nikola_group,
+	group = _G.augroup('disable_default_sintax'),
 	pattern = '*.c,*.cpp,*.lua,*.go,*.rs,*.py,*.ts,*.tsx',
 	callback = function()
 		vim.api.nvim_command('syntax off')
@@ -13,7 +13,7 @@ autocmd({ 'Filetype' }, {
 
 -- disables autocommenting on new lines
 autocmd({ 'FileType' }, {
-	group = _G.nikola_group,
+	group = _G.augroup('disable_autocommenting'),
 	pattern = '*',
 	callback = function()
 		vim.api.nvim_command('setlocal formatoptions-=cro')
@@ -22,7 +22,7 @@ autocmd({ 'FileType' }, {
 
 -- go tmpl
 autocmd({ 'BufWinEnter' }, {
-	group = _G.nikola_group,
+	group = _G.augroup('go_tmpl'),
 	pattern = '*.tmpl',
 	callback = function()
 		vim.api.nvim_command('set filetype=html')
@@ -31,7 +31,7 @@ autocmd({ 'BufWinEnter' }, {
 
 -- vite enviroment
 autocmd({ 'BufWinEnter' }, {
-	group = _G.nikola_group,
+	group = _G.augroup('vite_enviroment'),
 	pattern = '.env.*',
 	callback = function()
 		vim.api.nvim_command('set filetype=sh')
@@ -40,7 +40,7 @@ autocmd({ 'BufWinEnter' }, {
 
 -- highlight yank
 autocmd('TextYankPost', {
-	group = _G.nikola_group,
+	group = _G.augroup('highlight_yank'),
 	pattern = '*',
 	callback = function()
 		vim.highlight.on_yank({
@@ -52,7 +52,7 @@ autocmd('TextYankPost', {
 
 -- change NvimTree winbar
 autocmd({ 'BufEnter' }, {
-	group = _G.nikola_group,
+	group = _G.augroup('nvim_tree_winbar'),
 	pattern = '*',
 	callback = function()
 		if vim.bo.filetype == 'NvimTree' then
@@ -88,6 +88,7 @@ autocmd('BufWinEnter', {
 
 -- q to quit these filetypes
 autocmd({ 'FileType' }, {
+	group = _G.augroup('close_with_q'),
 	pattern = {
 		'checkhealth',
 		'help',
@@ -108,7 +109,7 @@ autocmd({ 'FileType' }, {
 
 -- Open in vertical split
 autocmd({ 'FileType' }, {
-	group = _G.nikola_group,
+	group = _G.augroup('open_in_right_vertical_split'),
 	pattern = { 'help' },
 	callback = function()
 		vim.cmd.wincmd('L')
@@ -116,4 +117,4 @@ autocmd({ 'FileType' }, {
 })
 
 -- fzf redraw
-autocmd('VimResized', { pattern = '*', command = 'lua require("fzf-lua").redraw()' })
+autocmd('VimResized', { pattern = '*', command = 'lua require("fzf-lua").redraw()', group = _G.augroup('fzf_redraw') })
