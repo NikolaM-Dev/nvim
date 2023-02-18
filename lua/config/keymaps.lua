@@ -84,6 +84,10 @@ map('n', '<C-d>', '<C-d>zz', { desc = 'Scroll down centralized' })
 map('n', 'N', 'Nzzzv', { desc = 'Previous centralized' })
 map('n', 'n', 'nzzzv', { desc = 'Next search centralized' })
 
+-- Centralized history
+map('n', '<C-o>', '<C-o>zz', { desc = 'Previous History centralized' })
+map('n', '<C-i>', '<C-i>zz', { desc = 'Next History centralized' })
+
 -- Lazy
 map('n', '<leader>lp', '<cmd>Lazy profile<cr>', { desc = 'Lazy profile' })
 map('n', '<leader>lu', '<cmd>Lazy update<cr>', { desc = 'Lazy update' })
