@@ -99,13 +99,13 @@ autocmd({ 'FileType' }, {
 	end,
 })
 
--- fzf redraw
+-- Fzf redraw
 autocmd('VimResized', { pattern = '*', command = 'lua require("fzf-lua").redraw()', group = _G.augroup('fzf_redraw') })
 
--- check if we need to reload the file when it changed
+-- Check if we need to reload the file when it changed
 autocmd({ 'FocusGained', 'TermClose', 'TermLeave' }, { command = 'checktime', group = _G.augroup('checktime') })
 
--- resize splits if window got resized
+-- Resize splits if window got resized
 autocmd({ 'VimResized' }, {
 	group = _G.augroup('resize_splits'),
 	callback = function()
