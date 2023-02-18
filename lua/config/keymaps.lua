@@ -100,7 +100,7 @@ map('i', '_', '_<c-g>u')
 -- Rename all occurrences in the file
 vim.keymap.set(
 	'n',
-	'<leader>s',
+	'<leader><leader>s',
 	':%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>',
 	{ desc = 'Rename all occurrences in the file' }
 )
