@@ -41,7 +41,6 @@ return {
 				selection_caret = '  ',
 			},
 			pickers = {
-				find_files = { hidden = true },
 				git_files = { show_untracked = true },
 			},
 		})
