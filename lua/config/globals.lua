@@ -6,4 +6,6 @@ _G.P = function(v)
 	return v
 end
 
-_G.nikola_group = vim.api.nvim_create_augroup('NikolaGroup', { clear = true })
+_G.augroup = function(name)
+	return vim.api.nvim_create_augroup('nikola_' .. name, { clear = true })
+end
