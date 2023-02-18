@@ -47,6 +47,7 @@ local options = {
 	smartcase = true, -- difference between lower and upper case letters
 	smartindent = true, -- make indenting smarter again
 	softtabstop = 4, -- number of spaces that a tab
+	spelllang = 'en_us',
 	splitbelow = true, -- split window below
 	splitkeep = 'screen', -- stabilize screen position on split
 	splitright = true, -- split window right
