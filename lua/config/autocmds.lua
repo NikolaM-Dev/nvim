@@ -1,8 +1,3 @@
-local status_ok, _ = pcall(require, 'tokyonight')
-if not status_ok then
-	return
-end
-
 local autocmd = vim.api.nvim_create_autocmd
 
 -- disable default syntax in these file.
