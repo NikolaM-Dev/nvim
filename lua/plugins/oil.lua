@@ -2,8 +2,8 @@ return {
 	'stevearc/oil.nvim',
 	cmd = 'Oil',
 	keys = {
-		{ '<s-tab>', '<cmd>Oil --float .<cr>' },
-		{ '<tab>', '<cmd>Oil --float %:p:h<cr>' },
+		{ '<leader><leader>e', '<cmd>Oil .<cr>' },
+		{ '<leader>e', '<cmd>Oil %:p:h<cr>' },
 	},
 	config = function()
 		require('oil').setup({
