@@ -31,7 +31,7 @@ return {
 				map('n', '<leader>hR', gs.reset_buffer, 'Reset Buffer')
 				map('n', '<leader>hS', gs.stage_buffer, 'Stage Buffer')
 				map('n', '<leader>hu', gs.undo_stage_hunk, 'Undo Stage Hunk')
-				map('n', '<leader>kj', gs.prev_hunk, 'Prev Hunk')
+				map('n', '<leader>hk', gs.prev_hunk, 'Prev Hunk')
 				map('n', '<leader>td', gs.toggle_deleted, 'Toggle Deleted')
 				map({ 'n', 'v' }, '<leader>hr', ':Gitsigns reset_hunk<CR>', 'Reset Hunk')
 				map({ 'n', 'v' }, '<leader>hs', ':Gitsigns stage_hunk<CR>', 'Stage Hunk')
