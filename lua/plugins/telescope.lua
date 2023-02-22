@@ -12,24 +12,21 @@ return {
 			function()
 				require('telescope').extensions.smart_open.smart_open({ cwd_only = true })
 			end,
-			desc = 'Find smart open',
+			desc = '[F]ind Smart Open',
 		},
-		{ '<C-f>', '<cmd>Telescope find_files<cr>', desc = 'find_files' },
-		{ '<leader>b', '<cmd>Telescope buffers<cr>', desc = 'buffers' },
-		{ '<leader>fa', '<cmd>Telescope live_grep<cr>', desc = 'live_grep' },
-		{ '<leader>fch', '<cmd>Telescope command_history<cr>', desc = 'command_history' },
-		{ '<leader>fd', '<cmd>Telescope diagnostics<cr>', desc = 'diagnostics' },
-		{ '<leader>fg', '<cmd>Telescope git_files<cr>', desc = 'git_files' },
-		{ '<leader>fh', '<cmd>Telescope help_tags<cr>', desc = 'help_tags' },
-		{ '<leader>fk', '<cmd>Telescope keymaps<cr>', desc = 'keymaps' },
-		{ '<leader>fo', '<cmd>Telescope oldfiles<cr>', desc = 'oldfiles' },
+		{
+			'<leader>/',
+			function()
+				require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown({
+					previewer = false,
+				}))
+			end,
+			desc = '[/] Fuzzily search in currrent buffer',
+		},
+		{ '<leader>fh', '<cmd>Telescope help_tags<cr>', desc = 'Find [H]elp tags' },
+		{ '<leader>fk', '<cmd>Telescope keymaps<cr>', desc = 'Find [K]eymaps' },
 		{ '<leader>fw', '<cmd>Telescope grep_string<cr>', mode = { 'n', 'v' }, desc = 'grep_string' },
-		{ '<leader>gb', '<cmd>Telescope git_branches<cr>', desc = 'git_branches' },
-		{ '<leader>gbb', '<cmd>Telescope git_bcommits<cr>', desc = 'git_bcommits' },
-		{ '<leader>gc', '<cmd>Telescope git_commits<cr>', desc = 'git_commits' },
-		{ '<leader>gs', '<cmd>Telescope git_status<cr>', desc = 'git_status' },
-		{ '<leader>gst', '<cmd>Telescope git_stash<cr>', desc = 'git_stash' },
-		{ '<leader>man', '<cmd>Telescope man_pages<cr>', desc = 'man_pages' },
+		{ '<leader>man', '<cmd>Telescope man_pages<cr>', desc = '[MAN] pages' },
 	},
 	config = function()
 		local telescope = require('telescope')
