@@ -37,7 +37,7 @@ return {
 				prompt_prefix = '   ',
 				selection_caret = '  ',
 			},
-			pickers = {
+			pickers = { git_files = { show_untracked = true } },
 				git_files = { show_untracked = true },
 			},
 		})
