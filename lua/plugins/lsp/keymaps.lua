@@ -7,7 +7,6 @@ M._keys = nil
 function M.get()
 	if not M._keys then
 		---@class PluginLspKeys
-		-- TODO: Change to lspsaga
 		M._keys = {
 			{ '<A-k>', vim.lsp.buf.signature_help, mode = 'i', desc = 'Signature Help', has = 'signatureHelp' },
 			{ 'gd', '<cmd>Telescope lsp_definitions<cr>', desc = 'Goto Definition' },
