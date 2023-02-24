@@ -8,20 +8,27 @@ function M.get()
 	if not M._keys then
 		---@class PluginLspKeys
 		M._keys = {
-			{ '<A-k>', vim.lsp.buf.signature_help, mode = 'i', desc = 'Signature Help', has = 'signatureHelp' },
-			{ 'gd', '<cmd>Telescope lsp_definitions<cr>', desc = 'Goto Definition' },
-			{ 'gD', vim.lsp.buf.declaration, desc = 'Goto Declaration' },
-			{ 'gI', '<cmd>Telescope lsp_implementations<cr>', desc = 'Goto Implementation' },
-			{ 'gK', vim.lsp.buf.signature_help, desc = 'Signature Help', has = 'signatureHelp' },
-			{ 'gt', '<cmd>Telescope lsp_type_definitions<cr>', desc = 'Goto Type Definition' },
+			{ '<C-k>', vim.lsp.buf.signature_help, mode = 'i', desc = 'Signature Documentation' },
+			-- { 'gd', '<cmd>Telescope lsp_definitions<cr>', desc = '[G]oto [D]efinition' },
+			{ 'gD', vim.lsp.buf.declaration, desc = '[G]oto [D]eclaration' },
+			{ 'gI', '<cmd>Telescope lsp_implementations<cr>', desc = '[G]oto [I]mplementation' },
+			{ 'gr', '<cmd>Telescope lsp_references<cr>', desc = '[G]oto [R]eferences' },
+			{ 'K', vim.lsp.buf.hover, desc = 'Hover Documentation' },
+			{ '<leader>ca', vim.lsp.buf.code_action, desc = '[C]ode [A]ction' },
+			{ '<leader>D', '<cmd>Telescope lsp_type_definitions<cr>', desc = 'Type [D]efinitions' },
+			{ '<leader>ds', '<cmd>Telescope lsp_document_symbols<cr>', desc = '[D]ocument [S]ymbols' },
 			{ '<leader>Ej', M.diagnostic_goto(true, 'ERROR'), desc = 'Next Error' },
 			{ '<leader>Ek', M.diagnostic_goto(false, 'ERROR'), desc = 'Prev Error' },
 			{ '<leader>K', vim.lsp.buf.hover, desc = 'Hover' },
 			{ '<leader>li', '<cmd>LspInfo<cr>', desc = 'Lsp Info' },
 			{ '<Leader>ll', '<cmd>LspLog<cr>', desc = 'Lsp Log' },
 			{ '<Leader>lr', '<cmd>LspRestart<cr>', desc = 'Lsp Restart' },
+			{ '<leader>rn', vim.lsp.buf.rename, desc = '[R]e[n]ame' },
+			-- { '<leader>sd', '<cmd>Telescope diagnostics<cr>', desc = '[S]earch [D]iagnostics' },
+			{ '<leader>sd', '<cmd>FzfLua diagnostics_workspace<cr>', desc = '[S]earch [D]iagnostics' },
 			{ '<leader>wj', M.diagnostic_goto(true, 'WARN'), desc = 'Next Warning' },
 			{ '<leader>wk', M.diagnostic_goto(false, 'WARN'), desc = 'Prev Warning' },
+			{ '<leader>ws', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', desc = '[W]orkspace [S]ymbols' },
 		}
 	end
 
