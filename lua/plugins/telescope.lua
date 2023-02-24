@@ -38,8 +38,7 @@ return {
 				selection_caret = '  ',
 			},
 			pickers = { git_files = { show_untracked = true } },
-				git_files = { show_untracked = true },
-			},
+			extensions = { smart_open = { match_algorithm = 'fzf' } },
 		})
 
 		telescope.load_extension('fzf')
