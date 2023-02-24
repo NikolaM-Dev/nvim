@@ -24,6 +24,7 @@ return {
 			desc = '[/] Fuzzily search in currrent buffer',
 		},
 		{ '<leader>fh', '<cmd>Telescope help_tags<cr>', desc = 'Find [H]elp tags' },
+		{ '<leader>t', '<cmd>Telescope<cr>', desc = '[T]elescope' },
 		{ '<leader>fk', '<cmd>Telescope keymaps<cr>', desc = 'Find [K]eymaps' },
 		{ '<leader>fw', '<cmd>Telescope grep_string<cr>', mode = { 'n', 'v' }, desc = 'grep_string' },
 		{ '<leader>man', '<cmd>Telescope man_pages<cr>', desc = '[MAN] pages' },
