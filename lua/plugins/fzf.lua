@@ -130,7 +130,7 @@ return {
 					},
 				},
 			},
-			global_git_icons = false,
+			global_git_icons = true,
 		})
 	end,
 }
