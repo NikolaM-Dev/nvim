@@ -93,7 +93,7 @@ autocmd({ 'FileType' }, {
 -- Open in vertical split
 autocmd({ 'FileType' }, {
 	group = _G.augroup('open_in_right_vertical_split'),
-	pattern = { 'gitcommit', 'help', 'man' },
+	pattern = { 'gitcommit' },
 	callback = function()
 		vim.cmd.wincmd('L')
 	end,
