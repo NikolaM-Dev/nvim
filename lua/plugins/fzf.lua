@@ -130,6 +130,9 @@ return {
 					},
 				},
 			},
+			files = {
+				fd_opts = '--color=never --type f --hidden --follow --exclude .git --exclude yarn.lock --exclude index.ts',
+			},
 			global_git_icons = true,
 		})
 	end,
