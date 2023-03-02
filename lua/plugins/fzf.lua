@@ -2,6 +2,11 @@ return {
 	'ibhagwan/fzf-lua',
 	cmd = 'FzfLua',
 	keys = {
+		{
+			'<leader>f',
+			'<cmd>FzfLua<cr>',
+			desc = 'Fzf',
+		},
 		{ '<leader>b', '<cmd>FzfLua buffers<cr>', desc = '[B]uffers' },
 		{ '<leader>?', '<cmd>FzfLua command_history<cr>', desc = 'Command History' },
 		{ '<leader>fa', '<cmd>FzfLua live_grep<cr>', desc = 'Live Grep' },
