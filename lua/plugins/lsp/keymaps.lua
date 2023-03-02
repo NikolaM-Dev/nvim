@@ -16,26 +16,34 @@ function M.get()
 	if not M._keys then
 		---@class PluginLspKeys
 		M._keys = {
+			{
+				'gd',
+				function()
+					require('fzf-lua').lsp_definitions({ jump_to_single_result = true })
+				end,
+				desc = '[G]o to [D]efinition',
+			},
 			{ '<C-k>', vim.lsp.buf.signature_help, mode = 'i', desc = 'Signature Documentation' },
-			-- { 'gd', '<cmd>Telescope lsp_definitions<cr>', desc = '[G]oto [D]efinition' },
 			{ 'gD', vim.lsp.buf.declaration, desc = '[G]oto [D]eclaration' },
 			{ 'gI', '<cmd>Telescope lsp_implementations<cr>', desc = '[G]oto [I]mplementation' },
 			{ 'gr', '<cmd>Telescope lsp_references<cr>', desc = '[G]oto [R]eferences' },
 			{ 'K', vim.lsp.buf.hover, desc = 'Hover Documentation' },
-			{ '<leader>ca', vim.lsp.buf.code_action, desc = '[C]ode [A]ction' },
+			{ '<leader>ca', '<cmd>FzfLua lsp_code_actions<cr>', desc = '[C]ode [A]ction' },
 			{ '<leader>D', '<cmd>Telescope lsp_type_definitions<cr>', desc = 'Type [D]efinitions' },
+			{ '<leader>dj', diagnostic_goto(true), desc = 'Next [D]iagnostic' },
+			{ '<leader>dk', diagnostic_goto(false), desc = 'Prev [D]iagnostic' },
 			{ '<leader>ds', '<cmd>Telescope lsp_document_symbols<cr>', desc = '[D]ocument [S]ymbols' },
-			{ '<leader>Ej', M.diagnostic_goto(true, 'ERROR'), desc = 'Next Error' },
-			{ '<leader>Ek', M.diagnostic_goto(false, 'ERROR'), desc = 'Prev Error' },
+			{ '<leader>Ej', diagnostic_goto(true, 'ERROR'), desc = 'Next Error' },
+			{ '<leader>Ek', diagnostic_goto(false, 'ERROR'), desc = 'Prev Error' },
 			{ '<leader>K', vim.lsp.buf.hover, desc = 'Hover' },
+			{ '<leader>ld', vim.diagnostic.open_float, desc = '[L]ine [D]iagnostics' },
 			{ '<leader>li', '<cmd>LspInfo<cr>', desc = 'Lsp Info' },
 			{ '<Leader>ll', '<cmd>LspLog<cr>', desc = 'Lsp Log' },
 			{ '<Leader>lr', '<cmd>LspRestart<cr>', desc = 'Lsp Restart' },
 			{ '<leader>rn', vim.lsp.buf.rename, desc = '[R]e[n]ame' },
-			-- { '<leader>sd', '<cmd>Telescope diagnostics<cr>', desc = '[S]earch [D]iagnostics' },
 			{ '<leader>sd', '<cmd>FzfLua diagnostics_workspace<cr>', desc = '[S]earch [D]iagnostics' },
-			{ '<leader>wj', M.diagnostic_goto(true, 'WARN'), desc = 'Next Warning' },
-			{ '<leader>wk', M.diagnostic_goto(false, 'WARN'), desc = 'Prev Warning' },
+			{ '<leader>wj', diagnostic_goto(true, 'WARN'), desc = 'Next Warning' },
+			{ '<leader>wk', diagnostic_goto(false, 'WARN'), desc = 'Prev Warning' },
 			{ '<leader>ws', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', desc = '[W]orkspace [S]ymbols' },
 		}
 	end
