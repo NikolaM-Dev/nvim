@@ -3,6 +3,14 @@ local M = {}
 ---@type PluginLspKeys
 M._keys = nil
 
+local function diagnostic_goto(next, severity)
+	local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
+	severity = severity and vim.diagnostic.severity[severity] or nil
+	return function()
+		go({ severity = severity })
+	end
+end
+
 ---@return (LazyKeys|{has?:string})[]
 function M.get()
 	if not M._keys then
@@ -56,14 +64,6 @@ function M.on_attach(client, buffer)
 			opts.buffer = buffer
 			vim.keymap.set(keys.mode or 'n', keys[1], keys[2], opts)
 		end
-	end
-end
-
-function M.diagnostic_goto(next, severity)
-	local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
-	severity = severity and vim.diagnostic.severity[severity] or nil
-	return function()
-		go({ severity = severity })
 	end
 end
 
