@@ -8,6 +8,7 @@ local function diagnostic_goto(next, severity)
 	severity = severity and vim.diagnostic.severity[severity] or nil
 	return function()
 		go({ severity = severity })
+		vim.diagnostic.open_float()
 	end
 end
 
