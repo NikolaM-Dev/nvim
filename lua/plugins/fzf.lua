@@ -18,18 +18,6 @@ return {
 		{ '<leader>gs', '<cmd>FzfLua git_status<cr>', desc = 'Git Status' },
 		{ '<leader>gst', '<cmd>FzfLua git_stash<cr>', desc = 'Git Stash' },
 		{ '<leader>sp', '<cmd>FzfLua spell_suggest<cr>', desc = 'Git Commits' },
-		{
-			'gd',
-			function()
-				require('fzf-lua').lsp_definitions({ jump_to_single_result = true })
-			end,
-			desc = '[G]o to [D]efinition',
-		},
-		{
-			'<leader>f',
-			'<cmd>FzfLua<cr>',
-			desc = 'Fzf',
-		},
 	},
 	config = function()
 		local utils = require('fzf-lua').utils
