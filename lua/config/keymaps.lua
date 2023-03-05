@@ -22,6 +22,11 @@ map('n', '<A-K>', ':m .-2<cr>==', { desc = 'Move up' })
 map('v', '<A-J>', ':m \'>+1<cr>gv=gv', { desc = 'Move down' })
 map('v', '<A-K>', ':m \'<-2<cr>gv=gv', { desc = 'Move up' })
 
+-- Insert line below
+map('i', '<C-j>', '<esc>o')
+-- Insert line above
+map('i', '<C-k>', '<esc>O')
+
 -- Clear search with <esc>
 map({ 'i', 'n' }, '<esc>', '<cmd>noh<cr><esc>', { desc = 'Escape and clear hlsearch' })
 
