@@ -11,7 +11,10 @@ return {
 				changedelete = { text = '▎' },
 				untracked = { text = '▎' },
 			},
+			numhl = true,
 			preview_config = { border = 'rounded' },
+			signcolumn = false,
+			trouble = false,
 			on_attach = function(buffer)
 				local gs = package.loaded.gitsigns
 
