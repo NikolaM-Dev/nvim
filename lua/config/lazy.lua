@@ -20,7 +20,7 @@ require('lazy').setup({
 	checker = { enabled = true, notify = false },
 	defaults = { lazy = true },
 	diff = { cmd = 'terminal_git' },
-	install = { colorscheme = { 'tokyonight' } },
+	install = { colorscheme = { 'catppuccin', 'tokyonight' } },
 	performance = {
 		cache = { enabled = true },
 		rtp = {
