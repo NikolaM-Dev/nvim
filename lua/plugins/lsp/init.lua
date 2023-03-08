@@ -11,6 +11,7 @@ return {
 		-- LSP Server Settings
 		---@type lspconfig.options
 		servers = {
+			angularls = {},
 			cssls = {},
 			gopls = {},
 			html = {},
