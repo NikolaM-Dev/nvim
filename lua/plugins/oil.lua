@@ -14,15 +14,16 @@ return {
 			keymaps = {
 				['`'] = 'actions.cd',
 				['_'] = 'actions.open_cwd',
+				['-'] = 'actions.parent',
 				['~'] = 'actions.tcd',
 				['<C-l>'] = 'actions.refresh',
 				['<C-p>'] = 'actions.preview',
 				['<CR>'] = 'actions.select',
 				['<C-s>'] = false,
 				['<C-t>'] = 'actions.select_tab',
+				['<C-v>'] = 'actions.select_vsplit',
 				['g?'] = 'actions.show_help',
 				['g.'] = 'actions.toggle_hidden',
-				['-'] = 'actions.parent',
 				['<leader>e'] = 'actions.close',
 			},
 		})
