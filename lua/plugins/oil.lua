@@ -10,7 +10,8 @@ return {
 			restore_win_options = true,
 			silence_disclaimer = true,
 			skip_confirm_for_simple_edits = true,
-			view_options = { show_hidden = true },
+			-- TODO: Add better reconize
+			view_options = { show_hidden = false },
 			keymaps = {
 				['`'] = 'actions.cd',
 				['_'] = 'actions.open_cwd',
