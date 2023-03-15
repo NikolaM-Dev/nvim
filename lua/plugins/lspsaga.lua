@@ -1,6 +1,5 @@
 return {
 	'glepnir/lspsaga.nvim',
-	enabled = false,
 	event = 'BufRead',
 	keys = {
 		{ 'ga', '<cmd>Lspsaga code_action<cr>', desc = 'Code Action (lspsaga)' },
@@ -17,6 +16,7 @@ return {
 				scroll_down = '<C-d>',
 				scroll_up = '<C-u>',
 			},
+			diagnostic = { on_insert = false },
 			symbol_in_winbar = { enable = false },
 			ui = {
 				border = 'rounded',
