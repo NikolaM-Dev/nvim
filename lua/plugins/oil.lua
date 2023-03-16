@@ -29,9 +29,12 @@ return {
 		require('oil').setup({
 			restore_win_options = true,
 			silence_disclaimer = true,
-			skip_confirm_for_simple_edits = true,
-			-- TODO: Add better reconize
-			view_options = { show_hidden = false },
+			view_options = {
+				show_hidden = false,
+				is_hidden_file = function(file_name)
+					return hide_file(file_name)
+				end,
+			},
 			keymaps = {
 				['`'] = 'actions.cd',
 				['_'] = 'actions.open_cwd',
