@@ -1,3 +1,23 @@
+local function hide_file(file_name)
+	local is_hide = false
+	local filters = {
+		'^dist$',
+		'^.git$',
+		'^.mind$',
+		'^node_modules$',
+	}
+
+	for _, f in pairs(filters) do
+		if string.match(file_name, f) then
+			is_hide = true
+
+			break
+		end
+	end
+
+	return is_hide
+end
+
 return {
 	'stevearc/oil.nvim',
 	cmd = 'Oil',
