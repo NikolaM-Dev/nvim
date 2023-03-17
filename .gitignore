@@ -39,7 +39,9 @@ luac.out
 *.x86_64
 *.hex
 
-# Nvim
+# VS Code
 .vscode
-plugin/packer_compiled.lua
+
+# Nvim
 lazy-lock.json
+.mind
