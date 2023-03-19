@@ -43,6 +43,10 @@ map('n', '<leader>w', '<cmd>wall<cr>', { desc = 'Write all' })
 
 -- Quit
 map('n', '<C-q>', function()
+	if vim.bo.filetype == 'gitcommit' then
+		return vim.cmd.quit()
+	end
+
 	if #vim.fn.gettabinfo() > 1 then
 		return vim.cmd.tabclose()
 	end
@@ -57,11 +61,6 @@ map('n', '<C-q>', function()
 					vim.cmd.bdelete()
 					flag = true
 				end)
-
-				break
-			elseif vim.bo.filetype == 'gitcommit' then
-				vim.cmd.quit()
-				flag = true
 
 				break
 			end
