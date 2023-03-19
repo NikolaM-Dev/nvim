@@ -59,6 +59,11 @@ map('n', '<C-q>', function()
 				end)
 
 				break
+			elseif vim.bo.filetype == 'gitcommit' then
+				vim.cmd.quit()
+				flag = true
+
+				break
 			end
 		end
 
