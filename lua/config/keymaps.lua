@@ -99,6 +99,10 @@ map('n', '<C-i>', '<C-i>zz', { desc = 'Next History centralized' })
 map('n', '<leader>lp', '<cmd>Lazy profile<cr>', { desc = 'Lazy profile' })
 map('n', '<leader>lu', '<cmd>Lazy update<cr>', { desc = 'Lazy update' })
 
+-- H and L go to begining/end of line
+map('n', 'H', '^', { desc = 'Go to Beginning of Line' })
+map('n', 'L', '$', { desc = 'Go to End of Line' })
+
 -- Add undo break-points
 map('i', '!', '!<c-g>u')
 map('i', ',', ',<c-g>u')
