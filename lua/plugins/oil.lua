@@ -29,6 +29,7 @@ return {
 		require('oil').setup({
 			restore_win_options = true,
 			silence_disclaimer = true,
+			skip_confirm_for_simple_edits = true,
 			view_options = {
 				show_hidden = false,
 				is_hidden_file = function(file_name)
