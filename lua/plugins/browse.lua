@@ -1,5 +1,5 @@
 local bookmarks = {
-	adalessa = 'https://github.com/adalessa/dotfiles/tree/lazy/nvim/.config/nvim',
+	adalessa = 'https://github.com/adalessa/nvim',
 	awesome = 'https://github.com/rockerBOO/awesome-neovim',
 	catppuccin = 'https://github.com/catppuccin/catppuccin',
 	cris_at_machine = 'https://github.com/ChristianChiarulli/nvim',
