@@ -2,10 +2,10 @@ return {
 	'ibhagwan/fzf-lua',
 	cmd = 'FzfLua',
 	keys = {
-		{ '<leader>f', '<cmd>FzfLua<cr>', desc = 'Fzf' },
 		{ '<leader>b', '<cmd>FzfLua buffers<cr>', desc = '[B]uffers' },
 		{ '<leader>?', '<cmd>FzfLua command_history<cr>', desc = 'Command History' },
 		{ '<leader>fa', '<cmd>FzfLua live_grep<cr>', desc = 'Live Grep' },
+		{ '<leader>f', '<cmd>FzfLua<cr>', desc = 'Fzf' },
 		{ '<leader>ff', '<cmd>FzfLua files<cr>', desc = '[F]ind [Files]' },
 		{ '<leader>fo', '<cmd>FzfLua oldfiles<cr>', desc = 'Old Files' },
 		{ '<leader>gbb', '<cmd>FzfLua git_bcommits<cr>', desc = 'Git Buffer Commits' },
