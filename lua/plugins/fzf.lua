@@ -7,6 +7,7 @@ return {
 		{ '<leader>fa', '<cmd>FzfLua live_grep<cr>', desc = 'Live Grep' },
 		{ '<leader>f', '<cmd>FzfLua<cr>', desc = 'Fzf' },
 		{ '<leader>ff', '<cmd>FzfLua files<cr>', desc = '[F]ind [Files]' },
+		{ '<leader>fh', '<cmd>FzfLua help_tags<cr>', desc = 'Find [H]elp tags' },
 		{ '<leader>fo', '<cmd>FzfLua oldfiles<cr>', desc = 'Old Files' },
 		{ '<leader>gbb', '<cmd>FzfLua git_bcommits<cr>', desc = 'Git Buffer Commits' },
 		{ '<leader>gb', '<cmd>FzfLua git_branches<cr>', desc = 'Git Branches' },
