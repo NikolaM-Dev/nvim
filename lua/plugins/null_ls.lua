@@ -13,7 +13,6 @@ return {
 			sources = {
 				f.prettier.with({
 					extra_args = { '--single-quote', '--trailing-comma', 'all' },
-					extra_filetypes = { 'toml' },
 				}),
 				d.eslint_d.with({
 					-- only enable eslint if root has .eslintrc.js
