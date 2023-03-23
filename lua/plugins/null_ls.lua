@@ -26,6 +26,7 @@ return {
 				f.gofumpt,
 				f.goimports,
 				f.stylua,
+				f.taplo,
 			},
 		})
 	end,
