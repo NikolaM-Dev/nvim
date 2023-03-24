@@ -18,6 +18,7 @@ return {
 			jsonls = {},
 			lua_ls = { settings = { Lua = { telemetry = { enable = false } } } },
 			tailwindcss = {},
+			taplo = {},
 			tsserver = {},
 			vimls = {},
 		},
