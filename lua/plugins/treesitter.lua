@@ -29,6 +29,7 @@ return {
 			context_commentstring = { enable = true, enable_autocmd = false },
 			ensure_installed = 'all',
 			indent = { enable = true },
+			matchup = { enable = true },
 			rainbow = { enable = true, extended_mode = false },
 		})
 	end,
