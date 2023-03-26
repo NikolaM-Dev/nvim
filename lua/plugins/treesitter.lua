@@ -4,8 +4,8 @@ return {
 	event = { 'BufReadPost', 'BufNewFile' },
 	version = false,
 	dependencies = {
+		'mrjones2014/nvim-ts-rainbow',
 		'windwp/nvim-ts-autotag',
-		'HiPhish/nvim-ts-rainbow2',
 	},
 	keys = {
 		{ '<C-space>', desc = 'Increment selection' },
@@ -29,7 +29,7 @@ return {
 			context_commentstring = { enable = true, enable_autocmd = false },
 			ensure_installed = 'all',
 			indent = { enable = true },
-			rainbow = { enable = true, disable = { 'markdown' } },
+			rainbow = { enable = true, extended_mode = false },
 		})
 	end,
 }
