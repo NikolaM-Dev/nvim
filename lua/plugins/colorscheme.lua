@@ -43,6 +43,7 @@ return {
 					lsp_trouble = true,
 					mason = true,
 					mini = true,
+					notify = true,
 					ts_rainbow = true,
 				},
 				styles = { functions = { 'bold' } },
