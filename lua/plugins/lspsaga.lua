@@ -2,13 +2,12 @@ return {
 	'glepnir/lspsaga.nvim',
 	event = 'BufRead',
 	keys = {
-		{ 'ga', '<cmd>Lspsaga code_action<cr>', desc = 'Code Action (lspsaga)' },
-		{ 'gh', '<cmd>Lspsaga lsp_finder<cr>', desc = 'References (lspsaga)' },
-		{ 'gl', '<cmd>Lspsaga show_cursor_diagnostics<cr>', desc = 'Show Current Diagnostic' },
-		{ 'gr', '<cmd>Lspsaga rename<cr>', desc = 'Rename (lspsaga)' },
-		{ 'K', '<cmd>Lspsaga hover_doc<cr>', desc = 'Hover (lspsaga)' },
-		{ '<leader>dj', '<cmd>Lspsaga diagnostic_jump_next<cr>', desc = 'Next Diagnostic (lspsaga)' },
-		{ '<leader>dk', '<cmd>Lspsaga diagnostic_jump_prev<cr>', desc = 'Prev Diagnostic (lspsaga)' },
+		{ 'ga', '<cmd>Lspsaga code_action<cr>', desc = '[C]ode [A]ction' },
+		{ 'gh', '<cmd>Lspsaga lsp_finder<cr>', desc = 'Lsp Finder' },
+		{ 'gr', '<cmd>Lspsaga rename<cr>', desc = '[R]ename' },
+		{ 'K', '<cmd>Lspsaga hover_doc<cr>', desc = 'Hover' },
+		{ '<leader>dj', '<cmd>Lspsaga diagnostic_jump_next<cr>', desc = 'Next [D]iagnostic' },
+		{ '<leader>dk', '<cmd>Lspsaga diagnostic_jump_prev<cr>', desc = 'Prev [D]iagnostic' },
 	},
 	config = function()
 		require('lspsaga').setup({
