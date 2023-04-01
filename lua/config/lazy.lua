@@ -21,6 +21,11 @@ require('lazy').setup({
 	defaults = { lazy = true },
 	diff = { cmd = 'terminal_git' },
 	install = { colorscheme = { 'catppuccin', 'tokyonight' } },
+	dev = {
+		path = '~/workspace/nvim',
+		fallback = true,
+		patterns = { 'NikolaM-Dev' },
+	},
 	performance = {
 		cache = { enabled = true },
 		rtp = {
