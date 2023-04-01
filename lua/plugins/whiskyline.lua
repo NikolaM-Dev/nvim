@@ -1,6 +1,6 @@
 return {
-	'glepnir/whiskyline.nvim',
-	event = 'VeryLazy',
+	'NikolaM-Dev/whiskyline.nvim',
+	event = 'VimEnter',
 	config = function()
 		require('whiskyline').setup()
 	end,
