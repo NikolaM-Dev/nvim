@@ -16,7 +16,14 @@ return {
 			gopls = {},
 			html = {},
 			jsonls = {},
-			lua_ls = { settings = { Lua = { telemetry = { enable = false } } } },
+			lua_ls = {
+				settings = {
+					Lua = {
+						telemetry = { enable = false },
+						workspace = { checkThirdParty = false },
+					},
+				},
+			},
 			tailwindcss = {},
 			taplo = {},
 			tsserver = {},
