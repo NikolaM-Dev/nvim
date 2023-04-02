@@ -11,12 +11,12 @@ autocmd({ 'Filetype' }, {
 	end,
 })
 
--- disables autocommenting on new lines
-autocmd({ 'FileType' }, {
+autocmd({ 'BufEnter' }, {
+	desc = 'Disables autocommenting on new lines',
 	group = _G.augroup('disable_autocommenting'),
 	pattern = '*',
 	callback = function()
-		vim.api.nvim_command('setlocal formatoptions-=cro')
+		vim.opt.formatoptions:remove({ 'c', 'r', 'o' })
 	end,
 })
 
