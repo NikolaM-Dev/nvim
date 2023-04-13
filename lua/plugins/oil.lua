@@ -27,6 +27,9 @@ return {
 	},
 	config = function()
 		require('oil').setup({
+			columns = {
+				{ 'icon', default_file = '', directory = ' ' },
+			},
 			restore_win_options = true,
 			silence_disclaimer = true,
 			skip_confirm_for_simple_edits = true,
