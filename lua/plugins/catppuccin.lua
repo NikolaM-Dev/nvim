@@ -21,5 +21,7 @@ return {
 		})
 
 		catppuccin.load()
+
+		vim.cmd('highlight PmenuSel guifg=NONE')
 	end,
 }
