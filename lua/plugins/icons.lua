@@ -191,6 +191,16 @@ return {
 				icon = '',
 				name = 'ViteProductionEnv',
 			},
+			test = {
+				color = '#fbc02d',
+				icon = '',
+				name = 'ViteTestEnv',
+			},
+			development = {
+				color = '#fbc02d',
+				icon = '',
+				name = 'ViteDevelopmentEnv',
+			},
 			testing = {
 				color = '#fbc02d',
 				icon = '',
