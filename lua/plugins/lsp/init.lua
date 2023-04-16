@@ -12,7 +12,14 @@ return {
 		---@type lspconfig.options
 		servers = {
 			angularls = {},
-			cssls = {},
+			cssls = {
+				settings = {
+					css = {
+						validate = true,
+						lint = { unknownAtRules = 'ignore' },
+					},
+				},
+			},
 			gopls = {},
 			html = {},
 			jsonls = {},
