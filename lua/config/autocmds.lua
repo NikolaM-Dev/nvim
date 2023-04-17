@@ -20,10 +20,10 @@ autocmd({ 'BufEnter' }, {
 	end,
 })
 
--- go tmpl
 autocmd({ 'BufWinEnter' }, {
-	group = _G.augroup('go_tmpl'),
-	pattern = '*.tmpl',
+	desc = 'Change filetype to html for better highlight syntax',
+	group = _G.augroup('html_filetype'),
+	pattern = { '*.tmpl', '*.snap' },
 	callback = function()
 		vim.api.nvim_command('set filetype=html')
 	end,
