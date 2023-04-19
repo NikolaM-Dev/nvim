@@ -21,6 +21,7 @@ require('lazy').setup({
 	defaults = { lazy = true, version = false },
 	diff = { cmd = 'terminal_git' },
 	install = { colorscheme = { 'catppuccin', 'tokyonight' } },
+	---@diagnostic disable-next-line: assign-type-mismatch
 	dev = {
 		path = '~/workspace/nvim',
 		fallback = true,
