@@ -66,7 +66,7 @@ require('lazy').setup({
 			init = '',
 			import = '󰈠',
 			keys = '󰌌',
-			lazy = '鈴',
+			lazy = '󰂠',
 			loaded = '󰄳',
 			not_loaded = 'ﮊ',
 			plugin = '󰏖',
