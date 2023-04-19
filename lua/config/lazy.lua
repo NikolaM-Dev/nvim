@@ -18,7 +18,7 @@ require('lazy').setup({
 	},
 	change_detection = { enabled = true, notify = false },
 	checker = { enabled = true, notify = false },
-	defaults = { lazy = true },
+	defaults = { lazy = true, version = false },
 	diff = { cmd = 'terminal_git' },
 	install = { colorscheme = { 'catppuccin', 'tokyonight' } },
 	dev = {
