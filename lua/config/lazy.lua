@@ -57,7 +57,7 @@ require('lazy').setup({
 	ui = {
 		border = 'rounded',
 		browser = 'chrome',
-		throttle = 40,
+		throttle = 42,
 		icons = {
 			cmd = '',
 			config = '',
