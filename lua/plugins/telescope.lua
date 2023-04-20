@@ -48,7 +48,6 @@ return {
 				prompt_prefix = '   ',
 				selection_caret = '  ',
 			},
-			pickers = { git_files = { show_untracked = true } },
 			extensions = { smart_open = { match_algorithm = 'fzf' } },
 		})
 
