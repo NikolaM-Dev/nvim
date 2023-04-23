@@ -75,7 +75,10 @@ return {
 					},
 				},
 			},
-			extensions = { smart_open = { match_algorithm = 'fzf' } },
+			extensions = {
+				fzf = { case_mode = 'ignore_case' },
+				smart_open = { match_algorithm = 'fzf' },
+			},
 		})
 
 		telescope.load_extension('fzf')
