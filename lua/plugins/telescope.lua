@@ -51,6 +51,18 @@ return {
 				selection_caret = '  ',
 				sorting_strategy = 'ascending',
 			},
+			pickers = {
+				buffers = {
+					ignore_current_buffer = true,
+					sort_mru = true,
+					previewer = false,
+					layout_config = {
+						horizontal = {
+							width = 0.5,
+							height = 0.4,
+						},
+					},
+				},
 			},
 			extensions = { smart_open = { match_algorithm = 'fzf' } },
 		})
