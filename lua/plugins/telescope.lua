@@ -63,6 +63,18 @@ return {
 						},
 					},
 				},
+				-- TODO: Change to use icons
+				git_status = {
+					git_icons = {
+						added = 'A',
+						changed = 'M',
+						copied = 'C',
+						deleted = 'D',
+						renamed = 'R',
+						unmerged = 'U',
+						untracked = '?',
+					},
+				},
 			},
 			extensions = { smart_open = { match_algorithm = 'fzf' } },
 		})
