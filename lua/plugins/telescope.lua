@@ -17,9 +17,7 @@ return {
 		{
 			'<leader>/',
 			function()
-				require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown({
-					previewer = false,
-				}))
+				require('telescope.builtin').current_buffer_fuzzy_find()
 			end,
 			desc = '[/] Fuzzily search in currrent buffer',
 		},
@@ -52,6 +50,7 @@ return {
 				sorting_strategy = 'ascending',
 			},
 			pickers = {
+				current_buffer_fuzzy_find = { theme = 'dropdown', previewer = false },
 				buffers = {
 					ignore_current_buffer = true,
 					sort_mru = true,
