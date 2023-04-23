@@ -45,8 +45,12 @@ return {
 		telescope.setup({
 			defaults = {
 				entry_prefix = '  ',
+				layout_config = { prompt_position = 'top' },
+				multi_icon = ' 󰗠 ',
 				prompt_prefix = '   ',
 				selection_caret = '  ',
+				sorting_strategy = 'ascending',
+			},
 			},
 			extensions = { smart_open = { match_algorithm = 'fzf' } },
 		})
