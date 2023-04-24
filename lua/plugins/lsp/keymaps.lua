@@ -17,14 +17,8 @@ function M.get()
 	if not M._keys then
 		---@class PluginLspKeys
 		M._keys = {
-			{
-				'gd',
-				function()
-					require('fzf-lua').lsp_definitions({ jump_to_single_result = true })
-				end,
-				desc = '[G]o to [D]efinition',
-			},
 			{ '<C-k>', vim.lsp.buf.signature_help, mode = 'i', desc = 'Signature Documentation' },
+			{ 'gd', '<cmd>Telescope lsp_definitions<cr>', desc = '[G]o to [D]efinition' },
 			{ 'gD', vim.lsp.buf.declaration, desc = '[G]oto [D]eclaration' },
 			{ 'gI', '<cmd>Telescope lsp_implementations<cr>', desc = '[G]oto [I]mplementation' },
 			{ '<leader>D', '<cmd>Telescope lsp_type_definitions<cr>', desc = 'Type [D]efinitions' },
