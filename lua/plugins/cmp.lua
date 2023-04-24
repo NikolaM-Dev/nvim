@@ -93,6 +93,7 @@ return {
 				format = function(entry, vim_item)
 					if vim_item.kind == 'Color' and entry.completion_item.documentation then
 						local _, _, r, g, b =
+							---@diagnostic disable-next-line: param-type-mismatch
 							string.find(entry.completion_item.documentation, '^rgb%((%d+), (%d+), (%d+)')
 
 						if r and g and b then
