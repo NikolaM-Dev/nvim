@@ -38,6 +38,8 @@ return {
 		{ '<leader>t', '<cmd>Telescope<cr>', desc = '[T]elescope' },
 	},
 	config = function()
+		local actions = require('telescope.actions')
+		local layout = require('telescope.actions.layout')
 		local telescope = require('telescope')
 
 		telescope.setup({
@@ -48,6 +50,19 @@ return {
 				prompt_prefix = '   ',
 				selection_caret = '  ',
 				sorting_strategy = 'ascending',
+				preview = { timeout = 284 },
+				mappings = {
+					-- TODO: Add trouble
+					i = {
+						['<C-j>'] = actions.cycle_history_next,
+						['<C-k>'] = actions.cycle_history_prev,
+						['<C-p>'] = layout.toggle_preview,
+					},
+					n = {
+						['<C-p>'] = layout.toggle_preview,
+						['q'] = actions.close,
+					},
+				},
 			},
 			pickers = {
 				current_buffer_fuzzy_find = { theme = 'dropdown', previewer = false },
