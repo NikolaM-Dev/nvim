@@ -30,6 +30,7 @@ return {
 			Keyword = '',
 			Method = '',
 			Module = '',
+			Null = 'ﳠ',
 			Operator = '',
 			Property = '',
 			Reference = '',
