@@ -15,6 +15,7 @@ return {
 			preview_config = { border = 'rounded' },
 			signcolumn = false,
 			trouble = false,
+			update_debounce = 284,
 			on_attach = function(buffer)
 				local gs = package.loaded.gitsigns
 
