@@ -18,10 +18,22 @@ return {
 				ts_rainbow = true,
 			},
 			styles = { functions = { 'bold' } },
+			custom_highlights = function(colors)
+				return {
+					PmenuSel = { bg = colors.surface0, fg = '' },
+
+					-- TODO: IDK 󱞤
+					CursorLineNr = { fg = colors.mauve },
+					GitSignsChange = { fg = colors.peach },
+					IndentBlanklineChar = { fg = colors.surface0 },
+					IndentBlanklineContextChar = { fg = colors.surface2 },
+					NormalFloat = { bg = colors.crust },
+					NvimTreeExecFile = { fg = colors.text },
+					VertSplit = { bg = colors.base, fg = colors.surface0 },
+				}
+			end,
 		})
 
 		catppuccin.load()
-
-		vim.cmd('highlight PmenuSel guifg=NONE')
 	end,
 }
