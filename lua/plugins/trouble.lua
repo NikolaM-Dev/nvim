@@ -10,10 +10,11 @@ return {
 		{ 'gR', '<cmd>TroubleToggle lsp_references<cr>', desc = 'Lsp References (Trouble)' },
 	},
 	opts = {
+		auto_close = true,
 		fold_closed = '',
 		fold_open = '',
 		padding = false,
-		auto_close = true,
+		position = 'right',
 		signs = {
 			error = '',
 			hint = '',
