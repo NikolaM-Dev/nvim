@@ -1,8 +1,8 @@
 return {
-	'hrsh7th/nvim-cmp',
-	event = 'VimEnter',
-	dependencies = {
-		'hrsh7th/cmp-buffer',
+	{
+		'hrsh7th/nvim-cmp',
+		dependencies = 'nvim-treesitter/nvim-treesitter',
+		lazy = true,
 		'hrsh7th/cmp-calc',
 		'hrsh7th/cmp-cmdline',
 		'hrsh7th/cmp-nvim-lsp',
@@ -157,4 +157,13 @@ return {
 			}),
 		})
 	end,
+	{ 'hrsh7th/cmp-buffer', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
+	{ 'hrsh7th/cmp-calc', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
+	{ 'hrsh7th/cmp-nvim-lsp', event = 'LspAttach', dependencies = { 'hrsh7th/nvim-cmp', 'L3MON4D3/LuaSnip' } },
+	{ 'hrsh7th/cmp-nvim-lsp-signature-help', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
+	{ 'hrsh7th/cmp-nvim-lua', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp', ft = 'lua' },
+	{ 'hrsh7th/cmp-path', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
+	{ 'jackieaskins/cmp-emmet', build = 'npm run release', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
+	{ 'lukas-reineke/cmp-rg', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
+	{ 'saadparwaiz1/cmp_luasnip', event = 'InsertEnter', dependencies = { 'hrsh7th/nvim-cmp', 'L3MON4D3/LuaSnip' } },
 }
