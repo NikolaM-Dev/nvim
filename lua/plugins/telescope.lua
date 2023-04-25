@@ -91,6 +91,11 @@ return {
 						untracked = '?',
 					},
 				},
+				spell_suggest = {
+					layout_config = { horizontal = { height = 0.4, width = 0.4 } },
+					previewer = false,
+					theme = 'dropdown',
+				},
 			},
 			extensions = {
 				fzf = { case_mode = 'ignore_case' },
