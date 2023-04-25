@@ -3,9 +3,9 @@ return {
 		'hrsh7th/nvim-cmp',
 		dependencies = 'nvim-treesitter/nvim-treesitter',
 		lazy = true,
-		'hrsh7th/cmp-calc',
-		'hrsh7th/cmp-cmdline',
-		'hrsh7th/cmp-nvim-lsp',
+		init = function()
+			vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
+		end,
 		'hrsh7th/cmp-nvim-lsp-signature-help',
 		'hrsh7th/cmp-nvim-lua',
 		'hrsh7th/cmp-path',
