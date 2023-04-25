@@ -140,23 +140,30 @@ return {
 				{ name = 'rg' },
 			}),
 		})
+	{
+		'hrsh7th/cmp-cmdline',
+		event = 'CmdlineEnter',
+		dependencies = { 'hrsh7th/nvim-cmp', 'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path' },
+		config = function()
+			local cmp = require('cmp')
 
-		cmp.setup.cmdline({ '/', '?' }, {
-			mapping = cmp.mapping.preset.cmdline(),
-			sources = {
-				{ name = 'buffer', max_item_count = 10 },
-				{ name = 'rg', max_item_count = 10 },
-			},
-		})
+			cmp.setup.cmdline({ '/', '?' }, {
+				mapping = cmp.mapping.preset.cmdline(),
+				sources = {
+					{ name = 'buffer', max_item_count = 10, option = { indexing_interval = 284 } },
+					{ name = 'rg', max_item_count = 10, option = { debounce = 42 } },
+				},
+			})
 
-		cmp.setup.cmdline(':', {
-			mapping = cmp.mapping.preset.cmdline(),
-			sources = cmp.config.sources({
-				{ name = 'path' },
-				{ name = 'cmdline', max_item_count = 10 },
-			}),
-		})
-	end,
+			cmp.setup.cmdline(':', {
+				mapping = cmp.mapping.preset.cmdline(),
+				sources = cmp.config.sources({
+					{ name = 'path' },
+					{ name = 'cmdline', max_item_count = 10 },
+				}),
+			})
+		end,
+	},
 	{ 'hrsh7th/cmp-buffer', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'hrsh7th/cmp-calc', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'hrsh7th/cmp-nvim-lsp', event = 'LspAttach', dependencies = { 'hrsh7th/nvim-cmp', 'L3MON4D3/LuaSnip' } },
