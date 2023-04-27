@@ -49,7 +49,7 @@ return {
 						end
 					end,
 				},
-				performance = { debounce = 20, throttle = 20, fetching_timeout = 284 },
+				performance = { debounce = 20, fetching_timeout = 284, throttle = 20 },
 				mapping = cmp.mapping.preset.insert({
 					['<Tab>'] = cmp.mapping(function(fallback)
 						if cmp.visible() then
