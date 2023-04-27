@@ -42,7 +42,11 @@ return {
 			cmp.setup({
 				snippet = {
 					expand = function(args)
-						luasnip.lsp_expand(args.body)
+						if package.loaded['luasnip'] then
+							require('luasnip').lsp_expand(args.body)
+						else
+							error('snippet engine is not configured.')
+						end
 					end,
 				},
 				performance = { debounce = 20, throttle = 20, fetching_timeout = 284 },
