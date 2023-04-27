@@ -7,35 +7,6 @@ return {
 			vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
 		end,
 		config = function()
-			local kind_icons = {
-				Class = '',
-				Color = '',
-				Constant = '',
-				Constructor = '',
-				Enum = '',
-				EnumMember = '',
-				Event = '',
-				Field = '',
-				File = '',
-				Folder = 'ﱮ',
-				Function = '',
-				Interface = '',
-				Keyword = '',
-				Method = '',
-				Module = '',
-				Null = 'ﳠ',
-				Operator = '',
-				Property = '',
-				Reference = '',
-				Snippet = '',
-				Struct = '',
-				Text = '',
-				TypeParameter = '',
-				Unit = '',
-				Value = '',
-				Variable = '',
-			}
-
 			local cmp = require('cmp')
 			local luasnip = require('luasnip')
 
@@ -71,9 +42,9 @@ return {
 					end, { 'i', 's' }),
 					['<C-c>'] = cmp.mapping.abort(),
 					['<C-d>'] = cmp.mapping.scroll_docs(4),
-					['<C-Space>'] = cmp.mapping.complete({}),
+					['<CR>'] = { i = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }) },
+					['<C-Space>'] = { i = cmp.mapping.complete() },
 					['<C-u>'] = cmp.mapping.scroll_docs(-4),
-					['<CR>'] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 				}),
 				sources = cmp.config.sources({
 					{ name = 'nvim_lsp' },
@@ -85,35 +56,7 @@ return {
 					{ name = 'path' },
 					{ name = 'calc' },
 				}),
-				formatting = {
-					format = function(entry, vim_item)
-						if vim_item.kind == 'Color' and entry.completion_item.documentation then
-							local _, _, r, g, b =
-								---@diagnostic disable-next-line: param-type-mismatch
-								string.find(entry.completion_item.documentation, '^rgb%((%d+), (%d+), (%d+)')
-
-							if r and g and b then
-								local color = string.format('%02x', r)
-									.. string.format('%02x', g)
-									.. string.format('%02x', b)
-								local group = 'Tw_' .. color
-
-								if vim.api.nvim_call_function('hlID', { group }) < 1 then
-									vim.api.nvim_command('highlight' .. ' ' .. group .. ' ' .. 'guifg=#' .. color)
-								end
-
-								vim_item.kind = '󱓻󰝤󰝤󰝤󰝤󰝤󰝤󰝤󱓻'
-								vim_item.kind_hl_group = group
-
-								return vim_item
-							end
-						end
-
-						vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind)
-
-						return vim_item
-					end,
-				},
+				formatting = { format = require('plugins.cmp.formatting').format },
 				window = {
 					documentation = { border = 'rounded' },
 					completion = {
