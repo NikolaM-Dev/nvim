@@ -7,7 +7,7 @@ return {
 			'eslint_d',
 			'gofumpt',
 			'goimports',
-			'prettier',
+			'prettierd',
 			'staticcheck',
 			'stylua',
 		}
