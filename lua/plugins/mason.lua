@@ -21,11 +21,20 @@ return {
 		})
 
 		local mr = require('mason-registry')
-		for _, s in ipairs(sources) do
-			local p = mr.get_package(s)
-			if not p:is_installed() then
-				p:install()
+		local function ensure_installed()
+			for _, s in ipairs(sources) do
+				local p = mr.get_package(s)
+
+				if not p:is_installed() then
+					p:install()
+				end
 			end
+		end
+
+		if mr.refresh then
+			mr.refresh(ensure_installed)
+		else
+			ensure_installed()
 		end
 	end,
 }
