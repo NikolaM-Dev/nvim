@@ -11,9 +11,7 @@ return {
 
 		nls.setup({
 			sources = {
-				f.prettier.with({
-					extra_args = { '--single-quote', '--trailing-comma', 'all' },
-				}),
+				nls.builtins.formatting.prettierd,
 				d.eslint_d.with({
 					-- only enable eslint if root has .eslintrc.js
 					condition = function(utils)
