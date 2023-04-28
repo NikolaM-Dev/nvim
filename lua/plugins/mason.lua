@@ -1,7 +1,7 @@
 return {
 	'williamboman/mason.nvim',
 	cmd = 'Mason',
-	keys = { { '<leader>cM', '<cmd>Mason<cr>', desc = 'Mason' } },
+	keys = { { '<leader>cm', '<cmd>Mason<cr>', desc = '[M]ason' } },
 	config = function()
 		local sources = {
 			'eslint_d',
