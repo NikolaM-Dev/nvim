@@ -11,7 +11,7 @@ return {
 
 		nls.setup({
 			sources = {
-				nls.builtins.formatting.prettierd,
+				f.prettierd,
 				d.eslint_d.with({
 					-- only enable eslint if root has .eslintrc.js
 					condition = function(utils)
