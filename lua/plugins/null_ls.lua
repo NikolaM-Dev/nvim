@@ -24,6 +24,7 @@ return {
 				f.eslint_d,
 				f.gofumpt,
 				f.goimports,
+				f.prettierd,
 				f.stylua,
 				f.taplo,
 			},
