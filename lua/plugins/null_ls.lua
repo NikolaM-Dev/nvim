@@ -11,11 +11,12 @@ return {
 
 		nls.setup({
 			sources = {
-				f.prettierd,
 				d.eslint_d.with({
-					-- only enable eslint if root has .eslintrc.js
 					condition = function(utils)
-						return utils.root_has_file('.eslintrc.js') -- change file extension if you use something else
+						return utils.root_has_file({
+							'.eslintrc.cjs',
+							'.eslintrc.js',
+						})
 					end,
 				}),
 				ca.eslint_d,
