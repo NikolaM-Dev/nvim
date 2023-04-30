@@ -26,8 +26,8 @@ return {
 				autotag = { enable = true },
 				context_commentstring = { enable = true, enable_autocmd = false },
 				ensure_installed = 'all',
-				indent = { enable = true },
-				matchup = { enable = true },
+				indent = enable,
+				matchup = enable,
 				rainbow = enable,
 			})
 		end,
