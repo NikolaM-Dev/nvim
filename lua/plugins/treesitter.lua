@@ -3,7 +3,6 @@ return {
 		'nvim-treesitter/nvim-treesitter',
 		build = ':TSUpdate',
 		event = { 'BufAdd', 'BufNewFile', 'BufReadPre' },
-		dependencies = { 'windwp/nvim-ts-autotag' },
 		keys = {
 			{ '<C-space>', desc = 'Increment selection' },
 			{ '<bs>', desc = 'Schrink selection', mode = 'x' },
@@ -23,9 +22,10 @@ return {
 					end,
 				},
 				auto_install = true,
-				autotag = { enable = true },
 				context_commentstring = { enable = true, enable_autocmd = false },
 				ensure_installed = 'all',
+
+				autotag = enable,
 				indent = enable,
 				matchup = enable,
 				rainbow = enable,
@@ -34,6 +34,12 @@ return {
 	},
 	{
 		'HiPhish/nvim-ts-rainbow2',
+		dependencies = 'nvim-treesitter/nvim-treesitter',
+		event = { 'BufAdd', 'BufNewFile', 'BufReadPre' },
+	},
+
+	{
+		'windwp/nvim-ts-autotag',
 		dependencies = 'nvim-treesitter/nvim-treesitter',
 		event = { 'BufAdd', 'BufNewFile', 'BufReadPre' },
 	},
