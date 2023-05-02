@@ -3,8 +3,8 @@ return {
 	event = 'BufReadPre',
 	config = function()
 		require('colorizer').setup({
-			buftype = { '*', '!prompt', '!nofile' },
-			filetypes = { '*', '!lazy' },
+			buftype = { '*' },
+			filetypes = { '*', '!checkhealth', '!lazy', '!lspinfo', '!mason', '!null-ls-info' },
 			user_default_options = {
 				AARRGGBB = true,
 				css = true,
