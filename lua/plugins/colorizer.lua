@@ -7,8 +7,8 @@ return {
 			filetypes = { '*', '!checkhealth', '!lazy', '!lspinfo', '!mason', '!null-ls-info' },
 			user_default_options = {
 				AARRGGBB = true,
-				css = true,
 				css_fn = true,
+				css = true,
 				mode = 'background',
 				rgb_fn = true,
 				RRGGBBAA = true,
