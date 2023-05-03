@@ -21,10 +21,11 @@ return {
 					end
 				end,
 			},
+
 			auto_install = true,
-			context_commentstring = { enable = true, enable_autocmd = false },
 			ensure_installed = 'all',
 
+			context_commentstring = { enable = true, enable_autocmd = false },
 			autotag = enable,
 			indent = enable,
 			matchup = enable,
