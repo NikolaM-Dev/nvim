@@ -2,7 +2,7 @@ return {
 	'glepnir/lspsaga.nvim',
 	event = 'BufRead',
 	keys = {
-		{ 'ga', '<cmd>Lspsaga code_action<cr>', desc = '[C]ode [A]ction' },
+		{ 'ga', '<cmd>Lspsaga code_action<cr>', desc = 'Code [A]ction' },
 		{ 'gh', '<cmd>Lspsaga lsp_finder<cr>', desc = 'Lsp Finder' },
 		{ 'gr', '<cmd>Lspsaga rename<cr>', desc = '[R]ename' },
 		{ 'K', '<cmd>Lspsaga hover_doc<cr>', desc = 'Hover' },
