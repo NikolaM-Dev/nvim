@@ -13,10 +13,7 @@ return {
 			sources = {
 				d.eslint_d.with({
 					condition = function(utils)
-						return utils.root_has_file({
-							'.eslintrc.cjs',
-							'.eslintrc.js',
-						})
+						return utils.root_has_file({ '.eslintrc.cjs', '.eslintrc.js' })
 					end,
 				}),
 				ca.eslint_d,
