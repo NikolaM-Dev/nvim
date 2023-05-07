@@ -22,8 +22,8 @@ return {
 	'stevearc/oil.nvim',
 	cmd = 'Oil',
 	keys = {
+		{ '<leader>;e', '<cmd>Oil .<cr>', desc = 'Open Oil Root Path' },
 		{ '<leader>e', '<cmd>Oil %:p:h<cr>', desc = 'Open Oil Current Path' },
-		{ '<leader><leader>e', '<cmd>Oil .<cr>', desc = 'Open Oil Root Path' },
 	},
 	config = function()
 		require('oil').setup({
