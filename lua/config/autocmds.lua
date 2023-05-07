@@ -100,7 +100,7 @@ autocmd({ 'FileType' }, {
 })
 
 -- Fzf redraw
-autocmd('VimResized', { pattern = '*', command = 'lua require("fzf-lua").redraw()', group = _G.augroup('fzf_redraw') })
+-- autocmd('VimResized', { pattern = '*', command = 'lua require("fzf-lua").redraw()', group = _G.augroup('fzf_redraw') })
 
 -- Check if we need to reload the file when it changed
 autocmd({ 'FocusGained', 'TermClose', 'TermLeave' }, { command = 'checktime', group = _G.augroup('checktime') })
