@@ -1,6 +1,6 @@
 return {
 	'RRethy/vim-illuminate',
-	enabled = false,
+	enabled = true,
 	dependencies = 'nvim-treesitter/nvim-treesitter',
 	event = { 'BufNewFile', 'BufRead', 'BufAdd', 'SessionLoadPost' },
 	config = function()
