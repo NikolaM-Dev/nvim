@@ -8,17 +8,17 @@ return {
 			function()
 				require('todo-comments').jump_next()
 			end,
-			desc = 'Next todo comment',
+			desc = 'Next [T]odo Comment',
 		},
 		{
 			'<leader>tk',
 			function()
 				require('todo-comments').jump_prev()
 			end,
-			desc = 'Previous todo comment',
+			desc = 'Previous [T]odo Comment',
 		},
-		{ '<leader>;t', '<cmd>TodoTrouble<cr>', desc = 'Todo (Trouble)' },
-		{ '<leader>ft', '<cmd>TodoTelescope<cr>', desc = 'Todo' },
+		{ '<leader>ft', '<cmd>TodoTelescope<cr>', desc = 'Find [T]odo' },
+		{ '<leader>;t', '<cmd>TodoTrouble<cr>', desc = '[T]odo Trouble' },
 	},
 	config = function()
 		require('todo-comments').setup({
