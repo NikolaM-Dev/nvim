@@ -21,6 +21,16 @@ return {
 		{ '<leader>ft', '<cmd>TodoTelescope<cr>', desc = 'Todo' },
 	},
 	config = function()
-		require('todo-comments').setup()
+		require('todo-comments').setup({
+			keywords = {
+				FIX = { icon = ' ' },
+				HACK = { icon = ' ' },
+				NOTE = { icon = ' ' },
+				PERF = { icon = ' ' },
+				TEST = { icon = '󰂖 ' },
+				TODO = { icon = ' ' },
+				WARN = { icon = ' ' },
+			},
+		})
 	end,
 }
