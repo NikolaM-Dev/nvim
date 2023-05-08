@@ -1,7 +1,7 @@
 return {
 	'folke/todo-comments.nvim',
 	cmd = { 'TodoTelescope', 'TodoTrouble' },
-	event = 'BufReadPost',
+	event = { 'BufReadPost', 'BufNewFile' },
 	keys = {
 		{
 			'<leader>tj',
