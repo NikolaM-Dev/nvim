@@ -18,9 +18,10 @@ require('lazy').setup({
 	},
 	change_detection = { enabled = true, notify = false },
 	checker = { enabled = true, notify = false },
-	defaults = { lazy = true },
+	defaults = { lazy = true, version = false },
 	diff = { cmd = 'terminal_git' },
 	install = { colorscheme = { 'catppuccin', 'tokyonight' } },
+	---@diagnostic disable-next-line: assign-type-mismatch
 	dev = {
 		path = '~/workspace/nvim',
 		fallback = true,
@@ -57,7 +58,7 @@ require('lazy').setup({
 	ui = {
 		border = 'rounded',
 		browser = 'chrome',
-		throttle = 40,
+		throttle = 42,
 		icons = {
 			cmd = '',
 			config = '',
@@ -66,7 +67,7 @@ require('lazy').setup({
 			init = '',
 			import = '󰈠',
 			keys = '󰌌',
-			lazy = '鈴',
+			lazy = '󰂠',
 			loaded = '󰄳',
 			not_loaded = 'ﮊ',
 			plugin = '󰏖',

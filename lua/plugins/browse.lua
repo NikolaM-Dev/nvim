@@ -1,3 +1,4 @@
+-- TODO: Add grouped urls
 local bookmarks = {
 	adalessa = 'https://github.com/adalessa/nvim',
 	awesome = 'https://github.com/rockerBOO/awesome-neovim',
@@ -38,7 +39,7 @@ return {
 			function()
 				require('browse').open_bookmarks({ bookmarks = bookmarks })
 			end,
-			desc = 'Bookmarks (Browse)',
+			desc = '[B]rowse [B]ookmarks',
 		},
 	},
 	config = function()
