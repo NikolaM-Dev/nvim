@@ -6,7 +6,8 @@ return {
 		require('mini.comment').setup({
 			hooks = {
 				pre = function()
-					require('ts_context_commentstring.internal').update_commentstring({})
+					---@diagnostic disable-next-line: missing-parameter
+					require('ts_context_commentstring.internal').update_commentstring()
 				end,
 			},
 		})
