@@ -16,12 +16,23 @@ return {
 						return utils.root_has_file({ '.eslintrc.cjs', '.eslintrc.js' })
 					end,
 				}),
+				f.prettier.with({
+					extra_args = { '--single-quote', '--trailing-comma', 'all' },
+					condition = function(utils)
+						return utils.root_has_file({ '.eslintrc.cjs' })
+					end,
+				}),
+				f.prettierd.with({
+					extra_args = { '--single-quote', '--trailing-comma', 'all' },
+					condition = function(utils)
+						return not utils.root_has_file({ '.eslintrc.cjs' })
+					end,
+				}),
 				ca.eslint_d,
 				d.staticcheck,
 				f.eslint_d,
 				f.gofumpt,
 				f.goimports,
-				f.prettierd,
 				f.stylua,
 				f.taplo,
 			},
