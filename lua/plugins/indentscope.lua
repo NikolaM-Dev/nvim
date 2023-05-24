@@ -2,7 +2,10 @@ return {
 	'echasnovski/mini.indentscope',
 	event = 'VeryLazy',
 	config = function()
-		require('mini.indentscope').setup({ symbol = '│' })
+		require('mini.indentscope').setup({
+			draw = { animation = require('mini.indentscope').gen_animation.none() },
+			symbol = '│',
+		})
 
 		vim.api.nvim_command('highlight! MiniIndentscopeSymbol guibg=NONE guifg=#45475a')
 	end,
