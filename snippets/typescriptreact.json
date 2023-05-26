@@ -8,11 +8,10 @@
     "body": [
       "interface IProps {};",
       "",
-      "export const ${1:${TM_FILENAME_BASE}} = ({}: IProps): JSX.Element => {",
+      "export const ${TM_FILENAME_BASE} = ({}: IProps): JSX.Element => {",
       "\treturn (",
       "\t\t<>",
-      "\t\t\t<h1>${1:{TM_FILENAME_BASE}</h1>",
-      "\t\t\t$0",
+      "\t\t\t<h1>${TM_FILENAME_BASE}</h1>",
       "\t\t</>",
       "\t);",
       "};"
