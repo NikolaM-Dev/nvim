@@ -6,6 +6,7 @@ return {
 		local catppuccin = require('catppuccin')
 
 		catppuccin.setup({
+			transparent_background = true,
 			integrations = {
 				cmp = true,
 				gitsigns = true,
