@@ -1,15 +1,10 @@
 return {
-	'echasnovski/mini.comment',
+	'numToStr/Comment.nvim',
+	keys = { { 'gc', mode = { 'n', 'x' } } },
 	dependencies = 'JoosepAlviste/nvim-ts-context-commentstring',
-	event = 'VeryLazy',
 	config = function()
-		require('mini.comment').setup({
-			hooks = {
-				pre = function()
-					---@diagnostic disable-next-line: missing-parameter
-					require('ts_context_commentstring.internal').update_commentstring()
-				end,
-			},
+		require('Comment').setup({
+			pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
 		})
 	end,
 }
