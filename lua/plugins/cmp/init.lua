@@ -105,13 +105,18 @@ return {
 			})
 		end,
 	},
+	{
+		'jackieaskins/cmp-emmet',
+		build = 'npm run release',
+		event = '[[InsertEnter *.css,*.sass,*.scss,*.less,*.xml,*.html,*.jsx,*.tsx]]',
+		dependencies = 'hrsh7th/nvim-cmp',
+	},
 	{ 'hrsh7th/cmp-buffer', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'hrsh7th/cmp-calc', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'hrsh7th/cmp-nvim-lsp', event = 'LspAttach', dependencies = { 'hrsh7th/nvim-cmp', 'L3MON4D3/LuaSnip' } },
 	{ 'hrsh7th/cmp-nvim-lsp-signature-help', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'hrsh7th/cmp-nvim-lua', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp', ft = 'lua' },
 	{ 'hrsh7th/cmp-path', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
-	{ 'jackieaskins/cmp-emmet', build = 'npm run release', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'lukas-reineke/cmp-rg', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'saadparwaiz1/cmp_luasnip', event = 'InsertEnter', dependencies = { 'hrsh7th/nvim-cmp', 'L3MON4D3/LuaSnip' } },
 }
