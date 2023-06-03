@@ -56,9 +56,11 @@ function M.on_attach(client, buffer)
 	for _, keys in pairs(keymaps) do
 		if not keys.has or client.server_capabilities[keys.has .. 'Provider'] then
 			local opts = Keys.opts(keys)
+
 			opts.has = nil
 			opts.silent = true
 			opts.buffer = buffer
+
 			vim.keymap.set(keys.mode or 'n', keys[1], keys[2], opts)
 		end
 	end
