@@ -15,6 +15,7 @@ require('lazy').setup({
 	spec = {
 		{ import = 'plugins' },
 		{ import = 'plugins.langs.typescript' },
+		{ import = 'plugins.linting.eslint' },
 	},
 	change_detection = { enabled = true, notify = false },
 	checker = { enabled = true, notify = false },
