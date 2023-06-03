@@ -31,6 +31,7 @@ function M.diagnostics()
 		severity_sort = true,
 		virtual_text = { prefix = '🔥', spacing = 2 },
 		float = { header = { 'Diagnostics', 'Title' }, border = 'rounded' },
+		virtual_text = { prefix = '🔥', source = 'if_many', spacing = 2 },
 	}
 
 	vim.diagnostic.config(diagnostics)
