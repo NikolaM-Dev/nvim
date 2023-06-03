@@ -84,8 +84,7 @@ function M.setup_servers()
 		end
 	end
 
-	mlsp.setup({ ensure_installed = ensure_installed })
-	mlsp.setup_handlers({ setup })
+	mlsp.setup({ ensure_installed = ensure_installed, handlers = { setup } })
 end
 
 return M
