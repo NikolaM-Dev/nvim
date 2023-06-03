@@ -108,7 +108,7 @@ return {
 	{
 		'jackieaskins/cmp-emmet',
 		build = 'npm run release',
-		event = [[InsertEnter *.css,*.sass,*.scss,*.less,*.xml,*.html,*.jsx,*.tsx]],
+		event = [[InsertEnter *.css,*.sass,*.scss,*.xml,*.html,*.jsx,*.tsx]],
 		dependencies = 'hrsh7th/nvim-cmp',
 	},
 	{ 'hrsh7th/cmp-buffer', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
