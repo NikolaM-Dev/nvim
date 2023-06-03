@@ -8,6 +8,7 @@ function M.signs()
 
 	for name, icon in pairs(signs) do
 		local hl = 'DiagnosticSign' .. name
+
 		vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 	end
 end
@@ -28,9 +29,8 @@ end
 
 function M.diagnostics()
 	local diagnostics = {
-		severity_sort = true,
-		virtual_text = { prefix = '🔥', spacing = 2 },
 		float = { header = { 'Diagnostics', 'Title' }, border = 'rounded' },
+		severity_sort = true,
 		virtual_text = { prefix = '🔥', source = 'if_many', spacing = 2 },
 	}
 
