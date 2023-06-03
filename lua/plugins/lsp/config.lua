@@ -4,7 +4,7 @@ M.servers = {}
 M.setup = {}
 
 function M.signs()
-	local signs = { Error = '', Hint = '', Info = '', Warn = '' }
+	local signs = { Error = '󰅙', Hint = '󰌵', Info = '󰋼', Warn = '' }
 
 	for name, icon in pairs(signs) do
 		local hl = 'DiagnosticSign' .. name
