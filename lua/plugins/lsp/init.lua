@@ -3,7 +3,7 @@ return {
 	event = { 'BufReadPre', 'BufNewFile' },
 	dependencies = {
 		{ 'folke/neoconf.nvim', cmd = 'Neoconf', config = true },
-		{ 'folke/neodev.nvim', opts = { experimental = { pathStrict = true } } },
+		{ 'folke/neodev.nvim', opts = {} },
 		'williamboman/mason-lspconfig.nvim',
 	},
 	---@class PluginLspOpts
