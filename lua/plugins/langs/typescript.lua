@@ -45,6 +45,7 @@ return {
 				end)
 
 				require('typescript').setup({ server = opts })
+
 				return true
 			end,
 		},
