@@ -43,5 +43,4 @@ luac.out
 .vscode
 
 # Nvim
-lazy-lock.json
 .mind
