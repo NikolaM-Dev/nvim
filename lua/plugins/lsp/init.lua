@@ -64,8 +64,9 @@ return {
 		config.servers = opts.servers
 		config.setup = opts.setup
 
+		require('plugins.lsp.format').setup()
+
 		config.on_attach(function(client, buffer)
-			require('plugins.lsp.format').on_attach(client, buffer)
 			require('plugins.lsp.keymaps').on_attach(client, buffer)
 		end)
 
