@@ -3,7 +3,7 @@ return {
 	keys = {
 		{
 			'<leader>S',
-			'<cmd>lua require(\'spectre\').open()<cr>',
+			'<cmd>lua require("spectre").open()<cr>',
 			desc = 'Open [S]pectre',
 		},
 		{
@@ -21,7 +21,6 @@ return {
 			'<leader>swp',
 			'<cmd>lua require("spectre").open_file_search({select_word=true})<cr>',
 			desc = '[S]earch On Current File',
-			mode = 'n',
 		},
 	},
 	config = function()
