@@ -12,8 +12,8 @@ return {
 			desc = '[S]earch Current [W]ord',
 		},
 		{
-			'<esc><cmd>lua require("spectre").open_visual()<cr>',
 			'<leader>sw',
+			'<esc><cmd>lua require("spectre").open_visual()<cr>',
 			desc = '[S]earch Current [W]ord',
 			mode = 'v',
 		},
