@@ -8,7 +8,7 @@ return {
 	},
 	keys = {
 		{
-			'<leader>ff',
+			'<leader><leader>',
 			function()
 				require('telescope').extensions.smart_open.smart_open({ cwd_only = true })
 			end,
