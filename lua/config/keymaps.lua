@@ -15,10 +15,10 @@ map({ 'n', 'x' }, 'j', 'v:count == 0 ? \'gj\' : \'j\'', { expr = true, silent = 
 map({ 'n', 'x' }, 'k', 'v:count == 0 ? \'gk\' : \'k\'', { expr = true, silent = true })
 
 -- Move Lines
-map('i', '<A-J>', '<Esc>:m .+1<cr>==gi', { desc = 'Move down' })
-map('i', '<A-K>', '<Esc>:m .-2<cr>==gi', { desc = 'Move up' })
-map('n', '<A-J>', ':m .+1<cr>==', { desc = 'Move down' })
-map('n', '<A-K>', ':m .-2<cr>==', { desc = 'Move up' })
+map('i', '<A-J>', '<esc><cmd>m .+1<cr>==gi', { desc = 'Move down' })
+map('i', '<A-K>', '<esc><cmd>m .-2<cr>==gi', { desc = 'Move up' })
+map('n', '<A-J>', '<cmd>m .+1<cr>==', { desc = 'Move down' })
+map('n', '<A-K>', '<cmd>m .-2<cr>==', { desc = 'Move up' })
 map('v', '<A-J>', ':m \'>+1<cr>gv=gv', { desc = 'Move down' })
 map('v', '<A-K>', ':m \'<-2<cr>gv=gv', { desc = 'Move up' })
 
