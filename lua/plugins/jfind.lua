@@ -21,8 +21,6 @@ return {
 			},
 			border = 'rounded',
 			tmux = true,
-			formatPaths = true,
-			key = '<leader>ff',
 		})
 	end,
 }
