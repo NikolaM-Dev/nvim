@@ -1,3 +1,4 @@
+-- TODO: Separate telescope from smart open
 return {
 	'nvim-telescope/telescope.nvim',
 	cmd = 'Telescope',
