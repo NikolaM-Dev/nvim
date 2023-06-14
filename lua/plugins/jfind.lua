@@ -1,9 +1,10 @@
 return {
 	'jake-stewart/jfind.nvim',
 	branch = '1.0',
+	enabled = false,
 	keys = {
 		{
-			'<leader>ff',
+			'<leader>;ff',
 			function()
 				local Key = require('jfind.key')
 
