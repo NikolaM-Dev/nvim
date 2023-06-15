@@ -34,6 +34,7 @@ local bookmarks = {
 		http = 'https://developer.mozilla.org/es/docs/Web/HTTP/Status',
 		icons = 'https://www.nerdfonts.com/cheat-sheet',
 		json_escape = 'https://www.freeformatter.com/json-escape.html#before-output',
+		json_ts = 'https://transform.tools/json-to-typescript',
 	},
 	catppuccin = 'https://github.com/catppuccin/catppuccin',
 	dots = 'https://github.com/NikolaM-Dev/dotfiles',
