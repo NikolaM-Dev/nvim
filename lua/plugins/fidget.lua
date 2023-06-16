@@ -5,7 +5,7 @@ return {
 	config = function()
 		require('fidget').setup({
 			sources = { ['null-ls'] = { ignore = true } },
-			text = { done = '', spinner = 'dots' },
+			text = { done = '󰄳', spinner = 'dots' },
 			window = { blend = 0 },
 		})
 	end,
