@@ -1,7 +1,7 @@
 {
   "LuaSnip": {
     "branch": "master",
-    "commit": "65ff66db0e466369fa6fb7abb5e38627713182ff"
+    "commit": "4964cd11e19de4671189b97de37f3c4930d43191"
   },
   "browse.nvim": {
     "branch": "main",
@@ -53,7 +53,7 @@
   },
   "dressing.nvim": {
     "branch": "master",
-    "commit": "8b1a436b207bad99e43a2485d287bc38dbcc4c81"
+    "commit": "5fb5cce0cbfcedeadbcee43e5674e8c9a9f28d4a"
   },
   "fidget.nvim": {
     "branch": "main",
@@ -65,7 +65,7 @@
   },
   "gitsigns.nvim": {
     "branch": "main",
-    "commit": "4f8f66da9816ec4c4847653c9ab9bcb9c609508c"
+    "commit": "256569c2fe697a3003dbd49ff474e5935af9066c"
   },
   "harpoon": {
     "branch": "master",
@@ -261,7 +261,7 @@
   },
   "vim-dadbod-ui": {
     "branch": "master",
-    "commit": "36a67e67926345c0b11b32c378c057c7f9d9110d"
+    "commit": "200aebf70e6fc4b0eb1d3ecf0d57028e198d8dc6"
   },
   "vim-dotenv": {
     "branch": "master",
