@@ -9,11 +9,11 @@ return {
 		require('diffview').setup({
 			show_help_hints = false,
 			icons = {
-				folder_closed = '',
-				folder_open = 'ﱮ',
+				folder_closed = '󰉋',
+				folder_open = '󰝰',
 			},
 			signs = {
-				done = '',
+				done = '󰄳',
 				fold_closed = '',
 				fold_open = '',
 			},
