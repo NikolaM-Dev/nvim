@@ -12,8 +12,8 @@ return {
 			end,
 			icons = {
 				DEBUG = '',
-				ERROR = '',
-				INFO = '',
+				ERROR = '󰅙',
+				INFO = '󰋼',
 				TRACE = '',
 				WARN = '',
 			},
