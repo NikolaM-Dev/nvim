@@ -52,5 +52,9 @@
     "prefix": "chore",
     "body": "chore(${1:scope}): $0",
     "description": "Other changes that don't modify src or test files"
+  },
+  "build change plugins versions": {
+    "prefix": "bcpv",
+    "body": "build(${1:lazy}): Change plugins version"
   }
 }
