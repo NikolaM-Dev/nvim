@@ -17,7 +17,7 @@ return {
 			ensure_installed = sources,
 			ui = {
 				border = 'rounded',
-				icons = { package_installed = ' ', package_pending = ' ', package_uninstalled = '󰚌 ' },
+				icons = { package_installed = '󰄳 ', package_pending = ' ', package_uninstalled = '󰚌 ' },
 			},
 		})
 
