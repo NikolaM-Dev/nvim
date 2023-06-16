@@ -20,17 +20,17 @@ return {
 			renderer = {
 				icons = {
 					glyphs = {
-						bookmark = '',
-						default = '',
-						symlink = '',
+						bookmark = '󰃀',
+						default = '󰈙',
+						symlink = '󰈪',
 						modified = '●',
 						folder = {
 							arrow_closed = '',
 							arrow_open = '',
-							default = '',
+							default = '󰉋',
 							empty = '󰉖',
 							empty_open = '󰷏',
-							open = 'ﱮ',
+							open = '󰝰',
 							symlink = '󰉒',
 							symlink_open = '󰉒',
 						},
