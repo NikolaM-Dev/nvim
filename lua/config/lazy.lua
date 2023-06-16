@@ -61,10 +61,10 @@ require('lazy').setup({
 		browser = 'chrome',
 		throttle = 42,
 		icons = {
-			cmd = '',
+			cmd = '󰆍',
 			config = '',
 			event = '',
-			ft = '',
+			ft = '󰈙',
 			init = '',
 			import = '󰈠',
 			keys = '󰌌',
