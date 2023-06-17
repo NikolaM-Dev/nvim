@@ -125,7 +125,7 @@
   },
   "neoconf.nvim": {
     "branch": "main",
-    "commit": "ce304a275e7f2d1547279332ff99e18e93e771a4"
+    "commit": "0c18ac0b77296795b03be06681e23c9656319d36"
   },
   "neodev.nvim": {
     "branch": "main",
@@ -149,7 +149,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "295c646488d5baa63c6c4da68fe61171b9257375"
+    "commit": "80861dc087982a6ed8ba91ec4836adce619f5a8a"
   },
   "nvim-neoclip.lua": {
     "branch": "main",
@@ -165,7 +165,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "150a4c9fa4743b9af7b95f68746778394ce2ac93"
+    "commit": "1b9f704eb8664508749a1164d4086e47f9afa77f"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -189,7 +189,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "59dc12a978bb92b8900b6871955208efc6cda966"
+    "commit": "6f8bf067c09e96d6bff548b5e6addb6d9c25a678"
   },
   "pantran.nvim": {
     "branch": "main",
