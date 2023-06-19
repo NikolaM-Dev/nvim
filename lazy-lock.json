@@ -1,7 +1,7 @@
 {
   "LuaSnip": {
     "branch": "master",
-    "commit": "4964cd11e19de4671189b97de37f3c4930d43191"
+    "commit": "6086742e287ce0e40ffa31b1c26b7e8914ffb7a4"
   },
   "browse.nvim": {
     "branch": "main",
@@ -65,7 +65,7 @@
   },
   "gitsigns.nvim": {
     "branch": "main",
-    "commit": "256569c2fe697a3003dbd49ff474e5935af9066c"
+    "commit": "3ef12dfdc293969fac736a7a580d6ae1f57ea406"
   },
   "harpoon": {
     "branch": "master",
@@ -77,7 +77,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "67af46a7f53e06322753cdd8cfd524bbb8ca30a2"
+    "commit": "c1aad95243f0d180f41348be26b2417547fb168b"
   },
   "lsp_lines.nvim": {
     "branch": "main",
@@ -97,7 +97,7 @@
   },
   "mason.nvim": {
     "branch": "main",
-    "commit": "ed989357ec71ed8d91deda7122a93f7570e19041"
+    "commit": "f7f81ab41b153e2902ebded401a8a0a6abe28607"
   },
   "mini.comment": {
     "branch": "main",
@@ -125,7 +125,7 @@
   },
   "neoconf.nvim": {
     "branch": "main",
-    "commit": "0c18ac0b77296795b03be06681e23c9656319d36"
+    "commit": "9625a1710a9be427a662f9ba0a383164588a41a8"
   },
   "neodev.nvim": {
     "branch": "main",
@@ -141,7 +141,7 @@
   },
   "nvim-cmp": {
     "branch": "main",
-    "commit": "b8c2a62b3bd3827aa059b43be3dd4b5c45037d65"
+    "commit": "fa492591fecdc41798cd5d3d1713232a5088fba0"
   },
   "nvim-colorizer.lua": {
     "branch": "master",
@@ -149,7 +149,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "80861dc087982a6ed8ba91ec4836adce619f5a8a"
+    "commit": "444eab07bb7881cad984c68c89fde276f7a26d81"
   },
   "nvim-neoclip.lua": {
     "branch": "main",
@@ -165,11 +165,11 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "840e5d71787b02789f909315f646a6dd66a0de2c"
+    "commit": "70f161b1dda985d08e106d5e3744b2612755f748"
   },
   "nvim-treesitter-context": {
     "branch": "master",
-    "commit": "05aa871a41078ae82158a37940972f6fea057c01"
+    "commit": "6eccc445394df5ab9b1c1e2c445c033949a6a784"
   },
   "nvim-ts-autotag": {
     "branch": "main",
@@ -181,7 +181,7 @@
   },
   "nvim-ts-rainbow2": {
     "branch": "master",
-    "commit": "9e228dc94d083cb2dfddac64d524483f452dab40"
+    "commit": "09214437d00b2e6863f95578d72abe5bca2d0f6b"
   },
   "nvim-various-textobjs": {
     "branch": "main",
