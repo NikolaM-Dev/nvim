@@ -65,7 +65,7 @@
   },
   "gitsigns.nvim": {
     "branch": "main",
-    "commit": "3ef12dfdc293969fac736a7a580d6ae1f57ea406"
+    "commit": "a36bc3360d584d39b4fb076d855c4180842d4444"
   },
   "harpoon": {
     "branch": "master",
@@ -137,7 +137,7 @@
   },
   "nvim": {
     "branch": "main",
-    "commit": "ad6305594737e16155c41c176c611e865c26bb6d"
+    "commit": "71b7a866e092bc2605d790c8d43c4aeb032d0a1c"
   },
   "nvim-cmp": {
     "branch": "main",
@@ -165,7 +165,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "19385830ab737f5c49a4cd44d0cdab5e5ee697d1"
+    "commit": "1897926700b6b0add1cf25c8ff0ba5f6e917814e"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -185,11 +185,11 @@
   },
   "nvim-various-textobjs": {
     "branch": "main",
-    "commit": "a90f3ea8687995275de7bde6942bf02365224aaf"
+    "commit": "24e3309575024a71b704ae91f7c54374a39e4527"
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "6f8bf067c09e96d6bff548b5e6addb6d9c25a678"
+    "commit": "0215ed3b0b78a412245a3ddaa4b73987ba7630d4"
   },
   "pantran.nvim": {
     "branch": "main",
