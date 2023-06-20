@@ -1,7 +1,7 @@
 {
   "LuaSnip": {
     "branch": "master",
-    "commit": "6086742e287ce0e40ffa31b1c26b7e8914ffb7a4"
+    "commit": "3d2ad0c0fa25e4e272ade48a62a185ebd0fe26c1"
   },
   "browse.nvim": {
     "branch": "main",
@@ -129,7 +129,7 @@
   },
   "neodev.nvim": {
     "branch": "main",
-    "commit": "b41da3926ce1c022a2f6a7ea8858889c3a8be4d7"
+    "commit": "78f1c370173e7689bd58d64229b4d92c5dfb2793"
   },
   "null-ls.nvim": {
     "branch": "main",
@@ -149,7 +149,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "444eab07bb7881cad984c68c89fde276f7a26d81"
+    "commit": "a51892484c2002c083a8b0a9dfcefb3a569be36d"
   },
   "nvim-neoclip.lua": {
     "branch": "main",
@@ -165,7 +165,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "70f161b1dda985d08e106d5e3744b2612755f748"
+    "commit": "19385830ab737f5c49a4cd44d0cdab5e5ee697d1"
   },
   "nvim-treesitter-context": {
     "branch": "master",
