@@ -5,6 +5,7 @@ local bookmarks = {
 		payvalida_sandbox = 'https://sandbox-merchant.payvalida.com/signin',
 	},
 	adalessa = 'https://github.com/adalessa/nvim',
+	adibhanna = 'https://github.com/adibhanna/nvim',
 	awesome = 'https://github.com/rockerBOO/awesome-neovim',
 	catppuccin = 'https://github.com/catppuccin/catppuccin',
 	cris_at_machine = 'https://github.com/ChristianChiarulli/nvim',
