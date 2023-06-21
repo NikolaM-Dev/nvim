@@ -97,7 +97,7 @@
   },
   "mason.nvim": {
     "branch": "main",
-    "commit": "f7f81ab41b153e2902ebded401a8a0a6abe28607"
+    "commit": "e706d305fbcc8701bd30e31dd727aee2853b9db9"
   },
   "mini.comment": {
     "branch": "main",
@@ -137,11 +137,11 @@
   },
   "nvim": {
     "branch": "main",
-    "commit": "71b7a866e092bc2605d790c8d43c4aeb032d0a1c"
+    "commit": "d32b0bb5b1033920de5026e326869838aba856ee"
   },
   "nvim-cmp": {
     "branch": "main",
-    "commit": "fa492591fecdc41798cd5d3d1713232a5088fba0"
+    "commit": "8a1694ff330ed58ed29716686fcef79c28090354"
   },
   "nvim-colorizer.lua": {
     "branch": "master",
@@ -165,7 +165,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "1897926700b6b0add1cf25c8ff0ba5f6e917814e"
+    "commit": "c9d5812ba358ce9e5ae2df322550cc6bc1678538"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -181,7 +181,7 @@
   },
   "nvim-ts-rainbow2": {
     "branch": "master",
-    "commit": "09214437d00b2e6863f95578d72abe5bca2d0f6b"
+    "commit": "3edad7f978513499651d8b068880948f42c16d79"
   },
   "nvim-various-textobjs": {
     "branch": "main",
@@ -189,7 +189,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "0215ed3b0b78a412245a3ddaa4b73987ba7630d4"
+    "commit": "2a63f9224f8cb1349da4cf89844a161a285b18e9"
   },
   "pantran.nvim": {
     "branch": "main",
