@@ -97,7 +97,7 @@
   },
   "mason.nvim": {
     "branch": "main",
-    "commit": "e706d305fbcc8701bd30e31dd727aee2853b9db9"
+    "commit": "664c987c3b14d2262a4e580f993a3e5045baded0"
   },
   "mini.comment": {
     "branch": "main",
@@ -221,7 +221,7 @@
   },
   "telescope.nvim": {
     "branch": "master",
-    "commit": "00cf15074a2997487813672a75f946d2ead95eb0"
+    "commit": "ffe35cb433192fcb5080b557c1aef14d37092035"
   },
   "template-string.nvim": {
     "branch": "main",
@@ -250,22 +250,6 @@
   "undotree": {
     "branch": "master",
     "commit": "485f01efde4e22cb1ce547b9e8c9238f36566f21"
-  },
-  "vim-dadbod": {
-    "branch": "master",
-    "commit": "7d80bbd11c407a09e0f7b869c38f3dec3902805f"
-  },
-  "vim-dadbod-completion": {
-    "branch": "master",
-    "commit": "fc7321a17f4c55db11fae89a884ddf4724020bae"
-  },
-  "vim-dadbod-ui": {
-    "branch": "master",
-    "commit": "200aebf70e6fc4b0eb1d3ecf0d57028e198d8dc6"
-  },
-  "vim-dotenv": {
-    "branch": "master",
-    "commit": "5c51cfcf8d87280d6414e03cd6b253eb70ecb800"
   },
   "vim-fugitive": {
     "branch": "master",
