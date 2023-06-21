@@ -159,5 +159,6 @@ return {
 		end,
 	},
 
+	require('plugins.telescope.extensions.neoclip'),
 	require('plugins.telescope.extensions.smart_open'),
 }
