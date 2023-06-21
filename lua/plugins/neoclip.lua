@@ -1,5 +1,6 @@
 return {
 	'AckslD/nvim-neoclip.lua',
+	enable = false,
 	keys = { { '<leader>c', '<cmd>Telescope neoclip<cr>', desc = 'Clipboard' } },
 	config = function()
 		require('neoclip').setup({
@@ -13,5 +14,7 @@ return {
 				},
 			},
 		})
+
+		require('telescope').load_extension('neoclip')
 	end,
 }
