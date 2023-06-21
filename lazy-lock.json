@@ -151,10 +151,6 @@
     "branch": "master",
     "commit": "a51892484c2002c083a8b0a9dfcefb3a569be36d"
   },
-  "nvim-neoclip.lua": {
-    "branch": "main",
-    "commit": "4e406ae0f759262518731538f2585abb9d269bac"
-  },
   "nvim-notify": {
     "branch": "master",
     "commit": "ea9c8ce7a37f2238f934e087c255758659948e0f"
