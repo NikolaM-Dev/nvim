@@ -161,7 +161,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "cbd54ebb8d633fb84b5592741cd3e22765d90fc0"
+    "commit": "ae0415331483bd143f80c186401fb2aa783f33df"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -185,7 +185,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "9be36a648889c37d11bc65e8422049dc33dd6a3f"
+    "commit": "8882f6c89eccb3754221cab942904780ed6b3e62"
   },
   "pantran.nvim": {
     "branch": "main",
