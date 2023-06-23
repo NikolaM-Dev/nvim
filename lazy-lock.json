@@ -25,7 +25,7 @@
   },
   "cmp-nvim-lsp": {
     "branch": "main",
-    "commit": "0e6b2ed705ddcff9738ec4ea838141654f12eeef"
+    "commit": "44b16d11215dce86f253ce0c30949813c0a90765"
   },
   "cmp-nvim-lsp-signature-help": {
     "branch": "main",
@@ -129,7 +129,7 @@
   },
   "neodev.nvim": {
     "branch": "main",
-    "commit": "8bce31c0899bcf369351147518be77a5e4c7b889"
+    "commit": "412776d881d7aa2bedbe8a2572e700f740440cad"
   },
   "null-ls.nvim": {
     "branch": "main",
@@ -141,7 +141,7 @@
   },
   "nvim-cmp": {
     "branch": "main",
-    "commit": "8a1694ff330ed58ed29716686fcef79c28090354"
+    "commit": "e1f1b40790a8cb7e64091fb12cc5ffe350363aa0"
   },
   "nvim-colorizer.lua": {
     "branch": "master",
@@ -149,7 +149,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "11a1be0e5f180b57079db56de10a20b4323111ae"
+    "commit": "b6b34b9acf84949f0ac1c00747765e62b81fb38d"
   },
   "nvim-notify": {
     "branch": "master",
@@ -157,11 +157,11 @@
   },
   "nvim-spectre": {
     "branch": "master",
-    "commit": "8adb05dbfbd36862d700b5c3d1c26f0febf3f10d"
+    "commit": "f4dc98ec45ecded2344aa3aac2d7cc43ad236858"
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "ae0415331483bd143f80c186401fb2aa783f33df"
+    "commit": "fdaf9f3f98014a058401ea03603164492f243d31"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -233,7 +233,7 @@
   },
   "trouble.nvim": {
     "branch": "main",
-    "commit": "2af0dd9767526410c88c628f1cbfcb6cf22dd683"
+    "commit": "a3372bd2ba3a91882a6e54ed35da13a441d7c167"
   },
   "ts-node-action": {
     "branch": "master",
