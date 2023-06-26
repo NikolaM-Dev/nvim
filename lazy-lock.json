@@ -1,7 +1,7 @@
 {
   "LuaSnip": {
     "branch": "master",
-    "commit": "3d2ad0c0fa25e4e272ade48a62a185ebd0fe26c1"
+    "commit": "c7984d1cca3d8615e4daefc196597872a0b8d590"
   },
   "browse.nvim": {
     "branch": "main",
@@ -77,7 +77,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "b7043f2983d7aead78ca902f3f2053907081859a"
+    "commit": "4c8b625bc873ca76b76eee0c28c98f1f7148f17f"
   },
   "lsp_lines.nvim": {
     "branch": "main",
@@ -113,7 +113,7 @@
   },
   "mini.splitjoin": {
     "branch": "main",
-    "commit": "7d22e5f8d2f212c1aea94dd3b010d19a73edd6d0"
+    "commit": "5f4237ae557f255a1f1a435c76c6a715be39060a"
   },
   "mini.surround": {
     "branch": "main",
@@ -129,7 +129,7 @@
   },
   "neodev.nvim": {
     "branch": "main",
-    "commit": "412776d881d7aa2bedbe8a2572e700f740440cad"
+    "commit": "a59e3e612e85462b0410a7dce4040fd2ba37f294"
   },
   "null-ls.nvim": {
     "branch": "main",
@@ -137,7 +137,7 @@
   },
   "nvim": {
     "branch": "main",
-    "commit": "49102b8149ac17e40e8b29b28fd039b36bf307a9"
+    "commit": "8d02781a638123394f9bc160aad47a9560a113f9"
   },
   "nvim-cmp": {
     "branch": "main",
@@ -161,7 +161,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "0c5661e5fe85c0a8d7389cbe0c09c201067a57d6"
+    "commit": "d49ba798c95398e62321b40041e8ac4654fea251"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -177,7 +177,7 @@
   },
   "nvim-ts-rainbow2": {
     "branch": "master",
-    "commit": "3edad7f978513499651d8b068880948f42c16d79"
+    "commit": "1c7980dadb9d702d063c968cc240e282bb574995"
   },
   "nvim-various-textobjs": {
     "branch": "main",
@@ -185,7 +185,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "8882f6c89eccb3754221cab942904780ed6b3e62"
+    "commit": "4a4e0f40134c04e9efa60bcb071acfad487839a5"
   },
   "pantran.nvim": {
     "branch": "main",
@@ -201,7 +201,7 @@
   },
   "smart-open.nvim": {
     "branch": "main",
-    "commit": "e67d3cc01cfa863f7d5e16b2b2f0bf2bf46f6283"
+    "commit": "ecaf1f272328d62fffd115b1a42ec6aacb48e676"
   },
   "sqlite.lua": {
     "branch": "master",
@@ -217,7 +217,7 @@
   },
   "telescope.nvim": {
     "branch": "master",
-    "commit": "5fff2a138b04be7e23959c1da5e535bdac7e1518"
+    "commit": "6074847b6ee4b725747c8fc540d9b6b128ac8a12"
   },
   "template-string.nvim": {
     "branch": "main",
