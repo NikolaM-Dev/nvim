@@ -49,11 +49,11 @@
   },
   "diffview.nvim": {
     "branch": "main",
-    "commit": "b3a763f8c7810b352226c95faa7d3ac9fb93b8d9"
+    "commit": "ff8e57a966618e973f443b2df177cab02e7f325c"
   },
   "dressing.nvim": {
     "branch": "master",
-    "commit": "1cbc4eef2ef7d745aa1a559b22589e33860cf077"
+    "commit": "e6eff7a5a950a853c3903d906dbcea03f778db5f"
   },
   "fidget.nvim": {
     "branch": "main",
@@ -185,7 +185,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "4a4e0f40134c04e9efa60bcb071acfad487839a5"
+    "commit": "a2b7ab5e99907ac04d75ce04d8dcd5728b0ad2f8"
   },
   "pantran.nvim": {
     "branch": "main",
