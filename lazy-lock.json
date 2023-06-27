@@ -93,11 +93,11 @@
   },
   "mason-lspconfig.nvim": {
     "branch": "main",
-    "commit": "d381fcb78d7a562c3244e1c8f76406954649db36"
+    "commit": "c993ca55e3991535bc74cd2d6ef273810d066c84"
   },
   "mason.nvim": {
     "branch": "main",
-    "commit": "664c987c3b14d2262a4e580f993a3e5045baded0"
+    "commit": "db58ec7bc9248fb1878172f90cadc825b77564a6"
   },
   "mini.comment": {
     "branch": "main",
@@ -125,11 +125,11 @@
   },
   "neoconf.nvim": {
     "branch": "main",
-    "commit": "9625a1710a9be427a662f9ba0a383164588a41a8"
+    "commit": "3454d48dce19e0fe534e3e4849aa17c47c47d15f"
   },
   "neodev.nvim": {
     "branch": "main",
-    "commit": "a59e3e612e85462b0410a7dce4040fd2ba37f294"
+    "commit": "02bfa37e20a1fad076190ea1af8d40abe30f6df3"
   },
   "null-ls.nvim": {
     "branch": "main",
@@ -161,7 +161,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "d49ba798c95398e62321b40041e8ac4654fea251"
+    "commit": "beda6227366fd4653ee83b83ff7535aa55188e11"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -181,11 +181,11 @@
   },
   "nvim-various-textobjs": {
     "branch": "main",
-    "commit": "24e3309575024a71b704ae91f7c54374a39e4527"
+    "commit": "6dd4d07bd0065abbf8c4c0e141c26e4ad07a7c1b"
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "a2b7ab5e99907ac04d75ce04d8dcd5728b0ad2f8"
+    "commit": "0138a2e0f9baacd98d5531ebb5078fafc5114fae"
   },
   "pantran.nvim": {
     "branch": "main",
