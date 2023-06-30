@@ -65,7 +65,7 @@
   },
   "gitsigns.nvim": {
     "branch": "main",
-    "commit": "a36bc3360d584d39b4fb076d855c4180842d4444"
+    "commit": "dc2962f7fce953a2a98e7c6d3d7fc4c1d1f66758"
   },
   "harpoon": {
     "branch": "master",
@@ -97,7 +97,7 @@
   },
   "mason.nvim": {
     "branch": "main",
-    "commit": "de5959dfc11688be554a53ac95d14bded9eaca4c"
+    "commit": "5ad3e113b0c3fde3caba8630599373046f6197e8"
   },
   "mini.comment": {
     "branch": "main",
@@ -161,7 +161,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "c42a8f96d37be82cf32934c4351150d7736f93f5"
+    "commit": "896f2c76229f03d6978d29fa7b12421d7c18102f"
   },
   "nvim-treesitter-context": {
     "branch": "master",
