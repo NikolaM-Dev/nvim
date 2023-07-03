@@ -85,7 +85,7 @@
   },
   "lspsaga.nvim": {
     "branch": "main",
-    "commit": "1aad133f94c8c75bb498560b25d2579199cffd1d"
+    "commit": "0f3e56843d58dfb94568c0ee2c3eef6bf1b9a90d"
   },
   "markdown-preview.nvim": {
     "branch": "master",
@@ -157,7 +157,7 @@
   },
   "nvim-spectre": {
     "branch": "master",
-    "commit": "dc3f0bd41e09148924ef04a4746cb708539d08db"
+    "commit": "6edac44e10b94b88bf3067fae937915172a3f825"
   },
   "nvim-treesitter": {
     "branch": "master",
@@ -177,7 +177,7 @@
   },
   "nvim-ts-rainbow2": {
     "branch": "master",
-    "commit": "d6e82e23f877f488563437237abbc85d7cededea"
+    "commit": "d2ea7b31b805cf4b7a05d032d0ec9d356345d3df"
   },
   "nvim-various-textobjs": {
     "branch": "main",
