@@ -10,19 +10,10 @@ return {
 
 		nls.setup({
 			sources = {
-				f.prettier.with({
-					extra_args = { '--single-quote', '--trailing-comma', 'all' },
-					condition = function(utils)
-						return utils.root_has_file({ '.eslintrc.cjs' })
-					end,
-				}),
-				f.prettierd.with({
-					extra_args = { '--single-quote', '--trailing-comma', 'all' },
-					condition = function(utils)
-						return not utils.root_has_file({ '.eslintrc.cjs' })
-					end,
-				}),
 				d.staticcheck,
+
+				f.prettier.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
+				f.prettierd.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
 				f.gofumpt,
 				f.goimports,
 				f.stylua,
