@@ -65,7 +65,7 @@
   },
   "gitsigns.nvim": {
     "branch": "main",
-    "commit": "48c3ae8ec74cb83f9570ceb0c5ab8217db7a2220"
+    "commit": "5a04466685008f29c71fa5ec25d421deb1c83fea"
   },
   "harpoon": {
     "branch": "master",
@@ -77,15 +77,11 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "da8b00581a52f5f87ad2aba9f52171fda7491f18"
+    "commit": "14d76aac4bd3ff07c1fca074c210f28f766a931e"
   },
   "lsp_lines.nvim": {
     "branch": "main",
     "commit": "f53af96d4789eef39a082dbcce078d2bfc384ece"
-  },
-  "lspsaga.nvim": {
-    "branch": "main",
-    "commit": "08da11d83a545d899c11ea070903dfb26fce39b0"
   },
   "markdown-preview.nvim": {
     "branch": "master",
@@ -129,7 +125,7 @@
   },
   "neodev.nvim": {
     "branch": "main",
-    "commit": "fed7f27480ac6bda777cb36f2d6737c8ccc580fe"
+    "commit": "8c3effe405163aef19737a148711418e1dccf2f4"
   },
   "null-ls.nvim": {
     "branch": "main",
@@ -149,7 +145,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "deade69789089c3da15237697156334fb3e943f0"
+    "commit": "b88b227cf8d61d6e43dd23d8a39b8b2897bc17e5"
   },
   "nvim-notify": {
     "branch": "master",
@@ -161,11 +157,11 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "b4b94ec387525cb9df4b56eb1a8bf33231a0df47"
+    "commit": "a51236f068547487ed34c3a32d9a0b3bf793afa7"
   },
   "nvim-treesitter-context": {
     "branch": "master",
-    "commit": "63f3ffc50b0afc59be1015153d00922498085be8"
+    "commit": "6f8f788738b968f24a108ee599c5be0031f94f06"
   },
   "nvim-ts-autotag": {
     "branch": "main",
@@ -177,7 +173,7 @@
   },
   "nvim-ts-rainbow2": {
     "branch": "master",
-    "commit": "d2ea7b31b805cf4b7a05d032d0ec9d356345d3df"
+    "commit": "b3120cd5ae9ca524af9cb602f41e12e301fa985f"
   },
   "nvim-various-textobjs": {
     "branch": "main",
@@ -189,7 +185,7 @@
   },
   "pantran.nvim": {
     "branch": "main",
-    "commit": "42c4c1fba7cc86315e1f33eb2d31d99f7e96a9f6"
+    "commit": "ab49d88ca7a308d404fbd52844aeddb62a9befb8"
   },
   "plenary.nvim": {
     "branch": "master",
@@ -257,7 +253,7 @@
   },
   "vim-matchup": {
     "branch": "master",
-    "commit": "3c4ccc489002fe72b5d2e2ffc4b3b5a7d3ab65d8"
+    "commit": "17cc05867cb3314761e4baa20115a27120f8e82c"
   },
   "vim-repeat": {
     "branch": "master",
