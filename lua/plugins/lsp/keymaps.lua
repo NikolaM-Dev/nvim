@@ -19,10 +19,15 @@ function M.get()
 		---@class PluginLspKeys
 		M._keys = {
 			{ '<C-k>', vim.lsp.buf.signature_help, mode = 'i', desc = 'Signature Documentation' },
+			{ 'ga', vim.lsp.buf.code_action, desc = '[C]ode [A]ction' },
 			{ 'gd', '<cmd>Telescope lsp_definitions<cr>', desc = '[G]o to [D]efinition' },
 			{ 'gD', vim.lsp.buf.declaration, desc = '[G]oto [D]eclaration' },
 			{ 'gI', '<cmd>Telescope lsp_implementations<cr>', desc = '[G]oto [I]mplementation' },
+			{ 'gr', vim.lsp.buf.rename, desc = '[R]e[n]ame' },
+			{ 'K', vim.lsp.buf.hover, desc = 'Hover Documentation' },
 			{ '<leader>D', '<cmd>Telescope lsp_type_definitions<cr>', desc = 'Type [D]efinitions' },
+			{ '<leader>dj', diagnostic_goto(true), desc = 'Next [D]iagnostic' },
+			{ '<leader>dk', diagnostic_goto(false), desc = 'Prev [D]iagnostic' },
 			{ '<leader>ds', '<cmd>Telescope lsp_document_symbols<cr>', desc = '[D]ocument [S]ymbols' },
 			{ '<leader>Ej', diagnostic_goto(true, 'ERROR'), desc = 'Next Error' },
 			{ '<leader>Ek', diagnostic_goto(false, 'ERROR'), desc = 'Prev Error' },
