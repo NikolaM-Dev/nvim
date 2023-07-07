@@ -1,6 +1,7 @@
 return {
 	'glepnir/lspsaga.nvim',
 	event = 'BufRead',
+	enabled = false,
 	keys = {
 		{ 'ga', '<cmd>Lspsaga code_action<cr>', desc = 'Code [A]ction' },
 		{ 'gh', '<cmd>Lspsaga lsp_finder<cr>', desc = 'Lsp Finder' },
