@@ -125,7 +125,7 @@
   },
   "neodev.nvim": {
     "branch": "main",
-    "commit": "8c3effe405163aef19737a148711418e1dccf2f4"
+    "commit": "d89c108a091172fa46dbdcb8486c6645127aabe1"
   },
   "null-ls.nvim": {
     "branch": "main",
