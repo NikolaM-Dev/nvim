@@ -171,6 +171,10 @@
     "branch": "main",
     "commit": "7f625207f225eea97ef7a6abe7611e556c396d2f"
   },
+  "nvim-ufo": {
+    "branch": "main",
+    "commit": "43e39ec74cd57c45ca9d8229a796750f6083b850"
+  },
   "nvim-various-textobjs": {
     "branch": "main",
     "commit": "218230be0dc16fa988fab0a0d61ddc7ba99a59e3"
@@ -186,6 +190,10 @@
   "plenary.nvim": {
     "branch": "master",
     "commit": "bda256fab0eb66a15e8190937e417e6a14ee5d72"
+  },
+  "promise-async": {
+    "branch": "main",
+    "commit": "e94f35161b8c5d4a4ca3b6ff93dd073eb9214c0e"
   },
   "rest.nvim": {
     "branch": "main",
