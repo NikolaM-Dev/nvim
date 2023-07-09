@@ -29,6 +29,14 @@ autocmd({ 'BufWinEnter' }, {
 	end,
 })
 
+autocmd('BufWinLeave', {
+	desc = 'Save folds',
+	group = _G.augroup('save_folds'),
+	pattern = '*.*',
+	callback = function()
+		vim.cmd.mkview()
+	end,
+})
 -- vite enviroment
 autocmd({ 'BufWinEnter' }, {
 	group = _G.augroup('vite_enviroment'),
