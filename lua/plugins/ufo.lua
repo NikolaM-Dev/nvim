@@ -17,6 +17,7 @@ return {
 			end,
 			desc = 'Close All Folds',
 		},
+		-- TODO: Add description
 		{
 			'zr',
 			function()
