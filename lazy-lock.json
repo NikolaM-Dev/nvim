@@ -171,10 +171,6 @@
     "branch": "main",
     "commit": "7f625207f225eea97ef7a6abe7611e556c396d2f"
   },
-  "nvim-ts-rainbow2": {
-    "branch": "master",
-    "commit": "b3120cd5ae9ca524af9cb602f41e12e301fa985f"
-  },
   "nvim-various-textobjs": {
     "branch": "main",
     "commit": "218230be0dc16fa988fab0a0d61ddc7ba99a59e3"
