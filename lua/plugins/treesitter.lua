@@ -29,7 +29,6 @@ return {
 			autotag = enable,
 			indent = enable,
 			matchup = enable,
-			rainbow = enable,
 		})
 	end,
 }
