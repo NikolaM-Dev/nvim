@@ -177,7 +177,7 @@
   },
   "nvim-various-textobjs": {
     "branch": "main",
-    "commit": "218230be0dc16fa988fab0a0d61ddc7ba99a59e3"
+    "commit": "a19cbb4346844df6a7a1fb462b8e2504b621c5dd"
   },
   "oil.nvim": {
     "branch": "master",
