@@ -12,6 +12,7 @@ local bookmarks = {
 	dots = 'https://github.com/NikolaM-Dev/dotfiles',
 	fbearoff = 'https://github.com/fbearoff/dotfiles/tree/master/nvim/.config/nvim',
 	folke = 'https://github.com/folke/dot/tree/master/nvim',
+	fontawesome = 'https://fontawesome.com/v5/search?q=car&o=r&m=free',
 	fonts = 'https://www.nerdfonts.com/font-downloads',
 	glepnir = 'https://github.com/glepnir/nvim',
 	icons = 'https://www.nerdfonts.com/cheat-sheet',
