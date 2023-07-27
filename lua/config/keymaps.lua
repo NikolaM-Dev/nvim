@@ -112,6 +112,9 @@ map('i', ';', ';<c-g>u')
 map('i', '?', '?<c-g>u')
 map('i', '_', '_<c-g>u')
 
+-- Paste without copy
+map('x', '<leader>p', [["_dP]])
+
 -- Change to right vertial split
 map('n', '<leader><leader>l', function()
 	vim.cmd.wincmd('L')
