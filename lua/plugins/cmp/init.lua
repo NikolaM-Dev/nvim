@@ -47,6 +47,7 @@ return {
 					['<C-u>'] = cmp.mapping.scroll_docs(-4),
 				}),
 				sources = cmp.config.sources({
+					{ name = 'copilot' },
 					{ name = 'nvim_lsp' },
 					{ name = 'nvim_lua' },
 					{ name = 'luasnip' },
@@ -74,6 +75,7 @@ return {
 
 			cmp.setup.filetype('gitcommit', {
 				sources = cmp.config.sources({
+					{ name = 'copilot' },
 					{ name = 'luasnip' },
 					{ name = 'buffer' },
 					{ name = 'rg', max_item_count = 10, option = { debounce = 42 } },
@@ -119,4 +121,12 @@ return {
 	{ 'hrsh7th/cmp-path', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'lukas-reineke/cmp-rg', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'saadparwaiz1/cmp_luasnip', event = 'InsertEnter', dependencies = { 'hrsh7th/nvim-cmp', 'L3MON4D3/LuaSnip' } },
+	{
+		'zbirenbaum/copilot-cmp',
+		event = 'InsertEnter',
+		dependencies = { 'zbirenbaum/copilot.lua' },
+		config = function()
+			require('copilot_cmp').setup()
+		end,
+	},
 }
