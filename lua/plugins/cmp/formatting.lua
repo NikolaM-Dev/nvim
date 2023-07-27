@@ -5,6 +5,7 @@ local kind_icons = {
 	Color = '',
 	Constant = '',
 	Constructor = '󰆧',
+	Copilot = ' ',
 	Enum = '',
 	EnumMember = '',
 	Event = '',
