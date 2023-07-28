@@ -1,10 +1,7 @@
-local M = {
-	keys = {},
-}
+local binds = 9
+local keys = {}
 
-local binds = 5
-
-table.insert(M.keys, {
+table.insert(keys, {
 	'<C-e>',
 	function()
 		require('harpoon.ui').toggle_quick_menu()
@@ -12,7 +9,7 @@ table.insert(M.keys, {
 	desc = 'Show harpoon marks',
 })
 
-table.insert(M.keys, {
+table.insert(keys, {
 	'<leader>a',
 	function()
 		require('harpoon.mark').add_file()
@@ -21,7 +18,7 @@ table.insert(M.keys, {
 })
 
 for i = 1, binds do
-	table.insert(M.keys, {
+	table.insert(keys, {
 		string.format('<leader>%s', i),
 		function()
 			require('harpoon.ui').nav_file(i)
@@ -30,4 +27,10 @@ for i = 1, binds do
 	})
 end
 
-return M
+return {
+	'ThePrimeagen/harpoon',
+	keys = keys,
+	config = function()
+		require('harpoon').setup()
+	end,
+}
