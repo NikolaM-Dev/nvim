@@ -25,6 +25,9 @@ return {
 		},
 	},
 	config = function()
-		require('rest-nvim').setup()
+		require('rest-nvim').setup({
+			result = { show_headers = false },
+			result_split_horizontal = true,
+		})
 	end,
 }
