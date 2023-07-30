@@ -2,6 +2,10 @@
   "contributes": {
     "snippets": [
       {
+        "language": "typescript",
+        "path": "./nest.json"
+      },
+      {
         "language": "gitcommit",
         "path": "./gitcommit.json"
       },
