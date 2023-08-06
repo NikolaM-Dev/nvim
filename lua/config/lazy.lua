@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
 	spec = {
 		{ import = 'plugins' },
+		{ import = 'plugins.telescope' },
 		{ import = 'plugins.langs.typescript' },
 		{ import = 'plugins.linting.eslint' },
 	},
