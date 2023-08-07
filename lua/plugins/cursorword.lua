@@ -1,7 +1,7 @@
 return {
 	'echasnovski/mini.cursorword',
-	event = { 'BufNewFile', 'BufRead', 'BufAdd' },
 	enabled = false,
+	event = { 'BufNewFile', 'BufRead', 'BufAdd' },
 	config = function()
 		require('mini.cursorword').setup()
 
