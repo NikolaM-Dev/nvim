@@ -1,7 +1,7 @@
 return {
 	'jake-stewart/jfind.nvim',
-	branch = '1.0',
 	enabled = false,
+	branch = '1.0',
 	keys = {
 		{
 			'<leader>;ff',
