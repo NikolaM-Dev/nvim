@@ -1,7 +1,7 @@
 return {
 	'ibhagwan/fzf-lua',
-	cmd = 'FzfLua',
 	enabled = false,
+	cmd = 'FzfLua',
 	keys = {
 		{ '<leader>b', '<cmd>FzfLua buffers<cr>', desc = '[B]uffers' },
 		{ '<leader>?', '<cmd>FzfLua command_history<cr>', desc = 'Command History' },
