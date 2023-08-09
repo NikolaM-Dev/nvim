@@ -1,5 +1,6 @@
 return {
 	'andymass/vim-matchup',
+	enabled = false,
 	event = 'BufReadPost',
 	config = function()
 		vim.api.nvim_set_var('matchup_matchparen_deferred', 1)
