@@ -4,13 +4,24 @@ return {
 	keys = { { '<leader>cm', '<cmd>Mason<cr>', desc = '[M]ason' } },
 	config = function()
 		local sources = {
+			'angular-language-server',
+			'css-lsp',
 			'eslint_d',
+			'eslint-lsp',
 			'gofumpt',
 			'goimports',
+			'gopls',
+			'html-lsp',
+			'json-lsp',
+			'lua-language-server',
 			'prettier',
 			'prettierd',
 			'staticcheck',
 			'stylua',
+			'tailwindcss-language-server',
+			'taplo',
+			'typescript-language-server',
+			'vim-language-server',
 		}
 
 		require('mason').setup({
