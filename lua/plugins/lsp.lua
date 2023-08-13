@@ -31,3 +31,19 @@ local function lsp_handlers_setup()
 		relative = 'cursor',
 	})
 end
+
+return {
+	'neovim/nvim-lspconfig',
+	event = { 'BufReadPre', 'BufNewFile' },
+	dependencies = {
+		'folke/neodev.nvim',
+		'williamboman/mason.nvim',
+	},
+	config = function()
+		require('neodev').setup()
+
+		diagnostics_setup()
+		lsp_handlers_setup()
+		signs_setup()
+	end,
+}
