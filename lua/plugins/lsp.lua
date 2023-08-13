@@ -17,3 +17,17 @@ local function diagnostics_setup()
 
 	vim.diagnostic.config(diagnostics)
 end
+
+local function lsp_handlers_setup()
+	require('lspconfig.ui.windows').default_options.border = 'rounded'
+
+	vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, {
+		border = 'rounded',
+	})
+
+	vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+		border = 'rounded',
+		focusable = false,
+		relative = 'cursor',
+	})
+end
