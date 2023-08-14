@@ -32,16 +32,6 @@ local function lsp_handlers_setup()
 	})
 end
 
-local function diagnostic_goto(next, severity)
-	local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
-	severity = severity and vim.diagnostic.severity[severity] or nil
-
-	return function()
-		go({ severity = severity })
-		vim.diagnostic.open_float()
-	end
-end
-
 return {
 	'neovim/nvim-lspconfig',
 	event = { 'BufReadPre', 'BufNewFile' },
@@ -115,6 +105,21 @@ return {
 					validate = true,
 					lint = { unknownAtRules = 'ignore' },
 				},
+			},
+		})
+
+		lspconfig.eslint.setup({
+			on_attach = function(client, bufnr)
+				on_attach(client, bufnr)
+
+				-- TODO: Don't work
+				vim.api.nvim_create_autocmd('BufWritePre', {
+					buffer = bufnr,
+					command = 'EslintFixAll',
+				})
+			end,
+			settings = {
+				workingDirectory = { mode = 'auto' },
 			},
 		})
 
