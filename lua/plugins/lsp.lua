@@ -98,6 +98,26 @@ return {
 			nmap('<leader>ws', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', '[W]orkspace [S]ymbols')
 		end
 
+		lspconfig.lua_ls.setup({
+			on_attach = on_attach,
+			settings = {
+				Lua = {
+					telemetry = { enable = false },
+					workspace = { checkThirdParty = false },
+				},
+			},
+		})
+
+		lspconfig.cssls.setup({
+			on_attach = on_attach,
+			settings = {
+				css = {
+					validate = true,
+					lint = { unknownAtRules = 'ignore' },
+				},
+			},
+		})
+
 		local regular_servers = {
 			'angularls',
 			'eslint',
