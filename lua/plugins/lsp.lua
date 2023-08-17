@@ -32,6 +32,16 @@ local function lsp_handlers_setup()
 	})
 end
 
+local function diagnostic_goto(next, severity)
+	local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
+	severity = severity and vim.diagnostic.severity[severity] or nil
+
+	return function()
+		go({ severity = severity })
+		vim.diagnostic.open_float()
+	end
+end
+
 return {
 	'neovim/nvim-lspconfig',
 	event = { 'BufReadPre', 'BufNewFile' },
