@@ -17,8 +17,11 @@ return {
 				fold_closed = '',
 				fold_open = '',
 			},
-			merge_tool = {
-				layout = 'diff4_mixed',
+			view = {
+				merge_tool = {
+					layout = 'diff3_mixed',
+				},
+			},
 			},
 		})
 	end,
