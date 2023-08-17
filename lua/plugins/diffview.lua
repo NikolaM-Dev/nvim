@@ -22,6 +22,10 @@ return {
 					layout = 'diff3_mixed',
 				},
 			},
+			file_panel = {
+				win_config = {
+					width = 60,
+				},
 			},
 		})
 	end,
