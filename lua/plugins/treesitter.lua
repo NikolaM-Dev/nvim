@@ -26,6 +26,7 @@ return {
 			ensure_installed = {
 				'c',
 				'diff',
+				'gitcommit',
 				'html',
 				'javascript',
 				'jsdoc',
