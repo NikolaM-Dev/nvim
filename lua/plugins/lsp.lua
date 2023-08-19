@@ -62,19 +62,25 @@ return {
 		local on_attach = function(client, bufnr)
 			vim.bo.omnifunc = 'v:lua.vim.lsp.omnifunc'
 
-			local nmap = function(keys, func, desc)
+			local nmap = function(keys, func, desc, mode)
 				if desc then
 					desc = 'LSP: ' .. desc
 				end
 
-				vim.keymap.set('n', keys, func, {
+				if mode then
+					mode = mode
+				else
+					mode = 'n'
+				end
+
+				vim.keymap.set(mode, keys, func, {
 					buffer = bufnr,
 					desc = desc,
 					silent = true,
 				})
 			end
 
-			nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
+			nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation', 'i')
 			nmap('ga', vim.lsp.buf.code_action, '[C]ode [A]ction')
 			nmap('gd', '<cmd>Telescope lsp_definitions<cr>', '[G]o to [D]efinition')
 			nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
