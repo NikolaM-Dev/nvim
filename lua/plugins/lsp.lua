@@ -146,6 +146,9 @@ return {
 			end,
 			settings = {
 				workingDirectory = { mode = 'auto' },
+			},
+		})
+
 		require('typescript').setup({
 			disable_commands = false, -- prevent the plugin from creating Vim commands
 			debug = false, -- enable debug logging for commands
@@ -160,7 +163,6 @@ return {
 
 		local regular_servers = {
 			'angularls',
-			'eslint',
 			'gopls',
 			'html',
 			'jsonls',
