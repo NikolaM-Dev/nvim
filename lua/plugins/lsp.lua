@@ -47,6 +47,7 @@ return {
 	event = { 'BufReadPre', 'BufNewFile' },
 	dependencies = {
 		'folke/neodev.nvim',
+		'jose-elias-alvarez/typescript.nvim',
 		'williamboman/mason.nvim',
 	},
 	config = function()
@@ -96,6 +97,15 @@ return {
 			nmap('<leader>wj', diagnostic_go_to(true, 'WARN'), 'Next Warning')
 			nmap('<leader>wk', diagnostic_go_to(false, 'WARN'), 'Prev Warning')
 			nmap('<leader>ws', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', '[W]orkspace [S]ymbols')
+
+			if client.name == 'tsserver' then
+				nmap('<leader>am', '<cmd>TypescriptAddMissingImports<cr>', 'Add Missing Imports')
+				nmap('<leader>gD', '<cmd>TypescriptGoToSourceDefinition<cr>', 'Go to Source Definition')
+				nmap('<leader><leader>fa', '<cmd>TypescriptFixAll<cr>', 'Fix All')
+				nmap('<leader>oi', '<cmd>TypescriptOrganizeImports<cr>', 'Organize Imports')
+				nmap('<leader>rf', '<cmd>TypescriptRenameFile<cr>', 'Rename File')
+				nmap('<leader>ru', '<cmd>TypescriptRemoveUnused<cr>', 'Remove Unused')
+			end
 		end
 
 		lspconfig.lua_ls.setup({
@@ -130,6 +140,15 @@ return {
 			end,
 			settings = {
 				workingDirectory = { mode = 'auto' },
+		require('typescript').setup({
+			disable_commands = false, -- prevent the plugin from creating Vim commands
+			debug = false, -- enable debug logging for commands
+			go_to_source_definition = { fallback = true }, -- fall back to standard LSP definition on failure
+			server = {
+				init_options = {
+					preferences = { importModuleSpecifierPreference = 'relative' },
+				},
+				on_attach = on_attach,
 			},
 		})
 
@@ -141,7 +160,6 @@ return {
 			'jsonls',
 			'tailwindcss',
 			'taplo',
-			'tsserver',
 			'vimls',
 		}
 
