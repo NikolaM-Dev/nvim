@@ -32,7 +32,7 @@ local function lsp_handlers_setup()
 	})
 end
 
-local function diagnostic_goto(next, severity)
+local function diagnostic_go_to(next, severity)
 	local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
 	severity = severity and vim.diagnostic.severity[severity] or nil
 
@@ -82,19 +82,19 @@ return {
 			nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
 			nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
 			nmap('<leader>D', '<cmd>Telescope lsp_type_definitions<cr>', 'Type [D]efinitions')
-			nmap('<leader>dj', diagnostic_goto(true), 'Next [D]iagnostic')
-			nmap('<leader>dk', diagnostic_goto(false), 'Prev [D]iagnostic')
+			nmap('<leader>dj', diagnostic_go_to(true), 'Next [D]iagnostic')
+			nmap('<leader>dk', diagnostic_go_to(false), 'Prev [D]iagnostic')
 			nmap('<leader>ds', '<cmd>Telescope lsp_document_symbols<cr>', '[D]ocument [S]ymbols')
-			nmap('<leader>Ej', diagnostic_goto(true, 'ERROR'), 'Next Error')
-			nmap('<leader>Ek', diagnostic_goto(false, 'ERROR'), 'Prev Error')
+			nmap('<leader>Ej', diagnostic_go_to(true, 'ERROR'), 'Next Error')
+			nmap('<leader>Ek', diagnostic_go_to(false, 'ERROR'), 'Prev Error')
 			nmap('<leader>K', vim.lsp.buf.hover, 'Hover')
 			nmap('<leader>ld', vim.diagnostic.open_float, '[L]ine [D]iagnostics')
 			nmap('<leader>li', '<cmd>LspInfo<cr>', 'Lsp Info')
 			nmap('<Leader>ll', '<cmd>LspLog<cr>', 'Lsp Log')
 			nmap('<Leader>lr', '<cmd>LspRestart<cr>', 'Lsp Restart')
 			nmap('<leader>sd', '<cmd>FzfLua diagnostics_workspace<cr>', '[S]earch [D]iagnostics')
-			nmap('<leader>wj', diagnostic_goto(true, 'WARN'), 'Next Warning')
-			nmap('<leader>wk', diagnostic_goto(false, 'WARN'), 'Prev Warning')
+			nmap('<leader>wj', diagnostic_go_to(true, 'WARN'), 'Next Warning')
+			nmap('<leader>wk', diagnostic_go_to(false, 'WARN'), 'Prev Warning')
 			nmap('<leader>ws', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', '[W]orkspace [S]ymbols')
 		end
 
