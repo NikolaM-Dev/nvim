@@ -59,7 +59,7 @@ return {
 
 		local lspconfig = require('lspconfig')
 
-		local on_attach = function(_, bufnr)
+		local on_attach = function(client, bufnr)
 			vim.bo.omnifunc = 'v:lua.vim.lsp.omnifunc'
 
 			local nmap = function(keys, func, desc)
