@@ -138,7 +138,6 @@ return {
 			on_attach = function(client, bufnr)
 				on_attach(client, bufnr)
 
-				-- TODO: Don't work
 				vim.api.nvim_create_autocmd('BufWritePre', {
 					buffer = bufnr,
 					command = 'EslintFixAll',
