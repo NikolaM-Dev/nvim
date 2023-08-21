@@ -105,12 +105,12 @@ return {
 			nmap('<leader>ws', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', '[W]orkspace [S]ymbols')
 
 			if client.name == 'tsserver' then
-				nmap('<leader>am', '<cmd>TypescriptAddMissingImports<cr>', 'Add Missing Imports')
+				nmap('<leader>am', '<cmd>TypescriptAddMissingImports<cr>', '[A]dd [M]issing Imports')
 				nmap('<leader>gD', '<cmd>TypescriptGoToSourceDefinition<cr>', 'Go to Source Definition')
-				nmap('<leader><leader>fa', '<cmd>TypescriptFixAll<cr>', 'Fix All')
-				nmap('<leader>oi', '<cmd>TypescriptOrganizeImports<cr>', 'Organize Imports')
-				nmap('<leader>rf', '<cmd>TypescriptRenameFile<cr>', 'Rename File')
-				nmap('<leader>ru', '<cmd>TypescriptRemoveUnused<cr>', 'Remove Unused')
+				nmap('<leader><leader>fa', '<cmd>TypescriptFixAll<cr>', '[F]ix [A]ll')
+				nmap('<leader>oi', '<cmd>TypescriptOrganizeImports<cr>', '[O]rganize [I]mports')
+				nmap('<leader>rf', '<cmd>TypescriptRenameFile<cr>', '[R]ename [F]ile')
+				nmap('<leader>ru', '<cmd>TypescriptRemoveUnused<cr>', '[R]emove [U]nused')
 			end
 		end
 
