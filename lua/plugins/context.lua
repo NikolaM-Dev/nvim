@@ -1,6 +1,7 @@
 return {
 	'nvim-treesitter/nvim-treesitter-context',
 	event = 'BufReadPre',
+	cmd = { 'TSContextDisable', 'TSContextEnable', 'TSContextToggle' },
 	keys = {
 		{
 			';gc',
