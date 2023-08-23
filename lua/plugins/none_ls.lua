@@ -1,5 +1,5 @@
 return {
-	'jose-elias-alvarez/null-ls.nvim',
+	'nvimtools/none-ls.nvim',
 	event = { 'BufReadPre', 'BufNewFile' },
 	keys = { { '<leader>cn', '<cmd>NullLsInfo<cr>', desc = '[N]ull-LS Info' } },
 	config = function()
