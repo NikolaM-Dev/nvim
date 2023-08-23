@@ -13,10 +13,10 @@ return {
 			sources = {
 				d.staticcheck,
 
-				f.prettier.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
-				f.prettierd.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
 				f.gofumpt,
 				f.goimports,
+				f.prettierd.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
+				f.prettier.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
 				f.stylua,
 				f.taplo,
 			},
