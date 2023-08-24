@@ -10,6 +10,11 @@ return {
 			end,
 			desc = '[G]oto [C]ontext',
 		},
+		{
+			'<leader>tc',
+			'<cmd>TSContextToggle<cr>',
+			desc = '[T]oggle [C]ontext',
+		},
 	},
 	config = function()
 		require('treesitter-context').setup()
