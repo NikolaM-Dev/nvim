@@ -12,17 +12,7 @@ return {
 		nls.setup({
 			sources = {
 				d.staticcheck,
-				d.eslint_d.with({
-					condition = function(utils)
-						return utils.root_has_file({ '.eslintrc.cjs', '.eslintrc.js' })
-					end,
-				}),
 
-				f.eslint_d.with({
-					condition = function(utils)
-						return utils.root_has_file({ '.eslintrc.cjs', '.eslintrc.js' })
-					end,
-				}),
 				f.gofumpt,
 				f.goimports,
 				f.prettierd.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
