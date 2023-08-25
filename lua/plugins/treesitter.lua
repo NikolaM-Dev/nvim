@@ -49,7 +49,6 @@ return {
 			},
 
 			context_commentstring = { enable = true, enable_autocmd = false },
-			autotag = enable,
 			indent = enable,
 			matchup = enable,
 		})
