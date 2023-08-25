@@ -9,6 +9,7 @@ return {
 	config = function()
 		local enable = { enable = true }
 
+		---@diagnostic disable-next-line: missing-fields
 		require('nvim-treesitter.configs').setup({
 			highlight = {
 				enable = true,
@@ -24,9 +25,11 @@ return {
 
 			auto_install = true,
 			ensure_installed = {
+				'bash',
 				'c',
 				'diff',
 				'gitcommit',
+				'gitignore',
 				'html',
 				'javascript',
 				'jsdoc',
@@ -39,11 +42,14 @@ return {
 				'markdown_inline',
 				'python',
 				'query',
+				'query',
+				'regex',
 				'regex',
 				'toml',
 				'tsx',
 				'typescript',
 				'vim',
+				'vimdoc',
 				'vimdoc',
 				'yaml',
 			},
