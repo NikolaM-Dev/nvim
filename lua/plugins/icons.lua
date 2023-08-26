@@ -9,6 +9,36 @@ return {
 				icon = '',
 				name = 'YarnLock',
 			},
+			['tsconfig.json'] = {
+				icon = '',
+				color = '#757575',
+				name = 'TSConfig',
+			},
+			['tsconfig.node.json'] = {
+				icon = '',
+				color = '#757575',
+				name = 'TSNodeConfig',
+			},
+			['tsconfig.build.json'] = {
+				icon = '',
+				color = '#757575',
+				name = 'TSBuildConfig',
+			},
+			['tslint.json'] = {
+				icon = '',
+				color = '#757575',
+				name = 'TslintConfig',
+			},
+			['tsconfig.spec.json'] = {
+				icon = '',
+				color = '#757575',
+				name = 'TSSpecConfig',
+			},
+			['tsconfig.app.json'] = {
+				icon = '',
+				color = '#757575',
+				name = 'TSAppConfig',
+			},
 
 		icons.set_default_icon('󰈙', '#42a5f5')
 	end,
