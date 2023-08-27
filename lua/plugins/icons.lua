@@ -39,6 +39,17 @@ return {
 				color = '#757575',
 				name = 'TSAppConfig',
 			},
+			['vite.config.js'] = {
+				icon = '',
+				color = '#ffab00',
+				name = 'ViteConfig',
+			},
+			['vite.config.ts'] = {
+				icon = '',
+				color = '#ffab00',
+				name = 'ViteConfigTS',
+			},
+		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
 	end,
