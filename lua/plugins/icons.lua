@@ -49,6 +49,26 @@ return {
 				color = '#ffab00',
 				name = 'ViteConfigTS',
 			},
+			['jest.setup.js'] = {
+				icon = '󱢡',
+				color = '#f4511e',
+				name = 'JestSetup',
+			},
+			['jest.config.cjs'] = {
+				icon = '󱢡',
+				color = '#f4511e',
+				name = 'JestConfig',
+			},
+			['jest-e2e.json'] = {
+				icon = '󱢡',
+				color = '#f4511e',
+				name = 'JestE2E',
+			},
+			['jest.config.js'] = {
+				icon = '󱢡',
+				color = '#f4511e',
+				name = 'JestConfig',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
