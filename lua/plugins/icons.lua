@@ -86,8 +86,8 @@ return {
 				name = 'Babelrc',
 			},
 			['.nvmrc'] = {
-				icon = '',
 				color = '#8bc34a',
+				icon = '󰎙',
 				name = 'Nvmrc',
 			},
 		})
