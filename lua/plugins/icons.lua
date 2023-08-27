@@ -85,6 +85,11 @@ return {
 				cterm_color = '185',
 				name = 'Babelrc',
 			},
+			['.nvmrc'] = {
+				icon = '',
+				color = '#8bc34a',
+				name = 'Nvmrc',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
