@@ -69,6 +69,22 @@ return {
 				color = '#f4511e',
 				name = 'JestConfig',
 			},
+			['babel.config.cjs'] = {
+				icon = '󰨥',
+				color = '#fdd835',
+				name = 'BabelConfig',
+			},
+			['babel.config.js'] = {
+				icon = '󰨥',
+				color = '#fdd835',
+				name = 'BabelConfig',
+			},
+			['.babelrc'] = {
+				icon = '󰨥',
+				color = '#fdd835',
+				cterm_color = '185',
+				name = 'Babelrc',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
