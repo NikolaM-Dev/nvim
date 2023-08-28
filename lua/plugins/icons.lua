@@ -131,6 +131,11 @@ return {
 				color = '#7986cb',
 				name = 'EslintIgnore',
 			},
+			['.editorconfig'] = {
+				icon = '',
+				color = '#fdfdfd',
+				name = 'EditorConfig',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
