@@ -90,6 +90,26 @@ return {
 				icon = '󰎙',
 				name = 'Nvmrc',
 			},
+			['.prettierrc'] = {
+				icon = '',
+				color = '#65babb',
+				name = 'Prettier',
+			},
+			['.prettierrc.js'] = {
+				icon = '',
+				color = '#65babb',
+				name = 'PrettierJS',
+			},
+			['.prettierrc.cjs'] = {
+				icon = '',
+				color = '#65babb',
+				name = 'PrettierConfig',
+			},
+			['.prettierignore'] = {
+				icon = '',
+				color = '#65babb',
+				name = 'PrettierIgnore',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
