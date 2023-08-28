@@ -136,6 +136,11 @@ return {
 				color = '#fdfdfd',
 				name = 'EditorConfig',
 			},
+			['contributing.md'] = {
+				icon = '󰅍',
+				color = '#ffca28',
+				name = 'Contributing',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
