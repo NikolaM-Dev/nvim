@@ -110,6 +110,27 @@ return {
 				color = '#65babb',
 				name = 'PrettierIgnore',
 			},
+			['.eslintrc'] = {
+				icon = '󰱺',
+				color = '#7986cb',
+				cterm_color = '56',
+				name = 'Eslintrc',
+			},
+			['.eslintrc.cjs'] = {
+				icon = '󰱺',
+				color = '#7986cb',
+				name = 'EslintConfig',
+			},
+			['.eslintrc.js'] = {
+				icon = '󰱺',
+				color = '#7986cb',
+				name = 'EslintJS',
+			},
+			['.eslintignore'] = {
+				icon = '󰱺',
+				color = '#7986cb',
+				name = 'EslintIgnore',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
