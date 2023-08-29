@@ -151,6 +151,11 @@ return {
 				color = '#ff7043',
 				name = 'Envrc',
 			},
+			['.gitkeep'] = {
+				icon = '󰊢',
+				color = '#e64a19',
+				name = 'GitKeep',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
