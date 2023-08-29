@@ -146,6 +146,11 @@ return {
 				color = '#42a5f5',
 				name = 'LuaCheckrc',
 			},
+			['.envrc'] = {
+				icon = '󰆍',
+				color = '#ff7043',
+				name = 'Envrc',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
