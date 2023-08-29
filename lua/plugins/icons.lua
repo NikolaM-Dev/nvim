@@ -141,6 +141,11 @@ return {
 				color = '#ffca28',
 				name = 'Contributing',
 			},
+			['.luacheckrc'] = {
+				icon = '',
+				color = '#42a5f5',
+				name = 'LuaCheckrc',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
