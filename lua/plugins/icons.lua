@@ -161,6 +161,11 @@ return {
 				color = '#00bfa5',
 				name = 'CypressConfig',
 			},
+			['tailwind.config.js'] = {
+				icon = '󱏿',
+				color = '#4db6ac',
+				name = 'TailwindConfig',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
