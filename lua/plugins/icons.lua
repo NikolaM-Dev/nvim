@@ -166,6 +166,11 @@ return {
 				color = '#4db6ac',
 				name = 'TailwindConfig',
 			},
+			['postcss.config.js'] = {
+				icon = '󱥒',
+				color = '#e53935',
+				name = 'PostcssConfig',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
