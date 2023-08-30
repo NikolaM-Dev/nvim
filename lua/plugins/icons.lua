@@ -156,6 +156,11 @@ return {
 				color = '#e64a19',
 				name = 'GitKeep',
 			},
+			['cypress.config.ts'] = {
+				icon = '󱍷',
+				color = '#00bfa5',
+				name = 'CypressConfig',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
