@@ -171,6 +171,11 @@ return {
 				color = '#e53935',
 				name = 'PostcssConfig',
 			},
+			['settings.json'] = {
+				icon = '󰨞',
+				color = '#2196f3',
+				name = 'VscodeSettings',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
