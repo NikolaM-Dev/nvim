@@ -174,6 +174,16 @@ return {
 				icon = '󰨞',
 				name = 'VscodeSettings',
 			},
+			['ormconfig.js'] = {
+				color = '#ffca28',
+				icon = '󱙋',
+				name = 'OrmConfig',
+			},
+			['ormconfig.ts'] = {
+				color = '#0288d1',
+				icon = '󱙋',
+				name = 'OrmConfigTS',
+			},
 			['nest-cli.json'] = {
 				color = '#e53935',
 				icon = '',
