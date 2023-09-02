@@ -174,6 +174,11 @@ return {
 				icon = '󰨞',
 				name = 'VscodeSettings',
 			},
+			['nest-cli.json'] = {
+				color = '#e53935',
+				icon = '',
+				name = 'NestCli',
+			},
 			['karma.conf.js'] = {
 				color = '#26a69a',
 				icon = '',
