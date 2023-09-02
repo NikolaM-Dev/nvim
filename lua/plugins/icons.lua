@@ -174,6 +174,11 @@ return {
 				icon = '󰨞',
 				name = 'VscodeSettings',
 			},
+			['karma.conf.js'] = {
+				color = '#26a69a',
+				icon = '',
+				name = 'KarmaConf',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
