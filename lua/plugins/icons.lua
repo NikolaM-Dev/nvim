@@ -194,6 +194,11 @@ return {
 				icon = '',
 				name = 'KarmaConf',
 			},
+			['robots.txt'] = {
+				icon = '󱚝',
+				color = '#ff5252',
+				name = 'Robots',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
