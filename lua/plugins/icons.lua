@@ -204,6 +204,11 @@ return {
 				color = '#ffca28',
 				name = 'Browerslist',
 			},
+			['bitbucket-pipelines.yml'] = {
+				icon = '󰂨',
+				color = '#1e88e5',
+				name = 'BitbucketPipeline',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
