@@ -199,6 +199,11 @@ return {
 				color = '#ff5252',
 				name = 'Robots',
 			},
+			['.browserslistrc'] = {
+				icon = '',
+				color = '#ffca28',
+				name = 'Browerslist',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
