@@ -209,6 +209,11 @@ return {
 				icon = '󰂨',
 				name = 'BitbucketPipeline',
 			},
+			['angular.json'] = {
+				color = '#e53935',
+				icon = '󰚲',
+				name = 'Angular',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
