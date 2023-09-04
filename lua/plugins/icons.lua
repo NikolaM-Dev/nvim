@@ -214,6 +214,11 @@ return {
 				icon = '󰚲',
 				name = 'Angular',
 			},
+			['app.e2e-spec.ts'] = {
+				icon = '',
+				color = '#0288d1',
+				name = 'AppE2E',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
