@@ -195,18 +195,18 @@ return {
 				name = 'KarmaConf',
 			},
 			['robots.txt'] = {
-				icon = '󱚝',
 				color = '#ff5252',
+				icon = '󱚝',
 				name = 'Robots',
 			},
 			['.browserslistrc'] = {
-				icon = '',
 				color = '#ffca28',
+				icon = '',
 				name = 'Browerslist',
 			},
 			['bitbucket-pipelines.yml'] = {
-				icon = '󰂨',
 				color = '#1e88e5',
+				icon = '󰂨',
 				name = 'BitbucketPipeline',
 			},
 		})
