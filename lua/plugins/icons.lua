@@ -215,8 +215,8 @@ return {
 				name = 'Angular',
 			},
 			['app.e2e-spec.ts'] = {
-				icon = '',
 				color = '#0288d1',
+				icon = '',
 				name = 'AppE2E',
 			},
 		})
