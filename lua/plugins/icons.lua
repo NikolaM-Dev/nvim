@@ -229,6 +229,18 @@ return {
 				icon = '󰀨',
 				name = 'Readme',
 			},
+			['go.mod'] = {
+				icon = '',
+				color = '#ec407a',
+				cterm_color = '113',
+				name = 'GoMod',
+			},
+			['go.sum'] = {
+				icon = '',
+				color = '#ec407a',
+				cterm_color = '113',
+				name = 'GoSum',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
