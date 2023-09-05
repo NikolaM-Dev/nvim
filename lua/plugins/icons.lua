@@ -224,6 +224,11 @@ return {
 				icon = '󰕰',
 				name = 'PnpmLock',
 			},
+			['readme.md'] = {
+				color = '#42a5f5',
+				icon = '󰀨',
+				name = 'Readme',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
