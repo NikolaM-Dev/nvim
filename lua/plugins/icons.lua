@@ -219,6 +219,11 @@ return {
 				icon = '',
 				name = 'AppE2E',
 			},
+			['pnpm-lock.yaml'] = {
+				color = '#ffb300',
+				icon = '󰕰',
+				name = 'PnpmLock',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
