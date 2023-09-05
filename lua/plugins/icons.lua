@@ -230,15 +230,13 @@ return {
 				name = 'Readme',
 			},
 			['go.mod'] = {
-				icon = '',
 				color = '#ec407a',
-				cterm_color = '113',
+				icon = '',
 				name = 'GoMod',
 			},
 			['go.sum'] = {
-				icon = '',
 				color = '#ec407a',
-				cterm_color = '113',
+				icon = '',
 				name = 'GoSum',
 			},
 		})
