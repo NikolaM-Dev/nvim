@@ -154,6 +154,26 @@ return {
 				icon = '󰊢',
 				name = 'GitKeep',
 			},
+			['.gitattributes'] = {
+				color = '#e64a19',
+				icon = '󰊢',
+				name = 'GitAttributes',
+			},
+			['.gitconfig'] = {
+				color = '#e64a19',
+				icon = '',
+				name = 'GitConfig',
+			},
+			['.gitignore'] = {
+				color = '#e64a19',
+				icon = '󰊢',
+				name = 'GitIgnore',
+			},
+			['.gitmodules'] = {
+				color = '#e64a19',
+				icon = '󰏗',
+				name = 'GitModules',
+			},
 			['cypress.config.ts'] = {
 				color = '#00bfa5',
 				icon = '󱍷',
