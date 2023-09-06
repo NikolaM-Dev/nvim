@@ -239,6 +239,11 @@ return {
 				icon = '',
 				name = 'GoSum',
 			},
+			['.fehbg'] = {
+				color = '#ff7043',
+				icon = '󰸉',
+				name = 'Fehbg',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
