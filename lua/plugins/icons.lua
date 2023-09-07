@@ -274,6 +274,16 @@ return {
 				icon = '󰝆',
 				name = 'NPMrc',
 			},
+			['.zshenv'] = {
+				color = '#ff7043',
+				icon = '󰆍',
+				name = 'Zshenv',
+			},
+			['.zshrc'] = {
+				color = '#ff7043',
+				icon = '󰆍',
+				name = 'Zshrc',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
