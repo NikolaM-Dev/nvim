@@ -264,6 +264,16 @@ return {
 				icon = '󰸉',
 				name = 'Fehbg',
 			},
+			['.npmignore'] = {
+				color = '#e53935',
+				icon = '󰝆',
+				name = 'NPMIgnore',
+			},
+			['.npmrc'] = {
+				color = '#e53935',
+				icon = '󰝆',
+				name = 'NPMrc',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
