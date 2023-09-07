@@ -149,6 +149,11 @@ return {
 				icon = '󰆍',
 				name = 'Envrc',
 			},
+			['commit_editmsg'] = {
+				icon = '󰷈',
+				color = '#e64a19',
+				name = 'GitCommit',
+			},
 			['.gitkeep'] = {
 				color = '#e64a19',
 				icon = '󰊢',
