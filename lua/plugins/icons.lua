@@ -284,6 +284,11 @@ return {
 				icon = '󰆍',
 				name = 'Zshrc',
 			},
+			['.zprofile'] = {
+				color = '#ff7043',
+				icon = '󰆍',
+				name = 'Zshprofile',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
