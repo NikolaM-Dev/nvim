@@ -307,12 +307,12 @@ return {
 			['docker-compose.yml'] = {
 				color = '#0087c9',
 				icon = '󰡨',
-				name = 'Dockerfile',
+				name = 'DockerCompose',
 			},
 			['docker-compose.yaml'] = {
 				color = '#0087c9',
 				icon = '󰡨',
-				name = 'Dockerfile',
+				name = 'DockerCompose',
 			},
 			['.dockerignore'] = {
 				color = '#0087c9',
