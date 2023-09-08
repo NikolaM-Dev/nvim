@@ -314,6 +314,11 @@ return {
 				icon = '󰡨',
 				name = 'Dockerfile',
 			},
+			['.dockerignore'] = {
+				color = '#0087c9',
+				icon = '󰡨',
+				name = 'DockerIgnore',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
