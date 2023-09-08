@@ -294,6 +294,16 @@ return {
 				icon = '󰆍',
 				name = 'Zshprofile',
 			},
+			['copying'] = {
+				color = '#ff5722',
+				icon = '󰄤',
+				name = 'License',
+			},
+			['copying.lesser'] = {
+				color = '#ff5722',
+				icon = '󰄤',
+				name = 'License',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
