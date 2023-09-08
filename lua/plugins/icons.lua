@@ -304,6 +304,16 @@ return {
 				icon = '󰄤',
 				name = 'License',
 			},
+			['license'] = {
+				color = '#ff5722',
+				icon = '󰄤',
+				name = 'License',
+			},
+			['license.md'] = {
+				color = '#ff5722',
+				icon = '󰄤',
+				name = 'License',
+			},
 			['docker-compose.yml'] = {
 				color = '#0087c9',
 				icon = '󰡨',
