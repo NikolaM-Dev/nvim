@@ -349,7 +349,7 @@ return {
 				icon = '󱕷',
 				name = 'Makefile',
 			},
-			 g
+			['makefile'] = {
 				color = '#ef5350',
 				icon = '󱕷',
 				name = 'Makefile',
