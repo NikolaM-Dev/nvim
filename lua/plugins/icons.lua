@@ -339,6 +339,11 @@ return {
 				icon = '󰈡',
 				name = 'PackageLockJson',
 			},
+			['favicon.ico'] = {
+				color = '#ffd54f',
+				icon = '',
+				name = 'Favicon',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
