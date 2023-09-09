@@ -344,6 +344,16 @@ return {
 				icon = '',
 				name = 'Favicon',
 			},
+			['gnumakefile'] = {
+				color = '#ef5350',
+				icon = '󱕷',
+				name = 'Makefile',
+			},
+			 g
+				color = '#ef5350',
+				icon = '󱕷',
+				name = 'Makefile',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
