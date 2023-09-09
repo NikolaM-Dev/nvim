@@ -329,6 +329,16 @@ return {
 				icon = '󰡨',
 				name = 'DockerIgnore',
 			},
+			['package.json'] = {
+				color = '#8bc34a',
+				icon = '󰎙',
+				name = 'PackageJson',
+			},
+			['package-lock.json'] = {
+				color = '#8bc34a',
+				icon = '󰈡',
+				name = 'PackageLockJson',
+			},
 		})
 
 		icons.set_default_icon('󰈙', '#42a5f5')
