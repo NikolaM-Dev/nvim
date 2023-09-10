@@ -351,7 +351,7 @@ return {
 					icon = '󱕷',
 					name = 'Makefile',
 				},
-				['makefile'] = {S
+				['makefile'] = {
 					color = '#ef5350',
 					icon = '󱕷',
 					name = 'Makefile',
