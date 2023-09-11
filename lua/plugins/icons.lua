@@ -311,6 +311,11 @@ return {
 					icon = '󰄤',
 					name = 'License',
 				},
+				['unlicense'] = {
+					color = '#ff5722',
+					icon = '󰄤',
+					name = 'License',
+				},
 				['license.md'] = {
 					color = '#ff5722',
 					icon = '󰄤',
