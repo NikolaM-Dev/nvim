@@ -331,6 +331,11 @@ return {
 					icon = '󰡨',
 					name = 'DockerIgnore',
 				},
+				['dockerfile'] = {
+					color = '#0087c9',
+					icon = '󰡨',
+					name = 'Dockerfile',
+				},
 				['package.json'] = {
 					color = '#8bc34a',
 					icon = '󰎙',
