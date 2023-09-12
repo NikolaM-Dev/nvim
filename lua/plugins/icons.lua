@@ -371,6 +371,16 @@ return {
 					icon = '',
 					name = 'Env',
 				},
+				['en.json'] = {
+					color = '#5c6bc0',
+					icon = '󰊿',
+					name = 'English',
+				},
+				['es.json'] = {
+					color = '#5c6bc0',
+					icon = '󰊿',
+					name = 'Spanish',
+				},
 			},
 		})
 
