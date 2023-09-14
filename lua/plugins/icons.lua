@@ -401,6 +401,21 @@ return {
 					icon = '',
 					name = 'Decorator',
 				},
+				['guard.ts'] = {
+					color = '#43a047',
+					icon = '',
+					name = 'Guard',
+				},
+				['pipe.ts'] = {
+					color = '#00897b',
+					icon = '',
+					name = 'Pipe',
+				},
+				['filter.ts'] = {
+					color = '#ff7043',
+					icon = '',
+					name = 'Filter',
+				},
 			},
 		})
 
