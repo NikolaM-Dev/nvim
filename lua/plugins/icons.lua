@@ -391,6 +391,16 @@ return {
 					icon = '',
 					name = 'Controller',
 				},
+				['module.ts'] = {
+					color = '#e53935',
+					icon = '',
+					name = 'Module',
+				},
+				['decorator.ts'] = {
+					color = '#ab47bc',
+					icon = '',
+					name = 'Decorator',
+				},
 			},
 		})
 
