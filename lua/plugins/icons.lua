@@ -416,6 +416,16 @@ return {
 					icon = '',
 					name = 'Filter',
 				},
+				['directive.ts'] = {
+					color = '#ab47bc',
+					icon = '󰚲',
+					name = 'Directive',
+				},
+				['resolve.ts'] = {
+					color = '#43a047',
+					icon = '󰚲',
+					name = 'Resolver',
+				},
 			},
 		})
 
