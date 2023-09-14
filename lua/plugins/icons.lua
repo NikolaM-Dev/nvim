@@ -381,6 +381,16 @@ return {
 					icon = '󰊿',
 					name = 'Spanish',
 				},
+				['service.ts'] = {
+					icon = '',
+					color = '#ffca28',
+					name = 'Service',
+				},
+				['controller.ts'] = {
+					color = '#0288d1',
+					icon = '',
+					name = 'Controller',
+				},
 			},
 		})
 
