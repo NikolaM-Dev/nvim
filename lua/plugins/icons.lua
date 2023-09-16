@@ -426,6 +426,16 @@ return {
 					icon = '󰚲',
 					name = 'Resolver',
 				},
+				['model.ts'] = {
+					icon = '',
+					color = '#ef5350',
+					name = 'Model',
+				},
+				['interceptor.ts'] = {
+					icon = '',
+					color = '#9575cd',
+					name = 'Interceptor',
+				},
 			},
 		})
 
