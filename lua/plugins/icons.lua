@@ -427,13 +427,13 @@ return {
 					name = 'Resolver',
 				},
 				['model.ts'] = {
-					icon = '',
 					color = '#ef5350',
+					icon = '',
 					name = 'Model',
 				},
 				['interceptor.ts'] = {
-					icon = '',
 					color = '#9575cd',
+					icon = '',
 					name = 'Interceptor',
 				},
 			},
