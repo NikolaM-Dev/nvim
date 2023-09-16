@@ -436,7 +436,6 @@ return {
 					icon = '',
 					name = 'Interceptor',
 				},
-
 				['woff'] = {
 					color = '#f44336',
 					icon = '',
@@ -446,6 +445,11 @@ return {
 					color = '#f44336',
 					icon = '',
 					name = 'Woff2',
+				},
+				['ttf'] = {
+					icon = '',
+					color = '#f44336',
+					name = 'Ttf',
 				},
 			},
 		})
