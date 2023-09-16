@@ -436,6 +436,17 @@ return {
 					icon = '',
 					name = 'Interceptor',
 				},
+
+				['woff'] = {
+					color = '#f44336',
+					icon = '',
+					name = 'Woff',
+				},
+				['woff2'] = {
+					color = '#f44336',
+					icon = '',
+					name = 'Woff2',
+				},
 			},
 		})
 
