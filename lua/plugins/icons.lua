@@ -461,6 +461,11 @@ return {
 					icon = '',
 					name = 'Http',
 				},
+				['psql'] = {
+					color = '#ffca28',
+					icon = '󰆼',
+					name = 'Psql',
+				},
 			},
 		})
 
