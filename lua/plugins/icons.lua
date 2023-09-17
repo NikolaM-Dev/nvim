@@ -451,6 +451,11 @@ return {
 					color = '#f44336',
 					name = 'Ttf',
 				},
+				['snap'] = {
+					color = '#00bcd4',
+					icon = '󰷊',
+					name = 'Snap',
+				},
 			},
 		})
 
