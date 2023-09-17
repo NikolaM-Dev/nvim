@@ -456,6 +456,11 @@ return {
 					icon = '󰷊',
 					name = 'Snap',
 				},
+				['http'] = {
+					color = '#e53935',
+					icon = '',
+					name = 'Http',
+				},
 			},
 		})
 
