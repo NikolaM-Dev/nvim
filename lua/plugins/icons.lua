@@ -151,6 +151,7 @@ return {
 					icon = '󰆍',
 					name = 'Envrc',
 				},
+
 				['commit_editmsg'] = {
 					icon = '󰷈',
 					color = '#e64a19',
@@ -370,6 +371,31 @@ return {
 					color = '#fbc02d',
 					icon = '',
 					name = 'Env',
+				},
+				['env'] = {
+					color = '#fbc02d',
+					icon = '',
+					name = 'Env',
+				},
+				['production'] = {
+					color = '#fbc02d',
+					icon = '',
+					name = 'ViteProductionEnv',
+				},
+				['test'] = {
+					color = '#fbc02d',
+					icon = '',
+					name = 'ViteTestEnv',
+				},
+				['development'] = {
+					color = '#fbc02d',
+					icon = '',
+					name = 'ViteDevelopmentEnv',
+				},
+				['testing'] = {
+					color = '#fbc02d',
+					icon = '',
+					name = 'ViteTestingEnv',
 				},
 				['en.json'] = {
 					color = '#5c6bc0',
