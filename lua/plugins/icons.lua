@@ -502,6 +502,11 @@ return {
 					icon = '',
 					name = 'Tmpl',
 				},
+				['vercel.json'] = {
+					color = '#cfd8dc',
+					icon = '󰔶',
+					name = 'Vercel',
+				},
 			},
 		})
 
