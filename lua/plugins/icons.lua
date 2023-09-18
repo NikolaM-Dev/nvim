@@ -492,6 +492,11 @@ return {
 					icon = '󰆼',
 					name = 'Psql',
 				},
+				['astro'] = {
+					color = '#ff6d00',
+					icon = '',
+					name = 'Astro',
+				},
 			},
 		})
 
