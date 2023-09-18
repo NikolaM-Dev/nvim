@@ -497,6 +497,11 @@ return {
 					icon = '',
 					name = 'Astro',
 				},
+				['tmpl'] = {
+					color = '#00acc1',
+					icon = '',
+					name = 'Tmpl',
+				},
 			},
 		})
 
