@@ -457,6 +457,11 @@ return {
 					icon = '󰦝',
 					name = 'Dto',
 				},
+				['entity.ts'] = {
+					color = '#ffca28',
+					icon = '󰐱',
+					name = 'Entity',
+				},
 				['directive.ts'] = {
 					color = '#ab47bc',
 					icon = '󰚲',
