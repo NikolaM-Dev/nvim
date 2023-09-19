@@ -442,6 +442,11 @@ return {
 					icon = '',
 					name = 'Filter',
 				},
+				['dto.ts'] = {
+					color = '#0288d1',
+					icon = '󰦝',
+					name = 'Dto',
+				},
 				['directive.ts'] = {
 					color = '#ab47bc',
 					icon = '󰚲',
