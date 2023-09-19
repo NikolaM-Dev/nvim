@@ -442,6 +442,16 @@ return {
 					icon = '',
 					name = 'Filter',
 				},
+				['model.ts'] = {
+					color = '#ef5350',
+					icon = '',
+					name = 'Model',
+				},
+				['interceptor.ts'] = {
+					color = '#9575cd',
+					icon = '',
+					name = 'Interceptor',
+				},
 				['dto.ts'] = {
 					color = '#0288d1',
 					icon = '󰦝',
@@ -456,16 +466,6 @@ return {
 					color = '#43a047',
 					icon = '󰚲',
 					name = 'Resolver',
-				},
-				['model.ts'] = {
-					color = '#ef5350',
-					icon = '',
-					name = 'Model',
-				},
-				['interceptor.ts'] = {
-					color = '#9575cd',
-					icon = '',
-					name = 'Interceptor',
 				},
 				['woff'] = {
 					color = '#f44336',
