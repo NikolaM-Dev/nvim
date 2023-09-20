@@ -527,6 +527,16 @@ return {
 					icon = '',
 					name = 'GraphQL',
 				},
+				['htm'] = {
+					color = '#e34c26',
+					icon = '',
+					 g
+				},
+				['html'] = {
+					color = '#e44d26',
+					icon = '',
+					name = 'Html',
+				},
 			},
 		})
 
