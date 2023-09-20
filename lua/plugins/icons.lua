@@ -257,6 +257,11 @@ return {
 					icon = '󰀨',
 					name = 'Readme',
 				},
+				['go'] = {
+					color = '#00acc1',
+					icon = '',
+					name = 'Go',
+				},
 				['go.mod'] = {
 					color = '#ec407a',
 					icon = '',
