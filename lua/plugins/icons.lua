@@ -522,6 +522,11 @@ return {
 					icon = '󰔶',
 					name = 'Vercel',
 				},
+				['gql'] = {
+					color = '#e535ab',
+					icon = '',
+					name = 'GraphQL',
+				},
 			},
 		})
 
