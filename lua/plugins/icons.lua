@@ -552,6 +552,16 @@ return {
 					icon = '󰈟',
 					name = 'Jpg',
 				},
+				['json'] = {
+					color = '#fbc02d',
+					icon = '󰘦',
+					name = 'Json',
+				},
+				['json5'] = {
+					color = '#fbc02d',
+					icon = '󰘦',
+					name = 'Json5',
+				},
 			},
 		})
 
