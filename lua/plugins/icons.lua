@@ -527,10 +527,15 @@ return {
 					icon = '',
 					name = 'GraphQL',
 				},
+				['graphql'] = {
+					color = '#e535ab',
+					icon = '',
+					name = 'GraphQL',
+				},
 				['htm'] = {
 					color = '#e34c26',
 					icon = '',
-					 g
+					name = 'Htm',
 				},
 				['html'] = {
 					color = '#e44d26',
