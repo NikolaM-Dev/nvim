@@ -542,6 +542,16 @@ return {
 					icon = '',
 					name = 'Html',
 				},
+				['jpeg'] = {
+					color = '#26a69a',
+					icon = '󰈟',
+					name = 'Jpeg',
+				},
+				['jpg'] = {
+					color = '#26a69a',
+					icon = '󰈟',
+					name = 'Jpg',
+				},
 			},
 		})
 
