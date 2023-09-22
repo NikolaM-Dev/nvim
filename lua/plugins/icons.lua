@@ -153,7 +153,7 @@ return {
 				},
 				['.luacheckrc'] = {
 					color = '#42a5f5',
-					icon = '',
+					icon = '󰢱',
 					name = 'LuaCheckrc',
 				},
 				['.envrc'] = {
