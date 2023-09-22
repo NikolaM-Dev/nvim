@@ -577,6 +577,21 @@ return {
 					icon = '󰂖',
 					name = 'SpecJs',
 				},
+				['jsx'] = {
+					color = '#20c2e3',
+					icon = '󰜈',
+					name = 'Jsx',
+				},
+				['test.jsx'] = {
+					color = '#20c2e3',
+					icon = '󰂖',
+					name = 'JavaScriptReactTest',
+				},
+				['spec.jsx'] = {
+					color = '#20c2e3',
+					icon = '󰂖',
+					name = 'JavaScriptReactSpec',
+				},
 			},
 		})
 
