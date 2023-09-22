@@ -141,6 +141,16 @@ return {
 					icon = '󰅍',
 					name = 'Contributing',
 				},
+				['lua'] = {
+					color = '#42a5f5',
+					icon = '󰢱',
+					name = 'Lua',
+				},
+				['luau'] = {
+					color = '#42a5f5',
+					icon = '󰢱',
+					name = 'Luau',
+				},
 				['.luacheckrc'] = {
 					color = '#42a5f5',
 					icon = '',
