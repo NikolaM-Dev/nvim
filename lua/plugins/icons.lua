@@ -562,6 +562,21 @@ return {
 					icon = '󰘦',
 					name = 'Json5',
 				},
+				['js'] = {
+					color = '#ffca28',
+					icon = '',
+					name = 'Js',
+				},
+				['test.js'] = {
+					color = '#ffca28',
+					icon = '󰂖',
+					name = 'TestJs',
+				},
+				['spec.js'] = {
+					color = '#ffca28',
+					icon = '󰂖',
+					name = 'SpecJs',
+				},
 			},
 		})
 
