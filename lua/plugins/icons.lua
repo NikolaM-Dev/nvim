@@ -572,6 +572,11 @@ return {
 					icon = '󰈟',
 					name = 'Jpg',
 				},
+				['png'] = {
+					color = '#26a69a',
+					icon = '󰈟',
+					name = 'Png',
+				},
 				['json'] = {
 					color = '#fbc02d',
 					icon = '󰘦',
