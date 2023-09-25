@@ -627,6 +627,11 @@ return {
 					icon = '',
 					name = 'Md',
 				},
+				['pdf'] = {
+					color = '#ef5350',
+					icon = '󰈧',
+					name = 'Pdf',
+				},
 			},
 		})
 
