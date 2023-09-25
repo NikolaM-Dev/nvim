@@ -382,6 +382,11 @@ return {
 					icon = '󱕷',
 					name = 'Makefile',
 				},
+				['mk'] = {
+					color = '#ef5350',
+					icon = '󱕷',
+					name = 'Makefile',
+				},
 				['.env'] = {
 					color = '#fbc02d',
 					icon = '',
