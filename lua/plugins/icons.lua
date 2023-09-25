@@ -507,6 +507,11 @@ return {
 					color = '#f44336',
 					name = 'Ttf',
 				},
+				['otf'] = {
+					color = '#f44336',
+					icon = '',
+					name = 'OpenTypeFont',
+				},
 				['snap'] = {
 					color = '#00bcd4',
 					icon = '󰷊',
