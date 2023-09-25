@@ -607,6 +607,16 @@ return {
 					icon = '󰂖',
 					name = 'JavaScriptReactSpec',
 				},
+				['markdown'] = {
+					color = '#42a5f5',
+					icon = '',
+					name = 'Markdown',
+				},
+				['md'] = {
+					color = '#42a5f5',
+					icon = '',
+					name = 'Md',
+				},
 			},
 		})
 
