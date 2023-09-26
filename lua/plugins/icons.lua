@@ -637,6 +637,16 @@ return {
 					icon = '󰘧',
 					name = 'Scheme',
 				},
+				['sass'] = {
+					color = '#f55385',
+					icon = '',
+					name = 'Sass',
+				},
+				['scss'] = {
+					color = '#ec407a',
+					icon = '',
+					name = 'Scss',
+				},
 			},
 		})
 
