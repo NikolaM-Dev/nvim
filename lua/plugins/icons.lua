@@ -632,6 +632,11 @@ return {
 					icon = '󰈧',
 					name = 'Pdf',
 				},
+				['scm'] = {
+					color = '#f44336',
+					icon = '󰘧',
+					name = 'Scheme',
+				},
 			},
 		})
 
