@@ -312,6 +312,11 @@ return {
 					icon = '󰆍',
 					name = 'Zshprofile',
 				},
+				['sh'] = {
+					color = '#ff7043',
+					icon = '󰆍',
+					name = 'Sh',
+				},
 				['copying'] = {
 					color = '#ff5722',
 					icon = '󰄤',
