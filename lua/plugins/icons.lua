@@ -662,6 +662,11 @@ return {
 					icon = '',
 					name = 'Scss',
 				},
+				['toml'] = {
+					color = '#42a5f5',
+					icon = '',
+					name = 'Toml',
+				},
 			},
 		})
 
