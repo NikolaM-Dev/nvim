@@ -542,6 +542,11 @@ return {
 					icon = '',
 					name = 'Astro',
 				},
+				['svelte'] = {
+					color = '#ff5722',
+					icon = '',
+					name = 'Svelte',
+				},
 				['tmpl'] = {
 					color = '#00acc1',
 					icon = '',
