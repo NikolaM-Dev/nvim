@@ -697,6 +697,11 @@ return {
 					icon = '',
 					name = 'Toml',
 				},
+				['txt'] = {
+					color = '#42a5f5',
+					icon = '󰈙',
+					name = 'Txt',
+				},
 			},
 		})
 
