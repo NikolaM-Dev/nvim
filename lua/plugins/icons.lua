@@ -632,6 +632,21 @@ return {
 					icon = '󰂖',
 					name = 'SpecJs',
 				},
+				['tsx'] = {
+					color = '#0288d1',
+					icon = '󰜈',
+					name = 'Tsx',
+				},
+				['test.tsx'] = {
+					color = '#20c2e3',
+					icon = '󰂖',
+					name = 'TypeScriptReactTest',
+				},
+				['spec.tsx'] = {
+					color = '#20c2e3',
+					icon = '󰂖',
+					name = 'TypeScriptReactSpec',
+				},
 				['jsx'] = {
 					color = '#20c2e3',
 					icon = '󰜈',
