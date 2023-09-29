@@ -602,6 +602,21 @@ return {
 					icon = '󰘦',
 					name = 'Json5',
 				},
+				['ts'] = {
+					icon = '',
+					color = '#0288d1',
+					name = 'Ts',
+				},
+				['test.ts'] = {
+					color = '#0288d1',
+					icon = '󰂖',
+					name = 'TestTs',
+				},
+				['spec.ts'] = {
+					color = '#0288d1',
+					icon = '󰂖',
+					name = 'SpecTs',
+				},
 				['js'] = {
 					color = '#ffca28',
 					icon = '',
