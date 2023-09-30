@@ -707,6 +707,11 @@ return {
 					icon = '',
 					name = 'Vim',
 				},
+				['xml'] = {
+					color = '#8bc34a',
+					icon = '󰈮',
+					name = 'Xml',
+				},
 			},
 		})
 
