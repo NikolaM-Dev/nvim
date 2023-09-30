@@ -702,6 +702,11 @@ return {
 					icon = '󰈙',
 					name = 'Txt',
 				},
+				['vim'] = {
+					color = '#43a047',
+					icon = '',
+					name = 'Vim',
+				},
 			},
 		})
 
