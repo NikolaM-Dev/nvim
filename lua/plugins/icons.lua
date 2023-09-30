@@ -697,6 +697,16 @@ return {
 					icon = '',
 					name = 'Toml',
 				},
+				['yaml'] = {
+					color = '#ff5252',
+					icon = '󰈙',
+					name = 'Yaml',
+				},
+				['yml'] = {
+					color = '#ff5252',
+					icon = '󰈙',
+					name = 'Yml',
+				},
 				['txt'] = {
 					color = '#42a5f5',
 					icon = '󰈙',
