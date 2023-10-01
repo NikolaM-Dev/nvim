@@ -722,6 +722,11 @@ return {
 					icon = '󰈮',
 					name = 'Xml',
 				},
+				['zig'] = {
+					color = '#f7a41d',
+					icon = '',
+					name = 'Zig',
+				},
 			},
 		})
 
