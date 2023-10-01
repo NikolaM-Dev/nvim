@@ -297,6 +297,11 @@ return {
 					icon = '󰝆',
 					name = 'NPMrc',
 				},
+				['zsh'] = {
+					color = '#ff7043',
+					icon = '󰆍',
+					name = 'Zsh',
+				},
 				['.zshenv'] = {
 					color = '#ff7043',
 					icon = '󰆍',
