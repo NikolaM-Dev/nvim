@@ -747,6 +747,11 @@ return {
 					icon = '󰈚',
 					name = 'Log',
 				},
+				['properties'] = {
+					color = '#ef6c00',
+					icon = '󰔪',
+					name = 'SonarCloud'
+				}
 			},
 		})
 
