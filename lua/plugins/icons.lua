@@ -687,6 +687,11 @@ return {
 					icon = '󰘧',
 					name = 'Scheme',
 				},
+				['query'] = {
+					color = '#f44336',
+					icon = '󰘧',
+					name = 'Query',
+				},
 				['sass'] = {
 					color = '#f55385',
 					icon = '',
