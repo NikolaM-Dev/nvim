@@ -737,6 +737,11 @@ return {
 					icon = '',
 					name = 'Prisma',
 				},
+				['log'] = {
+					color = '#afb42b',
+					icon = '󰈚',
+					name = 'Log',
+				},
 			},
 		})
 
