@@ -765,8 +765,8 @@ return {
 				['properties'] = {
 					color = '#ef6c00',
 					icon = '󰔪',
-					name = 'SonarCloud'
-				}
+					name = 'SonarCloud',
+				},
 			},
 		})
 
