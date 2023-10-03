@@ -522,6 +522,11 @@ return {
 					icon = '',
 					name = 'OpenTypeFont',
 				},
+				['eot'] = {
+					color = '#f44336',
+					icon = '',
+					name = 'Eot',
+				},
 				['snap'] = {
 					color = '#00bcd4',
 					icon = '󰷊',
