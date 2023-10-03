@@ -602,6 +602,11 @@ return {
 					icon = '󰈟',
 					name = 'Gif',
 				},
+				['svg'] = {
+					color = '#ffb300',
+					icon = '󰜡',
+					name = 'Svg',
+				},
 				['json'] = {
 					color = '#fbc02d',
 					icon = '󰘦',
