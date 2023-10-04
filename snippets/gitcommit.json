@@ -55,6 +55,6 @@
   },
   "build change plugins versions": {
     "prefix": "bcpv",
-    "body": "build(${1:lazy}): Change plugins version"
+    "body": "build(lazy): Change plugins version"
   }
 }
