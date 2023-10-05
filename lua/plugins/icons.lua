@@ -5,7 +5,6 @@ return {
 
 		icons.setup({
 			override = {
-
 				['yarn.lock'] = {
 					color = '#0288d1',
 					icon = '',
