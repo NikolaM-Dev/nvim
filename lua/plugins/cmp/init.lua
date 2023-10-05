@@ -56,6 +56,7 @@ return {
 					{ name = 'buffer' },
 					{ name = 'path' },
 					{ name = 'calc' },
+					{ name = 'rg' },
 				}),
 				formatting = { format = require('plugins.cmp.formatting').format },
 				window = {
