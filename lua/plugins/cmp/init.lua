@@ -76,9 +76,8 @@ return {
 			cmp.setup.filetype('gitcommit', {
 				sources = cmp.config.sources({
 					{ name = 'luasnip' },
-					{ name = 'buffer' },
 					{ name = 'rg', max_item_count = 10, option = { debounce = 42 } },
-					{ name = 'copilot' },
+					{ name = 'buffer' },
 				}),
 			})
 		end,
