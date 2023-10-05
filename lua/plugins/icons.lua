@@ -212,6 +212,11 @@ return {
 					icon = '󰨞',
 					name = 'VscodeSettings',
 				},
+				['code-snippets'] = {
+					color = '#2196f3',
+					icon = '󰨞',
+					name = 'VscodeSnippets',
+				},
 				['ormconfig.js'] = {
 					color = '#ffca28',
 					icon = '󱙋',
