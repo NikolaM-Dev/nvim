@@ -287,6 +287,11 @@ return {
 					icon = '',
 					name = 'GoSum',
 				},
+				['rs'] = {
+					color = '#ff7043',
+					icon = '󱘗',
+					name = 'Rust',
+				},
 				['.fehbg'] = {
 					color = '#ff7043',
 					icon = '󰸉',
