@@ -31,6 +31,10 @@ return {
 	'ThePrimeagen/harpoon',
 	keys = keys,
 	config = function()
-		require('harpoon').setup()
+		require('harpoon').setup({
+			menu = {
+				width = 80,
+			},
+		})
 	end,
 }
