@@ -53,7 +53,7 @@
   },
   "copilot.lua": {
     "branch": "master",
-    "commit": "688762a3999eeee54b78f447719854f52672ec02"
+    "commit": "330a15ca3425a452103bc24c8287a73063089c2f"
   },
   "diffview.nvim": {
     "branch": "main",
@@ -93,19 +93,19 @@
   },
   "mason.nvim": {
     "branch": "main",
-    "commit": "cd7835b15f5a4204fc37e0aa739347472121a54c"
+    "commit": "eabf6d347fdb75be360d4c0ced1145670a171453"
   },
   "mini.comment": {
     "branch": "main",
-    "commit": "e4320af992cd053a7da2f33d9f63a86c2ab6ce59"
+    "commit": "3d9c8009615857e982f09bc5357fc95f2a2175f3"
   },
   "mini.indentscope": {
     "branch": "main",
-    "commit": "cbc07203ca8faae952ca373c1f6cc5881ce97af0"
+    "commit": "c8fdafa7bf603d758986a27eb546c55a5c73b1a3"
   },
   "mini.pairs": {
     "branch": "main",
-    "commit": "6f6bd7ed5757b40bc29c73dac0d743e4e6978124"
+    "commit": "71f117fd57f930da6ef4126b24f594dd398bac26"
   },
   "mini.splitjoin": {
     "branch": "main",
@@ -113,7 +113,7 @@
   },
   "mini.surround": {
     "branch": "main",
-    "commit": "862cfaef72d789d320625ec34e2488a5cc8fd423"
+    "commit": "af8129efcabe95fc08a233e9f91569829bed031f"
   },
   "mini.trailspace": {
     "branch": "main",
@@ -121,7 +121,7 @@
   },
   "neodev.nvim": {
     "branch": "main",
-    "commit": "0491a9c7a1775fa5380ecf38d79de1a32f68cc52"
+    "commit": "80487e4f7bfa11c2ef2a1b461963db019aad6a73"
   },
   "no-neck-pain.nvim": {
     "branch": "main",
@@ -133,7 +133,7 @@
   },
   "nvim": {
     "branch": "main",
-    "commit": "b359f3eec32dcc6b7c9a26901dc235bbb6cd8a0b"
+    "commit": "40dc9f0621c55bd40da4ad0731fac44d15bb393a"
   },
   "nvim-cmp": {
     "branch": "main",
@@ -153,11 +153,11 @@
   },
   "nvim-spectre": {
     "branch": "master",
-    "commit": "696cff781a4a7ecc91549736835e2acbd00fe859"
+    "commit": "5c3474fbe1028844cfe5a9c238366da04c2e7551"
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "a8c14d68b024ffc20baec92d1acc91796bcfb485"
+    "commit": "c5a7533113b2deb7db899d387b877389cc8b6113"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -177,7 +177,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "05a80e24f6c920e29ed741d12ede0840e456a3e4"
+    "commit": "2e6996b0757c454a8bbf1eb719d0b0b065442213"
   },
   "pantran.nvim": {
     "branch": "main",
