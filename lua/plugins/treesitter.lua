@@ -28,6 +28,7 @@ return {
 				'bash',
 				'c',
 				'cpp',
+				'csv',
 				'diff',
 				'dockerfile',
 				'gitcommit',
