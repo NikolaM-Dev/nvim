@@ -266,11 +266,6 @@ return {
 					icon = '󰕰',
 					name = 'PnpmLock',
 				},
-				['readme.md'] = {
-					color = '#42a5f5',
-					icon = '󰀨',
-					name = 'Readme',
-				},
 				['go'] = {
 					color = '#00acc1',
 					icon = '',
@@ -700,6 +695,11 @@ return {
 					color = '#42a5f5',
 					icon = '',
 					name = 'Md',
+				},
+				['readme.md'] = {
+					color = '#42a5f5',
+					icon = '󰀨',
+					name = 'Readme',
 				},
 				['pdf'] = {
 					color = '#ef5350',
