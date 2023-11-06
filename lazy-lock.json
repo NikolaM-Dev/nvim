@@ -75,6 +75,10 @@
     "branch": "master",
     "commit": "1a1eceafe54b5081eae4cb91c723abd1d450f34b"
   },
+  "indent-o-matic": {
+    "branch": "master",
+    "commit": "4d11e98f523d3c4500b1dc33f0d1a248a4f69719"
+  },
   "lazy.nvim": {
     "branch": "main",
     "commit": "16603c6917435d8446f7357cb61095138a417085"
