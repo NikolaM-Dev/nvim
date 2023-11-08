@@ -75,6 +75,7 @@ return {
 	},
 	config = function()
 		require('ufo').setup({
+			fold_virt_text_handler = handler,
 			open_fold_hl_timeout = 90,
 			provider_selector = function(_, filetype, buftype)
 				if
