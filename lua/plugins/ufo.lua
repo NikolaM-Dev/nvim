@@ -86,7 +86,7 @@ return {
 					return ''
 				end
 
-				return { 'lsp', 'indent' }
+				return { 'treesitter', 'indent' }
 			end,
 		})
 	end,
