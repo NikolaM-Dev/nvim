@@ -34,9 +34,9 @@ end
 
 return {
 	'kevinhwang91/nvim-ufo',
-	enabled = false,
 	dependencies = 'kevinhwang91/promise-async',
-	event = 'FileType',
+	enabled = true,
+	event = 'BufEnter',
 	keys = {
 		{
 			'zR',
