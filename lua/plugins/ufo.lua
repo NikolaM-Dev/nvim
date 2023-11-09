@@ -77,15 +77,7 @@ return {
 		require('ufo').setup({
 			fold_virt_text_handler = fold_virt_text_handler,
 			open_fold_hl_timeout = 90,
-			provider_selector = function(_, filetype, buftype)
-				if
-					filetype == ''
-					or filetype == 'netrw'
-					or vim.tbl_contains({ 'help', 'loclist', 'nofile', 'prompt', 'quickfix', 'terminal' }, buftype)
-				then
-					return ''
-				end
-
+			provider_selector = function()
 				return { 'treesitter', 'indent' }
 			end,
 		})
