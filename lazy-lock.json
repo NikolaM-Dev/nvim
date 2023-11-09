@@ -187,6 +187,10 @@
     "branch": "main",
     "commit": "461799624948bfb66f73b20b6fffa7e4c8ca6d08"
   },
+  "persistence.nvim": {
+    "branch": "main",
+    "commit": "ad538bfd5336f1335cdb6fd4e0b0eebfa6e12f32"
+  },
   "plenary.nvim": {
     "branch": "master",
     "commit": "50012918b2fc8357b87cff2a7f7f0446e47da174"
