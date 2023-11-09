@@ -74,6 +74,7 @@ return {
 		},
 	},
 	config = function()
+		---@diagnostic disable-next-line: missing-fields
 		require('ufo').setup({
 			fold_virt_text_handler = fold_virt_text_handler,
 			open_fold_hl_timeout = 90,
