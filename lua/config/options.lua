@@ -41,6 +41,7 @@ local options = {
 	number = true, -- show line numbers
 	relativenumber = true, -- show relative numbers
 	scrolloff = 8, -- leave 8 lines above and below cursor
+	sessionoptions = { 'buffers', 'curdir', 'folds', 'globals', 'help', 'skiprtp', 'tabpages', 'winsize' },
 	shiftwidth = 4, -- the number of spaces inserted for each indentation
 	showbreak = '↳  ', -- string to put at the start of lines that have been wrapped
 	showmode = false, -- removes the text indicating the mode
