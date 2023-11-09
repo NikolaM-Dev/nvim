@@ -1,4 +1,4 @@
-local handler = function(virtText, lnum, endLnum, width, truncate)
+local function fold_virt_text_handler(virtText, lnum, endLnum, width, truncate)
 	local curWidth = 0
 	local newVirtText = {}
 	local suffix = (' 󰁂 %d '):format(endLnum - lnum)
@@ -75,7 +75,7 @@ return {
 	},
 	config = function()
 		require('ufo').setup({
-			fold_virt_text_handler = handler,
+			fold_virt_text_handler = fold_virt_text_handler,
 			open_fold_hl_timeout = 90,
 			provider_selector = function(_, filetype, buftype)
 				if
