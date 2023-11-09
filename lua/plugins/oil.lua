@@ -38,6 +38,9 @@ return {
 				is_hidden_file = function(file_name)
 					return hide_file(file_name)
 				end,
+				is_always_hidden = function(name)
+					return name == '..'
+				end,
 			},
 			keymaps = {
 				['`'] = 'actions.cd',
