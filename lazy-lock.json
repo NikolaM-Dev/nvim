@@ -3,6 +3,10 @@
     "branch": "master",
     "commit": "a4de64570b9620875c8ea04175cd07ed8e32ac99"
   },
+  "auto-session": {
+    "branch": "main",
+    "commit": "3eb26b949e1b90798e84926848551046e2eb0721"
+  },
   "cmp-buffer": {
     "branch": "main",
     "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa"
@@ -186,10 +190,6 @@
   "pantran.nvim": {
     "branch": "main",
     "commit": "461799624948bfb66f73b20b6fffa7e4c8ca6d08"
-  },
-  "persistence.nvim": {
-    "branch": "main",
-    "commit": "ad538bfd5336f1335cdb6fd4e0b0eebfa6e12f32"
   },
   "plenary.nvim": {
     "branch": "master",
