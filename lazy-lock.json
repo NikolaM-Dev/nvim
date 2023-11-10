@@ -57,7 +57,7 @@
   },
   "dressing.nvim": {
     "branch": "master",
-    "commit": "1f2d1206a03bd3add8aedf6251e4534611de577f"
+    "commit": "fe3071330a0720ce3695ac915820c8134b22d1b0"
   },
   "fidget.nvim": {
     "branch": "main",
@@ -93,7 +93,7 @@
   },
   "mason.nvim": {
     "branch": "main",
-    "commit": "eabf6d347fdb75be360d4c0ced1145670a171453"
+    "commit": "41e75af1f578e55ba050c863587cffde3556ffa6"
   },
   "mini.comment": {
     "branch": "main",
@@ -121,7 +121,7 @@
   },
   "neodev.nvim": {
     "branch": "main",
-    "commit": "80487e4f7bfa11c2ef2a1b461963db019aad6a73"
+    "commit": "b90ec1b35dc67902bd3c4fbd80ab11993c1af8cc"
   },
   "no-neck-pain.nvim": {
     "branch": "main",
@@ -145,7 +145,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "37457f268af5cd6765e589b0dcd7cbd192d8da00"
+    "commit": "36e4ffec0a9e373ac9dbf7949d3567c8f04ca3df"
   },
   "nvim-notify": {
     "branch": "master",
@@ -153,11 +153,11 @@
   },
   "nvim-spectre": {
     "branch": "master",
-    "commit": "5c3474fbe1028844cfe5a9c238366da04c2e7551"
+    "commit": "7cce250609f6d8163301ccb69075418622e193d3"
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "96f55f304332ca6ea1b7dde32d3ec04b5298c316"
+    "commit": "8996612bfbebe1657e1bb55a95201c96cab945c6"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -177,7 +177,7 @@
   },
   "nvim-web-devicons": {
     "branch": "master",
-    "commit": "5de460ca7595806044eced31e3c36c159a493857"
+    "commit": "47103b80c38c59f7a1b5408c232b92bf5d018651"
   },
   "oil.nvim": {
     "branch": "master",
