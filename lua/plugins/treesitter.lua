@@ -51,6 +51,7 @@ return {
 				'regex',
 				'regex',
 				'scss',
+				'svelte',
 				'toml',
 				'tsx',
 				'typescript',
