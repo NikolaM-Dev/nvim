@@ -165,6 +165,7 @@ return {
 			'gopls',
 			'html',
 			'jsonls',
+			'svelte',
 			'tailwindcss',
 			'taplo',
 			'vimls',
