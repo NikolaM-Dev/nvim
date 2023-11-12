@@ -10,7 +10,7 @@ return {
 				'typescript',
 				'typescriptreact',
 			},
-			remove_template_string = true, -- WARN: Don't work
+			remove_template_string = true,
 		})
 	end,
 }
