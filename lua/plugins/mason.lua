@@ -18,6 +18,7 @@ return {
 			'prettierd',
 			'staticcheck',
 			'stylua',
+			'svelte-language-server',
 			'tailwindcss-language-server',
 			'taplo',
 			'typescript-language-server',
