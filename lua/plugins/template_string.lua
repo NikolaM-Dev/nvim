@@ -5,6 +5,7 @@ return {
 		require('template-string').setup({
 			filetypes = {
 				'astro',
+				'html',
 				'javascript',
 				'javascriptreact',
 				'typescript',
