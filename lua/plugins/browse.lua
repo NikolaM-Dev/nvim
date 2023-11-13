@@ -55,7 +55,7 @@ return {
 			function()
 				require('browse').open_bookmarks({ bookmarks = bookmarks })
 			end,
-			desc = '[F]ind Browse [B]ookmarks',
+			desc = '[F]ind [B]ookmarks',
 		},
 	},
 	config = function()
