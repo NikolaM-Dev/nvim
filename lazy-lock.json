@@ -135,6 +135,9 @@
     "branch": "main",
     "commit": "cc717acba29259d578548973c41448b092453c52"
   },
+  "nvim-bqf": {
+    "branch": "main",
+    "commit": "8784eebf34371049b641646d00232c2603215297"
   },
   "nvim-cmp": {
     "branch": "main",
