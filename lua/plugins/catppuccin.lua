@@ -17,7 +17,6 @@ return {
 				mason = true,
 				mini = true,
 				notify = true,
-				ts_rainbow2 = true,
 			},
 			styles = { functions = { 'bold' } },
 			custom_highlights = function(colors)
