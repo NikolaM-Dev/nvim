@@ -27,6 +27,7 @@ return {
 			ensure_installed = {
 				'bash',
 				'c',
+				'cmake',
 				'cpp',
 				'csv',
 				'diff',
