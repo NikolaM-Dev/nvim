@@ -1,6 +1,9 @@
 return {
 	'kevinhwang91/nvim-bqf',
 	event = 'VeryLazy',
+	keys = {
+		{ '<leader>;q', '<cmd>copen<cr>', desc = 'Open [Q]uickfix' },
+	},
 	config = function()
 		---@diagnostic disable: missing-fields
 		require('bqf').setup({
