@@ -5,7 +5,7 @@ return {
 		---@diagnostic disable: missing-fields
 		require('bqf').setup({
 			func_map = {
-				filter = ';p', -- pick
+				filter = ';c', -- choose
 				filterr = ';r', -- remove
 				pscrolldown = '<C-d>',
 				pscrollup = '<C-u>',
