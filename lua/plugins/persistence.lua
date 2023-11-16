@@ -4,11 +4,11 @@ return {
 	event = 'BufReadPre',
 	keys = {
 		{
-			'<leader>rs',
+			'<leader>ls',
 			function()
 				require('persistence').load()
 			end,
-			desc = '[R]estore [S]ession',
+			desc = '[L]ast [S]ession',
 		},
 	},
 	config = function()
