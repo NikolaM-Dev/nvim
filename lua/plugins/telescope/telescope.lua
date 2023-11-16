@@ -17,6 +17,7 @@ return {
 		{ '<leader>fa', '<cmd>Telescope live_grep<cr>', desc = 'Live Grep' },
 		{ '<leader>fh', '<cmd>Telescope help_tags<cr>', desc = '[F]ind [H]elp Tags' },
 		{ '<leader>fk', '<cmd>Telescope keymaps<cr>', desc = 'Find [K]eymaps' },
+		{ '<leader>fr', '<cmd>Telescope registers<cr>', desc = '[F]ind [R]egisters' },
 		{ '<leader>fw', '<cmd>Telescope grep_string<cr>', mode = { 'n', 'v' }, desc = 'Grep String' },
 		{ '<leader>gb', '<cmd>Telescope git_branches<cr>', desc = '[G]it [B]ranches' },
 		{ '<leader>;gc', '<cmd>Telescope git_bcommits<cr>', desc = '[G]it B[C]ommits' },
