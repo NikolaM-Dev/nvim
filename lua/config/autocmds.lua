@@ -69,27 +69,6 @@ autocmd({ 'BufEnter' }, {
 	end,
 })
 
--- q to quit these filetypes
-autocmd({ 'FileType' }, {
-	group = _G.augroup('close_with_q'),
-	pattern = {
-		'checkhealth',
-		'help',
-		'lspinfo',
-		'man',
-		'notify',
-		'PlenaryTestPopup',
-		'qf',
-		'spectre_panel',
-		'startuptime',
-		'tsplayground',
-	},
-	callback = function(event)
-		vim.bo[event.buf].buflisted = false
-		vim.keymap.set('n', 'q', '<cmd>close<cr>', { buffer = event.buf, silent = true })
-	end,
-})
-
 -- Open in vertical split
 autocmd({ 'FileType' }, {
 	group = _G.augroup('open_in_right_vertical_split'),
