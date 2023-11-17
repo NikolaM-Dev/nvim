@@ -59,6 +59,8 @@ return {
 		},
 	},
 	config = function()
-		require('browse').setup({ bookmarks = bookmarks })
+		require('browse').setup({
+			bookmarks = bookmarks,
+		})
 	end,
 }
