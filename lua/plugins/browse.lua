@@ -50,13 +50,6 @@ return {
 			end,
 			desc = '[B]rowse [B]ookmarks',
 		},
-		{
-			'<leader>fb',
-			function()
-				require('browse').open_bookmarks({ bookmarks = bookmarks })
-			end,
-			desc = '[F]ind [B]ookmarks',
-		},
 	},
 	config = function()
 		require('browse').setup({
