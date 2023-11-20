@@ -59,7 +59,6 @@ return {
 				'yaml',
 			},
 
-			context_commentstring = { enable = true, enable_autocmd = false },
 			indent = enable,
 			matchup = enable,
 		})
