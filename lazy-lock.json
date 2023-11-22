@@ -1,7 +1,7 @@
 {
   "LuaSnip": {
     "branch": "master",
-    "commit": "1f4ad8bb72bdeb60975e98652636b991a9b7475d"
+    "commit": "cab667e2674881001a86a7478fff7dc7791c63f5"
   },
   "cmp-buffer": {
     "branch": "main",
@@ -53,7 +53,7 @@
   },
   "diffview.nvim": {
     "branch": "main",
-    "commit": "d38c1b5266850f77f75e006bcc26213684e1e141"
+    "commit": "3dc498c9777fe79156f3d32dddd483b8b3dbd95f"
   },
   "dressing.nvim": {
     "branch": "master",
@@ -129,7 +129,7 @@
   },
   "none-ls.nvim": {
     "branch": "main",
-    "commit": "fa9be1679db7bf57d44128a018db43da5488a07f"
+    "commit": "ac5a9a63abeb48d6236ba71a9db4f7814e65ed82"
   },
   "nvim": {
     "branch": "main",
@@ -149,7 +149,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "6516abf5ac7d017480c8c8e08c0d24066bcb8d43"
+    "commit": "addad5176dbbe8bcc82ef91c51c5f1bf6629ec2d"
   },
   "nvim-notify": {
     "branch": "master",
@@ -161,11 +161,11 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "d87629647614b779fb2aad8f0042fe2864253ea6"
+    "commit": "7da3cb6323d1e1fbfc4d7dc05cac74946458b8a0"
   },
   "nvim-treesitter-context": {
     "branch": "master",
-    "commit": "f3ec0d8a1b4e07d7ed2da6b9a9f10864a83c4be4"
+    "commit": "bf4d15ee4e96ff5201f16a4ed14443670662eb90"
   },
   "nvim-ts-autotag": {
     "branch": "main",
@@ -173,7 +173,7 @@
   },
   "nvim-ts-context-commentstring": {
     "branch": "main",
-    "commit": "ead792ccdace6a9d64a8119909af243ed0105465"
+    "commit": "bdd2a3293340465a516b126d10894f6d5cb5213c"
   },
   "nvim-ufo": {
     "branch": "main",
@@ -181,11 +181,11 @@
   },
   "nvim-web-devicons": {
     "branch": "master",
-    "commit": "d3cf19ef81d364af2af527d6a23ad201330ccfad"
+    "commit": "cdbcca210cf3655aa9b31ebf2422763ecd85ee5c"
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "af04969c437e0c46a2b3c86d7892458e878ecc40"
+    "commit": "05cb8257cb9257144e63f41ccfe5a41ba3d1003c"
   },
   "pantran.nvim": {
     "branch": "main",
@@ -205,7 +205,7 @@
   },
   "smart-open.nvim": {
     "branch": "main",
-    "commit": "026091fe7f9b283aa1f5f4bb8c56aa5bcad43dbd"
+    "commit": "b5cae81817bb9442bf92dabc928fadb83a191954"
   },
   "sqlite.lua": {
     "branch": "master",
