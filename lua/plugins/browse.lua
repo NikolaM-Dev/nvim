@@ -6,6 +6,7 @@ local bookmarks = {
 		fbearoff = 'https://github.com/fbearoff/dotfiles/tree/master/nvim/.config/nvim',
 		folke = 'https://github.com/folke/dot/tree/master/nvim',
 		glepnir = 'https://github.com/glepnir/nvim',
+		kickstart = 'https://github.com/nvim-lua/kickstart.nvim',
 		lazy_vim = 'https://github.com/LazyVim/LazyVim',
 		prime = 'https://github.com/ThePrimeagen/init.lua',
 		wuelner = 'https://github.com/wuelnerdotexe/nvim',
