@@ -10,6 +10,7 @@ return {
 			func_map = {
 				filter = ';c', -- choose
 				filterr = ';r', -- remove
+				fzffilter = ';f', -- find
 				pscrolldown = '<C-d>',
 				pscrollup = '<C-u>',
 				ptoggleitem = '',
