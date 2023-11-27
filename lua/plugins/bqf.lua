@@ -1,6 +1,14 @@
 return {
 	'kevinhwang91/nvim-bqf',
 	event = 'VeryLazy',
+	dependencies = {
+		{
+			'junegunn/fzf',
+			build = function()
+				vim.fn['fzf#install']()
+			end,
+		},
+	},
 	keys = {
 		{ '<leader>;q', '<cmd>copen<cr>', desc = 'Open [Q]uickfix' },
 	},
