@@ -88,7 +88,6 @@ return {
 			nmap('gI', '<cmd>Telescope lsp_implementations<cr>', '[G]oto [I]mplementation')
 			nmap('gr', vim.lsp.buf.rename, '[R]e[n]ame')
 			nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
-			nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
 			nmap('<leader>D', '<cmd>Telescope lsp_type_definitions<cr>', 'Type [D]efinitions')
 			nmap('<leader>dj', diagnostic_go_to(true), 'Next [D]iagnostic')
 			nmap('<leader>dk', diagnostic_go_to(false), 'Prev [D]iagnostic')
