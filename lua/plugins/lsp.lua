@@ -94,7 +94,7 @@ return {
 			nmap('<leader>ds', '<cmd>Telescope lsp_document_symbols<cr>', '[D]ocument [S]ymbols')
 			nmap('<leader>Ej', diagnostic_go_to(true, 'ERROR'), 'Next Error')
 			nmap('<leader>Ek', diagnostic_go_to(false, 'ERROR'), 'Prev Error')
-			nmap('<leader>K', vim.lsp.buf.hover, 'Hover')
+			nmap('<leader>fd', '<cmd>Telescope diagnostics<cr>', '[F]ind [D]iagnostics')
 			nmap('<leader>ld', vim.diagnostic.open_float, '[L]ine [D]iagnostics')
 			nmap('<leader>li', '<cmd>LspInfo<cr>', 'Lsp Info')
 			nmap('<Leader>ll', '<cmd>LspLog<cr>', 'Lsp Log')
