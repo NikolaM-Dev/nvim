@@ -12,6 +12,7 @@ local bookmarks = {
 		wuelner = 'https://github.com/wuelnerdotexe/nvim',
 	},
 	parq = {
+		operator = 'https://main.d2aol8f6bio8ep.amplifyapp.com',
 		passes = 'https://main.d2xuop51ekcwbf.amplifyapp.com',
 		payvalida_doc = 'https://docs.payvalida.com/documentacion',
 		payvalida_sandbox = 'https://sandbox-merchant.payvalida.com/signin',
