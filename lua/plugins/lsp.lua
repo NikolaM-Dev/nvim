@@ -83,6 +83,7 @@ return {
 			nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation', 'i')
 			nmap('ga', vim.lsp.buf.code_action, '[C]ode [A]ction')
 			nmap('gd', '<cmd>Telescope lsp_definitions<cr>', '[G]o to [D]efinition')
+			nmap(';gd', '<cmd>vsplit | lua vim.lsp.buf.definition()<cr>', '[G]o to [D]efinition in vsplit')
 			nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 			nmap('gI', '<cmd>Telescope lsp_implementations<cr>', '[G]oto [I]mplementation')
 			nmap('gr', vim.lsp.buf.rename, '[R]e[n]ame')
