@@ -99,7 +99,6 @@ return {
 			nmap('<leader>li', '<cmd>LspInfo<cr>', 'Lsp Info')
 			nmap('<Leader>ll', '<cmd>LspLog<cr>', 'Lsp Log')
 			nmap('<Leader>lr', '<cmd>LspRestart<cr>', 'Lsp Restart')
-			nmap('<leader>sd', '<cmd>FzfLua diagnostics_workspace<cr>', '[S]earch [D]iagnostics')
 			nmap('<leader>wj', diagnostic_go_to(true, 'WARN'), 'Next Warning')
 			nmap('<leader>wk', diagnostic_go_to(false, 'WARN'), 'Prev Warning')
 			nmap('<leader>ws', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', '[W]orkspace [S]ymbols')
