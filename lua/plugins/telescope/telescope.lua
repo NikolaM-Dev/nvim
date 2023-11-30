@@ -32,7 +32,6 @@ return {
 		local actions = require('telescope.actions')
 		local layout = require('telescope.actions.layout')
 		local telescope = require('telescope')
-		local trouble = require('trouble.providers.telescope')
 
 		telescope.setup({
 			defaults = {
@@ -48,11 +47,9 @@ return {
 						['<C-j>'] = actions.cycle_history_next,
 						['<C-k>'] = actions.cycle_history_prev,
 						['<C-p>'] = layout.toggle_preview,
-						['<c-t>'] = trouble.open_with_trouble,
 					},
 					n = {
 						['<C-p>'] = layout.toggle_preview,
-						['<c-t>'] = trouble.open_with_trouble,
 						['q'] = actions.close,
 					},
 				},
