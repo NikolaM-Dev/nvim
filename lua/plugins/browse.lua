@@ -43,7 +43,7 @@ local bookmarks = {
 }
 
 return {
-	'NikolaM-Dev/browse.nvim',
+	'lalitmee/browse.nvim',
 	keys = {
 		{
 			'<leader>bb',
@@ -56,6 +56,11 @@ return {
 	config = function()
 		require('browse').setup({
 			bookmarks = bookmarks,
+			icons = {
+				bookmark_alias = '',
+				bookmarks_prompt = '󰂺 ',
+				grouped_bookmarks = '',
+			},
 		})
 	end,
 }
