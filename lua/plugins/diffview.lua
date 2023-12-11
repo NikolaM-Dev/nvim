@@ -6,6 +6,8 @@ return {
 		{ '<leader>gh', '<cmd>DiffviewFileHistory<cr>', desc = 'Workspace History' },
 	},
 	config = function()
+		local actions = require('diffview.actions')
+
 		require('diffview').setup({
 			show_help_hints = false,
 			icons = {
@@ -25,6 +27,37 @@ return {
 			file_panel = {
 				win_config = {
 					width = 60,
+				},
+			},
+			keymaps = {
+				file_panel = {
+					{
+						'n',
+						'<c-u>',
+						actions.scroll_view(-0.25),
+						{ desc = 'Scroll The View [U]p' },
+					},
+					{
+						'n',
+						'<c-d>',
+						actions.scroll_view(0.25),
+						{ desc = 'Scroll The View [D]own' },
+					},
+				},
+
+				file_history_panel = {
+					{
+						'n',
+						'<c-u>',
+						actions.scroll_view(-0.25),
+						{ desc = 'Scroll The View [U]p' },
+					},
+					{
+						'n',
+						'<c-d>',
+						actions.scroll_view(0.25),
+						{ desc = 'Scroll The View [D]own' },
+					},
 				},
 			},
 		})
