@@ -91,6 +91,10 @@
     "branch": "main",
     "commit": "96584866b9c5e998cbae300594d0ccfd0c464627"
   },
+  "lsp_lines.nvim": {
+    "branch": "main",
+    "commit": "cf2306dd332e34a3e91075b40bdd4f6db824b2ee"
+  },
   "markdown-preview.nvim": {
     "branch": "master",
     "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee"
@@ -133,7 +137,7 @@
   },
   "no-neck-pain.nvim": {
     "branch": "main",
-    "commit": "968ad52ee472e950d104303c4c0bfcd3de664fe1"
+    "commit": "baf3efd1a1785a96a0568e1fdd6aefa4a59e5edc"
   },
   "none-ls.nvim": {
     "branch": "main",
@@ -169,7 +173,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "78d75bce03f218ee30aedb6e24e3ec1189a3e9ff"
+    "commit": "42381aae7c1f785e4658cdb34a750be9851ba9af"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -189,7 +193,7 @@
   },
   "nvim-web-devicons": {
     "branch": "master",
-    "commit": "8b2e5ef9eb8a717221bd96cb8422686d65a09ed5"
+    "commit": "a1425903ab52a0a0460622519e827f224e5b4fee"
   },
   "oil.nvim": {
     "branch": "master",
