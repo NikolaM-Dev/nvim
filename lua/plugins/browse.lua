@@ -14,6 +14,7 @@ local bookmarks = {
 	parq = {
 		operator = 'https://main.d2aol8f6bio8ep.amplifyapp.com',
 		passes = 'https://main.d2xuop51ekcwbf.amplifyapp.com',
+		payvalida_cards = 'https://docs.payvalida.com/api-tarjeta/v/master/tarjetas-de-prueba',
 		payvalida_doc = 'https://docs.payvalida.com/documentacion',
 		payvalida_sandbox = 'https://sandbox-merchant.payvalida.com/signin',
 	},
