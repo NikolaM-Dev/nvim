@@ -35,6 +35,7 @@ return {
 				'gitcommit',
 				'gitignore',
 				'go',
+				'gomod',
 				'html',
 				'javascript',
 				'jsdoc',
