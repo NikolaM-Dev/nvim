@@ -61,7 +61,7 @@
   },
   "dressing.nvim": {
     "branch": "master",
-    "commit": "8b7ae53d7f04f33be3439a441db8071c96092d19"
+    "commit": "94b0d24483d56f3777ee0c8dc51675f21709318c"
   },
   "fidget.nvim": {
     "branch": "main",
@@ -69,7 +69,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "41d4d70b985f665c8ecc66b83aa10209c8dfbbfd"
+    "commit": "f0fbed6007d628216a5b75b62646aea90d489afa"
   },
   "gitsigns.nvim": {
     "branch": "main",
@@ -133,7 +133,7 @@
   },
   "neodev.nvim": {
     "branch": "main",
-    "commit": "269051a7093fa481128904a33a6c4e1ca8de4340"
+    "commit": "029899ea32d3dc8ed8c910ceca2ee5d16e566c11"
   },
   "no-neck-pain.nvim": {
     "branch": "main",
@@ -197,7 +197,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "22ab2ce1d56832588a634e7737404d9344698bd3"
+    "commit": "523b61430cb7365f8f86609c2ea60e48456bac63"
   },
   "pantran.nvim": {
     "branch": "main",
@@ -233,11 +233,11 @@
   },
   "telescope.nvim": {
     "branch": "master",
-    "commit": "9907deaed23e4db65eb7453bdb4b3c78acdc096e"
+    "commit": "ae6708a90b89a686f85b51288f488f4186dff2d4"
   },
   "template-string.nvim": {
     "branch": "main",
-    "commit": "5559125aba8499695eb23c3ff2434a13fb05e304"
+    "commit": "419bfb2e4d5f0e6ddd0d4435f85b69da0d88d524"
   },
   "tmux.nvim": {
     "branch": "main",
