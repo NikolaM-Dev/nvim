@@ -43,6 +43,12 @@ return {
 						actions.scroll_view(0.25),
 						{ desc = 'Scroll The View [D]own' },
 					},
+					{
+						'n',
+						'f',
+						false,
+						{ desc = 'Disabled' },
+					},
 				},
 
 				file_history_panel = {
