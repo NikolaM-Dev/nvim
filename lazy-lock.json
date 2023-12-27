@@ -77,7 +77,7 @@
   },
   "harpoon": {
     "branch": "master",
-    "commit": "867e212ac153e793f95b316d1731f3ca1894625e"
+    "commit": "ccae1b9bec717ae284906b0bf83d720e59d12b91"
   },
   "hop.nvim": {
     "branch": "master",
@@ -145,7 +145,7 @@
   },
   "nvim": {
     "branch": "main",
-    "commit": "4fbab1f01488718c3d54034a473d0346346b90e3"
+    "commit": "c7cf3afe2eb6d9058eec4abb3ace2c1da006478a"
   },
   "nvim-bqf": {
     "branch": "main",
@@ -173,7 +173,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "27f68c0b6a87cbad900b3d016425450af8268026"
+    "commit": "7d0b4756aba3b220d38ec0443c6cc10944060dd7"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -233,7 +233,7 @@
   },
   "telescope.nvim": {
     "branch": "master",
-    "commit": "ae6708a90b89a686f85b51288f488f4186dff2d4"
+    "commit": "e0651458f2ced647f3ff3c89d5663244b3cf45af"
   },
   "template-string.nvim": {
     "branch": "main",
