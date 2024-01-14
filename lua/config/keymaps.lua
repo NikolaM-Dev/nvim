@@ -1,3 +1,4 @@
+-- TODO: Move this to utils & and docs
 local function map(mode, lhs, rhs, opts)
 	local keys = require('lazy.core.handler').handlers.keys
 
