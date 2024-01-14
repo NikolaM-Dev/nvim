@@ -1,5 +1,6 @@
 local M = {}
 
+-- TODO: Add type
 function M.go_to_window(window)
 	local nrs = {}
 	local ids = {}
