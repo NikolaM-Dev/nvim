@@ -1,6 +1,6 @@
 local M = {}
 
-function M.go_to_window(num)
+function M.go_to_window(window)
 	local nrs = {}
 	local ids = {}
 
@@ -16,8 +16,8 @@ function M.go_to_window(num)
 		ids[number] = win
 	end
 
-	if ids[num] then
-		vim.api.nvim_set_current_win(ids[num])
+	if ids[window] then
+		vim.api.nvim_set_current_win(ids[window])
 	elseif window == 4 then
 		vim.cmd('G commit')
 	end
