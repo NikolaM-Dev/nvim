@@ -18,7 +18,7 @@ function M.go_to_window(num)
 
 	if ids[num] then
 		vim.api.nvim_set_current_win(ids[num])
-	else
+	elseif num === 4 then
 		vim.cmd('G commit')
 	end
 end
