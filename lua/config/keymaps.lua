@@ -133,3 +133,7 @@ vim.keymap.set(
 	':s///gI<Left><Left><Left><Left>',
 	{ desc = 'Rename all occurrences in the file (v)' }
 )
+
+map('n', '<leader><leader>;', function()
+	require('utils').go_to_window(4)
+end, { desc = 'Go to window 4' })
