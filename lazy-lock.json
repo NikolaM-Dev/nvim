@@ -195,10 +195,6 @@
     "branch": "master",
     "commit": "140edfcf25093e8b321d13e154cbce89ee868ca0"
   },
-  "nvim-window": {
-    "branch": "main",
-    "commit": "c82f5af239ee8b08ef668f723caa18986ee40d22"
-  },
   "oil.nvim": {
     "branch": "master",
     "commit": "8bc37bac29d68c4148e9b4b82bd1914b5defba1b"
