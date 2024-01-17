@@ -50,25 +50,6 @@ autocmd('TextYankPost', {
 	end,
 })
 
--- change NvimTree winbar
-autocmd({ 'BufEnter' }, {
-	group = _G.augroup('nvim_tree_winbar'),
-	pattern = '*',
-	callback = function()
-		if vim.bo.filetype == 'NvimTree' then
-			local colors = require('tokyonight.colors').setup()
-			local path = vim.fn.getcwd()
-			local val = '%#WinbarNvimTreeIcon#   %*'
-
-			path = path:gsub(vim.env.HOME, '~')
-			val = val .. '%#WinbarPath#' .. path .. '%*'
-			vim.api.nvim_set_hl(0, 'WinbarNvimTreeIcon', { fg = colors.blue })
-			vim.api.nvim_set_hl(0, 'WinbarPath', { fg = colors.magenta, bold = true })
-			vim.api.nvim_win_set_option(0, 'winbar', val)
-		end
-	end,
-})
-
 -- Open in vertical split
 autocmd({ 'FileType' }, {
 	group = _G.augroup('open_in_right_vertical_split'),
