@@ -42,17 +42,11 @@ return {
 					return name == '..'
 				end,
 			},
+			use_default_keymaps = false,
 			keymaps = {
-				['`'] = 'actions.cd',
 				['_'] = 'actions.open_cwd',
 				['-'] = 'actions.parent',
-				['~'] = 'actions.tcd',
-				['<C-h>'] = false,
-				['<C-l>'] = false,
-				['<C-p>'] = 'actions.preview',
 				['<CR>'] = 'actions.select',
-				['<C-s>'] = false,
-				['<C-t>'] = 'actions.select_tab',
 				['<C-v>'] = 'actions.select_vsplit',
 				['<C-x>'] = 'actions.select_split',
 				['g?'] = 'actions.show_help',
