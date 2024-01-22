@@ -53,7 +53,7 @@ autocmd('TextYankPost', {
 -- Open in vertical split
 autocmd({ 'FileType' }, {
 	group = _G.augroup('open_in_right_vertical_split'),
-	pattern = { 'gitcommit', 'help', 'man' },
+	pattern = { 'floggraph', 'gitcommit', 'help', 'man' },
 	callback = function()
 		vim.cmd.wincmd('L')
 	end,
