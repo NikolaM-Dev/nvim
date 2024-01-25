@@ -107,12 +107,7 @@ return {
 			})
 		end,
 	},
-	{
-		'jackieaskins/cmp-emmet',
-		build = 'npm run release',
-		event = [[InsertEnter *.css,*.sass,*.scss,*.xml,*.html,*.jsx,*.tsx]],
-		dependencies = 'hrsh7th/nvim-cmp',
-	},
+	{ 'jackieaskins/cmp-emmet', build = 'npm run release', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'hrsh7th/cmp-buffer', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'hrsh7th/cmp-calc', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'hrsh7th/cmp-nvim-lsp', event = 'LspAttach', dependencies = { 'hrsh7th/nvim-cmp', 'L3MON4D3/LuaSnip' } },
