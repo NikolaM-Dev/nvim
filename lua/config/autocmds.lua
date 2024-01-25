@@ -50,6 +50,7 @@ autocmd('TextYankPost', {
 	end,
 })
 
+-- Change dynamicly the winbar
 autocmd({ 'BufWinEnter' }, {
 	group = _G.augroup('set_winbar'),
 	pattern = '*',
