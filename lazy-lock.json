@@ -69,7 +69,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "76cf6559ccaa6262d47a95fe3b1dfae053047cbd"
+    "commit": "472569a27ca10f3bea079ce28b8293aad69599bc"
   },
   "gitsigns.nvim": {
     "branch": "main",
@@ -173,7 +173,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "b4138891b3454beeb14eef171c91c92377fcd715"
+    "commit": "d4dac523d2546afc266eb9b5a7986690b5319c41"
   },
   "nvim-treesitter-context": {
     "branch": "master",
