@@ -8,4 +8,4 @@ vim.keymap.set('n', 'gd', function()
 	else
 		return 'gd'
 	end
-end, { noremap = false, expr = true })
+end, { noremap = false, expr = true, desc = '[G]o to Link' })
