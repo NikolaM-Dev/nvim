@@ -44,7 +44,7 @@ local options = {
 	scrolloff = 8, -- leave 8 lines above and below cursor
 	sessionoptions = { 'buffers', 'curdir', 'folds', 'globals', 'help', 'skiprtp', 'tabpages', 'winsize' },
 	shiftwidth = 4, -- the number of spaces inserted for each indentation
-	showbreak = '↳  ', -- string to put at the start of lines that have been wrapped
+	showbreak = '', -- string to put at the start of lines that have been wrapped
 	showmode = false, -- removes the text indicating the mode
 	showtabline = 0, -- remove tab page label
 	signcolumn = 'yes', -- always show the sign column, otherwise it would shift the text each time
@@ -62,7 +62,7 @@ local options = {
 	undodir = os.getenv('HOME') .. '/.cache/nvim/undodir', -- undodir path
 	undofile = true, -- make undo file
 	updatetime = 40, -- improve user experience updating more frequently
-	whichwrap = 'bs<>[]hl', -- which "horizontal" keys are allowed to travel to prev/next line
+	whichwrap = 'b,s,<,>,[,]',
 	wildmode = 'longest:full,full', -- Command-line completion mode
 	winbar = '%=%m %f', -- the window bar is a bar that's shown at the top of every window with it enabled
 	wrap = false, -- wrap lines
