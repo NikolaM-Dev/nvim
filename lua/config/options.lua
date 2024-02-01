@@ -36,6 +36,7 @@ local options = {
 	incsearch = true, -- while typing a search command, show where the pattern,
 	joinspaces = false, -- No double spaces with join after a dot
 	laststatus = 3, -- always and ONLY the last window a status line
+	linebreak = true, -- wrap long lines at characters, not in the middle of a word
 	list = true, -- useful to see the difference between tabs and spaces and for trailing blanks
 	mouse = 'a', -- mouse support
 	number = true, -- show line numbers
