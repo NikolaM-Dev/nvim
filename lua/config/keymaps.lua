@@ -37,7 +37,7 @@ map('v', '>', '>gv', { desc = 'Indent right' })
 map('v', '<leader>s', ':!sort<cr>', { desc = 'Sort' })
 
 -- Save
-map({ 'i', 'n', 's', 'v' }, '<C-s>', '<esc><cmd>w<cr>', { desc = 'Save file' })
+map({ 'i', 'n', 's', 'v' }, '<C-s>', '<esc><cmd>w<cr>', { desc = '[S]ave file' })
 
 -- Save all
 map('n', '<leader>w', '<cmd>wall<cr>', { desc = 'Write all' })
