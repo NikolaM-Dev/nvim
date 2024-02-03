@@ -9,7 +9,6 @@ return {
 			desc = '[F]ind Smart Open',
 		},
 	},
-
 	config = function()
 		require('telescope').load_extension('smart_open')
 	end,
