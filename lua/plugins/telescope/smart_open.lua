@@ -4,7 +4,11 @@ return {
 		{
 			'<leader>ff',
 			function()
-				require('telescope').extensions.smart_open.smart_open({ cwd_only = true })
+				require('telescope').extensions.smart_open.smart_open({
+					cwd_only = true,
+					match_algorithm = 'fzf',
+					open_buffer_indicators = { others = '', previous = '' },
+				})
 			end,
 			desc = '[F]ind Smart Open',
 		},
