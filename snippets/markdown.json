@@ -1,4 +1,32 @@
 {
+  "h1": {
+    "prefix": "h1",
+    "body": ["# $0"]
+  },
+  "h2": {
+    "prefix": "h2",
+    "body": ["## $0"]
+  },
+  "h3": {
+    "prefix": "h3",
+    "body": ["### $0"]
+  },
+  "h4": {
+    "prefix": "h4",
+    "body": ["#### $0"]
+  },
+  "h5": {
+    "prefix": "h5",
+    "body": ["##### $0"]
+  },
+  "h6": {
+    "prefix": "h6",
+    "body": ["###### $0"]
+  },
+  "todo": {
+    "prefix": "todo",
+    "body": ["- [ ] $0"]
+  },
   "Insert code fense": {
     "prefix": "c",
     "body": ["```${1:language}", "$0", "```"]
@@ -14,11 +42,6 @@
   "Insert image": {
     "prefix": "img",
     "body": "![${1:alt}](${2:https://} ${3:title})$0"
-  },
-  "Insert task list": {
-    "prefix": "todo",
-    "body": ["- [${1| ,x|}] ${2:text}", "${0}"],
-    "description": "Insert task list"
   },
   "Insert table": {
     "prefix": "table",
