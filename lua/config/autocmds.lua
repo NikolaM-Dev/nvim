@@ -50,25 +50,6 @@ autocmd('TextYankPost', {
 	end,
 })
 
--- Change dynamicly the winbar
--- NOTE: Has a bug all windows will have the same winbar
--- autocmd({ 'BufWinEnter' }, {
--- 	group = _G.augroup('set_winbar'),
--- 	pattern = '*',
--- 	callback = function()
--- 		local LVL = 4
--- 		local SEP = '/'
---
--- 		local file_name = vim.api.nvim_buf_get_name(0)
--- 		local parts = vim.split(file_name, SEP, { trimempty = true })
--- 		local index = #parts - LVL <= 0 and LVL or #parts - LVL
---
--- 		local file_path = table.concat({ unpack(parts, index) }, SEP)
---
--- 		vim.opt.winbar = '%=%m ' .. file_path
--- 	end,
--- })
-
 -- Open in vertical split
 autocmd({ 'FileType' }, {
 	group = _G.augroup('open_in_right_vertical_split'),
