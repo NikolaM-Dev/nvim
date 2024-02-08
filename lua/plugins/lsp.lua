@@ -167,7 +167,6 @@ return {
 		})
 
 		local regular_servers = {
-			-- 'angularls',
 			'gopls',
 			'html',
 			'jsonls',
