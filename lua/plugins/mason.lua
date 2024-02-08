@@ -1,7 +1,9 @@
 return {
 	'williamboman/mason.nvim',
 	cmd = 'Mason',
-	keys = { { '<leader>cm', '<cmd>Mason<cr>', desc = '[M]ason' } },
+	keys = {
+		{ '<leader>cm', '<cmd>Mason<cr>', desc = '[M]ason' },
+	},
 	config = function()
 		local sources = {
 			'angular-language-server',
