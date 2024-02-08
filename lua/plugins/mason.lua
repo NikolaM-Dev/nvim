@@ -6,7 +6,6 @@ return {
 	},
 	config = function()
 		local sources = {
-			'angular-language-server',
 			'css-lsp',
 			'eslint_d',
 			'eslint-lsp',
