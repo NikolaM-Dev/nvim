@@ -171,6 +171,7 @@ return {
 			'gopls',
 			'html',
 			'jsonls',
+			'marksman',
 			'svelte',
 			'taplo',
 			'vimls',
