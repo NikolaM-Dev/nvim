@@ -6,6 +6,9 @@
 - [ ] Improve docs
 - [ ] Remove unused modules
 - [ ] Review this [dlvhdr nvim config](https://github.com/dlvhdr/dotfiles/tree/main/.config/nvim)
+- [ ] Review this plugins
+  - mg979/vim-visual-multi
+  - wellle/targets.vim
 
 <h3 align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Neovim-mark.svg/1200px-Neovim-mark.svg.png"
