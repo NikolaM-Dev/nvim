@@ -20,24 +20,6 @@ autocmd({ 'BufEnter' }, {
 	end,
 })
 
-autocmd({ 'BufWinEnter' }, {
-	desc = 'Change filetype to html for better highlight syntax',
-	group = _G.augroup('html_filetype'),
-	pattern = { '*.tmpl', '*.snap' },
-	callback = function()
-		vim.api.nvim_command('set filetype=html')
-	end,
-})
-
--- vite enviroment
-autocmd({ 'BufWinEnter' }, {
-	group = _G.augroup('vite_enviroment'),
-	pattern = '.env.*',
-	callback = function()
-		vim.api.nvim_command('set filetype=sh')
-	end,
-})
-
 -- highlight yank
 autocmd('TextYankPost', {
 	group = _G.augroup('highlight_yank'),
