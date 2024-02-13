@@ -24,7 +24,7 @@
     "body": ["###### $0"]
   },
   "todo": {
-    "prefix": "todo",
+    "prefix": "td",
     "body": ["- [ ] $0"]
   },
   "Insert code fense": {
