@@ -31,9 +31,10 @@
     "prefix": "c",
     "body": ["```${1:language}", "```"]
   },
-  "Insert link": {
+  "Wiki Link": {
     "prefix": "l",
-    "body": "[${1:text}](${2:https://} ${3:title})$0"
+    "body": "[[$0]]"
+  },
   },
   "Insert Url": {
     "prefix": "u",
