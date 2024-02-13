@@ -223,10 +223,6 @@
     "branch": "main",
     "commit": "2d7bd3d398940ce2692941e6cd052c072207b9f9"
   },
-  "smart-open.nvim": {
-    "branch": "main",
-    "commit": "f6febdf198119531baa23c98203ff37aa54f77dc"
-  },
   "sqlite.lua": {
     "branch": "master",
     "commit": "b7e28c8463254c46a8e61c52d27d6a2040492fc3"
