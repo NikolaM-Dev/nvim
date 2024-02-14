@@ -5,8 +5,8 @@ return {
 		{ '<leader>gal', '<cmd>G add --all<cr>', desc = '[G]it [A]dd A[l]l' },
 		{ '<leader>gap', '<cmd>G add % -p<cr>', desc = '[G]it [A]dd [P]artial' },
 		{ '<leader>gbm', ':G branch -m ', desc = '[G]it [B]ranch [M]ove' },
-		{ '<leader>gca', '<cmd>:G commit --amend<cr>', desc = '[G]it [C]ommit [A]mend' },
-		{ '<leader>gcm', '<cmd>G commit<cr>', desc = '[G]it [C]o[M]mit' },
+		-- WARN: G commit --amend don't work
+		{ '<leader>gca', '<cmd>vsplit<bar>term git commit --amend -v<cr>', desc = '[G]it [C]ommit [A]mend' },
 		{ '<leader>g', '<cmd>:G<cr>', desc = '[G]it' },
 		{ '<leader>gfa', '<cmd>G fetch --all -p<cr>', desc = '[G]it [F]etch [A]ll' },
 		{ '<leader>gi', '<cmd>G init<cr>', desc = '[G]it [I]nit' },
