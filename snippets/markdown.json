@@ -35,6 +35,9 @@
     "prefix": "l",
     "body": "[[$0]]"
   },
+  "Regular link": {
+    "prefix": "rl",
+    "body": "[${1:alt}](${2:url})"
   },
   "Insert Url": {
     "prefix": "u",
