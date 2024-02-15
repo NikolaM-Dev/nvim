@@ -19,7 +19,7 @@ local options = {
 	},
 	backup = false, -- create backup files
 	clipboard = 'unnamedplus', -- use system clipboard
-	colorcolumn = '81', -- maximum column length for color highlighting
+	colorcolumn = '80', -- maximum column length for color highlighting
 	completeopt = { 'menuone', 'noselect' }, -- cmp complete options
 	cursorline = true, -- highlight current line
 	expandtab = true, -- convert tabs to spaces
