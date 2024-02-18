@@ -9,3 +9,9 @@
 (list
   (list_item
     (task_list_marker_unchecked) @text.todo.unchecked.markdown (#set! conceal "")))
+
+
+;; code blocks
+(fenced_code_block
+ (fenced_code_block_delimiter) @conceal (#set! conceal "")
+)
