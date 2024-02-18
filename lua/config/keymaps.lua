@@ -138,3 +138,5 @@ vim.keymap.set(
 map('n', '<leader><leader>;', function()
 	require('utils').go_to_window(4)
 end, { desc = 'Go to window 4' })
+
+map('n', '<leader><leader>', '<cmd>luafile %<cr>', { desc = 'Reload Lua File' })
