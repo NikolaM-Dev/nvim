@@ -10,6 +10,16 @@
   (list_item
     (task_list_marker_unchecked) @text.todo.unchecked.markdown (#set! conceal "")))
 
+;; list markers/bullet points
+(
+  ([
+    (list_marker_star)
+    (list_marker_plus)
+    (list_marker_minus)
+  ]) @markdown_list_marker
+  (#offset! @markdown_list_marker 0 0 0 -1)
+  (#set! conceal "•")
+)
 
 ;; code blocks
 (fenced_code_block
