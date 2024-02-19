@@ -11,6 +11,9 @@ return {
 					path = '~/Documents/second-brain.md',
 				},
 			},
+			follow_url_func = function(url)
+				vim.fn.jobstart({ 'google-chrome-stable', url })
+			end,
 		})
 	end,
 }
