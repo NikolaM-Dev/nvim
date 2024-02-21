@@ -21,6 +21,15 @@
   (#set! conceal "•")
 )
 
+; block quotes
+((block_quote_marker) @markdown_quote_marker (#set! conceal "▍"))
+
+((block_quote
+  (paragraph (inline
+    (block_continuation) @markdown_quote_marker (#set! conceal "▍")
+  ))
+))
+
 ;; code blocks
 (fenced_code_block
  (fenced_code_block_delimiter) @conceal (#set! conceal "")
