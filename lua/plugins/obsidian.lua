@@ -21,6 +21,9 @@ return {
 					path = '~/Documents/second-brain.md',
 				},
 			},
+			completion = {
+				min_chars = 2,
+			},
 			note_id_func = function(title)
 				local suffix = ''
 
