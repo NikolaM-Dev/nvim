@@ -24,6 +24,9 @@ return {
 			completion = {
 				min_chars = 2,
 			},
+			attachments = {
+				img_folder = '900-assets',
+			},
 			note_id_func = function(title)
 				local suffix = ''
 
