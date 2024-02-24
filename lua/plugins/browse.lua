@@ -8,7 +8,7 @@ local bookmarks = {
 		glepnir = 'https://github.com/glepnir/nvim',
 		kickstart = 'https://github.com/nvim-lua/kickstart.nvim/blob/master/init.lua',
 		lazy_vim = 'https://github.com/LazyVim/LazyVim',
-		prime = 'https://github.com/ThePrimeagen/init.lua',
+		prime = 'https://github.com/ThePrimeagen/neovimrc',
 		wuelner = 'https://github.com/wuelnerdotexe/nvim',
 	},
 	parq = {
