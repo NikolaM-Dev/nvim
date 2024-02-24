@@ -27,6 +27,14 @@ return {
 			attachments = {
 				img_folder = '900-assets',
 			},
+			mappings = {
+				['<leader>ch'] = {
+					action = function()
+						return require('obsidian').util.toggle_checkbox()
+					end,
+					opts = { buffer = true, desc = 'Toggle [C][H]eck boxes' },
+				},
+			},
 			note_id_func = function(title)
 				local suffix = ''
 
