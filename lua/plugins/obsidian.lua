@@ -35,6 +35,30 @@ return {
 					opts = { buffer = true, desc = 'Toggle [C][H]eck boxes' },
 				},
 			},
+			note_frontmatter_func = function(note)
+				if note.title then
+					note:add_alias(note.title)
+				end
+
+				local current_date = os.date('%Y-%m-%d, %I:%M %p')
+				local out = {
+					created_at = current_date,
+					aliases = note.aliases,
+					id = note.id,
+					tags = note.tags,
+					updated_at = current_date,
+				}
+
+				if note.metadata ~= nil and not vim.tbl_isempty(note.metadata) then
+					for k, v in pairs(note.metadata) do
+						out[k] = v
+					end
+				end
+
+				out.updated_at = current_date
+
+				return out
+			end,
 			note_id_func = function(title)
 				local suffix = ''
 
