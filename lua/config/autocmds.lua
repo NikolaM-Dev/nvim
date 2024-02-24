@@ -32,6 +32,12 @@ autocmd('TextYankPost', {
 	end,
 })
 
+autocmd({ 'BufWritePre' }, {
+	group = _G.augroup('remove_trailing_whitespace'),
+	pattern = '*',
+	command = [[%s/\s\+$//e]],
+})
+
 -- Open in vertical split
 autocmd({ 'FileType' }, {
 	group = _G.augroup('open_in_right_vertical_split'),
