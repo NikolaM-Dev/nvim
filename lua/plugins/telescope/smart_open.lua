@@ -1,5 +1,5 @@
 return {
-	'NikolaM-Dev/smart-open.nvim',
+	'danielfalk/smart-open.nvim',
 	keys = {
 		{
 			'<leader>ff',
