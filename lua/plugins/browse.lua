@@ -45,6 +45,7 @@ local bookmarks = {
 
 return {
 	'lalitmee/browse.nvim',
+	enabled = false,
 	keys = {
 		{
 			'<leader>bb',
