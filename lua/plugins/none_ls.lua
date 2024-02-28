@@ -18,7 +18,6 @@ return {
 				f.prettierd.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
 				f.prettier.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
 				f.stylua,
-				f.taplo,
 			},
 
 			on_attach = function(current_client, bufnr)
