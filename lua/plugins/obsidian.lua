@@ -42,9 +42,8 @@ return {
 
 				local current_date = os.date('%Y-%m-%d, %I:%M %p')
 				local out = {
-					created_at = current_date,
 					aliases = note.aliases,
-					id = note.id,
+					created_at = current_date,
 					tags = note.tags,
 					updated_at = current_date,
 				}
