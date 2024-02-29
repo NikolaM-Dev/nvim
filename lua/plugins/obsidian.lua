@@ -2,6 +2,7 @@ return {
 	'epwalsh/obsidian.nvim',
 	version = '*',
 	ft = 'markdown',
+	enabled = true,
 	cmd = { 'ObsidianBacklinks', 'ObsidianToday' },
 	keys = {
 		{ '<leader>ob', '<cmd>ObsidianBacklinks<cr>', desc = '[O]bisidan [B]acklinks' },
