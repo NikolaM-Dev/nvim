@@ -75,7 +75,7 @@ return {
 				return tostring(os.date('%Y%m%d%H%M%S')) .. '-' .. suffix
 			end,
 			daily_notes = {
-				folder = '001-calendar/dailies',
+				folder = '000-calendar/00-dailies',
 				date_format = '%Y-%m-%d',
 				alias_format = '%A, %d %B %Y',
 				template = nil,
