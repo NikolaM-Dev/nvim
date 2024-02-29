@@ -53,6 +53,9 @@ return {
 				['g.'] = 'actions.toggle_hidden',
 				['<leader>e'] = 'actions.close',
 				['<leader>r'] = 'actions.refresh',
+				['<C-s>'] = function()
+					vim.cmd('write')
+				end,
 			},
 		})
 	end,
