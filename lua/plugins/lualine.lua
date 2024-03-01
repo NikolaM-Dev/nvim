@@ -17,6 +17,27 @@ return {
 					},
 				},
 			},
+			sections = {
+				lualine_a = {
+					{
+						function()
+							return '▊'
+						end,
+						color = { fg = COLORS.blue, bg = COLORS.transparent },
+						padding = { left = 0, right = 0 },
+					},
+					{
+				},
+				},
+				lualine_z = {
+						function()
+							return '▊'
+						end,
+						color = { fg = COLORS.blue, bg = COLORS.transparent },
+						padding = { left = 0, right = 0 },
+					},
+				},
+			},
 		})
 	end,
 }
