@@ -34,6 +34,20 @@ return {
 						padding = { left = 1, right = 0 },
 					},
 				},
+				lualine_b = {
+					{
+						'filename',
+						color = { bg = COLORS.transparent, fg = COLORS.text },
+						path = function()
+							if hide_in_width() then
+								return 0
+							end
+
+							return 1
+						end,
+						symbols = { modified = '[+]', newfile = '  ', readonly = '[-]', unnamed = '  ' },
+					},
+				},
 				},
 				lualine_z = {
 						function()
