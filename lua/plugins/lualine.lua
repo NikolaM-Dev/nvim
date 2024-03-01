@@ -27,6 +27,12 @@ return {
 						padding = { left = 0, right = 0 },
 					},
 					{
+						'filetype',
+						color = { bg = COLORS.transparent },
+						colored = true,
+						icon_only = true,
+						padding = { left = 1, right = 0 },
+					},
 				},
 				},
 				lualine_z = {
