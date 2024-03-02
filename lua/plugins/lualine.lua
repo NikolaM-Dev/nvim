@@ -50,6 +50,14 @@ return {
 				},
 				},
 				lualine_z = {
+					{
+						'n_lsp_servers',
+						color = { bg = COLORS.transparent, fg = COLORS.lavender },
+						cond = function()
+							return hide_in_width(167)
+						end,
+					},
+					{
 						function()
 							return '▊'
 						end,
