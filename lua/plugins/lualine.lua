@@ -4,6 +4,12 @@ return {
 	event = 'VeryLazy',
 	config = function()
 		require('lualine').setup({})
+		local function hide_in_width(min_width)
+			min_width = min_width or 105
+
+			return vim.fn.winwidth(0) > min_width
+		end
+
 		require('lualine').setup({
 			options = {
 				component_separators = { left = '', right = '' },
