@@ -3,7 +3,15 @@ return {
 	enabled = true,
 	event = 'VeryLazy',
 	config = function()
-		require('lualine').setup({})
+		local COLORS = {
+			blue = '#89b4fa',
+			lavender = '#b4befe',
+			mauve = '#cba6f7',
+			sapphire = '#74c7ec',
+			text = '#cdd6f4',
+			transparent = '',
+		}
+
 		local function hide_in_width(min_width)
 			min_width = min_width or 105
 
