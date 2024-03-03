@@ -48,6 +48,17 @@ return {
 						symbols = { modified = '[+]', newfile = '  ', readonly = '[-]', unnamed = '  ' },
 					},
 				},
+				lualine_c = {
+					{
+						'location',
+						color = { fg = COLORS.sapphire },
+					},
+					{
+						'progress',
+						color = { fg = COLORS.sapphire },
+						cond = hide_in_width,
+					},
+				},
 				lualine_x = {
 					{
 						'diagnostics',
