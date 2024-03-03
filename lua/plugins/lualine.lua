@@ -12,6 +12,7 @@ return {
 			transparent = '',
 		}
 
+		-- TODO: Re-evaluate this
 		local function hide_in_width(min_width)
 			min_width = min_width or 105
 
