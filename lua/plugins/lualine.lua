@@ -48,6 +48,13 @@ return {
 						symbols = { modified = '[+]', newfile = '  ', readonly = '[-]', unnamed = '  ' },
 					},
 				},
+				lualine_x = {
+					{
+						'diagnostics',
+						color = { gui = 'bold' },
+						symbols = { error = '󰅙 ', hint = '󰌵 ', info = '󰋼 ', warn = ' ' },
+					},
+				},
 				lualine_y = {
 					{
 						'diff',
