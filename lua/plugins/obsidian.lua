@@ -80,6 +80,9 @@ return {
 
 				return out
 			end,
+			note_id_func = function(title)
+				return title
+			end,
 			daily_notes = {
 				folder = '000-calendar/00-dailies',
 				date_format = '%Y-%m-%d',
