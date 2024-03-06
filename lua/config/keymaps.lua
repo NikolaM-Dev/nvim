@@ -113,7 +113,10 @@ map('i', ';', ';<c-g>u')
 map('i', '?', '?<c-g>u')
 map('i', '_', '_<c-g>u')
 
--- Paste without copy
+-- Paste & replace without copy
+map('n', '<leader>Y', [["+Y]])
+map({ 'n', 'v' }, '<leader>d', [["_d]])
+map({ 'n', 'v' }, '<leader>y', [["+y]])
 map('x', '<leader>p', [["_dP]])
 
 -- Change to right vertial split
