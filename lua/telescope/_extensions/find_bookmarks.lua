@@ -26,6 +26,45 @@ local function get_results(bookmarks)
 
 	return results
 end
+
+local function get_entry_marker(entry)
+	local value, display, ordinal
+
+	if type(entry) == 'string' then
+		value = entry
+		display = entry
+		ordinal = entry
+	elseif type(entry) == 'table' and type(entry[2]) ~= 'table' then
+		value = entry[2]
+		display = entry[1] .. ' ' .. '' .. ' ' .. value
+		ordinal = entry[1] .. entry[2]
+	elseif type(entry) == 'table' and type(entry[2]) == 'table' then
+		display = entry[1] .. ' ' .. ''
+		ordinal = entry[1]
+
+		for k, v in pairs(entry[2]) do
+			ordinal = ordinal .. k .. v
+
+			if type(k) == 'string' then
+				display = display .. ' ' .. k
+			else
+				display = display .. ' ' .. get_domain(v)
+			end
+		end
+
+		value = entry[2]
+		display = display
+		ordinal = ordinal
+	end
+
+	return {
+		value = value,
+		display = display,
+		ordinal = ordinal,
+	}
+end
+
+---@return function
 local function get_find_bookmarks()
 	local bookmarks_fallback = vim.deepcopy(bookmarks)
 
