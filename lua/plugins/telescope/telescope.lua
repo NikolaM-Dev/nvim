@@ -13,6 +13,7 @@ return {
 			end,
 			desc = '[/] Fuzzily search in currrent buffer',
 		},
+		{ '<leader>bb', '<cmd>Telescope find_bookmarks theme=dropdown<cr>', desc = 'Find [B]ookmarks' },
 		{ '<leader>?', '<cmd>Telescope command_history<cr>', desc = 'Command History' },
 		{ '<leader>fa', '<cmd>Telescope live_grep<cr>', desc = 'Live Grep' },
 		{ '<leader>fh', '<cmd>Telescope help_tags<cr>', desc = '[F]ind [H]elp Tags' },
