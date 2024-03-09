@@ -11,6 +11,21 @@ local pickers = require('telescope.pickers')
 local function get_domain(url)
 	return string.match(url, 'https?://([^/]+)')
 end
+
+local function get_results(bookmarks)
+	local bookmarks_copy = vim.deepcopy(bookmarks or {})
+	local results = {}
+
+	for k, v in pairs(bookmarks_copy) do
+		if type(k) == 'string' then
+			table.insert(results, { k, v })
+		else
+			table.insert(results, v)
+		end
+	end
+
+	return results
+end
 local function get_find_bookmarks()
 	local bookmarks_fallback = vim.deepcopy(bookmarks)
 
