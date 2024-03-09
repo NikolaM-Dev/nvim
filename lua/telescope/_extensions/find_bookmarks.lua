@@ -4,6 +4,13 @@ local conf = require('telescope.config').values
 local finders = require('telescope.finders')
 local pickers = require('telescope.pickers')
 
+---Get the domain of a URL
+---Example: https://obsidian.md => obsidian.md
+---@param url string: URL to which your domain will be extracted
+---@return string: Domain from the URL
+local function get_domain(url)
+	return string.match(url, 'https?://([^/]+)')
+end
 local function get_find_bookmarks()
 	local bookmarks_fallback = vim.deepcopy(bookmarks)
 
