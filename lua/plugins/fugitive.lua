@@ -5,7 +5,7 @@ return {
 		{ '<leader>gal', '<cmd>G add --all<cr>', desc = '[G]it [A]dd A[l]l' },
 		{ '<leader>gap', '<cmd>G add % -p<cr>', desc = '[G]it [A]dd [P]artial' },
 		{ '<leader>gbm', ':G branch -m ', desc = '[G]it [B]ranch [M]ove' },
-		-- WARN: G commit --amend don't work
+		-- WARN: G commit --amend don't work with fugitive
 		{ '<leader>gca', '<cmd>vsplit<bar>term git commit --amend -v<cr>', desc = '[G]it [C]ommit [A]mend' },
 		{ '<leader>gcm', '<cmd>G commit -v<cr>', desc = '[G]it [C]o[M]mit' },
 		{ '<leader>g', '<cmd>:G<cr>', desc = '[G]it' },
