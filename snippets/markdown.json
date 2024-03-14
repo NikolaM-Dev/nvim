@@ -43,6 +43,14 @@
     "prefix": "u",
     "body": "<${1:https://}>$0"
   },
+  "Bold": {
+    "prefix": "b",
+    "body": "**$0**"
+  },
+  "Italic": {
+    "prefix": "i",
+    "body": "*$0*"
+  },
   "Insert image": {
     "prefix": "img",
     "body": "![${1:alt}](${2:https://} ${3:title})$0"
