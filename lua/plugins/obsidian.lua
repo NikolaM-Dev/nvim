@@ -7,8 +7,6 @@ return {
 	keys = {
 		{ '<leader>ob', '<cmd>ObsidianBacklinks<cr>', desc = '[O]bisidan [B]acklinks' },
 		{ '<leader>oo', '<cmd>ObsidianOpen<cr>', desc = '[O]pen in [O]bsidian' },
-		-- d = { "<cmd>ObsidianToday<cr>", "Daily Note" },
-		-- p = { '<cmd>ObsidianPasteImg<cr>', 'Paste image' },
 		{ '<leader>oq', '<cmd>ObsidianQuickSwitch<cr>', '[O]sidian [Q]uick Swith' },
 		{ '<leader>os', '<cmd>ObsidianSearch<cr>', '[O]sidian [S]earch' },
 		{ '<leader>ot', '<cmd>ObsidianTags<cr>', '[O]sidian [T]ags' },
