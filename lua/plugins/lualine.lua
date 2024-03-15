@@ -71,7 +71,6 @@ return {
 					{
 						'progress',
 						color = { fg = COLORS.sapphire },
-						cond = hide_in_width,
 					},
 				},
 				lualine_x = {
