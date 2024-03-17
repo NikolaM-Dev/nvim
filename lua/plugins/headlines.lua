@@ -30,7 +30,7 @@ return {
 				fat_headline_upper_string = '▀',
 				headline_highlights = { 'Headline1', 'Headline2', 'Headline3', 'Headline4', 'Headline5', 'Headline6' },
 				quote_highlight = 'Quote',
-				quote_string = '▍',
+				quote_string = '',
 			},
 		})
 	end,
