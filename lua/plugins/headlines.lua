@@ -12,9 +12,10 @@ return {
 
 		vim.cmd([[highlight CodeBlock guibg=#11111b]])
 
-		-- When you add a line of dashes with --- this specifies the color, I'm not
-		-- adding a "guibg" but you can do so if you want to add a background color
-		vim.cmd([[highlight Dash guifg=white]])
+		vim.cmd([[highlight Dash guifg=#6c7086]]) -- dashes
+		vim.cmd([[highlight Quote guifg=#9399b2]]) -- quotes
+		vim.cmd([[highlight @markup.italic guifg=#a6e3a1]]) -- italic
+		vim.cmd([[highlight @markup.strong guifg=#eba0ac]]) -- bold
 
 		-- Setup headlines.nvim with the newly defined highlight groups
 		require('headlines').setup({
