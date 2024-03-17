@@ -3,7 +3,6 @@ return {
 	event = 'BufRead',
 	dependencies = 'nvim-treesitter/nvim-treesitter',
 	config = function()
-		-- Define custom highlight groups using Vimscript
 		vim.cmd([[highlight Headline1 guibg=#f38ba8 guifg=#09090d]])
 		vim.cmd([[highlight Headline2 guibg=#fab387 guifg=#09090d]])
 		vim.cmd([[highlight Headline3 guibg=#a6e3a1 guifg=#09090d]])
@@ -11,7 +10,6 @@ return {
 		vim.cmd([[highlight Headline5 guibg=#b4befe guifg=#09090d]])
 		vim.cmd([[highlight Headline6 guibg=#cba6f7 guifg=#09090d]])
 
-		-- Defines the codeblock background color to something darker
 		vim.cmd([[highlight CodeBlock guibg=#11111b]])
 
 		-- When you add a line of dashes with --- this specifies the color, I'm not
