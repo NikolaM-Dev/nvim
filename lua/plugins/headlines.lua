@@ -12,7 +12,7 @@ return {
 		vim.cmd([[highlight Headline6 guibg=#cba6f7 guifg=#09090d]])
 
 		-- Defines the codeblock background color to something darker
-		vim.cmd([[highlight CodeBlock guibg=#09090d]])
+		vim.cmd([[highlight CodeBlock guibg=#11111b]])
 
 		-- When you add a line of dashes with --- this specifies the color, I'm not
 		-- adding a "guibg" but you can do so if you want to add a background color
