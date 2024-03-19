@@ -75,6 +75,10 @@
     "branch": "master",
     "commit": "ccae1b9bec717ae284906b0bf83d720e59d12b91"
   },
+  "headlines.nvim": {
+    "branch": "master",
+    "commit": "618ef1b2502c565c82254ef7d5b04402194d9ce3"
+  },
   "hop.nvim": {
     "branch": "master",
     "commit": "6d853addd6e11df8338b26e869a29b36f2c3e893"
