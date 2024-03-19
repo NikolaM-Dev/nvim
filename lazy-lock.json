@@ -135,10 +135,6 @@
     "branch": "main",
     "commit": "84e0290f5600e8b89c0dfcafc864f45496a53400"
   },
-  "no-neck-pain.nvim": {
-    "branch": "main",
-    "commit": "4e3b4f386287154fdab0c5f61d9692e699b56674"
-  },
   "none-ls.nvim": {
     "branch": "main",
     "commit": "bc543fa6c9ca1b7cd39d1bb555a6276789b329a6"
