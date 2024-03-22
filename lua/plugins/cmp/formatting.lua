@@ -44,7 +44,7 @@ function M.format(entry, vim_item)
 				vim.api.nvim_command('highlight' .. ' ' .. group .. ' ' .. 'guifg=#' .. color)
 			end
 
-			vim_item.kind = '󱓻󰝤󰝤󰝤󰝤󰝤󰝤󰝤󱓻'
+			vim_item.kind = '▀▀▀▀▀▀▀▀▀'
 			vim_item.kind_hl_group = group
 
 			return vim_item
