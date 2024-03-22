@@ -1,6 +1,6 @@
 local M = {}
 
-local kind_icons = {
+local KIND_ICONS = {
 	Class = '',
 	Color = '',
 	Constant = '',
@@ -23,6 +23,7 @@ local kind_icons = {
 	Reference = '',
 	Snippet = '󰃐',
 	Struct = '',
+	Tailwind = '▀▀▀▀▀▀▀▀▀',
 	Text = '',
 	TypeParameter = '󰊄',
 	Unit = '',
@@ -44,14 +45,14 @@ function M.format(entry, vim_item)
 				vim.api.nvim_command('highlight' .. ' ' .. group .. ' ' .. 'guifg=#' .. color)
 			end
 
-			vim_item.kind = '▀▀▀▀▀▀▀▀▀'
+			vim_item.kind = KIND_ICONS.Tailwind
 			vim_item.kind_hl_group = group
 
 			return vim_item
 		end
 	end
 
-	vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind)
+	vim_item.kind = string.format('%s %s', KIND_ICONS[vim_item.kind], vim_item.kind)
 
 	return vim_item
 end
