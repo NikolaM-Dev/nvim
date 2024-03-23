@@ -286,9 +286,5 @@
   "windows.nvim": {
     "branch": "main",
     "commit": "c7492552b23d0ab30325e90b56066ec51242adc8"
-  },
-  "zen-mode.nvim": {
-    "branch": "main",
-    "commit": "78557d972b4bfbb7488e17b5703d25164ae64e6a"
   }
 }
