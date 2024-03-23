@@ -11,6 +11,7 @@ return {
 			local luasnip = require('luasnip')
 
 			cmp.setup({
+				completion = { completeopt = 'menu,menuone,noinsert' },
 				snippet = {
 					expand = function(args)
 						if package.loaded['luasnip'] then
