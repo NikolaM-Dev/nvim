@@ -89,7 +89,7 @@ return {
 				template = nil,
 			},
 			follow_url_func = function(url)
-				vim.fn.jobstart({ 'google-chrome-stable', url })
+				vim.fn.jobstart({ 'brave', url })
 			end,
 		})
 	end,
