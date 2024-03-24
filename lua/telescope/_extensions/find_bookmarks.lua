@@ -132,7 +132,7 @@ local function get_find_bookmarks()
 
 						if type(value) == 'string' then
 							vim.notify(string.format('Opening %s', value), vim.log.levels.INFO)
-							vim.fn.jobstart({ 'google-chrome-stable', value })
+							vim.fn.jobstart({ 'brave', value })
 
 							bookmarks = bookmarks_fallback
 
