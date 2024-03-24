@@ -16,7 +16,7 @@ local function select_template(prompt_bufnr, map)
 
 	pickers
 		.new(map, {
-			prompt_title = ' Tempaltes',
+			prompt_title = '  Tempaltes ',
 			finder = finders.new_table({
 				finder = list_templates().results,
 				sorter = conf.file_sorter(),
