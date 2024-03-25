@@ -61,11 +61,14 @@ return {
 				}),
 				formatting = { format = require('plugins.cmp.formatting').format },
 				window = {
-					documentation = { border = 'rounded' },
 					completion = {
 						border = 'rounded',
 						scrollbar = false,
 						winhighlight = 'Normal:CmpPmenu,CursorLine:PmenuSel,Search:None',
+					},
+					documentation = {
+						border = 'rounded',
+						winhighlight = 'FloatBorder:FloatBorder',
 					},
 				},
 				experimental = {
