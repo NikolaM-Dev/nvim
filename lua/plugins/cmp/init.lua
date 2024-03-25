@@ -2,10 +2,6 @@ return {
 	{
 		'hrsh7th/nvim-cmp',
 		dependencies = 'nvim-treesitter/nvim-treesitter',
-		lazy = true,
-		init = function()
-			vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
-		end,
 		config = function()
 			local cmp = require('cmp')
 			local luasnip = require('luasnip')
