@@ -49,7 +49,7 @@
   },
   "Italic": {
     "prefix": "i",
-    "body": "*$0*"
+    "body": "_$0_"
   },
   "Insert image": {
     "prefix": "img",
