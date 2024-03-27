@@ -6,7 +6,9 @@ return {
 	cmd = { 'ObsidianBacklinks', 'ObsidianToday' },
 	keys = {
 		{ '<leader>ob', '<cmd>ObsidianBacklinks<cr>', desc = '[O]bisidan [B]acklinks' },
+		{ '<leader>oh', '<cmd>ObsidianToday<cr>', '[O]sidian Today' },
 		{ '<leader>ol', '<cmd>ObsidianLinks<cr>', '[O]sidian [L]inks' },
+		{ '<leader>om', '<cmd>ObsidianTomorrow<cr>', '[O]sidian Tomorrow' },
 		{ '<leader>oo', '<cmd>ObsidianOpen<cr>', desc = '[O]pen in [O]bsidian' },
 		{ '<leader>oq', '<cmd>ObsidianQuickSwitch<cr>', '[O]sidian [Q]uick Swith' },
 		{ '<leader>os', '<cmd>ObsidianSearch<cr>', '[O]sidian [S]earch' },
