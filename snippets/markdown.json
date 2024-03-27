@@ -51,6 +51,18 @@
     "prefix": "i",
     "body": "_$0_"
   },
+  "fn": {
+    "prefix": "fn",
+    "body": "[[100-zettelkasten/01-fleeting-notes/$0]]"
+  },
+  "ln": {
+    "prefix": "ln",
+    "body": "[[100-zettelkasten/02-literature-notes/$0]]"
+  },
+  "pn": {
+    "prefix": "pn",
+    "body": "[[100-zettelkasten/03-permanent-notes/$0]]"
+  },
   "Insert image": {
     "prefix": "img",
     "body": "![${1:alt}](${2:https://} ${3:title})$0"
