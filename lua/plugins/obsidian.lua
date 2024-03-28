@@ -5,7 +5,9 @@ return {
 	enabled = true,
 	cmd = { 'ObsidianBacklinks', 'ObsidianToday' },
 	keys = {
+		{ '<leader>oa', '<cmd>ObsidianYesterday<cr>', '[O]sidian Yesterday' },
 		{ '<leader>ob', '<cmd>ObsidianBacklinks<cr>', desc = '[O]bisidan [B]acklinks' },
+		{ '<leader>od', '<cmd>ObsidianDailies<cr>', '[O]sidian [D]ailies' },
 		{ '<leader>oh', '<cmd>ObsidianToday<cr>', '[O]sidian Today' },
 		{ '<leader>ol', '<cmd>ObsidianLinks<cr>', '[O]sidian [L]inks' },
 		{ '<leader>om', '<cmd>ObsidianTomorrow<cr>', '[O]sidian Tomorrow' },
