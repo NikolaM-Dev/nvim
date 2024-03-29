@@ -34,6 +34,11 @@ return {
 
 			return tostring(hours) .. ' hrs ' .. tostring(minutes) .. ' mins'
 		end
+
+		local function is_markdown()
+			return vim.bo.filetype == 'markdown' or vim.bo.filetype == 'asciidoc'
+		end
+
 		require('lualine').setup({
 			options = {
 				component_separators = { left = '', right = '' },
