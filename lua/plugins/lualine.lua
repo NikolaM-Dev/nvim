@@ -21,7 +21,10 @@ return {
 			return vim.fn.winwidth(0) > min_width
 		end
 
-		local function readingtime()
+		local function word_count()
+			return tostring(vim.fn.wordcount().words) .. ' words'
+		end
+
 		local function reading_time()
 			local reading_time_in_mins = math.ceil(vim.fn.wordcount().words / 200)
 
