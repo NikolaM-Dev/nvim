@@ -12,6 +12,7 @@ return {
 			text = '#cdd6f4',
 			transparent = '',
 		}
+		local MINS_IN_HOUR = 60
 
 		-- TODO: Re-evaluate this
 		local function hide_in_width(min_width)
@@ -20,6 +21,19 @@ return {
 			return vim.fn.winwidth(0) > min_width
 		end
 
+		local function readingtime()
+		local function reading_time()
+			local reading_time_in_mins = math.ceil(vim.fn.wordcount().words / 200)
+
+			if reading_time_in_mins < MINS_IN_HOUR then
+				return tostring(reading_time_in_mins) .. ' mins'
+			end
+
+			local hours = math.floor(reading_time_in_mins / MINS_IN_HOUR)
+			local minutes = reading_time_in_mins % MINS_IN_HOUR
+
+			return tostring(hours) .. ' hrs ' .. tostring(minutes) .. ' mins'
+		end
 		require('lualine').setup({
 			options = {
 				component_separators = { left = '', right = '' },
