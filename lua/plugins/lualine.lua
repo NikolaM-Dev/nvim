@@ -7,6 +7,7 @@ return {
 			blue = '#89b4fa',
 			lavender = '#b4befe',
 			mauve = '#cba6f7',
+			overlay0 = '#6c7086',
 			sapphire = '#74c7ec',
 			text = '#cdd6f4',
 			transparent = '',
