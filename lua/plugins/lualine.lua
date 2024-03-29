@@ -95,6 +95,14 @@ return {
 						'progress',
 						color = { fg = COLORS.sapphire },
 					},
+					{
+						word_count,
+						cond = is_markdown,
+					},
+					{
+						reading_time,
+						cond = is_markdown,
+					},
 				},
 				lualine_x = {
 					{
