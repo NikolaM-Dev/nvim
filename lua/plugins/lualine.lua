@@ -97,11 +97,15 @@ return {
 					},
 					{
 						word_count,
+						color = { bg = COLORS.transparent, fg = COLORS.overlay0, gui = 'italic' },
 						cond = is_markdown,
+						icon = '󰈬',
 					},
 					{
 						reading_time,
+						color = { fg = COLORS.overlay0, bg = COLORS.transparent, gui = 'italic' },
 						cond = is_markdown,
+						icon = '󱑎',
 					},
 				},
 				lualine_x = {
