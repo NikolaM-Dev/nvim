@@ -1,3 +1,5 @@
+local is_markdown_ft = require('utils').is_markdown_ft
+
 return {
 	'nvim-lualine/lualine.nvim',
 	enabled = true,
@@ -36,10 +38,6 @@ return {
 			local minutes = reading_time_in_mins % MINS_IN_HOUR
 
 			return tostring(hours) .. ' hrs ' .. tostring(minutes) .. ' mins'
-		end
-
-		local function is_markdown()
-			return vim.bo.filetype == 'markdown' or vim.bo.filetype == 'asciidoc'
 		end
 
 		require('lualine').setup({
@@ -98,13 +96,13 @@ return {
 					{
 						word_count,
 						color = { bg = COLORS.transparent, fg = COLORS.overlay0, gui = 'italic' },
-						cond = is_markdown,
+						cond = is_markdown_ft,
 						icon = '󰈬',
 					},
 					{
 						reading_time,
 						color = { fg = COLORS.overlay0, bg = COLORS.transparent, gui = 'italic' },
-						cond = is_markdown,
+						cond = is_markdown_ft,
 						icon = '󱑎',
 					},
 				},
