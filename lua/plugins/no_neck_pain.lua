@@ -40,7 +40,11 @@ return {
 	'shortcuts/no-neck-pain.nvim',
 	enabled = true,
 	keys = {
-		{ '<leader>zm', '<cmd>NoNeckPain<cr>', desc = 'Toggle No Neck Pain' },
+		{
+			'<leader>zm',
+			function()
+				toggle_zen_mode()
+			end,
 			desc = 'Toggle [Z]en [M]ode',
 		},
 	},
