@@ -1,3 +1,5 @@
+local is_active = false
+
 local function on_enable_zen_mode()
 	if not vim.fn.executable('alacritty') then
 		return
@@ -21,6 +23,19 @@ local function on_disable_zen_mode()
 	vim.fn.system(cmd:format(win_id))
 	vim.cmd('redraw')
 end
+
+local function toggle_zen_mode()
+	vim.cmd('NoNeckPain')
+
+	is_active = not is_active
+
+	if is_active then
+		on_enable_zen_mode()
+	else
+		on_disable_zen_mode()
+	end
+end
+
 return {
 	'shortcuts/no-neck-pain.nvim',
 	enabled = true,
