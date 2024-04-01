@@ -1,6 +1,6 @@
 return {
 	'shortcuts/no-neck-pain.nvim',
-	enabled = false,
+	enabled = true,
 	keys = {
 		{ '<leader>zm', '<cmd>NoNeckPain<cr>', desc = 'Toggle No Neck Pain' },
 	},
