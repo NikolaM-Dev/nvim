@@ -1,3 +1,14 @@
+local function on_enable_zen_mode()
+	if not vim.fn.executable('alacritty') then
+		return
+	end
+
+	local cmd = 'alacritty msg config -w %s font.offset.y=6 font.size=13'
+	local win_id = vim.fn.expand('$ALACRITTY_WINDOW_ID')
+
+	vim.fn.system(cmd:format(win_id))
+	vim.cmd('redraw')
+end
 return {
 	'shortcuts/no-neck-pain.nvim',
 	enabled = true,
