@@ -1,3 +1,5 @@
+local is_markdown_ft = require('utils').is_markdown_ft
+
 local is_active = false
 
 local function on_enable_zen_mode()
@@ -28,6 +30,10 @@ local function toggle_zen_mode()
 	vim.cmd('NoNeckPain')
 
 	is_active = not is_active
+
+	if not is_markdown_ft() then
+		return
+	end
 
 	if is_active then
 		on_enable_zen_mode()
