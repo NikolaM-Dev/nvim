@@ -1,6 +1,6 @@
 return {
 	'rest-nvim/rest.nvim',
-	enabled = true,
+	enabled = false,
 	ft = 'http',
 	keys = {
 		{
