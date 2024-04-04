@@ -63,6 +63,10 @@
     "prefix": "pn",
     "body": "[[100-zettelkasten/03-permanent-notes/$0]]"
   },
+  "q": {
+    "prefix": "q",
+    "body": ["> [!quote] ${1:quote}", ">", "> _${2:author}_"]
+  },
   "Insert image": {
     "prefix": "img",
     "body": "![${1:alt}](${2:https://} ${3:title})$0"
