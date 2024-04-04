@@ -18,7 +18,7 @@ vim.keymap.set('n', 'gk', function()
 	vim.cmd('silent! ?^##\\+\\s.*$')
 	-- Clear the search highlight
 	vim.cmd('nohlsearch')
-end, { desc = 'Go to previous markdown header' })
+end, { desc = '[G]o to previous markdown header' })
 
 -- Search DOWN for a markdown header
 -- Make sure to follow proper markdown convention, and you have a single H1
@@ -35,4 +35,4 @@ vim.keymap.set('n', 'gj', function()
 	vim.cmd('silent! /^##\\+\\s.*$')
 	-- Clear the search highlight
 	vim.cmd('nohlsearch')
-end, { desc = 'Go to next markdown header' })
+end, { desc = '[G]o to next markdown header' })
