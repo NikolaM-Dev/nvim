@@ -1,33 +1,33 @@
 {
-  "h1": {
+  "H1": {
     "prefix": "h1",
     "body": ["# $0"]
   },
-  "h2": {
+  "H2": {
     "prefix": "h2",
     "body": ["## $0"]
   },
-  "h3": {
+  "H3": {
     "prefix": "h3",
     "body": ["### $0"]
   },
-  "h4": {
+  "H4": {
     "prefix": "h4",
     "body": ["#### $0"]
   },
-  "h5": {
+  "H5": {
     "prefix": "h5",
     "body": ["##### $0"]
   },
-  "h6": {
+  "H6": {
     "prefix": "h6",
     "body": ["###### $0"]
   },
-  "todo": {
+  "Todo": {
     "prefix": "td",
     "body": ["- [ ] $0"]
   },
-  "Insert code fense": {
+  "Code block": {
     "prefix": "c",
     "body": ["```${1:language}", "```"]
   },
@@ -51,23 +51,23 @@
     "prefix": "i",
     "body": "_$0_"
   },
-  "fn": {
+  "Fleeting Note": {
     "prefix": "fn",
     "body": "[[100-zettelkasten/01-fleeting-notes/$0]]"
   },
-  "ln": {
+  "Literature Note": {
     "prefix": "ln",
     "body": "[[100-zettelkasten/02-literature-notes/$0]]"
   },
-  "pn": {
+  "Permanent Note": {
     "prefix": "pn",
     "body": "[[100-zettelkasten/03-permanent-notes/$0]]"
   },
-  "q": {
+  "Quote": {
     "prefix": "q",
     "body": ["> [!quote] ${1:quote}", ">", "> _${2:author}_"]
   },
-  "Insert image": {
+  "Image": {
     "prefix": "img",
     "body": "![${1:alt}](${2:https://} ${3:title})$0"
   },
