@@ -1,7 +1,7 @@
 return {
 	'lukas-reineke/headlines.nvim',
 	event = 'BufRead',
-	dependencies = 'nvim-treesitter/nvim-treesitter',
+	dependencies = { 'catppuccin/nvim', 'nvim-treesitter/nvim-treesitter' },
 	config = function()
 		vim.cmd('highlight Headline1 guibg=#f38ba8 guifg=#09090d')
 		vim.cmd('highlight Headline2 guibg=#fab387 guifg=#09090d')
