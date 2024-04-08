@@ -30,7 +30,27 @@ return {
 		vim.api.nvim_set_hl(0, '@text.title.6.marker.markdown', { fg = marker_fg })
 				quote_highlight = 'Quote',
 				quote_string = '',
-			},
-		})
+			local headlines = require('headlines')
+
+			headlines.setup({
+				markdown = {
+					codeblock_highlight = 'CodeBlock',
+					dash_highlight = 'Dash',
+					dash_string = '󰇘',
+					fat_headline_lower_string = '🬂',
+					fat_headlines = false,
+					fat_headline_upper_string = '▃',
+					headline_highlights = {
+						'Headline1',
+						'Headline2',
+						'Headline3',
+						'Headline4',
+						'Headline5',
+						'Headline6',
+					},
+					quote_highlight = 'Quote',
+					quote_string = '',
+				},
+			})
 	end,
 }
