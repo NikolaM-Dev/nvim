@@ -34,6 +34,8 @@ return {
 
 			headlines.setup({
 				markdown = {
+					-- bullets = { '󰇊', '󰇋', '󰇌', '󰇍', '󰇎', '󰇏' },
+					bullets = { '󰉫', '󰉬', '󰉭', '󰉮', '󰉯', '󰉰' },
 					codeblock_highlight = 'CodeBlock',
 					dash_highlight = 'Dash',
 					-- dash_string = '󰇘',
