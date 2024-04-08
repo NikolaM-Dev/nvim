@@ -34,6 +34,14 @@ return {
 
 			headlines.setup({
 				markdown = {
+					bullet_highlights = {
+						'@text.title.1.marker.markdown',
+						'@text.title.2.marker.markdown',
+						'@text.title.3.marker.markdown',
+						'@text.title.4.marker.markdown',
+						'@text.title.5.marker.markdown',
+						'@text.title.6.marker.markdown',
+					},
 					-- bullets = { '󰇊', '󰇋', '󰇌', '󰇍', '󰇎', '󰇏' },
 					bullets = { '󰉫', '󰉬', '󰉭', '󰉮', '󰉯', '󰉰' },
 					codeblock_highlight = 'CodeBlock',
