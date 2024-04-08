@@ -5,7 +5,7 @@ return {
 	config = function()
 		local PALETTE = require('catppuccin.palettes').get_palette('mocha')
 
-		local headline_fg = '#09090d'
+		local headline_fg = '#2B2B2B'
 		local marker_fg = PALETTE.surface2
 
 		vim.api.nvim_set_hl(0, 'Headline1', { bg = PALETTE.red, fg = headline_fg })
