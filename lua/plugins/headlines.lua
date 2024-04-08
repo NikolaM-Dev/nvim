@@ -36,7 +36,8 @@ return {
 				markdown = {
 					codeblock_highlight = 'CodeBlock',
 					dash_highlight = 'Dash',
-					dash_string = '󰇘',
+					-- dash_string = '󰇘',
+					dash_string = '⎯',
 					fat_headline_lower_string = '🬂',
 					fat_headlines = false,
 					fat_headline_upper_string = '▃',
