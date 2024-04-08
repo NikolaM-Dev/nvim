@@ -3,9 +3,7 @@ return {
 	version = '*',
 	ft = 'markdown',
 	enabled = true,
-	cmd = { 'ObsidianBacklinks', 'ObsidianToday' },
 	keys = {
-		{ '<leader>oa', '<cmd>ObsidianYesterday<cr>', '[O]sidian Yesterday' },
 		{ '<leader>ob', '<cmd>ObsidianBacklinks<cr>', desc = '[O]bisidan [B]acklinks' },
 		{ '<leader>od', '<cmd>ObsidianDailies<cr>', '[O]sidian [D]ailies' },
 		{ '<leader>oh', '<cmd>ObsidianToday<cr>', '[O]sidian Today' },
