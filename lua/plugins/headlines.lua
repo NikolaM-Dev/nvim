@@ -28,8 +28,8 @@ return {
 		vim.api.nvim_set_hl(0, '@text.title.4.marker.markdown', { fg = marker_fg })
 		vim.api.nvim_set_hl(0, '@text.title.5.marker.markdown', { fg = marker_fg })
 		vim.api.nvim_set_hl(0, '@text.title.6.marker.markdown', { fg = marker_fg })
-				quote_highlight = 'Quote',
-				quote_string = '',
+
+		vim.schedule(function()
 			local headlines = require('headlines')
 
 			headlines.setup({
@@ -63,5 +63,20 @@ return {
 					quote_string = '',
 				},
 			})
+
+			local markdwon_config = headlines.config.markdown
+			headlines.refresh()
+
+			vim.api.nvim_create_autocmd({ 'InsertEnter', 'InsertLeave' }, {
+				desc = 'Toggle headlines.nvim on insert enter/leave',
+				group = _G.augroup('toggle_headlines.nvim_on_insert_enter_leave'),
+				callback = function(data)
+					if vim.bo.filetype == 'markdown' then
+						headlines.config.markdown = data.event == 'InsertLeave' and markdwon_config or nil
+						headlines.refresh()
+					end
+				end,
+			})
+		end)
 	end,
 }
