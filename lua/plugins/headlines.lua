@@ -18,9 +18,9 @@ return {
 		vim.api.nvim_set_hl(0, 'CodeBlock', { bg = PALETTE.crust })
 
 		vim.api.nvim_set_hl(0, 'Dash', { fg = PALETTE.blue })
-		vim.api.nvim_set_hl(0, '@markup.italic', { bg = PALETTE.green })
-		vim.api.nvim_set_hl(0, '@markup.strong', { bg = PALETTE.red })
-		vim.api.nvim_set_hl(0, 'Quote', { bg = PALETTE.overlay2 })
+		vim.api.nvim_set_hl(0, '@markup.italic', { fg = PALETTE.green })
+		vim.api.nvim_set_hl(0, '@markup.strong', { fg = PALETTE.red })
+		vim.api.nvim_set_hl(0, 'Quote', { fg = PALETTE.overlay2 })
 
 		vim.api.nvim_set_hl(0, '@text.title.1.marker.markdown', { fg = marker_fg })
 		vim.api.nvim_set_hl(0, '@text.title.2.marker.markdown', { fg = marker_fg })
