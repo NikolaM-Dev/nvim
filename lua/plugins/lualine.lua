@@ -20,6 +20,7 @@ return {
 		end
 
 		local function reading_time()
+			local MINS_IN_HOUR = 60
 			local reading_time_in_mins = math.ceil(vim.fn.wordcount().words / 200)
 
 			if reading_time_in_mins < MINS_IN_HOUR then
