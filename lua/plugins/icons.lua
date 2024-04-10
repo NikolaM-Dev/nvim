@@ -701,6 +701,11 @@ return {
 					icon = '󰀨',
 					name = 'Readme',
 				},
+				['todo.md'] = {
+					color = '#7cb342',
+					icon = '󰄳',
+					name = 'Todo',
+				},
 				['pdf'] = {
 					color = '#ef5350',
 					icon = '󰈧',
