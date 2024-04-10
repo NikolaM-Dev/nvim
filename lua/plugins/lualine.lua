@@ -129,7 +129,7 @@ return {
 						'n_lsp_servers',
 						color = { bg = COLORS.transparent, fg = COLORS.lavender },
 						cond = function()
-							return hide_in_width(167)
+							return vim.fn.winwidth(0) > 167
 						end,
 					},
 					{
