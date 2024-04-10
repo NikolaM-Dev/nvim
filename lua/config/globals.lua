@@ -12,6 +12,8 @@ function _G.P(v)
 	print(vim.inspect(v))
 end
 
-_G.augroup = function(name)
+--- Create an autogroup with nikola prefix
+---@param name string The name of the autogroup
+function _G.augroup(name)
 	return vim.api.nvim_create_augroup('nikola_' .. name, { clear = true })
 end
