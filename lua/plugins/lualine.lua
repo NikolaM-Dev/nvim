@@ -14,14 +14,6 @@ return {
 			text = '#cdd6f4',
 			transparent = '',
 		}
-		local MINS_IN_HOUR = 60
-
-		-- TODO: Re-evaluate this
-		local function hide_in_width(min_width)
-			min_width = min_width or 105
-
-			return vim.fn.winwidth(0) > min_width
-		end
 
 		local function word_count()
 			return tostring(vim.fn.wordcount().words) .. ' words'
