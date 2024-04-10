@@ -3,8 +3,8 @@ local function hide_file(file_name)
 	local filters = {
 		'^dist$',
 		'^.git$',
-		'^.mind$',
 		'^node_modules$',
+		'^.obsidian$',
 	}
 
 	for _, f in pairs(filters) do
