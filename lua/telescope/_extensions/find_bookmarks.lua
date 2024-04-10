@@ -101,6 +101,7 @@ local function get_find_bookmarks()
 		new_repository = 'https://github.com/new',
 		nikola = 'https://github.com/NikolaM-Dev',
 		none_ls = 'https://github.com/nvimtools/none-ls.nvim/blob/main/doc/BUILTINS.md',
+		obsidian = 'https://github.com/epwalsh/obsidian.nvim',
 		reddit = 'https://www.reddit.com/r/neovim',
 		refold = 'https://academy.refold.la/library',
 		status_codes = 'https://developer.mozilla.org/es/docs/Web/HTTP/Status#errores_de_cliente',
