@@ -32,7 +32,11 @@ local function toggle_zen_mode()
 
 	is_active = not is_active
 
-	if is_active and is_markdown_ft() then
+	local is_second_brain_md_path = vim.fn.fnamemodify(vim.fn.getcwd(), ':p')
+		== os.getenv('HOME') .. '/Documents/second-brain.md/'
+	local is_available_to_zen_mode_features = is_markdown_ft() or is_second_brain_md_path
+
+	if is_active and is_available_to_zen_mode_features then
 		on_enable_zen_mode()
 	else
 		on_disable_zen_mode()
