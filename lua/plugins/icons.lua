@@ -756,6 +756,11 @@ return {
 					icon = '',
 					name = 'Vim',
 				},
+				['.obsidian.vimrc'] = {
+					color = '#43a047',
+					icon = '',
+					name = 'ObisidanVimrc',
+				},
 				['xml'] = {
 					color = '#8bc34a',
 					icon = '󰈮',
