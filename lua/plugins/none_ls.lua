@@ -1,7 +1,9 @@
 return {
 	'nvimtools/none-ls.nvim',
 	event = { 'BufReadPre', 'BufNewFile' },
-	keys = { { '<leader>cn', '<cmd>NullLsInfo<cr>', desc = '[N]ull-LS Info' } },
+	keys = {
+		{ '<leader>cn', '<cmd>NullLsInfo<cr>', desc = '[N]ull-LS Info' },
+	},
 	config = function()
 		local nls = require('null-ls')
 		local augroup = _G.augroup('lsp_formatting')
