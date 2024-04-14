@@ -53,15 +53,15 @@
   },
   "Fleeting Note": {
     "prefix": "fn",
-    "body": "[[100-zettelkasten/01-fleeting-notes/$0]]"
+    "body": "[[z/LN/$0]]"
   },
   "Literature Note": {
     "prefix": "ln",
-    "body": "[[100-zettelkasten/02-literature-notes/$0]]"
+    "body": "[[z/FN/$0]]"
   },
   "Permanent Note": {
     "prefix": "pn",
-    "body": "[[100-zettelkasten/03-permanent-notes/$0]]"
+    "body": "[[z/PN/$0]]"
   },
   "Quote": {
     "prefix": "q",
