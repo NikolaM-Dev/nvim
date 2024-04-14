@@ -35,6 +35,7 @@ return {
 				'gitcommit',
 				'git_config',
 				'gitignore',
+				'git_rebase',
 				'go',
 				'gomod',
 				'html',
