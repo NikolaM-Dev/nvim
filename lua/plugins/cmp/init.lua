@@ -17,6 +17,7 @@ return {
 						end
 					end,
 				},
+				---@diagnostic disable-next-line: missing-fields
 				performance = { debounce = 20, fetching_timeout = 284, throttle = 20 },
 				mapping = cmp.mapping.preset.insert({
 					['<Tab>'] = cmp.mapping(function(fallback)
@@ -55,6 +56,7 @@ return {
 					{ name = 'calc' },
 					{ name = 'rg' },
 				}),
+				---@diagnostic disable-next-line: missing-fields
 				formatting = { format = require('plugins.cmp.formatting').format },
 				window = {
 					completion = {
