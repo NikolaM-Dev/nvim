@@ -35,6 +35,10 @@
     "prefix": "l",
     "body": "[[$0]]"
   },
+  "Bullet list item": {
+    "prefix": ",",
+    "body": "- $0"
+  },
   "Regular link": {
     "prefix": "rl",
     "body": "[${1:alt}](${2:url})"
