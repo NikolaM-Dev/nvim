@@ -31,7 +31,7 @@
     "prefix": "c",
     "body": ["```${1:language}", "```"]
   },
-  "Wiki Link": {
+  "Wiki link": {
     "prefix": "l",
     "body": "[[$0]]"
   },
