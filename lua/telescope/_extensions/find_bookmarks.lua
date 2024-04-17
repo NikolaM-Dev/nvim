@@ -71,6 +71,7 @@ local function get_find_bookmarks()
 			adalessa = 'https://github.com/adalessa/nvim',
 			adibhanna = 'https://github.com/adibhanna/nvim',
 			cris_at_machine = 'https://github.com/ChristianChiarulli/nvim',
+			epwalsh = 'https://github.com/epwalsh/dotfiles/tree/main/neovim',
 			fbearoff = 'https://github.com/fbearoff/dotfiles/tree/master/nvim/.config/nvim',
 			folke = 'https://github.com/folke/dot/tree/master/nvim',
 			glepnir = 'https://github.com/glepnir/nvim',
