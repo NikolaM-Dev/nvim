@@ -71,6 +71,10 @@
     "prefix": "q",
     "body": ["> [!quote] ${1:quote}", ">", "> _${2:author}_"]
   },
+  "HR": {
+    "prefix": "hr",
+    "body": "---"
+  },
   "Image": {
     "prefix": "img",
     "body": "![${1:alt}](${2:https://} ${3:title})$0"
