@@ -120,7 +120,9 @@ return {
 			})
 
 			cmp.setup.cmdline(':', {
-				mapping = cmp.mapping.preset.cmdline(),
+				mapping = cmp.mapping.preset.cmdline({
+					['<CR>'] = { c = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }) },
+
 					['<Up>'] = {
 						c = function()
 							if cmp.visible() then
