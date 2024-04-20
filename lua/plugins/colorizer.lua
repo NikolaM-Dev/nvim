@@ -4,7 +4,7 @@ return {
 	config = function()
 		require('colorizer').setup({
 			buftype = { '*' },
-			filetypes = { '*', '!checkhealth', '!lazy', '!lspinfo', '!mason', '!null-ls-info' },
+			filetypes = { '*', '!checkhealth', '!lazy', '!lspinfo', '!mason', '!null-ls-info', '!markdown' },
 			user_default_options = {
 				AARRGGBB = true,
 				css_fn = true,
