@@ -109,6 +109,12 @@ return {
 			nmap('<leader>wk', diagnostic_go_to(false, 'WARN'), 'Prev Warning')
 			nmap('<leader>ws', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', '[W]orkspace [S]ymbols')
 
+			if client.name == 'eslint' then
+				client.server_capabilities.documentFormattingProvider = true
+			elseif client.name == 'tsserver' then
+				client.server_capabilities.documentFormattingProvider = false
+			end
+
 			if client.name == 'tsserver' then
 				nmap('<leader>am', '<cmd>TypescriptAddMissingImports<cr>', '[A]dd [M]issing Imports')
 				nmap('<leader>gD', '<cmd>TypescriptGoToSourceDefinition<cr>', 'Go to Source Definition')
