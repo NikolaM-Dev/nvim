@@ -1,3 +1,22 @@
+---Generate a note name with id and date prefix
+---@param title string Title of the note
+---@return string Note name with date prefix
+local function note_id_func(title)
+	local suffix = ''
+
+	if title ~= nil then
+		-- If title is given, transform it into valid file name.
+		suffix = title:gsub(' ', '-'):gsub('[^A-Za-z0-9-]', ''):lower()
+	else
+		-- If title is nil, just add 4 random uppercase letters to the suffix.
+		for _ = 1, 4 do
+			suffix = suffix .. string.char(math.random(65, 90))
+		end
+	end
+
+	return tostring(os.date('%Y%m%d%H%M%S')) .. '-' .. suffix
+end
+
 return {
 	'epwalsh/obsidian.nvim',
 	version = '*',
@@ -79,7 +98,7 @@ return {
 
 				return out
 			end,
-			note_id_func = function(title)
+			note_id_func = note_id_func,
 				return title
 			end,
 			daily_notes = {
