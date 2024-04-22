@@ -23,6 +23,21 @@ return {
 	ft = 'markdown',
 	enabled = true,
 	keys = {
+		{
+			'<leader>or',
+			function()
+				vim.ui.input({ prompt = 'Enter Note Title: ' }, function(note_title)
+					if note_title == nil or note_title == '' then
+						return
+					end
+
+					local note_id = note_id_func(note_title)
+
+					vim.cmd('ObsidianRename ' .. note_id .. ' --dry-run')
+				end)
+			end,
+			desc = '[O]sidian [R]ename',
+		},
 		{ '<leader>ob', '<cmd>ObsidianBacklinks<cr>', desc = '[O]bisidan [B]acklinks' },
 		{ '<leader>od', '<cmd>ObsidianDailies<cr>', desc = '[O]sidian [D]ailies' },
 		{ '<leader>oe', ':ObsidianExtractNote ', desc = '[O]sidian [E]xtract Note', mode = { 'v' } },
