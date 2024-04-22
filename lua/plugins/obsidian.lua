@@ -24,12 +24,13 @@ return {
 	enabled = true,
 	keys = {
 		{ '<leader>ob', '<cmd>ObsidianBacklinks<cr>', desc = '[O]bisidan [B]acklinks' },
-		{ '<leader>od', '<cmd>ObsidianDailies<cr>', '[O]sidian [D]ailies' },
+		{ '<leader>od', '<cmd>ObsidianDailies<cr>', desc = '[O]sidian [D]ailies' },
 		{ '<leader>ol', '<cmd>ObsidianLinks<cr>', '[O]sidian [L]inks' },
+		{ '<leader>ol', '<cmd>ObsidianLinks<cr>', desc = '[O]sidian [L]inks' },
 		{ '<leader>oo', '<cmd>ObsidianOpen<cr>', desc = '[O]pen in [O]bsidian' },
 		{ '<leader>oq', '<cmd>ObsidianQuickSwitch<cr>', '[O]sidian [Q]uick Swith' },
-		{ '<leader>os', '<cmd>ObsidianSearch<cr>', '[O]sidian [S]earch' },
-		{ '<leader>ot', '<cmd>ObsidianTags<cr>', '[O]sidian [T]ags' },
+		{ '<leader>os', '<cmd>ObsidianSearch<cr>', desc = '[O]sidian [S]earch' },
+		{ '<leader>ot', '<cmd>ObsidianTags<cr>', desc = '[O]sidian [T]ags' },
 	},
 	config = function()
 		---@diagnostic disable: missing-fields
