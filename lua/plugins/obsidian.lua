@@ -85,6 +85,7 @@ return {
 				local out = {
 					aliases = note.aliases,
 					created_at = current_date,
+					id = note.id,
 					tags = note.tags,
 					updated_at = current_date,
 				}
