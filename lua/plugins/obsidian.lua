@@ -51,11 +51,8 @@ return {
 	config = function()
 		---@diagnostic disable: missing-fields
 		require('obsidian').setup({
-			workspaces = {
-				{
-					name = 'second-brain.md',
-					path = '~/Documents/second-brain.md',
-				},
+			attachments = {
+				img_folder = '999-assets',
 			},
 			completion = {
 				min_chars = 2,
