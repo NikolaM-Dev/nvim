@@ -74,27 +74,7 @@ return {
 					opts = { buffer = true, desc = 'Toggle [C][H]eck boxes' },
 				},
 			},
-			ui = {
-				bullets = { char = '•', hl_group = 'ObsidianBullet' },
-				checkboxes = {},
-				enable = true,
-				external_link_icon = { char = '', hl_group = 'ObsidianExtLinkIcon' },
-				highlight_text = { hl_group = 'ObsidianHighlightText' },
-				reference_text = { hl_group = 'ObsidianRefText' },
-				tags = { hl_group = 'ObsidianTag' },
-				update_debounce = 284,
-				hl_groups = {
-					ObsidianBullet = { bold = true, fg = '#89ddff' },
-					ObsidianDone = { bold = true, fg = '#89ddff' },
-					ObsidianExtLinkIcon = { fg = '#c792ea' },
-					ObsidianHighlightText = { bg = '#75662e' },
-					ObsidianRefText = { underline = true, fg = '#c792ea' },
-					ObsidianRightArrow = { bold = true, fg = '#f78c6c' },
-					ObsidianTag = { italic = true, fg = '#89ddff' },
-					ObsidianTilde = { bold = true, fg = '#ff5370' },
-					ObsidianTodo = { bold = true, fg = '#f78c6c' },
-				},
-			},
+			new_notes_location = 'current_dir',
 			note_frontmatter_func = function(note)
 				if note.title then
 					note:add_alias(note.title)
