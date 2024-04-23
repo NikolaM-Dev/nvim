@@ -57,8 +57,11 @@ return {
 			completion = {
 				min_chars = 2,
 			},
-			attachments = {
-				img_folder = '900-assets',
+			daily_notes = {
+				alias_format = '%A, %d %B %Y',
+				date_format = '%Y-%m-%d',
+				folder = 'calendar/0-daily',
+				template = nil,
 			},
 			mappings = {
 				['<leader>ch'] = {
