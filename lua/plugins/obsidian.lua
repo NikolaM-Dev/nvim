@@ -82,7 +82,7 @@ return {
 
 				local current_date = os.date('%Y-%m-%d, %I:%M %p')
 
-				local out = {
+				local frontmatter = {
 					aliases = note.aliases,
 					created_at = current_date,
 					id = note.id,
@@ -92,11 +92,11 @@ return {
 
 				if note.metadata ~= nil and not vim.tbl_isempty(note.metadata) then
 					for k, v in pairs(note.metadata) do
-						out[k] = v
+						frontmatter[k] = v
 					end
 				end
 
-				out.updated_at = current_date
+				frontmatter.updated_at = current_date
 
 				return out
 			end,
