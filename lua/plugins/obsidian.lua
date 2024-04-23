@@ -81,6 +81,7 @@ return {
 				end
 
 				local current_date = os.date('%Y-%m-%d, %I:%M %p')
+
 				local out = {
 					aliases = note.aliases,
 					created_at = current_date,
