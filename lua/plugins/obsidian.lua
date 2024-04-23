@@ -63,6 +63,9 @@ return {
 				folder = 'calendar/0-daily',
 				template = nil,
 			},
+			follow_url_func = function(url)
+				vim.fn.jobstart({ 'brave', url })
+			end,
 			mappings = {
 				['<leader>ch'] = {
 					action = function()
