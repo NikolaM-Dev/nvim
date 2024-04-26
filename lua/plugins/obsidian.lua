@@ -102,7 +102,7 @@ return {
 				return frontmatter
 			end,
 			note_id_func = note_id_func,
-				return title
+			notes_subdir = 'z',
 			end,
 			daily_notes = {
 				folder = '000-calendar/00-dailies',
