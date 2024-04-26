@@ -103,9 +103,9 @@ return {
 			end,
 			note_id_func = note_id_func,
 			notes_subdir = 'z',
-			end,
-			daily_notes = {
-				folder = '000-calendar/00-dailies',
+			templates = {
+				subdir = '900-templates',
+			},
 			ui = {
 				bullets = { char = '•', hl_group = 'ObsidianBullet' },
 				checkboxes = {},
