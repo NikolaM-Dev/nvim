@@ -109,6 +109,7 @@ return {
 				date_format = '%Y-%m-%d',
 				alias_format = '%A, %d %B %Y',
 				template = nil,
+			wiki_link_func = 'prepend_note_id',
 			},
 			follow_url_func = function(url)
 				vim.fn.jobstart({ 'brave', url })
