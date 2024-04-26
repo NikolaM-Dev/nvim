@@ -110,10 +110,9 @@ return {
 				alias_format = '%A, %d %B %Y',
 				template = nil,
 			wiki_link_func = 'prepend_note_id',
+			workspaces = {
+				{ name = 'second-brain.md', path = '~/Documents/second-brain.md' },
 			},
-			follow_url_func = function(url)
-				vim.fn.jobstart({ 'brave', url })
-			end,
 		})
 	end,
 }
