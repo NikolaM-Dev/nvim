@@ -17,6 +17,7 @@ return {
 				mason = true,
 				mini = true,
 				notify = true,
+				treesitter_context = false,
 			},
 			styles = { functions = { 'bold' } },
 			custom_highlights = function(colors)
