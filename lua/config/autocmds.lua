@@ -1,16 +1,5 @@
 local autocmd = vim.api.nvim_create_autocmd
 
--- disable default syntax in these file.
--- when file is larged ,load regex syntax
--- highlight will cause very slow
-autocmd({ 'Filetype' }, {
-	group = _G.augroup('disable_default_sintax'),
-	pattern = '*.c,*.cpp,*.lua,*.go,*.rs,*.py,*.ts,*.tsx',
-	callback = function()
-		vim.api.nvim_command('syntax off')
-	end,
-})
-
 autocmd({ 'BufEnter' }, {
 	desc = 'Disables autocommenting on new lines',
 	group = _G.augroup('disable_autocommenting'),
