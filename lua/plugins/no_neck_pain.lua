@@ -3,7 +3,7 @@ local is_markdown_ft = require('utils').is_markdown_ft
 ---@type boolean
 local is_active = false
 
-local function on_enable_zen_mode()
+local function on_enable_zen_mode_in_alacritty()
 	if not vim.fn.executable('alacritty') then
 		return
 	end
@@ -15,7 +15,7 @@ local function on_enable_zen_mode()
 	vim.cmd('redraw')
 end
 
-local function on_disable_zen_mode()
+local function on_disable_zen_mode_in_alacritty()
 	if not vim.fn.executable('alacritty') then
 		return
 	end
@@ -24,6 +24,30 @@ local function on_disable_zen_mode()
 	local win_id = vim.fn.expand('$ALACRITTY_WINDOW_ID')
 
 	vim.fn.system(cmd:format(win_id))
+	vim.cmd('redraw')
+end
+
+local function on_enable_zen_mode_in_wezterm()
+	if not vim.fn.executable('wezterm') then
+		return
+	end
+
+	local cmd =
+		'sed -i \'s/config.font_size = 12/config.font_size = 13/g\' ~/dotfiles/wezterm/.config/wezterm/wezterm.lua'
+
+	vim.fn.system(cmd)
+	vim.cmd('redraw')
+end
+
+local function on_disable_zen_mode_in_wezterm()
+	if not vim.fn.executable('wezterm') then
+		return
+	end
+
+	local cmd =
+		'sed -i \'s/config.font_size = 13/config.font_size = 12/g\' ~/dotfiles/wezterm/.config/wezterm/wezterm.lua'
+
+	vim.fn.system(cmd)
 	vim.cmd('redraw')
 end
 
@@ -37,9 +61,9 @@ local function toggle_zen_mode()
 	local is_available_to_zen_mode_features = is_markdown_ft() or is_second_brain_md_path
 
 	if is_active and is_available_to_zen_mode_features then
-		on_enable_zen_mode()
+		on_enable_zen_mode_in_wezterm()
 	else
-		on_disable_zen_mode()
+		on_disable_zen_mode_in_wezterm()
 	end
 end
 
