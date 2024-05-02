@@ -20,24 +20,6 @@ return {
 				---@diagnostic disable-next-line: missing-fields
 				performance = { debounce = 20, fetching_timeout = 284, throttle = 20 },
 				mapping = cmp.mapping.preset.insert({
-					['<Tab>'] = cmp.mapping(function(fallback)
-						if cmp.visible() then
-							cmp.select_next_item()
-						elseif luasnip.expand_or_jumpable() then
-							luasnip.expand_or_jump()
-						else
-							fallback()
-						end
-					end, { 'i', 's' }),
-					['<S-Tab>'] = cmp.mapping(function(fallback)
-						if cmp.visible() then
-							cmp.select_prev_item()
-						elseif luasnip.jumpable(-1) then
-							luasnip.jump(-1)
-						else
-							fallback()
-						end
-					end, { 'i', 's' }),
 					['<C-c>'] = cmp.mapping.abort(),
 					['<C-d>'] = cmp.mapping.scroll_docs(4),
 					['<CR>'] = { i = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }) },
