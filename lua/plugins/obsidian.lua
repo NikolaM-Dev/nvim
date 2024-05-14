@@ -21,6 +21,7 @@ return {
 	'epwalsh/obsidian.nvim',
 	version = '*',
 	ft = 'markdown',
+	cmd = { 'ObsidianQuickSwitch' },
 	enabled = true,
 	keys = {
 		{
