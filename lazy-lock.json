@@ -65,7 +65,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "4e9e842aa4df67051ce88963b0745679dbaeadb5"
+    "commit": "030428ba43671cf951712de41be6d3bfb84117c3"
   },
   "gitsigns.nvim": {
     "branch": "main",
@@ -89,7 +89,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "758bb5de98b805acc5eeed8cdc8ac7f0bc4b0b86"
+    "commit": "e44636a43376e8a1e851958f7e9cbe996751d59f"
   },
   "lualine.nvim": {
     "branch": "master",
@@ -101,7 +101,7 @@
   },
   "mason.nvim": {
     "branch": "main",
-    "commit": "1b3d60405d1d720b2c4927f19672e9479703b00f"
+    "commit": "49ff59aded1047a773670651cfa40e76e63c6377"
   },
   "middleclass": {
     "branch": "master",
@@ -141,7 +141,7 @@
   },
   "none-ls.nvim": {
     "branch": "main",
-    "commit": "f5632db2491fbe02b54f1a321a98548a8ba2bd15"
+    "commit": "10c976d633862b9fe16171f5f5f17732bc54e19f"
   },
   "nvim": {
     "branch": "main",
@@ -161,7 +161,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "94513a5b246cf32a8f87ca714af50911df63351c"
+    "commit": "a27179f56c6f98a4cdcc79ee2971b514815a4940"
   },
   "nvim-notify": {
     "branch": "master",
@@ -173,11 +173,11 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "0d2c80b4d00c8f793e17d2d1d24d4aa5aaa88bc2"
+    "commit": "c26cfc75bc77b3538f4f288b013bc927a371bf2e"
   },
   "nvim-treesitter-context": {
     "branch": "master",
-    "commit": "1e52a2c4223c1e7b0def9c76a1f3757d372196c3"
+    "commit": "df58c81237ffe2b277e14a1692212162a34e2e2a"
   },
   "nvim-ts-autotag": {
     "branch": "main",
@@ -193,7 +193,7 @@
   },
   "nvim-web-devicons": {
     "branch": "master",
-    "commit": "5b9067899ee6a2538891573500e8fd6ff008440f"
+    "commit": "e37bb1feee9e7320c76050a55443fa843b4b6f83"
   },
   "obsidian.nvim": {
     "branch": "main",
@@ -201,7 +201,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "010b44a79d497c697686e2727049d3dd215bbbd6"
+    "commit": "3283deec96314326faed1d3a94ce142ae9773d8b"
   },
   "pantran.nvim": {
     "branch": "main",
