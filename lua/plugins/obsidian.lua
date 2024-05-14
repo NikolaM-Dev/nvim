@@ -122,9 +122,9 @@ return {
 				hl_groups = {
 					ObsidianBullet = { bold = true, fg = '#89ddff' },
 					ObsidianDone = { bold = true, fg = '#89ddff' },
-					ObsidianExtLinkIcon = { fg = '#c792ea' },
+					ObsidianExtLinkIcon = { bold = true, fg = '#c792ea' },
 					ObsidianHighlightText = { bg = '#75662e' },
-					ObsidianRefText = { underline = true, fg = '#c792ea' },
+					ObsidianRefText = { bold = true, fg = '#c792ea', underline = true },
 					ObsidianRightArrow = { bold = true, fg = '#f78c6c' },
 					ObsidianTag = { italic = true, fg = '#89ddff' },
 					ObsidianTilde = { bold = true, fg = '#ff5370' },
