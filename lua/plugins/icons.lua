@@ -553,7 +553,7 @@ return {
 				},
 				['astro'] = {
 					color = '#ff6d00',
-					icon = '',
+					icon = '',
 					name = 'Astro',
 				},
 				['svelte'] = {
