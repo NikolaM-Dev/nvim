@@ -31,6 +31,7 @@ return {
 				TODO = { icon = ' ' },
 				WARN = { icon = ' ' },
 			},
+			signs = false,
 		})
 	end,
 }
