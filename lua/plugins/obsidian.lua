@@ -21,6 +21,7 @@ return {
 	'epwalsh/obsidian.nvim',
 	version = '*',
 	ft = 'markdown',
+	commit = '7b59d907a3ee6952c58e07139cf021a205692338', -- TODO: Remove after new release
 	cmd = { 'ObsidianQuickSwitch' },
 	enabled = true,
 	keys = {
