@@ -3,8 +3,7 @@ return {
 	dependencies = 'nvim-treesitter/nvim-treesitter',
 	event = { 'BufAdd', 'BufNewFile', 'BufReadPre' },
 	config = function()
-		require('nvim-ts-autotag').setup({
-			enable = true,
-		})
+		---@diagnostic disable-next-line: missing-fields
+		require('nvim-ts-autotag').setup({})
 	end,
 }
