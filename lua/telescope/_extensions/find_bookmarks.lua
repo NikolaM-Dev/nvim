@@ -108,6 +108,7 @@ local function get_find_bookmarks()
 		random_wheel = 'https://es.piliapp.com/random/wheel/',
 		reddit = 'https://www.reddit.com/r/neovim',
 		refold = 'https://academy.refold.la/library',
+		sesh = 'https://github.com/joshmedeski/sesh',
 		status_codes = 'https://developer.mozilla.org/es/docs/Web/HTTP/Status#errores_de_cliente',
 		telescope = 'https://github.com/nvim-telescope/telescope.nvim/blob/master/doc/telescope.txt',
 		tokyonight = 'https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors.lua',
