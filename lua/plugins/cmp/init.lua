@@ -80,26 +80,7 @@ return {
 			local cmp = require('cmp')
 
 			cmp.setup.cmdline({ '/', '?' }, {
-				mapping = cmp.mapping.preset.cmdline({
-					['<Up>'] = {
-						c = function()
-							if cmp.visible() then
-								cmp.select_prev_item()
-							else
-								cmp.complete()
-							end
-						end,
-					},
-					['<Down>'] = {
-						c = function(fallback)
-							if cmp.visible() then
-								cmp.select_next_item()
-							else
-								fallback()
-							end
-						end,
-					},
-				}),
+				mapping = cmp.mapping.preset.cmdline(),
 				sources = {
 					{ name = 'buffer', max_item_count = 10, option = { indexing_interval = 284 } },
 					{ name = 'rg', max_item_count = 10, option = { debounce = 42 } },
@@ -109,25 +90,6 @@ return {
 			cmp.setup.cmdline(':', {
 				mapping = cmp.mapping.preset.cmdline({
 					['<CR>'] = { c = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }) },
-
-					['<Up>'] = {
-						c = function()
-							if cmp.visible() then
-								cmp.select_prev_item()
-							else
-								cmp.complete()
-							end
-						end,
-					},
-					['<Down>'] = {
-						c = function(fallback)
-							if cmp.visible() then
-								cmp.select_next_item()
-							else
-								fallback()
-							end
-						end,
-					},
 				}),
 				sources = cmp.config.sources({
 					{ name = 'path' },
