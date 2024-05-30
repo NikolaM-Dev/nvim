@@ -1,7 +1,13 @@
 return {
 	{
 		'hrsh7th/nvim-cmp',
-		dependencies = 'nvim-treesitter/nvim-treesitter',
+		dependencies = {
+			{
+				'nvim-treesitter/nvim-treesitter',
+				'jackieaskins/cmp-emmet',
+				build = 'npm run release',
+			},
+		},
 		config = function()
 			local cmp = require('cmp')
 			local luasnip = require('luasnip')
@@ -137,7 +143,6 @@ return {
 	{ 'hrsh7th/cmp-nvim-lsp-signature-help', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'hrsh7th/cmp-nvim-lua', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp', ft = 'lua' },
 	{ 'hrsh7th/cmp-path', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
-	{ 'jackieaskins/cmp-emmet', build = 'npm run release', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'lukas-reineke/cmp-rg', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'saadparwaiz1/cmp_luasnip', event = 'InsertEnter', dependencies = { 'hrsh7th/nvim-cmp', 'L3MON4D3/LuaSnip' } },
 	{
