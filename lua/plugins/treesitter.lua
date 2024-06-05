@@ -13,8 +13,13 @@ return {
 		require('nvim-treesitter.configs').setup({
 			highlight = {
 				enable = true,
-				-- Disable slow treesitter highlight for large files
+				-- Disable slow treesitter highlight for large files except markdown
 				disable = function(_, buf)
+					local is_markdown_ft = vim.bo.filetype == 'markdown'
+
+					if not is_markdown_ft then
+						return false
+					end
 					local max_filesize = 100 * 1024 -- 100 KB
 					local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
 					if ok and stats and stats.size > max_filesize then
