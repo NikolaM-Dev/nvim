@@ -143,3 +143,10 @@ map('n', '<leader><leader>;', function()
 end, { desc = 'Go to window 4' })
 
 map('n', '<leader><leader>', '<cmd>luafile %<cr>', { desc = 'Reload Lua File' })
+
+map(
+	'n',
+	'<leader>rf',
+	'<cmd>e<cr>',
+	{ desc = '[R]eloads the [F]ile from disk, but will prompt you if there are unsaved changes' }
+)
