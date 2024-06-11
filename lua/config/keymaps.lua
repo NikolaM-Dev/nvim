@@ -1,14 +1,15 @@
--- TODO: Move this to utils & and docs
+---Adds a new |mapping|. By default with silent mode active
+---@param mode string|string[] Mode short-name, see |nvim_set_keymap()|.
+---							   Can also be list of modes to create mapping on multiple modes.
+---@param lhs string           Left-hand side |{lhs}| of the mapping.
+---@param rhs string|function  Right-hand side |{rhs}| of the mapping, can be a Lua function.
+---
+---@param opts? vim.keymap.set.Opts
 local function map(mode, lhs, rhs, opts)
-	local keys = require('lazy.core.handler').handlers.keys
+	opts = opts or {}
+	opts.silent = opts.silent ~= false
 
-	---@cast keys LazyKeysHandler
-	-- do not create the keymap if a lazy keys handler exists
-	if not keys.active[keys.parse({ lhs, mode = mode }).id] then
-		opts = opts or {}
-		opts.silent = opts.silent ~= false
-		vim.keymap.set(mode, lhs, rhs, opts)
-	end
+	return vim.keymap.set(mode, lhs, rhs, opts)
 end
 
 -- Better up/down
