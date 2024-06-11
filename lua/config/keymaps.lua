@@ -126,17 +126,17 @@ map('n', '<leader><leader>l', function()
 end, { desc = 'Change to vertial split' })
 
 -- Rename all occurrences in the file
-vim.keymap.set(
+map(
 	'n',
 	'<leader><leader>s',
 	':%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>',
-	{ desc = 'Rename all occurrences in the file' }
+	{ desc = 'Rename all occurrences in the file', silent = false }
 )
-vim.keymap.set(
+map(
 	'v',
 	'<leader><leader>s',
 	':s///gI<Left><Left><Left><Left>',
-	{ desc = 'Rename all occurrences in the file (v)' }
+	{ desc = 'Rename all occurrences in the file (v)', silent = false }
 )
 
 map('n', '<leader><leader>;', function()
