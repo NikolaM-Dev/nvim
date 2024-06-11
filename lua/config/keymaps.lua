@@ -148,5 +148,6 @@ map(
 	'n',
 	'<leader>rf',
 	'<cmd>e<cr>',
-	{ desc = '[R]eloads the [F]ile from disk, but will prompt you if there are unsaved changes' }
+	{ desc = '[R]eloads the [F]ile from disk, but will fail if there are unsaved changes' }
+)
 )
