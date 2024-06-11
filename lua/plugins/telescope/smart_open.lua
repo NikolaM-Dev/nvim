@@ -7,7 +7,7 @@ return {
 			function()
 				require('telescope').extensions.smart_open.smart_open({
 					cwd_only = true,
-					match_algorithm = 'fzf',
+					match_algorithm = 'fzy',
 					open_buffer_indicators = { others = ' ', previous = ' ' },
 					ignore_patterns = {
 						'*~',
