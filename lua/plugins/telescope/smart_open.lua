@@ -1,7 +1,8 @@
 return {
 	'danielfalk/smart-open.nvim',
-	branch = '0.2.x',
 	enabled = true,
+
+	branch = '0.2.x',
 	keys = {
 		{
 			'<leader>ff',
