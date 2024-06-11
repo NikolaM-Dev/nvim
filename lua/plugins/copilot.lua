@@ -5,9 +5,11 @@ return {
 	cmd = 'Copilot',
 	event = 'InsertEnter',
 	config = function()
+		local disabled = { enabled = false }
+
 		require('copilot').setup({
-			suggestion = { enabled = false },
-			panel = { enabled = false },
+			panel = disabled,
+			suggestion = disabled,
 		})
 	end,
 }
