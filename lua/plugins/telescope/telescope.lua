@@ -6,6 +6,8 @@ return {
 	tag = '0.1.6',
 	dependencies = {
 		{ 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+		{ 'natecraddock/telescope-zf-native.nvim' },
+		{ 'nvim-telescope/telescope-fzy-native.nvim' },
 	},
 	keys = {
 		{
