@@ -87,6 +87,14 @@ return {
 			},
 			extensions = {
 				fzf = { case_mode = 'ignore_case' },
+				---@type FrecencyConfig
+				frecency = {
+					ignore_patterns = { '*.git/*', '*/tmp/*', 'term://*' },
+					matcher = 'fuzzy',
+					path_display = { 'shorten' },
+					show_scores = false,
+					workspace_scan_cmd = 'rg -.g \'!.git\' --files',
+				},
 			},
 		})
 
