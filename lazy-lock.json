@@ -231,10 +231,6 @@
     "branch": "main",
     "commit": "ef3bd1a6b6f722857f2f88d929dd4ac875655611"
   },
-  "telekasten.nvim": {
-    "branch": "main",
-    "commit": "319276a7853ff996b7bb1ed4250d8047c84ad29d"
-  },
   "telescope-fzy-native.nvim": {
     "branch": "master",
     "commit": "282f069504515eec762ab6d6c89903377252bf5b"
