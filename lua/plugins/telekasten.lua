@@ -1,5 +1,7 @@
 return {
 	'renerocksai/telekasten.nvim',
+	enabled = false,
+
 	keys = {
 		{ '<leader>fo', '<cmd>Telekasten panel<cr>', desc = 'uwu' },
 	},
