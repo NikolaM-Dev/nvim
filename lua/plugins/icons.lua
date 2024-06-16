@@ -90,6 +90,11 @@ return {
 					icon = '󰎙',
 					name = 'Nvmrc',
 				},
+				['.node-version'] = {
+					color = '#8bc34a',
+					icon = '󰎙',
+					name = 'NodeVersion',
+				},
 				['.prettierrc'] = {
 					color = '#65babb',
 					icon = '',
