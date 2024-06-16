@@ -57,7 +57,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "6de0a7ddc11dd9d4a2261e9642a99f3901e0ae27"
+    "commit": "b8c01af0fc5c8bbe674b7057ca2bf2caa0a2d2c4"
   },
   "gitsigns.nvim": {
     "branch": "main",
@@ -81,7 +81,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "4c6479e98ad643cd584e9e7c4095c463e0d810eb"
+    "commit": "38d6b74b63dc410ac5d7f4bb4c62dfeec74e366a"
   },
   "lualine.nvim": {
     "branch": "master",
@@ -173,7 +173,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "9916da1bfd99d6fb18ac6ef4ca6a79d00fcf6fcc"
+    "commit": "71a8e8b4b6ebab39765615334d4241a18090a651"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -201,7 +201,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "b77ed915ab1e53720a6283702816cea2695a2638"
+    "commit": "64a3a555b40d96faae488ed6cf5d0f8b38520891"
   },
   "pantran.nvim": {
     "branch": "main",
@@ -266,10 +266,6 @@
   "undotree": {
     "branch": "master",
     "commit": "56c684a805fe948936cda0d1b19505b84ad7e065"
-  },
-  "vim-flog": {
-    "branch": "master",
-    "commit": "255631abf7ea132393fc7dd745d6911c37ac6a4c"
   },
   "vim-fugitive": {
     "branch": "master",
