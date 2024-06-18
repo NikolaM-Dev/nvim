@@ -1,5 +1,8 @@
 return {
 	'tpope/vim-fugitive',
+	enabled = true,
+
+	cmd = { 'G', 'Git' },
 	keys = {
 		{ '<leader>ga', '<cmd>G add %<cr>', desc = '[G]it [A]dd' },
 		{ '<leader>gal', '<cmd>G add --all<cr>', desc = '[G]it [A]dd A[l]l' },
