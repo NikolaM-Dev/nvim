@@ -1,11 +1,7 @@
 return {
 	'stevearc/dressing.nvim',
 	config = function()
-		require('dressing').setup({
-			input = {
-				insert_only = false,
-			},
-		})
+		require('dressing').setup()
 	end,
 	init = function()
 		---@diagnostic disable-next-line: duplicate-set-field
