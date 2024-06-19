@@ -5,6 +5,10 @@ return {
 	event = 'VeryLazy',
 	dependencies = 'anuvyklack/middleclass',
 	config = function()
-		require('windows').setup()
+		require('windows').setup({
+			ignore = {
+				filetype = { 'no-neck-pain' },
+			},
+		})
 	end,
 }
