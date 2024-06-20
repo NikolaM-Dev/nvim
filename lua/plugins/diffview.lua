@@ -65,6 +65,27 @@ return {
 						{ desc = 'Scroll The View [D]own' },
 					},
 				},
+
+				diff3 = {
+					{
+						{ 'n', 'x' },
+						'1do',
+						actions.diffget('ours'),
+						{ desc = '[1] Obtain the diff hunk from the OURS version of the file' },
+					},
+					{
+						{ 'n', 'x' },
+						'2do',
+						actions.diffget('theirs'),
+						{ desc = '[2] Obtain the diff hunk from the THEIRS version of the file' },
+					},
+					{
+						{ 'n', 'x' },
+						'3do',
+						actions.diffget('base'),
+						{ desc = '[3] Obtain the diff hunk from the BASE version of the file' },
+					},
+				},
 			},
 		})
 	end,
