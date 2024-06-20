@@ -33,13 +33,13 @@ return {
 				file_panel = {
 					{
 						'n',
-						'<c-u>',
+						'u',
 						actions.scroll_view(-0.25),
 						{ desc = 'Scroll The View [U]p' },
 					},
 					{
 						'n',
-						'<c-d>',
+						'd',
 						actions.scroll_view(0.25),
 						{ desc = 'Scroll The View [D]own' },
 					},
