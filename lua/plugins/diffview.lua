@@ -49,6 +49,11 @@ return {
 						false,
 						{ desc = '[Disabled] Flatten empty subdirectories in tree listing style' },
 					},
+					{
+						'n',
+						'i',
+						false,
+						{ desc = '[Disabled] Toggle between \'list\' and \'tree\' views' },
 					},
 				},
 
