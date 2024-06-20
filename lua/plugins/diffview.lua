@@ -47,7 +47,8 @@ return {
 						'n',
 						'f',
 						false,
-						{ desc = 'Disabled' },
+						{ desc = '[Disabled] Flatten empty subdirectories in tree listing style' },
+					},
 					},
 				},
 
