@@ -117,10 +117,6 @@ return {
 
 			if client.name == 'tsserver' then
 				nmap('<leader>am', '<cmd>TypescriptAddMissingImports<cr>', '[A]dd [M]issing Imports')
-				nmap('<leader>gD', '<cmd>TypescriptGoToSourceDefinition<cr>', 'Go to Source Definition')
-				nmap('<leader><leader>fa', '<cmd>TypescriptFixAll<cr>', '[F]ix [A]ll')
-				nmap('<leader>oi', '<cmd>TypescriptOrganizeImports<cr>', '[O]rganize [I]mports')
-				nmap('<leader>rf', '<cmd>TypescriptRenameFile<cr>', '[R]ename [F]ile')
 				nmap('<leader>ru', '<cmd>TypescriptRemoveUnused<cr>', '[R]emove [U]nused')
 			end
 		end
