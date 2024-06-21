@@ -47,6 +47,7 @@ return {
 	event = { 'BufReadPre', 'BufNewFile' },
 	dependencies = {
 		'folke/neodev.nvim',
+		-- WARN: Archived dependency
 		'jose-elias-alvarez/typescript.nvim',
 		'williamboman/mason.nvim',
 	},
