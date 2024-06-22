@@ -41,7 +41,7 @@ return {
 					{ name = 'buffer' },
 					{ name = 'path' },
 					{ name = 'calc' },
-					{ name = 'rg' },
+					{ name = 'rg', max_item_count = 10 },
 				}),
 				---@diagnostic disable-next-line: missing-fields
 				formatting = { format = require('plugins.cmp.formatting').format },
