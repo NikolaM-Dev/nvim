@@ -158,3 +158,5 @@ map(
 	'<cmd>e!<cr>',
 	{ desc = '[R]eloads the [F]ile from disk, but forces the reload, discarding any unsaved changes in the buffer' }
 )
+
+map('i', 'zz', '<esc>zza', { desc = 'Center vertically' })
