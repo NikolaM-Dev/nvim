@@ -64,8 +64,8 @@ autocmd('BufReadPre', {
 	end,
 })
 
--- Focus DiffView file panel when opening a gitcommit
 autocmd('FileType', {
+	desc = 'Focus DiffView file panel when opening a gitcommit',
 	group = _G.augroup('focus_diff_file_panel'),
 	pattern = { 'gitcommit' },
 	callback = function(event)
