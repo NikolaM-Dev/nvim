@@ -160,3 +160,5 @@ map(
 )
 
 map('i', 'zz', '<esc>zza', { desc = 'Center vertically' })
+
+map('n', '<leader>ai', '<cmd>SupermavenToggle<cr>', { desc = 'Toggle Supermaven' })
