@@ -65,8 +65,8 @@ autocmd('BufReadPre', {
 })
 
 -- Focus DiffView file panel when opening a gitcommit
-vim.api.nvim_create_autocmd('FileType', {
-	group = augroup('focus_diff_file_panel'),
+autocmd('FileType', {
+	group = _G.augroup('focus_diff_file_panel'),
 	pattern = { 'gitcommit' },
 	callback = function(event)
 		vim.bo[event.buf].buflisted = false
