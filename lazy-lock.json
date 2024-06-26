@@ -64,12 +64,16 @@
     "commit": "76927d14d3fbd4ba06ccb5246e79d93b5442c188"
   },
   "harpoon": {
-    "branch": "master",
-    "commit": "ccae1b9bec717ae284906b0bf83d720e59d12b91"
+    "branch": "harpoon2",
+    "commit": "0378a6c428a0bed6a2781d459d7943843f374bce"
   },
   "headlines.nvim": {
     "branch": "master",
     "commit": "618ef1b2502c565c82254ef7d5b04402194d9ce3"
+  },
+  "hererocks": {
+    "branch": "master",
+    "commit": "ec640f26e25f4a8e16f236d78bf35ab72b197b29"
   },
   "hop.nvim": {
     "branch": "master",
