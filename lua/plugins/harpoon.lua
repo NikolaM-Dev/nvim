@@ -1,5 +1,8 @@
 return {
 	'ThePrimeagen/harpoon',
+	enabled = true,
+
+	branch = 'harpoon2',
 	keys = function()
 		local keys = {}
 
