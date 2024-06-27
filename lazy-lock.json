@@ -3,6 +3,10 @@
     "branch": "master",
     "commit": "03c8e67eb7293c404845b3982db895d59c0d1538"
   },
+  "browse.nvim": {
+    "branch": "main",
+    "commit": "8292baa12ef4611532526e8a6f7a315848eceb74"
+  },
   "cmp-buffer": {
     "branch": "main",
     "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa"
