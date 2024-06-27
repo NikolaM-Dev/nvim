@@ -99,10 +99,6 @@
     "branch": "main",
     "commit": "0950b15060067f752fde13a779a994f59516ce3d"
   },
-  "md-pdf.nvim": {
-    "branch": "main",
-    "commit": "129428c4dbed9a6499ed3e1208f5b806979aff14"
-  },
   "middleclass": {
     "branch": "master",
     "commit": "9fab4d5bca67262614960960ca35c4740eb2be2c"
