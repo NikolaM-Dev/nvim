@@ -37,8 +37,7 @@ autocmd({ 'FileType' }, {
 	end,
 })
 
--- Check if we need to reload the file when it changed
-	desc = 'Check if we need to reload the file when it changed',
+autocmd({ 'FocusGained', 'FocusLost', 'TermClose', 'TermLeave' }, {
 	command = 'checktime',
 	desc = 'Check if we need to reload the file when it changed',
 	group = _G.augroup('checktime'),
