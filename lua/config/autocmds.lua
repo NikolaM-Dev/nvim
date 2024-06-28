@@ -47,7 +47,10 @@ autocmd({ 'VimResized' }, {
 	desc = 'Resize splits if window got resized',
 	group = _G.augroup('resize_splits'),
 	callback = function()
+		local current_tab = vim.fn.tabpagenr()
+
 		vim.cmd('tabdo wincmd =')
+		vim.cmd('tabnext ' .. current_tab)
 	end,
 })
 
