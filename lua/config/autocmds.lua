@@ -9,8 +9,8 @@ autocmd({ 'BufEnter' }, {
 	end,
 })
 
--- highlight yank
 autocmd('TextYankPost', {
+	desc = 'Highlight yank',
 	group = _G.augroup('highlight_yank'),
 	pattern = '*',
 	callback = function()
@@ -22,13 +22,14 @@ autocmd('TextYankPost', {
 })
 
 autocmd({ 'BufWritePre' }, {
+	command = [[%s/\s\+$//e]],
+	desc = 'Remove trailing whitespace',
 	group = _G.augroup('remove_trailing_whitespace'),
 	pattern = '*',
-	command = [[%s/\s\+$//e]],
 })
 
--- Open in vertical split
 autocmd({ 'FileType' }, {
+	desc = 'Open in right vertical split',
 	group = _G.augroup('open_in_right_vertical_split'),
 	pattern = { 'floggraph', 'gitcommit', 'help', 'man' },
 	callback = function()
@@ -37,18 +38,22 @@ autocmd({ 'FileType' }, {
 })
 
 -- Check if we need to reload the file when it changed
-autocmd({ 'FocusGained', 'TermClose', 'TermLeave' }, { command = 'checktime', group = _G.augroup('checktime') })
+	desc = 'Check if we need to reload the file when it changed',
+	command = 'checktime',
+	desc = 'Check if we need to reload the file when it changed',
+	group = _G.augroup('checktime'),
+})
 
--- Resize splits if window got resized
 autocmd({ 'VimResized' }, {
+	desc = 'Resize splits if window got resized',
 	group = _G.augroup('resize_splits'),
 	callback = function()
 		vim.cmd('tabdo wincmd =')
 	end,
 })
 
--- Go to last loc when opening a buffer
 autocmd('BufReadPre', {
+	desc = 'Go to last loc when opening a buffer',
 	group = _G.augroup('go_last_loc'),
 	pattern = '*',
 	callback = function()
