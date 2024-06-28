@@ -37,7 +37,7 @@ autocmd({ 'FileType' }, {
 	end,
 })
 
-autocmd({ 'FocusGained', 'FocusLost', 'TermClose', 'TermLeave' }, {
+autocmd({ 'FocusGained', 'TermClose', 'TermLeave' }, {
 	command = 'checktime',
 	desc = 'Check if we need to reload the file when it changed',
 	group = _G.augroup('checktime'),
