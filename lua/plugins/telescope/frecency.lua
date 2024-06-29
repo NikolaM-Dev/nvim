@@ -1,3 +1,4 @@
+---@type LazySpec
 return {
 	'nvim-telescope/telescope-frecency.nvim',
 	enabled = false,
