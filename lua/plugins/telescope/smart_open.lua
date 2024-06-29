@@ -1,3 +1,4 @@
+---@type LazySpec
 return {
 	'danielfalk/smart-open.nvim',
 	enabled = true,
