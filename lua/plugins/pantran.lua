@@ -1,5 +1,7 @@
 return {
 	'potamides/pantran.nvim',
+	enabled = false,
+
 	cmd = 'Pantran',
 	keys = {
 		{ '<leader>tl', '<cmd>Pantran<cr>', desc = 'Translator' },
