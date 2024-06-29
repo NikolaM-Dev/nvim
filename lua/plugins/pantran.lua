@@ -1,7 +1,9 @@
 return {
 	'potamides/pantran.nvim',
 	cmd = 'Pantran',
-	keys = { { '<leader>tl', '<cmd>Pantran<cr>', desc = 'Translator' } },
+	keys = {
+		{ '<leader>tl', '<cmd>Pantran<cr>', desc = 'Translator' },
+	},
 	config = function()
 		require('pantran').setup({
 			default_engine = 'google',
