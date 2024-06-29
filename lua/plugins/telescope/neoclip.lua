@@ -1,7 +1,10 @@
 return {
 	'AckslD/nvim-neoclip.lua',
 	enabled = false,
-	keys = { { '<leader>c', '<cmd>Telescope neoclip<cr>', desc = 'Clipboard' } },
+
+	keys = {
+		{ '<leader>c', '<cmd>Telescope neoclip<cr>', desc = 'Clipboard' },
+	},
 	config = function()
 		require('neoclip').setup({
 			continuous_sync = true,
