@@ -1,10 +1,11 @@
+---@type LazySpec
 return {
 	'potamides/pantran.nvim',
 	enabled = false,
 
 	cmd = 'Pantran',
 	keys = {
-		{ '<leader>tl', '<cmd>Pantran<cr>', desc = 'Translator' },
+		{ '<leader>tl', '<cmd>Pantran<cr>', desc = '[T]rans[L]ator' },
 	},
 	config = function()
 		require('pantran').setup({
