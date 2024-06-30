@@ -1,5 +1,8 @@
+---@type LazySpec
 return {
 	'sindrets/diffview.nvim',
+	enabled = true,
+
 	keys = {
 		{ '<leader>gd', '<cmd>DiffviewOpen<cr>', desc = 'Open [G]it [D]iff ' },
 		{ '<leader>gh', '<cmd>DiffviewFileHistory %<cr>', desc = 'File [H]istory' },
