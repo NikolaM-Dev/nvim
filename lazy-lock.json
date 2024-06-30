@@ -65,7 +65,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "797a01aed4e69310cb1339939c16f2e0d4464769"
+    "commit": "8db65704b9491bc9e3015f9568df79f0930c85ca"
   },
   "gitsigns.nvim": {
     "branch": "main",
@@ -79,6 +79,10 @@
     "branch": "master",
     "commit": "618ef1b2502c565c82254ef7d5b04402194d9ce3"
   },
+  "hererocks": {
+    "branch": "master",
+    "commit": "8bd2fcfdd65cfa7535ce39ea372a63b0bdb8e528"
+  },
   "hop.nvim": {
     "branch": "master",
     "commit": "036462a345792279c58f2f6445756efab706f04a"
@@ -89,7 +93,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "5e3c112cb32c9cb6e8622aab4446358e039def7c"
+    "commit": "1fad61712bd3937dda925775a7736b8efbcbf1a7"
   },
   "lualine.nvim": {
     "branch": "master",
@@ -113,7 +117,7 @@
   },
   "mini.cursorword": {
     "branch": "main",
-    "commit": "598f294f027bb2f3c3a49a88c3f7cca8abd77b9e"
+    "commit": "fdf66ba66a33e91206b53068c98a3a559b10de27"
   },
   "mini.indentscope": {
     "branch": "main",
@@ -121,7 +125,7 @@
   },
   "mini.pairs": {
     "branch": "main",
-    "commit": "18a2d9d7106d08d3560d07c03dcbf5680c8675cc"
+    "commit": "ea9c763fccf114dc57efc32131604a8b39b90186"
   },
   "mini.splitjoin": {
     "branch": "main",
@@ -133,7 +137,7 @@
   },
   "mini.trailspace": {
     "branch": "main",
-    "commit": "7bc2876acb1a8e7258664cd050f5c0d7e61254c2"
+    "commit": "ccff5fed5804f0d0b6fa183f8f1b0200ab71bf0c"
   },
   "neodev.nvim": {
     "branch": "main",
@@ -177,7 +181,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "f0e3b5c5fe38d0012c63368db90017fef87c85a2"
+    "commit": "7ff0b8d3d21b15eb7231fcbd2acfded8987f5efd"
   },
   "nvim-treesitter-context": {
     "branch": "master",
