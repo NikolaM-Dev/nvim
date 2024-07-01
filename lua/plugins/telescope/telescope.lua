@@ -90,6 +90,8 @@ return {
 				},
 			},
 			extensions = {
+				fzf = { case_mode = 'ignore_case' },
+
 				---@type FrecencyConfig
 				frecency = {
 					ignore_patterns = { '*.git/*', '*/tmp/*', 'term://*' },
