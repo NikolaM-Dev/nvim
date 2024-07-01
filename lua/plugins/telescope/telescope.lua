@@ -4,7 +4,7 @@ return {
 	enabled = true,
 
 	cmd = 'Telescope',
-	tag = '0.1.6',
+	tag = '0.1.8',
 	dependencies = {
 		{ 'natecraddock/telescope-zf-native.nvim' },
 		{ 'nvim-telescope/telescope-fzy-native.nvim' },
