@@ -65,7 +65,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "8db65704b9491bc9e3015f9568df79f0930c85ca"
+    "commit": "2faffbd1b7c1941b7f1c1b85cdbb1ca49926866f"
   },
   "gitsigns.nvim": {
     "branch": "main",
@@ -93,7 +93,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "1fad61712bd3937dda925775a7736b8efbcbf1a7"
+    "commit": "a9d7ade203b3f3ee3058c082c62afdf8e4bcb416"
   },
   "lualine.nvim": {
     "branch": "master",
@@ -113,31 +113,31 @@
   },
   "mini.comment": {
     "branch": "main",
-    "commit": "b8bd7ea58912bd6fa6cf984f2f702a771ce24c1f"
+    "commit": "080f00bb91fea4bab799820bd2ce835a88d0703a"
   },
   "mini.cursorword": {
     "branch": "main",
-    "commit": "fdf66ba66a33e91206b53068c98a3a559b10de27"
+    "commit": "7a9f1ec73c52124abc39f0309d332ababefc68b2"
   },
   "mini.indentscope": {
     "branch": "main",
-    "commit": "56d42be090e8fcc68eda69cfe55af8c5e562300e"
+    "commit": "1222393d9c5e8d92b913ccab6701a7164b21781c"
   },
   "mini.pairs": {
     "branch": "main",
-    "commit": "ea9c763fccf114dc57efc32131604a8b39b90186"
+    "commit": "927d19cbdd0e752ab1c7eed87072e71d2cd6ff51"
   },
   "mini.splitjoin": {
     "branch": "main",
-    "commit": "6e0c320c2c3a9cc4beb0db9284f3ee5888371f3a"
+    "commit": "3e92f6764e770ba392325cad3a4497adcada695f"
   },
   "mini.surround": {
     "branch": "main",
-    "commit": "af280fc18792b4d142aab4c1638a8949a38ff33a"
+    "commit": "7098744c8d4573a4b32cb172965f6b2ba03465d2"
   },
   "mini.trailspace": {
     "branch": "main",
-    "commit": "ccff5fed5804f0d0b6fa183f8f1b0200ab71bf0c"
+    "commit": "c48d74a3cecf93f5adc6a7518c7ced60e6302895"
   },
   "neodev.nvim": {
     "branch": "main",
@@ -169,7 +169,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "7edfd6692ba17f8d4fe08d84142781898ab0a672"
+    "commit": "53a3c6444ec5006b567071614c83edc8ad651f6d"
   },
   "nvim-notify": {
     "branch": "master",
@@ -181,7 +181,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "7ff0b8d3d21b15eb7231fcbd2acfded8987f5efd"
+    "commit": "ffd7725102f47e7391d7a5e7621d178689602a52"
   },
   "nvim-treesitter-context": {
     "branch": "master",
