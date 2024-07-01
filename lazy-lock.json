@@ -185,7 +185,7 @@
   },
   "nvim-treesitter-context": {
     "branch": "master",
-    "commit": "f2cbd231e296a282aa9aedb2a411539801557307"
+    "commit": "1b9c756c0cad415f0a2661c858448189dd120c15"
   },
   "nvim-ts-autotag": {
     "branch": "main",
@@ -245,7 +245,7 @@
   },
   "telescope.nvim": {
     "branch": "master",
-    "commit": "6312868392331c9c0f22725041f1ec2bef57c751"
+    "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026"
   },
   "template-string.nvim": {
     "branch": "main",
