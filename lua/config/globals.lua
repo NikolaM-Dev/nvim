@@ -6,13 +6,13 @@ vim.g.loaded_perl_provider = 0
 vim.g.loaded_python3_provider = 0
 vim.g.loaded_ruby_provider = 0
 
---- Print a value with vim.inspect
+---Print a value with vim.inspect
 ---@param v any The value to print
 function _G.P(v)
 	print(vim.inspect(v))
 end
 
---- Create an autogroup with nikola prefix
+---Create an autogroup with nikola prefix
 ---@param name string The name of the autogroup
 function _G.augroup(name)
 	return vim.api.nvim_create_augroup('nikola_' .. name, { clear = true })
