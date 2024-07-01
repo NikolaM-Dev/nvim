@@ -3,7 +3,6 @@
 ---							   Can also be list of modes to create mapping on multiple modes.
 ---@param lhs string           Left-hand side |{lhs}| of the mapping.
 ---@param rhs string|function  Right-hand side |{rhs}| of the mapping, can be a Lua function.
----
 ---@param opts? vim.keymap.set.Opts
 local function map(mode, lhs, rhs, opts)
 	opts = opts or {}
