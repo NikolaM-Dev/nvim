@@ -181,11 +181,11 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "e0d6c7643dc953acc2e817d0cebfc2f1f8c008e1"
+    "commit": "6cd4ce6cab184e8787f164a182954534221f2af2"
   },
   "nvim-treesitter-context": {
     "branch": "master",
-    "commit": "8f408ec86aa987d2247530f5693eb58c4559c21c"
+    "commit": "cc908326c93473041d44398d5ebfa2bb4169d649"
   },
   "nvim-ts-autotag": {
     "branch": "main",
@@ -209,7 +209,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "ace46a41a1ea56d544a3775adf30490f2abd9235"
+    "commit": "b15e4c1e647b9ddbb75a31caeb720b3b3ce4db54"
   },
   "persistence.nvim": {
     "branch": "main",
