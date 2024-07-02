@@ -36,6 +36,7 @@ return {
 				'c',
 				'cmake',
 				'cpp',
+				'css',
 				'csv',
 				'diff',
 				'dockerfile',
