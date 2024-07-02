@@ -275,6 +275,10 @@
     "branch": "master",
     "commit": "56c684a805fe948936cda0d1b19505b84ad7e065"
   },
+  "vim-easy-align": {
+    "branch": "master",
+    "commit": "9815a55dbcd817784458df7a18acacc6f82b1241"
+  },
   "vim-fugitive": {
     "branch": "master",
     "commit": "d0c1a437536778bcc8174b7cb2ffdf98f611e6fe"
