@@ -170,6 +170,22 @@ return {
 
 		lspconfig.tailwindcss.setup({
 			on_attach = on_attach,
+			root_dir = function(fname)
+				local util = require('lspconfig.util')
+
+				return util.root_pattern(
+					'postcss.config.cjs',
+					'postcss.config.js',
+					'postcss.config.mjs',
+					'postcss.config.ts',
+					'tailwind.config.cjs',
+					'tailwind.config.js',
+					'tailwind.config.mjs',
+					'tailwind.config.ts'
+				)(fname) and util.find_package_json_ancestor(fname) and util.find_node_modules_ancestor(fname) and util.find_git_ancestor(
+					fname
+				)
+			end,
 		})
 
 		local regular_servers = {
