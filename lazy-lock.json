@@ -97,7 +97,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "d901d2166fef0304e360316e7a04316f11ab62d0"
+    "commit": "e3154ff0b7055f1bcded818d52cb518cac899ee8"
   },
   "lualine.nvim": {
     "branch": "master",
@@ -145,7 +145,7 @@
   },
   "neodev.nvim": {
     "branch": "main",
-    "commit": "02893eeb9d6e8503817bd52385e111cba9a90500"
+    "commit": "46aa467dca16cf3dfe27098042402066d2ae242d"
   },
   "no-neck-pain.nvim": {
     "branch": "main",
@@ -189,7 +189,7 @@
   },
   "nvim-treesitter-context": {
     "branch": "master",
-    "commit": "7f695420543e5f1a1ca55c7f95c73df259491ec0"
+    "commit": "f56a1430f21334868a86eb980b12e0af55690e98"
   },
   "nvim-ts-autotag": {
     "branch": "main",
@@ -217,7 +217,7 @@
   },
   "persistence.nvim": {
     "branch": "main",
-    "commit": "57953891f8183a49bff2da2cc16995969b8eaed4"
+    "commit": "b915cbd3d1aee6f09724cef29a75929293fc0a78"
   },
   "plenary.nvim": {
     "branch": "master",
@@ -261,7 +261,7 @@
   },
   "todo-comments.nvim": {
     "branch": "main",
-    "commit": "01b4599b36ea873305a993c93cb6186cb03a51e7"
+    "commit": "a40fa7e421a0c363f65db204f5f0ac075d3a8967"
   },
   "translate.nvim": {
     "branch": "main",
