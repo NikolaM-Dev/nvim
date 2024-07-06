@@ -170,9 +170,6 @@ return {
 
 		lspconfig.tailwindcss.setup({
 			on_attach = on_attach,
-			handlers = {
-				['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, { silent = true }),
-			},
 		})
 
 		local regular_servers = {
