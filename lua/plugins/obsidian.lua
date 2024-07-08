@@ -105,7 +105,6 @@ return {
 
 				frontmatter.updated_at = current_date
 
-				---@diagnostic disable-next-line: redundant-return-value
 				return frontmatter
 			end,
 			note_id_func = note_id_func,
