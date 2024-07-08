@@ -80,6 +80,8 @@ return {
 				},
 			},
 			new_notes_location = 'current_dir',
+
+			---@param note obsidian.Note
 			note_frontmatter_func = function(note)
 				if note.title then
 					note:add_alias(note.title)
