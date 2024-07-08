@@ -66,7 +66,7 @@ return {
 				alias_format = '%A, %d %B %Y',
 				date_format = '%Y-%m-%d',
 				folder = 'calendar/0-daily',
-				template = 'Daily Review.md',
+				template = 'daily.md',
 			},
 			follow_url_func = function(url)
 				vim.fn.jobstart({ 'brave', url })
