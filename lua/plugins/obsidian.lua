@@ -51,6 +51,7 @@ return {
 		{ '<leader>oq', '<cmd>ObsidianQuickSwitch<cr>', '[O]sidian [Q]uick Swith' },
 		{ '<leader>os', '<cmd>ObsidianSearch<cr>', desc = '[O]sidian [S]earch' },
 		{ '<leader>ot', '<cmd>ObsidianTags<cr>', desc = '[O]sidian [T]ags' },
+		{ '<leader><leader>ot', '<cmd>ObsidianTemplate<cr>', desc = '[O]sidian [T]template' },
 	},
 	config = function()
 		---@diagnostic disable: missing-fields
