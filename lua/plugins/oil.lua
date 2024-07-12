@@ -51,6 +51,18 @@ return {
 				['<C-x>'] = 'actions.select_split',
 				['g?'] = 'actions.show_help',
 				['g.'] = 'actions.toggle_hidden',
+				['gd'] = {
+					desc = 'Toggle [D]etail view',
+					callback = function()
+						local oil = require('oil')
+						local config = require('oil.config')
+						if #config.columns == 1 then
+							oil.set_columns({ 'permissions', 'size', 'mtime', 'icon' })
+						else
+							oil.set_columns({ 'icon' })
+						end
+					end,
+				},
 				['<leader>e'] = 'actions.close',
 				['<leader>r'] = 'actions.refresh',
 				['<C-s>'] = function()
