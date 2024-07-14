@@ -17,6 +17,35 @@ local function note_id_func(title)
 	return tostring(os.date('%Y%m%d%H%M%S')) .. '-' .. suffix
 end
 
+---Get substitutions for templates
+---@return table<string, function>
+local function get_substitutions()
+	local DAY_IN_SECONDS = 86400
+	local WEEK_IN_SECONDS = DAY_IN_SECONDS * 7
+
+	return {
+		yesterday = function()
+			return os.date('%Y-%m-%d', os.time() - DAY_IN_SECONDS)
+		end,
+
+		tomorrow = function()
+			return os.date('%Y-%m-%d', os.time() + DAY_IN_SECONDS)
+		end,
+
+		current_week = function()
+			return os.date('%Y-W%W', os.time() + DAY_IN_SECONDS)
+		end,
+
+		next_week = function()
+			return os.date('%Y-W%W', os.time() + WEEK_IN_SECONDS + DAY_IN_SECONDS)
+		end,
+
+		last_week = function()
+			return os.date('%Y-W%W', os.time() - WEEK_IN_SECONDS + DAY_IN_SECONDS)
+		end,
+	}
+end
+
 ---@type LazySpec
 return {
 	'epwalsh/obsidian.nvim',
@@ -125,15 +154,7 @@ return {
 
 			templates = {
 				subdir = '900-templates',
-				substitutions = {
-					yesterday = function()
-						return os.date('%Y-%m-%d', os.time() - 86400)
-					end,
-
-					tomorrow = function()
-						return os.date('%Y-%m-%d', os.time() + 86400)
-					end,
-				},
+				substitutions = get_substitutions(),
 			},
 			ui = {
 				bullets = { char = '•', hl_group = 'ObsidianBullet' },
