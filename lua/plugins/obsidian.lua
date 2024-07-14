@@ -24,8 +24,12 @@ return {
 
 	version = '*',
 	ft = 'markdown',
-	cmd = { 'ObsidianBacklinks', 'ObsidianLinks', 'ObsidianQuickSwitch' },
-	enabled = true,
+	cmd = {
+		'ObsidianBacklinks',
+		'ObsidianDailies',
+		'ObsidianLinks',
+		'ObsidianQuickSwitch',
+	},
 	keys = {
 		{
 			'<leader>or',
