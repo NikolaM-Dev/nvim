@@ -17,8 +17,11 @@ local function note_id_func(title)
 	return tostring(os.date('%Y%m%d%H%M%S')) .. '-' .. suffix
 end
 
+---@type LazySpec
 return {
 	'epwalsh/obsidian.nvim',
+	enabled = true,
+
 	version = '*',
 	ft = 'markdown',
 	cmd = { 'ObsidianBacklinks', 'ObsidianLinks', 'ObsidianQuickSwitch' },
