@@ -10,6 +10,8 @@
   (list_item
     (task_list_marker_unchecked) @text.todo.unchecked.markdown (#set! conceal "")))
 
+;; comment highlight for completed check-box
+(list_item (task_list_marker_checked)) @comment
 ;; list markers/bullet points
 (
   ([
