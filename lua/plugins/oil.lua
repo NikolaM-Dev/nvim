@@ -63,6 +63,24 @@ return {
 						end
 					end,
 				},
+				['gt'] = {
+					desc = 'Toggle sort strategy',
+					callback = function()
+						local config = require('oil.config')
+
+						if config.view_options.sort[2][1] == 'name' then
+							require('oil').set_sort({
+								{ 'type', 'asc' },
+								{ 'birthtime', 'desc' },
+							})
+						else
+							require('oil').set_sort({
+								{ 'type', 'asc' },
+								{ 'name', 'asc' },
+							})
+						end
+					end,
+				},
 				['<leader>e'] = 'actions.close',
 				['<leader>r'] = 'actions.refresh',
 				['<C-s>'] = function()
