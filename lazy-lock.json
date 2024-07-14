@@ -165,7 +165,7 @@
   },
   "nvim-cmp": {
     "branch": "main",
-    "commit": "a110e12d0b58eefcf5b771f533fc2cf3050680ac"
+    "commit": "7e348da6e5085ac447144a2ef4b637220ba27209"
   },
   "nvim-colorizer.lua": {
     "branch": "master",
@@ -189,11 +189,11 @@
   },
   "nvim-treesitter-context": {
     "branch": "master",
-    "commit": "f56a1430f21334868a86eb980b12e0af55690e98"
+    "commit": "2aba92ceb1479485953007f4d5adf34d0b66917e"
   },
   "nvim-ts-autotag": {
     "branch": "main",
-    "commit": "323a3e16ed603e2e17b26b1c836d1e86c279f726"
+    "commit": "26c365cc7d58d0da17b13e747855d331eb26fcf0"
   },
   "nvim-ts-context-commentstring": {
     "branch": "main",
@@ -274,6 +274,10 @@
   "typescript.nvim": {
     "branch": "main",
     "commit": "4de85ef699d7e6010528dcfbddc2ed4c2c421467"
+  },
+  "typewriter": {
+    "branch": "main",
+    "commit": "9e15168ab6edd852a6fdfcd6458e6d772723d737"
   },
   "undotree": {
     "branch": "master",
