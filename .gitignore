@@ -43,3 +43,4 @@ luac.out
 .vscode
 
 # Nvim
+.supermaven
