@@ -10,6 +10,7 @@ return {
 			function()
 				require('stay-centered').toggle()
 			end,
+			desc = 'Toggle  [S]tay [C]entered',
 		},
 	},
 	config = function()
