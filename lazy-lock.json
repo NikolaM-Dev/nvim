@@ -97,11 +97,11 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "b02c9eae6a250f98908c146d1dc1a891f5019f0a"
+    "commit": "9d445ebbd89401544a538c6af080e4d2785abb49"
   },
   "lualine.nvim": {
     "branch": "master",
-    "commit": "6a40b530539d2209f7dc0492f3681c8c126647ad"
+    "commit": "544dd1583f9bb27b393f598475c89809c4d5e86b"
   },
   "markdown-preview.nvim": {
     "branch": "master",
@@ -153,7 +153,7 @@
   },
   "none-ls.nvim": {
     "branch": "main",
-    "commit": "0d1b3fa2ad0b371b94cb4b9a27ba6e5a1a915c91"
+    "commit": "2870f66b1cb263f6e0bfffdb089739b874343a3a"
   },
   "nvim": {
     "branch": "main",
@@ -165,7 +165,7 @@
   },
   "nvim-cmp": {
     "branch": "main",
-    "commit": "7e348da6e5085ac447144a2ef4b637220ba27209"
+    "commit": "e1757aea6145d14208f3035f6b56c99e36593799"
   },
   "nvim-colorizer.lua": {
     "branch": "master",
@@ -185,7 +185,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "7f4ac678770175cdf0d42c015f4a5b6e18b6cb33"
+    "commit": "a6b2f4ecc8a47011868632142a9b687d7e0f9aaf"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -213,11 +213,11 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "10fbfdd37b6904c0776c5db1a27ab47eecba335e"
+    "commit": "9e5eb2fcd1dfee2ff30c89273ffff179e42034b9"
   },
   "persistence.nvim": {
     "branch": "main",
-    "commit": "1e7d01fc7f465af6c935361918bb5406cec736f9"
+    "commit": "40a137dd9240c9c6760c53df48d2b155f52c252b"
   },
   "plenary.nvim": {
     "branch": "master",
@@ -234,6 +234,10 @@
   "sqlite.lua": {
     "branch": "master",
     "commit": "d0ffd703b56d090d213b497ed4eb840495f14a11"
+  },
+  "stay-centered.nvim": {
+    "branch": "main",
+    "commit": "91113bd82ac34f25c53d53e7c1545cb5c022ade8"
   },
   "supermaven-nvim": {
     "branch": "main",
@@ -261,7 +265,7 @@
   },
   "todo-comments.nvim": {
     "branch": "main",
-    "commit": "d61567557e2ff5c548c74e96b2d9f8d33e5fcb34"
+    "commit": "96fee098a90e7c09c9811aa7df71d773ba8b9b53"
   },
   "translate.nvim": {
     "branch": "main",
