@@ -241,7 +241,7 @@
   },
   "supermaven-nvim": {
     "branch": "main",
-    "commit": "c8c05aff5f6925568a6973b94578c73382c80f0e"
+    "commit": "df3ecf7823a1a28fe47233c5502db513d95d5d6d"
   },
   "telescope-fzy-native.nvim": {
     "branch": "master",
