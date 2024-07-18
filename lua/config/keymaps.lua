@@ -79,7 +79,8 @@ end, { desc = 'Quit' })
 map('i', '<C-q>', '<esc><cmd>wq<cr>', { desc = 'Quit' })
 
 -- Quit all
-map('n', '<leader>q', '<cmd>qall<cr>', { desc = 'Quit all' })
+map('n', '<leader>q', '<cmd>qall<cr>', { desc = '[Q]uit all' })
+map('n', '<leader><leader>q', '<cmd>qall!<cr>', { desc = '[Q]uit all forced' })
 
 -- Quit without save
 map('n', '<leader>z', '<cmd>q!<cr>', { desc = 'Quit without save' })
