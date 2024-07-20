@@ -51,6 +51,10 @@
     "branch": "master",
     "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843"
   },
+  "conform.nvim": {
+    "branch": "master",
+    "commit": "797de8f79055334104cf77893cd93fe3fc2ac154"
+  },
   "core.nvim": {
     "branch": "main",
     "commit": "26ada48758e73ff3763ac134a9a0da320a7762e4"
