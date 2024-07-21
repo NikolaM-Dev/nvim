@@ -79,6 +79,10 @@
     "branch": "main",
     "commit": "76927d14d3fbd4ba06ccb5246e79d93b5442c188"
   },
+  "grug-far.nvim": {
+    "branch": "main",
+    "commit": "8d322481ee2e8ebc192513bdd370615e8884e7b7"
+  },
   "harpoon": {
     "branch": "harpoon2",
     "commit": "0378a6c428a0bed6a2781d459d7943843f374bce"
