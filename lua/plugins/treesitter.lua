@@ -17,7 +17,7 @@ return {
 				disable = function(_, buf)
 					local is_markdown_ft = vim.bo.filetype == 'markdown'
 
-					if not is_markdown_ft then
+					if is_markdown_ft then
 						return false
 					end
 
