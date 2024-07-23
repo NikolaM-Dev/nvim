@@ -1,5 +1,8 @@
+---@type LazySpec
 return {
 	'nvim-treesitter/nvim-treesitter',
+	enabled = true,
+
 	build = ':TSUpdate',
 	event = { 'BufAdd', 'BufNewFile', 'BufReadPre' },
 	keys = {
