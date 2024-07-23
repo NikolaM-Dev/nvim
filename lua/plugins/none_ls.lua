@@ -1,5 +1,8 @@
+---@type LazySpec
 return {
 	'nvimtools/none-ls.nvim',
+	enabled = true,
+
 	event = { 'BufReadPre', 'BufNewFile' },
 	keys = {
 		{ '<leader>cn', '<cmd>NullLsInfo<cr>', desc = '[N]ull-LS Info' },
