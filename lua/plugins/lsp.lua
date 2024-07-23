@@ -9,6 +9,7 @@ local function signs_setup()
 end
 
 local function diagnostics_setup()
+	---@type vim.diagnostic.Opts?
 	local diagnostics = {
 		float = { header = { 'Diagnostics', 'Title' }, border = 'rounded' },
 		severity_sort = true,
