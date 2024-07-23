@@ -46,6 +46,7 @@ return {
 				'git_rebase',
 				'go',
 				'gomod',
+				'gosum',
 				'html',
 				'ini',
 				'javascript',
