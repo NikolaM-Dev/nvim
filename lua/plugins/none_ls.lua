@@ -12,18 +12,9 @@ return {
 		local augroup = _G.augroup('lsp_formatting')
 
 		local d = nls.builtins.diagnostics
-		local f = nls.builtins.formatting
 
-		nls.setup({
-			sources = {
-				d.staticcheck,
-
-				f.gofumpt,
-				f.goimports,
-				f.prettierd.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
-				f.prettier.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
-				f.stylua,
-			},
+		nls.seuup({
+			sources = { d.staticcheck },
 
 			on_attach = function(current_client, bufnr)
 				if current_client.supports_method('textDocument/formatting') then
