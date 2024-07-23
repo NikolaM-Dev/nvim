@@ -11,7 +11,10 @@ end
 local function diagnostics_setup()
 	---@type vim.diagnostic.Opts?
 	local diagnostics = {
-		float = { header = { 'Diagnostics', 'Title' }, border = 'rounded' },
+		float = {
+			border = 'rounded',
+			header = { '🤔 Diagnostics\n', 'Title' },
+		},
 		severity_sort = true,
 		virtual_text = { prefix = '🔥', spacing = 2 },
 	}
