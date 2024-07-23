@@ -13,7 +13,7 @@ return {
 
 		local d = nls.builtins.diagnostics
 
-		nls.seuup({
+		nls.setup({
 			sources = { d.staticcheck },
 
 			on_attach = function(current_client, bufnr)
