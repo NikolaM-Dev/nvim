@@ -25,7 +25,7 @@ return {
 			{ 'vmap', 'gN', '<Plug>(bullets-renumber)' },
 			{ 'nmap', 'gN', '<Plug>(bullets-renumber)' },
 
-			{ 'nmap', '<leader>ch', '<Plug>(bullets-toggle-checkbox)' },
+			{ 'nmap', '<leader>x', '<Plug>(bullets-toggle-checkbox)' },
 
 			{ 'imap', '<C-t>', '<Plug>(bullets-demote)' },
 			{ 'nmap', '>>', '<Plug>(bullets-demote)' },
