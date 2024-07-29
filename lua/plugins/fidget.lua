@@ -4,7 +4,7 @@ return {
 	enabled = true,
 
 	event = 'VeryLazy',
-	tag = 'legacy',
+	version = '*',
 	config = function()
 		require('fidget').setup({
 			sources = { ['null-ls'] = { ignore = true } },
