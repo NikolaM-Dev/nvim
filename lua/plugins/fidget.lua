@@ -10,6 +10,9 @@ return {
 			progress = {
 				display = {
 					done_icon = '󰄳',
+					progress_icon = {
+						pattern = { '', '󰪞', '󰪟', '󰪠', '󰪡', '󰪢', '󰪣', '󰪤', '󰪥' },
+					},
 				},
 			},
 			notification = {
