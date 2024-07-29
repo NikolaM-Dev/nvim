@@ -5,21 +5,23 @@ return {
 
 	event = 'VeryLazy',
 	version = '*',
-	config = function()
-		require('fidget').setup({
-			progress = {
-				display = {
+	opts = {
+		progress = {
+			display = {
+				done_icon = '󰄳',
 					done_icon = '󰄳',
-					progress_icon = {
-						pattern = { '', '󰪞', '󰪟', '󰪠', '󰪡', '󰪢', '󰪣', '󰪤', '󰪥' },
-					},
+				progress_icon = {
+					pattern = { '', '󰪞', '󰪟', '󰪠', '󰪡', '󰪢', '󰪣', '󰪤', '󰪥' },
 				},
 			},
-			notification = {
-				window = {
-					winblend = 0,
-				},
+		},
+		notification = {
+			window = {
+				winblend = 0,
 			},
-		})
+		},
+	},
+	config = function(_, opts)
+		require('fidget').setup(opts)
 	end,
 }
