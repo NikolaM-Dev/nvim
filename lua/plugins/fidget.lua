@@ -7,9 +7,16 @@ return {
 	version = '*',
 	config = function()
 		require('fidget').setup({
-			sources = { ['null-ls'] = { ignore = true } },
-			text = { done = '󰄳', spinner = 'dots' },
-			window = { blend = 0 },
+			progress = {
+				display = {
+					done_icon = '󰄳',
+				},
+			},
+			notification = {
+				window = {
+					winblend = 0,
+				},
+			},
 		})
 	end,
 }
