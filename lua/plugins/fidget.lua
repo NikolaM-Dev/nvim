@@ -1,5 +1,8 @@
+---@type LazySpec
 return {
 	'j-hui/fidget.nvim',
+	enabled = true,
+
 	event = 'VeryLazy',
 	tag = 'legacy',
 	config = function()
