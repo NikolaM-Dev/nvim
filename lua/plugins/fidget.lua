@@ -9,7 +9,7 @@ return {
 		progress = {
 			display = {
 				done_icon = '󰄳',
-					done_icon = '󰄳',
+				done_ttl = 1,
 				progress_icon = {
 					pattern = { '', '󰪞', '󰪟', '󰪠', '󰪡', '󰪢', '󰪣', '󰪤', '󰪥' },
 				},
