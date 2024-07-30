@@ -14,14 +14,18 @@ return {
 			desc = '[B]rowse [B]ookmarks',
 		},
 	},
-	config = function()
-		require('browse').setup({
-			bookmarks = bookmarks,
-			icons = {
-				bookmark_alias = '',
-				bookmarks_prompt = '󰂺 ',
-				grouped_bookmarks = '',
-			},
+
+	opts = {
+		bookmarks = bookmarks,
+		icons = {
+			bookmark_alias = '',
+			bookmarks_prompt = '󰂺 ',
+			grouped_bookmarks = '',
+		},
 		})
+	},
+
+	config = function(_, opts)
+		require('browse').setup(opts)
 	end,
 }
