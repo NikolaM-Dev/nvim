@@ -18,6 +18,13 @@ return {
 		vim.api.nvim_set_hl(0, 'Headline5', { bg = PALETTE.lavender, fg = headline_fg })
 		vim.api.nvim_set_hl(0, 'Headline6', { bg = PALETTE.mauve, fg = headline_fg })
 
+		vim.api.nvim_set_hl(0, '@markup.heading.1.markdown', { fg = PALETTE.red })
+		vim.api.nvim_set_hl(0, '@markup.heading.2.markdown', { fg = PALETTE.peach })
+		vim.api.nvim_set_hl(0, '@markup.heading.3.markdown', { fg = PALETTE.green })
+		vim.api.nvim_set_hl(0, '@markup.heading.4.markdown', { fg = PALETTE.teal })
+		vim.api.nvim_set_hl(0, '@markup.heading.5.markdown', { fg = PALETTE.lavender })
+		vim.api.nvim_set_hl(0, '@markup.heading.6.markdown', { fg = PALETTE.mauve })
+
 		vim.api.nvim_set_hl(0, 'CodeBlock', { bg = PALETTE.crust })
 
 		vim.api.nvim_set_hl(0, 'Dash', { fg = PALETTE.blue })
