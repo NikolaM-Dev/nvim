@@ -1,5 +1,8 @@
+---@type LazySpec
 return {
 	'lukas-reineke/headlines.nvim',
+	enabled = true,
+
 	ft = 'markdown',
 	dependencies = { 'catppuccin/nvim', 'nvim-treesitter/nvim-treesitter' },
 	config = function()
