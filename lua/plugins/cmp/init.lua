@@ -4,7 +4,11 @@ return {
 		'hrsh7th/nvim-cmp',
 		dependencies = {
 			{
-				{ 'jackieaskins/cmp-emmet', build = 'npm run release' },
+				{
+					enabled = false,
+					'jackieaskins/cmp-emmet',
+					build = 'npm run release',
+				},
 				'nvim-treesitter/nvim-treesitter',
 			},
 		},
