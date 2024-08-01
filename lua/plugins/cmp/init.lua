@@ -3,6 +3,7 @@ return {
 	{
 		'hrsh7th/nvim-cmp',
 		dependencies = {
+			---@type LazySpec[]
 			{
 				{
 					enabled = false,
