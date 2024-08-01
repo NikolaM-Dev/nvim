@@ -13,9 +13,10 @@ return {
 			desc = 'Toggle  [S]tay [C]entered',
 		},
 	},
-	config = function()
-		require('stay-centered').setup({
-			enabled = false,
-		})
+	opts = {
+		enabled = true,
+	},
+	config = function(_, opts)
+		require('stay-centered').setup(opts)
 	end,
 }
