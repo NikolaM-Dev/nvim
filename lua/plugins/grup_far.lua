@@ -4,6 +4,18 @@ return {
 	enabled = true,
 
 	cmd = 'GrugFar',
+
+	keys = {
+		{
+			'<leader>sr',
+			function()
+				require('grug-far').grug_far()
+			end,
+			mode = { 'n', 'v' },
+			desc = '[S]earch and [R]eplace',
+		},
+	},
+
 	---@type GrugFarOptionsOverride
 	opts = {
 		-- TODO: Change icons
