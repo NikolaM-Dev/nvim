@@ -1,7 +1,7 @@
 ---@type LazySpec
 return {
 	'lukas-reineke/headlines.nvim',
-	enabled = true,
+	enabled = false,
 
 	ft = 'markdown',
 	dependencies = { 'catppuccin/nvim', 'nvim-treesitter/nvim-treesitter' },
