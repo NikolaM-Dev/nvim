@@ -26,6 +26,23 @@ return {
 			custom_highlights = function(colors)
 				return {
 					PmenuSel = { bg = colors.surface0, fg = '' },
+
+					['@keyword.directive.markdown'] = { fg = colors.sky },
+					['@punctuation.delimiter.yaml'] = { fg = colors.sky },
+
+					['@lsp.type.enumMember.markdown'] = { fg = colors.sky },
+					['@markdown_list_marker'] = { bold = true, fg = colors.sky },
+
+					['@markup.heading.1.markdown'] = { fg = colors.red },
+					['@markup.heading.2.markdown'] = { fg = colors.peach },
+					['@markup.heading.3.markdown'] = { fg = colors.green },
+					['@markup.heading.4.markdown'] = { fg = colors.teal },
+					['@markup.heading.5.markdown'] = { fg = colors.lavender },
+					['@markup.heading.6.markdown'] = { fg = colors.mauve },
+					['@markup.italic'] = { fg = colors.green, italic = true },
+					['@markup.link.label.markdown_inline'] = { bold = true, fg = colors.mauve, underline = true },
+					['@markup.strong'] = { bold = true, fg = colors.mauve },
+					['@markup.raw.block.markdown'] = { bg = colors.crust },
 				}
 			end,
 		})
