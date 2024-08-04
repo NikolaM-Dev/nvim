@@ -159,7 +159,7 @@ return {
 			ui = {
 				bullets = { char = '•', hl_group = 'ObsidianBullet' },
 				checkboxes = {},
-				enable = true,
+				enable = false,
 				external_link_icon = { char = '', hl_group = 'ObsidianExtLinkIcon' },
 				highlight_text = { hl_group = 'ObsidianHighlightText' },
 				reference_text = { hl_group = 'ObsidianRefText' },
