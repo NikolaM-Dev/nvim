@@ -3,8 +3,7 @@ return {
 	'kevinhwang91/nvim-bqf',
 	enabled = true,
 
-	event = 'VeryLazy',
-
+	ft = 'qf',
 	dependencies = {
 		{
 			'junegunn/fzf',
