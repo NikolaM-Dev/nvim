@@ -18,17 +18,17 @@ return {
 		{ '<leader>qj', '<C-w>jj', desc = 'Next Item in [Q]uickfix' },
 	},
 
-	config = function()
-		require('bqf').setup({
-			func_map = {
-				filter = ';c', -- choose
-				filterr = ';r', -- remove
-				fzffilter = ';f', -- find
-				pscrolldown = '<C-d>',
-				pscrollup = '<C-u>',
-				ptoggleitem = '',
-			},
-			preview = { winblend = 0 },
-		})
-	end,
+	---@type BqfConfig
+	opts = {
+		func_map = {
+			filter = ';c', -- choose
+			filterr = ';r', -- remove
+			fzffilter = ';f', -- find
+			pscrolldown = '<C-d>',
+			pscrollup = '<C-u>',
+			ptoggleitem = '',
+		},
+
+		preview = { winblend = 0 },
+	},
 }
