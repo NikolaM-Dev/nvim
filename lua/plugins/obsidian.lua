@@ -87,6 +87,25 @@ return {
 		{ '<leader>oq', '<cmd>ObsidianQuickSwitch<cr>', '[O]sidian [Q]uick Swith' },
 		{ '<leader>os', '<cmd>ObsidianSearch<cr>', desc = '[O]sidian [S]earch' },
 		{ '<leader>ot', '<cmd>ObsidianTags<cr>', desc = '[O]sidian [T]ags' },
+		{
+			'<leader>pi',
+			function()
+				vim.ui.input({ prompt = 'Enter Image Name: ' }, function(image_name)
+					if image_name == nil or image_name == '' then
+						vim.notify('Image name cannot be empty', vim.log.levels.ERROR)
+
+						return
+					end
+
+					local sufix = tostring(os.date('%Y%m%d%H%M%S'))
+						.. '-'
+						.. image_name:gsub(' ', '-'):gsub('[^A-Za-z0-9-]', ''):lower()
+
+					vim.cmd('ObsidianPasteImg ' .. sufix)
+				end)
+			end,
+			desc = 'obsidian [P]aste [I]mage',
+		},
 		{ '<leader><leader>ot', '<cmd>ObsidianTemplate<cr>', desc = '[O]sidian [T]template' },
 	},
 	config = function()
