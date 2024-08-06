@@ -165,12 +165,6 @@ return {
 			note_id_func = note_id_func,
 			notes_subdir = 'z',
 
-			-- Optional, customize the default name or prefix when pasting images via `:ObsidianPasteImg`.
-			---@return string
-			image_name_func = function()
-				return string.format('%s-', tostring(os.date('%Y%m%d%H%M%S')))
-			end,
-
 			templates = {
 				subdir = '900-templates',
 				substitutions = get_substitutions(),
