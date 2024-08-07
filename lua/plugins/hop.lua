@@ -16,10 +16,7 @@ return {
 			desc = 'Jump to camel case',
 			mode = { 'n', 'v' },
 		},
+	opts = {
+		keys = 'asdghklqwertyuiopzxcvbnmfj',
 	},
-	config = function()
-		require('hop').setup({
-			keys = 'asdghklqwertyuiopzxcvbnmfj',
-		})
-	end,
 }
