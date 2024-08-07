@@ -13,7 +13,7 @@ return {
 		{
 			'F',
 			'<cmd>HopCamelCase<cr>',
-			desc = 'Jump to word',
+			desc = 'Jump to camel case',
 			mode = { 'n', 'v' },
 		},
 	},
