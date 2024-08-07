@@ -1,6 +1,8 @@
+---@type LazySpec
 return {
 	'smoka7/hop.nvim',
-	event = 'BufRead',
+	enabled = true,
+
 	keys = {
 		{
 			'f',
