@@ -14,9 +14,6 @@ return {
 		},
 	},
 	opts = {
-		enabled = true,
+		enabled = false,
 	},
-	config = function(_, opts)
-		require('stay-centered').setup(opts)
-	end,
 }
