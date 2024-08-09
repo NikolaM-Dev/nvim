@@ -56,5 +56,9 @@
   "build change plugins versions": {
     "prefix": "bcpv",
     "body": "build(lazy): Change plugins version"
+  },
+  "bullet list item": {
+    "prefix": ",",
+    "body": "- $0"
   }
 }
