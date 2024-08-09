@@ -1,7 +1,7 @@
 ---@type LazySpec
 return {
 	'tpope/vim-fugitive',
-	enabled = false,
+	enabled = true,
 
 	cmd = { 'G', 'Git' },
 	keys = {
