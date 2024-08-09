@@ -32,6 +32,7 @@ return {
 
 					['@lsp.type.enumMember.markdown'] = { fg = colors.sky },
 					['@markdown_list_marker'] = { bold = true, fg = colors.sky },
+					['@markup.list.markdown'] = { fg = colors.lavender },
 
 					['@markup.heading.1.markdown'] = { fg = colors.red },
 					['@markup.heading.2.markdown'] = { fg = colors.peach },
