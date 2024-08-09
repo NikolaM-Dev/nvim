@@ -16,6 +16,12 @@ return {
 			desc = 'Jump to camel case',
 			mode = { 'n', 'v' },
 		},
+		{
+			't',
+			'<cmd>HopLine<cr>',
+			desc = 'Jump to line',
+			mode = { 'n', 'v' },
+		},
 	opts = {
 		keys = 'asdghklqwertyuiopzxcvbnmfj',
 	},
