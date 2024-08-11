@@ -22,6 +22,14 @@ return {
 			desc = 'Jump to line',
 			mode = { 'n', 'v' },
 		},
+		{
+			'T',
+			'<cmd>HopVertical<cr>',
+			desc = 'Jump to vertial line',
+			mode = { 'n', 'v' },
+		},
+	},
+
 	opts = {
 		keys = 'asdghklqwertyuiopzxcvbnmfj',
 	},
