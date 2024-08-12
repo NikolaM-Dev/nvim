@@ -9,7 +9,7 @@ return {
 		{
 			';gc',
 			function()
-				require('treesitter-context').go_to_context()
+				require('treesitter-context').go_to_context(vim.v.count1)
 			end,
 			desc = '[G]oto [C]ontext',
 		},
