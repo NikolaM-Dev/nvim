@@ -1,5 +1,8 @@
+---@type LazySpec
 return {
 	'nvim-treesitter/nvim-treesitter-context',
+	enabled = true,
+
 	event = 'BufReadPre',
 	cmd = { 'TSContextDisable', 'TSContextEnable', 'TSContextToggle' },
 	keys = {
