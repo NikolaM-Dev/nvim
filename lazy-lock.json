@@ -5,7 +5,7 @@
   },
   "aerial.nvim": {
     "branch": "master",
-    "commit": "e75a3df2c20b3a98c786f5e61587d74a7a6b61d6"
+    "commit": "d5ba0e3cfede432cec7e6ab28724c4a554ea0f09"
   },
   "browse.nvim": {
     "branch": "main",
@@ -57,7 +57,7 @@
   },
   "conform.nvim": {
     "branch": "master",
-    "commit": "0f4f299dfea09d2adfd7a1da05149a0844ac8eee"
+    "commit": "667102f26106709cddd2dff1f699610df5b94d7f"
   },
   "core.nvim": {
     "branch": "main",
@@ -77,7 +77,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "c423c496a15b96cfc3c3fbd09135bcdc0c8e6b6e"
+    "commit": "e28f5aa45baf20ffdba469e11a998d3016c8cb42"
   },
   "fzfx.nvim": {
     "branch": "main",
@@ -89,7 +89,7 @@
   },
   "grug-far.nvim": {
     "branch": "main",
-    "commit": "22f1571d2c60883b3fbf05e90f04cabde056fe3e"
+    "commit": "536b23dcf3165a622654544e5f9f395584e73b57"
   },
   "harpoon": {
     "branch": "harpoon2",
@@ -113,7 +113,7 @@
   },
   "lazygit.nvim": {
     "branch": "main",
-    "commit": "dc56df433bfbf107fee0139e187eb9750878fa84"
+    "commit": "2432b447483f42ff2e18b2d392cb2bb27e495c08"
   },
   "lualine.nvim": {
     "branch": "master",
@@ -173,7 +173,7 @@
   },
   "nvim": {
     "branch": "main",
-    "commit": "548b2a25415bb60e05c536b7658aa8ffbfeb3e45"
+    "commit": "18bab5ec4c782cdf7d7525dbe89c60bfa02fc195"
   },
   "nvim-FeMaco.lua": {
     "branch": "main",
@@ -193,7 +193,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "652386deae739e38fa1bcf2f06e3e7de9b3436ba"
+    "commit": "ff97d376b1d22b2eaf9274605531babf0cd0cf21"
   },
   "nvim-notify": {
     "branch": "master",
@@ -205,7 +205,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "a8535b2329a082c7f4e0b11b91b1792770425eaa"
+    "commit": "e5a05ba5e298cc1e1dad8eb8095b8d4d89a7f793"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -249,7 +249,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "c4eb6bf30525fdc7efaf5f33bcb0fa9491ace245"
+    "commit": "ced4a66f9bc38580f4797a789d2d5575fcd809fd"
   },
   "smart-open.nvim": {
     "branch": "0.2.x",
