@@ -21,6 +21,7 @@ return {
 			ptoggleitem = '',
 		},
 
+		---@diagnostic disable-next-line: missing-fields
 		preview = { winblend = 0 },
 	},
 }
