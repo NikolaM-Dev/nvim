@@ -158,3 +158,21 @@ map(
 	'<cmd>e!<cr>',
 	{ desc = '[R]eloads the [F]ile from disk, but forces the reload, discarding any unsaved changes in the buffer' }
 )
+
+map('n', '<leader>ip', function()
+	local line_number = vim.api.nvim_win_get_cursor(0)[1]
+	local line_content = vim.api.nvim_buf_get_lines(0, line_number - 1, line_number, false)[1]
+
+	local function extract_path(cadena)
+		local path = cadena:match('%((.-)%)')
+
+		return path
+	end
+
+	local image_path = extract_path(line_content)
+	local command = 'wezterm cli split-pane --right --percent 60 -- bash -c \'wezterm imgcat /home/nikola/Documents/second-brain.md/"'
+		.. image_path
+		.. '"; read\''
+
+	os.execute(command)
+end, { desc = '[I]mage [P]review' })
