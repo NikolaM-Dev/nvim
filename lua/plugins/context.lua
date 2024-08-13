@@ -22,10 +22,8 @@ return {
 	},
 	config = function()
 		local PALETTE = require('catppuccin.palettes').get_palette('mocha')
-		local bg = '#2a2b3c'
 
-		vim.api.nvim_set_hl(0, 'TreesitterContext', { bg = bg })
-		vim.api.nvim_set_hl(0, 'TreesitterContextLineNumber', { fg = PALETTE.lavender })
+		vim.api.nvim_set_hl(0, 'TreesitterContext', { bg = PALETTE.base })
 		vim.api.nvim_set_hl(0, 'TreesitterContextLineNumberBottom', { fg = PALETTE.lavender })
 		vim.api.nvim_set_hl(0, 'TreesitterContextLineNumber', { fg = PALETTE.lavender })
 
