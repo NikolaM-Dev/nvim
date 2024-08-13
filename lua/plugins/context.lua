@@ -20,15 +20,18 @@ return {
 			desc = '[T]oggle [C]ontext',
 		},
 	},
-	config = function()
+
+	---@type TSContext.UserConfig
+	opts = { max_lines = 3 },
+
+	---@param opts TSContext.UserConfig
+	config = function(_, opts)
 		local PALETTE = require('catppuccin.palettes').get_palette('mocha')
 
 		vim.api.nvim_set_hl(0, 'TreesitterContext', { bg = PALETTE.base })
 		vim.api.nvim_set_hl(0, 'TreesitterContextLineNumberBottom', { fg = PALETTE.lavender })
 		vim.api.nvim_set_hl(0, 'TreesitterContextLineNumber', { fg = PALETTE.lavender })
 
-		require('treesitter-context').setup({
-			max_lines = 3,
-		})
+		require('treesitter-context').setup(opts)
 	end,
 }
