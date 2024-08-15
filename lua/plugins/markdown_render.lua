@@ -7,4 +7,12 @@ return {
 	main = 'render-markdown',
 	name = 'render-markdown',
 	ft = { 'markdown' },
+
+	---@type render.md.UserConfig
+	opts = {},
+
+	---@param opts render.md.UserConfig
+	config = function(_, opts)
+		require('render-markdown').setup(opts)
+	end,
 }
