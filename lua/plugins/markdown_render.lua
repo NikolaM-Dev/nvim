@@ -8,8 +8,13 @@ return {
 	name = 'render-markdown',
 	ft = { 'markdown' },
 
-	---@type render.md.UserConfig
-	opts = {},
+	opts = function()
+		local disabled = { enabled = false }
+
+		---@type render.md.UserConfig
+		return {
+			heading = disabled,
+			sign = disabled,
 
 	---@param opts render.md.UserConfig
 	config = function(_, opts)
