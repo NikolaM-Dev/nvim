@@ -19,6 +19,25 @@ return {
 		vim.api.nvim_set_hl(0, 'RenderMarkdownCodeInline', { fg = PALETTE.sky })
 		vim.api.nvim_set_hl(0, 'RenderMarkdownDash', { fg = PALETTE.blue })
 
+		local colors = {
+			PALETTE.red,
+			PALETTE.peach,
+			PALETTE.green,
+			PALETTE.teal,
+			PALETTE.lavender,
+			PALETTE.mauve,
+		}
+
+		for i = 1, 6, 1 do
+			local background_highlight = 'RenderMarkdownH' .. i .. 'Bg'
+			local foreground_highlight = 'RenderMarkdownH' .. i
+
+			local color = colors[i]
+
+			vim.api.nvim_set_hl(0, background_highlight, { fg = color })
+			vim.api.nvim_set_hl(0, foreground_highlight, { fg = color })
+		end
+
 		require('render-markdown').setup(opts)
 	end,
 }
