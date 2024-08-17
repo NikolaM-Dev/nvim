@@ -5,7 +5,7 @@
   },
   "aerial.nvim": {
     "branch": "master",
-    "commit": "263beeb92961c15882b7853805f0ae2024f2e903"
+    "commit": "eeebf32fcb365c860248fee785ae5923831bf2ad"
   },
   "browse.nvim": {
     "branch": "main",
@@ -57,7 +57,7 @@
   },
   "conform.nvim": {
     "branch": "master",
-    "commit": "667102f26106709cddd2dff1f699610df5b94d7f"
+    "commit": "d31323db3fa4a33d203dcb05150d98bd0153c42c"
   },
   "core.nvim": {
     "branch": "main",
@@ -69,7 +69,7 @@
   },
   "dressing.nvim": {
     "branch": "master",
-    "commit": "6741f1062d3dc6e4755367a7e9b347b553623f04"
+    "commit": "c5775a888adbc50652cb370073fcfec963eca93e"
   },
   "fidget.nvim": {
     "branch": "main",
@@ -77,7 +77,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "2c8a96bb27d3da089ab89d47143dd3c6854d1295"
+    "commit": "387c6ef664688582ca1be950e2fe260699aa8862"
   },
   "gitsigns.nvim": {
     "branch": "main",
@@ -189,7 +189,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "a67bc39aaa4f1e13212c5022a561120846eaef27"
+    "commit": "a89de2e049b5f89a0ee55029d5a31213bd4de6f8"
   },
   "nvim-notify": {
     "branch": "master",
@@ -201,7 +201,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "047ce49ccf9a2dce22e1cf3843bef3b5682a8144"
+    "commit": "59cc5f35656f97bc964229e3ec5066a7b5a8ee5b"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -209,11 +209,11 @@
   },
   "nvim-ts-autotag": {
     "branch": "main",
-    "commit": "dc5e1687ab76ee02e0f11c5ce137f530b36e98b3"
+    "commit": "0cb76eea80e9c73b88880f0ca78fbd04c5bdcac7"
   },
   "nvim-ts-context-commentstring": {
     "branch": "main",
-    "commit": "6b5f95aa4d24f2c629a74f2c935c702b08dbde62"
+    "commit": "375c2d86cee6674afd75b4f727ce3a80065552f7"
   },
   "nvim-ufo": {
     "branch": "main",
@@ -245,7 +245,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "72688baea4ef0ed605033bf654b54d801b6a5f01"
+    "commit": "7986be47531d652e950776536987e01dd5b55b94"
   },
   "smart-open.nvim": {
     "branch": "0.2.x",
