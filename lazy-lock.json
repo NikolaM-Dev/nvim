@@ -201,7 +201,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "59cc5f35656f97bc964229e3ec5066a7b5a8ee5b"
+    "commit": "63e1337f1b60c84a4100ebedfb1dc80924c49122"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -229,7 +229,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "fcca212c2e966fc3dec1d4baf888e670631d25d1"
+    "commit": "a632c898fbe0e363ef89b9577f1a7714ab67d682"
   },
   "persistence.nvim": {
     "branch": "main",
