@@ -19,6 +19,13 @@ return {
 			bullet = {
 				icons = { '•' },
 			},
+			link = {
+				image = '󰈟 ',
+				},
+			},
+		}
+	end,
+
 	---@param opts render.md.UserConfig
 	config = function(_, opts)
 		local PALETTE = require('catppuccin.palettes').get_palette('mocha')
