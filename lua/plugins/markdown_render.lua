@@ -19,6 +19,11 @@ return {
 			bullet = {
 				icons = { '•' },
 			},
+			callout = {
+				quote = {
+					rendered = ' Quote',
+				},
+			},
 			link = {
 				image = '󰈟 ',
 				custom = {
