@@ -21,6 +21,8 @@ return {
 			},
 			link = {
 				image = '󰈟 ',
+				custom = {
+					web = { icon = ' ' },
 				},
 			},
 		}
