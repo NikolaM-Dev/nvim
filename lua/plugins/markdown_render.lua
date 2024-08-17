@@ -16,6 +16,9 @@ return {
 			heading = disabled,
 			sign = disabled,
 
+			bullet = {
+				icons = { '•' },
+			},
 	---@param opts render.md.UserConfig
 	config = function(_, opts)
 		local PALETTE = require('catppuccin.palettes').get_palette('mocha')
