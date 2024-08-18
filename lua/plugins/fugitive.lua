@@ -1,3 +1,9 @@
+vim.api.nvim_create_user_command('TmuxGitCommitAmend', function()
+	local command = 'tmux split-window -h "git commit --amend -v"'
+
+	vim.fn.system(command)
+end, { desc = 'Git commit amend in Tmux' })
+
 ---@type LazySpec
 return {
 	'tpope/vim-fugitive',
