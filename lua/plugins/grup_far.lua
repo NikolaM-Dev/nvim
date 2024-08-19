@@ -7,7 +7,7 @@ return {
 
 	keys = {
 		{
-			'<leader>sr',
+			'<leader><leader>sr',
 			function()
 				require('grug-far').grug_far()
 			end,
