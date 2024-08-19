@@ -14,6 +14,16 @@ return {
 			mode = { 'n', 'v' },
 			desc = '[S]earch and [R]eplace',
 		},
+		{
+			'<leader>sr',
+			function()
+				require('grug-far').grug_far({
+					prefills = { paths = vim.fn.expand('%') },
+				})
+			end,
+			mode = { 'n', 'v' },
+			desc = '[S]earch in [R]eplace in current file',
+		},
 	},
 
 	---@type GrugFarOptionsOverride
