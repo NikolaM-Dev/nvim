@@ -57,7 +57,7 @@
   },
   "conform.nvim": {
     "branch": "master",
-    "commit": "d31323db3fa4a33d203dcb05150d98bd0153c42c"
+    "commit": "42b53fcb83fd8d597e1a1dc08f6db72de58f4f46"
   },
   "core.nvim": {
     "branch": "main",
@@ -77,7 +77,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "5cce17e80a326680b503a51aadcf570cc089ea5c"
+    "commit": "8cb59e6fcac3dce8dfa44b678fdc94cf81efa11b"
   },
   "gitsigns.nvim": {
     "branch": "main",
@@ -85,7 +85,7 @@
   },
   "grug-far.nvim": {
     "branch": "main",
-    "commit": "536b23dcf3165a622654544e5f9f395584e73b57"
+    "commit": "85cadf849bdb22540c36da2034d21de0b37c0952"
   },
   "harpoon": {
     "branch": "harpoon2",
@@ -189,7 +189,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "a89de2e049b5f89a0ee55029d5a31213bd4de6f8"
+    "commit": "d4814330b207a4e05ba9515e453b0e87f20357ec"
   },
   "nvim-notify": {
     "branch": "master",
@@ -201,7 +201,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "ec8776ed9ef56ffe7a61e67b64d5d6b6aba2c631"
+    "commit": "1e860567fbc19f117a03c0d2c46dcc01325c1b8b"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -237,7 +237,7 @@
   },
   "plenary.nvim": {
     "branch": "master",
-    "commit": "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683"
+    "commit": "ec289423a1693aeae6cd0d503bac2856af74edaa"
   },
   "promise-async": {
     "branch": "main",
@@ -245,7 +245,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "4c823b1df151dbf1ed3ddaacac517be606b1e145"
+    "commit": "d1cec33f0d59bac5c2854312d2ea0483b44dfd11"
   },
   "smart-open.nvim": {
     "branch": "0.2.x",
