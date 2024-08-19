@@ -6,6 +6,10 @@ return {
 	cmd = { 'ConformInfo' },
 	event = 'BufWritePre',
 
+	init = function()
+		vim.o.formatexpr = 'v:lua.require\'conform\'.formatexpr()'
+	end,
+
 	---@return conform.setupOpts
 	opts = function()
 		local prettier = { 'prettierd', 'prettier', stop_after_first = true }
