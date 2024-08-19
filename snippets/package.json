@@ -46,6 +46,10 @@
         "path": "./go.json"
       },
       {
+        "language": "lua",
+        "path": "./lua.json"
+      },
+      {
         "language": [
           "css",
           "scss"
