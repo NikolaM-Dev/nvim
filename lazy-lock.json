@@ -1,7 +1,7 @@
 {
   "LuaSnip": {
     "branch": "master",
-    "commit": "03c8e67eb7293c404845b3982db895d59c0d1538"
+    "commit": "b84eeb3641b08324287587b426ec974b888390d9"
   },
   "aerial.nvim": {
     "branch": "master",
@@ -169,7 +169,7 @@
   },
   "nvim": {
     "branch": "main",
-    "commit": "18bab5ec4c782cdf7d7525dbe89c60bfa02fc195"
+    "commit": "4fd72a9ab64b393c2c22b168508fd244877fec96"
   },
   "nvim-FeMaco.lua": {
     "branch": "main",
