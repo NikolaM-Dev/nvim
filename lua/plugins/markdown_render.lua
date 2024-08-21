@@ -24,6 +24,14 @@ return {
 					rendered = ' Quote',
 				},
 			},
+			checkbox = {
+				checked = {
+					icon = ' ',
+				},
+				unchecked = {
+					icon = ' ',
+				},
+			},
 			link = {
 				image = '󰈟 ',
 				custom = {
