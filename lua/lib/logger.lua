@@ -4,7 +4,7 @@ local Logger = {}
 
 ---@param title string
 function Logger:new(title)
-	local logger = { title = title .. ' |' }
+	local logger = { title = title .. ' ' }
 	self.__index = self
 
 	return setmetatable(logger, self)
