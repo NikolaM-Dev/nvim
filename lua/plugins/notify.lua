@@ -1,5 +1,8 @@
+---@type LazySpec
 return {
 	'rcarriga/nvim-notify',
+	enabled = true,
+
 	init = function()
 		local notify = require('notify')
 
