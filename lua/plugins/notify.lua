@@ -21,7 +21,7 @@ return {
 				WARN = '',
 			},
 			background_colour = '#000000',
-			render = 'minimal',
+			render = 'compact',
 			timeout = 1000,
 		})
 
