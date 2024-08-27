@@ -1,3 +1,7 @@
+vim.api.nvim_create_user_command('ClearNotifications', function()
+	require('notify').dismiss({ silent = true, pending = true })
+end, { desc = 'Clear notifications' })
+
 ---@type LazySpec
 return {
 	'rcarriga/nvim-notify',
