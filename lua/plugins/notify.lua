@@ -18,10 +18,10 @@ return {
 				return math.floor(vim.o.columns * 0.75)
 			end,
 			icons = {
-				DEBUG = '',
-				ERROR = '󰅙',
-				INFO = '󰋼',
-				TRACE = '',
+				DEBUG = ' ',
+				ERROR = ' 󰅙',
+				INFO = ' 󰋼',
+				TRACE = ' ',
 				WARN = '',
 			},
 			background_colour = '#000000',
