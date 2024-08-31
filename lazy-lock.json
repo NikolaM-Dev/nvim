@@ -323,6 +323,10 @@
     "branch": "master",
     "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635"
   },
+  "which-key.nvim": {
+    "branch": "main",
+    "commit": "bfec3d6bc0a9b0b2cb11644642f78c2c3915eef0"
+  },
   "windows.nvim": {
     "branch": "main",
     "commit": "c7492552b23d0ab30325e90b56066ec51242adc8"
