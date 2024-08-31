@@ -2,6 +2,11 @@
 return {
 	'stevearc/aerial.nvim',
 	enabled = true,
+
+	keys = {
+		{ '<leader>fou', '<cmd>Telescope aerial<cr>', desc = '[T]oggle [O]ut[L]ine' },
+	},
+
 	---@type table
 	opts = {},
 
