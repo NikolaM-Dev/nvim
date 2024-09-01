@@ -7,7 +7,14 @@ return {
 	config = function()
 		require('windows').setup({
 			ignore = {
-				filetype = { 'no-neck-pain' },
+				buftype = {
+					'nofile',
+					'quickfix',
+					'terminal',
+				},
+				filetype = {
+					'no-neck-pain',
+				},
 			},
 		})
 	end,
