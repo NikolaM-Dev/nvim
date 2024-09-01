@@ -1,3 +1,4 @@
+---@type LazySpec
 return {
 	'anuvyklack/windows.nvim',
 	enabled = true,
