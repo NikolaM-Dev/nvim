@@ -5,18 +5,18 @@ return {
 
 	event = 'VeryLazy',
 	dependencies = 'anuvyklack/middleclass',
-	config = function()
-		require('windows').setup({
-			ignore = {
-				buftype = {
-					'nofile',
-					'quickfix',
-					'terminal',
-				},
-				filetype = {
-					'no-neck-pain',
-				},
+
+	---@type table
+	opts = {
+		ignore = {
+			buftype = {
+				'nofile',
+				'quickfix',
+				'terminal',
 			},
-		})
-	end,
+			filetype = {
+				'no-neck-pain',
+			},
+		},
+	},
 }
