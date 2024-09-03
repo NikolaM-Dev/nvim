@@ -143,7 +143,7 @@ return {
 					note:add_alias(note.title)
 				end
 
-				local current_date = os.date('%Y-%m-%d, %I:%M %p')
+				local current_date = os.date('%Y-%m-%d, %H:%M')
 
 				local frontmatter = {
 					aliases = note.aliases,
