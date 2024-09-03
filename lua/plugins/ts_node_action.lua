@@ -1,5 +1,8 @@
+---@type LazySpec
 return {
 	'CKolkey/ts-node-action',
+	enabled = true,
+
 	keys = {
 		{
 			mode = { 'n', 'x' },
@@ -10,5 +13,6 @@ return {
 			desc = 'Trigger [N]ode [A]ction',
 		},
 	},
+
 	config = true,
 }
