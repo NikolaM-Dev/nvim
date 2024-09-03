@@ -7,6 +7,10 @@ return {
 	'rcarriga/nvim-notify',
 	enabled = true,
 
+	keys = {
+		{ '<leader>fn', '<cmd>Telescope notify<cr>', desc = '[F]ind [N]otifications' },
+	},
+
 	init = function()
 		local notify = require('notify')
 
