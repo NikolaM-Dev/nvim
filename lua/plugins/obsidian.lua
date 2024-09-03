@@ -77,7 +77,7 @@ return {
 			desc = '[O]sidian [R]ename',
 		},
 		{ '<leader>ob', '<cmd>ObsidianBacklinks<cr>', desc = '[O]bisidan [B]acklinks' },
-		{ '<leader>od', '<cmd>ObsidianDailies<cr>', desc = '[O]sidian [D]ailies' },
+		{ '<leader>od', '<cmd>ObsidianDailies -1<cr>', desc = '[O]sidian [D]ailies' },
 		{ '<leader>oe', ':ObsidianExtractNote ', desc = '[O]sidian [E]xtract Note', mode = { 'v' } },
 		{ '<leader>ofn', ':ObsidianNew z/FN/', desc = '[O]sidian New [F]leeting [N]ote' },
 		{ '<leader>ol', '<cmd>ObsidianLinks<cr>', desc = '[O]sidian [L]inks' },
