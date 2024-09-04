@@ -85,7 +85,7 @@
   },
   "grug-far.nvim": {
     "branch": "main",
-    "commit": "10b5ed57d929bdbb501a7c9c92a23c82a705b07a"
+    "commit": "1d5dd56ba4037d1096dd9276579dd544035cd8bd"
   },
   "harpoon": {
     "branch": "harpoon2",
@@ -161,7 +161,7 @@
   },
   "no-neck-pain.nvim": {
     "branch": "main",
-    "commit": "1109978754064b87f1635727aea86a33e006fea3"
+    "commit": "6fa9566e5103e606cc30ba31d1188e55ca815746"
   },
   "none-ls.nvim": {
     "branch": "main",
