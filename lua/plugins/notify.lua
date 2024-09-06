@@ -9,6 +9,7 @@ return {
 
 	keys = {
 		{ '<leader>fn', '<cmd>Telescope notify<cr>', desc = '[F]ind [N]otifications' },
+		{ '<leader>tn', '<cmd>ClearNotifications<cr>', desc = '[T]oggle [N]otifications' },
 	},
 
 	init = function()
