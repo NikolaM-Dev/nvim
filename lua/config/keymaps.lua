@@ -176,3 +176,5 @@ map('n', '<leader>ip', function()
 
 	os.execute(command)
 end, { desc = '[I]mage [P]review' })
+
+map('n', '<leader>yp', '<cmd>let @+=@%<cr>', { desc = '[Y]ank [P]ath from current file' })
