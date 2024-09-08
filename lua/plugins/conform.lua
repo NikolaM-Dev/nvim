@@ -1,7 +1,7 @@
 ---@type LazySpec
 return {
 	'stevearc/conform.nvim',
-	enabled = true,
+	enabled = false,
 
 	cmd = { 'ConformInfo' },
 	event = 'BufWritePre',
