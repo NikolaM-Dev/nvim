@@ -291,10 +291,6 @@
     "branch": "master",
     "commit": "f8c2e0b36b651c85f52ad5c5373ff8b07adc15a7"
   },
-  "typescript.nvim": {
-    "branch": "main",
-    "commit": "4de85ef699d7e6010528dcfbddc2ed4c2c421467"
-  },
   "typewriter": {
     "branch": "main",
     "commit": "9e15168ab6edd852a6fdfcd6458e6d772723d737"
