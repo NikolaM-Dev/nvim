@@ -51,8 +51,6 @@ return {
 	event = { 'BufReadPre', 'BufNewFile' },
 	dependencies = {
 		'folke/neodev.nvim',
-		-- WARN: Archived dependency
-		'jose-elias-alvarez/typescript.nvim',
 		'williamboman/mason.nvim',
 	},
 	config = function()
@@ -157,18 +155,6 @@ return {
 			end,
 			settings = {
 				workingDirectory = { mode = 'auto' },
-			},
-		})
-
-		require('typescript').setup({
-			disable_commands = false, -- prevent the plugin from creating Vim commands
-			debug = false, -- enable debug logging for commands
-			go_to_source_definition = { fallback = true }, -- fall back to standard LSP definition on failure
-			server = {
-				init_options = {
-					preferences = { importModuleSpecifierPreference = 'relative' },
-				},
-				on_attach = on_attach,
 			},
 		})
 
