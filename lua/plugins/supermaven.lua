@@ -7,6 +7,7 @@ return {
 	keys = {
 		{ '<leader>ai', '<cmd>SupermavenToggle<cr>', desc = 'Toggle Supermaven [A][I]' },
 	},
+
 	config = function()
 		require('supermaven-nvim').setup({
 			condition = function()
