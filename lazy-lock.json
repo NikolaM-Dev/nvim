@@ -81,7 +81,7 @@
   },
   "grug-far.nvim": {
     "branch": "main",
-    "commit": "8c9616f945b2d3c663cc33e20df3d1deadef6b9e"
+    "commit": "76d86580f71bd2f07d4264c782ab8d1c12302e13"
   },
   "harpoon": {
     "branch": "harpoon2",
@@ -157,7 +157,7 @@
   },
   "no-neck-pain.nvim": {
     "branch": "main",
-    "commit": "6fa9566e5103e606cc30ba31d1188e55ca815746"
+    "commit": "4b6f0a2c7ad4f2200d59f3d5785aeda96a38e4ff"
   },
   "none-ls.nvim": {
     "branch": "main",
@@ -181,7 +181,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "bdbc65aadc708ce528efb22bca5f82a7cca6b54d"
+    "commit": "38d4b239aab2dc3fdfe56b42e3f0f20c237ca695"
   },
   "nvim-notify": {
     "branch": "master",
@@ -237,7 +237,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "2f9d4f0be8784ed4fef5960eb7b80bf60c5fdf56"
+    "commit": "a5e2d0b1215814c3d033be1fd8eccf59ce366399"
   },
   "smart-open.nvim": {
     "branch": "0.2.x",
