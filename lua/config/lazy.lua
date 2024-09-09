@@ -23,8 +23,8 @@ require('lazy').setup({
 	install = { colorscheme = { 'catppuccin', 'tokyonight' } },
 	---@diagnostic disable-next-line: assign-type-mismatch
 	dev = {
-		path = '~/workspace/open-source/nvim',
 		fallback = true,
+		path = '~/workspace/open-source/nvim',
 		patterns = { 'NikolaM-Dev' },
 	},
 	performance = {
