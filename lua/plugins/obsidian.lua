@@ -58,7 +58,7 @@ return {
 		'ObsidianDailies',
 		'ObsidianLinks',
 		'ObsidianQuickSwitch',
-		'ObsidianYesterday',
+		'ObsidianToday',
 	},
 	keys = {
 		{
