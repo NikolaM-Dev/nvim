@@ -31,7 +31,7 @@ local bookmarks = {
 
 	awesome = 'https://github.com/rockerBOO/awesome-neovim',
 	catppuccin = 'https://github.com/catppuccin/catppuccin',
-	concentration = 'https://www.youtube.com/watch?v=yLUqkgpSw7Y&list=PLyjmPWCWfM3LJDpmmnJj6U7ot4Q1grdPO&index=7',
+	concentration = 'https://www.youtube.com/watch?v=yLUqkgpSw7Y&list=PLyjmPWCWfM3LJDpmmnJj6U7ot41grdPO&index=7',
 	contentoso = 'https://www.youtube.com/watch?v=ja75uBnzHS0',
 	dots = 'https://github.com/NikolaM-Dev/dotfiles',
 	fontawesome = 'https://fontawesome.com/v5/search?q=car&o=r&m=free',
