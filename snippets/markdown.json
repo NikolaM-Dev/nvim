@@ -79,6 +79,10 @@
     "prefix": "img",
     "body": "![${1:alt}](${2:https://} ${3:title})$0"
   },
+  "cycles": {
+    "prefix": "cycles",
+    "body": "60/03/10"
+  },
   "Insert table": {
     "prefix": "table",
     "body": [
