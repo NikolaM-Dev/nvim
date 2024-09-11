@@ -12,13 +12,17 @@ return {
 		local augroup = _G.augroup('lsp_formatting')
 
 		local d = nls.builtins.diagnostics
-		-- local f = nls.builtins.formatting
+		local f = nls.builtins.formatting
 
 		nls.setup({
 			sources = {
 				d.staticcheck,
 
-				-- f.prettierd.with({ extra_args = { '--trailing-comma', 'all' } }),
+				f.gofumpt,
+				f.goimports,
+				f.prettierd.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
+				f.prettier.with({ extra_args = { '--single-quote', '--trailing-comma', 'all' } }),
+				f.stylua,
 			},
 
 			on_attach = function(current_client, bufnr)
