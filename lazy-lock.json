@@ -73,7 +73,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "952276dc2dcdd5401be804b4417d0cb392e2eda8"
+    "commit": "2191a44e36216791623cb166cc45f7a66f0bda34"
   },
   "gitsigns.nvim": {
     "branch": "main",
@@ -213,7 +213,7 @@
   },
   "nvim-web-devicons": {
     "branch": "master",
-    "commit": "9793801f974bba70e4ac5d7eae6c4f5659993d8e"
+    "commit": "9154484705968658e9aab2b894d1b2a64bf9f83d"
   },
   "obsidian.nvim": {
     "branch": "main",
@@ -237,7 +237,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "c37f698bf7c2d942b78d924be9a2aed9f5951e74"
+    "commit": "cb935afe5bb52965e2bfc11cf7b563bb159ef4f5"
   },
   "smart-open.nvim": {
     "branch": "0.2.x",
