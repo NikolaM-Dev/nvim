@@ -83,6 +83,10 @@
     "branch": "main",
     "commit": "76d86580f71bd2f07d4264c782ab8d1c12302e13"
   },
+  "gx.nvim": {
+    "branch": "main",
+    "commit": "cc70d112b14d18dd7b123a5d5288266a60e8189e"
+  },
   "harpoon": {
     "branch": "harpoon2",
     "commit": "0378a6c428a0bed6a2781d459d7943843f374bce"
