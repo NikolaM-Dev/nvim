@@ -193,7 +193,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "4af16a10b7f1e79275f712a1c6dcf725d301a303"
+    "commit": "e0338f2b74fbad808f2569c7d4eadd8796af2118"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -237,7 +237,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "cb935afe5bb52965e2bfc11cf7b563bb159ef4f5"
+    "commit": "4bf3247dfd06844088768b37cf1976efef1bca26"
   },
   "smart-open.nvim": {
     "branch": "0.2.x",
