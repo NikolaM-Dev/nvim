@@ -2,5 +2,17 @@
   "g": {
     "prefix": "g",
     "body": "_G."
+  },
+  "plugin": {
+    "prefix": "plugin",
+    "body": [
+      "---@type LazySpec",
+      "return {",
+      "\t'$0'",
+      "\tenabled = true,",
+      "",
+      "\tconfig= true",
+      "}"
+    ]
   }
 }
