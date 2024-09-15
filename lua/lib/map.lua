@@ -16,7 +16,7 @@ local new_map = Map:new()
 -- TODO: Make a example
 
 ---Constructs a command string based on the provided `cmd` and options.
----@param cmd The command to be executed.
+---@param cmd string command to be executed.
 ---@param opts? MapCmdOpts table containing options for the command.
 --- The `delay_cmd` option determines whether the command is delayed (default is `false`).
 --- If `delay_cmd` is `true`, returns the command prefixed with a colon `:`.
