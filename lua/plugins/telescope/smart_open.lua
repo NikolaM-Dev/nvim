@@ -11,5 +11,11 @@ return {
 	},
 	config = function()
 		require('telescope').load_extension('smart_open')
+
+		local config = require('smart-open').config
+
+		config.cwd_only = true
+		config.open_buffer_indicators = { others = ' ', previous = ' ' }
+		config.show_scores = true
 	end,
 }
