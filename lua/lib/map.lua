@@ -13,6 +13,8 @@ local new_map = Map:new()
 ---@class MapCmdOpts
 ---@field delay_cmd? boolean defaults to false
 
+-- TODO: Make a example
+
 ---Constructs a command string based on the provided `cmd` and options.
 ---@param cmd The command to be executed.
 ---@param opts? MapCmdOpts table containing options for the command.
