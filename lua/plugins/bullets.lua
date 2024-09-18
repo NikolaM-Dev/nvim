@@ -16,6 +16,7 @@ return {
 			-- 'std+'
 		}
 
+		-- < > 0%, <3> 33%, <6> 66%, <9> 99%, <x> 100%
 		vim.g.bullets_checkbox_markers = ' 369x'
 
 		vim.g.bullets_custom_mappings = {
