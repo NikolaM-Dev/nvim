@@ -16,7 +16,7 @@ return {
 			-- 'std+'
 		}
 
-		vim.g.bullets_checkbox_markers = ' .oOx'
+		vim.g.bullets_checkbox_markers = ' 369x'
 
 		vim.g.bullets_custom_mappings = {
 			{ 'imap', '<cr>', '<Plug>(bullets-newline)' },
