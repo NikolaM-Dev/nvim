@@ -185,7 +185,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "eb36e0185ad4b92b0999fb698428f2966334d2c1"
+    "commit": "73e0002b6f211376bbf36c31a2f812aedf6bd6b0"
   },
   "nvim-notify": {
     "branch": "master",
@@ -197,7 +197,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "4d94c24d6cb9985347bdf0692c1fd81088c6c8b2"
+    "commit": "3c6af36794b26e1bcac3f126b43e0f646154725d"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -241,7 +241,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "01b38dcf7d0a99620547651fb59a3ba521ba12d5"
+    "commit": "5ff191f0c7457ede2fd30ecf76ab16c65118b4ee"
   },
   "smart-open.nvim": {
     "branch": "0.2.x",
