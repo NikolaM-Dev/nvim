@@ -31,6 +31,11 @@ return {
 				unchecked = {
 					icon = ' ',
 				},
+				custom = {
+					thirty_three = { raw = '[3]', rendered = '󰪠 ', highlight = 'RenderMarkdownTodo' },
+					sixty_six = { raw = '[6]', rendered = '󰪢 ', highlight = 'RenderMarkdownTodo' },
+					ninety_nine = { raw = '[9]', rendered = '󰪤 ', highlight = 'RenderMarkdownTodo' },
+				},
 			},
 			link = {
 				image = '󰈟 ',
