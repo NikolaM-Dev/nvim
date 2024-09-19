@@ -29,6 +29,7 @@ vim.opt.sessionoptions = {
 	'winsize',
 }
 
+vim.opt.autoread = true -- automatically read the file when changed outside of neovim
 vim.opt.backup = false -- create backup files
 vim.opt.clipboard = 'unnamedplus' -- use system clipboard
 vim.opt.colorcolumn = '80' -- maximum column length for color highlighting
