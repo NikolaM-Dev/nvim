@@ -22,8 +22,7 @@ return {
 			bookmarks_prompt = '󰂺 ',
 			grouped_bookmarks = '',
 		},
-		-- TODO: Add support for persisting bookmarks
-		-- persist_grouped_bookmarks_query = true,
+		persist_grouped_bookmarks_query = true,
 	},
 
 	config = function(_, opts)
