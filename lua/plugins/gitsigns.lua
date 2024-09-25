@@ -2,7 +2,7 @@ return {
 	'lewis6991/gitsigns.nvim',
 	enabled = true,
 
-	version = '*',
+	-- version = '*',
 	event = { 'BufReadPre', 'BufNewFile' },
 	config = function()
 		require('gitsigns').setup({
