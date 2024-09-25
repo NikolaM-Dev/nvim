@@ -116,11 +116,7 @@ return {
 				client.server_capabilities.documentFormattingProvider = true
 			elseif client.name == 'tsserver' then
 				client.server_capabilities.documentFormattingProvider = false
-			end
-
-			if client.name == 'tsserver' then
-				nmap('<leader>am', '<cmd>TypescriptAddMissingImports<cr>', '[A]dd [M]issing Imports')
-				nmap('<leader>ru', '<cmd>TypescriptRemoveUnused<cr>', '[R]emove [U]nused')
+				client.server_capabilities.documentRangeFormattingProvider = false
 			end
 		end
 
