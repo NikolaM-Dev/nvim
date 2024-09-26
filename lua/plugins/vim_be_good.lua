@@ -1,7 +1,7 @@
 ---@type LazySpec
 return {
 	'ThePrimeagen/vim-be-good',
-	enabled = true,
+	enabled = false,
 
 	cmd = 'VimBeGood',
 }
