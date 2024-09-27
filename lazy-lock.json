@@ -77,7 +77,7 @@
   },
   "gitsigns.nvim": {
     "branch": "main",
-    "commit": "356df59308d8b87486644d2324d7558ac0f3db36"
+    "commit": "863903631e676b33e8be2acb17512fdc1b80b4fb"
   },
   "grug-far.nvim": {
     "branch": "main",
@@ -161,7 +161,7 @@
   },
   "no-neck-pain.nvim": {
     "branch": "main",
-    "commit": "fa79c95c3498a5390989bc83694820a71bacebd7"
+    "commit": "2599b260c58deeb4e5c6ed0ad49954a70b92beaa"
   },
   "none-ls.nvim": {
     "branch": "main",
@@ -197,7 +197,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "679883ad31f1752cac92a4ca182cee8b2751d4f1"
+    "commit": "f027762845fa35ff27fe0487c86537a74a480a0c"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -241,7 +241,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "629b5f7dc053b73cd753e4ceb830a45f86f9b3da"
+    "commit": "ffbe9f2395eacdce8a9fa967ac0fae75a6204f09"
   },
   "smart-open.nvim": {
     "branch": "0.2.x",
