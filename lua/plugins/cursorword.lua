@@ -1,6 +1,8 @@
+---@type LazySpec
 return {
 	'echasnovski/mini.cursorword',
 	enabled = true,
+
 	event = 'VeryLazy',
 	config = function()
 		require('mini.cursorword').setup()
