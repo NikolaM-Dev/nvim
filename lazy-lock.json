@@ -81,7 +81,7 @@
   },
   "grug-far.nvim": {
     "branch": "main",
-    "commit": "27a502037da8657a8b2ab7e31a6439d7b7063af5"
+    "commit": "7385d238b7b314cad16cfff99e71620457f2da12"
   },
   "gx.nvim": {
     "branch": "main",
@@ -129,7 +129,7 @@
   },
   "mini.comment": {
     "branch": "main",
-    "commit": "03c13e37318bdb18481311c0ac1adc9ed731caf1"
+    "commit": "a56581c40c19fa26f2b39da72504398de3173c5a"
   },
   "mini.cursorword": {
     "branch": "main",
@@ -141,7 +141,7 @@
   },
   "mini.pairs": {
     "branch": "main",
-    "commit": "e543c760edc5e746e5b6cbd02c066c17ead3ef16"
+    "commit": "919a89ed3c9f4142215a44c9fffca72fa8c8e792"
   },
   "mini.splitjoin": {
     "branch": "main",
@@ -149,7 +149,7 @@
   },
   "mini.surround": {
     "branch": "main",
-    "commit": "0e67c4bc147f2a15cee94e7c94dcc0e115b9f55e"
+    "commit": "e1ac1ce5c7499aa4cc2ca9fb1adec9e730dd9394"
   },
   "mini.trailspace": {
     "branch": "main",
@@ -161,7 +161,7 @@
   },
   "no-neck-pain.nvim": {
     "branch": "main",
-    "commit": "2599b260c58deeb4e5c6ed0ad49954a70b92beaa"
+    "commit": "c0d8061f18bccceff0991e096c8f864a720e1ebf"
   },
   "none-ls.nvim": {
     "branch": "main",
@@ -197,7 +197,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "f027762845fa35ff27fe0487c86537a74a480a0c"
+    "commit": "84836f08ef840756990cab874f9f5e18d4f173f5"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -241,7 +241,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "ffbe9f2395eacdce8a9fa967ac0fae75a6204f09"
+    "commit": "d3a565eb4c46005a390d4b19f80f9ad719607df6"
   },
   "smart-open.nvim": {
     "branch": "0.2.x",
