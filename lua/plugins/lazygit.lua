@@ -1,7 +1,7 @@
 ---@type LazySpec
 return {
 	'kdheepak/lazygit.nvim',
-	enabled = true,
+	enabled = false,
 
 	cmd = { 'LazyGit', 'LazyGitConfig', 'LazyGitCurrentFile', 'LazyGitFilter', 'LazyGitFilterCurrentFile' },
 	dependencies = 'nvim-lua/plenary.nvim',
