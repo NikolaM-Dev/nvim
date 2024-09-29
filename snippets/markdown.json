@@ -84,6 +84,11 @@
     "body": "60/03/10"
   },
 
+  "ADHD": {
+    "prefix": "ad",
+    "body": "ADHD"
+  },
+
   "1": {
     "prefix": "1",
     "body": "01:00$0"
