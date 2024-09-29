@@ -71,8 +71,11 @@ return {
 						},
 					},
 				},
-				-- TODO: Change to use icons
 				git_status = {
+					previewer = false,
+					theme = 'dropdown',
+
+					-- TODO: Change to use icons
 					git_icons = {
 						added = 'A',
 						changed = 'M',
