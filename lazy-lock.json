@@ -73,7 +73,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "30a8ef28cdc1d23cf6956f57ca05bd28db515014"
+    "commit": "4161403a1d6286f6ba7898b1f22f30d01d85b8dc"
   },
   "gitsigns.nvim": {
     "branch": "main",
@@ -185,7 +185,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "a9bc587e9ae0cbcb3e90a2e9342f86b3b78c4408"
+    "commit": "76e7c8b029e6517f3689390d6599e9b446551704"
   },
   "nvim-notify": {
     "branch": "master",
@@ -197,11 +197,11 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "84836f08ef840756990cab874f9f5e18d4f173f5"
+    "commit": "707313b80a2f1e65fa06dba2052cc49ce6762a60"
   },
   "nvim-treesitter-context": {
     "branch": "master",
-    "commit": "3d5390c49e3f8fe457b376df2a49aa39d75b7911"
+    "commit": "f0a601989fe02ed717bb4ca43e1039e15de3e6c8"
   },
   "nvim-ts-autotag": {
     "branch": "main",
@@ -217,7 +217,7 @@
   },
   "nvim-web-devicons": {
     "branch": "master",
-    "commit": "26220156aafb198b2de6a4cf80c1b120a3768da0"
+    "commit": "1e5a2a796a88b5d696acb07dd5c285b13d13da21"
   },
   "obsidian.nvim": {
     "branch": "main",
