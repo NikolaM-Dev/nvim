@@ -7,7 +7,11 @@ return {
 
 	branch = '0.2.x',
 	keys = {
-		{ '<leader>ff', map:cmd('Telescope smart_open'), desc = '[F]ind Smart Open' },
+		{
+			'<leader>ff',
+			map:cmd('Telescope smart_open theme=dropdown previewer=false'),
+			desc = '[F]ind Smart Open',
+		},
 	},
 	config = function()
 		require('telescope').load_extension('smart_open')
