@@ -1,5 +1,3 @@
-local map = require('lib.map')
-
 ---@type LazySpec
 return {
 	'danielfalk/smart-open.nvim',
@@ -9,7 +7,14 @@ return {
 	keys = {
 		{
 			'<leader>ff',
-			map:cmd('Telescope smart_open theme=dropdown previewer=false'),
+			function()
+				local opts = require('telescope.themes').get_dropdown({
+					no_ignore = true,
+					previewer = false,
+				})
+
+				require('telescope').extensions.smart_open.smart_open(opts)
+			end,
 			desc = '[F]ind Smart Open',
 		},
 	},
