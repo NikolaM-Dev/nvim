@@ -105,7 +105,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "460e1cd8f24e364d54543a4b0e83f6f4ec1f65fb"
+    "commit": "1159bdccd8910a0fd0914b24d6c3d186689023d9"
   },
   "lazygit.nvim": {
     "branch": "main",
@@ -185,7 +185,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "8ab8f4cf48425dcb4845a61d3caa2d2a7e3d9df7"
+    "commit": "1356515e81769c296d8321b08f1f831d1b43a933"
   },
   "nvim-notify": {
     "branch": "master",
@@ -197,7 +197,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "ef52e44bb24161e5138b3de5beadab3f3fcff233"
+    "commit": "3af8476530caa0906aa68f4dc911f76e77b478a9"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -253,7 +253,7 @@
   },
   "stay-centered.nvim": {
     "branch": "main",
-    "commit": "91113bd82ac34f25c53d53e7c1545cb5c022ade8"
+    "commit": "09fc8a4f0f20b0dc8b5c4310af2e970665332ae0"
   },
   "supermaven-nvim": {
     "branch": "main",
@@ -321,7 +321,7 @@
   },
   "which-key.nvim": {
     "branch": "main",
-    "commit": "fb070344402cfc662299d9914f5546d840a22126"
+    "commit": "8badb359f7ab8711e2575ef75dfe6fbbd87e4821"
   },
   "windows.nvim": {
     "branch": "main",
