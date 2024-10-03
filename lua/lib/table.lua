@@ -8,4 +8,16 @@ function Table:new()
 	return setmetatable(table, self)
 end
 
+---@param table table
+---@param element any
+function Table:includes(table, element)
+	for _, value in ipairs(table) do
+		if value == element then
+			return true
+		end
+	end
+
+	return false
+end
+
 return Table:new()
