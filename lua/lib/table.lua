@@ -8,6 +8,7 @@ function Table:new()
 	return setmetatable(table, self)
 end
 
+-- TODO: Add docs
 ---@param table table
 ---@param element any
 function Table:includes(table, element)
