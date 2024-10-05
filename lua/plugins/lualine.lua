@@ -1,4 +1,4 @@
-local is_markdown_ft = require('utils').is_markdown_ft
+local Filetype = require('lib.filetype')
 
 return {
 	'nvim-lualine/lualine.nvim',
@@ -83,13 +83,17 @@ return {
 					{
 						word_count,
 						color = { bg = COLORS.transparent, fg = COLORS.overlay0, gui = 'italic' },
-						cond = is_markdown_ft,
+						cond = function()
+							return Filetype:is_reading_ft()
+						end,
 						icon = '󰈬',
 					},
 					{
 						reading_time,
 						color = { fg = COLORS.overlay0, bg = COLORS.transparent, gui = 'italic' },
-						cond = is_markdown_ft,
+						cond = function()
+							return Filetype:is_reading_ft()
+						end,
 						icon = '󱑎',
 					},
 				},
