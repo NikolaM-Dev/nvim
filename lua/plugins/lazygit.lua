@@ -1,3 +1,5 @@
+local Map = require('lib.map')
+
 ---@type LazySpec
 return {
 	'kdheepak/lazygit.nvim',
@@ -6,6 +8,6 @@ return {
 	cmd = { 'LazyGit', 'LazyGitConfig', 'LazyGitCurrentFile', 'LazyGitFilter', 'LazyGitFilterCurrentFile' },
 	dependencies = 'nvim-lua/plenary.nvim',
 	keys = {
-		{ '<leader>lg', '<cmd>LazyGit<cr>', desc = 'Open [L]azy [G]it' },
+		{ '<leader>lg', Map:cmd('LazyGit'), desc = 'Open [L]azy [G]it' },
 	},
 }
