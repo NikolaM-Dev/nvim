@@ -21,4 +21,5 @@ function Filetype:is_reading_ft()
 
 	return Table:includes(reading_filetypes, vim.bo.filetype)
 end
+
 return Filetype:new()
