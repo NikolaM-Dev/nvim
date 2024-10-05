@@ -24,6 +24,7 @@ function M.go_to_window(window)
 	end
 end
 
+---@deprecated
 function M.is_markdown_ft()
 	return vim.bo.filetype == 'markdown' or vim.bo.filetype == 'asciidoc'
 end
