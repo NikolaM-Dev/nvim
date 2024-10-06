@@ -1,11 +1,8 @@
 ---@type LazySpec
 return {
-	'junegunn/fzf',
+	'junegunn/fzf.vim',
 	enabled = true,
 
+	dependencies = 'junegunn/fzf',
 	ft = 'qf',
-
-	build = function()
-		vim.fn['fzf#install']()
-	end,
 }
