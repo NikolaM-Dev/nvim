@@ -1,4 +1,4 @@
-local logger = require('lib.logger'):new('Stay Centered')
+local Logger = require('lib.logger'):new('Stay Centered')
 
 ---Is stay centered enabled
 ---@type boolean
@@ -16,10 +16,10 @@ return {
 			function()
 				if is_enable then
 					require('stay-centered').disable()
-					logger:warn('Stay Centered disabled')
+					Logger:warn('Stay Centered disabled')
 				else
 					require('stay-centered').enable()
-					logger:info('Stay Centered enabled')
+					Logger:info('Stay Centered enabled')
 				end
 
 				is_enable = not is_enable
