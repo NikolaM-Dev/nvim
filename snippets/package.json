@@ -55,6 +55,10 @@
           "scss"
         ],
         "path": "./css.json"
+      },
+      {
+        "language": "sh",
+        "path": "./sh.json"
       }
     ]
   }
