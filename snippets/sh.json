@@ -1,0 +1,6 @@
+{
+  "shebang": {
+    "prefix": "sb",
+    "body": "#!/usr/bin/env bash"
+  }
+}
