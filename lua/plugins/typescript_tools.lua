@@ -4,7 +4,7 @@ return {
 	enabled = true,
 
 	ft = {
-		'javascript',
+	ft = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
 		'javascriptreact',
 		'typescript',
 		'typescriptreact',
