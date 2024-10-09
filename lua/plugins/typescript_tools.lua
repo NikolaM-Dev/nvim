@@ -5,8 +5,19 @@ return {
 
 	cmd = { 'TSToolsAddMissingImports', 'TSToolsRemoveUnusedImports' },
 	ft = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
-		'javascriptreact',
-		'typescript',
+
+	config = function()
 		'typescriptreact',
 	},
+			settings = {
+				composite_mode = 'separate_diagnostic',
+				publish_diagnostic_on = 'insert_leave',
+				separate_diagnostic_server = true,
+				-- tsserver_logs = "verbose",
+				tsserver_file_preferences = {
+					importModuleSpecifierPreference = 'relative',
+				},
+			},
+		})
+	end,
 }
