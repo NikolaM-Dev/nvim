@@ -81,7 +81,7 @@
   },
   "cycles": {
     "prefix": "cycles",
-    "body": "60/03/10"
+    "body": "cycles 60/03/10"
   },
   "ADHD": {
     "prefix": "ad",
