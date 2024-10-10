@@ -7,8 +7,11 @@ return {
 	ft = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
 
 	config = function()
-		'typescriptreact',
-	},
+		require('typescript-tools').setup({
+			on_attach = function(client, bufnr)
+				client.server_capabilities.documentFormattingProvider = false
+				client.server_capabilities.documentRangeFormattingProvider = false
+			end,
 			settings = {
 				composite_mode = 'separate_diagnostic',
 				publish_diagnostic_on = 'insert_leave',
