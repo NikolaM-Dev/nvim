@@ -35,6 +35,24 @@ return {
 					['<CR>'] = { i = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }) },
 					['<C-Space>'] = { i = cmp.mapping.complete() },
 					['<C-u>'] = cmp.mapping.scroll_docs(-4),
+					['<C-j>'] = {
+						i = function()
+							if cmp.visible() then
+								cmp.select_next_item({ behavior = types.cmp.SelectBehavior.Insert })
+							else
+								cmp.complete()
+							end
+						end,
+					},
+					['<C-k>'] = {
+						i = function()
+							if cmp.visible() then
+								cmp.select_prev_item({ behavior = types.cmp.SelectBehavior.Insert })
+							else
+								cmp.complete()
+							end
+						end,
+					},
 				}),
 				sources = cmp.config.sources({
 					{ name = 'copilot' },
