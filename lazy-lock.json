@@ -189,7 +189,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "ff69ecca55d83ffc70657f260a799f79a5637831"
+    "commit": "c38af37e4ee71d70b7d60267d96b0a83e5d346f5"
   },
   "nvim-notify": {
     "branch": "master",
@@ -201,7 +201,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "9b1e607298dd5fc2ee6549488324cc92dafb99c0"
+    "commit": "19079207ba4a8c7ed956f40a111a22b1a2dfa6e8"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -221,7 +221,7 @@
   },
   "nvim-web-devicons": {
     "branch": "master",
-    "commit": "56f17def81478e406e3a8ec4aa727558e79786f3"
+    "commit": "19d257cf889f79f4022163c3fbb5e08639077bd8"
   },
   "obsidian.nvim": {
     "branch": "main",
