@@ -73,7 +73,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "c3505858a6764193e1948fd4423b92d7b379b255"
+    "commit": "7bd5884d120c4a746813c8de5af9a3186abe4df0"
   },
   "fzf.vim": {
     "branch": "master",
@@ -245,7 +245,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "0c6de743a8d3c61b87bc7db9ab97dcda12ca6818"
+    "commit": "317df8708ce0238b142317a42ab55a66a2fa8650"
   },
   "smart-open.nvim": {
     "branch": "0.2.x",
