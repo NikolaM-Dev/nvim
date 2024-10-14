@@ -189,7 +189,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "d141895d1d9f41048fff201d62a2d6e96d299e32"
+    "commit": "b1de227da4ca6baf6ba865bec75917e4b4053844"
   },
   "nvim-notify": {
     "branch": "master",
