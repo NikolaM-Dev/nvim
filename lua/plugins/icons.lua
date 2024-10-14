@@ -693,12 +693,12 @@ return {
 				},
 				['markdown'] = {
 					color = '#42a5f5',
-					icon = '',
+					icon = '󱗖',
 					name = 'Markdown',
 				},
 				['md'] = {
 					color = '#42a5f5',
-					icon = '',
+					icon = '󱗖',
 					name = 'Md',
 				},
 				['readme.md'] = {
