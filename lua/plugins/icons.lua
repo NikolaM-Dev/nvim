@@ -692,12 +692,12 @@ return {
 					name = 'JavaScriptReactSpec',
 				},
 				['markdown'] = {
-					color = '#42a5f5',
+					color = '#ca9ee6',
 					icon = '󱗖',
 					name = 'Markdown',
 				},
 				['md'] = {
-					color = '#42a5f5',
+					color = '#ca9ee6',
 					icon = '󱗖',
 					name = 'Md',
 				},
