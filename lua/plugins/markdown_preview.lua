@@ -4,9 +4,7 @@ return {
 	enabled = true,
 
 	ft = 'markdown',
-	build = function()
-		vim.fn['mkdp#util#install']()
-	end,
+	build = 'cd app && yarn install',
 	keys = {
 		{ '<leader>md', '<cmd>MarkdownPreview<cr>', desc = 'Markdown Preview' },
 	},
