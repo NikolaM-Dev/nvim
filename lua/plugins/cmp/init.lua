@@ -15,6 +15,7 @@ return {
 		},
 		config = function()
 			local cmp = require('cmp')
+			local types = require('cmp.types')
 
 			cmp.setup({
 				completion = { completeopt = 'menu,menuone,noinsert' },
