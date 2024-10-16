@@ -5,7 +5,7 @@
   },
   "aerial.nvim": {
     "branch": "master",
-    "commit": "603156d4fd58963a05f221e76b1a25bc79ed55b0"
+    "commit": "60a784614acb1d7695bd9ae0fee8ada1bf7b0c28"
   },
   "browse.nvim": {
     "branch": "main",
@@ -73,7 +73,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "7bd5884d120c4a746813c8de5af9a3186abe4df0"
+    "commit": "90a8800bb596cd98e103788096f2780ee97100b4"
   },
   "fzf.vim": {
     "branch": "master",
@@ -85,7 +85,7 @@
   },
   "grug-far.nvim": {
     "branch": "main",
-    "commit": "f47594f05d10b0bedfc0ed78e488e7fd714d57be"
+    "commit": "190c03d54e8976491e6e49acb97087bf4182b079"
   },
   "gx.nvim": {
     "branch": "main",
@@ -153,7 +153,7 @@
   },
   "mini.surround": {
     "branch": "main",
-    "commit": "e1ac1ce5c7499aa4cc2ca9fb1adec9e730dd9394"
+    "commit": "48a9795c9d352c771e1ab5dedab6063c0a2df037"
   },
   "mini.trailspace": {
     "branch": "main",
@@ -189,7 +189,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "b1de227da4ca6baf6ba865bec75917e4b4053844"
+    "commit": "541f3a2781de481bb84883889e4d9f0904250a56"
   },
   "nvim-notify": {
     "branch": "master",
@@ -201,7 +201,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "5a2ff8b7ca5470b1011ed82ef3fdd53139ffc467"
+    "commit": "92725df6222614307c4712eb9982e5287f21aa11"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -229,7 +229,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "ccab9d5e09e2d0042fbbe5b6bd05e82426247067"
+    "commit": "39dbf875861449cf09e936fa80073f3413e9439c"
   },
   "persistence.nvim": {
     "branch": "main",
@@ -245,11 +245,11 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "317df8708ce0238b142317a42ab55a66a2fa8650"
+    "commit": "5925f48b8c00bb6911763f2a2de19ce05d375e85"
   },
   "smart-open.nvim": {
     "branch": "0.2.x",
-    "commit": "87626ee8748b9bba22093adec7bb58c63e7214f0"
+    "commit": "7770b01ce4d551c143d7ec8589879320796621b9"
   },
   "sqlite.lua": {
     "branch": "master",
