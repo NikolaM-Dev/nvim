@@ -34,6 +34,7 @@ local bookmarks = {
 	concentration = 'https://www.youtube.com/watch?v=yLUqkgpSw7Y',
 	contentoso = 'https://www.youtube.com/watch?v=ja75uBnzHS0',
 	dots = 'https://github.com/NikolaM-Dev/dotfiles',
+	fast = 'https://fast.com',
 	fontawesome = 'https://fontawesome.com/v5/search?q=car&o=r&m=free',
 	fonts = 'https://www.nerdfonts.com/font-downloads',
 	icons = 'https://www.nerdfonts.com/cheat-sheet',
