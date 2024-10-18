@@ -36,7 +36,7 @@ local function lsp_handlers_setup()
 	})
 end
 
-local function diagnostic_go_to(next, severity)
+local function go_to_diagnostic(next, severity)
 	local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
 	severity = severity and vim.diagnostic.severity[severity] or nil
 
@@ -98,18 +98,18 @@ return {
 			nmap('gr', vim.lsp.buf.rename, '[R]e[n]ame')
 			nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
 			nmap('<leader>D', '<cmd>Telescope lsp_type_definitions<cr>', 'Type [D]efinitions')
-			nmap('<leader>dj', diagnostic_go_to(true), 'Next [D]iagnostic')
-			nmap('<leader>dk', diagnostic_go_to(false), 'Prev [D]iagnostic')
+			nmap('<leader>dj', go_to_diagnostic(true), 'Next [D]iagnostic')
+			nmap('<leader>dk', go_to_diagnostic(false), 'Prev [D]iagnostic')
 			nmap('<leader>ds', '<cmd>Telescope lsp_document_symbols<cr>', '[D]ocument [S]ymbols')
-			nmap('<leader>Ej', diagnostic_go_to(true, 'ERROR'), 'Next Error')
-			nmap('<leader>Ek', diagnostic_go_to(false, 'ERROR'), 'Prev Error')
+			nmap('<leader>Ej', go_to_diagnostic(true, 'ERROR'), 'Next Error')
+			nmap('<leader>Ek', go_to_diagnostic(false, 'ERROR'), 'Prev Error')
 			nmap('<leader>fd', '<cmd>Telescope diagnostics<cr>', '[F]ind [D]iagnostics')
 			nmap('<leader>ld', vim.diagnostic.open_float, '[L]ine [D]iagnostics')
 			nmap('<leader>li', '<cmd>LspInfo<cr>', 'Lsp Info')
 			nmap('<Leader>ll', '<cmd>LspLog<cr>', 'Lsp Log')
 			nmap('<Leader>lr', '<cmd>LspRestart<cr>', 'Lsp Restart')
-			nmap('<leader>wj', diagnostic_go_to(true, 'WARN'), 'Next Warning')
-			nmap('<leader>wk', diagnostic_go_to(false, 'WARN'), 'Prev Warning')
+			nmap('<leader>wj', go_to_diagnostic(true, 'WARN'), 'Next Warning')
+			nmap('<leader>wk', go_to_diagnostic(false, 'WARN'), 'Prev Warning')
 			nmap('<leader>ws', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', '[W]orkspace [S]ymbols')
 
 			if client.name == 'eslint' then
