@@ -7,7 +7,6 @@ return {
 
 	keys = {
 		{ '<leader>;q', '<cmd>copen<cr>', desc = 'Open [Q]uickfix' },
-		{ '<leader>qj', '<C-w>jj', desc = 'Next Item in [Q]uickfix' },
 	},
 
 	---@type BqfConfig
