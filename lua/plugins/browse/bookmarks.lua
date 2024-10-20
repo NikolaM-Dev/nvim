@@ -16,7 +16,7 @@ local bookmarks = {
 		lazy_vim = 'https://github.com/LazyVim/LazyVim',
 		linkarzu = 'https://github.com/linkarzu/dotfiles-latest/blob/main/neovim/neobean',
 		mrs4ndman = 'https://github.com/mrs4ndman/nvim-conf',
-		prime = 'https://github.com/ThePrimeagen/neovimrc',
+		prime = 'https://github.com/ThePrimeagen/init.lua',
 		wuelner = 'https://github.com/wuelnerdotexe/nvim',
 	},
 
