@@ -168,3 +168,6 @@ Map:set('n', '<leader>ip', function()
 end, { desc = '[I]mage [P]review' })
 
 Map:set('n', '<leader>yp', Map:cmd('let @+=expand("%:p:~")'), { desc = '[Y]ank [P]ath from current file' })
+
+Map:set('n', '<leader>xj', Map:cmd('cnext'), { desc = 'Next Quickfix list item' })
+Map:set('n', '<leader>xk', Map:cmd('cprev'), { desc = 'Previous Quickfix list item' })
