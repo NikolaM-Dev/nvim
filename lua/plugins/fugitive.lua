@@ -16,7 +16,18 @@ return {
 		{ '<leader>gap', '<cmd>G add % -p<cr>', desc = '[G]it [A]dd [P]artial' },
 		{ '<leader>gbm', ':G branch -m ', desc = '[G]it [B]ranch [M]ove' },
 		{ '<leader>gca', '<cmd>TmuxGitCommitAmend<cr>', desc = '[G]it [C]ommit [A]mend' },
-		{ '<leader>gcm', '<cmd>G commit -v<cr>', desc = '[G]it [C]o[M]mit' },
+		{
+			'<leader>gcm',
+			function()
+				-- Fix invalid width when use diffview.nvim
+				if #vim.fn.gettabinfo() > 1 then
+					vim.api.nvim_command('wincmd w')
+				end
+
+				vim.cmd('G commit -v')
+			end,
+			desc = '[G]it [C]o[M]mit',
+		},
 		{ '<leader>g', '<cmd>:G<cr>', desc = '[G]it' },
 		{ '<leader>gfa', '<cmd>G fetch --all -p<cr>', desc = '[G]it [F]etch [A]ll' },
 		{ '<leader>gi', '<cmd>G init<cr>', desc = '[G]it [I]nit' },
