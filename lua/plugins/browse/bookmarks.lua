@@ -2,7 +2,7 @@ local M = {}
 
 ---@type table
 local bookmarks = {
-	nvim_configs = {
+	['nvim configs'] = {
 		adalessa = 'https://gitea.ad-impeldown.synology.me/alpha/nixvim/src/branch/main',
 		adibhanna = 'https://github.com/adibhanna/nvim',
 		b0o = 'https://github.com/b0o/nvim-conf',
