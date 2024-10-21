@@ -2,7 +2,7 @@ local bookmarks = require('plugins.browse.bookmarks').get_bookmarks()
 
 ---@type LazySpec
 return {
-	'lalitmee/browse.nvim',
+	'NikolaM-Dev/browse.nvim',
 	enabled = true,
 
 	keys = {
