@@ -54,7 +54,7 @@ autocmd({ 'VimResized' }, {
 	end,
 })
 
-autocmd('BufReadPre', {
+autocmd('BufReadPost', {
 	desc = 'Go to last loc when opening a buffer',
 	group = _G.augroup('go_last_loc'),
 	pattern = '*',
