@@ -27,6 +27,7 @@ Map:set('v', '<leader>s', ':!sort<cr>', { desc = 'Sort' })
 
 -- Save
 Map:set({ 'i', 'n', 's', 'v' }, '<C-s>', '<esc><cmd>w<cr>', { desc = '[S]ave file' })
+Map:set('n', '<leader><C-s>', Map:cmd('noautocmd w'), { desc = '[S]ave file without auto-indent' })
 
 -- Save all
 Map:set('n', '<leader>w', Map:cmd('wall'), { desc = 'Write all' })
