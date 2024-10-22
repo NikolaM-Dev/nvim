@@ -105,7 +105,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "1159bdccd8910a0fd0914b24d6c3d186689023d9"
+    "commit": "cf8ecc2c5e4332760431a33534240b0cbc6680ab"
   },
   "lazygit.nvim": {
     "branch": "main",
@@ -185,7 +185,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "84f867753f659bfd9319f75bd5eb273a315f2da5"
+    "commit": "0d62a16429dba5fded93a076237079b81527e8f3"
   },
   "nvim-notify": {
     "branch": "master",
@@ -197,7 +197,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "df20c049694474021cffb2cc8687c809adc1cbba"
+    "commit": "bab7b0f20bd3e805b77231a77f516c7d69382693"
   },
   "nvim-treesitter-context": {
     "branch": "master",
