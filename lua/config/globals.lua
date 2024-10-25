@@ -7,9 +7,9 @@ vim.g.loaded_python3_provider = 0
 vim.g.loaded_ruby_provider = 0
 
 ---Print a value with vim.inspect
----@param v any The value to print
-function _G.P(v)
-	print(vim.inspect(v))
+---@param payload any The value to print
+function _G.P(payload)
+	print(vim.inspect(payload))
 end
 
 ---Create an autogroup with nikola prefix
