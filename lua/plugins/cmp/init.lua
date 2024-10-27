@@ -60,6 +60,7 @@ return {
 					{ name = 'nvim_lsp' },
 					{ name = 'nvim_lua' },
 					{ name = 'luasnip' },
+					{ name = 'emoji' },
 					{ name = 'emmet' },
 					{ name = 'nvim_lsp_signature_help' },
 					{ name = 'buffer' },
@@ -130,6 +131,7 @@ return {
 	{ 'hrsh7th/cmp-path', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'lukas-reineke/cmp-rg', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{ 'saadparwaiz1/cmp_luasnip', event = 'InsertEnter', dependencies = { 'hrsh7th/nvim-cmp', 'L3MON4D3/LuaSnip' } },
+	{ 'hrsh7th/cmp-emoji', event = 'InsertEnter', dependencies = 'hrsh7th/nvim-cmp' },
 	{
 		'zbirenbaum/copilot-cmp',
 		enabled = false,
