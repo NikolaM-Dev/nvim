@@ -1,6 +1,8 @@
 ---@type LazySpec
 return {
 	'windwp/nvim-spectre',
+	enabled = false,
+
 	keys = {
 		{
 			'<leader>S',
