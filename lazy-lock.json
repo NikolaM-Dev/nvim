@@ -69,7 +69,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "71fad63829a9c2107c8ffb05095f71535129ca70"
+    "commit": "ff1687744db737c935db0f8e4d29373db9f84d8c"
   },
   "fzf.vim": {
     "branch": "master",
@@ -169,7 +169,7 @@
   },
   "nvim": {
     "branch": "main",
-    "commit": "da6ee5c2c99f11509b7c027193dca4286edd0373"
+    "commit": "cf021ebfb1e400a5fd1615cbda024308ca589b18"
   },
   "nvim-bqf": {
     "branch": "main",
@@ -193,15 +193,15 @@
   },
   "nvim-spectre": {
     "branch": "master",
-    "commit": "ba7fb777edff6c1fbbeffd343e113af64c04e90a"
+    "commit": "08be31c104df3b4b049607694ebb2b6ced4f928b"
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "46a6587a23eb842411e27f325280e8d7f71bd00a"
+    "commit": "00d219068385a4aa80859d4606ad6e03af6faa83"
   },
   "nvim-treesitter-context": {
     "branch": "master",
-    "commit": "e7fdb4cdf0942cd6e63dd822110a93c0ec777fe5"
+    "commit": "5bd21aa75aa9e24c0680b23fc88380cd80a53641"
   },
   "nvim-ts-autotag": {
     "branch": "main",
