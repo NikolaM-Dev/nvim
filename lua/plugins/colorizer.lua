@@ -1,3 +1,5 @@
+-- TODO: this is deprecated
+
 ---@type LazySpec
 return {
 	'NvChad/nvim-colorizer.lua',
