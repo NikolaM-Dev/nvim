@@ -89,3 +89,12 @@ autocmd('FileType', {
 		end, { buffer = event.buf, silent = true, desc = 'Go to DiffView file panel' })
 	end,
 })
+
+autocmd('LspAttach', {
+	desc = 'Disable lsp on rofi config files',
+	group = _G.augroup('disable_lsp_on_rofi_config_files'),
+	pattern = '*.rasi',
+	callback = function()
+		vim.cmd('LspStop')
+	end,
+})
