@@ -32,6 +32,9 @@ local bookmarks = {
 	['lute docs'] = 'https://luteorg.github.io/lute-manual',
 	['lute read'] = 'http://localhost:1873',
 
+	cambridge = 'https://dictionary.cambridge.org/dictionary/english',
+	ipa = 'https://americanipachart.com',
+
 	awesome = 'https://github.com/rockerBOO/awesome-neovim',
 	catppuccin = 'https://github.com/catppuccin/catppuccin',
 	concentration = 'https://www.youtube.com/watch?v=yLUqkgpSw7Y',
