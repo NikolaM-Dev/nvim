@@ -436,6 +436,11 @@ return {
 					icon = '',
 					name = 'ViteTestingEnv',
 				},
+				['uat'] = {
+					color = '#fbc02d',
+					icon = '',
+					name = 'ViteUATEnv',
+				},
 				['en.json'] = {
 					color = '#5c6bc0',
 					icon = '󰊿',
