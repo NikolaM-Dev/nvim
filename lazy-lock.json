@@ -117,7 +117,7 @@
   },
   "lualine.nvim": {
     "branch": "master",
-    "commit": "b431d228b7bbcdaea818bdc3e25b8cdbe861f056"
+    "commit": "b39f1f02f1799da88d552c522f4cb0c786b14440"
   },
   "markdown-preview.nvim": {
     "branch": "master",
@@ -201,7 +201,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "92d2501d698e0fe855bd222540f9648890fab6c7"
+    "commit": "b065b59196edb10a7c29bfbed88cc225b7e3de37"
   },
   "nvim-treesitter-context": {
     "branch": "master",
