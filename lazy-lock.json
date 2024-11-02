@@ -73,7 +73,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "d938fdc496ccecfe5d747500927b675d31e1835a"
+    "commit": "06072277300e76beb0d4cfea3ff9fd3a86e1d792"
   },
   "fzf.vim": {
     "branch": "master",
@@ -117,7 +117,7 @@
   },
   "lualine.nvim": {
     "branch": "master",
-    "commit": "b39f1f02f1799da88d552c522f4cb0c786b14440"
+    "commit": "640260d7c2d98779cab89b1e7088ab14ea354a02"
   },
   "markdown-preview.nvim": {
     "branch": "master",
@@ -181,7 +181,7 @@
   },
   "nvim-cmp": {
     "branch": "main",
-    "commit": "29fb4854573355792df9e156cb779f0d31308796"
+    "commit": "f17d9b4394027ff4442b298398dfcaab97e40c4f"
   },
   "nvim-colorizer.lua": {
     "branch": "master",
@@ -201,7 +201,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "b065b59196edb10a7c29bfbed88cc225b7e3de37"
+    "commit": "38c12cb9ac8e1c547a8472c87df9e9d7c8b1af0d"
   },
   "nvim-treesitter-context": {
     "branch": "master",
