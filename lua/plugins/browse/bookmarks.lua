@@ -34,6 +34,7 @@ local bookmarks = {
 
 	americanipachart = 'https://americanipachart.com',
 	cambridge = 'https://dictionary.cambridge.org/dictionary/english',
+	ipachart = 'https://www.ipachart.com',
 
 	awesome = 'https://github.com/rockerBOO/awesome-neovim',
 	catppuccin = 'https://github.com/catppuccin/catppuccin',
