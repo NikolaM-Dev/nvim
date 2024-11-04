@@ -50,7 +50,7 @@ local bookmarks = {
 	juan_david = 'https://mail.google.com/mail/u/0/#inbox',
 	juan = 'https://mail.google.com/mail/u/1/#inbox',
 	lazy = 'https://lazy.folke.io/spec',
-	lsp = 'https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md',
+	lsp = 'https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md',
 	motivation = 'https://www.youtube.com/watch?v=ja75uBnzHS0&list=PLyjmPWCWfM3KZENvXrLjGz5r-c1wMvN3e',
 	music = 'https://www.youtube.com/watch?v=1gSe78TIEEk&list=PLyjmPWCWfM3LJDpmmnJj6U7ot4Q1grdPO',
 	new_repository = 'https://github.com/new',
