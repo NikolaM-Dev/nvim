@@ -25,6 +25,7 @@ return {
 			styles = { functions = { 'bold' } },
 			custom_highlights = function(colors)
 				return {
+					MiniIndentscopeSymbol = { bg = '', fg = colors.surface1 },
 					PmenuSel = { bg = colors.surface0, fg = '' },
 
 					['@keyword.directive.markdown'] = { fg = colors.sky },
