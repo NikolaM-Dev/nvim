@@ -1,6 +1,7 @@
+---@type LazySpec
 return {
 	'echasnovski/mini.pairs',
-	event = 'VeryLazy',
+	enabled = true,
 	config = function()
 		require('mini.pairs').setup()
 	end,
