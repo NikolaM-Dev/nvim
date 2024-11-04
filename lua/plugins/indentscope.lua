@@ -1,5 +1,7 @@
+---@type LazySpec
 return {
 	'echasnovski/mini.indentscope',
+	enabled = true,
 	event = 'VeryLazy',
 	config = function()
 		require('mini.indentscope').setup({
