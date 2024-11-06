@@ -41,6 +41,11 @@ return {
 				image = '󰈟 ',
 				custom = {
 					web = { icon = ' ' },
+					youtube = {
+						highlight = 'RenderMarkdownLink',
+						icon = '  ',
+						pattern = 'https://www.youtube.com/watch*',
+					},
 				},
 			},
 		}
