@@ -68,9 +68,9 @@ end, { desc = 'Quit' })
 -- Quit & save
 Map:set('i', '<C-q>', '<esc><cmd>wq<cr>', { desc = 'Quit' })
 
--- Exit all
-Map:set('n', '<leader>x', Map:cmd('xall'), { desc = 'E[X]t all' })
-Map:set('n', '<leader><leader>x', Map:cmd('xall!'), { desc = 'E[X]it all forced' })
+-- Quit all
+Map:set('n', '<leader>q', Map:cmd('qall'), { desc = '[Q]uit all' })
+Map:set('n', '<leader><leader>q', Map:cmd('qall!'), { desc = '[Q]uit all forced' })
 
 -- Quit without save
 Map:set('n', '<leader>z', Map:cmd('q!'), { desc = 'Quit without save' })
