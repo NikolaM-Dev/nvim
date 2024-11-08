@@ -13,7 +13,7 @@ return {
 		table.insert(keys, {
 			'<C-e>',
 			function()
-				harpoon.ui:toggle_quick_menu(harpoon:list())
+				harpoon.ui:toggle_quick_menu(harpoon:list(), { title = '  Harpoon ' })
 			end,
 			desc = 'Toggle harpoon quick menu',
 		})
