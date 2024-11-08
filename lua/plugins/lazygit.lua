@@ -12,7 +12,7 @@ return {
 		'LazyGitFilter',
 		'LazyGitFilterCurrentFile',
 	},
-	dependencies = 'nvim-lua/plenary.nvim',
+
 	keys = {
 		{ '<leader>lg', Map:cmd('LazyGit'), desc = 'Open [L]azy [G]it' },
 	},
