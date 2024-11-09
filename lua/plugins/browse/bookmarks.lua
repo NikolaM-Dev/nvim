@@ -37,6 +37,7 @@ local bookmarks = {
 	ipachart = 'https://www.ipachart.com',
 
 	awesome = 'https://github.com/rockerBOO/awesome-neovim',
+	bun = 'https://bun.sh/guides',
 	catppuccin = 'https://github.com/catppuccin/catppuccin',
 	concentration = 'https://www.youtube.com/watch?v=yLUqkgpSw7Y',
 	contentoso = 'https://www.youtube.com/watch?v=ja75uBnzHS0',
