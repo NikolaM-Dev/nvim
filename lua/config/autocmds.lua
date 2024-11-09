@@ -98,3 +98,15 @@ autocmd('LspAttach', {
 		vim.cmd('LspStop')
 	end,
 })
+
+autocmd({ 'FileType' }, {
+	desc = 'Save and quit with <C-s> in gitcommit filetypes',
+	group = _G.augroup('save_and_quit_with_<c-s>_in_gitcommit_filetypes'),
+	pattern = { 'gitcommit' },
+	callback = function(event)
+		local buf = event.buf
+		local Map = require('lib.map')
+
+		Map:set({ 'i', 'n', 's', 'v' }, '<C-s>', '<esc><cmd>wq<cr>', { desc = '[S]ave and Quit file', buffer = buf })
+	end,
+})
