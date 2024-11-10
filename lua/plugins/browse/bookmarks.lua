@@ -65,6 +65,7 @@ local bookmarks = {
 	status_codes = 'https://developer.mozilla.org/es/docs/Web/HTTP/Status#errores_de_cliente',
 	telescope = 'https://github.com/nvim-telescope/telescope.nvim/blob/master/doc/telescope.txt',
 	tokyonight = 'https://github.com/folke/tokyonight.nvim/blob/main/lua/tokyonight/colors.lua',
+	transcriptions = 'https://notegpt.io/youtube-transcript-generator',
 	twitch = 'https://www.twitch.tv',
 	twitter = 'https://twitter.com/home',
 	youtube = 'https://www.youtube.com',
