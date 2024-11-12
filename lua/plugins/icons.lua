@@ -641,6 +641,11 @@ return {
 					color = '#0288d1',
 					name = 'Ts',
 				},
+				['d.ts'] = {
+					icon = '',
+					color = '#60a5fa',
+					name = 'TypeDefinitions',
+				},
 				['test.ts'] = {
 					color = '#0288d1',
 					icon = '󰂖',
