@@ -18,5 +18,10 @@
   "type generic with an interface": {
     "prefix": "tgwi",
     "body": "[key in keyof ${1:Generic}]: ${1:Generic}[key]"
+  },
+  "deprecated": {
+    "prefix": "dep",
+    "body": ["/**", " * @deprecated", " */"]
+  },
   }
 }
