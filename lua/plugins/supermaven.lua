@@ -6,6 +6,8 @@ return {
 	event = 'InsertEnter',
 	commit = '40bde487fe31723cdd180843b182f70c6a991226',
 
+	cmd = { 'SupermavenToggle' },
+
 	keys = {
 		{ '<leader>ai', '<cmd>SupermavenToggle<cr>', desc = 'Toggle Supermaven [A][I]' },
 	},
