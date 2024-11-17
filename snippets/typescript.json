@@ -23,5 +23,8 @@
     "prefix": "dep",
     "body": ["/**", " * @deprecated", " */"]
   },
+  "isBoolean": {
+    "prefix": "isBoolean",
+    "body": ["@Transform(PBoolean.transformToBoolean)"]
   }
 }
