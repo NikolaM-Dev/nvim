@@ -3,7 +3,7 @@
 ---@type LazySpec
 return {
 	'NvChad/nvim-colorizer.lua',
-	enabled = true,
+	enabled = false,
 
 	event = 'BufReadPre',
 	config = function()
