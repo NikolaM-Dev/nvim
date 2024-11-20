@@ -76,6 +76,6 @@ vim.opt.undofile = true -- make undo file
 vim.opt.updatetime = 40 -- improve user experience updating more frequently
 vim.opt.whichwrap = 'b,s,<,>,[,]'
 vim.opt.wildmode = 'longest:full,full' -- Command-line completion mode
-vim.opt.winbar = '%=%m %f' -- the window bar is a bar that's shown at the top of every window with it enabled
+vim.opt.winbar = '%=%m %t' -- the window bar is a bar that's shown at the top of every window with it enabled
 vim.opt.wrap = false -- wrap lines
 vim.opt.writebackup = false -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
