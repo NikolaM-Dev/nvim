@@ -4,6 +4,13 @@ local Map = require('lib.map')
 Map:set({ 'n', 'x' }, 'j', 'v:count == 0 ? \'gj\' : \'j\'', { expr = true, silent = true })
 Map:set({ 'n', 'x' }, 'k', 'v:count == 0 ? \'gk\' : \'k\'', { expr = true, silent = true })
 
+Map:set(
+	'n',
+	'<leader>,',
+	'm\'$a,<Esc>`\'',
+	{ desc = 'Put a comma at the other end of the current line and return to last position' }
+)
+
 -- Move Lines
 Map:set('i', '<A-J>', '<esc><cmd>m .+1<cr>==gi', { desc = 'Move down' })
 Map:set('i', '<A-K>', '<esc><cmd>m .-2<cr>==gi', { desc = 'Move up' })
