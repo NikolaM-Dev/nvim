@@ -86,7 +86,15 @@ return {
 			nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation', 'i')
 			nmap('ga', vim.lsp.buf.code_action, '[C]ode [A]ction')
 			nmap('gd', function()
-				if require('obsidian').util.cursor_on_markdown_link() then
+				local hasObsidian, obsidian = pcall(require, 'obsidian')
+
+				if not hasObsidian then
+					vim.cmd('Telescope lsp_definitions')
+
+					return
+				end
+
+				if obsidian.util.cursor_on_markdown_link() then
 					return vim.cmd('ObsidianFollowLink')
 				else
 					vim.cmd('Telescope lsp_definitions')
