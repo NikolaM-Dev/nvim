@@ -1,6 +1,5 @@
 require('config.globals')
 require('config.options')
-require('config.filetype')
 require('config.lazy')
 
 if vim.fn.argc(-1) == 0 then
