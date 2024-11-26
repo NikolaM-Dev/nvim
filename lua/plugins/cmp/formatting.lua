@@ -54,6 +54,8 @@ function M.format(entry, vim_item)
 	-- 	end
 	-- end
 
+	-- TODO: Testing zettelkasten
+	-- vim_item.kind = string.format('%s %s %s', KIND_ICONS[vim_item.kind], vim_item.kind, entry.source.name)
 	vim_item.kind = string.format('%s %s', KIND_ICONS[vim_item.kind], vim_item.kind)
 
 	return vim_item
