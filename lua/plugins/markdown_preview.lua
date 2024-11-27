@@ -1,7 +1,7 @@
 ---@type LazySpec
 return {
 	'iamcco/markdown-preview.nvim',
-	enabled = true,
+	enabled = vim.fn.executable('yarn') == 1,
 
 	ft = 'markdown',
 	build = 'cd app && yarn install',
