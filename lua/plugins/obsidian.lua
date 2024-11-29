@@ -117,6 +117,7 @@ return {
 			},
 			completion = {
 				min_chars = 2,
+				nvim_cmp = true,
 			},
 			daily_notes = {
 				alias_format = '%A, %d %B %Y',
