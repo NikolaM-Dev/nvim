@@ -15,6 +15,7 @@ return {
 			'html-lsp',
 			'json-lsp',
 			'lua-language-server',
+			'markdown-oxide',
 			'marksman',
 			'prettier',
 			'prettierd',
