@@ -185,6 +185,7 @@ return {
 			'gopls',
 			'html',
 			'jsonls',
+			-- 'markdown_oxide',
 			'marksman',
 			'svelte',
 			'taplo',
