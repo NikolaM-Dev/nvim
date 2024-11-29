@@ -179,6 +179,7 @@ return {
 				reference_text = { hl_group = 'ObsidianRefText' },
 				tags = { hl_group = 'ObsidianTag' },
 				update_debounce = 284,
+				hl_groups = require('rose-pine.plugins.obsidian'),
 				-- hl_groups = {
 				-- 	ObsidianBullet = { bold = true, fg = '#89ddff' },
 				-- 	ObsidianDone = { bold = true, fg = '#89ddff' },
@@ -190,7 +191,6 @@ return {
 				-- 	ObsidianTilde = { bold = true, fg = '#ff5370' },
 				-- 	ObsidianTodo = { bold = true, fg = '#f78c6c' },
 				-- },
-				hl_groups = require('rose-pine.plugins.obsidian'),
 			},
 			wiki_link_func = 'prepend_note_id',
 			workspaces = {
