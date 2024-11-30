@@ -89,7 +89,7 @@
   },
   "gx.nvim": {
     "branch": "main",
-    "commit": "cc70d112b14d18dd7b123a5d5288266a60e8189e"
+    "commit": "b01db725a001e4215f363159fc04727f6fde0a1c"
   },
   "harpoon": {
     "branch": "harpoon2",
@@ -165,11 +165,11 @@
   },
   "no-neck-pain.nvim": {
     "branch": "main",
-    "commit": "78d5867fa7544622db39786ecd3949d247ad6265"
+    "commit": "50e3baa883d3d062fb24f0d28235e167bc9c4670"
   },
   "none-ls.nvim": {
     "branch": "main",
-    "commit": "56e6e1bb620d91a6bcad07ae6ccf1be62c679082"
+    "commit": "3b9990a9bb6e48c452b8ff3f0f54cb1d9115c86a"
   },
   "nvim": {
     "branch": "main",
@@ -181,7 +181,7 @@
   },
   "nvim-cmp": {
     "branch": "main",
-    "commit": "ed31156aa2cc14e3bc066c59357cc91536a2bc01"
+    "commit": "ca4d3330d386e76967e53b85953c170658255ecb"
   },
   "nvim-colorizer.lua": {
     "branch": "master",
@@ -205,7 +205,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "427a90ae70f66c2fdf2d9ad16a0f08e9697d90d9"
+    "commit": "454354e5998edb448111574e58d5f5f2d6a940bd"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -225,7 +225,7 @@
   },
   "nvim-web-devicons": {
     "branch": "master",
-    "commit": "edbe0a65cfacbbfff6a4a1e98ddd60c28c560509"
+    "commit": "203da76ecfbb4b192cf830665b03eb651b635c94"
   },
   "obsidian.nvim": {
     "branch": "main",
