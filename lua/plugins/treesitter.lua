@@ -3,7 +3,11 @@ return {
 	'nvim-treesitter/nvim-treesitter',
 	enabled = true,
 
-	build = ':TSUpdate',
+	build = function()
+		local ts_install = require('nvim-treesitter.install')
+
+		ts_install.update({ with_sync = true })()
+	end,
 	event = { 'BufAdd', 'BufNewFile', 'BufReadPre' },
 	keys = {
 		{ '<C-space>', desc = 'Increment selection' },
