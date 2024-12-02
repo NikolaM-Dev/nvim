@@ -49,7 +49,5 @@ return {
 				}
 			end,
 		})
-
-		catppuccin.load()
 	end,
 }
