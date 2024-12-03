@@ -5,7 +5,7 @@
   },
   "aerial.nvim": {
     "branch": "master",
-    "commit": "ddd25f57e5205b36bc2e939c486b47818bef9ec3"
+    "commit": "fd7fbe36772d7a955815c90ff9b58523bfdb410d"
   },
   "bullets.vim": {
     "branch": "master",
@@ -73,7 +73,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "3e6e0528a65447129994d8abb9e12b88a2fce91f"
+    "commit": "a6957aba117bac5139f6cd408f1bd1bb89183f8a"
   },
   "fzf.vim": {
     "branch": "master",
@@ -85,7 +85,7 @@
   },
   "grug-far.nvim": {
     "branch": "main",
-    "commit": "9a2f78219390b47d67795ab09390d7f092e23976"
+    "commit": "6a293a68365cff235faad3dd3851c36c829be13e"
   },
   "gx.nvim": {
     "branch": "main",
@@ -169,7 +169,7 @@
   },
   "none-ls.nvim": {
     "branch": "main",
-    "commit": "96ec99437a80a9aae1634d0a20151529a67a0977"
+    "commit": "58866c670d68ef80397c317a3a1ee5f53ca646fd"
   },
   "nvim": {
     "branch": "main",
@@ -193,7 +193,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "627905ef6aabd99b31f369c33cd802a73144479c"
+    "commit": "1aa9f36b6d542dafc0b4a38c48969d036003b00a"
   },
   "nvim-notify": {
     "branch": "master",
@@ -205,7 +205,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "69170c93149ddb71a22bd954514806395c430c02"
+    "commit": "b31188671d8a060022dbbeb6905019e69e310108"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -213,7 +213,7 @@
   },
   "nvim-ts-autotag": {
     "branch": "main",
-    "commit": "f2d24aca1bcbbd2c0306fd93d52e3697027b77ff"
+    "commit": "1cca23c9da708047922d3895a71032bc0449c52d"
   },
   "nvim-ts-context-commentstring": {
     "branch": "main",
@@ -233,7 +233,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "3c2de37accead0240fbe812f5ccdedfe0b973557"
+    "commit": "9a59256c8e88b29d2150e99b5960b2f111e51f75"
   },
   "persistence.nvim": {
     "branch": "main",
@@ -249,7 +249,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "61850bf7df4af8398e97559a35b62378ba8435b1"
+    "commit": "da707623447752ca8eb00b7606b8ffe7dac18ce0"
   },
   "rose-pine": {
     "branch": "main",
