@@ -32,6 +32,9 @@ local bookmarks = {
 	['lute docs'] = 'https://luteorg.github.io/lute-manual',
 	['lute read'] = 'http://localhost:1873',
 
+	['notes zk'] = 'https://github.com/zk-org/zk',
+	['notes zk.nvim'] = 'https://github.com/zk-org/zk-nvim',
+
 	americanipachart = 'https://americanipachart.com',
 	cambridge = 'https://dictionary.cambridge.org/dictionary/english',
 	ipachart = 'https://www.ipachart.com',
