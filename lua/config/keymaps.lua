@@ -1,3 +1,4 @@
+local Logger = require('lib.logger'):new('Keymaps')
 local Map = require('lib.map')
 
 -- Better up/down
@@ -183,3 +184,13 @@ Map:set('n', '<leader><leader>r', function()
 	local cmd = vim.fn.getline('.')
 	vim.cmd(cmd)
 end, { desc = 'Run command on current line' })
+
+Map:set('n', '<leader>tw', function()
+	vim.wo.wrap = not vim.wo.wrap
+
+	if vim.wo.wrap then
+		Logger:info('Word wrap is enabled')
+	else
+		Logger:warn('Word wrap is disabled')
+	end
+end, { desc = '[T]oggle word [W]rap' })
