@@ -105,8 +105,8 @@ autocmd({ 'FileType' }, {
 	pattern = { 'gitcommit' },
 	callback = function(event)
 		local buf = event.buf
-		local Map = require('lib.map')
+		local map = require('lib.map')
 
-		Map:set({ 'i', 'n', 's', 'v' }, '<C-s>', '<esc><cmd>wq<cr>', { desc = '[S]ave and Quit file', buffer = buf })
+		map.set({ 'i', 'n', 's', 'v' }, '<C-s>', '<esc><cmd>wq<cr>', { buffer = buf, desc = '[S]ave and Quit file' })
 	end,
 })
