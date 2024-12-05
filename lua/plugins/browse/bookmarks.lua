@@ -32,6 +32,8 @@ local bookmarks = {
 	['lute docs'] = 'https://luteorg.github.io/lute-manual',
 	['lute read'] = 'http://localhost:1873',
 
+	['notes devops'] = 'https://www.youtube.com/@mischavandenburg',
+	['notes data scientist'] = 'https://www.youtube.com/@sspaeti',
 	['notes zk'] = 'https://github.com/zk-org/zk',
 	['notes zk.nvim'] = 'https://github.com/zk-org/zk-nvim',
 
