@@ -17,3 +17,5 @@ end
 function _G.augroup(name)
 	return vim.api.nvim_create_augroup('nikola_' .. name, { clear = true })
 end
+
+_G.n = require('lib')
