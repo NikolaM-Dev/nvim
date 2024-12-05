@@ -110,3 +110,26 @@ autocmd({ 'FileType' }, {
 		map.set({ 'i', 'n', 's', 'v' }, '<C-s>', '<esc><cmd>wq<cr>', { buffer = buf, desc = '[S]ave and Quit file' })
 	end,
 })
+
+autocmd('BufEnter', {
+	desc = 'Give autocomplete to command line',
+	group = _G.augroup('give_autocomplete_to_command_line'),
+	pattern = '*',
+	callback = function()
+		local buf_name = vim.api.nvim_buf_get_name(0)
+		if buf_name ~= '' then
+			return
+		end
+
+		local cmp = require('cmp')
+
+		local sources = cmp.config.sources({
+			{ name = 'path' },
+			{ name = 'cmdline', max_item_count = 10 },
+			{ name = 'buffer', max_item_count = 10, option = { indexing_interval = 284 } },
+			{ name = 'rg', max_item_count = 10, option = { debounce = 42 } },
+		})
+
+		cmp.setup.buffer({ sources = sources })
+	end,
+})
