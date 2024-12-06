@@ -1,5 +1,6 @@
 local Filetype = require('lib.filetype')
 
+---@type LazySpec
 return {
 	'nvim-lualine/lualine.nvim',
 	enabled = true,
