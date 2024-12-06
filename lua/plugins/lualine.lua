@@ -1,5 +1,3 @@
-local Filetype = require('lib.filetype')
-
 ---@type LazySpec
 return {
 	'nvim-lualine/lualine.nvim',
@@ -85,7 +83,7 @@ return {
 						word_count,
 						color = { bg = COLORS.transparent, fg = COLORS.overlay0, gui = 'italic' },
 						cond = function()
-							return Filetype:is_reading_ft()
+							return n.filetype.is_reading_ft()
 						end,
 						icon = '󰈬',
 					},
@@ -93,7 +91,7 @@ return {
 						reading_time,
 						color = { fg = COLORS.overlay0, bg = COLORS.transparent, gui = 'italic' },
 						cond = function()
-							return Filetype:is_reading_ft()
+							return n.filetype.is_reading_ft()
 						end,
 						icon = '󱑎',
 					},
