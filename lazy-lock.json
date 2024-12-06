@@ -85,7 +85,7 @@
   },
   "grug-far.nvim": {
     "branch": "main",
-    "commit": "5613d0e314b2fe09d85e8392e6a63c2d57e85840"
+    "commit": "4b19888719e45ed696d140af2e4e4e3840a5387a"
   },
   "gx.nvim": {
     "branch": "main",
@@ -193,7 +193,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "2c007c79eedfca0ec652c50d571cb0c52d1577ba"
+    "commit": "64073cbed0ce23e988160bfd1a148a75b6af94cc"
   },
   "nvim-notify": {
     "branch": "master",
@@ -205,7 +205,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "046b8e936142ca7d0285c807201965ae4916bf01"
+    "commit": "c56507f6a16d6a9bd73ab8827a49fa5533aa8fc3"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -249,7 +249,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "7674543331701d05dc9f878e1fe62d1107dc2f5e"
+    "commit": "a7097f372ba8f8866cda5e98d5bc828f2856c96c"
   },
   "rose-pine": {
     "branch": "main",
