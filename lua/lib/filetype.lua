@@ -1,16 +1,10 @@
-local Table = require('lib.table')
+local table = require('lib.table')
 
----@class Filetype
-local Filetype = {}
+---@class NFiletype
+local NFiletype = {}
 
-function Filetype:new()
-	local filetype = {}
-	self.__index = self
-
-	return setmetatable(filetype, self)
-end
-
-function Filetype:is_reading_ft()
+-- TODO: Add docs
+function NFiletype.is_reading_ft()
 	local reading_filetypes = {
 		'asciidoc',
 		'markdown',
@@ -19,7 +13,7 @@ function Filetype:is_reading_ft()
 		'text',
 	}
 
-	return Table:includes(reading_filetypes, vim.bo.filetype)
+	return table.includes(reading_filetypes, vim.bo.filetype)
 end
 
-return Filetype:new()
+return NFiletype
