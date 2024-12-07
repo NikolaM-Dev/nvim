@@ -14,6 +14,7 @@ return {
 		---@type render.md.UserConfig
 		return {
 			heading = disabled,
+			render_modes = { 'n', 'c', 't' },
 			sign = disabled,
 
 			bullet = {

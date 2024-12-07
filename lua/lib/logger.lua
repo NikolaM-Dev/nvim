@@ -13,29 +13,29 @@ end
 ---@private
 ---@param level number
 ---@param msg string
-function Logger:notify(level, msg)
+function NLogger:notify(level, msg)
 	---@diagnostic disable-next-line: missing-fields
 	vim.notify(msg, level, { title = self.title })
 end
 
 ---@param msg string
-function Logger:info(msg)
+function NLogger:info(msg)
 	self:notify(vim.log.levels.INFO, msg)
 end
 
 ---@param msg string
-function Logger:warn(msg)
+function NLogger:warn(msg)
 	self:notify(vim.log.levels.WARN, msg)
 end
 
 ---@param msg string
-function Logger:debug(msg)
+function NLogger:debug(msg)
 	self:notify(vim.log.levels.DEBUG, msg)
 end
 
 ---@param msg string
-function Logger:error(msg)
+function NLogger:error(msg)
 	self:notify(vim.log.levels.ERROR, msg)
 end
 
-return Logger
+return NLogger
