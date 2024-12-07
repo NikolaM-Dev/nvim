@@ -1,9 +1,9 @@
----@class Logger
+---@class NLogger
 ---@field private title string
-local Logger = {}
+local NLogger = {}
 
 ---@param title string
-function Logger:new(title)
+function NLogger:new(title)
 	local logger = { title = title .. ' ' }
 	self.__index = self
 
