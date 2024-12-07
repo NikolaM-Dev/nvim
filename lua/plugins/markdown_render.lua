@@ -41,12 +41,14 @@ return {
 			link = {
 				image = '󰈟 ',
 				custom = {
-					web = { icon = ' ' },
-					youtube = {
-						highlight = 'RenderMarkdownLink',
-						icon = '  ',
-						pattern = 'https://www.youtube.com/watch*',
-					},
+					discord = { icon = '󰙯 ', pattern = 'discord%.com' },
+					github = { icon = '󰊤 ', pattern = 'github%.com' },
+					neovim = { icon = ' ', pattern = 'neovim%.io' },
+					reddit = { icon = '󰑍 ', pattern = 'reddit%.com' },
+					stackoverflow = { icon = '󰓌 ', pattern = 'stackoverflow%.com' },
+					web = { icon = ' ', pattern = '^http' },
+					youtube = { icon = '  ', pattern = 'youtube%.com' },
+					udemy = { icon = '󰰩 ', pattern = 'udemy%.com' },
 				},
 			},
 		}
