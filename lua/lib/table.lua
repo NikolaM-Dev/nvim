@@ -1,17 +1,10 @@
----@class Table
-local Table = {}
-
-function Table:new()
-	local table = {}
-	self.__index = self
-
-	return setmetatable(table, self)
-end
+---@class NTable
+local NTable = {}
 
 -- TODO: Add docs
 ---@param table table
 ---@param element any
-function Table:includes(table, element)
+function NTable.includes(table, element)
 	for _, value in ipairs(table) do
 		if value == element then
 			return true
@@ -21,4 +14,4 @@ function Table:includes(table, element)
 	return false
 end
 
-return Table:new()
+return NTable
