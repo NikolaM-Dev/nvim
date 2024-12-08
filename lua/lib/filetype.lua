@@ -16,4 +16,18 @@ function NFiletype.is_reading_ft()
 	return table.includes(reading_filetypes, vim.bo.filetype)
 end
 
+---Verify if a file exists in the given filepath
+---@param filepath string
+function NFiletype.file_exists(filepath)
+	local file = io.open(filepath, 'r')
+
+	if not file then
+		return false
+	end
+
+	file:close()
+
+	return true
+end
+
 return NFiletype
