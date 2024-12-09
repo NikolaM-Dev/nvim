@@ -14,4 +14,11 @@ end
 function NDate.yesterday()
 	return os.date('%Y-%m-%d', os.time() - DAY_IN_SECONDS)
 end
+
+---Get the date of yesterday in the format of YYYY-MM-DD
+---@return string|osdate
+function NDate.tomorrow()
+	return os.date('%Y-%m-%d', os.time() + DAY_IN_SECONDS)
+end
+
 return NDate
