@@ -85,7 +85,7 @@ return {
 						cond = function()
 							return n.filetype.is_reading_ft()
 						end,
-						icon = '󰈬',
+						icon = '',
 					},
 					{
 						reading_time,
