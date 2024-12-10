@@ -1,3 +1,5 @@
+local theme = vim.g.colors_name
+
 ---@type LazySpec
 return {
 	'MeanderingProgrammer/markdown.nvim',
@@ -56,29 +58,31 @@ return {
 
 	---@param opts render.md.UserConfig
 	config = function(_, opts)
-		local PALETTE = require('catppuccin.palettes').get_palette('mocha')
+		if theme == 'catppuccin' then
+			local PALETTE = require('catppuccin.palettes').get_palette('mocha')
 
-		vim.api.nvim_set_hl(0, 'RenderMarkdownCode', { bg = PALETTE.crust })
-		vim.api.nvim_set_hl(0, 'RenderMarkdownCodeInline', { fg = PALETTE.sky })
-		vim.api.nvim_set_hl(0, 'RenderMarkdownDash', { fg = PALETTE.blue })
+			vim.api.nvim_set_hl(0, 'RenderMarkdownCode', { bg = PALETTE.crust })
+			vim.api.nvim_set_hl(0, 'RenderMarkdownCodeInline', { fg = PALETTE.sky })
+			vim.api.nvim_set_hl(0, 'RenderMarkdownDash', { fg = PALETTE.blue })
 
-		local colors = {
-			PALETTE.red,
-			PALETTE.peach,
-			PALETTE.green,
-			PALETTE.teal,
-			PALETTE.lavender,
-			PALETTE.mauve,
-		}
+			local colors = {
+				PALETTE.red,
+				PALETTE.peach,
+				PALETTE.green,
+				PALETTE.teal,
+				PALETTE.lavender,
+				PALETTE.mauve,
+			}
 
-		for i = 1, 6, 1 do
-			local background_highlight = 'RenderMarkdownH' .. i .. 'Bg'
-			local foreground_highlight = 'RenderMarkdownH' .. i
+			for i = 1, 6, 1 do
+				local background_highlight = 'RenderMarkdownH' .. i .. 'Bg'
+				local foreground_highlight = 'RenderMarkdownH' .. i
 
-			local color = colors[i]
+				local color = colors[i]
 
-			vim.api.nvim_set_hl(0, background_highlight, { fg = color })
-			vim.api.nvim_set_hl(0, foreground_highlight, { fg = color })
+				vim.api.nvim_set_hl(0, background_highlight, { fg = color })
+				vim.api.nvim_set_hl(0, foreground_highlight, { fg = color })
+			end
 		end
 
 		require('render-markdown').setup(opts)
