@@ -31,6 +31,6 @@ return {
 	},
 
 	opts = {
-		keys = 'asdghklqwertyuiopzxcvbnmfj',
+		keys = 'asdfghjklqwertyuiopzxcvbnm',
 	},
 }
