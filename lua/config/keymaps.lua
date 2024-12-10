@@ -117,6 +117,13 @@ map.set({ 'n', 'v' }, '<leader>d', [["_d]])
 map.set({ 'n', 'v' }, '<leader>y', [["+y]])
 map.set('x', '<leader>p', [["_dP]])
 
+map.set('n', 'p', function()
+	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+
+	vim.cmd('put')
+	vim.api.nvim_win_set_cursor(0, { row + 1, col })
+end, { desc = 'Paste and put in the same cursor column' })
+
 -- Change to right vertial split
 map.set('n', '<leader><leader>l', function()
 	vim.cmd.wincmd('L')
