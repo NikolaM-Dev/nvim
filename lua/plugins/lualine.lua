@@ -34,12 +34,21 @@ return {
 			return tostring(hours) .. ' hrs ' .. tostring(minutes) .. ' mins'
 		end
 
+		local auto_theme = require('lualine.themes.auto')
+		local lualine_modes = { 'insert', 'normal', 'visual', 'command', 'replace', 'inactive', 'terminal' }
+		for _, field in ipairs(lualine_modes) do
+			if auto_theme[field] and auto_theme[field].c then
+				auto_theme[field].c.bg = COLORS.transparent
+			end
+		end
+
 		require('lualine').setup({
 			options = {
 				component_separators = { left = '', right = '' },
 				section_separators = { left = '', right = '' },
 				globalstatus = true,
 				refresh = { statusline = 284 },
+				theme = auto_theme,
 				disabled_filetypes = {
 					statusline = {
 						'',
