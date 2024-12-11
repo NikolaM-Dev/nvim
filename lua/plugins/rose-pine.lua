@@ -31,6 +31,22 @@ return {
 
 	---@type table
 	opts = {
+		highlight_groups = {
+			RenderMarkdownBullet = { fg = palette.PINE },
+
+			TelescopeBorder = { fg = palette.HIGHLIGHT_HIGH, bg = palette.NONE },
+			TelescopeNormal = { bg = palette.NONE },
+			TelescopePromptNormal = { bg = palette.NONE },
+			TelescopeResultsNormal = { fg = palette.SUBTLE, bg = palette.NONE },
+			TelescopeSelectionCaret = { fg = palette.ROSE, bg = palette.ROSE },
+			TelescopeSelection = { fg = palette.TEXT, bg = palette.NONE },
+		},
+
+		styles = {
+			bold = true,
+			italic = true,
+			transparency = true,
+		},
 	},
 
 	---@param opts table
