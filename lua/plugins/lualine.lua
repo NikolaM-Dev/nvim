@@ -45,16 +45,11 @@ return {
 		require('lualine').setup({
 			options = {
 				component_separators = { left = '', right = '' },
-				section_separators = { left = '', right = '' },
+				disabled_filetypes = { statusline = { '', 'TelescopePrompt' } },
 				globalstatus = true,
 				refresh = { statusline = 284 },
+				section_separators = { left = '', right = '' },
 				theme = auto_theme,
-				disabled_filetypes = {
-					statusline = {
-						'',
-						'TelescopePrompt',
-					},
-				},
 			},
 			sections = {
 				lualine_a = {
