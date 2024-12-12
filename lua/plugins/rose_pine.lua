@@ -33,6 +33,7 @@ return {
 	opts = {
 		highlight_groups = {
 			RenderMarkdownBullet = { fg = palette.PINE },
+			RenderMarkdownCode = { bg = palette.BASE },
 
 			TelescopeBorder = { fg = palette.HIGHLIGHT_HIGH, bg = palette.NONE },
 			TelescopeNormal = { bg = palette.NONE },
