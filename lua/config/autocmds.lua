@@ -137,7 +137,7 @@ autocmd('BufEnter', {
 autocmd('FileType', {
 	desc = 'Disables mini.indentscope by filetype',
 	group = _G.augroup('disable_mini_indent_scope_by_filetype'),
-	pattern = { 'oil', 'oil_preview' },
+	pattern = { 'lazy', 'oil', 'oil_preview' },
 	callback = function()
 		vim.b.miniindentscope_disable = true
 	end,
