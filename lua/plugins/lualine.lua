@@ -79,11 +79,11 @@ return {
 				lualine_c = {
 					{
 						'location',
-						color = { fg = COLORS.sapphire },
+						color = { bg = COLORS.transparent, fg = COLORS.sapphire },
 					},
 					{
 						'progress',
-						color = { fg = COLORS.sapphire },
+						color = { bg = COLORS.transparent, fg = COLORS.sapphire },
 					},
 					{
 						word_count,
@@ -105,7 +105,7 @@ return {
 				lualine_x = {
 					{
 						'diagnostics',
-						color = { gui = 'bold' },
+						color = { bg = COLORS.transparent, gui = 'bold' },
 						symbols = { error = '󰅙 ', hint = '󰌵 ', info = '󰋼 ', warn = ' ' },
 					},
 				},
