@@ -95,7 +95,7 @@ return {
 					},
 					{
 						reading_time,
-						color = { fg = COLORS.overlay0, bg = COLORS.transparent, gui = 'italic' },
+						color = { bg = COLORS.transparent, fg = COLORS.overlay0, gui = 'italic' },
 						cond = function()
 							return n.filetype.is_reading_ft()
 						end,
