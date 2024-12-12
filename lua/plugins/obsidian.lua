@@ -126,7 +126,7 @@ return {
 				template = 'daily.md',
 			},
 			follow_url_func = function(url)
-				vim.fn.jobstart({ 'brave', url })
+				vim.fn.jobstart({ 'xdg-open', url })
 			end,
 			mappings = {
 				['<leader>ch'] = {
