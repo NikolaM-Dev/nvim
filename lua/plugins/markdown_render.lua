@@ -1,5 +1,3 @@
-local theme = vim.g.colors_name
-
 ---@type LazySpec
 return {
 	'MeanderingProgrammer/markdown.nvim',
