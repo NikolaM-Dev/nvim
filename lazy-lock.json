@@ -85,7 +85,7 @@
   },
   "grug-far.nvim": {
     "branch": "main",
-    "commit": "0d334f90596af91758d88a9cd3d61fd444dcd274"
+    "commit": "eadd3c4d7d3edc9d6b1ddc15e3c661d830dbf2b6"
   },
   "gx.nvim": {
     "branch": "main",
@@ -193,7 +193,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "124be12d782d656b3c75b513a44d9e4728406078"
+    "commit": "ffe543e171792e4e7c42f1e73c4ab5c6fe71b861"
   },
   "nvim-notify": {
     "branch": "master",
@@ -205,7 +205,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "2a496fa4e89034014dd054f04c061ba7d6023a0c"
+    "commit": "33d27173876499a0f037cb9edff90d583711b6ae"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -225,7 +225,7 @@
   },
   "nvim-web-devicons": {
     "branch": "master",
-    "commit": "e73d2774d12d0ecf9e05578d692ba1ea50508cf2"
+    "commit": "dd0c15170f9ab2ffac695d90212318c05078751d"
   },
   "obsidian.nvim": {
     "branch": "main",
