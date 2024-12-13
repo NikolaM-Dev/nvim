@@ -45,6 +45,7 @@ return {
 					github = { icon = '󰊤 ', pattern = 'github%.com' },
 					neovim = { icon = ' ', pattern = 'neovim%.io' },
 					reddit = { icon = '󰑍 ', pattern = 'reddit%.com' },
+					drive = { icon = ' ', pattern = 'drive.google%.com' },
 					stackoverflow = { icon = '󰓌 ', pattern = 'stackoverflow%.com' },
 					web = { icon = ' ', pattern = '^http' },
 					youtube = { icon = '  ', pattern = 'youtube%.com' },
