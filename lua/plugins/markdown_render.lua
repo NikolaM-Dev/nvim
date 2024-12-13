@@ -42,14 +42,14 @@ return {
 				image = '󰈟 ',
 				custom = {
 					discord = { icon = '󰙯 ', pattern = 'discord%.com' },
+					drive = { icon = ' ', pattern = 'drive.google%.com' },
 					github = { icon = '󰊤 ', pattern = 'github%.com' },
 					neovim = { icon = ' ', pattern = 'neovim%.io' },
 					reddit = { icon = '󰑍 ', pattern = 'reddit%.com' },
-					drive = { icon = ' ', pattern = 'drive.google%.com' },
 					stackoverflow = { icon = '󰓌 ', pattern = 'stackoverflow%.com' },
+					udemy = { icon = '󰰩 ', pattern = 'udemy%.com' },
 					web = { icon = ' ', pattern = '^http' },
 					youtube = { icon = '  ', pattern = 'youtube%.com' },
-					udemy = { icon = '󰰩 ', pattern = 'udemy%.com' },
 				},
 			},
 		}
