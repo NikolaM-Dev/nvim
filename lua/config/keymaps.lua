@@ -11,6 +11,13 @@ map.set(
 	{ desc = 'Put a comma at the other end of the current line and return to last position' }
 )
 
+map.set(
+	'n',
+	'<leader>.',
+	'm\'$a.<Esc>`\'',
+	{ desc = 'Put a dot at the other end of the current line and return to last position' }
+)
+
 -- Move Lines
 map.set('i', '<A-J>', '<esc><cmd>m .+1<cr>==gi', { desc = 'Move down' })
 map.set('i', '<A-K>', '<esc><cmd>m .-2<cr>==gi', { desc = 'Move up' })
