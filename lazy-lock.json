@@ -73,7 +73,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "789226ff6db54c95bb546d7565791c90fdfa2efb"
+    "commit": "0476a65fca287a1cd17ae3cbdfd8155eb0fb40ad"
   },
   "fzf.vim": {
     "branch": "master",
@@ -193,7 +193,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "c502e4d288d1e29b46f6b78aa4b375a40c82e8b0"
+    "commit": "ae8a01bb40848490548e5d07b97ed972ed43c2f9"
   },
   "nvim-notify": {
     "branch": "master",
@@ -205,7 +205,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "cfbbdd5effbde3d47d2d662e67cfcd62a93b783f"
+    "commit": "54a29bf99d5ccb2de512906279686457d699f8e5"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -337,7 +337,7 @@
   },
   "which-key.nvim": {
     "branch": "main",
-    "commit": "4ab3bbe976e63b5390d3fca74a52a092a041cd30"
+    "commit": "8ab96b38a2530eacba5be717f52e04601eb59326"
   },
   "windows.nvim": {
     "branch": "main",
