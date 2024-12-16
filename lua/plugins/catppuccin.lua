@@ -28,6 +28,23 @@ return {
 					MiniIndentscopeSymbol = { bg = '', fg = colors.surface1 },
 					PmenuSel = { bg = colors.surface0, fg = '' },
 
+					-- MeanderingProgrammer/render-markdown.nvim
+					RenderMarkdownCode = { bg = colors.crust },
+					RenderMarkdownCodeInline = { fg = colors.sky },
+					RenderMarkdownDash = { fg = colors.blue },
+					RenderMarkdownH1Bg = { fg = colors.red },
+					RenderMarkdownH1 = { fg = colors.red },
+					RenderMarkdownH2Bg = { fg = colors.peach },
+					RenderMarkdownH2 = { fg = colors.peach },
+					RenderMarkdownH3Bg = { fg = colors.green },
+					RenderMarkdownH3 = { fg = colors.green },
+					RenderMarkdownH4Bg = { fg = colors.teal },
+					RenderMarkdownH4 = { fg = colors.teal },
+					RenderMarkdownH5Bg = { fg = colors.lavender },
+					RenderMarkdownH5 = { fg = colors.lavender },
+					RenderMarkdownH6Bg = { fg = colors.mauve },
+					RenderMarkdownH6 = { fg = colors.mauve },
+
 					['@keyword.directive.markdown'] = { fg = colors.sky },
 					['@punctuation.delimiter.yaml'] = { fg = colors.sky },
 
