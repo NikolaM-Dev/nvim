@@ -94,6 +94,7 @@ return {
 			},
 			extensions = {
 				fzf = { case_mode = 'ignore_case' },
+				fzy_native = {},
 
 				---@type FrecencyConfig
 				frecency = {
