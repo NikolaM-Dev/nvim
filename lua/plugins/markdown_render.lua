@@ -1,6 +1,6 @@
 ---@type LazySpec
 return {
-	'MeanderingProgrammer/markdown.nvim',
+	'MeanderingProgrammer/render-markdown.nvim',
 	enabled = true,
 
 	cmd = 'RenderMarkdown',
