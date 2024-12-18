@@ -68,7 +68,7 @@
     "body": "[[z/PN/$0]]"
   },
   "Quote": {
-    "prefix": "q",
+    "prefix": "quote",
     "body": ["> [!QUOTE]", "> $0", "> _${1:author}_"]
   },
   "HR": {
