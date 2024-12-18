@@ -71,6 +71,10 @@
     "prefix": "quote",
     "body": ["> [!QUOTE]", "> $0", "> _${1:author}_"]
   },
+  "Page": {
+    "prefix": "page",
+    "body": "`page:$0`"
+  },
   "HR": {
     "prefix": "hr",
     "body": "---"
