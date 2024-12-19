@@ -14,7 +14,7 @@ local function note_id_func(title)
 		end
 	end
 
-	return tostring(os.date('%Y%m%d%H%M%S')) .. '-' .. suffix
+	return tostring(os.date('%Y%m%d%H%M')) .. '-' .. suffix
 end
 
 ---Get substitutions for templates
