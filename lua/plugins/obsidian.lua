@@ -165,12 +165,12 @@ return {
 				return frontmatter
 			end,
 			note_id_func = note_id_func,
-			notes_subdir = 'z',
+			-- notes_subdir = 'z',
 
-			templates = {
-				subdir = '900-templates',
-				substitutions = get_substitutions(),
-			},
+			-- templates = {
+			-- 	subdir = '900-templates',
+			-- 	substitutions = get_substitutions(),
+			-- },
 			ui = {
 				bullets = { char = '•', hl_group = 'ObsidianBullet' },
 				checkboxes = {},
