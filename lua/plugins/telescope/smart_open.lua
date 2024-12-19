@@ -15,7 +15,7 @@ return {
 
 				require('telescope').extensions.smart_open.smart_open(opts)
 			end,
-			desc = '[F]ind Smart Open',
+			desc = '[F]ind [F]iles with Smart Open',
 		},
 	},
 	config = function()
