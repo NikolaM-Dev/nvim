@@ -73,7 +73,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "ca5e633399e19f71f102a8df195e2f63a8a42137"
+    "commit": "b2c3e567dadd35253bbccaf4e69c9dc352d36304"
   },
   "fzf.vim": {
     "branch": "master",
@@ -177,11 +177,11 @@
   },
   "nvim-bqf": {
     "branch": "main",
-    "commit": "1b24dc6050c34e8cd377b6b4cd6abe40509e0187"
+    "commit": "68d3c20f6bee49105dcfde3df1f7ec972529f2a3"
   },
   "nvim-cmp": {
     "branch": "main",
-    "commit": "98e8b9d593a5547c126a39212d6f5e954a2d85dd"
+    "commit": "b555203ce4bd7ff6192e759af3362f9d217e8c89"
   },
   "nvim-colorizer.lua": {
     "branch": "master",
@@ -205,11 +205,11 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "fa915a30c5cdf1d18129e9ef6ac2ee0fa799904f"
+    "commit": "2405274937718d520a40e03df92030dca6b4f0fd"
   },
   "nvim-treesitter-context": {
     "branch": "master",
-    "commit": "8fd989b6b457a448606b4a2e51f9161700f609a7"
+    "commit": "2bcf700b59bc92850ca83a1c02e86ba832e0fae0"
   },
   "nvim-ts-autotag": {
     "branch": "main",
