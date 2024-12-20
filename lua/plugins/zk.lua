@@ -16,4 +16,19 @@ return {
 		{ '<leader>zl', '<cmd>ZkLinks<cr>', desc = '[Z]k [L]inks' },
 		{ '<leader>zt', '<cmd>ZkTags<cr>', desc = '[Z]k [T]ags' },
 	},
+
+	---@type table
+	opts = {
+		lsp = {
+			auto_attach = {
+				enabled = false,
+			},
+		},
+	},
+
+	---@param opts? table
+	config = function(_, opts)
+		require('zk').setup(opts)
+			},
+	end,
 }
