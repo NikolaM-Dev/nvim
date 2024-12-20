@@ -47,7 +47,7 @@ return {
 				['_'] = 'actions.open_cwd',
 				['-'] = 'actions.parent',
 				['<CR>'] = 'actions.select',
-				['<C-v>'] = 'actions.select_vsplit',
+				[';<C-v>'] = 'actions.select_vsplit',
 				['<C-x>'] = 'actions.select_split',
 				['g?'] = 'actions.show_help',
 				['g.'] = 'actions.toggle_hidden',
