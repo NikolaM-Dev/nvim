@@ -65,7 +65,7 @@
   },
   "dressing.nvim": {
     "branch": "master",
-    "commit": "fc78a3ca96f4db9f8893bb7e2fd9823e0780451b"
+    "commit": "8fb86f808420d5a8a1b1bf869b1609b2337dc6e0"
   },
   "fidget.nvim": {
     "branch": "main",
@@ -205,7 +205,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "2405274937718d520a40e03df92030dca6b4f0fd"
+    "commit": "2a75d8065cff33216e106b651eb0f58b90375717"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -233,7 +233,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "dba037598843973b8c54bc5ce0318db4a0da439d"
+    "commit": "c5f7c56644425e2b77e71904da98cda0331b3342"
   },
   "persistence.nvim": {
     "branch": "main",
