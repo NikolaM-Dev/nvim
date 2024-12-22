@@ -26,5 +26,10 @@ return {
 		},
 	},
 
-	config = true,
+	---@type table
+	opts = {
+		condition = function()
+			return true
+		end,
+	},
 }
