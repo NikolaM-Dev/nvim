@@ -22,8 +22,14 @@ return {
 		picker = 'telescope',
 
 		lsp = {
+			config = {
+				cmd = { 'zk', 'lsp', '--log', '/tmp/zk-lsp.log' },
+				name = 'zk',
+			},
+
 			auto_attach = {
 				enabled = false,
+				filetypes = { 'markdown' },
 			},
 		},
 	},
