@@ -37,7 +37,7 @@ local bookmarks = {
 	['notes zk'] = 'https://github.com/zk-org/zk',
 	['notes zk.nvim'] = 'https://github.com/zk-org/zk-nvim',
 
-	['raining in japon'] = 'https://youtu.be/Vg13S-zzol0',
+	['raining in japan'] = 'https://youtu.be/Vg13S-zzol0',
 
 	americanipachart = 'https://americanipachart.com',
 	cambridge = 'https://dictionary.cambridge.org/dictionary/english',
