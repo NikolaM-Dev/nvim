@@ -5,6 +5,12 @@ return {
 
 	keys = {
 		{
+			';f',
+			n.map.cmd('HopChar1'),
+			desc = 'Jump to word',
+			mode = { 'n', 'v' },
+		},
+		{
 			'f',
 			n.map.cmd('HopWord'),
 			desc = 'Jump to word',
