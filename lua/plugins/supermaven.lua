@@ -1,4 +1,3 @@
-local is_enabled = true
 local logger = n.logger:new('Supermaven')
 
 ---@type LazySpec
@@ -13,13 +12,14 @@ return {
 		{
 			'<leader>ai',
 			function()
-				vim.cmd('SupermavenToggle')
-				is_enabled = not is_enabled
+				local api = require('supermaven-nvim.api')
 
-				if is_enabled then
-					logger:info('Supermaven is enabled')
-				else
+				if api.is_running() then
+					api.stop()
 					logger:warn('Supermaven is disabled')
+				else
+					api.start()
+					logger:info('Supermaven is enabled')
 				end
 			end,
 			desc = 'Toggle Supermaven [A][I]',
