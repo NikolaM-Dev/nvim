@@ -1,6 +1,8 @@
+---@type LazySpec
 return {
 	'ibhagwan/fzf-lua',
 	enabled = false,
+
 	cmd = 'FzfLua',
 	keys = {
 		{ '<leader>b', '<cmd>FzfLua buffers<cr>', desc = '[B]uffers' },
