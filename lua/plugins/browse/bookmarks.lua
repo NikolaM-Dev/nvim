@@ -29,6 +29,8 @@ local bookmarks = {
 		payvalida_sandbox = 'https://sandbox-merchant.payvalida.com/signin',
 	},
 
+	['carpal tunnel'] = 'https://youtu.be/sfVIl4uHrnQ',
+
 	['lute docs'] = 'https://luteorg.github.io/lute-manual',
 	['lute read'] = 'http://localhost:1873',
 
