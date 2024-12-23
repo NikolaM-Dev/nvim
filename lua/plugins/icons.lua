@@ -802,8 +802,8 @@ return {
 					name = 'SonarCloud',
 				},
 				['bun.lockb'] = {
-					color = '#fff3e0',
-					icon = '󰈡',
+					color = '#fff8e1',
+					icon = '',
 					name = 'BunLockb',
 				},
 			},
