@@ -1,5 +1,8 @@
+---@type LazySpec
 return {
 	'nvim-tree/nvim-web-devicons',
+	enabled = false,
+
 	config = function()
 		local icons = require('nvim-web-devicons')
 
