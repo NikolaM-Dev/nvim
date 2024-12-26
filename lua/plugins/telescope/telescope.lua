@@ -20,6 +20,13 @@ return {
 				end,
 				desc = '[/] Fuzzily search in currrent buffer',
 			},
+			{
+				'<leader>en',
+				function()
+					builtin.find_files({ cwd = vim.fn.stdpath('config') })
+				end,
+				desc = '[E]dit [N]eovim',
+			},
 			{ '<leader>?', '<cmd>Telescope command_history<cr>', desc = 'Command History' },
 			{ '<leader>fa', '<cmd>Telescope live_grep<cr>', desc = 'Live Grep' },
 			{ '<leader>fh', '<cmd>Telescope help_tags<cr>', desc = '[F]ind [H]elp Tags' },
