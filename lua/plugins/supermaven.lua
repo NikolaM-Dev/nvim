@@ -26,10 +26,8 @@ return {
 		},
 	},
 
-	---@type table
-	opts = {
-		condition = function()
-			return true
-		end,
-	},
+	config = function()
+		require('supermaven-nvim').setup({})
+		require('supermaven-nvim.api').stop()
+	end,
 }
