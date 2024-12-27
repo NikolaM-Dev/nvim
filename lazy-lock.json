@@ -173,11 +173,11 @@
   },
   "none-ls.nvim": {
     "branch": "main",
-    "commit": "08744d575f64e6b94c8f9d7db8777d6b9134b28e"
+    "commit": "6f5473ae9e7feb0b40ca95b8ed92e85b42a3c71b"
   },
   "nvim": {
     "branch": "main",
-    "commit": "5d9582dbbe37e465f7f93ca6e3dd60cd20eea44f"
+    "commit": "f67b886d65a029f12ffa298701fb8f1efd89295d"
   },
   "nvim-bqf": {
     "branch": "main",
@@ -209,7 +209,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "17678b00fa5c2712890a0ec2e269d0a4de1207df"
+    "commit": "eb3e850acff4d9f2f2dd8dacd75353043c899753"
   },
   "nvim-treesitter-context": {
     "branch": "master",
