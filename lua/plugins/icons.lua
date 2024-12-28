@@ -4,7 +4,12 @@ return {
 	enabled = true,
 
 	---@type table
-	opts = {},
+	opts = {
+		file = {
+			['lazy-lock.json'] = { glyph = '󰒲', hl = 'MiniIconsBlue' },
+			['.luarc.json'] = { glyph = '󰢱', hl = 'MiniIconsAzure' },
+		},
+	},
 
 	init = function()
 		package.preload['nvim-web-devicons'] = function()
