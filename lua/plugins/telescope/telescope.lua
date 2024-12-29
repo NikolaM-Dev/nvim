@@ -21,7 +21,7 @@ return {
 				desc = '[/] Fuzzily search in currrent buffer',
 			},
 			{
-				'<leader>en',
+				'<leader><leader>en',
 				function()
 					builtin.find_files({ cwd = vim.fn.stdpath('config') })
 				end,
