@@ -5,6 +5,9 @@ return {
 
 	---@type table
 	opts = {
+		filetype = {
+			markdown = { glyph = '󱗖' },
+		},
 		file = {
 			['lazy-lock.json'] = { glyph = '󰒲', hl = 'MiniIconsBlue' },
 			['.luarc.json'] = { glyph = '󰢱', hl = 'MiniIconsAzure' },
