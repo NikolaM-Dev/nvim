@@ -27,6 +27,13 @@ return {
 				end,
 				desc = '[E]dit [N]eovim',
 			},
+			{
+				'<leader><leader>ep',
+				function()
+					builtin.find_files({ cwd = vim.fs.joinpath(tostring(vim.fn.stdpath('data')), 'lazy') })
+				end,
+				desc = '[E]dit [P]ackages',
+			},
 			{ '<leader>?', '<cmd>Telescope command_history<cr>', desc = 'Command History' },
 			{ '<leader>fa', '<cmd>Telescope live_grep<cr>', desc = 'Live Grep' },
 			{ '<leader>fh', '<cmd>Telescope help_tags<cr>', desc = '[F]ind [H]elp Tags' },
