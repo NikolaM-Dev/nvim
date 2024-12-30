@@ -141,7 +141,7 @@
   },
   "mini.icons": {
     "branch": "main",
-    "commit": "44c0160526f7ae17ca8e8eab9ab235d047fcf7a6"
+    "commit": "6787321f70d674a481776b7cc2c781fb7002c644"
   },
   "mini.indentscope": {
     "branch": "main",
@@ -209,7 +209,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "7e0fcf0d456fc5818da1af35b1a3f5c784fce457"
+    "commit": "a295ba13d27684e8904e8e51876b84ee85135cf1"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -253,7 +253,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "ba6253d9673daf0cf394b87b2c2ecb7630944c7d"
+    "commit": "6fbd1491abc104409f119685de5353c35c97c005"
   },
   "rose-pine": {
     "branch": "main",
@@ -305,7 +305,7 @@
   },
   "ts-node-action": {
     "branch": "master",
-    "commit": "6d3b60754fd87963d70eadaa2f77873b447eac26"
+    "commit": "7b41b88b410cd45cd610bca74214574299ce0d61"
   },
   "twilight.nvim": {
     "branch": "main",
