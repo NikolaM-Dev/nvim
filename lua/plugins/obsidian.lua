@@ -135,6 +135,12 @@ return {
 					end,
 					opts = { buffer = true, desc = 'Toggle [C][H]eck boxes' },
 				},
+				['<cr>'] = {
+					action = function()
+						return require('obsidian').util.gf_passthrough()
+					end,
+					opts = { buffer = true, expr = true },
+				},
 			},
 			new_notes_location = 'current_dir',
 
