@@ -73,7 +73,11 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "b8d2b0df7e1241c09eff21dbb63ebcc841efc824"
+    "commit": "fd513f8af8191cd60364497f4184b8accd988282"
+  },
+  "fzf-lua": {
+    "branch": "main",
+    "commit": "12ac915c26ec6337ff96be0b8b2311736cca4c13"
   },
   "fzf.vim": {
     "branch": "master",
@@ -173,7 +177,7 @@
   },
   "none-ls.nvim": {
     "branch": "main",
-    "commit": "02144ef2b86a816b5dec69783e311bb6feff7d82"
+    "commit": "caf85560cfcfa62ad3a4c15433db4a8f9ddf934a"
   },
   "nvim": {
     "branch": "main",
@@ -201,7 +205,7 @@
   },
   "nvim-notify": {
     "branch": "master",
-    "commit": "1e99f4f9534ecf3b84eb7ef54a8d460230e78442"
+    "commit": "c3797193536711b5d8983975791c4b11dc35ab3a"
   },
   "nvim-spectre": {
     "branch": "master",
@@ -209,7 +213,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "a295ba13d27684e8904e8e51876b84ee85135cf1"
+    "commit": "5f78e989243f9fb0fb55e0cf54820920d86dfd30"
   },
   "nvim-treesitter-context": {
     "branch": "master",
