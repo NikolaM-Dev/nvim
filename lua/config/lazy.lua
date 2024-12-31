@@ -20,7 +20,7 @@ require('lazy').setup({
 	checker = { enabled = true, notify = false },
 	defaults = { lazy = true, version = false },
 	diff = { cmd = 'terminal_git' },
-	install = { colorscheme = { 'catppuccin', 'tokyonight' } },
+	install = { colorscheme = { 'rose-pine', 'catppuccin', 'tokyonight' } },
 	---@diagnostic disable-next-line: assign-type-mismatch
 	dev = {
 		fallback = true,
