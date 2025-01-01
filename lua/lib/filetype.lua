@@ -30,4 +30,12 @@ function NFiletype.file_exists(filepath)
 	return true
 end
 
+---Verify if a file exists in the given filepath using vim.uv
+---@param filepath string
+function NFiletype.file_exists_uv(filepath)
+	local stat = vim.uv.fs_stat(filepath)
+
+	return stat and stat.type == 'file'
+end
+
 return NFiletype
