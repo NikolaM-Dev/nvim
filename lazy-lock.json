@@ -77,7 +77,7 @@
   },
   "fzf-lua": {
     "branch": "main",
-    "commit": "12ac915c26ec6337ff96be0b8b2311736cca4c13"
+    "commit": "c054a21cd22cef41c62ce96247040abccaab8dbc"
   },
   "fzf.vim": {
     "branch": "master",
@@ -213,7 +213,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "5f78e989243f9fb0fb55e0cf54820920d86dfd30"
+    "commit": "e947d35bbf919ea88a24c21cb8afa4621e3cf547"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -305,7 +305,7 @@
   },
   "tokyonight.nvim": {
     "branch": "main",
-    "commit": "6c30395146c246055ac3cea32d39d6b9876a1dcc"
+    "commit": "45d22cf0e1b93476d3b6d362d720412b3d34465c"
   },
   "ts-node-action": {
     "branch": "master",
@@ -325,7 +325,7 @@
   },
   "undotree": {
     "branch": "master",
-    "commit": "78b5241191852ffa9bb5da5ff2ee033160798c3b"
+    "commit": "2556c6800b210b2096b55b66e74b4cc1d9ebbe4f"
   },
   "vim-be-good": {
     "branch": "master",
