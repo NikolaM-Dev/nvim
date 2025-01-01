@@ -6,7 +6,6 @@ return {
 	cmd = 'Telescope',
 	version = '*',
 	dependencies = {
-		{ 'natecraddock/telescope-zf-native.nvim' },
 		{ 'nvim-telescope/telescope-fzy-native.nvim' },
 	},
 	keys = function()
