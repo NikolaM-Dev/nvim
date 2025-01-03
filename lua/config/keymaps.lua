@@ -208,6 +208,7 @@ map.set('n', '<leader>tw', function()
 		logger:warn('Word wrap is disabled')
 	end
 end, { desc = '[T]oggle word [W]rap' })
+
 -- Execute
 map.set('n', '<space><space>x', map.cmd('source %'), { desc = 'e[X]ecute current lua file' })
 map.set('n', '<space>x', map.cmd('.lua'), { desc = 'e[X]ecute current lua line' })
