@@ -7,6 +7,10 @@
     "branch": "master",
     "commit": "1160fb7a15a34b03b7381d95d45560712b5f19d0"
   },
+  "browse.nvim": {
+    "branch": "main",
+    "commit": "1ccf8705668216d8a311d31e87246b494b8eb571"
+  },
   "bullets.vim": {
     "branch": "master",
     "commit": "2253f970e54320dbd76fd6bb4f5a0bf2436ce232"
@@ -73,7 +77,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "fb3bf6c9841d849ec459fc6b251b4aa0f16d8038"
+    "commit": "8e4d338de9e0d3b81eb01b016ac0f7dcdf8efb2b"
   },
   "fzf-lua": {
     "branch": "main",
@@ -89,7 +93,7 @@
   },
   "grug-far.nvim": {
     "branch": "main",
-    "commit": "678f1bb3d75ce732a4b1df6d52084fdec155c57c"
+    "commit": "08f32182335754abf461dfb77b2c4e24bfe4d614"
   },
   "gx.nvim": {
     "branch": "main",
@@ -181,7 +185,7 @@
   },
   "none-ls.nvim": {
     "branch": "main",
-    "commit": "caf85560cfcfa62ad3a4c15433db4a8f9ddf934a"
+    "commit": "00421b9dc7a4d132ca74cfb4c7e8030d05d6fd0b"
   },
   "nvim": {
     "branch": "main",
@@ -189,7 +193,7 @@
   },
   "nvim-bqf": {
     "branch": "main",
-    "commit": "68d3c20f6bee49105dcfde3df1f7ec972529f2a3"
+    "commit": "ebb6d2689e4427452180f17c53f29f7e460236f1"
   },
   "nvim-cmp": {
     "branch": "main",
@@ -205,7 +209,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "a8ef5e6e497b3ebeaaf35b939c07c211563b2e05"
+    "commit": "f4ed656e876e45cf914d7beb972830561178e232"
   },
   "nvim-notify": {
     "branch": "master",
@@ -217,7 +221,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "cfbc1c0e0ff63e5b5e37b465b915b95fc2e98cef"
+    "commit": "57713d079c3c2afcc31f3e0650bf8594a2a296ba"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -245,7 +249,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "ba858b662599eab8ef1cba9ab745afded99cb180"
+    "commit": "c6a39a69b2df7c10466f150dde0bd23e49c1fba3"
   },
   "persistence.nvim": {
     "branch": "main",
@@ -261,7 +265,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "c00cc1e2cbd5a55ca0c6c2e27fcf4a02ff731434"
+    "commit": "1faa6568eb61467d64c3d0aad8ac4c9c0e45514e"
   },
   "rose-pine": {
     "branch": "main",
