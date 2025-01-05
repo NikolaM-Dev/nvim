@@ -6,10 +6,27 @@ vim.g.loaded_perl_provider = 0
 vim.g.loaded_python3_provider = 0
 vim.g.loaded_ruby_provider = 0
 
----Print a value with vim.inspect
----@param payload any The value to print
-function _G.P(payload)
-	print(vim.inspect(payload))
+---Print one o multiple values with vim.inspect
+---@param ...any
+function _G.P(...)
+	print(type(...))
+	if type(...) ~= 'table' then
+		print(vim.inspect(...))
+
+		return
+	end
+
+	for _, payload in ipairs({ ... }) do
+		if type(payload) ~= 'table' then
+			for _, v in pairs(payload) do
+				print(vim.inspect(v))
+			end
+
+			return
+		end
+
+		print(vim.inspect(payload))
+	end
 end
 
 ---Create an autogroup with nikola prefix
