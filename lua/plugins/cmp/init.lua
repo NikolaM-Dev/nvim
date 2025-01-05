@@ -66,7 +66,13 @@ return {
 					{ name = 'buffer' },
 					{ name = 'path' },
 					{ name = 'calc' },
-					{ name = 'rg', max_item_count = 10 },
+					{
+						max_item_count = 10,
+						name = 'rg',
+						option = {
+							additional_arguments = '--glob=\'!excalidraw/**\'',
+						},
+					},
 				}),
 				---@diagnostic disable-next-line: missing-fields
 				formatting = { format = require('plugins.cmp.formatting').format },
