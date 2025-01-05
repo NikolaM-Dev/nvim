@@ -5,7 +5,7 @@
   },
   "aerial.nvim": {
     "branch": "master",
-    "commit": "1160fb7a15a34b03b7381d95d45560712b5f19d0"
+    "commit": "b3ec25ca8c347fafa976484a6cace162239112e1"
   },
   "browse.nvim": {
     "branch": "main",
@@ -77,7 +77,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "8e4d338de9e0d3b81eb01b016ac0f7dcdf8efb2b"
+    "commit": "45fc7b903d1aab0871f03cbe1c4fbec71b932d9f"
   },
   "fzf-lua": {
     "branch": "main",
@@ -117,7 +117,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3"
+    "commit": "72aa3a2624be5dc240646084f7b6a38eb99eb2ce"
   },
   "lazygit.nvim": {
     "branch": "main",
@@ -153,7 +153,7 @@
   },
   "mini.icons": {
     "branch": "main",
-    "commit": "6787321f70d674a481776b7cc2c781fb7002c644"
+    "commit": "1c79feb7478ca773fa3dac5cadf43ced9180e861"
   },
   "mini.indentscope": {
     "branch": "main",
@@ -185,7 +185,7 @@
   },
   "none-ls.nvim": {
     "branch": "main",
-    "commit": "00421b9dc7a4d132ca74cfb4c7e8030d05d6fd0b"
+    "commit": "20f5650988cd849e18c7f3d2dce4b0e6a260e126"
   },
   "nvim": {
     "branch": "main",
@@ -209,7 +209,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "f4ed656e876e45cf914d7beb972830561178e232"
+    "commit": "87cdeb16895d64b306bfe9f440840ff55c2a76c0"
   },
   "nvim-notify": {
     "branch": "master",
@@ -221,7 +221,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "57713d079c3c2afcc31f3e0650bf8594a2a296ba"
+    "commit": "556ac68cd33973a38d3f2abac47f361432593fe2"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -249,7 +249,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "c6a39a69b2df7c10466f150dde0bd23e49c1fba3"
+    "commit": "c12fad2d225d8f81fadd48521d253607fe25465c"
   },
   "persistence.nvim": {
     "branch": "main",
@@ -265,7 +265,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "1faa6568eb61467d64c3d0aad8ac4c9c0e45514e"
+    "commit": "16369540a005ad0cf267498162aedca6dfca1b9c"
   },
   "rose-pine": {
     "branch": "main",
@@ -353,7 +353,7 @@
   },
   "which-key.nvim": {
     "branch": "main",
-    "commit": "8ab96b38a2530eacba5be717f52e04601eb59326"
+    "commit": "1f8d414f61e0b05958c342df9b6a4c89ce268766"
   },
   "windows.nvim": {
     "branch": "main",
