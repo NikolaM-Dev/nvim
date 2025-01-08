@@ -67,11 +67,6 @@ return {
 					i = {
 						['<C-j>'] = actions.cycle_history_next,
 						['<C-k>'] = actions.cycle_history_prev,
-						['<C-p>'] = layout.toggle_preview,
-					},
-					n = {
-						['<C-p>'] = layout.toggle_preview,
-						['q'] = actions.close,
 					},
 				},
 			},
