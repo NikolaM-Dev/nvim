@@ -5,7 +5,7 @@
   },
   "aerial.nvim": {
     "branch": "master",
-    "commit": "b3ec25ca8c347fafa976484a6cace162239112e1"
+    "commit": "4c959cf65c5420d54b24b61a77b681dcfca0bc57"
   },
   "browse.nvim": {
     "branch": "main",
@@ -61,7 +61,7 @@
   },
   "conform.nvim": {
     "branch": "master",
-    "commit": "0ebe875d9c306f5fc829db38492ffff2a70d8e9d"
+    "commit": "70019124aa4f2e6838be9fbd2007f6d13b27a96d"
   },
   "diffview.nvim": {
     "branch": "main",
@@ -77,7 +77,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "93c029960666de2d1784f351ac37e5a74cf82e2e"
+    "commit": "bd3e65df4dc3f46119fe502e1ad502ef6b7873ca"
   },
   "fzf-lua": {
     "branch": "main",
@@ -221,7 +221,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "6df6e80417b58abe377c90f5e3f7fe94cf7dfc55"
+    "commit": "306dd6e9dc806db1d79568d26e1c9b6c98b95fbc"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -265,7 +265,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "786d643ac7a691515d401930b8850f596992725d"
+    "commit": "cfe57468a4ab44b745eddfbe90b63b9777ba7223"
   },
   "rose-pine": {
     "branch": "main",
