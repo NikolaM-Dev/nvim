@@ -77,7 +77,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "4fdc07927f1ba247563f6d9630b47536c305be75"
+    "commit": "d83eb2800a09d86e17c0339d86bd1f22f68164a8"
   },
   "fzf-lua": {
     "branch": "main",
@@ -145,7 +145,7 @@
   },
   "mini.comment": {
     "branch": "main",
-    "commit": "a56581c40c19fa26f2b39da72504398de3173c5a"
+    "commit": "6e1f9a8ebbf6f693fa3787ceda8ca3bf3cb6aec7"
   },
   "mini.cursorword": {
     "branch": "main",
@@ -221,7 +221,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "e1e2ad1448f67a2ffc4bf8f6a315cf08a179d71e"
+    "commit": "097fb77312c731347180e8907424f6c967323f05"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -257,7 +257,7 @@
   },
   "plenary.nvim": {
     "branch": "master",
-    "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d"
+    "commit": "3707cdb1e43f5cea73afb6037e6494e7ce847a66"
   },
   "promise-async": {
     "branch": "main",
@@ -277,7 +277,7 @@
   },
   "sqlite.lua": {
     "branch": "master",
-    "commit": "cf482586c4f24e197375235a6e310b9b9e80ba83"
+    "commit": "b487fcc8937b683942a1f7d9662fcf50ca5acd58"
   },
   "stay-centered.nvim": {
     "branch": "main",
