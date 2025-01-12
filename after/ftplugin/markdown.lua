@@ -3,6 +3,11 @@ vim.opt_local.conceallevel = 3
 vim.opt_local.spell = false
 vim.opt_local.wrap = true
 
+vim.opt_local.expandtab = true
+vim.opt_local.shiftwidth = 2
+vim.opt_local.softtabstop = 2
+vim.opt_local.tabstop = 2
+
 -- Search UP for a markdown header
 -- Make sure to follow proper markdown convention, and you have a single H1
 -- heading at the very top of the file
