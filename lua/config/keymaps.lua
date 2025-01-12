@@ -203,6 +203,6 @@ map.set('n', '<leader>tw', function()
 end, { desc = '[T]oggle word [W]rap' })
 
 -- Execute
-map.set('n', '<space><space>x', map.cmd('source %'), { desc = 'e[X]ecute current lua file' })
-map.set('n', '<space>x', map.cmd('.lua'), { desc = 'e[X]ecute current lua line' })
-map.set('v', '<space>x', ':lua<cr>', { desc = 'e[X]ecute selected lua lines' })
+map.set('n', '<leader><leader>x', map.cmd('source %'), { desc = 'e[X]ecute current lua file' })
+map.set('n', '<leader>x', map.cmd('.lua'), { desc = 'e[X]ecute current lua line' })
+map.set('v', '<leader>x', ':lua<cr>', { desc = 'e[X]ecute selected lua lines' })
