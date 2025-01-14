@@ -77,7 +77,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "d83eb2800a09d86e17c0339d86bd1f22f68164a8"
+    "commit": "56fef7c8df2713261fbdbd396aa81ed23d9a945a"
   },
   "fzf-lua": {
     "branch": "main",
@@ -89,7 +89,7 @@
   },
   "gitsigns.nvim": {
     "branch": "main",
-    "commit": "abcd00a7d5bc1a9470cb21b023c575acade3e4db"
+    "commit": "76d88f3b584e1f83b2aa51663a32cc6ee8d97eff"
   },
   "grug-far.nvim": {
     "branch": "main",
@@ -209,7 +209,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "88157521e890fe7fdf18bee22438875edd6300a6"
+    "commit": "339ccc81e08793c3af9b83882a6ebd90c9cc0d3b"
   },
   "nvim-notify": {
     "branch": "master",
@@ -221,7 +221,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "097fb77312c731347180e8907424f6c967323f05"
+    "commit": "984214ef8e4ca18d77639663319aabdfba89632f"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -249,7 +249,7 @@
   },
   "oil.nvim": {
     "branch": "master",
-    "commit": "7041528bdedb350ad66e650684deec8456e053cc"
+    "commit": "09fa1d22f5edf0730824d2b222d726c8c81bbdc9"
   },
   "persistence.nvim": {
     "branch": "main",
@@ -309,7 +309,7 @@
   },
   "todo-comments.nvim": {
     "branch": "main",
-    "commit": "ae0a2afb47cf7395dc400e5dc4e05274bf4fb9e0"
+    "commit": "304a8d204ee787d2544d8bc23cd38d2f929e7cc5"
   },
   "tokyonight.nvim": {
     "branch": "main",
