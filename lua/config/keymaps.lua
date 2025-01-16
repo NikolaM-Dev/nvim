@@ -149,8 +149,6 @@ map.set('n', '<leader><leader>;', function()
 	require('utils').go_to_window(4)
 end, { desc = 'Go to window 4' })
 
-map.set('n', '<leader><leader>', map.cmd('luafile %'), { desc = 'Reload Lua File' })
-
 map.set(
 	'n',
 	'<leader>rf',
