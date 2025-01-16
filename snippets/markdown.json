@@ -69,7 +69,7 @@
   },
   "Quote": {
     "prefix": "quote",
-    "body": ["> [!QUOTE]", "> $0", "> _${1:author}_"]
+    "body": ["> [!QUOTE]", "> $0", ">", "> "]
   },
   "Page": {
     "prefix": "page",
