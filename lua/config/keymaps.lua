@@ -117,6 +117,7 @@ map.set('i', '.', '.<c-g>u')
 map.set('i', ';', ';<c-g>u')
 map.set('i', '?', '?<c-g>u')
 map.set('i', '_', '_<c-g>u')
+map.set('n', 'o', 'o<c-g>u')
 
 -- Paste & replace without copy
 map.set('n', '<leader>Y', [["+Y]])
