@@ -75,6 +75,10 @@
     "prefix": "page",
     "body": "`page:$0`"
   },
+  "Page Heading": {
+    "prefix": "ph",
+    "body": "## Page $0"
+  },
   "HR": {
     "prefix": "hr",
     "body": "---"
