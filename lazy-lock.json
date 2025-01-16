@@ -77,7 +77,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "56fef7c8df2713261fbdbd396aa81ed23d9a945a"
+    "commit": "13135108906fce00dab5a403bf308e19382e630e"
   },
   "fzf-lua": {
     "branch": "main",
@@ -89,7 +89,7 @@
   },
   "gitsigns.nvim": {
     "branch": "main",
-    "commit": "76d88f3b584e1f83b2aa51663a32cc6ee8d97eff"
+    "commit": "9541f5e8e24571723cb02a5c2bf078aeacc5a711"
   },
   "grug-far.nvim": {
     "branch": "main",
@@ -221,7 +221,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "984214ef8e4ca18d77639663319aabdfba89632f"
+    "commit": "a67a312e7b08cbf2895d8f29a4b1f38f18d9a8e8"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -265,11 +265,11 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "d7b646f2e6136d963e1bd3abbb9e2ac3fa90837a"
+    "commit": "be3e3ab807059ddd247a802e8253b0cd3edef5a3"
   },
   "rose-pine": {
     "branch": "main",
-    "commit": "106f05aeab8277e97eda9649271b33f9f12d8db4"
+    "commit": "42f0724e0bca9f57f0bcfa688787c37b8d4befe8"
   },
   "smart-open.nvim": {
     "branch": "0.2.x",
