@@ -1,7 +1,7 @@
 ---@type LazySpec
 return {
 	'nvim-telescope/telescope-fzf-native.nvim',
-	enabled = false,
+	enabled = true,
 
 	config = function()
 		require('telescope').load_extension('fzf')
