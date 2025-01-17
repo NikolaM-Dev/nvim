@@ -4,9 +4,6 @@ return {
 	enabled = true,
 
 	cmd = 'Telescope',
-	dependencies = {
-		{ 'nvim-telescope/telescope-fzy-native.nvim' },
-	},
 	version = false,
 	keys = function()
 		local builtin = require('telescope.builtin')
