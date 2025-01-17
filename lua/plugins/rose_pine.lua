@@ -41,6 +41,9 @@ return {
 			TelescopeResultsNormal = { fg = palette.SUBTLE, bg = palette.NONE },
 			TelescopeSelectionCaret = { fg = palette.ROSE, bg = palette.ROSE },
 			TelescopeSelection = { fg = palette.TEXT, bg = palette.NONE },
+
+			['@markup.italic'] = { fg = palette.FOAM, italic = true },
+			['@markup.strong'] = { bold = true, fg = palette.PINE },
 		},
 
 		styles = {
