@@ -16,6 +16,7 @@ end
 
 ---@class NMapCmdOpts
 ---@field delay_cmd? boolean defaults to false
+---@field use_esc? boolean defaults to false
 
 -- TODO: Make a example
 
@@ -27,10 +28,17 @@ end
 --- Otherwise, returns the command wrapped with `<cmd>` and `<cr>`.
 ---@return string constructed command string based on the options provided.
 function NMap.cmd(cmd, opts)
-	opts = opts or { delay_cmd = false }
+	opts = opts or {
+		delay_cmd = false,
+		use_esc = false,
+	}
 
 	if opts.delay_cmd then
 		return ':' .. cmd
+	end
+
+	if opts.use_esc then
+		return '<esc><cmd>' .. cmd .. '<cr>'
 	end
 
 	return '<cmd>' .. cmd .. '<cr>'
