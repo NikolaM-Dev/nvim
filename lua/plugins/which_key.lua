@@ -4,5 +4,9 @@ return {
 	enabled = true,
 
 	event = 'VeryLazy',
-	config = true,
+
+	---@type wk.Opts
+	opts = {
+		delay = 350,
+	},
 }
