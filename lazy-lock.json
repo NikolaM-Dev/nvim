@@ -77,7 +77,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "0a10d14e190eac2d3aa3d88f3b45e84d3f4431be"
+    "commit": "5a32634b7498cc8518b997a02535496d95e1023d"
   },
   "fzf-lua": {
     "branch": "main",
@@ -209,7 +209,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "339ccc81e08793c3af9b83882a6ebd90c9cc0d3b"
+    "commit": "14b5a806c928390fac9ff4a5630d20eb902afad8"
   },
   "nvim-notify": {
     "branch": "master",
@@ -272,8 +272,8 @@
     "commit": "42f0724e0bca9f57f0bcfa688787c37b8d4befe8"
   },
   "smart-open.nvim": {
-    "branch": "0.2.x",
-    "commit": "7770b01ce4d551c143d7ec8589879320796621b9"
+    "branch": "0.3.x",
+    "commit": "824f6482aea635fcefb90a02aabae14fa368c34f"
   },
   "sqlite.lua": {
     "branch": "master",
@@ -321,7 +321,7 @@
   },
   "ts-node-action": {
     "branch": "master",
-    "commit": "7b41b88b410cd45cd610bca74214574299ce0d61"
+    "commit": "adf1168021e9a0a4a3e17401ce538f8f9fc48f18"
   },
   "twilight.nvim": {
     "branch": "main",
