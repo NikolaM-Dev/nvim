@@ -201,6 +201,18 @@ map.set('n', '<leader>tw', function()
 	end
 end, { desc = '[T]oggle word [W]rap' })
 
+map.set('n', '<leader>tcl', function()
+	local current_value = vim.api.nvim_get_option_value('colorcolumn', {})
+
+	if current_value == '' then
+		n.logger:info('Colorcolumn is enabled')
+		vim.api.nvim_set_option_value('colorcolumn', '80', {})
+	else
+		n.logger:warn('Colorcolumn is disabled')
+		vim.api.nvim_set_option_value('colorcolumn', '', {})
+	end
+end, { desc = '[T]oggle Color[C]o[L]umn' })
+
 -- Execute
 map.set('n', '<leader><leader>x', map.cmd('source %'), { desc = 'e[X]ecute current lua file' })
 map.set('n', '<leader>x', map.cmd('.lua'), { desc = 'e[X]ecute current lua line' })
