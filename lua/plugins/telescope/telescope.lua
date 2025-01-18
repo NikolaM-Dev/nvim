@@ -50,7 +50,6 @@ return {
 	end,
 	config = function()
 		local actions = require('telescope.actions')
-		local layout = require('telescope.actions.layout')
 		local telescope = require('telescope')
 
 		telescope.setup({
