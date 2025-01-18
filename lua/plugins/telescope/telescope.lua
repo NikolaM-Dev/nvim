@@ -28,7 +28,9 @@ return {
 			{
 				'<leader><leader>ep',
 				function()
-					builtin.find_files({ cwd = vim.fs.joinpath(tostring(vim.fn.stdpath('data')), 'lazy') })
+					local lazy_plugins_path = vim.fs.joinpath(tostring(vim.fn.stdpath('data')), 'lazy')
+
+					builtin.find_files({ cwd = lazy_plugins_path })
 				end,
 				desc = '[E]dit [P]ackages',
 			},
