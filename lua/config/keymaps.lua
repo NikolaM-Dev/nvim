@@ -217,3 +217,6 @@ end, { desc = '[T]oggle Color[C]o[L]umn' })
 map.set('n', '<leader><leader>x', map.cmd('source %'), { desc = 'e[X]ecute current lua file' })
 map.set('n', '<leader>x', map.cmd('.lua'), { desc = 'e[X]ecute current lua line' })
 map.set('v', '<leader>x', ':lua<cr>', { desc = 'e[X]ecute selected lua lines' })
+
+map.set('i', '<C-z>', map.cmd('b#', { use_esc = true }))
+map.set('n', '<C-z>', map.cmd('b#'))
