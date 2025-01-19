@@ -23,6 +23,8 @@ return {
 
 		local config = require('smart-open').config
 
+		---@type 'fzf' | 'fzy'
+		config.match_algorithm = 'fzf'
 		config.cwd_only = true
 		config.open_buffer_indicators = { others = ' ', previous = ' ' }
 		config.show_scores = true
