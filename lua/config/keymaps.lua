@@ -220,3 +220,5 @@ map.set('v', '<leader>x', ':lua<cr>', { desc = 'e[X]ecute selected lua lines' })
 
 map.set('i', '<C-z>', map.cmd('b#', { use_esc = true }))
 map.set('n', '<C-z>', map.cmd('b#'))
+map.set('i', '<C-z>', map.cmd('b#', { use_esc = true }), { desc = 'Go to last buffer' })
+map.set('n', '<C-z>', map.cmd('b#'), { desc = 'Go to last buffer' })
