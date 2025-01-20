@@ -32,6 +32,11 @@ return {
 
 				function()
 					harpoon:list():select(i)
+
+					local file_type = vim.bo.filetype
+					local local_opts = '~/.config/nvim/after/ftplugin/' .. file_type .. '.lua'
+
+					vim.cmd('silent! source ' .. local_opts)
 				end,
 				desc = 'Harpoon select file in position ' .. i,
 			})
