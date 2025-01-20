@@ -61,8 +61,8 @@ return {
 					['@markup.heading.6.markdown'] = { fg = colors.mauve },
 					['@markup.italic'] = { fg = colors.green, italic = true },
 					['@markup.link.label.markdown_inline'] = { bold = true, fg = colors.mauve, underline = true },
-					['@markup.strong'] = { bold = true, fg = colors.mauve },
 					['@markup.raw.block.markdown'] = { bg = colors.crust },
+					['@markup.strong'] = { bold = true, fg = colors.mauve },
 				}
 			end,
 		})
