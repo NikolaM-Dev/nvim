@@ -218,5 +218,13 @@ map.set('n', '<leader><leader>x', map.cmd('source %'), { desc = 'e[X]ecute curre
 map.set('n', '<leader>x', map.cmd('.lua'), { desc = 'e[X]ecute current lua line' })
 map.set('v', '<leader>x', ':lua<cr>', { desc = 'e[X]ecute selected lua lines' })
 
+vim.api.nvim_create_user_command('TmuxLazyGit', function()
+	local command = 'tmux new-window -c "#{pane_current_path}" -n "lazygit" lazygit'
+
+	vim.fn.system(command)
+end, { desc = 'Git commit amend in Tmux' })
+
+map.set('n', '<leader>lg', map.cmd('TmuxLazyGit'))
+
 map.set('i', '<C-z>', map.cmd('b#', { use_esc = true }), { desc = 'Go to last buffer' })
 map.set('n', '<C-z>', map.cmd('b#'), { desc = 'Go to last buffer' })
