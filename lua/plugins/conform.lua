@@ -34,7 +34,7 @@ return {
 			format_on_save = function()
 				return {
 					timeout_ms = 5000,
-					lsp_format = 'fallback',
+					lsp_format = 'never',
 				}
 			end,
 		}
