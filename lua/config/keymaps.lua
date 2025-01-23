@@ -213,6 +213,23 @@ map.set('n', '<leader>tcl', function()
 	end
 end, { desc = '[T]oggle Color[C]o[L]umn' })
 
+map.set('n', '<leader>tspl', function()
+	local opts = { scope = 'global' } -- Change to 'local' if toggling buffer-specific spell option
+	local spell = vim.api.nvim_get_option_value('spell', opts)
+	print(spell)
+	local new_spell = not spell
+
+	vim.api.nvim_set_option_value('spell', new_spell, opts)
+
+	if new_spell then
+		vim.cmd('set spell')
+		n.logger:info('Spell check is enabled')
+	else
+		vim.cmd('set nospell')
+		n.logger:warn('Spell check is disabled')
+	end
+end, { desc = '[T]oggle [S][P]e[l]l' })
+
 -- Execute
 map.set('n', '<leader><leader>x', map.cmd('source %'), { desc = 'e[X]ecute current lua file' })
 map.set('n', '<leader>x', map.cmd('.lua'), { desc = 'e[X]ecute current lua line' })
