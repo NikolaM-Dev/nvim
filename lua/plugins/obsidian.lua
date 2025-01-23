@@ -122,7 +122,7 @@ return {
 			daily_notes = {
 				alias_format = '%A, %d %B %Y',
 				date_format = '%Y-%m-%d',
-				folder = 'calendar/0-daily',
+				folder = '200-areas/journal/0-daily',
 				template = 'daily.md',
 			},
 			follow_url_func = function(url)
