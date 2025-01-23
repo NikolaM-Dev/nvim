@@ -8,7 +8,6 @@ return {
 	config = function()
 		require('no-neck-pain').setup({
 			minSideBufferWidth = 0,
-			width = 100,
 		})
 	end,
 }
