@@ -55,6 +55,10 @@
     "prefix": "i",
     "body": "_$0_"
   },
+  "Strike Through": {
+    "prefix": "s",
+    "body": "~~$0~~"
+  },
   "Fleeting Note": {
     "prefix": "fn",
     "body": "[[z/LN/$0]]"
