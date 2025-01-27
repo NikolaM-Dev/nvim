@@ -35,6 +35,7 @@ return {
 		config.show_scores = true
 
 		-- TODO: Review this
+
 		-- config.ignore_patterns = {
 		-- 	'*~',
 		-- 	'~:',
