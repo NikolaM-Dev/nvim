@@ -87,7 +87,7 @@ map.set('n', '<leader>q', map.cmd('qall'), { desc = '[Q]uit all' })
 map.set('n', '<leader><leader>q', map.cmd('qall!'), { desc = '[Q]uit all forced' })
 
 -- Quit without save
-map.set('n', '<leader>z', map.cmd('q!'), { desc = 'Quit without save' })
+map.set('n', '<leader><leader>z', map.cmd('q!'), { desc = 'Quit without save' })
 
 -- Centralized scroll
 map.set('n', '<C-u>', '<C-u>zz', { desc = 'Scroll up centralized' })
