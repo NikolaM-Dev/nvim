@@ -47,7 +47,7 @@ return {
 			{ '<leader>gs', '<cmd>Telescope git_status<cr>', desc = '[G]it [S]tatus' },
 			{ '<leader>man', '<cmd>Telescope man_pages<cr>', desc = '[MAN] pages' },
 			{ '<leader>sp', '<cmd>Telescope spell_suggest<cr>', desc = '[S][p]ell Suggest' },
-			{ '<leader>t', '<cmd>Telescope<cr>', desc = '[T]elescope' },
+			{ '<leader><leader>t', '<cmd>Telescope<cr>', desc = '[T]elescope' },
 		}
 	end,
 	config = function()
@@ -63,6 +63,7 @@ return {
 				selection_caret = '  ',
 				sorting_strategy = 'ascending',
 				preview = { timeout = 284 },
+				borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
 				mappings = {
 					i = {
 						['<C-j>'] = actions.cycle_history_next,
@@ -83,9 +84,17 @@ return {
 						},
 					},
 				},
+				live_grep = {
+					theme = 'ivy',
+				},
 				git_status = {
 					previewer = false,
 					theme = 'dropdown',
+					borderchars = {
+						preview = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
+						prompt = { '─', '│', ' ', '│', '┌', '┐', '│', '│' },
+						results = { '─', '│', '─', '│', '├', '┤', '┘', '└' },
+					},
 
 					-- TODO: Change to use icons
 					git_icons = {
@@ -105,7 +114,7 @@ return {
 				},
 			},
 			extensions = {
-				fzf = { case_mode = 'ignore_case' },
+				fzf = {},
 				fzy_native = {},
 
 				---@type FrecencyConfig
