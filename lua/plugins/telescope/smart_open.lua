@@ -11,6 +11,11 @@ return {
 				local opts = require('telescope.themes').get_dropdown({
 					no_ignore = true,
 					previewer = false,
+					borderchars = {
+						review = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
+						prompt = { '─', '│', ' ', '│', '┌', '┐', '│', '│' },
+						results = { '─', '│', '─', '│', '├', '┤', '┘', '└' },
+					},
 				})
 
 				require('telescope').extensions.smart_open.smart_open(opts)
