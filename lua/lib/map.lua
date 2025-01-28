@@ -44,4 +44,18 @@ function NMap.cmd(cmd, opts)
 	return '<cmd>' .. cmd .. '<cr>'
 end
 
+function NMap.toggle_opt(opt, on, off, name)
+	local logger = n.logger:new('Options')
+
+	if vim.opt[opt]:get() == off then
+		vim.opt[opt] = on
+		logger:info(name .. ' Enabled')
+
+		return
+	end
+
+	vim.opt[opt] = off
+	logger:warn(name .. ' Disabled')
+end
+
 return NMap
