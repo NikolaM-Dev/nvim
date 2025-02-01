@@ -77,7 +77,7 @@
   },
   "fzf": {
     "branch": "master",
-    "commit": "6c0ca4a64a4e2f8697dfa830dcae56c1d7ddca51"
+    "commit": "b7795a3deaa4339cebddd267fe68b39aff5380cc"
   },
   "fzf-lua": {
     "branch": "main",
@@ -149,35 +149,35 @@
   },
   "mini.comment": {
     "branch": "main",
-    "commit": "6e1f9a8ebbf6f693fa3787ceda8ca3bf3cb6aec7"
+    "commit": "5bd72d50d36f4c0fd531adc409715a75a2c984da"
   },
   "mini.cursorword": {
     "branch": "main",
-    "commit": "7d1b38a17834acbbc4feff8e42aedc4ed0c6ff06"
+    "commit": "939ffcc8c57694608ac0896418d4b9a7c5273909"
   },
   "mini.icons": {
     "branch": "main",
-    "commit": "910db5df9724d65371182948f921fce23c2c881e"
+    "commit": "ec61af6e606fc89ee3b1d8f2f20166a3ca917a36"
   },
   "mini.indentscope": {
     "branch": "main",
-    "commit": "613df2830d7faeae7483ba2e736683154b95921e"
+    "commit": "8ce41a77eed7f4121c83c67fda5e2e86af999e6d"
   },
   "mini.pairs": {
     "branch": "main",
-    "commit": "7e834c5937d95364cc1740e20d673afe2d034cdb"
+    "commit": "1a3e73649c0eaef2f6c48ce1e761c6f0a7c11918"
   },
   "mini.splitjoin": {
     "branch": "main",
-    "commit": "3e92f6764e770ba392325cad3a4497adcada695f"
+    "commit": "efe24ba54f9623cb05698355981ec05278976788"
   },
   "mini.surround": {
     "branch": "main",
-    "commit": "aa5e245829dd12d8ff0c96ef11da28681d6049aa"
+    "commit": "ceddea5fe862f13b279d9bbe81c3327a0e66d56b"
   },
   "mini.trailspace": {
     "branch": "main",
-    "commit": "3a328e62559c33014e422fb9ae97afc4208208b1"
+    "commit": "9bbbf568c06fe424dc21d2c228fa76098008a5f3"
   },
   "neodev.nvim": {
     "branch": "main",
@@ -225,7 +225,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "7e3942ceca9e0c28760f77ac33bc16399146d879"
+    "commit": "bcd0b26607c1a4336c392285a9f13e31f514ccf2"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -241,7 +241,7 @@
   },
   "nvim-ufo": {
     "branch": "main",
-    "commit": "a8e039806794ebad4f501a25c6213eb841c1949c"
+    "commit": "81f5ffa6e8ba27c48403cf681d4b383d924e03e4"
   },
   "nvim-web-devicons": {
     "branch": "master",
@@ -269,7 +269,7 @@
   },
   "render-markdown": {
     "branch": "main",
-    "commit": "1ba6fb7998985736ca3480366c9792be05b93ad7"
+    "commit": "b9c98ff7d47dfe2a972f1b08340850c92e6ca9bc"
   },
   "rose-pine": {
     "branch": "main",
