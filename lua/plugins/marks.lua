@@ -6,9 +6,5 @@ return {
 	event = 'BufReadPost',
 
 	---@type table
-	opts = {
-		mappings = {
-			set = '\'',
-		},
-	},
+	opts = {},
 }
