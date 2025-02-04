@@ -245,6 +245,3 @@ map.set('n', '<leader>lg', map.cmd('TmuxLazyGit'))
 
 map.set('i', '<C-z>', map.cmd('b#', { use_esc = true }), { desc = 'Go to last buffer' })
 map.set('n', '<C-z>', map.cmd('b#'), { desc = 'Go to last buffer' })
-
-map.set('n', '\'', 'm', { desc = 'Set mark x' })
-map.set('n', 'm', '\'', { desc = 'Go to the mark x' })
