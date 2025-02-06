@@ -73,7 +73,7 @@
   },
   "fidget.nvim": {
     "branch": "main",
-    "commit": "9238947645ce17d96f30842e61ba81147185b657"
+    "commit": "3fa10de61546fd0a98faac3084a6c0db612adaf8"
   },
   "fzf": {
     "branch": "master",
@@ -89,7 +89,7 @@
   },
   "gitsigns.nvim": {
     "branch": "main",
-    "commit": "9b36d497495436c135659902054ee637e0ba6021"
+    "commit": "9772ce68a9a6d156f3f2166bfd0a17a09ab37eba"
   },
   "grug-far.nvim": {
     "branch": "main",
@@ -225,7 +225,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "55ae57419504432ba9c229ea9b03bad621ab9ef7"
+    "commit": "9e0b5e7f0d148963d6ec71c48cec1a3f8607d619"
   },
   "nvim-treesitter-context": {
     "branch": "master",
