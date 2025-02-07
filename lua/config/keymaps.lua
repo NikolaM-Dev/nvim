@@ -230,9 +230,13 @@ end, { desc = 'Tmux [L]azy[G]it' })
 
 map.set('n', '<leader>lg', map.cmd('TmuxLazyGit'))
 
-	vim.fn.system(command)
-end, { desc = 'Git commit amend in Tmux' })
+vim.api.nvim_create_user_command('TmuxLazyDocker', function()
+	local command = 'tmux new-window -c "#{pane_current_path}" -n "lazydocker" lazydocker'
 
+	vim.fn.system(command)
+end, { desc = 'Tmux [L]azy[D]ocker' })
+
+map.set('n', '<leader>ld', map.cmd('TmuxLazyDocker'))
 
 map.set('i', '<C-z>', map.cmd('b#', { use_esc = true }), { desc = 'Go to last buffer' })
 map.set('n', '<C-z>', map.cmd('b#'), { desc = 'Go to last buffer' })
