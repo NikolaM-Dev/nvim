@@ -25,7 +25,7 @@ function templates.run_templates_picker(opts)
 				results = {
 				},
 			}),
-			sorter = conf.generic_sorter(opts),
+			sorter = conf.generic_sorter(new_opts),
 			---@diagnostic disable-next-line: unused-local
 			attach_mappings = function(prompt_bufnr, _map)
 				actions.select_default:replace(function()
