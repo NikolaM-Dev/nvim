@@ -10,3 +10,8 @@
 ---@field insertLinkAtLocation? string
 ---@field template? string
 ---@field title? string
+
+---@class NZK
+---@field new fun(opts: NZKOpts)
+---@field edit fun(opts: NZKOpts)
+local zk = require('zk')
