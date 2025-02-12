@@ -21,6 +21,7 @@ function templates.run_templates_picker(opts)
 
 	pickers
 		.new(new_opts, {
+			prompt_title = '  New Notes ',
 			finder = finders.new_table({
 				results = {
 				},
