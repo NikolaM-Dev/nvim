@@ -49,7 +49,7 @@ end
 ---@type LazySpec
 return {
 	'epwalsh/obsidian.nvim',
-	enabled = true,
+	enabled = false,
 
 	version = '*',
 	ft = 'markdown',
