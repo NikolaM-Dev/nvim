@@ -26,7 +26,7 @@ return {
 				prompt_prefix = ' ',
 				selection_caret = '  ',
 			},
-			window = { window_config = { border = 'rounded' } },
+			window = { window_config = { border = 'single' } },
 		})
 	end,
 }

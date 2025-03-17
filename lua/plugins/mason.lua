@@ -31,7 +31,7 @@ return {
 		require('mason').setup({
 			ensure_installed = sources,
 			ui = {
-				border = 'rounded',
+				border = 'single',
 				icons = { package_installed = '󰄳 ', package_pending = ' ', package_uninstalled = '󰚌 ' },
 			},
 		})

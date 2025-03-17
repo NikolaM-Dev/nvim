@@ -23,7 +23,7 @@ return {
 				untracked = { text = '▎' },
 			},
 			numhl = true,
-			preview_config = { border = 'rounded' },
+			preview_config = { border = 'single' },
 			signcolumn = false,
 			trouble = false,
 			update_debounce = 284,

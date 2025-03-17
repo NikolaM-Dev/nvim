@@ -56,7 +56,7 @@ require('lazy').setup({
 		},
 	},
 	ui = {
-		border = 'rounded',
+		border = 'single',
 		browser = 'chrome',
 		throttle = 42,
 		icons = {

@@ -12,7 +12,7 @@ local function diagnostics_setup()
 	---@type vim.diagnostic.Opts?
 	local diagnostics = {
 		float = {
-			border = 'rounded',
+			border = 'single',
 			header = { '🤔 Diagnostics\n', 'Title' },
 		},
 		severity_sort = true,
@@ -23,14 +23,14 @@ local function diagnostics_setup()
 end
 
 local function lsp_handlers_setup()
-	require('lspconfig.ui.windows').default_options.border = 'rounded'
+	require('lspconfig.ui.windows').default_options.border = 'single'
 
 	vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, {
-		border = 'rounded',
+		border = 'single',
 	})
 
 	vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(vim.lsp.handlers.signature_help, {
-		border = 'rounded',
+		border = 'single',
 		focusable = false,
 		relative = 'cursor',
 	})

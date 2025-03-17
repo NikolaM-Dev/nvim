@@ -35,7 +35,7 @@ return {
 				'target',
 				'tmp',
 			},
-			border = 'rounded',
+			border = 'single',
 			tmux = true,
 		})
 	end,
