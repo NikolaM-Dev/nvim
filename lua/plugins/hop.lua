@@ -1,7 +1,7 @@
 ---@type LazySpec
 return {
 	'smoka7/hop.nvim',
-	enabled = true,
+	enabled = false,
 
 	keys = {
 		{
