@@ -185,6 +185,7 @@ map.set('n', '<leader>yp', map.cmd('let @+=expand("%:p:~")'), { desc = '[Y]ank [
 
 map.set('n', '<M-j>', map.cmd('cnext'), { desc = 'Next Quickfix list item' })
 map.set('n', '<M-k>', map.cmd('cprev'), { desc = 'Previous Quickfix list item' })
+
 map.set('n', '<leader><leader>r', function()
 	local cmd = vim.fn.getline('.')
 
