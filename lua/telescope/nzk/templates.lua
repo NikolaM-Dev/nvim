@@ -131,6 +131,15 @@ local function tomorrow_template()
 		title = string.format('%s.md', n.date.tomorrow()),
 	})
 end
+
+local function year_template()
+	logger:info('Running Template: year')
+
+	zk.new({
+		dir = '200-areas/journal/4-yearly',
+		group = 'yearly',
+	})
+end
 function templates.run_templates_picker(opts)
 	local new_opts = themes.get_dropdown(opts)
 
