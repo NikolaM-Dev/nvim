@@ -13,7 +13,7 @@
 - [ ] database.lua
 - [ ] diffview.lua
 - [ ] dressing.lua
-- [ ] easy_align.lua
+- [X] easy_align.lua
 - [ ] fidget.lua
 - [ ] flog.lua
 - [ ] fsread.lua
