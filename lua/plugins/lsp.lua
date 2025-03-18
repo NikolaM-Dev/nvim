@@ -112,7 +112,8 @@ return {
 			nmap('<leader>Ej', go_to_diagnostic(true, 'ERROR'), 'Next Error')
 			nmap('<leader>Ek', go_to_diagnostic(false, 'ERROR'), 'Prev Error')
 			nmap('<leader>fd', '<cmd>Telescope diagnostics<cr>', '[F]ind [D]iagnostics')
-			nmap('<leader>ld', vim.diagnostic.open_float, '[L]ine [D]iagnostics')
+			-- TODO: Review because I'm using lazy docker
+			-- nmap('<leader>ld', vim.diagnostic.open_float, '[L]ine [D]iagnostics')
 			nmap('<leader>li', '<cmd>LspInfo<cr>', 'Lsp Info')
 			nmap('<Leader>ll', '<cmd>LspLog<cr>', 'Lsp Log')
 			nmap('<Leader>lr', '<cmd>LspRestart<cr>', 'Lsp Restart')
