@@ -75,7 +75,7 @@
 - [ ] trouble.lua
 - [ ] ts_context_commentstring.lua
 - [ ] ts_node_action.lua
-- [ ] twilight.lua
+- [X] twilight.lua
 - [ ] typescript_tools.lua
 - [ ] typewriter.lua
 - [ ] ufo.lua
