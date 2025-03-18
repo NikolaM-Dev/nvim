@@ -157,6 +157,16 @@ local function project_template()
 		title = title,
 	})
 end
+
+local function weekly_template()
+	logger:info('Running Template: weekly')
+
+	zk.new({
+		dir = '200-areas/journal/1-weekly',
+		template = 'weekly.md',
+	})
+end
+
 function templates.run_templates_picker(opts)
 	local new_opts = themes.get_dropdown(opts)
 
