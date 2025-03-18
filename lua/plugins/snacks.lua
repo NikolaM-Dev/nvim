@@ -8,4 +8,8 @@ return {
 		scroll = { enabled = false },
 		explorer = { enabled = false },
 	},
+
+	keys = function()
+		return {}
+	end,
 }
