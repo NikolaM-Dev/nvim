@@ -51,7 +51,6 @@
 - [ ] nvim_highlight_colors.lua
 - [ ] nvim_web_devicons.lua
 - [ ] obsidian.lua
-- [ ] oil.lua
 - [ ] pairs.lua
 - [ ] pantran.lua
 - [ ] pencil.lua
@@ -92,6 +91,7 @@
 - [ ] zk.lua
 - [X] auto_session.lua
 - [X] explorer.lua
+- [X] oil.lua
 - [x] headlines.lua
 - [x] indentscope.lua
 - [x] rose_pine.lua
