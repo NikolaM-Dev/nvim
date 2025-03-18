@@ -98,6 +98,17 @@ local function permanent_note_template()
 		title = title,
 	})
 end
+
+local function yesterday_template()
+	logger:info('Running Template: yesterday')
+
+	zk.new({
+		dir = '200-areas/journal/0-daily',
+		group = 'yesterday',
+		template = 'yesterday.md',
+		title = string.format('%s.md', n.date.yesterday()),
+	})
+end
 function templates.run_templates_picker(opts)
 	local new_opts = themes.get_dropdown(opts)
 
