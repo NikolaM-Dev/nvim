@@ -78,7 +78,6 @@
 - [ ] ufo.lua
 - [ ] undotree.lua
 - [ ] various_textobjs.lua
-- [ ] vim_be_good.lua
 - [ ] which_key.lua
 - [ ] windows.lua
 - [ ] zk.lua
@@ -90,6 +89,7 @@
 - [X] template_string.lua
 - [X] tmux.lua
 - [X] twilight.lua
+- [X] vim_be_good.lua
 - [X] whiskyline.lua
 - [X] zen_mode.lua
 - [x] headlines.lua
