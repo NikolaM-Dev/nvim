@@ -67,7 +67,7 @@
 - [ ] telekasten.lua
 - [ ] telescope
 - [ ] todo.lua
-- [ ] tokyonight.lua
+- [X] tokyonight.lua
 - [ ] trailspace.lua
 - [ ] treesitter.lua
 - [ ] trouble.lua
