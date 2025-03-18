@@ -140,6 +140,23 @@ local function year_template()
 		group = 'yearly',
 	})
 end
+
+local function project_template()
+	local rawTitle = vim.fn.input('🔥 Project | Enter Title: ')
+	local title = n.string.trim(rawTitle)
+
+	if not is_valid_title(title) then
+		return
+	end
+
+	logger:info('Running Template: project')
+
+	zk.new({
+		dir = '01-projects',
+		template = 'project.md',
+		title = title,
+	})
+end
 function templates.run_templates_picker(opts)
 	local new_opts = themes.get_dropdown(opts)
 
