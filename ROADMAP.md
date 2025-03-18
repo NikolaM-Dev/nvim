@@ -85,13 +85,13 @@
 - [ ] various_textobjs.lua
 - [ ] vim_be_good.lua
 - [ ] which_key.lua
-- [ ] whiskyline.lua
 - [ ] windows.lua
 - [ ] zen_mode.lua
 - [ ] zk.lua
 - [X] auto_session.lua
 - [X] explorer.lua
 - [X] oil.lua
+- [X] whiskyline.lua
 - [x] headlines.lua
 - [x] indentscope.lua
 - [x] rose_pine.lua
