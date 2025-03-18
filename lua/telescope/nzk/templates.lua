@@ -175,6 +175,16 @@ function templates.run_templates_picker(opts)
 			prompt_title = '  New Notes ',
 			finder = finders.new_table({
 				results = {
+					'fleeting note',
+					'inbox',
+					'literature note',
+					'permanent note',
+					'project',
+					'today',
+					'tomorrow',
+					'weekly',
+					'year',
+					'yesterday',
 				},
 			}),
 			sorter = conf.generic_sorter(new_opts),
@@ -184,6 +194,16 @@ function templates.run_templates_picker(opts)
 					actions.close(prompt_bufnr)
 
 					local RUN_TEMPLATES = {
+						['fleeting note'] = fleeting_note_template,
+						inbox = inbox_template,
+						['literature note'] = literature_note_template,
+						['permanent note'] = permanent_note_template,
+						project = project_template,
+						today = today_template,
+						tomorrow = tomorrow_template,
+						weekly = weekly_template,
+						year = year_template,
+						yesterday = yesterday_template,
 					}
 
 					local selection = action_state.get_selected_entry()
