@@ -26,6 +26,18 @@ local themes = require('telescope.themes')
 local logger = n.logger:new('ZKN Templates')
 
 local templates = {}
+
+---@param title string
+---@return boolean
+local function is_valid_title(title)
+	if n.string.is_empty(title) then
+		logger:error('Title is required')
+
+		return false
+	end
+
+	return true
+end
 function templates.run_templates_picker(opts)
 	local new_opts = themes.get_dropdown(opts)
 
