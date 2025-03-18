@@ -22,7 +22,7 @@
 - [ ] fzf_lua.lua
 - [ ] gitsigns.lua
 - [ ] grup_far.lua
-- [ ] gx.lua
+- [X] gx.lua
 - [ ] hop.lua
 - [ ] icon_picker.lua
 - [ ] icons.lua
