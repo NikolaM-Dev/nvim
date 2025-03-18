@@ -59,7 +59,6 @@
 - [ ] plenary.lua
 - [ ] repeat.lua
 - [ ] rest.lua
-- [ ] rose_pine.lua
 - [ ] second_brain.lua
 - [ ] spectre.lua
 - [ ] splitjoin.lua
@@ -95,3 +94,4 @@
 - [X] explorer.lua
 - [x] headlines.lua
 - [x] indentscope.lua
+- [x] rose_pine.lua
