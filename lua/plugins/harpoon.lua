@@ -7,8 +7,7 @@ return {
 	branch = 'harpoon2',
 	dependencies = { 'nvim-lua/plenary.nvim' },
 	keys = function()
-		local harpoon = require('plugins.harpoon')
-
+		local harpoon = require('harpoon')
 		local keys = {}
 
 		table.insert(keys, {
@@ -46,9 +45,7 @@ return {
 		return keys
 	end,
 	config = function()
-		local harpoon = require('plugins.harpoon')
-
-		harpoon:setup({
+		require('harpoon'):setup({
 			settings = {
 				save_on_toggle = true,
 			},
