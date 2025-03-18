@@ -72,7 +72,7 @@ return {
 					{
 						'filename',
 						color = { bg = COLORS.transparent, fg = COLORS.text },
-						path = 0,
+						path = 4,
 						symbols = { modified = '[+]', newfile = '  ', readonly = '[-]', unnamed = '  ' },
 					},
 				},
