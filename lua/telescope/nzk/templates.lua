@@ -15,6 +15,16 @@
 ---@field new fun(opts: NZKOpts)
 ---@field edit fun(opts: NZKOpts)
 local zk = require('zk')
+
+local actions = require('telescope.actions')
+local action_state = require('telescope.actions.state')
+local conf = require('telescope.config').values
+local finders = require('telescope.finders')
+local pickers = require('telescope.pickers')
+local themes = require('telescope.themes')
+
+local logger = n.logger:new('ZKN Templates')
+
 local templates = {}
 function templates.run_templates_picker(opts)
 	local new_opts = themes.get_dropdown(opts)
