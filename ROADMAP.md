@@ -5,7 +5,7 @@
 - [ ] bullets.lua
 - [ ] catppuccin.lua
 - [ ] cmp, `review`
-- [ ] colorizer.lua
+- [X] colorizer.lua
 - [ ] comment.lua
 - [ ] conform.lua
 - [ ] context.lua
