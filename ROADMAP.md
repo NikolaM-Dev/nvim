@@ -66,8 +66,6 @@
 - [ ] tabout.lua
 - [ ] telekasten.lua
 - [ ] telescope
-- [ ] template_string.lua
-- [X] tmux.lua
 - [ ] todo.lua
 - [ ] tokyonight.lua
 - [ ] trailspace.lua
@@ -75,7 +73,6 @@
 - [ ] trouble.lua
 - [ ] ts_context_commentstring.lua
 - [ ] ts_node_action.lua
-- [X] twilight.lua
 - [ ] typescript_tools.lua
 - [ ] typewriter.lua
 - [ ] ufo.lua
@@ -90,6 +87,9 @@
 - [X] explorer.lua
 - [X] harpoon.lua
 - [X] oil.lua
+- [X] template_string.lua
+- [X] tmux.lua
+- [X] twilight.lua
 - [X] whiskyline.lua
 - [X] zen_mode.lua
 - [x] headlines.lua

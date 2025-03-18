@@ -1,3 +1,4 @@
+-- TODO: Review
 return {
 	'axelvc/template-string.nvim',
 	event = 'InsertEnter',
