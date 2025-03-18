@@ -74,7 +74,7 @@ return {
 		-- 	else
 		-- 		title = '\'' .. filename .. ':' .. ' ' .. subheading .. '\''
 		-- 	end
-		-- 	cmd.get('ZkNew')({ dir = 'calendar/daily', title = title })
+		-- 	cmd.get('ZkNew')({ dir = '200-areas/journal/daily', title = title })
 		-- 	-- end
 		-- end)
 		--
