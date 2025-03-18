@@ -86,7 +86,7 @@
 - [ ] vim_be_good.lua
 - [ ] which_key.lua
 - [ ] windows.lua
-- [ ] zen_mode.lua
+- [X] zen_mode.lua
 - [ ] zk.lua
 - [X] auto_session.lua
 - [X] explorer.lua
