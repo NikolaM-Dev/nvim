@@ -67,7 +67,7 @@
 - [ ] telekasten.lua
 - [ ] telescope
 - [ ] template_string.lua
-- [ ] tmux.lua
+- [X] tmux.lua
 - [ ] todo.lua
 - [ ] tokyonight.lua
 - [ ] trailspace.lua
