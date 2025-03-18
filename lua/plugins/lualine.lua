@@ -128,6 +128,16 @@ return {
 						end,
 					},
 					{
+						function()
+							return ''
+						end,
+
+						cond = function()
+							return n.filetype.is_reading_ft() and vim.opt.spell:get()
+						end,
+						color = { bg = COLORS.transparent, fg = COLORS.lavander, gui = 'bold' },
+					},
+					{
 						'branch',
 						color = { bg = COLORS.transparent, fg = COLORS.mauve, gui = 'bold' },
 						icon = '',
