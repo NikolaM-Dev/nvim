@@ -1,6 +1,6 @@
 ---@type LazySpec
 return {
-	'snacks.nvim',
+	'folke/snacks.nvim',
 	enabled = true,
 
 	---@type snacks.Config
