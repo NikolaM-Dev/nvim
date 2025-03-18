@@ -1,3 +1,4 @@
+-- TODO: Review
 ---@type LazySpec
 return {
 	'ThePrimeagen/harpoon',
@@ -6,7 +7,7 @@ return {
 	branch = 'harpoon2',
 	dependencies = { 'nvim-lua/plenary.nvim' },
 	keys = function()
-		local harpoon = require('harpoon')
+		local harpoon = require('plugins.harpoon')
 
 		local keys = {}
 
@@ -45,7 +46,7 @@ return {
 		return keys
 	end,
 	config = function()
-		local harpoon = require('harpoon')
+		local harpoon = require('plugins.harpoon')
 
 		harpoon:setup({
 			settings = {

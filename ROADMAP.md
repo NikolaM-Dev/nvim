@@ -5,7 +5,6 @@
 - [ ] bullets.lua
 - [ ] catppuccin.lua
 - [ ] cmp, `review`
-- [X] colorizer.lua
 - [ ] comment.lua
 - [ ] conform.lua
 - [ ] context.lua
@@ -24,7 +23,6 @@
 - [ ] gitsigns.lua
 - [ ] grup_far.lua
 - [ ] gx.lua
-- [ ] harpoon.lua
 - [ ] hop.lua
 - [ ] icon_picker.lua
 - [ ] icons.lua
@@ -86,12 +84,14 @@
 - [ ] vim_be_good.lua
 - [ ] which_key.lua
 - [ ] windows.lua
-- [X] zen_mode.lua
 - [ ] zk.lua
 - [X] auto_session.lua
+- [X] colorizer.lua
 - [X] explorer.lua
+- [X] harpoon.lua
 - [X] oil.lua
 - [X] whiskyline.lua
+- [X] zen_mode.lua
 - [x] headlines.lua
 - [x] indentscope.lua
 - [x] rose_pine.lua
