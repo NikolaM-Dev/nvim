@@ -1,9 +1,9 @@
-- [ ] browse
-- [ ] cmp
-- [ ] lsp_deprecated
+- [ ] browse, rewrite using `snacks.picker`
+- [ ] cmp, `review`
+- [ ] lsp_deprecated 
 - [ ] telescope
 - [ ] aerial.lua
-- [ ] auto_session.lua
+- [X] auto_session.lua
 - [ ] autotag.lua
 - [ ] bqf.lua
 - [ ] bullets.lua
@@ -18,7 +18,7 @@
 - [ ] diffview.lua
 - [ ] dressing.lua
 - [ ] easy_align.lua
-- [ ] explorer.lua
+- [X] explorer.lua
 - [ ] fidget.lua
 - [ ] flog.lua
 - [ ] fsread.lua
@@ -29,7 +29,7 @@
 - [ ] grup_far.lua
 - [ ] gx.lua
 - [ ] harpoon.lua
-- [ ] headlines.lua
+- [x] headlines.lua
 - [ ] hop.lua
 - [ ] icon_picker.lua
 - [ ] icons.lua
