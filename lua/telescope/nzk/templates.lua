@@ -120,6 +120,17 @@ local function today_template()
 		title = string.format('%s.md', n.date.today()),
 	})
 end
+
+local function tomorrow_template()
+	logger:info('Running Template: tomorrow')
+
+	zk.new({
+		dir = '200-areas/journal/0-daily',
+		template = 'tomorrow.md',
+		group = 'tomorrow',
+		title = string.format('%s.md', n.date.tomorrow()),
+	})
+end
 function templates.run_templates_picker(opts)
 	local new_opts = themes.get_dropdown(opts)
 
