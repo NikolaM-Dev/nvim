@@ -2,7 +2,7 @@
 - [ ] autotag.lua
 - [ ] bqf.lua
 - [ ] browse, rewrite using `snacks.picker`
-- [ ] bullets.lua
+- [X] bullets.lua
 - [ ] catppuccin.lua
 - [ ] cmp, `review`
 - [ ] comment.lua
