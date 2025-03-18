@@ -38,6 +38,21 @@ local function is_valid_title(title)
 
 	return true
 end
+
+local function inbox_template()
+	local rawTitle = vim.fn.input('📥 Inbox | Enter Title: ')
+	local title = n.string.trim(rawTitle)
+
+	if not is_valid_title(title) then
+		return
+	end
+
+	zk.new({
+		dir = '300-resources/inbox',
+		template = 'inbox.md',
+		title = title,
+	})
+end
 function templates.run_templates_picker(opts)
 	local new_opts = themes.get_dropdown(opts)
 
