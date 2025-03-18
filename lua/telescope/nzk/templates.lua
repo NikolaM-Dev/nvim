@@ -83,6 +83,21 @@ local function literature_note_template()
 		title = 'LN ' .. title,
 	})
 end
+
+local function permanent_note_template()
+	local rawTitle = vim.fn.input('🏆 PN | Enter Title: ')
+	local title = n.string.trim(rawTitle)
+
+	if not is_valid_title(title) then
+		return
+	end
+
+	zk.new({
+		dir = '200-areas/z/PN',
+		template = 'permanent-note.md',
+		title = title,
+	})
+end
 function templates.run_templates_picker(opts)
 	local new_opts = themes.get_dropdown(opts)
 
