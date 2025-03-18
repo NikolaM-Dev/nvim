@@ -31,6 +31,25 @@ function templates.run_templates_picker(opts)
 			attach_mappings = function(prompt_bufnr, _map)
 				actions.select_default:replace(function()
 					actions.close(prompt_bufnr)
+
+					local RUN_TEMPLATES = {
+					}
+
+					local selection = action_state.get_selected_entry()
+					if not selection then
+						logger:warn('Not template selected')
+						return
+					end
+
+					local selected_template = selection[1]
+
+					if RUN_TEMPLATES[selected_template] == nil then
+						-- RUN_TEMPLATES.default()
+
+						return
+					end
+
+					RUN_TEMPLATES[selected_template]()
 				end)
 
 				return true
