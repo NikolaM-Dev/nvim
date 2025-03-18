@@ -3,7 +3,7 @@
 - [ ] bqf.lua
 - [ ] browse, rewrite using `snacks.picker`
 - [X] bullets.lua
-- [ ] catppuccin.lua
+- [X] catppuccin.lua
 - [ ] cmp, `review`
 - [ ] comment.lua
 - [ ] conform.lua
