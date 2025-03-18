@@ -109,6 +109,17 @@ local function yesterday_template()
 		title = string.format('%s.md', n.date.yesterday()),
 	})
 end
+
+local function today_template()
+	logger:info('Running Template: today')
+
+	zk.new({
+		dir = '200-areas/journal/0-daily',
+		template = 'daily.md',
+		group = 'daily',
+		title = string.format('%s.md', n.date.today()),
+	})
+end
 function templates.run_templates_picker(opts)
 	local new_opts = themes.get_dropdown(opts)
 
