@@ -1,13 +1,10 @@
-- [ ] browse, rewrite using `snacks.picker`
-- [ ] cmp, `review`
-- [ ] lsp_deprecated 
-- [ ] telescope
 - [ ] aerial.lua
-- [X] auto_session.lua
 - [ ] autotag.lua
 - [ ] bqf.lua
+- [ ] browse, rewrite using `snacks.picker`
 - [ ] bullets.lua
 - [ ] catppuccin.lua
+- [ ] cmp, `review`
 - [ ] colorizer.lua
 - [ ] comment.lua
 - [ ] conform.lua
@@ -18,18 +15,16 @@
 - [ ] diffview.lua
 - [ ] dressing.lua
 - [ ] easy_align.lua
-- [X] explorer.lua
 - [ ] fidget.lua
 - [ ] flog.lua
 - [ ] fsread.lua
-- [ ] fugitive.lua
+- [ ] fugitive.lua `review`, `neogit`
 - [ ] fzf.lua
 - [ ] fzf_lua.lua
 - [ ] gitsigns.lua
 - [ ] grup_far.lua
 - [ ] gx.lua
 - [ ] harpoon.lua
-- [x] headlines.lua
 - [ ] hop.lua
 - [ ] icon_picker.lua
 - [ ] icons.lua
@@ -37,10 +32,10 @@
 - [ ] incline.lua
 - [ ] indent_blankline.lua
 - [ ] indent_o_matic.lua
-- [x] indentscope.lua
 - [ ] jfind.lua
 - [ ] lazygit.lua
 - [ ] lsp.lua
+- [ ] lsp_deprecated 
 - [ ] lsp_lines.lua
 - [ ] lspsaga.lua
 - [ ] lualine.lua
@@ -74,6 +69,7 @@
 - [ ] surround.lua
 - [ ] tabout.lua
 - [ ] telekasten.lua
+- [ ] telescope
 - [ ] template_string.lua
 - [ ] tmux.lua
 - [ ] todo.lua
@@ -95,3 +91,7 @@
 - [ ] windows.lua
 - [ ] zen_mode.lua
 - [ ] zk.lua
+- [X] auto_session.lua
+- [X] explorer.lua
+- [x] headlines.lua
+- [x] indentscope.lua
