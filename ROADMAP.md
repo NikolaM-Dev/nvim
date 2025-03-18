@@ -7,7 +7,7 @@
 - [ ] cmp, `review`
 - [ ] comment.lua
 - [ ] conform.lua
-- [ ] context.lua
+- [X] context.lua
 - [ ] copilot.lua
 - [ ] cursorword.lua
 - [ ] database.lua
