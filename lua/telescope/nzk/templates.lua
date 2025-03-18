@@ -53,6 +53,21 @@ local function inbox_template()
 		title = title,
 	})
 end
+
+local function fleeting_note_template()
+	local rawTitle = vim.fn.input('💡FN | Enter Title: ')
+	local title = n.string.trim(rawTitle)
+
+	if not is_valid_title(title) then
+		return
+	end
+
+	zk.new({
+		dir = '200-areas/z/FN',
+		template = 'fleeting-note.md',
+		title = 'FN ' .. title,
+	})
+end
 function templates.run_templates_picker(opts)
 	local new_opts = themes.get_dropdown(opts)
 
