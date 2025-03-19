@@ -7,11 +7,9 @@
 - [ ] conform.lua
 - [ ] copilot.lua
 - [ ] cursorword.lua
-- [ ] database.lua
 - [ ] diffview.lua
 - [ ] dressing.lua
 - [ ] fidget.lua
-- [ ] flog.lua
 - [ ] fsread.lua
 - [ ] fugitive.lua `review`, `neogit`
 - [ ] fzf.lua
@@ -21,16 +19,9 @@
 - [ ] hop.lua `review`
 - [ ] icon_picker.lua
 - [ ] icons.lua
-- [ ] illuminate.lua
-- [ ] incline.lua
-- [ ] indent_blankline.lua
 - [ ] indent_o_matic.lua
-- [ ] jfind.lua
-- [ ] lazygit.lua
 - [ ] lsp.lua
 - [ ] lsp_deprecated 
-- [ ] lsp_lines.lua
-- [ ] lspsaga.lua
 - [ ] lualine.lua
 - [ ] luasnip.lua
 - [ ] markdown_preview.lua
@@ -44,12 +35,10 @@
 - [ ] nvim_web_devicons.lua
 - [ ] obsidian.lua
 - [ ] pairs.lua
-- [ ] pantran.lua
 - [ ] pencil.lua
 - [ ] persistence.lua
 - [ ] plenary.lua
 - [ ] repeat.lua
-- [ ] rest.lua
 - [ ] second_brain.lua
 - [ ] spectre.lua
 - [ ] splitjoin.lua
@@ -69,7 +58,6 @@
 - [ ] typewriter.lua
 - [ ] ufo.lua
 - [ ] undotree.lua
-- [ ] various_textobjs.lua
 - [ ] which_key.lua
 - [ ] windows.lua
 - [ ] zk.lua
@@ -102,3 +90,15 @@
 - [X] gx.lua
 - [X] telekasten.lua
 - [X] no_neck_pain.lua
+- [X] incline.lua
+- [X] lspsaga.lua
+- [X] lsp_lines.lua
+- [X] various_textobjs.lua
+- [X] indent_blankline.lua
+- [X] illuminate.lua
+- [X] rest.lua
+- [X] database.lua
+- [X] pantran.lua
+- [X] lazygit.lua
+- [X] flog.lua
+- [X] jfind.lua
