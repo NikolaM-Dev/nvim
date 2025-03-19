@@ -38,7 +38,6 @@
 - [ ] marks.lua
 - [ ] mason.lua
 - [ ] matchup.lua
-- [ ] no_neck_pain.lua
 - [ ] none_ls.lua
 - [ ] notify.lua
 - [ ] nvim_highlight_colors.lua
@@ -102,3 +101,4 @@
 - [X] easy_align.lua
 - [X] gx.lua
 - [X] telekasten.lua
+- [X] no_neck_pain.lua
