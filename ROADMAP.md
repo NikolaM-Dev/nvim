@@ -1,19 +1,15 @@
-- [ ] aerial.lua
+# TODO
 - [ ] autotag.lua
 - [ ] bqf.lua
 - [ ] browse, rewrite using `snacks.picker`
-- [X] bullets.lua
-- [X] catppuccin.lua
 - [ ] cmp, `review`
 - [ ] comment.lua
 - [ ] conform.lua
-- [X] context.lua
 - [ ] copilot.lua
 - [ ] cursorword.lua
 - [ ] database.lua
 - [ ] diffview.lua
 - [ ] dressing.lua
-- [X] easy_align.lua
 - [ ] fidget.lua
 - [ ] flog.lua
 - [ ] fsread.lua
@@ -22,8 +18,7 @@
 - [ ] fzf_lua.lua
 - [ ] gitsigns.lua
 - [ ] grup_far.lua
-- [X] gx.lua
-- [ ] hop.lua
+- [ ] hop.lua `review`
 - [ ] icon_picker.lua
 - [ ] icons.lua
 - [ ] illuminate.lua
@@ -64,10 +59,8 @@
 - [ ] supermaven.lua
 - [ ] surround.lua
 - [ ] tabout.lua
-- [ ] telekasten.lua
 - [ ] telescope
 - [ ] todo.lua
-- [X] tokyonight.lua
 - [ ] trailspace.lua
 - [ ] treesitter.lua
 - [ ] trouble.lua
@@ -81,6 +74,14 @@
 - [ ] which_key.lua
 - [ ] windows.lua
 - [ ] zk.lua
+## A 
+## B
+## C
+- [ ] aerial.lua
+
+# DONE
+
+- [X] tokyonight.lua
 - [X] auto_session.lua
 - [X] colorizer.lua
 - [X] explorer.lua
@@ -95,3 +96,9 @@
 - [x] headlines.lua
 - [x] indentscope.lua
 - [x] rose_pine.lua
+- [X] bullets.lua
+- [X] catppuccin.lua
+- [X] context.lua
+- [X] easy_align.lua
+- [X] gx.lua
+- [X] telekasten.lua
