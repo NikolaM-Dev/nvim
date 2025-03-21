@@ -18,12 +18,9 @@ local function hide_file(file_name)
 	return is_hide
 end
 
----@type LazySpec
 return {
 	'stevearc/oil.nvim',
-	enabled = true,
 	cmd = 'Oil',
-
 	keys = {
 		{ '<leader>;e', '<cmd>Oil .<cr>', desc = 'Open Oil Root Path' },
 		{ '<leader>e', '<cmd>Oil %:p:h<cr>', desc = 'Open Oil Current Path' },

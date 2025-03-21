@@ -1,0 +1,35 @@
+return {
+	'RRethy/vim-illuminate',
+	enabled = false,
+	dependencies = 'nvim-treesitter/nvim-treesitter',
+	event = { 'BufNewFile', 'BufRead', 'BufAdd', 'SessionLoadPost' },
+	config = function()
+		require('illuminate').configure({
+			delay = 42,
+			filetypes_denylist = {
+				'aerial',
+				'checkhealth',
+				'dap-repl',
+				'dapui_breakpoints',
+				'dapui_console',
+				'dapui_hover',
+				'dapui_scopes',
+				'dapui_stacks',
+				'dapui_watches',
+				'DressingInput',
+				'DressingSelect',
+				'lazy',
+				'lspinfo',
+				'mason',
+				'neo-tree',
+				'nerdterm',
+				'noice',
+				'null-ls-info',
+				'qf',
+				'spectre_panel',
+				'TelescopePrompt',
+			},
+			max_file_lines = 400,
+		})
+	end,
+}

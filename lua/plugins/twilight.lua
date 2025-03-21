@@ -1,5 +1,7 @@
 ---@type LazySpec
 return {
-	'rafamadriz/friendly-snippets',
+	'folke/twilight.nvim',
 	enabled = false,
+
+	config = true,
 }

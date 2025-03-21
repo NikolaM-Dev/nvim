@@ -25,6 +25,8 @@ return {
 	'rose-pine/neovim',
 	enabled = true,
 
+	lazy = false,
+	priority = 1000,
 	name = 'rose-pine',
 
 	---@type table
@@ -51,10 +53,10 @@ return {
 		},
 	},
 
-	------@param opts table
-	---config = function(_, opts)
-	---	require('rose-pine').setup(opts)
-	---
-	---	vim.cmd.colorscheme('rose-pine-moon')
-	---end,
+	---@param opts table
+	config = function(_, opts)
+		require('rose-pine').setup(opts)
+
+		vim.cmd.colorscheme('rose-pine-moon')
+	end,
 }

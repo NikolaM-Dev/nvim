@@ -1,4 +1,3 @@
--- TODO: Review
 ---@type LazySpec
 return {
 	'ThePrimeagen/harpoon',
@@ -8,6 +7,7 @@ return {
 	dependencies = { 'nvim-lua/plenary.nvim' },
 	keys = function()
 		local harpoon = require('harpoon')
+
 		local keys = {}
 
 		table.insert(keys, {
@@ -45,7 +45,9 @@ return {
 		return keys
 	end,
 	config = function()
-		require('harpoon'):setup({
+		local harpoon = require('harpoon')
+
+		harpoon:setup({
 			settings = {
 				save_on_toggle = true,
 			},

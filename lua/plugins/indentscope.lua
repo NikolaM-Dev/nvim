@@ -2,11 +2,14 @@
 return {
 	'echasnovski/mini.indentscope',
 	enabled = true,
-	event = 'LazyFile',
+
+	event = 'VeryLazy',
 
 	---@type table
 	opts = {
-		options = { try_as_border = true },
+		options = {
+			try_as_border = true,
+		},
 		symbol = '│',
 	},
 

@@ -1,4 +1,3 @@
--- TODO: Review
 return {
 	'aserowy/tmux.nvim',
 	event = 'VeryLazy',
