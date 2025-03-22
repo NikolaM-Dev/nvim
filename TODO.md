@@ -10,4 +10,4 @@
 
 # Docs
 
-- [ ] Docs [Globals](./lua/config/globals.lua
+- [ ] Docs [Globals](./lua/config/globals.lua)
