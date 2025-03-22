@@ -6,31 +6,31 @@ return {
 	keys = {
 		{
 			';f',
-			n.map.cmd('HopChar1'),
+			'<cmd>HopChar1<cr>',
 			desc = 'Jump to word',
 			mode = { 'n', 'v' },
 		},
 		{
 			'f',
-			n.map.cmd('HopWord'),
+			'<cmd>HopWord<cr>',
 			desc = 'Jump to word',
 			mode = { 'n', 'v' },
 		},
 		{
 			'F',
-			n.map.cmd('HopCamelCase'),
+			'<cmd>HopCamelCase<cr>',
 			desc = 'Jump to camel case',
 			mode = { 'n', 'v' },
 		},
 		{
 			't',
-			n.map.cmd('HopLine'),
+			'<cmd>HopLine<cr>',
 			desc = 'Jump to line',
 			mode = { 'n', 'v' },
 		},
 		{
 			'T',
-			n.map.cmd('HopVertical'),
+			'<cmd>HopVertical<cr>',
 			desc = 'Jump to vertial line',
 			mode = { 'n', 'v' },
 		},
