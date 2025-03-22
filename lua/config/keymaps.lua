@@ -239,7 +239,7 @@ vim.api.nvim_create_user_command('TmuxLazyGit', function()
 	vim.fn.system(command)
 end, { desc = 'Tmux [L]azy[G]it' })
 
-map('n', '<leader>lg', '<cr>TmuxLazyGit<cr>')
+map('n', '<leader>lg', '<cmd>TmuxLazyGit<cr>')
 
 vim.api.nvim_create_user_command('TmuxLazyDocker', function()
 	local command = 'tmux new-window -c "#{pane_current_path}" -n "lazydocker" lazydocker'
