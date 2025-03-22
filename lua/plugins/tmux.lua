@@ -1,9 +1,11 @@
+---@type LazySpec
 return {
 	'aserowy/tmux.nvim',
+	enabled = true,
+
 	event = 'VeryLazy',
-	config = function()
-		require('tmux').setup({
-			copy_sync = { sync_clipboard = false },
-		})
-	end,
+
+	opts = {
+		copy_sync = { sync_clipboard = false },
+	},
 }
