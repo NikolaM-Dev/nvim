@@ -7,6 +7,13 @@ return {
 	config = true,
 
 	keys = {
-		{ '<C-x>g', '<cmd>Neogit<cr>', desc = 'Neo[G]it' },
+		{ '<leader>gg', '<cmd>Neogit<cr>', desc = 'Neo[G]it' },
+		{
+			'<leader>gcm',
+			function()
+				require('neogit').action('commit', 'commit')()
+			end,
+			desc = 'Neo[G]it [C]ommit',
+		},
 	},
 }
