@@ -37,7 +37,7 @@ map.set('v', '<', '<gv', { desc = 'Indent Left' })
 map.set('v', '>', '>gv', { desc = 'Indent right' })
 
 -- Sort
-map.set('v', '<leader>s', ':!sort<cr>', { desc = 'Sort' })
+map.set('v', '<leader>sl', ':sort<cr>', { desc = '[S]ort [L]ines' })
 
 -- Save
 map.set({ 'i', 'n', 's', 'v' }, '<C-s>', '<esc><cmd>w<cr>', { desc = '[S]ave file' })
