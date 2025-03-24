@@ -1,7 +1,7 @@
 ---@type LazySpec
 return {
 	'nvim-telescope/telescope.nvim',
-	enabled = true,
+	enabled = false,
 
 	cmd = 'Telescope',
 	dependencies = { 'nvim-telescope/telescope-fzf-native.nvim' },
