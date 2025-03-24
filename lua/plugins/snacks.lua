@@ -1,3 +1,5 @@
+local enabled = { enabled = true }
+
 ---@type LazySpec
 return {
 	'folke/snacks.nvim',
@@ -8,5 +10,9 @@ return {
 
 	---@type snacks.Config
 	opts = {
+		bigfile = enabled,
+		bufdelete = enabled,
+		lazygit = enabled,
+		quickfile = enabled,
 	},
 }
