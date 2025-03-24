@@ -1,3 +1,6 @@
+-- Use `uv` instead of `loop` as far as possible
+vim.uv = vim.uv or vim.loop
+
 require('config.globals')
 require('config.options')
 require('config.lazy')
