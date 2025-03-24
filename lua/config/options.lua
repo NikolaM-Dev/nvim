@@ -31,7 +31,6 @@ vim.opt.sessionoptions = {
 
 vim.opt.autoread = true -- automatically read the file when changed outside of neovim
 vim.opt.backup = false -- create backup files
-vim.opt.clipboard = 'unnamedplus' -- use system clipboard
 vim.opt.colorcolumn = '80' -- maximum column length for color highlighting
 vim.opt.completeopt = 'menu,menuone,noinsert' -- cmp complete options
 vim.opt.cursorline = true -- highlight current line
@@ -79,3 +78,7 @@ vim.opt.wildmode = 'longest:full,full' -- Command-line completion mode
 vim.opt.winbar = '%=%m %t' -- the window bar is a bar that's shown at the top of every window with it enabled
 vim.opt.wrap = false -- wrap lines
 vim.opt.writebackup = false -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
+
+vim.schedule(function()
+	vim.opt.clipboard = 'unnamedplus' -- use system clipboard
+end)
