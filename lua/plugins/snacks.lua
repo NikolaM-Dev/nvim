@@ -28,5 +28,19 @@ return {
 		bigfile = enabled,
 		bufdelete = enabled,
 		quickfile = enabled,
+		dashboard = {
+			preset = {
+				header = 'Be a high performance person, being all that you can be every day 24/7, 365',
+				keys = {
+					{ icon = ' ', key = 's', desc = 'Restore [S]ession', section = 'session' },
+					{ icon = ' ', key = 'q', desc = '[Q]uit', action = ':qa' },
+				},
+			},
+			sections = {
+				{ section = 'header' },
+				{ icon = ' ', title = 'Keymaps', section = 'keys', indent = 2, padding = 1 },
+				{ section = 'startup' },
+			},
+		},
 	},
 }
