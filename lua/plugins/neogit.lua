@@ -1,7 +1,7 @@
 ---@type LazySpec
 return {
 	'NeogitOrg/neogit',
-	enabled = true,
+	enabled = false,
 
 	cmd = 'Neogit',
 	config = true,
