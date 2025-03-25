@@ -12,7 +12,6 @@ return {
 	opts = {
 		bigfile = enabled,
 		bufdelete = enabled,
-		lazygit = enabled,
 		quickfile = enabled,
 	},
 }
