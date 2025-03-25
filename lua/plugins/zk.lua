@@ -39,7 +39,6 @@ return {
 	---@param opts? table
 	config = function(_, opts)
 		require('zk').setup(opts)
-		require('telescope').load_extension('nzk')
 
 		-- local cmd = require('zk.commands')
 		-- local Map = require('lib.map')
