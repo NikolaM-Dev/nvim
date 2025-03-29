@@ -15,6 +15,8 @@ map('n', '<leader>ld', function()
 	vim.fn.system('tmux new-window -c "#{pane_current_path}" -n "   " lazydocker')
 end, { desc = '[L]azy [D]ocker using Tmux' })
 
+map('i', '<C-q>', '<cmd>x<cr>', { desc = '[Q]uit' })
+
 map('i', '!', '!<C-g>u', { desc = 'Add undo break after type !' })
 map('i', ',', ',<C-g>u', { desc = 'Add undo break after type ,' })
 map('i', '-', '-<C-g>u', { desc = 'Add undo break after type -' })
