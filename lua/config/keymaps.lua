@@ -31,3 +31,6 @@ map('n', '<C-d>', '<C-d>zz', { desc = 'Scroll down centralized' })
 
 map('n', 'N', 'Nzzzv', { desc = 'Previous centralized' })
 map('n', 'n', 'nzzzv', { desc = 'Next search centralized' })
+
+map('n', '<C-o>', '<C-o>zz', { desc = 'Previous History centralized' })
+map('n', '<C-i>', '<C-i>zz', { desc = 'Next History centralized' })
