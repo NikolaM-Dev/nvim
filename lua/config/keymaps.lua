@@ -7,9 +7,9 @@ dmap({ 'i', 's' }, '<C-s>')
 map('n', '<C-s>', '<cmd>write<cr>', { desc = 'Write buffer' })
 map({ 'i', 'x' }, '<C-s>', '<esc><cmd>write<cr>', { desc = 'Write buffer' })
 
-	return vim.keymap.set(mode, lhs, rhs, opts)
-end
-map('i', '!', '!<c-g>u', { desc = 'Add undo break after type !' })
+map('n', '<leader>lg', function()
+	vim.fn.system('tmux new-window -c "#{pane_current_path}" -n "   " lazygit')
+end, { desc = '[L]azy [G]it using Tmux' })
 map('i', ',', ',<c-g>u', { desc = 'Add undo break after type ,' })
 map('i', '-', '-<c-g>u', { desc = 'Add undo break after type -' })
 map('i', '.', '.<c-g>u', { desc = 'Add undo break after type .' })
