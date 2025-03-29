@@ -38,3 +38,10 @@ map('n', '<C-i>', '<C-i>zz', { desc = 'Next History centralized' })
 map({ 'i', 'n' }, '<esc>', '<cmd>noh<cr><esc>', { desc = 'Escape and clear hlsearch' })
 map('v', '<leader>sl', ':sort<cr>', { desc = '[S]ort [L]ines' })
 map('x', '<leader>sl', ':sort<cr>', { desc = '[S]ort [L]ines' })
+map('n', 'j', function()
+	return vim.v.count > 1 and 'j' or 'gj'
+end, { expr = true, desc = 'Go down dwim' })
+
+map('n', 'k', function()
+	return vim.v.count > 0 and 'k' or 'gk'
+end, { expr = true, desc = 'Go up dwim' })
