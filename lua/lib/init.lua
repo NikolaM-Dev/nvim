@@ -27,4 +27,13 @@ function M.bmap(mode, lhs, rhs, opts)
 
 	vim.keymap.set(mode, lhs, rhs, opts)
 end
+
+---Deletes a keymap
+---It's useful to remove [Neovim Default Keymaps](https://neovim.io/doc/user/vim_diff.html#default-mappings)
+---@param mode string|string[]
+---@param lhs string
+function M.dmap(mode, lhs)
+	vim.keymap.del(mode, lhs)
+end
+
 return M
