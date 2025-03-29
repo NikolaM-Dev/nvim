@@ -1,1 +1,0 @@
-# Nikola's nvim config
