@@ -36,3 +36,5 @@ map('n', '<C-o>', '<C-o>zz', { desc = 'Previous History centralized' })
 map('n', '<C-i>', '<C-i>zz', { desc = 'Next History centralized' })
 
 map({ 'i', 'n' }, '<esc>', '<cmd>noh<cr><esc>', { desc = 'Escape and clear hlsearch' })
+map('v', '<leader>sl', ':sort<cr>', { desc = '[S]ort [L]ines' })
+map('x', '<leader>sl', ':sort<cr>', { desc = '[S]ort [L]ines' })
