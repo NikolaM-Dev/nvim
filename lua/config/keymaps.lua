@@ -28,3 +28,6 @@ map('n', 'o', 'o<C-g>u', { desc = 'Add undo break after type o' })
 
 map('n', '<C-u>', '<C-u>zz', { desc = 'Scroll up centralized' })
 map('n', '<C-d>', '<C-d>zz', { desc = 'Scroll down centralized' })
+
+map('n', 'N', 'Nzzzv', { desc = 'Previous centralized' })
+map('n', 'n', 'nzzzv', { desc = 'Next search centralized' })
