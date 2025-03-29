@@ -12,4 +12,19 @@ function M.map(mode, lhs, rhs, opts)
 
 	pcall(vim.keymap.set, mode, lhs, rhs, opts)
 end
+
+---Set a keymap for buffer
+---@param mode string|string[]
+---@param lhs string
+---@param rhs string|function
+---@param opts? vim.keymap.set.Opts
+function M.bmap(mode, lhs, rhs, opts)
+	opts = vim.tbl_extend('force', {
+		buffer = true,
+		nowait = true,
+		silent = true,
+	}, opts or {})
+
+	vim.keymap.set(mode, lhs, rhs, opts)
+end
 return M
