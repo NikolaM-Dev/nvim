@@ -25,3 +25,6 @@ map('i', ';', ';<C-g>u', { desc = 'Add undo break after type ;' })
 map('i', '?', '?<C-g>u', { desc = 'Add undo break after type ?' })
 map('i', '_', '_<C-g>u', { desc = 'Add undo break after type _' })
 map('n', 'o', 'o<C-g>u', { desc = 'Add undo break after type o' })
+
+map('n', '<C-u>', '<C-u>zz', { desc = 'Scroll up centralized' })
+map('n', '<C-d>', '<C-d>zz', { desc = 'Scroll down centralized' })
