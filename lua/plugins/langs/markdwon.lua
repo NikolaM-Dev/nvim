@@ -19,4 +19,12 @@ return {
 		opts = function(_, opts)
 			opts.servers.marksman = {}
 		end,
+	},
+	{
+		'stevearc/conform.nvim',
+		ft = 'markdown',
+		opts = function(_, opts)
+			opts.formatters_by_ft.markdown = { 'prettier' }
+		end,
+	},
 }
