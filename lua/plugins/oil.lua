@@ -19,7 +19,7 @@ return {
 		watch_for_changes = true,
 
 		keymaps = {
-			['<leader><C-v>'] = 'actions.select_vsplit',
+			['<C-h>'] = false, -- disable horizontal split
 			['<leader><C-x>'] = 'actions.select_split',
 			['<C-s>'] = {
 				callback = function()
