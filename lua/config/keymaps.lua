@@ -15,6 +15,14 @@ map('n', '<leader>ld', function()
 	vim.fn.system('tmux new-window -c "#{pane_current_path}" -n "   " lazydocker')
 end, { desc = '[L]azy [D]ocker using Tmux' })
 
+map('n', '<C-q>', function()
+	-- Close gitsigns diffthis buffer
+	if is_in_gitsigns_diffthis then
+		vim.cmd('wincmd p')
+	end
+
+	vim.cmd.quit()
+end, { desc = '[Q]uit' })
 map('i', '<C-q>', '<cmd>x<cr>', { desc = '[Q]uit' })
 
 map('i', '!', '!<C-g>u', { desc = 'Add undo break after type !' })
