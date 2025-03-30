@@ -14,5 +14,3 @@ vim.o.winborder = 'rounded' -- Defines the default border style of floating wind
 vim.schedule(function()
 	vim.o.clipboard = 'unnamedplus' -- use system clipboard
 end)
-
-vim.g.border = 'rounded'
