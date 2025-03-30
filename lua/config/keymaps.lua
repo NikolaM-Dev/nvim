@@ -21,6 +21,7 @@ map('n', '<C-q>', function()
 	-- Close gitsigns diffthis buffer
 	if is_in_gitsigns_diffthis then
 		vim.cmd('wincmd p')
+		_G.is_in_gitsigns_diffthis = false
 	end
 
 	vim.cmd.quit()
