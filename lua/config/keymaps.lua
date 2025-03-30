@@ -1,6 +1,8 @@
 local map = require('lib').map
 local dmap = require('lib').dmap
 
+-- TODO: mkspell! %, to generate spell files
+
 vim.g.mapleader = ' '
 
 dmap({ 'i', 's' }, '<C-s>')
