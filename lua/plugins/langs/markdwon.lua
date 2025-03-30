@@ -13,4 +13,10 @@ return {
 			vim.list_extend(opts.ensure_installed, { 'marksman', 'prettier' })
 		end,
 	},
+	{
+		'neovim/nvim-lspconfig',
+		ft = 'markdown',
+		opts = function(_, opts)
+			opts.servers.marksman = {}
+		end,
 }
