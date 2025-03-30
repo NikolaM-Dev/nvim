@@ -9,6 +9,15 @@ return {
 
 	---@type table
 	opts = {
+		-- TODO: Review
+		-- filetype = {
+		-- 	markdown = { glyph = '󱗖', hl = 'MiniIconsPurple' },
+		-- },
+		-- file = {
+		-- 	['bun.lockb'] = { glyph = '' },
+		-- 	['lazy-lock.json'] = { glyph = '󰒲', hl = 'MiniIconsBlue' },
+		-- 	['.luarc.json'] = { glyph = '󰢱', hl = 'MiniIconsAzure' },
+		-- },
 	},
 
 	---@param opts? table
