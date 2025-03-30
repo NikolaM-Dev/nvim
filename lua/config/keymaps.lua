@@ -1,7 +1,7 @@
 local map = require('lib').map
 local dmap = require('lib').dmap
 
--- TODO: mkspell! %, to generate spell files
+-- TODO: :silent mkspell! %, to generate spell files
 
 vim.g.mapleader = ' '
 
