@@ -9,15 +9,19 @@ return {
 
 	---@type table
 	opts = {
-		-- TODO: Review
-		-- filetype = {
-		-- 	markdown = { glyph = '󱗖', hl = 'MiniIconsPurple' },
-		-- },
-		-- file = {
-		-- 	['bun.lockb'] = { glyph = '' },
-		-- 	['lazy-lock.json'] = { glyph = '󰒲', hl = 'MiniIconsBlue' },
-		-- 	['.luarc.json'] = { glyph = '󰢱', hl = 'MiniIconsAzure' },
-		-- },
+		filetype = {
+			markdown = { glyph = '󱗖', hl = 'MiniIconsPurple' },
+		},
+
+		file = {
+			['.node-version'] = { glyph = '', hl = 'MiniIconsGreen' },
+			['.obsidian.vimrc'] = { glyph = '', hl = 'MiniIconsGreen' },
+			['.prettierignore'] = { glyph = '', hl = 'MiniIconsPurple' },
+			['.prettierrc'] = { glyph = '', hl = 'MiniIconsBlue' },
+			['bun.lock'] = { glyph = '', hl = 'MiniIconsGrey' },
+			['lazy-lock.json'] = { glyph = '󰒲', hl = 'MiniIconsBlue' },
+			['package.json'] = { glyph = '', hl = 'MiniIconsGreen' },
+		},
 	},
 
 	---@param opts? table
