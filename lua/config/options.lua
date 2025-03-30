@@ -9,6 +9,7 @@ vim.o.linebreak = true -- wrap long lines at characters, not in the middle of a 
 vim.o.autoread = true -- automatically read the file when changed outside of neovim
 vim.o.backup = false -- create backup files
 vim.o.wrap = false -- wrap lines
+vim.o.winborder = 'rounded' -- Defines the default border style of floating windows
 
 vim.schedule(function()
 	vim.o.clipboard = 'unnamedplus' -- use system clipboard
