@@ -19,6 +19,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+	desc = 'A modern plugin manager for Neovim',
+	docs = 'https://lazy.folke.io',
 	spec = {
 		{ import = 'plugins' },
 		{ import = 'plugins.langs' },
