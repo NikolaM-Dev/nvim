@@ -1,45 +1,36 @@
+---@module 'lazy'
+---@type LazySpec
 return {
 	'williamboman/mason.nvim',
-	cmd = 'Mason',
+	desc = 'Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters',
+	enabled = true,
+
+	event = 'VeryLazy',
+
 	keys = {
 		{ '<leader>cm', '<cmd>Mason<cr>', desc = '[M]ason' },
 	},
-	config = function()
-		local sources = {
-			'css-lsp',
-			'eslint_d',
-			'eslint-lsp',
-			'gofumpt',
-			'goimports',
-			'gopls',
-			'html-lsp',
-			'json-lsp',
-			'lua-language-server',
-			'markdown-oxide',
-			'marksman',
-			'prettier',
-			'prettierd',
-			'staticcheck',
-			'stylua',
-			'svelte-language-server',
-			'tailwindcss-language-server',
-			'taplo',
-			'typescript-language-server',
-			'vim-language-server',
-		}
 
+	opts = {
+		ensure_installed = {},
+	},
+
+	config = function(_, opts)
 		require('mason').setup({
-			ensure_installed = sources,
+			ensure_installed = opts.ensure_installed,
 			ui = {
-				border = 'single',
-				icons = { package_installed = '󰄳 ', package_pending = ' ', package_uninstalled = '󰚌 ' },
+				icons = {
+					package_installed = '󰄳 ',
+					package_pending = ' ',
+					package_uninstalled = '󰚌 ',
+				},
 			},
 		})
 
-		local mr = require('mason-registry')
+		local mason_registry = require('mason-registry')
 		local function ensure_installed()
-			for _, s in ipairs(sources) do
-				local p = mr.get_package(s)
+			for _, s in ipairs(opts.ensure_installed) do
+				local p = mason_registry.get_package(s)
 
 				if not p:is_installed() then
 					p:install()
@@ -47,8 +38,8 @@ return {
 			end
 		end
 
-		if mr.refresh then
-			mr.refresh(ensure_installed)
+		if mason_registry.refresh then
+			mason_registry.refresh(ensure_installed)
 		else
 			ensure_installed()
 		end
