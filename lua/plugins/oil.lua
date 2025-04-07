@@ -20,8 +20,10 @@ return {
 
 		keymaps = {
 			['<C-h>'] = false, -- disable horizontal split
+			['<C-l>'] = false, -- disable refresh
 			['<leader><C-v>'] = { 'actions.select', opts = { vertical = true } },
 			['<leader><C-x>'] = { 'actions.select', opts = { horizontal = true } },
+			['gr'] = 'actions.refresh',
 			['<C-s>'] = {
 				callback = function()
 					require('oil').save()
