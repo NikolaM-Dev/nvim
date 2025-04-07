@@ -18,6 +18,7 @@ return {
 			['.obsidian.vimrc'] = { glyph = '', hl = 'MiniIconsGreen' },
 			['.prettierignore'] = { glyph = '', hl = 'MiniIconsPurple' },
 			['.prettierrc'] = { glyph = '', hl = 'MiniIconsBlue' },
+			['LICENSE'] = { glyph = '󰄤' },
 			['bun.lock'] = { glyph = '', hl = 'MiniIconsGrey' },
 			['lazy-lock.json'] = { glyph = '󰒲', hl = 'MiniIconsBlue' },
 			['package.json'] = { glyph = '', hl = 'MiniIconsGreen' },
