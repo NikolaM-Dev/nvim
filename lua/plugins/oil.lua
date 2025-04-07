@@ -30,5 +30,18 @@ return {
 				mode = { 'i', 'n', 'v' },
 			},
 		},
+
+		view_options = {
+			is_hidden_file = function(filename)
+				local filters = { '^.git$', '^node_modules$' } -- '^dist$', '^.obsidian$'
+				local is_in_filters = vim.fn.match(filters, filename) ~= -1
+
+				return is_in_filters
+			end,
+
+			is_always_hidden = function(name)
+				return name == '..'
+			end,
+		},
 	},
 }
