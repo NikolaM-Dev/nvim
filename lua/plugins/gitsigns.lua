@@ -8,6 +8,8 @@ return {
 	events = { 'BufWritePost', 'BufReadPost', 'InsertLeave' },
 	opts = {
 		attach_to_untracked = true,
+		sign_priority = 100,
+
 		on_attach = function(bufnr)
 			local gitsigns = require('gitsigns')
 
