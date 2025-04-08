@@ -1,4 +1,4 @@
-vim.o.listchars = {
+vim.opt.listchars:append({
 	-- eol = '¬',
 	extends = '»',
 	lead = ' ',
@@ -7,7 +7,7 @@ vim.o.listchars = {
 	space = ' ',
 	tab = '  ', -- │
 	trail = '·',
-}
+})
 
 vim.o.autoread = true -- Automatically read the file when changed outside of neovim
 vim.o.backup = false -- Create backup files
