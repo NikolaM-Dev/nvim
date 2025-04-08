@@ -1,3 +1,5 @@
+local map = require('lib').map
+
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 
 if not vim.uv.fs_stat(lazypath) then
@@ -35,3 +37,6 @@ require('lazy').setup({
 		colorscheme = { 'tokyonight', 'habamax' },
 	},
 })
+
+map('n', '<leader>l', '<cmd>Lazy<cr>', { desc = 'Open [L]azy' })
+map('n', '<leader>lp', '<cmd>Lazy profile<cr>', { desc = 'Open [L]azy [P]rofile' })
