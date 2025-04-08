@@ -10,6 +10,23 @@ return {
 		attach_to_untracked = true,
 		sign_priority = 100,
 
+		signs = {
+			add = { text = '▎' },
+			change = { text = '▎' },
+			changedelete = { text = '▎' },
+			delete = { text = '' },
+			topdelete = { text = '' },
+			untracked = { text = '▎' },
+		},
+		signs_staged = {
+			add = { text = '▎' },
+			change = { text = '▎' },
+			changedelete = { text = '▎' },
+			delete = { text = '' },
+			topdelete = { text = '' },
+			untracked = { text = '▎' },
+		},
+
 		on_attach = function(bufnr)
 			local gitsigns = require('gitsigns')
 
