@@ -48,5 +48,21 @@ return {
 				lspconfig[server].setup(config)
 			end
 		end
+
+		vim.diagnostic.config({
+			severity_sort = true,
+			signs = {
+				text = {
+					[vim.diagnostic.severity.ERROR] = '●', --' ',
+					[vim.diagnostic.severity.HINT] = '○', --' ',
+					[vim.diagnostic.severity.INFO] = '●', --' ',
+					[vim.diagnostic.severity.WARN] = '●', --' ',
+				},
+			},
+			virtual_text = {
+				prefix = '🔥',
+				spacing = 2,
+			},
+		})
 	end,
 }
