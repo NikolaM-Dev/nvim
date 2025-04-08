@@ -21,6 +21,8 @@ vim.o.showmode = false -- Removes the text indicating the mode
 vim.o.signcolumn = 'yes:2' -- Always show the sign column, otherwise it would shift the text each time
 vim.o.splitbelow = true -- Split window below
 vim.o.splitright = true -- Split window right
+vim.o.undodir = os.getenv('XDG_DATA_HOME') .. '/nvim/undodir' -- Undodir path
+vim.o.undofile = true -- Automatically saves undo history to an undo file when writing a buffer to a file, and restores undo history from the same file on buffer read.
 vim.o.winborder = 'rounded' -- Defines the default border style of floating windows
 vim.o.wrap = false -- Wrap lines
 
