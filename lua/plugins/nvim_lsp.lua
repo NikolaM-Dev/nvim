@@ -41,7 +41,7 @@ return {
 			end,
 		})
 
-		-- Servers: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+		-- [LSP Configs](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md)
 		local lspconfig = require('lspconfig')
 		for name, server in pairs(opts.servers) do
 			if server then

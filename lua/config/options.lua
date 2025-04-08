@@ -1,3 +1,4 @@
+vim.o.listchars = {
 	-- eol = '¬',
 	extends = '»',
 	lead = ' ',
