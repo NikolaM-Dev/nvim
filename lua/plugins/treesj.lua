@@ -11,6 +11,7 @@ return {
 
 	---@type table
 	opts = {
+		max_join_length = math.huge,
 		use_default_keymaps = false,
 	},
 }
