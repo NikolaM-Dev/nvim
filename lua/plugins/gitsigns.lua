@@ -5,7 +5,7 @@ return {
 	desc = 'Git integration for buffers',
 	enabled = true,
 
-	events = { 'BufWritePost', 'BufReadPost', 'InsertLeave' },
+	events = { 'BufNewFile', 'BufReadPost', 'BufWritePre' },
 	opts = {
 		attach_to_untracked = true,
 		sign_priority = 100,
