@@ -8,6 +8,7 @@ return {
 	lazy = false,
 	keys = {
 		{ '-', '<cmd>Oil<cr>' },
+		{ '<backspace>-', '<cmd>Oil .<cr>' },
 	},
 
 	---@module 'oil'
