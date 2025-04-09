@@ -19,6 +19,7 @@ vim.o.number = true -- Show line numbers
 vim.o.relativenumber = true -- Show relative numbers
 vim.o.showmode = false -- Removes the text indicating the mode
 vim.o.signcolumn = 'yes:2' -- Always show the sign column, otherwise it would shift the text each time
+vim.o.smartindent = true -- Do smart autoindenting when starting a new line.
 vim.o.splitbelow = true -- Split window below
 vim.o.splitright = true -- Split window right
 vim.o.termguicolors = true -- True color support
