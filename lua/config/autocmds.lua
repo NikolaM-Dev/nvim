@@ -9,3 +9,10 @@ autocmd('TextYankPost', {
 		vim.hl.on_yank({ timeout = 200 })
 	end,
 })
+
+autocmd({ 'BufWritePre' }, {
+	command = [[%s/\s\+$//e]],
+	desc = 'Remove trailing whitespace',
+	group = augroup('remove_trailing_whitespace'),
+	pattern = '*',
+})
