@@ -21,7 +21,7 @@ return {
 
 		-- search
 		{ '<leader>sh', function() Snacks.picker.help() end, desc = 'Search [H]elp Pages' },
-		{ '<leader>sH', function() Snacks.picker.highlights() end, desc = 'Highlights' },
+		{ '<leader>ss', function() Snacks.picker() end, desc = '[S]earch [S]nacks pickers' },
 		{ '<leader>sH', function() Snacks.picker.highlights() end, desc = '[S]earch [H]ighlights' },
 		{ '<leader>sk', function() Snacks.picker.keymaps() end, desc = '[S]earch [K]eymaps' },
 		{ '<leader>si', function() Snacks.picker.icons() end, desc = '[S]earch [I]cons' },
