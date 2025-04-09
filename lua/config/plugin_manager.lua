@@ -38,5 +38,5 @@ require('lazy').setup({
 	},
 })
 
-map('n', '<leader>l', '<cmd>Lazy<cr>', { desc = 'Open [L]azy' })
+map('n', '<leader>lz', '<cmd>Lazy<cr>', { desc = 'Open [L]a[Z]y' })
 map('n', '<leader>lp', '<cmd>Lazy profile<cr>', { desc = 'Open [L]azy [P]rofile' })
