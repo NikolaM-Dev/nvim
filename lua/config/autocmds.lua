@@ -1,6 +1,8 @@
 local augroup = require('lib').augroup
 
-vim.api.nvim_create_autocmd('TextYankPost', {
+local autocmd = vim.api.nvim_create_autocmd
+
+autocmd('TextYankPost', {
 	desc = 'Highlight yank',
 	group = augroup('highlight_yank'),
 	callback = function()
