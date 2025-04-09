@@ -9,6 +9,15 @@ vim.opt.listchars:append({
 	trail = '·',
 })
 
+vim.opt.fillchars:append({
+	diff = '╱',
+	eob = ' ',
+	fold = ' ',
+	foldclose = '',
+	foldopen = '󰇘',
+	foldsep = ' ',
+})
+
 vim.o.autoread = true -- Automatically read the file when changed outside of neovim
 vim.o.backup = false -- Create backup files
 vim.o.inccommand = 'split' -- Shows the effects of a command incrementally using an split
