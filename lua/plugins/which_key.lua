@@ -9,6 +9,7 @@ return {
 
 	---@class wk.Opts
 	opts = {
+		delay = '400',
 		preset = 'helix',
 		spec = {
 			{
