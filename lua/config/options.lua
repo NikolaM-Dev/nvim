@@ -10,10 +10,10 @@ vim.opt.listchars:append({
 })
 
 vim.opt.fillchars:append({
-	diff = '╱',
+	diff = '░', -- ╱
 	eob = ' ',
 	fold = ' ',
-	foldclose = '',
+	foldclose = ' ', -- '',
 	foldopen = '󰇘',
 	foldsep = ' ',
 })
