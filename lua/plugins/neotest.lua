@@ -6,7 +6,6 @@ return {
 	enabled = true,
 
 	dependencies = 'nvim-neotest/nvim-nio',
-	config = true,
 	---@type table
 	opts = {
 		adapters = {},
