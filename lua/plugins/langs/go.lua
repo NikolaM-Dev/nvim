@@ -23,4 +23,17 @@ return {
 			opts.formatters_by_ft.go = { 'goimports', 'gofumpt' }
 		end,
 	},
+	{
+		'nvim-neotest/neotest',
+		dependencies = {
+			{
+				'fredrikaverpil/neotest-golang',
+				desc = 'Reliable Neotest adapter for running Go tests in Neovim',
+				version = '*',
+			},
+		},
+		opts = function(_, opts)
+			vim.list_extend(opts.adapters, { require('neotest-golang') })
+		end,
+	},
 }
