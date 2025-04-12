@@ -1,3 +1,4 @@
+Neovim
 api
 colorscheme
 desc
@@ -10,6 +11,7 @@ lsp
 lua
 markdwon
 marksman
+neovim
 stylua
 tmux
 todo
