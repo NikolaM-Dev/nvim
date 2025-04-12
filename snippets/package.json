@@ -1,0 +1,10 @@
+{
+  "name": "Nikola's Snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "gitcommit",
+        "path": "./gitcommit.json"
+      },
+  }
+}
