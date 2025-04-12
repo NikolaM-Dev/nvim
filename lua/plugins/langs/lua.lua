@@ -35,6 +35,7 @@ return {
 		desc = 'Faster LuaLS setup for Neovim',
 		enabled = true,
 
+		cmd = 'LazyDev',
 		ft = 'lua',
 		opts = {
 			library = {
