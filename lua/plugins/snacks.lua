@@ -19,6 +19,8 @@ return {
 		{ '<leader>fr', function() Snacks.picker.recent() end, desc = '[F]ind [R]ecent' },
 
 		{ '<leader>.', function() Snacks.scratch() end, desc = 'Toggle [S]cratch Buffer' },
+		{ '<leader>n', function() Snacks.picker.notifications() end, desc = '[N]otification History' },
+
 		-- search
 		{ '<leader>sh', function() Snacks.picker.help() end, desc = 'Search [H]elp Pages' },
 		{ '<leader>ss', function() Snacks.picker() end, desc = '[S]earch [S]nacks pickers' },
