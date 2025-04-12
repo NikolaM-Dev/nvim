@@ -18,6 +18,7 @@ return {
 		{ '<leader>fp', function() Snacks.picker.projects() end, desc = '[F]ind [P]rojects' },
 		{ '<leader>fr', function() Snacks.picker.recent() end, desc = '[F]ind [R]ecent' },
 
+		{ '<leader>.', function() Snacks.scratch() end, desc = 'Toggle [S]cratch Buffer' },
 		-- search
 		{ '<leader>sh', function() Snacks.picker.help() end, desc = 'Search [H]elp Pages' },
 		{ '<leader>ss', function() Snacks.picker() end, desc = '[S]earch [S]nacks pickers' },
