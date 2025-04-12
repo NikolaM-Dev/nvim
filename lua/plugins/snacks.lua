@@ -9,8 +9,8 @@ return {
 	lazy = false,
 
 	keys = {
-		-- stylua: ignore start
 		-- find
+		-- stylua: ignore start
 		{ '<leader>fb', function() Snacks.picker.buffers() end, desc = '[F]ind [B]uffers' },
 		{ '<leader>fc', function() Snacks.picker.files({ cwd = vim.fn.stdpath('config') }) end, desc = '[F]ind [C]onfig Files' },
 		{ '<leader>ff', function() Snacks.picker.files({ hidden = true }) end, desc = '[F]ind [F]iles' },
