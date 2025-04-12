@@ -1,0 +1,20 @@
+{
+  "g": {
+    "prefix": "g",
+    "body": "_G."
+  },
+  "plugin": {
+    "prefix": "plugin",
+    "body": [
+      "---@module 'lazy'",
+      "---@type LazySpec",
+      "return {",
+      "\t'$0',",
+      "\tdesc = '',",
+      "\tenabled = true,",
+      "",
+      "\tconfig= true",
+      "}"
+    ]
+  }
+}
