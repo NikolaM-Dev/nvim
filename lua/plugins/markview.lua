@@ -8,5 +8,13 @@ return {
 	lazy = false, -- Don't lazy load this plugin as it is already lazy-loaded
 
 	---@type table
-	opts = {},
+	opts = {
+		markdown = {
+			list_items = {
+				marker_minus = {
+					text = '•',
+				},
+			},
+		},
+	},
 }
