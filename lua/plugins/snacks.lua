@@ -50,7 +50,6 @@ return {
 			bigfile = enabled,
 			bufdelete = enabled,
 			notifier = enabled,
-			picker = enabled,
 			quickfile = enabled,
 			rename = enabled,
 			scratch = enabled,
@@ -70,6 +69,17 @@ return {
 					{ section = 'header' },
 					{ icon = ' ', title = 'Keymaps', section = 'keys', indent = 2, padding = 1 },
 					{ section = 'startup' },
+				},
+			},
+
+			picker = {
+				win = {
+					input = {
+						keys = {
+							['<C-u>'] = { 'preview_scroll_up', mode = { 'i', 'n' } },
+							['<C-d>'] = { 'preview_scroll_down', mode = { 'i', 'n' } },
+						},
+					},
 				},
 			},
 
