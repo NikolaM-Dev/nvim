@@ -49,10 +49,13 @@ return {
 		return {
 			bigfile = enabled,
 			bufdelete = enabled,
+			notifier = enabled,
 			picker = enabled,
 			quickfile = enabled,
-			toggle = enabled,
 			rename = enabled,
+			scratch = enabled,
+			statuscolumn = enabled,
+			toggle = enabled,
 
 			dashboard = {
 				preset = {
