@@ -41,3 +41,24 @@ vim.o.winbar = '%=%m %t' -- The window bar is a bar that's shown at the top of e
 vim.schedule(function()
 	vim.o.clipboard = 'unnamedplus' -- use system clipboard
 end)
+
+-- TODO: Arrange the following code
+vim.o.foldlevel = 99 -- do not auto-fold
+vim.o.foldlevelstart = 99
+vim.o.foldtext = '' -- empty string keeps text (overwritten by nvim-origami)
+
+do
+	vim.o.foldmethod = 'expr'
+	vim.o.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+
+	vim.api.nvim_create_autocmd('LspAttach', {
+		desc = 'User: Set LSP folding if client supports it',
+		callback = function(ctx)
+			local client = assert(vim.lsp.get_client_by_id(ctx.data.client_id))
+			if client:supports_method('textDocument/foldingRange') then
+				local win = vim.api.nvim_get_current_win()
+				vim.wo[win][0].foldexpr = 'v:lua.vim.lsp.foldexpr()'
+			end
+		end,
+	})
+end
