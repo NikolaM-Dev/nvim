@@ -3,7 +3,7 @@
 return {
 	'folke/tokyonight.nvim',
 	desc = 'Folke\'s colorscheme',
-	enabled = true,
+	enabled = false,
 
 	lazy = false,
 	priority = 1000,
