@@ -34,7 +34,7 @@ require('lazy').setup({
 		notify = false,
 	},
 	install = {
-		colorscheme = { 'tokyonight', 'habamax' },
+		colorscheme = { 'rose-pine', 'tokyonight', 'habamax' },
 	},
 })
 
