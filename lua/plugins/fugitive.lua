@@ -6,16 +6,11 @@ return {
 	enabled = true,
 
 	cmd = 'Git',
+
 	keys = {
-		{
-			'<leader>gcm',
-			':vert Git commit -v<cr>',
-			desc = '[G]it [C]o[M]mit',
-		},
-		{
-			'<leader>gca',
-			':vert Git commit -v --amend<cr>',
-			desc = '[G]it [C]ommit [A]mend',
-		},
+		-- stylua: ignore start
+		{ '<leader>gca', ':vert Git commit -v --amend<cr>', desc = '[G]it [C]ommit [A]mend' },
+		{ '<leader>gcm', ':vert Git commit -v<cr>',         desc = '[G]it [C]o[M]mit' },
+		-- stylua: ignore end
 	},
 }
