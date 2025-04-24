@@ -6,5 +6,12 @@ return {
 	enabled = true,
 
 	event = { 'BufReadPost */*', 'BufNewFile' },
-	config = true,
+
+	config = function()
+		require('modeline').setup()
+
+		vim.api.nvim_set_hl(0, 'ModeLineGitAdd', { fg = '#9ccfd8' })
+		vim.api.nvim_set_hl(0, 'ModeLineGitChange', { fg = '#ea9a97' })
+		vim.api.nvim_set_hl(0, 'ModeLineGitDelete', { fg = '#eb6f92' })
+	end,
 }
