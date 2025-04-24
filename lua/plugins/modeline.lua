@@ -5,6 +5,7 @@ return {
 	desc = 'Neovim statusline plugin blazing fast than any statusline plugin',
 	enabled = true,
 
+	dir = '~/w/1-projects/modeline.nvim',
 	event = { 'BufReadPost */*', 'BufNewFile' },
 
 	config = function()
