@@ -20,6 +20,7 @@ vim.opt.fillchars:append({
 
 vim.o.autoread = true -- Automatically read the file when changed outside of neovim
 vim.o.backup = false -- Create backup files
+vim.o.cursorline = true -- Highlight the text line of the cursor
 vim.o.inccommand = 'split' -- Shows the effects of a command incrementally using an split
 vim.o.laststatus = 3 -- Always and ONLY the last window a status line
 vim.o.linebreak = true -- Wrap long lines at characters, not in the middle of a word
