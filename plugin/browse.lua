@@ -107,6 +107,7 @@ local function get_bookmarks()
 	return bookmarks
 end
 
+---Find and open a bookmark in your default browser
 local function browse_bookmarks()
 	require('snacks').picker.pick({
 		layout = 'select',
