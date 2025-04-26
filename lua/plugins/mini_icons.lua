@@ -13,6 +13,12 @@ return {
 			markdown = { glyph = '󱗖', hl = 'MiniIconsPurple' },
 		},
 
+		extension = {
+			c = { glyph = '' },
+			h = { glyph = '' },
+			o = { glyph = '󰆧' },
+		},
+
 		file = {
 			['.node-version'] = { glyph = '', hl = 'MiniIconsGreen' },
 			['.obsidian.vimrc'] = { glyph = '', hl = 'MiniIconsGreen' },
