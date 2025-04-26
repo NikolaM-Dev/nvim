@@ -40,6 +40,12 @@ return {
 		-- git
 		{ '<leader>gS', function() Snacks.picker.git_stash() end, desc = '[G]it [S]tash' },
 		{ '<leader>gs', function() Snacks.picker.git_status() end, desc = '[G]it [S]tatus' },
+
+		-- zen
+		{ '<leader>z', function() Snacks.zen() end, desc = 'Toggle [Z]en Mode' },
+
+		-- zoom
+		{ '<leader>Z', function() Snacks.zen.zoom() end, desc = 'Toggle [Z]oom' },
 		-- stylua: ignore end
 	},
 

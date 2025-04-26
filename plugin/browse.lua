@@ -32,6 +32,10 @@ local function get_bookmarks()
 			mathhew = 'https://www.youtube.com/watch?v=QbL0X3B4mjg',
 		},
 
+		lua = {
+			annotations = 'https://github.com/LuaLS/lua-language-server/wiki/Annotations',
+		},
+
 		['carpal tunnel'] = 'https://youtu.be/sfVIl4uHrnQ',
 
 		['lute docs'] = 'https://luteorg.github.io/lute-manual',
