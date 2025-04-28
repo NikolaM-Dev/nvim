@@ -2,14 +2,8 @@
   "name": "Nikola's Snippets",
   "contributes": {
     "snippets": [
-      {
-        "language": "gitcommit",
-        "path": "./gitcommit.json"
-      },
-      {
-        "language": "lua",
-        "path": "./lua.json"
-      }
+      { "language": "gitcommit", "path": "./gitcommit.json" },
+      { "language": "lua", "path": "./lua.json" },
     ]
   }
 }
