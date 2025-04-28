@@ -6,5 +6,16 @@ return {
 	enabled = true,
 
 	event = 'BufReadPre',
+
+	keys = {
+		{
+			'<leader>ls',
+			function()
+				require('persistence').load()
+			end,
+			desc = '[L]ast [S]ession',
+		},
+	},
+
 	config = true,
 }
