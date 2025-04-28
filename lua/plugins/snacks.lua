@@ -12,7 +12,7 @@ return {
 		-- find
 		-- stylua: ignore start
 		{ '<leader>fb', function() Snacks.picker.buffers() end, desc = '[F]ind [B]uffers' },
-		{ '<leader>fc', function() Snacks.picker.files({ cwd = vim.fn.stdpath('config') }) end, desc = '[F]ind [C]onfig Files' },
+		{ '<leader>fc', function() Snacks.picker.files({ title =  '  eovim Files ', cwd = vim.fn.stdpath('config') }) end, desc = '[F]ind [C]onfig Files' },
 		{ '<leader>ff', function() Snacks.picker.files({ hidden = true }) end, desc = '[F]ind [F]iles' },
 		{ '<leader>fg', function() Snacks.picker.git_files() end, desc = '[F]ind [G]it Files' },
 		{ '<leader>fp', function() Snacks.picker.projects() end, desc = '[F]ind [P]rojects' },
