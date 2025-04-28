@@ -1,0 +1,10 @@
+{
+  "shorthand var": {
+    "prefix": ";",
+    "body": ":= $0"
+  },
+  "shorthand var": {
+    "prefix": ",",
+    "body": "<- $0"
+  }
+}

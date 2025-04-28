@@ -3,6 +3,7 @@
   "contributes": {
     "snippets": [
       { "language": "gitcommit", "path": "./gitcommit.json" },
+      { "language": "go", "path": "./go.json" }
       { "language": "lua", "path": "./lua.json" },
     ]
   }
