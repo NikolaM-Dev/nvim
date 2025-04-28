@@ -12,7 +12,9 @@ local function get_bookmarks()
 			adalessa = 'https://gitea.ad-impeldown.synology.me/alpha/nixvim/src/branch/main',
 			adibhanna = 'https://github.com/adibhanna/nvim',
 			b0o = 'https://github.com/b0o/nvim-conf',
-			['cris at machine'] = 'https://github.com/ChristianChiarulli/nvim',
+			backup = 'https://github.com/NikolaM-Dev/nvim/tree/backup',
+			chris = 'https://github.com/chrisgrieser/.config/tree/main/nvim',
+			['chris at machine'] = 'https://github.com/ChristianChiarulli/nvim',
 			dcrag = 'https://github.com/CRAG666/dotfiles/tree/main/config/nvim',
 			epwalsh = 'https://github.com/epwalsh/dotfiles/tree/main/neovim',
 			fbearoff = 'https://github.com/fbearoff/dotfiles/tree/master/nvim/.config/nvim',
@@ -24,7 +26,6 @@ local function get_bookmarks()
 			mrs4ndman = 'https://github.com/mrs4ndman/nvim-conf',
 			prime = 'https://github.com/ThePrimeagen/init.lua',
 			wuelner = 'https://github.com/wuelnerdotexe/nvim',
-			chris = 'https://github.com/chrisgrieser/.config/tree/main/nvim',
 		},
 
 		motivation = {
