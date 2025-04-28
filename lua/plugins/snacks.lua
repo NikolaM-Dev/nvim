@@ -80,6 +80,12 @@ return {
 				},
 			},
 
+			---@type snacks.input.Config
+			---@diagnostic disable-next-line: missing-fields
+			input = {
+				icon = '',
+			},
+
 			picker = {
 				win = {
 					input = {
