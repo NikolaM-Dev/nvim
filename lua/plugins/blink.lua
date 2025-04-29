@@ -16,6 +16,15 @@ return {
 			nerd_font_variant = 'mono',
 		},
 
+		cmdline = {
+			keymap = {
+				preset = 'cmdline',
+
+				['<C-j>'] = { 'select_next' },
+				['<C-k>'] = { 'select_prev' },
+			},
+		},
+
 		completion = {
 			documentation = {
 				auto_show = true,
