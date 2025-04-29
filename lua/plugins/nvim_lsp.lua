@@ -4,6 +4,7 @@ return {
 	'neovim/nvim-lspconfig',
 	desc = 'Quickstart configs for Nvim LSP',
 	enabled = true,
+
 	event = { 'BufReadPost', 'BufNewFile', 'BufWritePre' },
 
 	opts = {
