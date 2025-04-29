@@ -12,11 +12,18 @@ return {
 	---@module 'blink.cmp'
 	---@type blink.cmp.Config
 	opts = {
-		keymap = { preset = 'enter' },
 		appearance = {
 			nerd_font_variant = 'mono',
 		},
 
+		keymap = {
+			preset = 'enter',
+
+			['<C-j>'] = { 'select_next', 'fallback_to_mappings' },
+			['<C-k>'] = { 'select_prev', 'fallback_to_mappings' },
+			['<C-d>'] = { 'scroll_documentation_down', 'fallback' },
+			['<C-u>'] = { 'scroll_documentation_up', 'fallback' },
+		},
 
 		sources = {
 			default = { 'snippets', 'lsp', 'path', 'buffer' },
