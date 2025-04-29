@@ -1,8 +1,3 @@
----Is stay centered enabled
----@type boolean
-local is_enable = false
-
----
 ---@module 'lazy'
 ---@type LazySpec
 return {
@@ -14,19 +9,18 @@ return {
 
 	keys = {
 		{
-			'<leader>sc',
+			'<leader>usc',
 			function()
-				local title = 'Stay Centered'
+				local opts = { title = 'Stay Centered' }
+				local stay_centered = require('stay-centered')
 
-				if is_enable then
-					require('stay-centered').disable()
-					Snacks.notify.warn('Stay Centered disabled', { title = title })
+				stay_centered.toggle()
+
+				if stay_centered.cfg.enabled then
+					Snacks.notify.info('Stay Centered enabled', opts)
 				else
-					require('stay-centered').enable()
-					Snacks.notify.info('Stay Centered enabled', { title = title })
+					Snacks.notify.warn('Stay Centered disabled', opts)
 				end
-
-				is_enable = not is_enable
 			end,
 			desc = 'Toggle [S]tay [C]entered',
 		},
