@@ -22,11 +22,12 @@ return {
 		{ '<leader>n', function() Snacks.picker.notifications() end, desc = '[N]otification History' },
 
 		-- search
-		{ '<leader>sh', function() Snacks.picker.help() end, desc = 'Search [H]elp Pages' },
-		{ '<leader>ss', function() Snacks.picker() end, desc = '[S]earch [S]nacks pickers' },
 		{ '<leader>sH', function() Snacks.picker.highlights() end, desc = '[S]earch [H]ighlights' },
-		{ '<leader>sk', function() Snacks.picker.keymaps() end, desc = '[S]earch [K]eymaps' },
-		{ '<leader>si', function() Snacks.picker.icons() end, desc = '[S]earch [I]cons' },
+		{ '<leader>sc', function() Snacks.picker.commands() end,   desc = '[S]earch [C]ommands' },
+		{ '<leader>sh', function() Snacks.picker.help() end,       desc = '[S]earch [H]elp Pages' },
+		{ '<leader>si', function() Snacks.picker.icons() end,      desc = '[S]earch [I]cons' },
+		{ '<leader>sk', function() Snacks.picker.keymaps() end,    desc = '[S]earch [K]eymaps' },
+		{ '<leader>ss', function() Snacks.picker() end,            desc = '[S]earch [S]nacks pickers' },
 
 		-- grep
 		{ '<leader>sb', function() Snacks.picker.lines() end, desc = '[S]earch [B]uffer Lines' },
