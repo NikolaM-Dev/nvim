@@ -5,8 +5,6 @@ return {
 	desc = 'A neovim plugin to keep your cursor at the center of the screen',
 	enabled = true,
 
-	ft = { 'markdown', 'txt' },
-
 	keys = {
 		{
 			'<leader>usc',
