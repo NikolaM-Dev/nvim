@@ -3,7 +3,7 @@
     "prefix": ";",
     "body": ":= $0"
   },
-  "shorthand var": {
+  "chan": {
     "prefix": ",",
     "body": "<- $0"
   }
