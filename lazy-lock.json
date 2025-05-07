@@ -14,7 +14,7 @@
   "mini.icons": { "branch": "main", "commit": "397ed3807e96b59709ef3292f0a3e253d5c1dc0a" },
   "mini.pairs": { "branch": "main", "commit": "69864a2efb36c030877421634487fd90db1e4298" },
   "mini.trailspace": { "branch": "main", "commit": "39a0460c025a605519fdd6bea1ce870642429996" },
-  "neotest": { "branch": "master", "commit": "f0edc1dafdb04ae51a3863c1c5e4268d7462931b" },
+  "neotest": { "branch": "master", "commit": "2d9011396c43fa1d40221e6b6c3be5eb001427a9" },
   "neotest-golang": { "branch": "main", "commit": "5d1fdb068914ac23593495e71ecf9b1fad309b45" },
   "nvim-highlight-colors": { "branch": "main", "commit": "b42a5ccec7457b44e89f7ed3b3afb1b375bb2093" },
   "nvim-lspconfig": { "branch": "master", "commit": "4bc481b6f0c0cf3671fc894debd0e00347089a4e" },
