@@ -28,6 +28,7 @@ map('n', '<C-q>', function()
 	vim.cmd.quit()
 end, { desc = '[Q]uit' })
 map('i', '<C-q>', '<cmd>x<cr>', { desc = '[Q]uit' })
+map('n', '<leader><C-q>', ':qall<cr>', { desc = '[Q]uit All Buffers' })
 
 map('i', '!', '!<C-g>u', { desc = 'Add undo break after type !' })
 map('i', ',', ',<C-g>u', { desc = 'Add undo break after type ,' })
