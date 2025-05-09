@@ -38,6 +38,8 @@ local function get_bookmarks()
 			['annotations'] = 'https://github.com/LuaLS/lua-language-server/wiki/Annotations',
 		},
 
+		['good doctor'] = 'https://repelisplus.lat/ver/the-good-doctor-aag-kmar',
+
 		['carpal tunnel'] = 'https://youtu.be/sfVIl4uHrnQ',
 
 		['lute docs'] = 'https://luteorg.github.io/lute-manual',
