@@ -30,7 +30,7 @@ local function get_bookmarks()
 
 		motivation = {
 			['contentoso'] = 'https://www.youtube.com/watch?v=ja75uBnzHS0',
-			['good doctor'] = 'https://repelisplus.lat/ver/the-good-doctor-aag-kmar',
+			['gods'] = 'https://www.youtube.com/watch?v=C3GouGa0noM',
 			['mathhew'] = 'https://www.youtube.com/watch?v=QbL0X3B4mjg',
 		},
 
