@@ -47,6 +47,9 @@ return {
 
 		-- zoom
 		{ '<leader>Z', function() Snacks.zen.zoom() end, desc = 'Toggle [Z]oom' },
+
+		-- spelling
+		{ 'z=', function() Snacks.picker.spelling() end, desc = 'Spelling' },
 		-- stylua: ignore end
 	},
 
