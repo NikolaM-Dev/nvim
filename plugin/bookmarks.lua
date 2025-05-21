@@ -28,6 +28,12 @@ local function get_bookmarks()
 			['wuelner'] = 'https://github.com/wuelnerdotexe/nvim',
 		},
 
+		youtube = {
+			['history'] = 'https://www.youtube.com/feed/history',
+			['playlist'] = 'https://www.youtube.com/feed/playlist',
+			['wl'] = 'https://www.youtube.com/playlist?list=WL',
+		},
+
 		motivation = {
 			['contentoso'] = 'https://www.youtube.com/watch?v=ja75uBnzHS0',
 			['gods'] = 'https://www.youtube.com/watch?v=C3GouGa0noM',
@@ -86,7 +92,6 @@ local function get_bookmarks()
 		transcriptions = 'https://notegpt.io/youtube-transcript-generator',
 		twitch = 'https://www.twitch.tv',
 		twitter = 'https://twitter.com/home',
-		youtube = 'https://www.youtube.com',
 	}
 
 	vim.iter(grouped_bookmarks):each(function(label, bookmark)
