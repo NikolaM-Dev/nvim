@@ -1,0 +1,14 @@
+{
+  "checkbox": {
+    "prefix": "td",
+    "body": "- [ ] $0"
+  },
+  "list": {
+    "prefix": ",",
+    "body": "- $0"
+  },
+  "High Performance Person": {
+    "prefix": "hpp",
+    "body": "High Performance Person"
+  }
+}
