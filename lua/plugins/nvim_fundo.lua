@@ -2,7 +2,7 @@
 ---@type LazySpec
 return {
 	'kevinhwang91/nvim-fundo',
-	desc = ' Forever undo in Neovim ',
+	desc = 'Forever undo in Neovim',
 	enabled = true,
 
 	event = 'BufReadPost',
