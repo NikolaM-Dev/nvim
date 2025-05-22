@@ -6,7 +6,6 @@ return {
 	docs = 'https://cmp.saghen.dev',
 	enabled = true,
 
-	version = '1.*',
 	build = 'cargo build --release',
 
 	---@module 'blink.cmp'
