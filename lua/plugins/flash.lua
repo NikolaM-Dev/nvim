@@ -10,4 +10,9 @@ return {
 	---@module 'flash'
 	---@type Flash.Config
 	opts = {},
+
+	keys = {
+		-- stylua: ignore start
+		{ 's',  function() require('flash').jump() end, desc = 'Flash', mode = { 'n', 'x', 'o' } },
+	},
 }
