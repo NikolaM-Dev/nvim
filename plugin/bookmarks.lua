@@ -36,7 +36,7 @@ local function get_bookmarks()
 
 		motivation = {
 			['contentoso'] = 'https://www.youtube.com/watch?v=ja75uBnzHS0',
-			['discipline'] = 'https://www.youtube.com/@DailyDisciplineraw',
+			['discipline'] = 'https://www.youtube.com/@DailyDisciplineraw/videos',
 			['gods'] = 'https://www.youtube.com/watch?v=C3GouGa0noM',
 			['mathhew'] = 'https://www.youtube.com/watch?v=QbL0X3B4mjg',
 		},
