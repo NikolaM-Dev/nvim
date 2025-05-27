@@ -21,6 +21,7 @@ return {
 
 		file = {
 			['.node-version'] = { glyph = '', hl = 'MiniIconsGreen' },
+			['.npmrc'] = { glyph = '󰝆', hl = 'MiniIconsRed' },
 			['.obsidian.vimrc'] = { glyph = '', hl = 'MiniIconsGreen' },
 			['.prettierignore'] = { glyph = '', hl = 'MiniIconsPurple' },
 			['.prettierrc'] = { glyph = '', hl = 'MiniIconsBlue' },
