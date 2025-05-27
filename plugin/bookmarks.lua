@@ -30,7 +30,7 @@ local function get_bookmarks()
 
 		youtube = {
 			['history'] = 'https://www.youtube.com/feed/history',
-			['playlist'] = 'https://www.youtube.com/feed/playlist',
+			['playlists'] = 'https://www.youtube.com/feed/playlists',
 			['wl'] = 'https://www.youtube.com/playlist?list=WL',
 		},
 
