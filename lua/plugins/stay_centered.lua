@@ -7,7 +7,7 @@ return {
 
 	keys = {
 		{
-			'<leader>usc',
+			'<leader>sc',
 			function()
 				local opts = { title = 'Stay Centered' }
 				local stay_centered = require('stay-centered')
