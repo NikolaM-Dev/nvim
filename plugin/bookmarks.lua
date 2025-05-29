@@ -45,6 +45,10 @@ local function get_bookmarks()
 			['annotations'] = 'https://github.com/LuaLS/lua-language-server/wiki/Annotations',
 		},
 
+		['zen browser'] = {
+			['releases'] = 'https://github.com/zen-browser/desktop/releases',
+		},
+
 		['good doctor'] = 'https://repelisplus.lat/ver/the-good-doctor-aag-kmar',
 
 		['carpal tunnel'] = 'https://youtu.be/sfVIl4uHrnQ',
