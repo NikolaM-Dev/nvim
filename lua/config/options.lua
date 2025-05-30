@@ -1,4 +1,4 @@
-vim.opt.listchars:append({
+vim.opt.listchars = {
 	-- eol = '¬',
 	extends = '»',
 	lead = ' ',
@@ -7,16 +7,16 @@ vim.opt.listchars:append({
 	space = ' ',
 	tab = '  ', -- │
 	trail = '·',
-})
+}
 
-vim.opt.fillchars:append({
+vim.opt.fillchars = {
 	diff = '░', -- ╱
 	eob = ' ',
 	fold = ' ',
 	foldclose = ' ', -- '',
 	foldopen = '󰇘',
 	foldsep = ' ',
-})
+}
 
 vim.o.autoread = true -- Automatically read the file when changed outside of neovim
 vim.o.backup = false -- Create backup files
