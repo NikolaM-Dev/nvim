@@ -34,6 +34,7 @@ vim.o.smartcase = true -- difference between lower and upper case letters
 vim.o.smartindent = true -- Do smart autoindenting when starting a new line.
 vim.o.splitbelow = true -- Split window below
 vim.o.splitright = true -- Split window right
+vim.o.swapfile = false -- Creates a swapfile
 vim.o.termguicolors = true -- True color support
 vim.o.undodir = os.getenv('XDG_DATA_HOME') .. '/nvim/undodir' -- Undodir path
 vim.o.undofile = true -- Automatically saves undo history to an undo file when writing a buffer to a file, and restores undo history from the same file on buffer read.
