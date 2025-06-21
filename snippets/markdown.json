@@ -10,5 +10,17 @@
   "High Performance Person": {
     "prefix": "hpp",
     "body": "High Performance Person"
+  },
+  "bold": {
+    "prefix": "b",
+    "body": "**$1** $0"
+  },
+  "italic": {
+    "prefix": "i",
+    "body": "_$1_$ 0"
+  },
+  "inline-code": {
+    "prefix": "ic",
+    "body": "`$1_` $0"
   }
 }
