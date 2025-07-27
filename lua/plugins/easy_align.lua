@@ -5,5 +5,8 @@ return {
 	desc = 'A Vim alignment plugin',
 	enabled = true,
 
-	cmd = 'EasyAlign',
+	cmd = {
+		'EasyAlign',
+		'LiveEasyAlign',
+	},
 }
