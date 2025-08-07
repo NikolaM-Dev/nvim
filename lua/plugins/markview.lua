@@ -3,7 +3,7 @@
 return {
 	'OXY2DEV/markview.nvim',
 	desc = 'A hackable markdown, Typst, latex, html(inline) & YAML previewer for Neovim',
-	enabled = true,
+	enabled = false,
 
 	lazy = false, -- Don't lazy load this plugin as it is already lazy-loaded
 
