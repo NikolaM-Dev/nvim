@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'rose-pine/neovim',
 	desc = 'Soho vibes for Neovim',
@@ -11,6 +11,11 @@ return {
 
 	---@type table
 	opts = {
+		highlight_groups = {
+			['@markup.italic'] = { fg = 'subtle' },
+			['@markup.strong'] = { fg = 'iris' },
+		},
+
 		styles = {
 			transparency = true,
 		},
