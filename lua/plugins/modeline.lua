@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'NikolaM-Dev/modeline.nvim',
 	desc = 'Neovim statusline plugin blazing fast than any statusline plugin',

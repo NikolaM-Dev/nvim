@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'neovim/nvim-lspconfig',
 	desc = 'Quickstart configs for Nvim LSP',

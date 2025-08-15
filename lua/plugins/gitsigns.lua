@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'lewis6991/gitsigns.nvim',
 	desc = 'Git integration for buffers',

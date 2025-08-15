@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'folke/flash.nvim',
 	desc = 'Navigate your code with search labels, enhanced character motions and Treesitter integration',

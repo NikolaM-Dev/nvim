@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'saghen/blink.cmp',
 	desc = 'Performant, batteries-included completion plugin for Neovim',

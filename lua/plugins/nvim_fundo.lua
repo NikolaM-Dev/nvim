@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'kevinhwang91/nvim-fundo',
 	desc = 'Forever undo in Neovim',

@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'nvim-treesitter/nvim-treesitter',
 	desc = 'Nvim Treesitter configurations and abstraction layer',

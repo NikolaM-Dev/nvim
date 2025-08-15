@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'nvim-neotest/neotest',
 	desc = 'An extensible framework for interacting with tests within NeoVim',

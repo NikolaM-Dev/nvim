@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'folke/snacks.nvim',
 	desc = 'A collection of QoL plugins for Neovim',

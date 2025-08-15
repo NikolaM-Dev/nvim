@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'folke/ts-comments.nvim',
 	desc = 'Tiny plugin to enhance Neovim\'s native comments',

@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'tpope/vim-fugitive',
 	desc = 'Git wrapper by tpope',

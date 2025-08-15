@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'OXY2DEV/markview.nvim',
 	desc = 'A hackable markdown, Typst, latex, html(inline) & YAML previewer for Neovim',

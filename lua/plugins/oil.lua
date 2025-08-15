@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'stevearc/oil.nvim',
 	desc = 'Neovim file explorer: edit your filesystem like a buffer',

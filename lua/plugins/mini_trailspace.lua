@@ -1,5 +1,5 @@
----@module 'lazy'
----@type LazySpec
+---@module 'lazy.types'
+---@type LazyPluginSpec
 return {
 	'echasnovski/mini.trailspace',
 	desc = 'Plugin to manage trailspace (highlight and remove)',
