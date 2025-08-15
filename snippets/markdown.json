@@ -17,11 +17,12 @@
   },
   "italic": {
     "prefix": "i",
-    "body": "_$1_$ 0"
+    "body": "_$1_ $0"
   },
   "inline-code": {
     "prefix": "ic",
-    "body": "`$1_` $0"
+    "body": "`$1` $0"
+  },
   "hr": {
     "prefix": "hr",
     "body": "---"
