@@ -46,11 +46,6 @@ vim.schedule(function()
 	vim.o.clipboard = 'unnamedplus' -- use system clipboard
 end)
 
--- TODO: Arrange the following code
-vim.o.foldlevel = 99 -- do not auto-fold
-vim.o.foldlevelstart = 99
-vim.o.foldtext = '' -- empty string keeps text (overwritten by nvim-origami)
-
 do
 	vim.o.foldmethod = 'expr'
 	vim.o.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
