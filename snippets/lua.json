@@ -6,8 +6,8 @@
   "plugin": {
     "prefix": "plugin",
     "body": [
-      "---@module 'lazy'",
-      "---@type LazySpec",
+      "---@module 'lazy.types'",
+      "---@type LazyPluginSpec",
       "return {",
       "\t'$0',",
       "\tdesc = '',",
