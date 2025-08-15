@@ -22,6 +22,10 @@
   "inline-code": {
     "prefix": "ic",
     "body": "`$1_` $0"
+  "hr": {
+    "prefix": "hr",
+    "body": "---"
+  },
   "h1": {
     "prefix": "h1",
     "body": "# $0"
