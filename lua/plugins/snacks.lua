@@ -44,6 +44,9 @@ return {
 		{ '<leader>gs', function() Snacks.picker.git_status() end, desc = '[G]it [S]tatus' },
 		{ '<leader>lg', function() Snacks.lazygit() end,           desc = '[L]azy [G]it' },
 
+		-- lsp
+		{ 'gd', function() Snacks.picker.lsp_definitions() end, desc = '[G]oto [D]efinition' },
+
 		-- zen
 		{ '<leader>z', function() Snacks.zen() end, desc = 'Toggle [Z]en Mode' },
 
