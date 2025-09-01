@@ -20,6 +20,10 @@ end, { desc = '[L]azy [D]ocker using Tmux' })
 
 map('v', '<', '<gv', { desc = 'Continuos Indent Left' })
 map('v', '>', '>gv', { desc = 'Continuos Indent Right' })
+
+map('n', '<C-n>', '<cmd>cnext<cr>', { desc = '[N]ext QFList' })
+map('n', '<C-p>', '<cmd>cprevious<cr>', { desc = '[P]revious QFList' })
+
 map('n', '<C-q>', function()
 	-- Close gitsigns diffthis buffer
 	if is_in_gitsigns_diffthis then
