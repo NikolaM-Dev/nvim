@@ -42,6 +42,7 @@ return {
 		-- git
 		{ '<leader>gS', function() Snacks.picker.git_stash() end, desc = '[G]it [S]tash' },
 		{ '<leader>gs', function() Snacks.picker.git_status() end, desc = '[G]it [S]tatus' },
+		{ '<leader>lg', function() Snacks.lazygit() end,           desc = '[L]azy [G]it' },
 
 		-- zen
 		{ '<leader>z', function() Snacks.zen() end, desc = 'Toggle [Z]en Mode' },
