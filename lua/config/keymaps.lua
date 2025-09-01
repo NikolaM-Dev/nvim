@@ -10,7 +10,7 @@ map('n', '<C-s>', '<cmd>write<cr>', { desc = 'Write buffer' })
 map('n', '<leader><C-s>', '<cmd>wall<cr>', { desc = 'Write All changed buffers' })
 map({ 'i', 'x' }, '<C-s>', '<esc><cmd>write<cr>', { desc = 'Write buffer' })
 
-map('n', '<leader>lg', function()
+map('n', '<leader>lG', function()
 	vim.fn.system('tmux new-window -c "#{pane_current_path}" -n "   " lazygit')
 end, { desc = '[L]azy [G]it using Tmux' })
 
