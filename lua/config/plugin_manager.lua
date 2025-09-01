@@ -36,6 +36,9 @@ require('lazy').setup({
 	install = {
 		colorscheme = { 'rose-pine', 'tokyonight', 'habamax' },
 	},
+	rocks = {
+		hererocks = false,
+	},
 })
 
 map('n', '<leader>lz', '<cmd>Lazy<cr>', { desc = 'Open [L]a[Z]y' })
