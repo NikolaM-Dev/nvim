@@ -18,6 +18,8 @@ map('n', '<leader>ld', function()
 	vim.fn.system('tmux new-window -c "#{pane_current_path}" -n "   " lazydocker')
 end, { desc = '[L]azy [D]ocker using Tmux' })
 
+map('v', '<', '<gv', { desc = 'Continuos Indent Left' })
+map('v', '>', '>gv', { desc = 'Continuos Indent Right' })
 map('n', '<C-q>', function()
 	-- Close gitsigns diffthis buffer
 	if is_in_gitsigns_diffthis then
