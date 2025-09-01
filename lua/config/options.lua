@@ -46,6 +46,19 @@ vim.schedule(function()
 	vim.o.clipboard = 'unnamedplus' -- use system clipboard
 end)
 
+vim.g.clipboard = {
+	name = 'xsel',
+	copy = {
+		['+'] = 'xsel --nodetach -i -b',
+		['*'] = 'xsel --nodetach -i -p',
+	},
+	paste = {
+		['+'] = 'xsel -o -b',
+		['*'] = 'xsel -o -b',
+	},
+	cache_enabled = 1,
+}
+
 do
 	vim.o.foldmethod = 'expr'
 	vim.o.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
