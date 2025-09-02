@@ -5,8 +5,8 @@ return {
 	desc = 'A collection of QoL plugins for Neovim',
 	enabled = true,
 
-	priority = 1000,
 	lazy = false,
+	priority = 1000,
 
 	keys = {
 		-- find
@@ -31,10 +31,10 @@ return {
 		{ '<leader>su', function() Snacks.picker.undo() end,       desc = '[S]earch [U]ndo' },
 
 		-- grep
-		{ '<leader>sb', function() Snacks.picker.lines() end, desc = '[S]earch [B]uffer Lines' },
-		{ '<leader>sB', function() Snacks.picker.grep_buffers() end, desc = 'Grep Open Buffers' },
-		{ '<leader>sg', function() Snacks.picker.grep() end, desc = '[S]each [G]rep' },
-		{ '<leader>sw', function() Snacks.picker.grep_word() end, desc = 'Visual selection or word', mode = { 'n', 'x' } },
+		{ '<leader>sb', function() Snacks.picker.lines() end,        desc = '[S]earch [B]uffer Lines' },
+		{ '<leader>sB', function() Snacks.picker.grep_buffers() end, desc = 'Grep Open [B]uffers' },
+		{ '<leader>sg', function() Snacks.picker.grep() end,         desc = '[S]each [G]rep' },
+		{ '<leader>sw', function() Snacks.picker.grep_word() end,    desc = 'Visual selection or word',  mode = { 'n', 'x' } },
 
 		-- buffers
 		{ '<leader>bd', function() Snacks.bufdelete() end, desc = '[D]elete [B]uffer', },
