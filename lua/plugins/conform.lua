@@ -10,16 +10,17 @@ return {
 
 	---@type conform.setupOpts
 	opts = {
+		default_format_opts = { lsp_format = 'fallback' },
+		format_after_save = function(bufnr)
+			if vim.b[bufnr].disable_autoformat then
+				return
+			end
+
+			return { timeout_ms = 5000 }
+		end,
+		formatters_by_ft = {},
 		log_level = vim.log.levels.TRACE,
 		notify_on_error = true,
-		formatters_by_ft = {},
-
-		format_on_save = function()
-			return {
-				timeout_ms = 1500,
-				lsp_format = 'never',
-			}
-		end,
 	},
 
 	---@param opts conform.setupOpts
