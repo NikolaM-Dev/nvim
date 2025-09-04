@@ -61,6 +61,7 @@ return {
 						thirty_three = { highlight = 'RenderMarkdownTodo', raw = '[3]', rendered = '󰪠 ' },
 						sixty_six = { highlight = 'RenderMarkdownTodo', raw = '[6]', rendered = '󰪢 ' },
 						ninety_nine = { highlight = 'RenderMarkdownTodo', raw = '[9]', rendered = '󰪤 ' },
+						cancelled = { highlight = 'RenderMarkdownTodo', raw = '[-]', rendered = ' ' },
 					},
 				},
 				completions = { blink = { enabled = true } },
