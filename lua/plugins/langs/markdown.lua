@@ -58,9 +58,9 @@ return {
 						icon = ' ',
 					},
 					custom = {
-						thirty_three = { raw = '[3]', rendered = '󰪠 ', highlight = 'RenderMarkdownTodo' },
-						sixty_six = { raw = '[6]', rendered = '󰪢 ', highlight = 'RenderMarkdownTodo' },
-						ninety_nine = { raw = '[9]', rendered = '󰪤 ', highlight = 'RenderMarkdownTodo' },
+						thirty_three = { highlight = 'RenderMarkdownTodo', raw = '[3]', rendered = '󰪠 ' },
+						sixty_six = { highlight = 'RenderMarkdownTodo', raw = '[6]', rendered = '󰪢 ' },
+						ninety_nine = { highlight = 'RenderMarkdownTodo', raw = '[9]', rendered = '󰪤 ' },
 					},
 				},
 				completions = { blink = { enabled = true } },
