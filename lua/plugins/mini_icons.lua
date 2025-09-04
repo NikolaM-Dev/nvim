@@ -1,7 +1,7 @@
 ---@module 'lazy.types'
 ---@type LazyPluginSpec
 return {
-	'echasnovski/mini.icons',
+	'nvim-mini/mini.icons',
 	desc = 'Icon provider',
 	enabled = true,
 

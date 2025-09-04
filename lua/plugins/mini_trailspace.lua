@@ -1,7 +1,7 @@
 ---@module 'lazy.types'
 ---@type LazyPluginSpec
 return {
-	'echasnovski/mini.trailspace',
+	'nvim-mini/mini.trailspace',
 	desc = 'Plugin to manage trailspace (highlight and remove)',
 	enabled = true,
 
