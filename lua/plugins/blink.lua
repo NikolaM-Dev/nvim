@@ -40,6 +40,7 @@ return {
 		keymap = {
 			preset = 'enter',
 
+			['<S-CR>'] = { 'select_and_accept' },
 			['<C-j>'] = { 'select_next', 'fallback_to_mappings' },
 			['<C-k>'] = { 'select_prev', 'fallback_to_mappings' },
 			['<C-d>'] = { 'scroll_documentation_down', 'fallback' },
