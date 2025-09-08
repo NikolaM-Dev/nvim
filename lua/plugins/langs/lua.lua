@@ -41,4 +41,17 @@ return {
 			},
 		},
 	},
+	-- TODO: Review this
+	-- {
+	-- 	'saghen/blink.cmp',
+	-- 	opts = {
+	-- 		providers = {
+	-- 			lazydev = {
+	-- 				name = 'LazyDev',
+	-- 				module = 'lazydev.integrations.blink',
+	-- 				fallbacks = { 'lsp' },
+	-- 			},
+	-- 		},
+	-- 	},
+	-- },
 }
