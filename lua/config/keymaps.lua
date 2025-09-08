@@ -59,7 +59,8 @@ map({ 'i', 'n' }, '<esc>', '<cmd>noh<cr><esc>', { desc = 'Escape and clear hlsea
 
 map('x', '<leader>sl', ':sort<cr>', { desc = '[S]ort [L]ines' })
 
-map({ 'n', 'v', 'o' }, '<C-z>', '<Nop>', { desc = 'Disable <C-z> suspend' })
+-- NOTE: Somethings is helpful
+-- map({ 'n', 'v', 'o' }, '<C-z>', '<Nop>', { desc = 'Disable <C-z> suspend' })
 
 map('n', 'j', function()
 	return vim.v.count > 1 and 'j' or 'gj'
