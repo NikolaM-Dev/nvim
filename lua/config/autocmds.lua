@@ -69,8 +69,47 @@ autocmd({ 'FocusGained' }, {
 	group = augroup('close_all_non-existing_buffers_on_focus_gained'),
 	callback = close_buffers,
 })
+
+-- TODO: Denote nvim try
+autocmd({ 'BufWritePost' }, {
 	callback = function()
-		close_buffers()
+		if true then
+			return
+		end
+
+		local second_brain_path = os.getenv('SECOND_BRAIN_PATH')
+		local cwd = vim.fn.getcwd()
+		local filetype = vim.bo.filetype
+
+		if filetype ~= 'markdown' then
+			return
+		end
+
+		if cwd ~= second_brain_path then
+			return
+		end
+
+		vim.system(
+			{ '/home/nikola/w/1-projects/sb-renamer.py/second-brain-rename', vim.api.nvim_buf_get_name(0) },
+			{},
+			vim.schedule_wrap(
+				---@param out vim.SystemCompleted
+				function(out)
+					local stdout = vim.fn.split(out.stdout, '\n')
+
+					if stdout[1] == 'No updates required' then
+						return
+					end
+
+					local new_filename = stdout[#stdout]
+					vim.cmd('e ' .. vim.fn.expand('%:p:h') .. '/' .. new_filename)
+					vim.cmd('ZkIndex')
+					vim.cmd('LspRestart')
+					-- Snacks.bufdelete.other()
+					close_buffers()
+				end
+			)
+		)
 	end,
 })
 
