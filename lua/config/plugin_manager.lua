@@ -39,6 +39,35 @@ require('lazy').setup({
 	rocks = {
 		hererocks = false,
 	},
+	ui = {
+		backdrop = 0,
+		border = vim.o.winborder,
+		pills = true, ---@type boolean Show pills on top of the Lazy window
+		size = { width = 0.9, height = 0.9 },
+		title = ' 💤  Lazy Plugin Manager ', ---@type string only works when border is not "none"
+		title_pos = 'center', ---@type "center" | "left" | "right"
+		wrap = true, -- wrap the lines in the UI
+
+		icons = {
+			cmd = '󰆍',
+			config = '',
+			debug = '  ',
+			event = '',
+			ft = '󰈙',
+			import = '󰈠',
+			init = '',
+			keys = '󰌌',
+			lazy = '󰋣 ',
+			list = { '', '', '', '' },
+			loaded = '󰄳',
+			not_loaded = '󰚌',
+			plugin = '󰏖',
+			runtime = '',
+			source = '',
+			start = '',
+			task = '󰘽 ',
+		},
+	},
 })
 
 map('n', '<leader>lz', '<cmd>Lazy<cr>', { desc = 'Open [L]a[Z]y' })
