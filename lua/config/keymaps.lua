@@ -62,10 +62,30 @@ map('x', '<leader>sl', ':sort<cr>', { desc = '[S]ort [L]ines' })
 -- NOTE: Somethings is helpful
 -- map({ 'n', 'v', 'o' }, '<C-z>', '<Nop>', { desc = 'Disable <C-z> suspend' })
 
+local use_virtual_lines = true
+vim.api.nvim_create_user_command('ToggleUseVirtualLines', function()
+	use_virtual_lines = not use_virtual_lines
+	local title = 'Options'
+
+	if use_virtual_lines then
+		Snacks.notify.info('Virtual Lines Enable', { title = title })
+	else
+		Snacks.notify.warn('Virtual Lines Disabled', { title = title })
+	end
+end, {})
+
 map('n', 'j', function()
+	if not use_virtual_lines then
+		return 'j'
+	end
+
 	return vim.v.count > 1 and 'j' or 'gj'
 end, { expr = true, desc = 'Go down dwim' })
 
 map('n', 'k', function()
+	if not use_virtual_lines then
+		return 'k'
+	end
+
 	return vim.v.count > 0 and 'k' or 'gk'
 end, { expr = true, desc = 'Go up dwim' })
