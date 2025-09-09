@@ -1,5 +1,6 @@
 local map = require('lib').map
 local dmap = require('lib').dmap
+local map = require('lib').map
 
 -- TODO: :silent mkspell! %, to generate spell files
 
@@ -89,6 +90,7 @@ map('n', 'k', function()
 
 	return vim.v.count > 0 and 'k' or 'gk'
 end, { expr = true, desc = 'Go up dwim' })
+
 map('n', '<leader>cmx', function()
 	local current_filename = vim.fn.expand('%')
 	local escaped_filename = vim.fn.shellescape(current_filename)
@@ -145,3 +147,35 @@ map('n', '<leader>fd', function()
 		end
 	end)
 end, { desc = '[D]elete [File]' })
+
+-- NOTE: To restart plugins
+-- map('n', '<leader>rr', function()
+-- 	require('lazy.core.loader').reload('modeline.nvim')
+-- end, { desc = 'reload' })
+
+-- NOTE: To restart plugins
+-- map('n', '<leader>grn', function()
+-- 	vim.system(
+-- 		{
+-- 			'/home/nikola/w/1-projects/sb-renamer.py/second-brain-rename',
+-- 			vim.api.nvim_buf_get_name(0),
+-- 		},
+-- 		{},
+-- 		vim.schedule_wrap(
+-- 			---@param out vim.SystemCompleted
+-- 			function(out)
+-- 				local stdout = vim.fn.split(out.stdout, '\n')
+--
+-- 				if stdout[1] == 'No updates required' then
+-- 					return
+-- 				end
+--
+-- 				local new_filename = stdout[#stdout]
+-- 				vim.cmd('e ' .. vim.fn.expand('%:p:h') .. '/' .. new_filename)
+-- 				vim.cmd('ZkIndex')
+-- 				vim.cmd('LspRestart')
+-- 				Snacks.bufdelete.other()
+-- 			end
+-- 		)
+-- 	)
+-- end, { desc = '[R]ename note' })
