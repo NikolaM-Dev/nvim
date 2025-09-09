@@ -29,6 +29,12 @@ local function get_bookmarks()
 			['wuelner'] = 'https://github.com/wuelnerdotexe/nvim',
 		},
 
+		docs = {
+			['bash'] = 'https://devhints.io/bash',
+			['maple'] = 'https://github.com/subframe7536/maple-font/blob/variable/source/features/README.md',
+			['snacks'] = 'https://github.com/folke/snacks.nvim/blob/main/README.md',
+		},
+
 		youtube = {
 			['history'] = 'https://www.youtube.com/feed/history',
 			['playlists'] = 'https://www.youtube.com/feed/playlists',
