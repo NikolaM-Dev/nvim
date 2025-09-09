@@ -9,8 +9,9 @@ local function get_bookmarks()
 	---@type table<string, string>|table<string, table<string, string>>
 	local grouped_bookmarks = {
 		nvim = {
-			['adalessa'] = 'https://gitea.ad-impeldown.synology.me/alpha/nixvim/src/branch/main',
 			['adibhanna'] = 'https://github.com/adibhanna/nvim',
+			['alpha new'] = 'https://github.com/adalessa/alpha-nvim/tree/main',
+			['alpha old'] = 'https://gitea.ad-impeldown.synology.me/alpha/nixvim/src/branch/main',
 			['b0o'] = 'https://github.com/b0o/nvim-conf',
 			['backup'] = 'https://github.com/NikolaM-Dev/nvim/tree/backup',
 			['chris at machine'] = 'https://github.com/ChristianChiarulli/nvim',
