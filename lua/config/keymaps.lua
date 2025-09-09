@@ -95,3 +95,53 @@ map('n', '<leader>cmx', function()
 
 	vim.cmd('!chmod u+x ' .. escaped_filename)
 end, { desc = '[C]h[M]od +[X]' })
+
+map('n', '<leader>fd', function()
+	local current_filename = vim.fn.expand('%:p') -- Get full path
+	local escaped_filename = vim.fn.shellescape(current_filename)
+
+	if current_filename == '' then
+		Snacks.notify.warn('No file in current buffer to delete.')
+		return
+	end
+
+	Snacks.input({
+		prompt = ('Are you sure you want to delete "%s"? [y/N]'):format(vim.fn.fnamemodify(current_filename, ':t')),
+	}, function(answer)
+		local confirmed_answer = answer:lower()
+		if confirmed_answer == 'y' then
+			-- Execute gio trash silently and get its exit status
+			local command_output = vim.fn.system('gio trash ' .. escaped_filename)
+			local exit_code = vim.v.shell_error -- Check the exit code of the last system command
+
+			if exit_code == 0 then
+				-- File moved to trash successfully
+				Snacks.notify.info('File deleted successfully: ' .. vim.fn.fnamemodify(current_filename, ':t'))
+
+				-- Check if the deleted file's buffer is the current one
+				local current_buffer_name = vim.fn.bufname('%')
+				if current_filename == current_buffer_name then
+					-- If it is, close the buffer
+					-- Use 'bd!' to delete the buffer without saving, even if it's the last window.
+					-- You might want to adjust this behavior (e.g., :close if you want to keep window)
+					vim.cmd('bd!')
+					-- If after bd! there are no buffers, open a new empty one
+					if vim.fn.bufnr('$') == 0 then
+						vim.cmd('enew')
+					end
+				else
+					-- If the deleted file wasn't the current buffer, just reload the buffer list
+					-- (This is more for scenarios where you might have multiple open,
+					-- and one in the background was deleted by other means).
+					-- For a direct deletion of the current file, 'bd!' is usually sufficient.
+				end
+			else
+				-- gio trash failed
+				Snacks.notify.error('Failed to delete file: ' .. vim.fn.fnamemodify(current_filename, ':t'))
+				Snacks.notify.error('Error details: ' .. command_output) -- Show actual error
+			end
+		else
+			Snacks.notify.notify('File deletion skipped.')
+		end
+	end)
+end, { desc = '[D]elete [File]' })
