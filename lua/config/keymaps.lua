@@ -179,3 +179,9 @@ end, { desc = '[D]elete [File]' })
 -- 		)
 -- 	)
 -- end, { desc = '[R]ename note' })
+
+-- Improve windows movement
+map('t', '<C-h>', '<cmd>wincmd h<CR>', { desc = 'Change Focus to Left Window' })
+map('t', '<C-j>', '<cmd>wincmd j<CR>', { desc = 'Change Focus to Down Window' })
+map('t', '<C-k>', '<cmd>wincmd k<CR>', { desc = 'Change Focus to Top Window' })
+map('t', '<C-l>', '<cmd>wincmd l<CR>', { desc = 'Change Focus to Right Window' })
