@@ -89,3 +89,9 @@ map('n', 'k', function()
 
 	return vim.v.count > 0 and 'k' or 'gk'
 end, { expr = true, desc = 'Go up dwim' })
+map('n', '<leader>cmx', function()
+	local current_filename = vim.fn.expand('%')
+	local escaped_filename = vim.fn.shellescape(current_filename)
+
+	vim.cmd('!chmod u+x ' .. escaped_filename)
+end, { desc = '[C]h[M]od +[X]' })
