@@ -11,6 +11,6 @@ return {
 
 	---@type table
 	opts = {
-		width = 90,
+		width = 100,
 	},
 }
