@@ -1,4 +1,3 @@
-local map = require('lib').map
 local dmap = require('lib').dmap
 local map = require('lib').map
 
@@ -180,8 +179,10 @@ end, { desc = '[D]elete [File]' })
 -- 	)
 -- end, { desc = '[R]ename note' })
 
--- Improve windows movement
 map('t', '<C-h>', '<cmd>wincmd h<CR>', { desc = 'Change Focus to Left Window' })
 map('t', '<C-j>', '<cmd>wincmd j<CR>', { desc = 'Change Focus to Down Window' })
 map('t', '<C-k>', '<cmd>wincmd k<CR>', { desc = 'Change Focus to Top Window' })
 map('t', '<C-l>', '<cmd>wincmd l<CR>', { desc = 'Change Focus to Right Window' })
+
+map('v', 'J', ':m \'>+1<CR>gv=gv', { desc = 'Move Line/s Down' })
+map('v', 'K', ':m \'<-2<CR>gv=gv', { desc = 'Move Line/s Up' })
