@@ -24,21 +24,26 @@ return {
 					vim.keymap.set(mode or 'n', lhs, rhs, { buffer = args.buf, desc = desc })
 				end
 
-				map('gd', function()
-					Snacks.picker.lsp_definitions()
-				end, '[G]oto [D]efinition')
-				map('K', vim.lsp.buf.hover, 'Hover Documentation')
-				map('gr', vim.lsp.buf.references, 'References')
-				map('<leader>ca', vim.lsp.buf.code_action, 'Code Action', { 'n', 'v' })
-				map('gr', vim.lsp.buf.references, 'References')
-				map('gI', vim.lsp.buf.implementation, 'Goto Implementation')
-				map('gy', vim.lsp.buf.type_definition, 'Goto T[y]pe Definition')
-				map('gD', vim.lsp.buf.declaration, 'Goto Declaration')
-				map('<leader>cR', function()
-					Snacks.rename.rename_file()
-				end, 'Rename File')
+				---@param next? boolean
+				---@param severity? string|integer
+				local function go_to_diagnostic(next, severity)
+					severity = severity and vim.diagnostic.severity[severity] or nil
 
-				map('<leader>cr', vim.lsp.buf.rename, 'Rename')
+					return function()
+						if next then
+							vim.diagnostic.jump({ count = 1, float = true, severity })
+						else
+							vim.diagnostic.jump({ count = -1, float = true, severity })
+						end
+
+						vim.cmd('normal! zz')
+					end
+				end
+
+				-- stylua: ignore start
+				map('[d', go_to_diagnostic(false), 'Prev [D]iagnostic')
+				map(']d', go_to_diagnostic(true),  'Next [D]iagnostic')
+				-- stylua: ignore end
 			end,
 		})
 
