@@ -46,6 +46,15 @@ return {
 				end
 
 				-- stylua: ignore start
+				map('K',    vim.lsp.buf.hover,                  'Hover Documentation')
+				map('<cr>', Snacks.picker.lsp_definitions,      'Goto Definition')
+				map('gd',   Snacks.picker.lsp_definitions,      '[G]oto [D]efinition')
+				map('grN',  Snacks.rename.rename_file,          '[R]e[N]ame File')
+				map('grd',  Snacks.picker.lsp_declarations,     'Review [D]eclarations')
+				map('gri',  Snacks.picker.lsp_implementations,  'Review [I]mplementations')
+				map('grr',  Snacks.picker.lsp_references,       'Review [R]eferences')
+				map('grt',  Snacks.picker.lsp_type_definitions, 'Goto T[y]pe Definition')
+
 				map('[d', go_to_diagnostic(false), 'Prev [D]iagnostic')
 				map(']d', go_to_diagnostic(true),  'Next [D]iagnostic')
 				-- stylua: ignore end
