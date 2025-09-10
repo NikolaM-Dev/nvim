@@ -9,4 +9,8 @@ return {
 		'EasyAlign',
 		'LiveEasyAlign',
 	},
+
+	keys = {
+		{ 'ga', '<Plug>(LiveEasyAlign)', desc = 'Live Easy [A]lign', mode = { 'n', 'v', 'x' } },
+	},
 }
