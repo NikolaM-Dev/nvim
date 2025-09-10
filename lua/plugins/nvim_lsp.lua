@@ -3,6 +3,7 @@
 return {
 	'neovim/nvim-lspconfig',
 	desc = 'Quickstart configs for Nvim LSP',
+	docs = 'https://github.com/neovim/nvim-lspconfig/blob/master/doc',
 	enabled = true,
 
 	event = { 'BufReadPost', 'BufNewFile', 'BufWritePre' },
@@ -16,6 +17,10 @@ return {
 			group = vim.api.nvim_create_augroup('UserLspConfig', { clear = true }),
 			desc = 'LSP actions',
 			callback = function(args)
+				if #args then
+					return
+				end
+
 				---@param lhs string
 				---@param rhs function
 				---@param desc string
