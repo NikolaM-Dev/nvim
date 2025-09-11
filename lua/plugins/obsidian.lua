@@ -18,9 +18,28 @@ return {
 	opts = {
 		legacy_commands = false,
 
+		checkbox = {
+			order = {
+				' ', -- In progress
+				'x', -- Done
+				'-', -- Canceled
+			},
+		},
+
+		completion = {
+			blink = false,
+			min_chars = 0,
+			nvim_cmp = false,
+		},
+
 		daily_notes = {
 			folder = 'Journal/daily',
 		},
+
+		note_id_func = function()
+			-- [Denote - The file-naming scheme](https://protesilaos.com/emacs/denote#h:4e9c7512-84dc-4dfb-9fa9-e15d51178e5d)
+			return tostring(os.date('%Y%m%dT%H%M%S'))
+		end,
 
 		picker = {
 			name = 'snacks.pick',
