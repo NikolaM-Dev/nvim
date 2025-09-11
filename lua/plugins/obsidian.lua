@@ -77,8 +77,10 @@ return {
 			enable = false,
 		},
 
-		ui = {
-			enable = false, -- Becase the manteiner are going to deprecate this module
+		wiki_link_func = function()
+			return 'use_alias_only'
+		end,
+
 		workspaces = {
 			{
 				name = 'second-brain.md',
