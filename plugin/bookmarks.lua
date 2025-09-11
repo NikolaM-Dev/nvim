@@ -32,6 +32,7 @@ local function get_bookmarks()
 		docs = {
 			['bash'] = 'https://devhints.io/bash',
 			['maple'] = 'https://github.com/subframe7536/maple-font/blob/variable/source/features/README.md',
+			['obsidian'] = 'https://docs.obsidian.md/Home',
 			['snacks'] = 'https://github.com/folke/snacks.nvim/blob/main/README.md',
 		},
 
