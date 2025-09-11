@@ -72,12 +72,18 @@ return {
 			name = 'snacks.pick',
 		},
 
-		workspaces = {
-			{ name = 'second-brain.md', path = os.getenv('SECOND_BRAIN_PATH') .. '/src' },
+		-- Becase the manteiner are going to deprecate this module
+		ui = {
+			enable = false,
 		},
 
 		ui = {
 			enable = false, -- Becase the manteiner are going to deprecate this module
+		workspaces = {
+			{
+				name = 'second-brain.md',
+				path = os.getenv('SECOND_BRAIN_PATH') .. '/src',
+			},
 		},
 	},
 
