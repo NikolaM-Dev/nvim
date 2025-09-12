@@ -6,6 +6,9 @@ local map = require('lib').map
 vim.g.mapleader = ' '
 
 dmap({ 'i', 's' }, '<C-s>')
+dmap({ 'n' }, '[d')
+dmap({ 'n' }, ']d')
+
 map('n', '<C-s>', '<cmd>write<cr>', { desc = 'Write buffer' })
 map('n', '<leader><C-s>', '<cmd>wall<cr>', { desc = 'Write All changed buffers' })
 map({ 'i', 'x' }, '<C-s>', '<esc><cmd>write<cr>', { desc = 'Write buffer' })
