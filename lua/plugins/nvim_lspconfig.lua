@@ -54,6 +54,9 @@ return {
 		end
 
 		vim.diagnostic.config({
+			float = {
+				header = { '🔥 Diagnostics\n', 'Title' },
+			},
 			severity_sort = true,
 			signs = {
 				text = {
