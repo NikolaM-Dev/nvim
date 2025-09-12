@@ -2,5 +2,13 @@
   "console.log": {
     "prefix": "cl",
     "body": "console.log($0);"
+  },
+  "wait": {
+    "prefix": "wait",
+    "body": [
+      "export async function wait(ms: number): Promise<void> {",
+      "  return new Promise((resolve) => setTimeout(resolve, ms));",
+      "}"
+    ]
   }
 }
