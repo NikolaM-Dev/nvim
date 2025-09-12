@@ -13,53 +13,37 @@ return {
 	},
 
 	config = function(_, opts)
-		vim.api.nvim_create_autocmd('LspAttach', {
-			group = vim.api.nvim_create_augroup('UserLspConfig', { clear = true }),
-			desc = 'LSP actions',
-			callback = function(args)
-				if #args then
-					return
+		local map = require('lib').map
+
+		---@param next? boolean
+		---@param severity? string|integer
+		local function go_to_diagnostic(next, severity)
+			severity = severity and vim.diagnostic.severity[severity] or nil
+
+			return function()
+				if next then
+					vim.diagnostic.jump({ count = 1, float = true, severity })
+				else
+					vim.diagnostic.jump({ count = -1, float = true, severity })
 				end
 
-				---@param lhs string
-				---@param rhs function
-				---@param desc string
-				---@param mode? string|string[]
-				local function map(lhs, rhs, desc, mode)
-					vim.keymap.set(mode or 'n', lhs, rhs, { buffer = args.buf, desc = desc })
-				end
+				vim.diagnostic.open_float()
+				vim.cmd('normal! zz')
+			end
+		end
 
-				---@param next? boolean
-				---@param severity? string|integer
-				local function go_to_diagnostic(next, severity)
-					severity = severity and vim.diagnostic.severity[severity] or nil
+		-- stylua: ignore start
+		map('n', 'K',    vim.lsp.buf.hover,                  { desc = 'Hover Documentation'      })
+		map('n', 'gd',   Snacks.picker.lsp_definitions,      { desc = '[G]oto [D]efinition'      })
+		map('n', 'grN',  Snacks.rename.rename_file,          { desc = '[R]e[N]ame File'          })
+		map('n', 'grd',  Snacks.picker.lsp_declarations,     { desc = 'Review [D]eclarations'    })
+		map('n', 'gri',  Snacks.picker.lsp_implementations,  { desc = 'Review [I]mplementations' })
+		map('n', 'grr',  Snacks.picker.lsp_references,       { desc = 'Review [R]eferences'      })
+		map('n', 'grt',  Snacks.picker.lsp_type_definitions, { desc = 'Goto T[y]pe Definition'   })
 
-					return function()
-						if next then
-							vim.diagnostic.jump({ count = 1, float = true, severity })
-						else
-							vim.diagnostic.jump({ count = -1, float = true, severity })
-						end
-
-						vim.cmd('normal! zz')
-					end
-				end
-
-				-- stylua: ignore start
-				map('K',    vim.lsp.buf.hover,                  'Hover Documentation')
-				map('<cr>', Snacks.picker.lsp_definitions,      'Goto Definition')
-				map('gd',   Snacks.picker.lsp_definitions,      '[G]oto [D]efinition')
-				map('grN',  Snacks.rename.rename_file,          '[R]e[N]ame File')
-				map('grd',  Snacks.picker.lsp_declarations,     'Review [D]eclarations')
-				map('gri',  Snacks.picker.lsp_implementations,  'Review [I]mplementations')
-				map('grr',  Snacks.picker.lsp_references,       'Review [R]eferences')
-				map('grt',  Snacks.picker.lsp_type_definitions, 'Goto T[y]pe Definition')
-
-				map('[d', go_to_diagnostic(false), 'Prev [D]iagnostic')
-				map(']d', go_to_diagnostic(true),  'Next [D]iagnostic')
-				-- stylua: ignore end
-			end,
-		})
+		map('n', '[d', go_to_diagnostic(false), { desc = 'Prev [D]iagnostic' })
+		map('n', ']d', go_to_diagnostic(true),  { desc = 'Next [D]iagnostic' })
+		-- stylua: ignore end
 
 		-- [LSP Configs](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md)
 		local lspconfig = require('lspconfig')
