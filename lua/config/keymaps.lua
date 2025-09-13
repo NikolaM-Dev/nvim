@@ -97,7 +97,17 @@ map('n', '<leader>cmx', function()
 	local current_filename = vim.fn.expand('%')
 	local escaped_filename = vim.fn.shellescape(current_filename)
 
-	vim.cmd('!chmod u+x ' .. escaped_filename)
+	local command_output = vim.fn.system('chmod u+x ' .. escaped_filename)
+	local exit_code = vim.v.shell_error -- Check the exit code of the last system command
+
+	if exit_code ~= 0 then
+		Snacks.notify.error('Failed to change file permissions: ' .. vim.fn.fnamemodify(current_filename, ':t'))
+		Snacks.notify.error('Error details: ' .. command_output)
+
+		return
+	end
+
+	Snacks.notify.info('File now has user execution permissions: ' .. vim.fn.fnamemodify(current_filename, ':t'))
 end, { desc = '[C]h[M]od +[X]' })
 
 map('n', '<leader>fd', function()
