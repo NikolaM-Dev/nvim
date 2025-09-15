@@ -11,7 +11,7 @@ return {
 		{ '<S-C-u>',    function() require('opencode').command('messages_half_page_up') end, desc = 'Messages half page up' },
 		{ '<leader>oA', function() require('opencode').ask() end, desc = 'Ask opencode' },
 		{ '<leader>oa', function() require('opencode').ask('@cursor: ') end, desc = 'Ask opencode about this' },
-		{ '<leader>oa', function() require('opencode').ask('@selection: ') end, desc = 'Ask opencode about selection' },
+		{ '<leader>oa', function() require('opencode').ask('@selection: ') end, desc = 'Ask opencode about selection', mode = 'v' },
 		{ '<leader>oe', function() require('opencode').prompt('Explain @cursor and its context') end,  desc = 'Explain this code' },
 		{ '<leader>on', function() require('opencode').command('session_new') end, desc = 'New opencode session' },
 		{ '<leader>os', function() require('opencode').select() end, desc = 'Select opencode prompt', mode = {'n', 'v'} },
@@ -24,6 +24,4 @@ return {
 		---@type opencode.Opts
 		vim.g.opencode_opts = {}
 	end,
-
-	config = true,
 }
