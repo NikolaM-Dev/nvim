@@ -27,7 +27,6 @@ return {
 					vim.diagnostic.jump({ count = -1, float = true, severity })
 				end
 
-				vim.diagnostic.open_float()
 				vim.cmd('normal! zz')
 			end
 		end
