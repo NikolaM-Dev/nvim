@@ -2,7 +2,7 @@ return {
 	{
 		'nvim-treesitter/nvim-treesitter',
 		opts = function(_, opts)
-			vim.list_extend(opts.languages, { 'typescript' })
+			vim.list_extend(opts.languages, { 'tsx', 'typescript' })
 		end,
 	},
 	{
