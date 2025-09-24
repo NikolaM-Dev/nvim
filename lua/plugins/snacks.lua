@@ -22,13 +22,14 @@ return {
 		{ '<leader>n', function() Snacks.picker.notifications() end, desc = '[N]otification History' },
 
 		-- search
-		{ '<leader>sH', function() Snacks.picker.highlights() end, desc = '[S]earch [H]ighlights' },
-		{ '<leader>sc', function() Snacks.picker.commands() end,   desc = '[S]earch [C]ommands' },
-		{ '<leader>sh', function() Snacks.picker.help() end,       desc = '[S]earch [H]elp Pages' },
-		{ '<leader>si', function() Snacks.picker.icons() end,      desc = '[S]earch [I]cons' },
-		{ '<leader>sk', function() Snacks.picker.keymaps() end,    desc = '[S]earch [K]eymaps' },
-		{ '<leader>ss', function() Snacks.picker() end,            desc = '[S]earch [S]nacks pickers' },
-		{ '<leader>su', function() Snacks.picker.undo() end,       desc = '[S]earch [U]ndo' },
+		{ '<M-x>',      function() Snacks.picker.commands({ layout= 'ivy' }) end, desc = 'Search Commands, Emacs Style' },
+		{ '<leader>sH', function() Snacks.picker.highlights() end,                desc = '[S]earch [H]ighlights' },
+		{ '<leader>sc', function() Snacks.picker.commands() end,                  desc = '[S]earch [C]ommands' },
+		{ '<leader>sh', function() Snacks.picker.help() end,                      desc = '[S]earch [H]elp Pages' },
+		{ '<leader>si', function() Snacks.picker.icons() end,                     desc = '[S]earch [I]cons' },
+		{ '<leader>sk', function() Snacks.picker.keymaps() end,                   desc = '[S]earch [K]eymaps' },
+		{ '<leader>ss', function() Snacks.picker() end,                           desc = '[S]earch [S]nacks pickers' },
+		{ '<leader>su', function() Snacks.picker.undo() end,                      desc = '[S]earch [U]ndo' },
 
 		-- grep
 		{ '<leader>sb', function() Snacks.picker.lines() end,        desc = '[S]earch [B]uffer Lines' },
