@@ -199,3 +199,5 @@ map('t', '<C-w>l', '<cmd>wincmd l<CR>', { desc = 'Change Focus to Right Window' 
 
 map('v', 'J', ':m \'>+1<CR>gv=gv', { desc = 'Move Line/s Down' })
 map('v', 'K', ':m \'<-2<CR>gv=gv', { desc = 'Move Line/s Up' })
+map('i', '<M-b>', '<esc><cmd>b#<cr>', { desc = 'Go to last buffer' })
+map('n', '<M-b>', '<cmd>b#<cr>', { desc = 'Go to last buffer' })
