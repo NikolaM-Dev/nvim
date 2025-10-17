@@ -30,6 +30,7 @@ return {
 		{ '<leader>sk', function() Snacks.picker.keymaps() end,                   desc = '[S]earch [K]eymaps' },
 		{ '<leader>ss', function() Snacks.picker() end,                           desc = '[S]earch [S]nacks pickers' },
 		{ '<leader>su', function() Snacks.picker.undo() end,                      desc = '[S]earch [U]ndo' },
+		{ '<leader>sz', function() Snacks.picker.zoxide() end,                    desc = '[S]earch [z]oxide' },
 
 		-- grep
 		{ '<leader>sb', function() Snacks.picker.lines() end,        desc = '[S]earch [B]uffer Lines' },
