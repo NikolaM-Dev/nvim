@@ -1,1 +1,1 @@
-# Nikola's Nvim Config
+# Nikola's Neovim Config
