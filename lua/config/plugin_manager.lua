@@ -34,7 +34,7 @@ require('lazy').setup({
 		notify = false,
 	},
 	install = {
-		colorscheme = { 'rose-pine', 'tokyonight', 'habamax' },
+		colorscheme = { 'gruvbox-material', 'rose-pine', 'tokyonight', 'habamax' },
 	},
 	rocks = {
 		hererocks = false,
