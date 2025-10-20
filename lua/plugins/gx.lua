@@ -6,7 +6,7 @@ return {
 	enabled = true,
 
 	keys = {
-		{ 'gx', '<cmd>Browse<cr>', mode = { 'n', 'x' }, desc = 'Browse in browser' },
+		{ 'gx', '<cmd>Browse<cr>', desc = 'Browse in browser', mode = { 'n', 'x' } },
 	},
 
 	init = function()
