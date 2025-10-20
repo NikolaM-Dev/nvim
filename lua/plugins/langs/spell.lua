@@ -8,7 +8,15 @@ return {
 	{
 		'neovim/nvim-lspconfig',
 		opts = function(_, opts)
-			opts.servers.harper_ls = {}
+			opts.servers.harper_ls = {
+				settings = {
+					['harper-ls'] = {
+						markdown = {
+							IgnoreLinkTitle = true,
+						},
+					},
+				},
+			}
 		end,
 	},
 }
