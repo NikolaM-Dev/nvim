@@ -6,7 +6,7 @@ return {
 	docs = 'https://github.com/neovim/nvim-lspconfig/blob/master/doc',
 	enabled = true,
 
-	event = { 'BufReadPost', 'BufNewFile', 'BufWritePre' },
+	events = { 'BufNewFile', 'BufReadPost', 'BufWritePre' },
 
 	opts = {
 		servers = {},
