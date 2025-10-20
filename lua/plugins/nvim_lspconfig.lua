@@ -45,11 +45,9 @@ return {
 		-- stylua: ignore end
 
 		-- [LSP Configs](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md)
-		local lspconfig = require('lspconfig')
 		for server, config in pairs(opts.servers) do
-			if server then
-				lspconfig[server].setup(config)
-			end
+			vim.lsp.config(server, config)
+			vim.lsp.enable(server)
 		end
 
 		vim.diagnostic.config({
