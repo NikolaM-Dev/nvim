@@ -17,6 +17,15 @@ return {
 					},
 				},
 			}
+
+			vim.keymap.set('n', 'zg', function()
+				vim.lsp.buf.code_action({
+					apply = true,
+					filter = function(a)
+						return a.title:find('^Add .* to the user dictionary%.') ~= nil
+					end,
+				})
+			end, { desc = 'Add word to harper dictionary' })
 		end,
 	},
 }
