@@ -203,5 +203,7 @@ map('t', '<C-w>l', '<cmd>wincmd l<CR>', { desc = 'Change Focus to Right Window' 
 
 map('v', 'J', ':m \'>+1<CR>gv=gv', { desc = 'Move Line/s Down' })
 map('v', 'K', ':m \'<-2<CR>gv=gv', { desc = 'Move Line/s Up' })
-map('i', '<M-b>', '<esc><cmd>b#<cr>', { desc = 'Go to last buffer' })
-map('n', '<M-b>', '<cmd>b#<cr>', { desc = 'Go to last buffer' })
+
+map('n', '<leader><leader>x', '<cmd>source %<cr>', { desc = 'e[X]ecute current lua file' })
+map('n', '<leader>x', '<cr>.lua<cr>', { desc = 'e[X]ecute current lua line' })
+map('v', '<leader>x', ':lua<cr>', { desc = 'e[X]ecute selected lua lines' })
