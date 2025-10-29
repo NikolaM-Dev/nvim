@@ -60,6 +60,8 @@ map('n', 'n', 'nzzzv', { desc = 'Next search centralized' })
 map('n', '<C-o>', '<C-o>zz', { desc = 'Previous History centralized' })
 map('n', '<C-i>', '<C-i>zz', { desc = 'Next History centralized' })
 
+map('n', '*', '*zz', { desc = 'Search forward for the word under the cursor centralized' })
+map('n', '#', '#zz', { desc = 'Search backward for the word under the cursor centralized' })
 map({ 'i', 'n' }, '<esc>', '<cmd>noh<cr><esc>', { desc = 'Escape and clear hlsearch' })
 
 map('x', '<leader>sl', ':sort<cr>', { desc = '[S]ort [L]ines' })
