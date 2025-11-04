@@ -23,5 +23,6 @@ return {
 		vim.api.nvim_set_hl(0, '@lsp.type.comment.lua', { fg = 'none' })
 		vim.api.nvim_set_hl(0, 'PMenu', { bg = 'none' })
 		vim.api.nvim_set_hl(0, 'PMenuSel', { bg = '#45403d', fg = 'none' })
+		vim.api.nvim_set_hl(0, 'inactiveBorderColor', { fg = '#7c6f64' })
 	end,
 }
