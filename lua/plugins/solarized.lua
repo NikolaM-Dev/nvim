@@ -2,8 +2,8 @@
 ---@type LazyPluginSpec
 return {
 	'maxmx03/solarized.nvim',
-	description = '',
-	enabled = true,
+	description = 'Solarized port for Neovim',
+	enabled = false,
 
 	lazy = false,
 	priority = 1000,
