@@ -13,7 +13,7 @@ return {
 		vim.g.gruvbox_material_diagnostic_virtual_text = 'colored'
 		vim.g.gruvbox_material_enable_bold = 1
 		vim.g.gruvbox_material_enable_italic = 1
-		vim.g.gruvbox_material_float_style = 'none'
+		vim.g.gruvbox_material_float_style = 'blend'
 		vim.g.gruvbox_material_transparent_background = 2
 	end,
 
