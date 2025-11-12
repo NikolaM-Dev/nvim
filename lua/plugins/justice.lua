@@ -1,0 +1,19 @@
+---@module 'lazy.types'
+---@type LazyPluginSpec
+return {
+	'chrisgrieser/nvim-justice',
+	desc = ' Just an integration of `just` in nvim.',
+	enabled = true,
+
+	keys = {
+		{
+			'<leader>sj',
+			function()
+				require('justice').select()
+			end,
+			desc = '[S]earch [J]ust Recipes',
+		},
+	},
+
+	config = true,
+}
