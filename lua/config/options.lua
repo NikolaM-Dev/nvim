@@ -30,6 +30,7 @@ vim.o.number = true -- Show line numbers
 vim.o.relativenumber = true -- Show relative numbers
 vim.o.showmode = false -- Removes the text indicating the mode
 vim.o.showtabline = 0 -- Remove tab page label
+vim.o.signcolumn = 'auto:2-4' -- Always show the sign column, otherwise it would shift the text each time
 vim.o.smartcase = true -- difference between lower and upper case letters
 vim.o.smartindent = true -- Do smart autoindenting when starting a new line.
 vim.o.splitbelow = true -- Split window below
