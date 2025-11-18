@@ -3,7 +3,7 @@
 return {
 	'rose-pine/neovim',
 	desc = 'Soho vibes for Neovim',
-	enabled = true,
+	enabled = false,
 
 	lazy = false,
 	priority = 1000,
