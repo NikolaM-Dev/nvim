@@ -75,3 +75,13 @@ do
 		end,
 	})
 end
+
+vim.filetype.add({
+	filename = {
+		['launch.json'] = 'jsonc',
+		['tasks.json'] = 'jsonc',
+	},
+	pattern = {
+		['[jt]sconfig.*.json'] = 'jsonc',
+	},
+})
