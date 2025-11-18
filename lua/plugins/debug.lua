@@ -2,18 +2,19 @@
 ---@type LazyPluginSpec[]
 return {
 	{
-		'theHamsta/nvim-dap-virtual-text',
+		'mfussenegger/nvim-dap',
+		desc = 'Debug Adapter Protocol client implementation for Neovim',
 		enabled = true,
-		desc = 'This plugin adds virtual text support to nvim-dap.',
 
-		---@module 'nvim-dap-virtual-text'
-		---@type nvim_dap_virtual_text_options
-		opts = {
-			all_frames = true,
-			all_references = true,
-			virt_text_pos = 'eol',
-			clear_on_continue = true,
+		dependencies = {
+			'rcarriga/nvim-dap-ui',
+			'stevearc/overseer.nvim',
+			'theHamsta/nvim-dap-virtual-text',
 		},
+
+		opts = {},
+
+		config = function(_, _opts) end,
 	},
 
 	{
@@ -30,7 +31,7 @@ return {
 			-- stylua: ignore end
 		},
 
-		---@type dapui.Config
+		---@type dapui.config
 		opts = {},
 
 		---@param opts dapui.Config
