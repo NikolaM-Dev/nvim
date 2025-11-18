@@ -18,6 +18,11 @@ vim.opt.fillchars = {
 	foldsep = ' ',
 }
 
+vim.opt.diffopt:append('algorithm:patience') -- Better diff algorithm
+vim.opt.diffopt:append('linematch:60') -- Better diff highlighting (smart line matching)
+vim.opt.diffopt:append('vertical') -- Vertical diff splits
+vim.opt.path:append('**') -- Search into subfolders with `gf`
+
 vim.o.autoread = true -- Automatically read the file when changed outside of neovim
 vim.o.backup = false -- Create backup files
 vim.o.cursorline = true -- Highlight the text line of the cursor
@@ -30,7 +35,7 @@ vim.o.number = true -- Show line numbers
 vim.o.relativenumber = true -- Show relative numbers
 vim.o.showmode = false -- Removes the text indicating the mode
 vim.o.showtabline = 0 -- Remove tab page label
-vim.o.signcolumn = 'auto:2-4' -- Always show the sign column, otherwise it would shift the text each time
+vim.o.signcolumn = 'yes:2' -- Always show the sign column, otherwise it would shift the text each time
 vim.o.smartcase = true -- difference between lower and upper case letters
 vim.o.smartindent = true -- Do smart autoindenting when starting a new line.
 vim.o.splitbelow = true -- Split window below
@@ -42,6 +47,7 @@ vim.o.undofile = true -- Automatically saves undo history to an undo file when w
 vim.o.winbar = '%=%m %t' -- The window bar is a bar that's shown at the top of every window with it enabled
 vim.o.winborder = 'rounded' -- Defines the default border style of floating windows
 vim.o.wrap = false -- Wrap lines
+vim.o.writebackup = false -- Don't backup before overwriting
 
 vim.schedule(function()
 	vim.o.clipboard = 'unnamedplus' -- use system clipboard
