@@ -2,6 +2,21 @@
 ---@type LazyPluginSpec[]
 return {
 	{
+		'theHamsta/nvim-dap-virtual-text',
+		enabled = true,
+		desc = 'This plugin adds virtual text support to nvim-dap.',
+
+		---@module 'nvim-dap-virtual-text'
+		---@type nvim_dap_virtual_text_options
+		opts = {
+			all_frames = true,
+			all_references = true,
+			virt_text_pos = 'eol',
+			clear_on_continue = true,
+		},
+	},
+
+	{
 		'rcarriga/nvim-dap-ui',
 		desc = 'A UI for nvim-dap',
 		enabled = true,
@@ -29,5 +44,20 @@ return {
 			dap.listeners.before.event_terminated.dapui_config = dapui.close
 			dap.listeners.before.event_exited.dapui_config = dapui.close
 		end,
+	},
+
+	{
+		'theHamsta/nvim-dap-virtual-text',
+		enabled = true,
+		desc = 'This plugin adds virtual text support to nvim-dap.',
+
+		---@module 'nvim-dap-virtual-text'
+		---@type nvim_dap_virtual_text_options
+		opts = {
+			all_frames = true,
+			all_references = true,
+			clear_on_continue = true,
+			virt_text_pos = 'eol',
+		},
 	},
 }
