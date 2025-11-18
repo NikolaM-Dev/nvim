@@ -14,6 +14,20 @@ return {
 						markdown = {
 							IgnoreLinkTitle = true,
 						},
+						linters = {
+							-- disable buggy rules
+							-- CommaFixes = false, -- https://github.com/Automattic/harper/issues/1097
+							SentenceCapitalization = false, -- https://github.com/Automattic/harper/issues/1056
+							UnclosedQuotes = false, -- https://github.com/Automattic/harper/issues/1573
+
+							-- enable extra rules?
+							BoringWords = false,
+							LinkingVerbs = false,
+							SpelledNumbers = false,
+							UseGenitive = true,
+						},
+						dialect = 'American',
+						isolateEnglish = true,
 					},
 				},
 			}
