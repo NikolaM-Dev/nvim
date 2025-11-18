@@ -2,6 +2,17 @@ local augroup = require('lib').augroup
 
 local autocmd = vim.api.nvim_create_autocmd
 
+vim.api.nvim_create_autocmd('BufReadPost', {
+	desc = 'Enable NoNeckPain from start',
+	group = augroup('enable_noneckpain_from_start'),
+	once = true,
+	callback = function()
+		-- Skips snacks dashboard
+		if vim.bo.filetype ~= 'snacks_dashboard' then
+			vim.cmd('NoNeckPain')
+		end
+	end,
+})
 autocmd('TextYankPost', {
 	desc = 'Highlight yank',
 	group = augroup('highlight_yank'),
