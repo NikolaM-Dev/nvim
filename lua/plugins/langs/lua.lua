@@ -14,7 +14,15 @@ return {
 	{
 		'neovim/nvim-lspconfig',
 		opts = function(_, opts)
-			opts.servers.lua_ls = {}
+			opts.servers.lua_ls = {
+				settings = {
+					Lua = {
+						diagnostics = { unusedLocalExclude = { '_*' } },
+						hint = { enable = true },
+						telemetry = { enable = false },
+					},
+				},
+			}
 		end,
 	},
 	{
