@@ -14,8 +14,8 @@ return {
 
 	lazy = false,
 	keys = {
-		{ '-', '<cmd>Oil<cr>' },
-		{ '<leader>-', '<cmd>Oil .<cr>' },
+		{ '-', '<cmd>Oil<cr>', desc = 'Open Oil' },
+		{ '<leader>-', '<cmd>Oil .<cr>', desc = 'Open Oil (cwd)' },
 	},
 
 	---@module 'oil'
