@@ -12,18 +12,18 @@ return {
 
 		local keys = {
 			{
-				'<C-e>',
+				'<leader>he',
 				function()
 					harpoon.ui:toggle_quick_menu(harpoon:list(), { title = '  Harpoon ' })
 				end,
-				desc = '[H]arpoon Toogle  Quick Menu',
+				desc = '[H]arpoon Toogle Quick Menu',
 			},
 			{
-				'<leader>a',
+				'<leader>ha',
 				function()
 					harpoon:list():add()
 				end,
-				desc = 'Harpoon [A]dd file to list',
+				desc = '[H]arpoon [A]dd file to list',
 			},
 		}
 
