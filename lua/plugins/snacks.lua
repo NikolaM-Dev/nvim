@@ -134,11 +134,25 @@ return {
 			},
 
 			picker = {
+				prompt = '   ',
+
+				sources = {
+					notifications = {
+						win = {
+							preview = {
+								wo = {
+									wrap = true,
+								},
+							},
+						},
+					},
+				},
+
 				win = {
 					input = {
 						keys = {
-							['<C-u>'] = { 'preview_scroll_up', mode = { 'i', 'n' } },
 							['<C-d>'] = { 'preview_scroll_down', mode = { 'i', 'n' } },
+							['<C-u>'] = { 'preview_scroll_up', mode = { 'i', 'n' } },
 						},
 					},
 				},
