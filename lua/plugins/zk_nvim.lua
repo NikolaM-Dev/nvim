@@ -5,7 +5,7 @@ return {
 	desc = 'Neovim extension for zk',
 	enabled = true,
 
-	event = 'VeryLazy',
+	ft = 'markdown',
 
 	keys = {
 		{ '<C-n><C-i>', '<cmd>ZkInsertLink<cr>', desc = '[Z]k [L]inks', mode = 'i' },
