@@ -34,39 +34,4 @@ return {
 			vim.g.bullets_outline_levels = { 'ROM', 'ABC', 'num', 'abc', 'rom', 'std-' } -- Remove * + as outline levels
 		end,
 	},
-	{
-		'MeanderingProgrammer/render-markdown.nvim',
-		enabled = false,
-		ft = 'markdown',
-
-		opts = function()
-			local disabled = { enabled = false }
-
-			---@module 'render-markdown'
-			---@type render.md.UserConfig
-			return {
-				sign = disabled,
-				bullet = {
-					icons = { '•' },
-				},
-				checkbox = {
-					enabled = false,
-					checked = {
-						icon = ' ',
-					},
-					unchecked = {
-						icon = ' ',
-					},
-					custom = {
-						thirty_three = { highlight = 'RenderMarkdownTodo', raw = '[3]', rendered = '󰪠 ' },
-						sixty_six = { highlight = 'RenderMarkdownTodo', raw = '[6]', rendered = '󰪢 ' },
-						ninety_nine = { highlight = 'RenderMarkdownTodo', raw = '[9]', rendered = '󰪤 ' },
-						cancelled = { highlight = 'RenderMarkdownTodo', raw = '[-]', rendered = ' ' },
-					},
-				},
-				completions = { blink = { enabled = true } },
-				heading = { sign = false, icons = {} },
-			}
-		end,
-	},
 }
