@@ -9,7 +9,7 @@ return {
 	priority = 1000,
 
 	init = function()
-		vim.g.gruvbox_material_better_performance = 0
+		vim.g.gruvbox_material_better_performance = 1
 		vim.g.gruvbox_material_diagnostic_virtual_text = 'colored'
 		vim.g.gruvbox_material_enable_bold = 1
 		vim.g.gruvbox_material_enable_italic = 1
