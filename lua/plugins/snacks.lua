@@ -13,24 +13,26 @@ return {
 		-- stylua: ignore start
 		{ '<leader>fb', function() Snacks.picker.buffers() end, desc = '[F]ind [B]uffers' },
 		{ '<leader>fc', function() Snacks.picker.files({ title =  '  eovim Files ', cwd = vim.fn.stdpath('config') }) end, desc = '[F]ind [C]onfig Files' },
-		{ '<leader>ff', function() Snacks.picker.files({ hidden = true }) end, desc = '[F]ind [F]iles' },
+		-- { '<leader>ff', function() Snacks.picker.files({ hidden = true }) end, desc = '[F]ind [F]iles' },
 		{ '<leader>fg', function() Snacks.picker.git_files() end, desc = '[F]ind [G]it Files' },
-		{ '<leader>fp', function() Snacks.picker.projects() end, desc = '[F]ind [P]rojects' },
+		{ '<leader>fP', function() Snacks.picker.projects() end, desc = '[F]ind [P]rojects' },
+		{ '<leader>fp', function() Snacks.picker.files({ title =  '  eovim Plugins ', cwd = vim.fn.stdpath('data') .. '/lazy' }) end, desc = '[F]ind [P]lugins' },
 		{ '<leader>fr', function() Snacks.picker.recent() end, desc = '[F]ind [R]ecent' },
 
 		{ '<leader>.', function() Snacks.scratch() end, desc = 'Toggle [S]cratch Buffer' },
 		{ '<leader>n', function() Snacks.picker.notifications() end, desc = '[N]otification History' },
 
 		-- search
-		{ '<M-x>',      function() Snacks.picker.commands({ layout= 'ivy' }) end, desc = 'Search Commands, Emacs Style' },
-		{ '<leader>sH', function() Snacks.picker.highlights() end,                desc = '[S]earch [H]ighlights' },
-		{ '<leader>sc', function() Snacks.picker.commands() end,                  desc = '[S]earch [C]ommands' },
-		{ '<leader>sh', function() Snacks.picker.help() end,                      desc = '[S]earch [H]elp Pages' },
-		{ '<leader>si', function() Snacks.picker.icons() end,                     desc = '[S]earch [I]cons' },
-		{ '<leader>sk', function() Snacks.picker.keymaps() end,                   desc = '[S]earch [K]eymaps' },
-		{ '<leader>ss', function() Snacks.picker() end,                           desc = '[S]earch [S]nacks pickers' },
-		{ '<leader>su', function() Snacks.picker.undo() end,                      desc = '[S]earch [U]ndo' },
-		{ '<leader>sz', function() Snacks.picker.zoxide() end,                    desc = '[S]earch [z]oxide' },
+		{ '<M-x>',      function() Snacks.picker.commands({ layout = 'ivy' }) end, desc = 'Search Commands like an Emacs', mode = '' },
+		{ '<leader>sH', function() Snacks.picker.highlights() end,                 desc = '[S]earch [H]ighlights' },
+		{ '<leader>sc', function() Snacks.picker.commands() end,                   desc = '[S]earch [C]ommands' },
+		{ '<leader>sh', function() Snacks.picker.help() end,                       desc = '[S]earch [H]elp Pages' },
+		{ '<leader>si', function() Snacks.picker.icons() end,                      desc = '[S]earch [I]cons' },
+		{ '<leader>sk', function() Snacks.picker.keymaps() end,                    desc = '[S]earch [K]eymaps' },
+		{ '<leader>sm', function() Snacks.picker.man() end,                        desc = '[S]earch [m]an' },
+		{ '<leader>ss', function() Snacks.picker() end,                            desc = '[S]earch [S]nacks pickers' },
+		{ '<leader>su', function() Snacks.picker.undo() end,                       desc = '[S]earch [U]ndo' },
+		{ '<leader>sz', function() Snacks.picker.zoxide() end,                     desc = '[S]earch [z]oxide' },
 
 		-- grep
 		{ '<leader>sb', function() Snacks.picker.lines() end,        desc = '[S]earch [B]uffer Lines' },
@@ -48,9 +50,6 @@ return {
 
 		-- lsp
 		{ 'gd', function() Snacks.picker.lsp_definitions() end, desc = '[G]oto [D]efinition' },
-
-		-- zen
-		{ '<leader>z', function() Snacks.zen() end, desc = 'Toggle [Z]en Mode' },
 
 		-- zoom
 		{ '<leader>Z', function() Snacks.zen.zoom() end, desc = 'Toggle [Z]oom' },
