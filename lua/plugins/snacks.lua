@@ -90,7 +90,10 @@ return {
 
 			dashboard = {
 				preset = {
-					header = 'Be a high performance person, being all that you can be every day 24/7, 365',
+					header = table.concat({
+						'[N]eo[V]im',
+						'Be a high performance person, being all that you can be every day 24/7, 365',
+					}, '\n\n'),
 					keys = {
 						{ icon = '󰒲 ', key = 'l', desc = '[L]azy', action = ':Lazy' },
 						{ icon = ' ', key = 's', desc = 'Restore [S]ession', section = 'session' },
