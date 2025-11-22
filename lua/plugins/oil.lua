@@ -1,3 +1,10 @@
+function _G.custom_oil_winbar()
+	local path = vim.fn.expand('%')
+	path = path:gsub('oil://', '')
+
+	return vim.fn.fnamemodify(path, ':.')
+end
+
 ---@module 'lazy.types'
 ---@type LazyPluginSpec
 return {
@@ -58,6 +65,10 @@ return {
 			is_always_hidden = function(name)
 				return name == '..'
 			end,
+		},
+
+		win_options = {
+			winbar = ' %#OilDir#󰝰 %#OilFile#%{v:lua.custom_oil_winbar()}',
 		},
 	},
 }
