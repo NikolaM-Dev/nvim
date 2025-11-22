@@ -12,7 +12,19 @@ return {
 			'theHamsta/nvim-dap-virtual-text',
 		},
 
-		opts = {},
+		---@class nkl.debug
+		---@field adapters? table<string, dap.Adapter|dap.AdapterFactory>
+		---@field configurations? table<string, dap.Configuration[]>
+		opts = {
+			adapters = {},
+			configurations = {},
+		},
+
+		---@param opts nkl.debug
+		config = function(_, opts)
+			local dap = require('dap')
+			dap.adapters = opts.adapters
+			dap.configurations = opts.configurations
 
 			for name, sign in pairs({
 				Breakpoint = '',
