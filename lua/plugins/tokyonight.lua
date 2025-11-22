@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'folke/tokyonight.nvim',
 	desc = 'Folke\'s colorscheme',

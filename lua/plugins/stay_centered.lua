@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'arnamak/stay-centered.nvim',
 	desc = 'A neovim plugin to keep your cursor at the center of the screen',

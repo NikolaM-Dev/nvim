@@ -6,7 +6,7 @@ function _G.custom_oil_winbar()
 end
 
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'stevearc/oil.nvim',
 	desc = 'Neovim file explorer: edit your filesystem like a buffer',

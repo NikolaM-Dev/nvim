@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'williamboman/mason.nvim',
 	desc = 'Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters',
@@ -8,7 +8,7 @@ return {
 	event = 'VeryLazy',
 
 	keys = {
-		{ '<leader>cm', '<cmd>Mason<cr>', desc = '[M]ason' },
+		{ '<leader>M', '<cmd>Mason<cr>', desc = '[M]ason' },
 	},
 
 	opts = {
@@ -26,6 +26,9 @@ return {
 				},
 			},
 		})
+
+		-- Add binaries installed by mason.nvim to path
+		vim.env.PATH = table.concat({ vim.fn.stdpath('data'), 'mason', 'bin' }, '/') .. ':' .. vim.env.PATH
 
 		local mason_registry = require('mason-registry')
 		local function ensure_installed()

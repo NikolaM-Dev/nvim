@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'sainnhe/gruvbox-material',
 	desc = 'Gruvbox with Material Palette',

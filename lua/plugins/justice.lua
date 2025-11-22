@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'chrisgrieser/nvim-justice',
 	desc = ' Just an integration of `just` in nvim.',

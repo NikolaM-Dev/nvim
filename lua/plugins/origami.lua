@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'chrisgrieser/nvim-origami',
 	desc = 'Fold with relentless elegance. A collection of Quality-of-life features related to folding.',

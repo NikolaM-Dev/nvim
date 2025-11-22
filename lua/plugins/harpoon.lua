@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'ThePrimeagen/harpoon',
 	desc = 'Getting you where you want with the fewest keystrokes',

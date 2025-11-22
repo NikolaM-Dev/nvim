@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'brenoprata10/nvim-highlight-colors',
 	desc = 'Highlight colors for neovim',

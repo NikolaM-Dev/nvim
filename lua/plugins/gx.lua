@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'chrishrb/gx.nvim',
 	desc = 'Implementation of gx without the need of netrw',

@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'aserowy/tmux.nvim',
 	desc = 'tmux integration for nvim features pane movement and resizing from within nvim',

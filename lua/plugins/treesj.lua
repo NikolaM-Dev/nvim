@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'Wansmer/treesj',
 	desc = 'Neovim plugin for splitting/joining blocks of code',

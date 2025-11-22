@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'folke/which-key.nvim',
 	desc = 'WhichKey helps you remember your Neovim keymaps, by showing available keybindings in a popup as you type',

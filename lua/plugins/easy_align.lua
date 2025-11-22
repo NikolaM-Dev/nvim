@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'junegunn/vim-easy-align',
 	desc = 'A Vim alignment plugin',

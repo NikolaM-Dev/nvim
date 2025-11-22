@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'sindrets/diffview.nvim',
 	desc = 'Single tabpage interface for easily cycling through diffs for all modified files for any git rev.',

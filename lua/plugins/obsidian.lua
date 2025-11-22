@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'obsidian-nvim/obsidian.nvim',
 	desc = 'Obsidian 🤝 Neovim',

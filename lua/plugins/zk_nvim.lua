@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'zk-org/zk-nvim',
 	desc = 'Neovim extension for zk',

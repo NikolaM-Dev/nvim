@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'dmtrKovalenko/fff.nvim',
 	desc = 'Finally a Fast Fuzzy File Finder for neovim',

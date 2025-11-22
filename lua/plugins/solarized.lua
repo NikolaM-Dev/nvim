@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'maxmx03/solarized.nvim',
 	description = 'Solarized port for Neovim',

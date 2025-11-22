@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'rose-pine/neovim',
 	desc = 'Soho vibes for Neovim',

@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'stevearc/conform.nvim',
 	desc = 'Lightweight yet powerful formatter plugin for Neovim',

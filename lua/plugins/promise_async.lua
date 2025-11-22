@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'kevinhwang91/promise-async',
 	desc = 'Promise & Async in Lua',

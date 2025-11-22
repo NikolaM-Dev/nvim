@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'nvim-mini/mini.pairs',
 	desc = 'Neovim Lua plugin to automatically manage character pairs',

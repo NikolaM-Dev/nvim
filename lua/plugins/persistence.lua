@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'folke/persistence.nvim',
 	desc = 'Simple session management for Neovim',

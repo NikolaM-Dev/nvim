@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'tpope/vim-repeat',
 	desc = 'enable repeating supported plugin maps with "."',

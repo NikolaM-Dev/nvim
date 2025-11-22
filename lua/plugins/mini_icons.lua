@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'nvim-mini/mini.icons',
 	desc = 'Icon provider',
@@ -25,7 +25,7 @@ return {
 			['.obsidian.vimrc'] = { glyph = '', hl = 'MiniIconsGreen' },
 			['.prettierignore'] = { glyph = '', hl = 'MiniIconsPurple' },
 			['.prettierrc'] = { glyph = '', hl = 'MiniIconsBlue' },
-			['LICENSE'] = { glyph = '󰄤' },
+			['LICENSE'] = { glyph = '󰿃', hl = 'MiniIconsOrange' },
 			['bun.lock'] = { glyph = '', hl = 'MiniIconsGrey' },
 			['lazy-lock.json'] = { glyph = '󰒲', hl = 'MiniIconsBlue' },
 			['package.json'] = { glyph = '', hl = 'MiniIconsGreen' },

@@ -18,7 +18,7 @@ local function get_args(config)
 end
 
 ---@module 'lazy.types'
----@type LazyPluginSpec[]
+---@type LazySpec
 return {
 	{
 		'mfussenegger/nvim-dap',

@@ -1,5 +1,5 @@
 ---@module 'lazy.types'
----@type LazyPluginSpec
+---@type LazySpec
 return {
 	'tpope/vim-rsi',
 	desc = 'rsi.vim: Readline style insertion',
