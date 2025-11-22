@@ -32,7 +32,60 @@ return {
 		},
 
 		---@type dapui.config
-		opts = {},
+		---@diagnostic disable-next-line: missing-fields
+		opts = {
+			layouts = {
+				{
+					elements = {
+						{ id = 'scopes', size = 0.3 },
+						{ id = 'watches', size = 0.5 },
+						{ id = 'stacks', size = 0.2 },
+					},
+					size = 0.2,
+					position = 'left',
+				},
+				{
+					elements = {
+						{ id = 'console', size = 0.5 },
+						{ id = 'repl', size = 0.3 },
+						{ id = 'breakpoints', size = 0.2 },
+					},
+					size = 0.2,
+					position = 'right',
+				},
+			},
+
+			---@diagnostic disable-next-line: missing-fields
+			floating = {
+				border = vim.o.winborder,
+				max_height = 0.5,
+				max_width = 0.9,
+			},
+
+			---@diagnostic disable-next-line: missing-fields
+			controls = {
+				element = 'breakpoints',
+				icons = {
+					disconnect = '',
+					pause = '',
+					play = '',
+					run_last = '',
+					step_back = '',
+					step_into = '󰆹',
+					step_out = '󰆸',
+					step_over = '',
+					terminate = '',
+				},
+			},
+
+			---@diagnostic disable-next-line: missing-fields
+			render = {
+				max_value_lines = 3,
+				sort_variables = function(a, b)
+					return a.name < b.name
+				end,
+			},
+		},
 
 		---@param opts dapui.Config
 		config = function(_, opts)
