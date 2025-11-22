@@ -4,6 +4,7 @@ return {
 	{
 		'mfussenegger/nvim-dap',
 		desc = 'Debug Adapter Protocol client implementation for Neovim',
+		docs = 'https://codeberg.org/mfussenegger/nvim-dap/wiki',
 		enabled = true,
 
 		dependencies = {
