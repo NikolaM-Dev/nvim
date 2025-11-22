@@ -36,7 +36,16 @@ return {
 
 		view_options = {
 			is_hidden_file = function(filename)
-				local filters = { '^.git$', '^node_modules$' } -- '^dist$', '^.obsidian$'
+				local filters = {
+					-- common
+					'^.git$',
+					'^node_modules$',
+					-- '^dist$', '^.obsidian$',
+
+					-- debug
+					'DAP *',
+					'[dap-repl-*',
+				}
 				for _, pattern in ipairs(filters) do
 					if vim.fn.match(filename, pattern) ~= -1 then
 						return true
