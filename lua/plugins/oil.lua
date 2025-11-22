@@ -15,7 +15,7 @@ return {
 	lazy = false,
 	keys = {
 		{ '-', '<cmd>Oil<cr>' },
-		{ '<backspace>-', '<cmd>Oil .<cr>' },
+		{ '<leader>-', '<cmd>Oil .<cr>' },
 	},
 
 	---@module 'oil'
