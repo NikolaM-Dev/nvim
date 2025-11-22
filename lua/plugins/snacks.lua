@@ -108,6 +108,13 @@ return {
 			---@diagnostic disable-next-line: missing-fields
 			input = {
 				icon = '',
+				win = {
+					on_win = function()
+						vim.schedule(function()
+							vim.cmd('startinsert')
+						end)
+					end,
+				},
 			},
 
 			lazygit = {
