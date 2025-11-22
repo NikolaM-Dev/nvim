@@ -17,32 +17,6 @@ return {
 	---@type table
 	opts = {
 		picker = 'snacks_picker',
-
-		picker_options = {
-			snacks_picker = {
-				layout = {
-					preset = 'ivy_split',
-				},
-			},
-		},
-
-		lsp = {
-			config = {
-				cmd = { 'zk', 'lsp', '--log', '/tmp/zk-lsp.log' },
-				name = 'zk',
-			},
-
-			-- automatically attach buffers in a zk notebook that match the given filetypes
-			auto_attach = {
-				enabled = true,
-			},
-		},
-		--
-		-- auto_attach = {
-		-- 	enabled = false,
-		-- 	filetypes = { 'markdown' },
-		-- },
-		-- },
 	},
 
 	---@param opts? table
