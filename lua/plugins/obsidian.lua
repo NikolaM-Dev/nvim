@@ -75,8 +75,9 @@ return {
 			enable = false,
 		},
 
-		wiki_link_func = function()
-			return 'use_alias_only'
+		---@param opts { path: string, label: string, id: string|integer|?, anchor: obsidian.note.HeaderAnchor|?, block: obsidian.note.Block|? }
+		wiki_link_func = function(opts)
+			return require('obsidian.builtin').wiki_link_alias_only(opts)
 		end,
 
 		workspaces = {
