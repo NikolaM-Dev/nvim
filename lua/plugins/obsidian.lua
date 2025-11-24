@@ -27,9 +27,7 @@ return {
 		},
 
 		completion = {
-			blink = false,
 			min_chars = 0,
-			nvim_cmp = false,
 		},
 
 		daily_notes = {
