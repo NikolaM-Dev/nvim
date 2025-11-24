@@ -70,7 +70,7 @@ return {
 			name = 'snacks.pick',
 		},
 
-		-- Becase the manteiner are going to deprecate this module
+		-- Became the maintainer are going to deprecate this module
 		ui = {
 			enable = false,
 		},
