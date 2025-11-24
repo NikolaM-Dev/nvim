@@ -1,3 +1,5 @@
+---@module 'lazy.types'
+---@type LazySpec
 return {
 	{
 		'williamboman/mason.nvim',
