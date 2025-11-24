@@ -51,32 +51,56 @@ return {
 			return tostring(os.date('%Y%m%dT%H%M%S'))
 		end,
 
-		note_frontmatter_func = function(note)
-			-- Add the title of the note as an alias.
-			if note.title then
-				note:add_alias(note.title)
-			end
-
-			local currentDate = os.date('%Y-%m-%d, %H:%M:%S')
-			local frontMatter = {
-				id = note.id,
-				aliases = note.aliases,
-				tags = note.tags,
-				updatedAt = currentDate,
-			}
-
-			-- `note.metadata` contains any manually added fields in the frontmatter.
-			-- So here we just make sure those fields are kept in the frontmatter.
-			if note.metadata ~= nil and not vim.tbl_isempty(note.metadata) then
-				for k, v in pairs(note.metadata) do
-					frontMatter[k] = v
+		frontmatter = {
+			sort = { 'id', 'aliases', 'tags', 'createdAt', 'updatedAt' },
+			func = function(note)
+				-- Add the title of the note as an alias.
+				if note.title then
+					note:add_alias(note.title)
 				end
-			end
 
-			frontMatter.updatedAt = currentDate
+				local updatedAt = os.date('%Y-%m-%d, %H:%M:%S')
 
-			return frontMatter
-		end,
+				local function get_id()
+					local year = os.date('%Y')
+					local has_denote_id_scheme = note.id:sub(1, 4) == year
+					if has_denote_id_scheme then
+						return note.id
+					end
+
+					local buf = vim.api.nvim_buf_get_name(0)
+					if buf == '' then
+						Snacks.notify.error('No file in buffer', { title = 'Move File' })
+						return
+					end
+
+					local file_full_path = vim.fn.fnamemodify(buf, ':p')
+					local birth_time = vim.fn.system({ 'n-file-birth-time', file_full_path })
+
+					return vim.trim(birth_time)
+				end
+
+				local frontMatter = {
+					id = get_id(),
+					aliases = note.aliases,
+					tags = note.tags,
+					createdAt = string.format('[[%s]]', os.date('%Y-%m-%d')),
+					updatedAt = updatedAt,
+				}
+
+				-- `note.metadata` contains any manually added fields in the frontmatter.
+				-- So here we just make sure those fields are kept in the frontmatter.
+				if note.metadata ~= nil and not vim.tbl_isempty(note.metadata) then
+					for k, v in pairs(note.metadata) do
+						frontMatter[k] = v
+					end
+				end
+
+				frontMatter.updatedAt = updatedAt
+
+				return frontMatter
+			end,
+		},
 
 		picker = {
 			name = 'snacks.pick',
