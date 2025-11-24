@@ -18,6 +18,23 @@ return {
 	opts = {
 		legacy_commands = false,
 
+		callbacks = {
+			enter_note = function(note)
+				vim.keymap.set('n', '<Tab>', function()
+					require('obsidian.api').nav_link('next')
+				end, {
+					buffer = note.bufnr,
+					desc = 'Go to next link',
+				})
+				vim.keymap.set('n', '<S-Tab>', function()
+					require('obsidian.api').nav_link('prev')
+				end, {
+					buffer = note.bufnr,
+					desc = 'Go to previous link',
+				})
+			end,
+		},
+
 		checkbox = {
 			order = {
 				' ', -- In progress
