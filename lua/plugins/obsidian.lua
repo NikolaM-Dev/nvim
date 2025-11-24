@@ -84,7 +84,18 @@ return {
 		workspaces = {
 			{
 				name = 'second-brain.md',
-				path = os.getenv('SECOND_BRAIN_PATH') .. '/src',
+				path = function()
+					local L = require('lib')
+
+					local path = L.second_brain.get_second_brain_path()
+					if not path then
+						local msg = 'second brain path env variable not found'
+						L.logger:new('Obsidian'):error(msg)
+						error(msg)
+					end
+
+					return path
+				end,
 			},
 		},
 	},
