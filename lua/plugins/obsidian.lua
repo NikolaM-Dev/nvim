@@ -136,7 +136,7 @@ return {
 	},
 
 	---@module 'obsidian'
-	---@param opts obsidian.config.ClientOpts
+	---@param opts obsidian.config
 	config = function(_, opts)
 		require('obsidian').setup(opts)
 	end,
