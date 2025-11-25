@@ -1,40 +1,27 @@
+---@module 'nkl.lib'
+---@class nkl.lib
+---@field input nkl.lib.input
+---@field key nkl.lib.key
+---@field logger nkl.lib.logger
+---@field second_brain nkl.lib.second_brain
+---@field string nkl.lib.string
 local M = {}
 
----Set a keymap and ensure it's unique
----@param mode string|string[]
----@param lhs string
----@param rhs string|function
----@param opts? vim.keymap.set.Opts
-function M.map(mode, lhs, rhs, opts)
-	opts = opts or {}
-	opts.silent = opts.silent ~= false
-	opts.unique = true
+local path = (...):gsub('%.init$', '')
 
-	pcall(vim.keymap.set, mode, lhs, rhs, opts)
+---Setup all the modules in `lua/lib`
+local function setup()
+	local files = vim.fn.globpath(vim.fn.stdpath('config') .. '/lua/' .. path, '*.lua', false, true)
+
+	for _, file in ipairs(files) do
+		local mod = file:match('([^/]+)%.lua$')
+		if mod ~= 'init' then
+			M[mod] = require(path .. '.' .. mod)
+		end
+	end
 end
 
----Set a keymap for buffer
----@param mode string|string[]
----@param lhs string
----@param rhs string|function
----@param opts? vim.keymap.set.Opts
-function M.bmap(mode, lhs, rhs, opts)
-	opts = vim.tbl_extend('force', {
-		buffer = true,
-		nowait = true,
-		silent = true,
-	}, opts or {})
-
-	vim.keymap.set(mode, lhs, rhs, opts)
-end
-
----Deletes a keymap
----It's useful to remove [Neovim Default Keymaps](https://neovim.io/doc/user/vim_diff.html#default-mappings)
----@param mode string|string[]
----@param lhs string
-function M.dmap(mode, lhs)
-	vim.keymap.del(mode, lhs)
-end
+setup()
 
 ---Create an autogroup with nikola prefix
 ---@param name string The name of the autogroup
