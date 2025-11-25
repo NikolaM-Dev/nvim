@@ -46,9 +46,8 @@ return {
 			folder = 'Journal/daily',
 		},
 
-		note_id_func = function()
-			-- [Denote - The file-naming scheme](https://protesilaos.com/emacs/denote#h:4e9c7512-84dc-4dfb-9fa9-e15d51178e5d)
-			return tostring(os.date('%Y%m%dT%H%M%S'))
+		note_id_func = function(title, _path)
+			return nkl.string.title_case(title)
 		end,
 
 		frontmatter = {
