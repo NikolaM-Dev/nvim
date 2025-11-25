@@ -31,4 +31,35 @@ end
 function M.is_second_brain_note()
 	return vim.bo.filetype == 'markdown' and M.is_second_brain_path()
 end
+
+---Create an autocmd to format Markdown headings to title-case but only if in my second brain
+function M.create_format_headings_autocmd()
+	vim.api.nvim_create_autocmd('BufWritePre', {
+		desc = '󰁨  Format Markdown headings to title-case',
+		group = nkl.augroup('format_markdown_headings_to_title_case'),
+		pattern = '*.md',
+
+		callback = function()
+			if not M.is_second_brain_note() then
+				return
+			end
+
+			local bufnr = vim.api.nvim_get_current_buf()
+			local lines = vim.api.nvim_buf_get_lines(bufnr, 0, -1, false)
+
+			for i, line in ipairs(lines) do
+				if line:match('^#+%s') then
+					local hashes, title = line:match('^(#+)%s*(.*)$')
+					if title and title ~= '' then
+						local formatted = nkl.string.title_case(title)
+						lines[i] = hashes .. ' ' .. formatted
+					end
+				end
+			end
+
+			vim.api.nvim_buf_set_lines(bufnr, 0, -1, false, lines)
+		end,
+	})
+end
+
 return M

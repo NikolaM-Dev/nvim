@@ -1,7 +1,8 @@
-local augroup = require('lib').augroup
+local augroup = nkl.augroup
 
 local autocmd = vim.api.nvim_create_autocmd
 
+nkl.second_brain.setup_format_headings_autocmd()
 vim.api.nvim_create_autocmd('BufReadPost', {
 	desc = 'Enable NoNeckPain from start',
 	group = augroup('enable_noneckpain_from_start'),
