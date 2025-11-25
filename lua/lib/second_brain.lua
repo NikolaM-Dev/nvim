@@ -26,4 +26,9 @@ function M.is_second_brain_path()
 	return cwd == second_brain_path
 end
 
+---Verify if the current file is a note in my second brain
+---@return boolean
+function M.is_second_brain_note()
+	return vim.bo.filetype == 'markdown' and M.is_second_brain_path()
+end
 return M
