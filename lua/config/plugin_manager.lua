@@ -1,4 +1,4 @@
-local map = require('lib').map
+local map = nkl.key.map
 
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 
