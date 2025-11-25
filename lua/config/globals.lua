@@ -19,3 +19,4 @@ vim.g.clipboard = {
 }
 
 _G.is_in_gitsigns_diffthis = false
+_G.nkl = require('lib')
