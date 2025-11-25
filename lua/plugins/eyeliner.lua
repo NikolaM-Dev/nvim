@@ -7,5 +7,6 @@ return {
 
 	opts = {
 		dim = true,
+		highlight_on_key = true,
 	},
 }
