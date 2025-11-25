@@ -12,4 +12,18 @@ function M.get_second_brain_path()
 
 	return base .. '/src'
 end
+
+---Verify if the cwd is the second brain `src` path.
+---This is safe: it returns `false` when `SECOND_BRAIN_PATH` is not set.
+---@return boolean
+function M.is_second_brain_path()
+	local second_brain_path = M.get_second_brain_path()
+	if not second_brain_path then
+		return false
+	end
+
+	local cwd = vim.fn.getcwd()
+	return cwd == second_brain_path
+end
+
 return M
