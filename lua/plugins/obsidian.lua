@@ -60,6 +60,10 @@ return {
 
 				local updatedAt = os.date('%Y-%m-%d, %H:%M:%S')
 
+				---Verify and return a Denote-style ID (YYYYMMDDTHHmmss) for the current note.
+				---
+				---See: [Denote - The file-naming scheme](https://protesilaos.com/emacs/denote#h:4e9c7512-84dc-4dfb-9fa9-e15d51178e5d)
+				---@return string id Denote-style ID (e.g. "20251125T142530") or `''` on error.
 				local function get_id()
 					local year = os.date('%Y')
 					local has_denote_id_scheme = note.id:sub(1, 4) == year
@@ -69,8 +73,8 @@ return {
 
 					local buf = vim.api.nvim_buf_get_name(0)
 					if buf == '' then
-						Snacks.notify.error('No file in buffer', { title = 'Move File' })
-						return
+						nkl.logger:new('Obsidian'):error('No file in buffer')
+						return ''
 					end
 
 					local file_full_path = vim.fn.fnamemodify(buf, ':p')
