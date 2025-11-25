@@ -1,54 +1,54 @@
 {
-  "checkbox": {
-    "prefix": "td",
-    "body": "- [ ] $0"
-  },
-  "list": {
-    "prefix": ",",
-    "body": "- $0"
-  },
   "High Performance Person": {
-    "prefix": "hpp",
-    "body": "High Performance Person"
+    "body": "High Performance Person",
+    "prefix": "hpp"
   },
   "bold": {
-    "prefix": "b",
-    "body": "**$1** $0"
+    "body": "**$1** $0",
+    "prefix": "b"
   },
-  "italic": {
-    "prefix": "i",
-    "body": "_$1_ $0"
-  },
-  "inline-code": {
-    "prefix": "ic",
-    "body": "`$1` $0"
-  },
-  "hr": {
-    "prefix": "hr",
-    "body": "---"
+  "checkbox": {
+    "body": "- [ ] $0",
+    "prefix": "td"
   },
   "h1": {
-    "prefix": "h1",
-    "body": "# $0"
+    "body": "# $0",
+    "prefix": "h1"
   },
   "h2": {
-    "prefix": "h2",
-    "body": "## $0"
+    "body": "## $0",
+    "prefix": "h2"
   },
   "h3": {
-    "prefix": "h3",
-    "body": "### $0"
+    "body": "### $0",
+    "prefix": "h3"
   },
   "h4": {
-    "prefix": "h4",
-    "body": "#### $0"
+    "body": "#### $0",
+    "prefix": "h4"
   },
   "h5": {
-    "prefix": "h5",
-    "body": "##### $0"
+    "body": "##### $0",
+    "prefix": "h5"
   },
   "h6": {
-    "prefix": "h6",
-    "body": "###### $0"
+    "body": "###### $0",
+    "prefix": "h6"
+  },
+  "hr": {
+    "body": "---",
+    "prefix": "hr"
+  },
+  "inline-code": {
+    "body": "`$1` $0",
+    "prefix": "ic"
+  },
+  "italic": {
+    "body": "_$1_ $0",
+    "prefix": "i"
+  },
+  "list": {
+    "body": "- $0",
+    "prefix": ","
   }
 }
