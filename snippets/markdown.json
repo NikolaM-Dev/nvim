@@ -39,6 +39,19 @@
     "body": "---",
     "prefix": "hr"
   },
+  "ignore": {
+    "body": "<!-- prettier-ignore -->",
+    "prefix": "ignore"
+  },
+  "ignoreEnd": {
+    "body": "<!-- prettier-ignore-end -->",
+    "description": "Stylua ignore end range",
+    "prefix": "igend"
+  },
+  "ignoreStart": {
+    "body": "<!-- prettier-ignore-start -->",
+    "prefix": "igstart"
+  },
   "inline-code": {
     "body": "`$1` $0",
     "prefix": "ic"
