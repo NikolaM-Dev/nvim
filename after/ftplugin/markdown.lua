@@ -6,6 +6,23 @@ vim.opt_local.tabstop = 2
 vim.opt_local.colorcolumn = '80'
 vim.opt_local.textwidth = 80
 
+local bmap = nkl.key.bmap
+bmap('ia', 'att', '## Attempt')
+bmap('ia', 'h1', '#')
+bmap('ia', 'h2', '##')
+bmap('ia', 'h3', '###')
+bmap('ia', 'h4', '####')
+bmap('ia', 'h5', '#####')
+bmap('ia', 'h6', '######')
+bmap('ia', 'h6', '######')
+bmap('ia', 'hr', '---')
+bmap('ia', 'itj', '—')
+bmap('ia', 'ol', '1.')
+bmap('ia', 'sc', '**Score:**')
+bmap('ia', 'td', '- [ ]')
+bmap('ia', 'ul', '-')
+bmap('ia', 'ure', 'you\'re')
+
 -- -- Add the key mappings only for Markdown files in a zk notebook.
 -- if require('zk.util').notebook_root(vim.fn.expand('%:p')) ~= nil then
 -- 	local function map(...)
