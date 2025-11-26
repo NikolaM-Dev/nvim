@@ -62,6 +62,82 @@ function M.create_format_headings_autocmd()
 	})
 end
 
+---Open a picker to move the current buffer's file into another directory inside the cwd.
+---Prompts with directories discovered via `fd` and moves the file into the chosen directory,
+---creating the target directory when needed. The moved file is opened and the previous
+---buffer is deleted.
+---
+---Notes:
+---  - Exits early when there is no file associated with the buffer.
+---  - If `fd` is not available the directory list will be empty and the command is a no-op.
+---  - The function will create the destination directory with `vim.fn.mkdir` and perform
+---    the file move with `vim.fn.rename`.
+function M.move_note()
+	local logger = nkl.logger:new('󰗚  Second Brain Lib')
+
+	---Using the command `fd` returns a list with the directories in the cwd
+	---@return string[]
+	local function get_dirs()
+		if vim.fn.executable('fd') == 0 then
+			logger:error('fd not found')
+			return {}
+		end
+
+		return vim.fn.systemlist('fd -td')
+	end
+
+	local dirs = get_dirs()
+	if vim.tbl_isempty(dirs) then
+		return
+	end
+
+	---@type snacks.picker.Item[]
+	local items = {}
+	for _, dir in ipairs(dirs) do
+		table.insert(items, { text = './' .. dir, value = dir })
+	end
+
+	require('snacks').picker.pick({
+		layout = 'select',
+		title = ' 󰪹 Move current file to another directory ',
+		items = items,
+
+		confirm = function(picker, item)
+			picker:close()
+			if not item then
+				return
+			end
+
+			local prev_buf = vim.api.nvim_get_current_buf()
+			local buf = vim.api.nvim_buf_get_name(prev_buf)
+			if buf == '' then
+				logger:error('No file in buffer')
+				return
+			end
+
+			local cwd = vim.fn.getcwd()
+			local dir = item.value
+			local filename = vim.fn.fnamemodify(buf, ':t')
+			local target = vim.fn.resolve(table.concat({ cwd, '/', dir, '/', filename }))
+
+			vim.fn.mkdir(dir, 'p')
+			vim.fn.rename(buf, target)
+			vim.cmd.edit(vim.fn.fnameescape(target))
+			if vim.api.nvim_buf_is_valid(prev_buf) then
+				vim.api.nvim_buf_delete(prev_buf, { force = true })
+			end
+
+			logger:info(string.format('%s moved successfully', vim.fn.fnamemodify(buf, ':t:r')))
+		end,
+
+		format = function(item)
+			return {
+				{ item.text, 'Normal' },
+			}
+		end,
+	})
+end
+
 ---Rename the current Markdown note to match its first-level heading and update references.
 ---
 ---Finds the first-level heading (a line starting with `# `) and renames the file to `<Title>.md` in the same directory when they differ.
