@@ -62,4 +62,95 @@ function M.create_format_headings_autocmd()
 	})
 end
 
+---Rename the current Markdown note to match its first-level heading and update references.
+---
+---Finds the first-level heading (a line starting with `# `) and renames the file to `<Title>.md` in the same directory when they differ.
+---If available, updates references across the workspace using `rg` and `sd`, and finally triggers `ZkIndex` to force re-indexing.
+---
+---Notes:
+---  - Exits early if buffer has no file, file is not a second-brain note, or the target filename already exists.
+---  - `rg` and `sd` are optional; the references update step is skipped if they're unavailable.
+function M.rename_note()
+	local logger = nkl.logger:new('󰗚  Second Brain Lib')
+
+	-- current buffer and file
+	local buf = vim.api.nvim_get_current_buf()
+	local buf_name = vim.api.nvim_buf_get_name(buf)
+	if buf_name == '' then
+		logger:error('No file in buffer')
+		return
+	end
+
+	if not M.is_second_brain_note() then
+		logger:error('Not a second brain note')
+		return
+	end
+
+	local lines = vim.api.nvim_buf_get_lines(buf, 0, -1, false)
+	local current_title
+	for _, line in ipairs(lines) do
+		local t = line:match('^#%s*(.+)')
+		if t and t ~= '' then
+			current_title = t
+			break
+		end
+	end
+
+	if not current_title then
+		logger:error('Title not found')
+		return
+	end
+
+	local filename_noext = vim.fn.fnamemodify(buf_name, ':t:r')
+	if current_title == filename_noext then
+		logger:info('Filename already matches title; nothing to do')
+		return
+	end
+
+	local new_path = vim.fn.fnamemodify(buf_name, ':p:h') .. '/' .. current_title .. '.md'
+	if vim.fn.filereadable(new_path) == 1 then
+		logger:error('Target file already exists: ' .. new_path)
+		return
+	end
+
+	-- open moved file and cleanup
+	vim.fn.mkdir(vim.fn.fnamemodify(new_path, ':h'), 'p')
+	vim.fn.rename(buf_name, new_path)
+	vim.cmd.edit(vim.fn.fnameescape(new_path))
+	if vim.api.nvim_buf_is_valid(buf) then
+		vim.api.nvim_buf_delete(buf, { force = true })
+	end
+
+	logger:info(string.format('%s renamed to %s', filename_noext, current_title))
+
+	-- verify commands
+	if vim.fn.executable('sd') == 0 then
+		logger:warn('`sd` not available; skipping references update')
+		return
+	end
+
+	if vim.fn.executable('rg') == 0 then
+		logger:warn('`rg` not available; skipping references update')
+		return
+	end
+
+	-- update references
+	local cmd = string.format(
+		' rg -lF --hidden --no-ignore-vcs %q | xargs -d "\n" sd %q %q',
+		filename_noext,
+		filename_noext,
+		current_title
+	)
+
+	local out = vim.fn.system(cmd)
+	if vim.v.shell_error ~= 0 then
+		logger:error('References update failed: ' .. out)
+		return
+	end
+
+	-- force zk indexing
+	vim.cmd('ZkIndex')
+	logger:info('References updated')
+end
+
 return M
