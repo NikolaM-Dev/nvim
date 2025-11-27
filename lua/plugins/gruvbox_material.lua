@@ -20,9 +20,12 @@ return {
 	config = function()
 		vim.cmd.colorscheme('gruvbox-material')
 
-		vim.api.nvim_set_hl(0, '@lsp.type.comment.lua', { fg = 'none' })
-		vim.api.nvim_set_hl(0, 'PMenu', { bg = 'none' })
-		vim.api.nvim_set_hl(0, 'PMenuSel', { bg = '#45403d', fg = 'none' })
-		vim.api.nvim_set_hl(0, 'inactiveBorderColor', { fg = '#7c6f64' })
+		local hl = vim.api.nvim_set_hl
+		hl(0, '@lsp.type.comment.lua', { fg = 'none' })
+		hl(0, 'PMenu', { bg = 'none' })
+		hl(0, 'PMenuSel', { bg = '#45403d', fg = 'none' })
+		hl(0, 'inactiveBorderColor', { fg = '#7c6f64' })
+		hl(0, 'EyelinerPrimary', { link = 'Substitute', default = true })
+		hl(0, 'EyelinerSecondary', { link = 'IncSearch', default = true })
 	end,
 }
