@@ -13,7 +13,7 @@ return {
 	},
 
 	config = function(_, opts)
-		local map = require('lib').map
+		local map = require('lib').key.map
 
 		---@param next? boolean
 		---@param severity? string|integer
