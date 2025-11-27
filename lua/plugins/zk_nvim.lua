@@ -17,6 +17,19 @@ return {
 	---@type table
 	opts = {
 		picker = 'snacks_picker',
+		picker_options = {
+			---@module 'snacks'
+			---@type snacks.picker.config
+			snacks_picker = {
+				win = {
+					preview = {
+						wo = {
+							wrap = true,
+						},
+					},
+				},
+			},
+		},
 	},
 
 	---@param opts? table
