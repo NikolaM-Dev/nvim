@@ -30,6 +30,8 @@ return {
 
 				['<C-j>'] = { 'select_next' },
 				['<C-k>'] = { 'select_prev' },
+				['<CR>'] = { 'accept_and_enter', 'fallback' },
+				['<S-CR>'] = { 'select_accept_and_enter', 'fallback' },
 			},
 		},
 
