@@ -16,6 +16,15 @@ return {
 		},
 
 		cmdline = {
+			completion = {
+				ghost_text = { enabled = true },
+				list = { selection = { preselect = false } },
+				menu = {
+					auto_show = function()
+						return vim.fn.getcmdtype() == ':'
+					end,
+				},
+			},
 			keymap = {
 				preset = 'cmdline',
 
