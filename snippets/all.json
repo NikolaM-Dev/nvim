@@ -1,0 +1,30 @@
+{
+  "today date": {
+    "body": "${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+    "prefix": "today date"
+  },
+  "today time": {
+    "body": "${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+    "prefix": "today time"
+  },
+  "today timestamp": {
+    "body": "${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}, ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+    "prefix": "today timestamp"
+  },
+  "todo": {
+    "body": "$LINE_COMMENT TODO: $0",
+    "prefix": "todo"
+  },
+  "uuid v4": {
+    "body": "${UUID}",
+    "prefix": "uuid"
+  },
+  "vim modeline (filetype)": {
+    "body": "$LINE_COMMENT vim: filetype=${1:filetype}",
+    "prefix": "vim modeline (filetype)"
+  },
+  "vim modeline (foldlevel)": {
+    "body": "$LINE_COMMENT vim: foldlevel=${1:2}",
+    "prefix": "vim modeline (foldlevel)"
+  }
+}
