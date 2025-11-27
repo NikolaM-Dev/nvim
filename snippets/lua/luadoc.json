@@ -1,0 +1,6 @@
+{
+  "lazy": {
+    "prefix": "@lazy",
+    "body": ["---@module 'lazy.types'", "---@type LazySpec"]
+  }
+}

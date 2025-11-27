@@ -1,0 +1,79 @@
+{
+  "g": {
+    "prefix": "g",
+    "body": "_G.",
+    "description": "Lua global variables"
+  },
+  "ignoreStart": {
+    "prefix": "igstart",
+    "body": "-- stylua: ignore start",
+    "description": "Stylua ignore start range"
+  },
+  "ignoreEnd": {
+    "prefix": "igend",
+    "body": "-- stylua: ignore end",
+    "description": "Stylua ignore end range"
+  },
+  "plugin": {
+    "prefix": "plugin",
+    "body": [
+      "---@module 'lazy.types'",
+      "---@type LazySpec",
+      "return {",
+      "\t'$0',",
+      "\tdesc = '',",
+      "\tenabled = true,",
+      "",
+      "\tconfig= true",
+      "}"
+    ]
+  },
+
+  "lang": {
+    "prefix": "lang",
+    "body": [
+      "---@module 'lazy.types'",
+      "---@type LazySpec",
+      "return {",
+      "\t{",
+      "\t\t'nvim-treesitter/nvim-treesitter',",
+      "\t\topts = function(_, opts)",
+      "\t\t\tvim.list_extend(opts.languages, { '$1' })",
+      "\t\tend,",
+      "\t},",
+      "\t{",
+      "\t\t'williamboman/mason.nvim',",
+      "\t\topts = function(_, opts)",
+      "\t\t\tvim.list_extend(opts.ensure_installed, { '$2' })",
+      "\t\tend,",
+      "\t},",
+      "\t{",
+      "\t\t'neovim/nvim-lspconfig',",
+      "\t\topts = function(_, opts)",
+      "\t\t\topts.servers['$3'] = {}",
+      "\t\tend,",
+      "\t},",
+      "\t{",
+      "\t\t'stevearc/conform.nvim',",
+      "\t\topts = function(_, opts)",
+      "\t\t\topts.formatters_by_ft['$3'] = { '$4' }",
+      "\t\tend,",
+      "\t},",
+      "\t{",
+      "\t\t'mfussenegger/nvim-dap',",
+      "\t\t---@param opts nkl.debug",
+      "\t\topts = function(_, opts)",
+      "\t\t\topts.adapters['$5'] = {},",
+      "\t\t\topts.configurations['$3'] = {",
+      "\t\t\t\t-- config #1",
+      "\t\t\t},",
+      "\t\tend,",
+      "\t},",
+      "",
+      "\t-- TODO: testing",
+      "}",
+      "$0"
+    ],
+    "description": "Base setup for langs"
+  }
+}
