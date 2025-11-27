@@ -1,0 +1,10 @@
+{
+  "function": {
+    "body": ["${2:void} ${1:fun}(${3:void}) {", "\t$0", "}"],
+    "prefix": "fn"
+  },
+  "printf": {
+    "body": ["printf(\"${1:%s}\\n\"$2);"],
+    "prefix": "printf"
+  }
+}
