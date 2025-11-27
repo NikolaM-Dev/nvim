@@ -77,26 +77,21 @@ function M.title_case(payload, style)
 	}
 
 	local selected_style = STYLES[style] or STYLES['new_york_times']
-
-	---@cast payload string
 	local words = {}
 	for word in payload:gmatch('%S+') do
-		table.insert(words, word)
+		table.insert(words, word:lower())
 	end
 
 	local result = {}
-
 	for i, word in ipairs(words) do
-		local lower = word:lower()
-
 		if SPECIAL_WORDS[word] then
 			table.insert(result, SPECIAL_WORDS[word])
 		elseif i == 1 or i == #words then
-			table.insert(result, word:sub(1, 1):upper() .. word:sub(2):lower())
-		elseif selected_style[lower] then
-			table.insert(result, selected_style[lower])
+			table.insert(result, word:sub(1, 1):upper() .. word:sub(2))
+		elseif selected_style[word] then
+			table.insert(result, selected_style[word])
 		else
-			table.insert(result, word:sub(1, 1):upper() .. word:sub(2):lower())
+			table.insert(result, word:sub(1, 1):upper() .. word:sub(2))
 		end
 	end
 
