@@ -28,8 +28,9 @@ return {
 		})
 
 		-- Add binaries installed by mason.nvim to path
-		vim.env.PATH = table.concat({ vim.fn.stdpath('data'), 'mason', 'bin' }, '/') .. ':' .. vim.env.PATH
+		vim.env.PATH = vim.fn.stdpath('data') .. '/mason/bin:' .. vim.env.PATH
 
+		-- Auto install packages
 		local mason_registry = require('mason-registry')
 		local function ensure_installed()
 			for _, s in ipairs(opts.ensure_installed) do
