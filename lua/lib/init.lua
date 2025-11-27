@@ -4,6 +4,7 @@
 ---@field key nkl.lib.key
 ---@field logger nkl.lib.logger
 ---@field second_brain nkl.lib.second_brain
+---@field sort nkl.lib.sort
 ---@field string nkl.lib.string
 local M = {}
 
