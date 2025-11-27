@@ -63,5 +63,9 @@
   "list": {
     "body": "- $0",
     "prefix": ","
+  },
+  "theo vod": {
+    "body": "- _${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}_ ${CLIPBOARD}",
+    "prefix": "vod"
   }
 }
