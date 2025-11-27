@@ -48,7 +48,7 @@ vim.o.undofile = true -- Automatically saves undo history to an undo file when w
 vim.o.winbar = '%=%m %t' -- The window bar is a bar that's shown at the top of every window with it enabled
 vim.o.winborder = 'rounded' -- Defines the default border style of floating windows
 vim.o.wrap = false -- Wrap lines
-vim.o.writebackup = false -- Don't backup before overwriting
+vim.o.writebackup = false -- Don't back-up before overwriting
 
 vim.schedule(function()
 	vim.o.clipboard = 'unnamedplus' -- use system clipboard
