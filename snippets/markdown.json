@@ -11,6 +11,10 @@
     "body": "- [ ] $0",
     "prefix": "td"
   },
+  "code": {
+    "body": ["```${1:lang}", "$0", "```"],
+    "prefix": "c"
+  },
   "h1": {
     "body": "# $0",
     "prefix": "h1"
