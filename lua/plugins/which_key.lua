@@ -7,6 +7,16 @@ return {
 
 	event = 'VeryLazy',
 
+	keys = {
+		{
+			'<leader>g?',
+			function()
+				require('which-key').show({ global = false })
+			end,
+			desc = '󰋖 Show buffer available keymaps',
+		},
+	},
+
 	---@class wk.Opts
 	opts = {
 		delay = '400',
