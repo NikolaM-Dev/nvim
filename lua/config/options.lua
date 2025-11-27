@@ -42,6 +42,7 @@ vim.o.splitbelow = true -- Split window below
 vim.o.splitright = true -- Split window right
 vim.o.swapfile = false -- Creates a swapfile
 vim.o.termguicolors = true -- True color support
+vim.o.timeoutlen = 200 -- time to wait for a mapped sequence to complete (in milliseconds)
 vim.o.undodir = vim.fn.stdpath('data') .. '/nvim/undodir' -- Undodir path
 vim.o.undofile = true -- Automatically saves undo history to an undo file when writing a buffer to a file, and restores undo history from the same file on buffer read.
 vim.o.winbar = '%=%m %t' -- The window bar is a bar that's shown at the top of every window with it enabled
