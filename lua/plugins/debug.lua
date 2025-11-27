@@ -148,7 +148,7 @@ return {
 			render = {
 				max_value_lines = 3,
 				sort_variables = function(a, b)
-					return a.name < b.name
+					return nkl.sort.natural_less(a.name, b.name)
 				end,
 			},
 		},
