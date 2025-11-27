@@ -1,5 +1,6 @@
 require('config.globals')
 require('config.options')
+require('config.commands')
 require('config.autocmds')
 require('config.keymaps')
 require('config.plugin_manager')
