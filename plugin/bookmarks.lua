@@ -1,5 +1,3 @@
-local map = require('lib').map
-
 ---Get bookmarks in a flattened table
 ---@return table<string, string>|table<string, table<string, string>>
 local function get_bookmarks()
@@ -165,6 +163,6 @@ local function browse_bookmarks()
 	})
 end
 
-map('n', '<leader>bb', function()
+nkl.key.map('n', '<leader>bb', function()
 	browse_bookmarks()
 end, { desc = '[B]rowse [B]ookmarks' })
