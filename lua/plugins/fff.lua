@@ -42,4 +42,23 @@ return {
 			toggle_debug = '<F2>',
 		},
 	},
+
+	---@param opts table
+	config = function(_, opts)
+		require('fff').setup(opts)
+
+		vim.api.nvim_create_autocmd({
+			'BufDelete',
+			'BufEnter',
+			'BufNewFile',
+			'BufReadPost',
+			'BufWipeout',
+			'BufWritePost',
+			'FocusGained',
+		}, {
+			command = 'FFFScan',
+			desc = 'Index New Files',
+			group = nkl.augroup('index_new_files'),
+		})
+	end,
 }
