@@ -26,6 +26,8 @@ return {
 		docs = 'https://codeberg.org/mfussenegger/nvim-dap/wiki',
 		enabled = true,
 
+		dependencies = { 'rcarriga/nvim-dap-ui', 'theHamsta/nvim-dap-virtual-text' },
+
 		keys = {
 			-- stylua: ignore start
 			{ '<leader>dB', function() require('dap').set_breakpoint(vim.fn.input('Breakpoint condition: ')) end, desc = 'Breakpoint Condition' },
