@@ -51,10 +51,9 @@ return {
 		keymap = {
 			preset = 'enter',
 
-			['<S-CR>'] = { 'select_and_accept' },
+			['<C-d>'] = { 'scroll_documentation_down', 'fallback' },
 			['<C-j>'] = { 'select_next', 'fallback_to_mappings' },
 			['<C-k>'] = { 'select_prev', 'fallback_to_mappings' },
-			['<C-d>'] = { 'scroll_documentation_down', 'fallback' },
 			['<C-u>'] = { 'scroll_documentation_up', 'fallback' },
 		},
 
