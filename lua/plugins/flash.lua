@@ -9,7 +9,14 @@ return {
 
 	---@module 'flash'
 	---@type Flash.Config
-	opts = {},
+	opts = {
+		modes = {
+			char = {
+				-- Disable since I'm using `eyeliner` + `clever-f`
+				enabled = false,
+			},
+		},
+	},
 
 	keys = {
 		-- stylua: ignore start
