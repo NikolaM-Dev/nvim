@@ -1,0 +1,10 @@
+{
+  "default": {
+    "body": ["# List avalible recipes", "default:", "\tjust --list"],
+    "prefix": "default"
+  },
+  "shebang": {
+    "body": "#!/usr/bin/env bash",
+    "prefix": "sb"
+  }
+}
