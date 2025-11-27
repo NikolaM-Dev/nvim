@@ -158,11 +158,18 @@ return {
 			local dapui = require('dapui')
 			dapui.setup(opts)
 
+			-- stylua: ignore start
+			local function close() require('nvim-dap-virtual-text').refresh() end
+			local function open() dapui.open({ reset = true }) end
+			-- stylua: ignore end
+
 			local dap = require('dap')
-			dap.listeners.before.attach.dapui_config = dapui.open
-			dap.listeners.before.launch.dapui_config = dapui.open
-			dap.listeners.before.event_terminated.dapui_config = dapui.close
-			dap.listeners.before.event_exited.dapui_config = dapui.close
+			dap.listeners.after.event_initialized.dapui_config = open
+			dap.listeners.before.attach.dapui_config = open
+			dap.listeners.before.launch.dapui_config = open
+
+			dap.listeners.before.event_terminated.dapui_config = close
+			dap.listeners.before.event_exited.dapui_config = close
 		end,
 	},
 
