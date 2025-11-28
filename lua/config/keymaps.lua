@@ -8,6 +8,28 @@ dmap({ 'n' }, ']d', { desc = 'Delete to use to jump to the next diagnostic' })
 dmap({ 'n' }, 'grr', { desc = 'Delete default references keymap to use a picker based' })
 
 map('ia', 'ellip', '…')
+-- TODO: Add `count` support
+map('n', 'p', function()
+	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+	vim.cmd('normal! p')
+
+	-- Only move down if the pasted register was linewise
+	if vim.fn.getregtype() == 'V' then
+		local new_row = math.min(vim.api.nvim_buf_line_count(0), row + 1)
+		vim.api.nvim_win_set_cursor(0, { new_row, col })
+	end
+end, { desc = 'Paste and stay near original position (linewise only)' })
+
+map('n', 'P', function()
+	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+	vim.cmd('normal! P')
+
+	-- Only move down if the pasted register was linewise
+	if vim.fn.getregtype() == 'V' then
+		local new_row = math.min(vim.api.nvim_buf_line_count(0), row)
+		vim.api.nvim_win_set_cursor(0, { new_row, col })
+	end
+end, { desc = 'Paste and stay near original position (linewise only)' })
 map('n', '<leader>li', '<cmd>LspInfo<cr>', { desc = ' [L]sp', '[I]nfo' })
 map('n', '<leader>lr', '<cmd>LspRestart<cr>', { desc = '[R]estart [L]sp' })
 
