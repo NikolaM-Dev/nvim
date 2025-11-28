@@ -99,6 +99,20 @@ map('i', '?', '?<C-g>u', { desc = 'Add undo break after type ?' })
 map('i', '_', '_<C-g>u', { desc = 'Add undo break after type _' })
 map('n', 'o', 'o<C-g>u', { desc = 'Add undo break after type o' })
 
+map('n', 'i', function()
+	local _row, col = unpack(vim.api.nvim_win_get_cursor(0))
+	local indent = vim.fn.indent('.')
+	local line = vim.api.nvim_get_current_line()
+	local is_empty_line = col == 0 and indent == 0 and line:match('^%s*$')
+
+	if is_empty_line then
+		local key = vim.api.nvim_replace_termcodes('S', true, false, true)
+		vim.api.nvim_feedkeys(key, 'n', true)
+	else
+		vim.cmd('startinsert')
+	end
+end, { desc = 'Insert in the right indentation' })
+
 map('n', '<C-u>', '<C-u>zz', { desc = 'Scroll up centralized' })
 map('n', '<C-d>', '<C-d>zz', { desc = 'Scroll down centralized' })
 
