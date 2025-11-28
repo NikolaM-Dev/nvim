@@ -318,7 +318,52 @@ map('n', 'gs', function()
 		pcall(close_window_and_buffer)
 	end, { buffer = bufnr })
 end, { desc = ' Search in Und*ck' })
-end)
+
+map('n', 'gai', function()
+	local api = vim.api
+	local bufnr = api.nvim_create_buf(false, false)
+	vim.bo[bufnr].buftype = 'prompt'
+	vim.fn.prompt_setprompt(bufnr, ' ')
+	api.nvim_buf_set_extmark(bufnr, api.nvim_create_namespace('WebSearch'), 0, 0, {
+		line_hl_group = 'String',
+	})
+	local width = math.floor(vim.o.columns * 0.5)
+	local winid = api.nvim_open_win(bufnr, true, {
+		relative = 'editor',
+		row = 5,
+		width = width,
+		height = 5,
+		col = math.floor(vim.o.columns / 2) - math.floor(width / 2),
+		border = 'rounded',
+		title = '   ChatGPT ',
+		title_pos = 'center',
+	})
+	vim.cmd.startinsert()
+	vim.wo[winid].number = false
+	vim.wo[winid].relativenumber = false
+	vim.wo[winid].statuscolumn = ''
+	vim.wo[winid].lcs = 'trail: '
+	vim.wo[winid].wrap = true
+	vim.wo[winid].signcolumn = 'no'
+
+	local function close_window_and_buffer()
+		api.nvim_win_close(winid, true)
+		api.nvim_buf_delete(bufnr, { force = true })
+	end
+
+	vim.fn.prompt_setcallback(bufnr, function(text)
+		vim.ui.open(('https://chat.openai.com?new&q=%s'):format(vim.trim(text)))
+		close_window_and_buffer()
+	end)
+
+	vim.keymap.set({ 'n', 'i' }, '<C-q>', function()
+		pcall(close_window_and_buffer)
+	end, { buffer = bufnr })
+
+	vim.keymap.set({ 'n' }, '<esc>', function()
+		pcall(close_window_and_buffer)
+	end, { buffer = bufnr })
+end, { desc = ' Search in ChatGPT' })
 map('n', '<leader>fcc', function()
 	local logger = nkl.logger:new('Keymaps')
 	local buf = vim.api.nvim_buf_get_name(0)
