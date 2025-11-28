@@ -8,6 +8,9 @@ dmap({ 'n' }, ']d', { desc = 'Delete to use to jump to the next diagnostic' })
 dmap({ 'n' }, 'grr', { desc = 'Delete default references keymap to use a picker based' })
 
 map('ia', 'ellip', '…')
+map('v', '??', 'y:h <C-R>"<cr>"', { desc = 'Show vim help' })
+map('v', '?/', 'y:/ <C-R>"<cr>"', { desc = 'Search across the buffer' })
+
 map('n', 'J', 'mzJ`z', { desc = 'Join lines keeping the cursor in it\'s position' })
 
 -- TODO: Add `count` support
