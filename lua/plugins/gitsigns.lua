@@ -44,11 +44,10 @@ return {
 					vim.cmd.normal({ ']c', bang = true })
 				else
 					gitsigns.nav_hunk('next')
+					vim.defer_fn(function()
+						vim.cmd('normal! zz')
+					end, 10)
 				end
-
-				vim.defer_fn(function()
-					vim.cmd('normal! zz')
-				end, 10)
 			end, { desc = 'Next [C]hange' })
 
 			map('n', '[c', function()
@@ -56,11 +55,10 @@ return {
 					vim.cmd.normal({ '[c', bang = true })
 				else
 					gitsigns.nav_hunk('prev')
+					vim.defer_fn(function()
+						vim.cmd('normal! zz')
+					end, 10)
 				end
-
-				vim.defer_fn(function()
-					vim.cmd('normal! zz')
-				end, 10)
 			end, { desc = 'Previous [C]hange' })
 
 			-- Actions
