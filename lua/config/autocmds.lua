@@ -13,7 +13,7 @@ autocmd({ 'BufEnter' }, {
 	end,
 })
 
-vim.api.nvim_create_autocmd('BufReadPost', {
+autocmd('BufReadPost', {
 	desc = 'Enable NoNeckPain from start',
 	group = augroup('enable_noneckpain_from_start'),
 	once = true,
@@ -24,6 +24,21 @@ vim.api.nvim_create_autocmd('BufReadPost', {
 		end
 	end,
 })
+
+autocmd('TermOpen', {
+	desc = 'Dynamic terminal settings and options',
+	group = augroup('dynamic_terminal_settings_and_options'),
+	callback = function(args)
+		if vim.bo[args.buf].filetype == 'sidekick_terminal' then
+			return
+		end
+
+		-- vim.opt_local.number = true
+		-- vim.opt_local.relativenumber = true
+		nkl.key.bmap('t', '<esc>', '<C-\\><C-n>', { buffer = args.buf })
+	end,
+})
+
 autocmd('TextYankPost', {
 	desc = 'Highlight yank',
 	group = augroup('highlight_yank'),
@@ -151,6 +166,8 @@ autocmd({ 'BufLeave', 'FocusLost', 'InsertLeave', 'TextChanged' }, {
 	group = augroup('auto_save'),
 	callback = function(ctx)
 		local save_instantly = ctx.event == 'FocusLost'
+			or ctx.event == 'BufLeave'
+			or nkl.second_brain.is_second_brain_note()
 		local bufnr = ctx.buf
 		local bo, b = vim.bo[bufnr], vim.b[bufnr]
 		local bufname = ctx.file
