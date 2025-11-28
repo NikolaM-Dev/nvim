@@ -30,6 +30,30 @@ map('n', 'P', function()
 		vim.api.nvim_win_set_cursor(0, { new_row, col })
 	end
 end, { desc = 'Paste and stay near original position (linewise only)' })
+
+-- TODO: Add indentation
+map({ 'i', 'n' }, '<C-/>', function()
+	local row, col = unpack(vim.api.nvim_win_get_cursor(0))
+	local line = vim.api.nvim_get_current_line()
+	local cmt = vim.bo.commentstring:gsub('%%s', ''):match('^%s*(.-)%s*$')
+
+	local commented = line:find('^%s*' .. vim.pesc(cmt))
+	if commented then
+		-- Uncomment
+		local before = #line
+		line = line:gsub('^%s*' .. vim.pesc(cmt) .. '%s?', '', 1)
+		local after = #line
+		col = math.max(col - (before - after), 0)
+	else
+		-- Comment
+		line = cmt .. ' ' .. line
+		col = col + #cmt + 1
+	end
+
+	vim.api.nvim_set_current_line(line)
+	vim.api.nvim_win_set_cursor(0, { row, col })
+end, { desc = 'Toggle Comment Line' })
+
 map('n', '<leader>li', '<cmd>LspInfo<cr>', { desc = ' [L]sp', '[I]nfo' })
 map('n', '<leader>lr', '<cmd>LspRestart<cr>', { desc = '[R]estart [L]sp' })
 
