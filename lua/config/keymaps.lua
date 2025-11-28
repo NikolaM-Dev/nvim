@@ -372,7 +372,14 @@ map('n', 'gai', function()
 		pcall(close_window_and_buffer)
 	end, { buffer = bufnr })
 end, { desc = ' Search in ChatGPT' })
+
 map('i', '<S-CR>', '<C-o>o', { desc = 'Insert new line without comments' })
+
+-- map('t', '<esc>', '<C-\\><C-n>', { desc = 'Esc works as normal in terminal mode' })
+map('t', '<C-\\><C-\\>', '<C-\\><C-n>', { desc = 'Esc works as normal in terminal mode' })
+map({ 't' }, '<M-t>', '<C-\\><C-n><cmd>tabnext<cr>', { desc = 'Go to next tab' })
+map({ 'i', 'n' }, '<M-t>', '<esc><cmd>tabnext<cr>', { desc = 'Go to next tab' })
+
 map('n', '<leader>fcc', function()
 	local logger = nkl.logger:new('Keymaps')
 	local buf = vim.api.nvim_buf_get_name(0)
