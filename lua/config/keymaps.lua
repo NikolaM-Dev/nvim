@@ -267,6 +267,10 @@ map('n', '<leader><leader>x', '<cmd>source %<cr>', { desc = 'e[X]ecute current l
 map('n', '<leader>x', '<cr>.lua<cr>', { desc = 'e[X]ecute current lua line' })
 map('v', '<leader>x', ':lua<cr>', { desc = 'e[X]ecute selected lua lines' })
 map('n', '<M-b>', '<esc><cmd>b#<cr>', { desc = 'Go to last buffer' })
+map('n', 'gX', function()
+	vim.ui.open(('https://www.reverso.net/text-translation#sl=eng&tl=spa&text=%s'):format(vim.fn.expand('<cword>')))
+end, { desc = '󰊿 Open Current Word Into reverso.net' })
+
 map('x', 'gX', function()
 	local lines = vim.fn.getregion(vim.fn.getpos('.'), vim.fn.getpos('v'), { type = vim.fn.mode() })
 	vim.ui.open(
