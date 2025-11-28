@@ -32,6 +32,16 @@ autocmd('TextYankPost', {
 	end,
 })
 
+autocmd({ 'FocusGained', 'TermClose', 'TermLeave' }, {
+	desc = 'Check if we need to reload the file when it changed',
+	group = augroup('check_if_we_need_to_reload_the_file_when_it_changed'),
+	callback = function()
+		if vim.o.buftype ~= 'nofile' then
+			vim.cmd('checktime')
+		end
+	end,
+})
+
 autocmd({ 'BufWritePre' }, {
 	command = [[%s/\s\+$//e]],
 	desc = 'Remove trailing whitespace',
