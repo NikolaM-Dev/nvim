@@ -1,5 +1,4 @@
-local dmap = require('lib').dmap
-local map = require('lib').map
+local dmap, map = nkl.key.dmap, nkl.key.map
 
 -- TODO: :silent mkspell! %, to generate spell files
 
