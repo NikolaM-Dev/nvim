@@ -8,6 +8,8 @@ dmap({ 'n' }, ']d', { desc = 'Delete to use to jump to the next diagnostic' })
 dmap({ 'n' }, 'grr', { desc = 'Delete default references keymap to use a picker based' })
 
 map('ia', 'ellip', '…')
+map('n', '<leader>li', '<cmd>LspInfo<cr>', { desc = ' [L]sp', '[I]nfo' })
+map('n', '<leader>lr', '<cmd>LspRestart<cr>', { desc = '[R]estart [L]sp' })
 
 map('n', '<C-s>', '<cmd>write<cr>', { desc = 'Write buffer' })
 map('n', '<leader><C-s>', '<cmd>wall<cr>', { desc = 'Write All changed buffers' })
