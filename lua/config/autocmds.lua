@@ -145,7 +145,7 @@ autocmd({ 'BufWritePost' }, {
 	end,
 })
 
--- From https://github.com/chrisgrieser/.config/blob/main/nvim/lua/config/autocmds.lua
+---https://github.com/chrisgrieser/.config/blob/6e5e7841959612a9aec4b8e8801779316c2c224d/nvim/lua/config/autocmds.lua#L122-L144
 autocmd({ 'BufLeave', 'FocusLost', 'InsertLeave', 'TextChanged' }, {
 	desc = 'Auto save',
 	group = augroup('auto_save'),
