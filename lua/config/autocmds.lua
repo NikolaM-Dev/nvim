@@ -3,6 +3,16 @@ local augroup = nkl.augroup
 local autocmd = vim.api.nvim_create_autocmd
 
 nkl.second_brain.create_format_headings_autocmd()
+autocmd({ 'BufEnter' }, {
+	desc = 'Disables autocommenting on new lines',
+	group = augroup('disables_autocommenting_on_new_lines'),
+	pattern = '*',
+	callback = function()
+		-- Don't add a new comment with using `o` or `O`
+		vim.opt.formatoptions:remove({ 'o' })
+	end,
+})
+
 vim.api.nvim_create_autocmd('BufReadPost', {
 	desc = 'Enable NoNeckPain from start',
 	group = augroup('enable_noneckpain_from_start'),
