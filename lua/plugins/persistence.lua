@@ -11,9 +11,17 @@ return {
 		{
 			'<leader>ls',
 			function()
-				require('persistence').load()
+				require('persistence').load({ last = true })
 			end,
 			desc = '[L]ast [S]ession',
+		},
+		{
+			'<leader>R',
+			function()
+				require('persistence').save()
+				vim.cmd.restart()
+			end,
+			desc = '[R]estart NeoVim with session',
 		},
 	},
 
