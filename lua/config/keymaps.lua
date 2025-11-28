@@ -395,3 +395,49 @@ end, { desc = '  [F]ile [C]opy Absolute Path' })
 
 map('n', '<M-m>', nkl.second_brain.move_note, { desc = '󰪹 Move current file to another directory' })
 map('n', '<M-r>', nkl.second_brain.rename_note, { desc = ' Rename note and change it\'s ocurrencies' })
+
+map('v', '<leader><leader>t', function()
+	-- 1. Exit visual mode to update the '< and '> marks
+	vim.cmd('noau normal! "vy')
+	-- Note: We technically don't need to yank ("vy), but hitting escape
+	-- or using 'normal! \27' ensures the visual marks are set.
+	-- The cleanest way to update marks without side effects is simply:
+	local esc = vim.api.nvim_replace_termcodes('<Esc>', true, false, true)
+	vim.api.nvim_feedkeys(esc, 'x', false)
+
+	-- 2. Get the range of the visual selection
+	-- '< is the start, '> is the end
+	local start_pos = vim.fn.getpos('\'<')
+	local end_pos = vim.fn.getpos('\'>')
+
+	-- getpos returns [buf, line, col, off].
+	-- API uses 0-indexed rows and columns.
+	local s_row = start_pos[2] - 1
+	local s_col = start_pos[3] - 1
+	local e_row = end_pos[2] - 1
+	local e_col = end_pos[3] -- API end_col is exclusive, so we don't subtract 1 here to include the last char
+
+	-- Handle "Line Visual Mode" (V) edge case
+	-- If user used 'V', end_col might be weird. We clamp it to the line length.
+	if vim.fn.visualmode() == 'V' then
+		s_col = 0
+		local line_content = vim.api.nvim_buf_get_lines(0, e_row, e_row + 1, false)[1]
+		e_col = #line_content
+	end
+
+	-- 3. Get the specific text within the selection
+	-- This returns a table (array) of strings, one for each line in the selection
+	local lines = vim.api.nvim_buf_get_text(0, s_row, s_col, e_row, e_col, {})
+
+	-- This regex grabs all whitespace from the start of the string
+	local indent = lines[1]:match('^%s*') or ''
+
+	-- 4. Transform the text
+	local new_lines = {}
+	for _, line in ipairs(lines) do
+		table.insert(new_lines, indent .. nkl.string.title_case(line))
+	end
+
+	-- 5. Set the new text back into that exact range
+	vim.api.nvim_buf_set_text(0, s_row, s_col, e_row, e_col, new_lines)
+end, { desc = 'Title Case Selection' })
