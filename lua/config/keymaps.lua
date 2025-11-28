@@ -129,6 +129,19 @@ map('n', '<C-i>', '<C-i>zz', { desc = 'Next History centralized' })
 
 map('n', '*', '*zz', { desc = 'Search forward for the word under the cursor centralized' })
 map('n', '#', '#zz', { desc = 'Search backward for the word under the cursor centralized' })
+map(
+	'n',
+	'g*',
+	'g*zz',
+	{ desc = 'Search forword for the wonrd under the cursor without a whole-word match centralized' }
+)
+map(
+	'n',
+	'g#',
+	'g#zz',
+	{ desc = 'Search forword for the wonrd under the cursor without a whole-word match centralized' }
+)
+
 map({ 'i', 'n' }, '<esc>', '<cmd>noh<cr><esc>', { desc = 'Escape and clear hlsearch' })
 
 map('x', '<leader>sl', ':sort<cr>', { desc = '[S]ort [L]ines' })
