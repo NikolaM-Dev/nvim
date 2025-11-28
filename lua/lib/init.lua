@@ -1,5 +1,6 @@
 ---@module 'nkl.lib'
 ---@class nkl.lib
+---@field apply nkl.lib.apply
 ---@field key nkl.lib.key
 ---@field logger nkl.lib.logger
 ---@field second_brain nkl.lib.second_brain
