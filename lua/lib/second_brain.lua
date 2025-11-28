@@ -225,7 +225,7 @@ function M.rename_note()
 	end
 
 	-- force zk indexing
-	vim.cmd('ZkIndex')
+	require('zk').index({}, function() end)
 	logger:info('References updated')
 end
 
