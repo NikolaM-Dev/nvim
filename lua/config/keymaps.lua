@@ -12,6 +12,8 @@ map('ia', 'ellip', '…')
 map('n', '<C-s>', '<cmd>write<cr>', { desc = 'Write buffer' })
 map('n', '<leader><C-s>', '<cmd>wall<cr>', { desc = 'Write All changed buffers' })
 map({ 'i', 'x' }, '<C-s>', '<esc><cmd>write<cr>', { desc = 'Write buffer' })
+map('n', 'ZS', '<cmd>wall | qa<cr>', { desc = 'Write All changed buffers and quits' })
+map('n', 'ZX', '<cmd>qa!<cr>', { desc = 'Bails out of everything' })
 
 map('n', '<leader>lG', function()
 	vim.fn.system('tmux new-window -c "#{pane_current_path}" -n "   " lazygit')
