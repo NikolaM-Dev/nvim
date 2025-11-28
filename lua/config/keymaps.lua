@@ -205,5 +205,18 @@ map('v', 'K', ':m \'<-2<CR>gv=gv', { desc = 'Move Line/s Up' })
 map('n', '<leader><leader>x', '<cmd>source %<cr>', { desc = 'e[X]ecute current lua file' })
 map('n', '<leader>x', '<cr>.lua<cr>', { desc = 'e[X]ecute current lua line' })
 map('v', '<leader>x', ':lua<cr>', { desc = 'e[X]ecute selected lua lines' })
+map('n', '<leader>fcc', function()
+	local logger = nkl.logger:new('Keymaps')
+	local buf = vim.api.nvim_buf_get_name(0)
+	if buf == '' then
+		logger:error('No file in buffer')
+		return
+	end
+
+	local absolute_path = vim.fn.fnamemodify(buf, ':p')
+	vim.fn.setreg('+', absolute_path)
+	logger:info(string.format('%s copied', absolute_path))
+end, { desc = '  [F]ile [C]opy Absolute Path' })
+
 map('n', '<M-m>', nkl.second_brain.move_note, { desc = '󰪹 Move current file to another directory' })
 map('n', '<M-r>', nkl.second_brain.rename_note, { desc = ' Rename note and change it\'s ocurrencies' })
