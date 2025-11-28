@@ -1,11 +1,11 @@
 ---@module 'nkl.lib'
 ---@class nkl.lib
----@field input nkl.lib.input
 ---@field key nkl.lib.key
 ---@field logger nkl.lib.logger
 ---@field second_brain nkl.lib.second_brain
 ---@field sort nkl.lib.sort
 ---@field string nkl.lib.string
+---@field ui nkl.lib.ui
 local M = {}
 
 local path = (...):gsub('%.init$', '')
