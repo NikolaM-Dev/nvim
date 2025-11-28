@@ -30,4 +30,29 @@ return {
 			},
 		},
 	},
+
+	---@param opts sidekick.Config
+	config = function(_, opts)
+		require('sidekick').setup(opts)
+
+		vim.api.nvim_create_autocmd({ 'WinClosed', 'WinNew' }, {
+			desc = 'Resize dap-ui when Sidekick window is opened or closed',
+			group = nkl.augroup('sidekick_dapui_resize'),
+			callback = function()
+				local dapui_ok, dapui = pcall(require, 'dapui')
+				local dap_ok, dap = pcall(require, 'dap')
+
+				if not dap_ok or not dapui_ok then
+					return
+				end
+
+				local has_debbug_session = #dap.sessions() > 0
+				if has_debbug_session then
+					vim.schedule(function()
+						dapui.open({ reset = true })
+					end)
+				end
+			end,
+		})
+	end,
 }
