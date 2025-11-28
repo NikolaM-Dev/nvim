@@ -2,9 +2,7 @@ local dmap, map = nkl.key.dmap, nkl.key.map
 
 -- TODO: :silent mkspell! %, to generate spell files
 
-vim.g.mapleader = ' '
-
-dmap({ 'i', 's' }, '<C-s>', { desc = 'Delete to use <C-s> to save in insert mode'})
+dmap({ 'i', 's' }, '<C-s>', { desc = 'Delete to use <C-s> to save in insert mode' })
 dmap({ 'n' }, '[d', { desc = 'Delete to use to jump to the previous diagnostic' })
 dmap({ 'n' }, ']d', { desc = 'Delete to use to jump to the next diagnostic' })
 dmap({ 'n' }, 'grr', { desc = 'Delete default references keymap to use a picker based' })

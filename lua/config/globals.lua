@@ -18,5 +18,7 @@ vim.g.clipboard = {
 	cache_enabled = 1,
 }
 
+vim.g.mapleader = ' '
+
 _G.is_in_gitsigns_diffthis = false
 _G.nkl = require('lib')
