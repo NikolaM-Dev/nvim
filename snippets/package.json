@@ -4,9 +4,10 @@
   "contributes": {
     "snippets": [
       { "language": "all", "path": "./all.json" },
+      { "language": ["sh", "bash"], "path": "./bash.json" },
+      { "language": "c", "path": "./c.json" },
       { "language": "gitcommit", "path": "./gitcommit.json" },
       { "language": "go", "path": "./go.json" },
-      { "language": "c", "path": "./c.json" },
       { "language": "just", "path": "./just.json" },
       { "language": "lua", "path": "./lua/lua.json" },
       { "language": "lua", "path": "./lua/luadoc.json" },

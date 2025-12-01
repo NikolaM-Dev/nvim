@@ -1,0 +1,10 @@
+{
+  "function": {
+    "body": ["function ${1:fname}() {", "\t$0", "}"],
+    "prefix": "fn"
+  },
+  "main": {
+    "body": ["function main() {", "\t$0", "}", "", "main"],
+    "prefix": "main"
+  }
+}
