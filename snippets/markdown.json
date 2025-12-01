@@ -3,6 +3,14 @@
     "body": "High Performance Person",
     "prefix": "hpp"
   },
+  "References": {
+    "body": ["# 🧬 References", "", "- $0"],
+    "prefix": "references"
+  },
+  "See Also": {
+    "body": ["# 🌟 See Also", "", "- $0"],
+    "prefix": "see also"
+  },
   "bold": {
     "body": "**$1** $0",
     "prefix": "b"
