@@ -7,6 +7,7 @@
 ---@field sort nkl.lib.sort
 ---@field string nkl.lib.string
 ---@field ui nkl.lib.ui
+---@field url nkl.lib.url
 local M = {}
 
 local path = (...):gsub('%.init$', '')
