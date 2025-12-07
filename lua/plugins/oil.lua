@@ -49,9 +49,13 @@ return {
 					'^node_modules$',
 					-- '^dist$', '^.obsidian$',
 
+					-- executables
+					'*.out', -- c executables
+
 					-- debug
 					'DAP *',
 					'[dap-repl-*',
+					'vgcore.*', -- valgrind c memcheck
 				}
 				for _, pattern in ipairs(filters) do
 					if vim.fn.match(filename, pattern) ~= -1 then
