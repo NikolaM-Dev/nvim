@@ -25,6 +25,8 @@ return {
 		hl(0, 'PMenu', { bg = 'none' })
 		hl(0, 'PMenuSel', { bg = '#45403d', fg = 'none' })
 		hl(0, 'inactiveBorderColor', { fg = '#7c6f64' })
+		hl(0, '@markup.italic', { fg = '#d3869b' })
+
 		hl(0, 'EyelinerPrimary', { link = 'Substitute', default = true })
 		hl(0, 'EyelinerSecondary', { link = 'IncSearch', default = true })
 	end,
