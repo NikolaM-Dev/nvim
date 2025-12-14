@@ -1,0 +1,7 @@
+{
+  "Debug files": {
+    "prefix": "debug",
+    "body": [".vscode/launch.json", ".vscode/tasks.json"],
+    "description": "Debug files"
+  }
+}

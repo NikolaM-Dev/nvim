@@ -1,5 +1,5 @@
 {
-  "name": "Nikola's Snippets",
+  "name": "nikola-snippets",
   "engines": { "vscode": "1.11.0" },
   "contributes": {
     "snippets": [
@@ -13,6 +13,7 @@
       { "language": "lua", "path": "./lua/luadoc.json" },
       { "language": "markdown", "path": "./markdown.json" },
       { "language": "typescript", "path": "./typescript.json" }
+      { "language": "oil", "path": "./oil.json" },
     ]
   }
 }
