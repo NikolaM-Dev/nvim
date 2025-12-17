@@ -47,6 +47,11 @@ return {
 			{ '<leader>ds', function() require('dap').session() end, desc = 'Session' },
 			{ '<leader>dt', function() require('dap').terminate() end, desc = 'Terminate' },
 			{ '<leader>dw', function() require('dap.ui.widgets').hover() end, desc = 'Widgets' },
+			{ '<F1>', function() require('dap').step_into() end, desc = '  Step Into' },
+			{ '<F2>', function() require('dap').step_over() end, desc = '  Step Over' },
+			{ '<F3>', function() require('dap').step_out() end, desc = '  Step Out' },
+			{ '<F5>', function() require('dap').continue() end, desc = '  Start/Continue' },
+			{ '<F9>', function() require('dap').toggle_breakpoint() end, desc = '  Toggle Breakpoint' },
 			-- stylua: ignore end
 		},
 
