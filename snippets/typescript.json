@@ -1,14 +1,14 @@
 {
   "console.log": {
-    "prefix": "cl",
-    "body": "console.log($0);"
+    "body": "console.log($0);",
+    "prefix": "cl"
   },
   "wait": {
-    "prefix": "wait",
     "body": [
       "export async function wait(ms: number): Promise<void> {",
       "  return new Promise((resolve) => setTimeout(resolve, ms));",
       "}"
-    ]
+    ],
+    "prefix": "wait"
   }
 }
