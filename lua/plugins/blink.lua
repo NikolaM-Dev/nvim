@@ -7,6 +7,7 @@ return {
 	enabled = true,
 
 	build = 'cargo build --release',
+	dependencies = { 'saghen/blink.compat' },
 
 	---@module 'blink.cmp'
 	---@type blink.cmp.Config
