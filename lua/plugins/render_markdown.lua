@@ -8,7 +8,7 @@ return {
 	ft = { 'gitcomit', 'markdown', 'mdx' },
 
 	keys = {
-		{ '<M-l>', '<cmd>RenderMarkdown toggle<cr>', desc = '[T]oggle [L]ive Preview' },
+		{ '<leader>tl', '<cmd>RenderMarkdown toggle<cr>', desc = '[T]oggle [L]ive Preview' },
 	},
 
 	opts = function()
