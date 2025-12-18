@@ -11,6 +11,21 @@
     "body": ["# 🌟 See Also", "", "- $0"],
     "prefix": "see also"
   },
+  "Task Canceled": {
+    "body": ["❌ ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"],
+    "description": "Tasks Canceled",
+    "prefix": "canceled"
+  },
+  "Task Created": {
+    "body": ["➕ ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"],
+    "description": "Tasks Created",
+    "prefix": "created"
+  },
+  "Task Done": {
+    "body": ["✅ ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"],
+    "description": "Tasks Done",
+    "prefix": "done"
+  },
   "bold": {
     "body": "**$1** $0",
     "prefix": "b"
