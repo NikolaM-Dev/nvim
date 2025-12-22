@@ -40,10 +40,12 @@ return {
 					icon = ' ',
 				},
 				custom = {
-					cancelled = { highlight = 'RenderMarkdownTodo', raw = '[-]', rendered = ' ' },
 					ninety_nine = { highlight = 'RenderMarkdownTodo', raw = '[9]', rendered = '󰪤 ' },
 					sixty_six = { highlight = 'RenderMarkdownTodo', raw = '[6]', rendered = '󰪢 ' },
 					thirty_three = { highlight = 'RenderMarkdownTodo', raw = '[3]', rendered = '󰪠 ' },
+
+					canceled = { highlight = 'Error', raw = '[-]', rendered = ' ' },
+					todo = { highlight = 'Error', raw = '[-]', rendered = ' ' },
 				},
 			},
 			completions = { blink = { enabled = true } },
