@@ -23,6 +23,10 @@ return {
 			mux = {
 				enabled = true,
 			},
+			prompts = {
+				['high quality'] = 'Could you please review the following in terms of High Quality Code (correctness, design, and style) {file}',
+				['polish'] = 'Please polish the following file: {file}',
+			},
 			win = {
 				keys = {
 					prompt = { '<M-p>', 'prompt', mode = 't', desc = 'insert prompt or context' },
