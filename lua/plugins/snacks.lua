@@ -53,7 +53,7 @@ return {
 		{ 'gd', function() Snacks.picker.lsp_definitions() end, desc = '[G]oto [D]efinition' },
 
 		-- zoom
-		{ '<leader>Z', function() Snacks.zen.zoom() end, desc = 'Toggle [Z]oom' },
+		{ '<leader><C-z>', function() Snacks.zen.zoom() end, desc = 'Toggle [Z]oom' },
 
 		-- spelling
 		{ 'z=', function() Snacks.picker.spelling({ layout = { preset = 'select' } }) end, desc = 'Spelling' },
