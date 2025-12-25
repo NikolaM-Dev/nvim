@@ -18,6 +18,7 @@ return {
 
 			return { timeout_ms = 5000 }
 		end,
+		formatters = {},
 		formatters_by_ft = {},
 		log_level = vim.log.levels.TRACE,
 		notify_on_error = true,
