@@ -1,0 +1,76 @@
+{
+  "Create Snippet": {
+    "prefix": "snippet",
+    "body": [
+      "\"${2:description}\": {",
+      "  \"prefix\": \"${1:prefix}\",",
+      "  \"body\": [$0],",
+      "  \"description\": \"$2\"",
+      "}"
+    ],
+    "description": "Create Snippet"
+  },
+  "Creates a task": {
+    "body": [
+      "{",
+      "\t\"label\": \"My Task\",",
+      "\t\"type\": \"shell\",",
+      "\t\"group\": \"build\",",
+      "\t\"command\": \"just\",",
+      "\t\"args\": [ \"build\"],",
+      "",
+      "\t\"isBackground\": false,",
+      "\t\"dependsOrder\": \"\",",
+      "\t\"dependsOn\": []",
+      "}"
+    ],
+    "description": "Creates a task",
+    "prefix": "task"
+  },
+  "Debug config": {
+    "body": [
+      "{",
+      "\t\"name\": \"Launch build ($1)\",",
+      "\t\"type\": \"${1:codelldb|cppdbg}\",",
+      "\t\"request\": \"launch\",",
+      "",
+      "\t\"args\": [$0],",
+      "\t\"cwd\": \"\\${workspaceFolder}\",",
+      "\t\"program\": \"\\${workspaceFolder}/${2:main}.out\",",
+      "",
+      "\t\"preLaunchTask\": \"task label (tasks.json)\",",
+      "\t\"postDebugTask\": \"task label (tasks.json)\"",
+      "}"
+    ],
+    "description": "Debug config",
+    "prefix": "debug config"
+  },
+  "Inits launch.json": {
+    "body": [
+      "// [Variables](https://code.visualstudio.com/docs/reference/variables-reference)",
+      "// [Examples](https://code.visualstudio.com/docs/debugtest/debugging-configuration)",
+      "{",
+      "\t\"version\": \"0.2.0\",",
+      "\t\"configurations\": [],",
+      "",
+      "\t// [Compund](https://code.visualstudio.com/docs/debugtest/debugging-configuration#_compound-launch-configurations)",
+      "\t\"compounds\": []",
+      "}"
+    ],
+    "description": "Inits launch.json",
+    "prefix": "init launch.json"
+  },
+  "Inits tasks.json": {
+    "body": [
+      "// [Schema](https://code.visualstudio.com/docs/reference/tasks-appendix)",
+      "// [Variables](https://code.visualstudio.com/docs/reference/variables-reference)",
+      "// [Examples](https://code.visualstudio.com/docs/debugtest/tasks#_task-autodetection)",
+      "{",
+      "\t\"version\": \"2.0.0\",",
+      "\t\"tasks\": [$0]",
+      "}"
+    ],
+    "description": "Inits tasks.json",
+    "prefix": "init tasks.json"
+  }
+}
