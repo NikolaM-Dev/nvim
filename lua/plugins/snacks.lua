@@ -26,6 +26,7 @@ return {
 		{ '<M-x>',      function() Snacks.picker.commands({ layout = 'ivy' }) end, desc = '[S]earch Commands like an Emacs', mode = '' },
 		{ '<leader>sD', function() Snacks.picker.diagnostics_buffer() end,		   desc = '[S]earch Buffer [D]iagnostics' },
 		{ '<leader>sH', function() Snacks.picker.highlights() end,                 desc = '[S]earch [H]ighlights' },
+		{ '<leader>sS', function() Snacks.picker.lsp_symbols() end,				   desc = '[S]earch LSP [S]ymbols' },
 		{ '<leader>sc', function() Snacks.picker.commands() end,                   desc = '[S]earch [C]ommands' },
 		{ '<leader>sd', function() Snacks.picker.diagnostics() end,				   desc = '[S]earch [D]iagnostics' },
 		{ '<leader>sh', function() Snacks.picker.help() end,                       desc = '[S]earch [H]elp Pages' },
