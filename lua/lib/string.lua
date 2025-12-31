@@ -35,6 +35,7 @@ function M.title_case(payload, style)
 
 	---Change special characters by standard ones
 	---@cast payload string
+	payload = M.trim(payload)
 	payload:gsub('‘', '\''):gsub('’', '\''):gsub('“', '"'):gsub('”', '"')
 
 	local STYLES = {
