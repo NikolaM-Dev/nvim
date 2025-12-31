@@ -63,28 +63,16 @@ function M.title_case(payload, style)
 		},
 	}
 
-	local SPECIAL_WORDS = {
-		ai = 'AI',
-		api = 'API',
-		cs50 = 'CS50',
-		gtd = 'GTD',
-		html = 'HTML',
-		css = 'CSS',
-		id = 'ID',
-		javascript = 'JavaScript',
-		sqlite3 = 'SQLite3',
-		sqlite = 'SQLite',
-		crud = 'CRUD',
-		csv = 'CSV',
-		jsdoc = 'JSDoc',
-		nl = 'NL',
-		nodejs = 'Node.js',
-		sql = 'SQL',
-		ticktick = 'TickTick',
-		tl = 'TL',
-		wip = 'WIP',
-		typescript = 'TypeScript',
-	}
+	local special_words = {}
+	local f = io.open(vim.fn.getcwd() .. '/special_words.json', 'r')
+	if f then
+		local data = f:read('*a')
+		f:close()
+		local ok, json = pcall(vim.json.decode, data, { luanil = { object = true } })
+		if ok then
+			special_words = vim.tbl_deep_extend('force', special_words, json or {})
+		end
+	end
 
 	local selected_style = STYLES[style] or STYLES['new_york_times']
 	local words = {}
@@ -94,8 +82,8 @@ function M.title_case(payload, style)
 
 	local result = {}
 	for i, word in ipairs(words) do
-		if SPECIAL_WORDS[word] then
-			table.insert(result, SPECIAL_WORDS[word])
+		if special_words[word] then
+			table.insert(result, special_words[word])
 		elseif i == 1 or i == #words then
 			table.insert(result, word:sub(1, 1):upper() .. word:sub(2))
 		elseif selected_style[word] then
