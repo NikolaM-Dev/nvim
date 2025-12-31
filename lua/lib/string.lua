@@ -48,6 +48,7 @@ function M.title_case(payload, style)
 			['v.'] = 'v.',
 			['vs.'] = 'vs.',
 			['a'] = 'a',
+			['an'] = 'an',
 			['as'] = 'as',
 			['at'] = 'at',
 			['but'] = 'but',
