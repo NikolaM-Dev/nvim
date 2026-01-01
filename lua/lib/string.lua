@@ -82,8 +82,10 @@ function M.title_case(payload, style)
 
 	local result = {}
 	for i, word in ipairs(words) do
-		local punctuation = word:match('[!%?%.%,]+$') or ''
-		local core = punctuation ~= '' and word:sub(1, #word - #punctuation) or word
+		local leading = word:match('^([^%w%d]+)') or ''
+		local rest = word:sub(#leading + 1)
+		local punctuation = rest:match('[!%?%.%,]+$') or ''
+		local core = punctuation ~= '' and rest:sub(1, #rest - #punctuation) or rest
 
 		if core == '' then
 			table.insert(result, word)
@@ -103,6 +105,7 @@ function M.title_case(payload, style)
 				formatted = formatted .. punctuation
 			end
 
+			formatted = leading .. formatted
 			table.insert(result, formatted)
 		end
 	end
