@@ -82,14 +82,28 @@ function M.title_case(payload, style)
 
 	local result = {}
 	for i, word in ipairs(words) do
-		if special_words[word] then
-			table.insert(result, special_words[word])
-		elseif i == 1 or i == #words then
-			table.insert(result, word:sub(1, 1):upper() .. word:sub(2))
-		elseif selected_style[word] then
-			table.insert(result, selected_style[word])
+		local punctuation = word:match('[!%?%.%,]+$') or ''
+		local core = punctuation ~= '' and word:sub(1, #word - #punctuation) or word
+
+		if core == '' then
+			table.insert(result, word)
 		else
-			table.insert(result, word:sub(1, 1):upper() .. word:sub(2))
+			local formatted
+			if special_words[core] then
+				formatted = special_words[core]
+			elseif i == 1 or i == #words then
+				formatted = M.capitalize(core)
+			elseif selected_style[core] then
+				formatted = selected_style[core]
+			else
+				formatted = M.capitalize(core)
+			end
+
+			if punctuation ~= '' then
+				formatted = formatted .. punctuation
+			end
+
+			table.insert(result, formatted)
 		end
 	end
 
