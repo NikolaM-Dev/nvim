@@ -50,6 +50,10 @@ return {
 			return nkl.string.title_case(title)
 		end,
 
+		footer = {
+			separator = string.rep('─', 80),
+		},
+
 		frontmatter = {
 			sort = { 'id', 'aliases', 'tags', 'createdAt', 'updatedAt' },
 			func = function(note)
