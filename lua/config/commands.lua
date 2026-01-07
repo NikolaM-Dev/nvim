@@ -1,7 +1,7 @@
 local api, command, fn = vim.api, vim.api.nvim_create_user_command, vim.fn
+local logger = nkl.logger:new('Commands')
 
 command('JQFmt', function()
-	local logger = nkl.logger:new('JQFmt')
 	local buf = api.nvim_get_current_buf()
 	local path = api.nvim_buf_get_name(buf)
 	if path == '' then
@@ -37,3 +37,10 @@ command('JQFmt', function()
 	logger:info('JQFmt formatted ' .. fn.fnamemodify(path, ':t'))
 	api.nvim_command('checktime')
 end, { desc = '󰘳 Sort JSON keys with jq' })
+
+command('StraightQuotes', function()
+	vim.cmd('%s/[„“‟”〝〞]/"/g')
+	vim.cmd('%s/[’‘‛❛❜]/\'/g')
+
+	logger:info('Quotes Straightened')
+end, { desc = '󰘳 Replace curly quotes with straight ones' })
