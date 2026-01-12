@@ -14,6 +14,9 @@ return {
 		},
 
 		extension = {
+			['spec.ts'] = { glyph = '󰂓', hl = 'MiniIconsCyan' },
+			['test.ts'] = { glyph = '󰂓', hl = 'MiniIconsCyan' },
+			['d.ts'] = { glyph = '', hl = 'MiniIconsGreen' },
 			c = { glyph = '' },
 			h = { glyph = '' },
 			o = { glyph = '󰆧' },
@@ -29,6 +32,7 @@ return {
 			['bun.lock'] = { glyph = '', hl = 'MiniIconsGrey' },
 			['lazy-lock.json'] = { glyph = '󰒲', hl = 'MiniIconsBlue' },
 			['package.json'] = { glyph = '', hl = 'MiniIconsGreen' },
+			['tsconfig.json'] = { glyph = '', hl = 'MiniIconsGrey' },
 		},
 	},
 
