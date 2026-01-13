@@ -6,9 +6,7 @@ return {
 	enabled = true,
 	lazy = false,
 
-	build = function()
-		require('fff.download').download_or_build_binary()
-	end,
+	build = 'cargo build --release',
 
 	keys = {
 		-- stylua: ignore start
