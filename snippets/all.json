@@ -1,4 +1,11 @@
 {
+  "Lorem Ipsum": {
+    "body": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse libero dolor, auctor ut vehicula faucibus, vulputate ac quam. Sed vestibulum, purus hendrerit tristique tempus, mi purus pharetra risus, eget vestibulum dolor nibh vitae arcu. In suscipit eu purus quis tincidunt. Nam aliquet erat ac nunc mattis aliquam. Sed neque dolor, egestas vitae enim nec, sagittis facilisis mauris. Mauris sed ullamcorper turpis, sed lacinia nisi. Sed a quam libero. "
+    ],
+    "description": "Lorem Ipsum",
+    "prefix": "lorem"
+  },
   "today date": {
     "body": "${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
     "prefix": "today date"
