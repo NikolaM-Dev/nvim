@@ -3,7 +3,7 @@
 return {
 	'sainnhe/gruvbox-material',
 	desc = 'Gruvbox with Material Palette',
-	enabled = true,
+	enabled = false,
 
 	lazy = false,
 	priority = 1000,
