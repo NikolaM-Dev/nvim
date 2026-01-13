@@ -3,6 +3,7 @@
 ---@field apply nkl.lib.apply
 ---@field key nkl.lib.key
 ---@field logger nkl.lib.logger
+---@field opt nkl.lib.opt
 ---@field second_brain nkl.lib.second_brain
 ---@field sort nkl.lib.sort
 ---@field string nkl.lib.string
