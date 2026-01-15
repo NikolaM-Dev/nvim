@@ -1,0 +1,10 @@
+{
+  "console.dir": {
+    "body": "console.dir({ $0 }, { depth: null });",
+    "prefix": "cd"
+  },
+  "console.log": {
+    "body": "console.log($0);",
+    "prefix": "cl"
+  }
+}

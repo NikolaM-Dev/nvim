@@ -8,6 +8,7 @@
       { "language": "c", "path": "./c.json" },
       { "language": "gitcommit", "path": "./gitcommit.json" },
       { "language": "go", "path": "./go.json" },
+      { "language": "javascript", "path": "./javascript.json" },
       { "language": "just", "path": "./just.json" },
       { "language": "lua", "path": "./lua/lua.json" },
       { "language": "lua", "path": "./lua/luadoc.json" },
