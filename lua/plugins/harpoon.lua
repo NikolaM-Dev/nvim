@@ -37,6 +37,16 @@ return {
 			})
 		end
 
+		for i = 5, 9 do
+			table.insert(keys, {
+				'<Backspace>' .. i - 4,
+				function()
+					harpoon:list():select(i)
+				end,
+				desc = 'Harpoon select file in position [' .. i .. ']',
+			})
+		end
+
 		return keys
 	end,
 
