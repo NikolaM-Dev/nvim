@@ -1,0 +1,54 @@
+{
+  "createt": {
+    "body": [
+      "CREATE TABLE IF NOT EXISTS ${1:tableName} (",
+      "\t${2:attribute(s)}",
+      ");"
+    ],
+    "description": "Create table with conditional",
+    "prefix": "createti"
+  },
+  "delete": {
+    "body": ["DELETE FROM ${1:tableName}", "\tWHERE ${3:condition};"],
+    "description": "Delete records",
+    "prefix": "delete"
+  },
+  "dropd": {
+    "body": ["DROP DATABASE IF EXISTS ${1:dbName};"],
+    "description": "Drop database with conditional",
+    "prefix": "dropdi"
+  },
+  "dropt": {
+    "body": ["DROP TABLE IF EXISTS ${1:tableName};"],
+    "description": "Drop table with conditional",
+    "prefix": "dropti"
+  },
+  "insert": {
+    "body": [
+      "INSERT INTO ${1:tableName} (",
+      "\t${2:attribute(s)}",
+      ") VALUES ( ${3:values} )"
+    ],
+    "description": "Insert value(s)",
+    "prefix": "insert"
+  },
+  "showd": {
+    "body": ["SHOW DATABASES;"],
+    "description": "Show databases",
+    "prefix": "showd"
+  },
+  "showt": {
+    "body": ["SHOW TABLES;"],
+    "description": "Show tables",
+    "prefix": "showt"
+  },
+  "updatet": {
+    "body": [
+      "UPDATE ${1:tableName}",
+      "\tSET ${2:attribute(s)}",
+      "\tWHERE ${3:condition};"
+    ],
+    "description": "Update table",
+    "prefix": "updatet"
+  }
+}
