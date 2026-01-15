@@ -3,7 +3,7 @@
 return {
 	'aserowy/tmux.nvim',
 	desc = 'tmux integration for nvim features pane movement and resizing from within nvim',
-	enabled = true,
+	enabled = false,
 
 	event = 'VeryLazy',
 
