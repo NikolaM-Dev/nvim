@@ -3,6 +3,13 @@ nkl.opt.indent(2, 'spaces')
 vim.opt_local.colorcolumn = '80'
 vim.opt_local.textwidth = 80
 
+vim.opt_local.formatoptions:append('r') -- `<CR>` in insert mode
+vim.opt_local.comments = {
+	'b:>',
+	-- "b:-",
+	-- "b:*",
+}
+
 local bmap = nkl.key.bmap
 bmap('ia', 'att', '## Attempt')
 bmap('ia', 'h1', '#')
