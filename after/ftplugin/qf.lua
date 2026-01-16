@@ -5,4 +5,8 @@ nkl.key.bmap('n', 'grn', function()
 	else
 		vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(':ldo s//gc<left><left>', true, false, true), 'n', false)
 	end
-end, { desc = ' [R]e[n]ame'})
+end, { desc = ' Rename' })
+
+nkl.key.bmap('n', '<C-q>', function()
+	vim.cmd.quit()
+end, { desc = ' Quit' })
