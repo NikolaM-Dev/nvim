@@ -29,6 +29,15 @@ function M.bmap(mode, lhs, rhs, opts)
 	vim.keymap.set(mode, lhs, rhs, opts)
 end
 
+---Set an abbreviation
+---@param mode string
+---@param lhs string
+---@param rhs string
+---@param desc string
+function M.ab(mode, lhs, rhs, desc)
+	M.map(mode, lhs, rhs, { desc = string.format('󰞘 %s Abbreviation', desc) })
+end
+
 ---Deletes a keymap
 ---It's useful to remove [Neovim Default Keymaps](https://neovim.io/doc/user/vim_diff.html#default-mappings)
 ---@param mode string|string[]
