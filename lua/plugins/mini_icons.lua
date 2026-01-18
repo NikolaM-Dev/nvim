@@ -14,6 +14,7 @@ return {
 		},
 
 		extension = {
+			['d.ts'] = { glyph = '', hl = 'MiniIconsGreen' },
 			['spec.ts'] = { glyph = '󰂓', hl = 'MiniIconsCyan' },
 			['test.ts'] = { glyph = '󰂓', hl = 'MiniIconsCyan' },
 			['d.ts'] = { glyph = '', hl = 'MiniIconsGreen' },
