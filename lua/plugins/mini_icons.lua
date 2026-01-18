@@ -19,6 +19,8 @@ return {
 			['test.ts'] = { glyph = '󰂓', hl = 'MiniIconsCyan' },
 			['d.ts'] = { glyph = '', hl = 'MiniIconsGreen' },
 			c = { glyph = '' },
+			db = { glyph = '', hl = 'MiniIconsBlue' },
+			drawio = { glyph = '󱁉', hl = 'MiniIconsOrange' },
 			h = { glyph = '' },
 			o = { glyph = '󰆧' },
 		},
