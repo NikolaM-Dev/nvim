@@ -7,7 +7,7 @@ return {
 
 	keys = {
 		{
-			'<leader>usc',
+			'ttsc',
 			function()
 				local opts = { title = 'Stay Centered' }
 				local stay_centered = require('stay-centered')
@@ -20,7 +20,7 @@ return {
 					Snacks.notify.warn('Stay Centered disabled', opts)
 				end
 			end,
-			desc = 'Toggle [S]tay [C]entered',
+			desc = 'Toggle Stay Centered',
 		},
 	},
 
