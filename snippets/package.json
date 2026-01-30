@@ -17,6 +17,7 @@
       { "language": "oil", "path": "./oil.json" },
       { "language": "sql", "path": "./sql.json" },
       { "language": ["json", "jsonc"], "path": "./json/vscode.json" },
+      { "language": ["typescript", "typescriptreact"], "path": "./typescriptreact.json" }
     ]
   }
 }
