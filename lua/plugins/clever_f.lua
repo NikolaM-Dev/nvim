@@ -3,7 +3,7 @@
 return {
 	'rhysd/clever-f.vim',
 	desc = 'Extended f, F, t and T key mappings for Vim.',
-	enabled = true,
+	enabled = false,
 
 	init = function()
 		vim.g.clever_f_not_overwrites_standard_mappings = 1
