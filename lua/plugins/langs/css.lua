@@ -16,7 +16,14 @@ return {
 	{
 		'neovim/nvim-lspconfig',
 		opts = function(_, opts)
-			opts.servers.cssls = {}
+			opts.servers.cssls = {
+				settings = {
+					css = {
+						validate = true,
+						lint = { unknownAtRules = 'ignore' },
+					},
+				},
+			}
 		end,
 	},
 	{
