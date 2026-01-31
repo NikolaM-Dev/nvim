@@ -7,6 +7,4 @@ nkl.key.bmap('n', 'grn', function()
 	end
 end, { desc = ' Rename' })
 
-nkl.key.bmap('n', '<C-q>', function()
-	vim.cmd.quit()
-end, { desc = ' Quit' })
+nkl.key.bmap('n', '<C-q>', '<cmd>cclose<cr>', { desc = ' Quit' })
