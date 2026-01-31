@@ -8,6 +8,10 @@ return {
 	cmd = { 'ConformInfo' },
 	event = 'BufWritePre',
 
+	keys = {
+		{ '<leader>C', '<cmd>ConformInfo<cr>', desc = '󰁨 Conform' },
+	},
+
 	---@type conform.setupOpts
 	opts = {
 		default_format_opts = { lsp_format = 'fallback' },
