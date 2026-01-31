@@ -27,6 +27,8 @@ return {
 		hl(0, 'inactiveBorderColor', { fg = '#7c6f64' })
 		hl(0, '@markup.italic', { fg = '#d3869b', italic = true })
 
+		hl(0, 'fFHintChar', { link = 'Substitute', default = true })
+		hl(0, 'fFHintNumber', { link = 'Substitute', default = true })
 		hl(0, 'EyelinerPrimary', { link = 'Substitute', default = true })
 		hl(0, 'EyelinerSecondary', { link = 'IncSearch', default = true })
 	end,
