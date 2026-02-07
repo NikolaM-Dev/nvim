@@ -26,6 +26,10 @@
     "description": "Tasks Done",
     "prefix": "done"
   },
+  "Todos": {
+    "body": ["# ✅ TODOs", "", "- [ ] $0"],
+    "prefix": "todos"
+  },
   "bold": {
     "body": "**$1** $0",
     "prefix": "b"
@@ -33,6 +37,11 @@
   "checkbox": {
     "body": "- [ ] $0",
     "prefix": "td"
+  },
+  "Action Todo": {
+    "body": "#action/todo",
+    "prefix": "atd",
+    "description": "Action Todo"
   },
   "code": {
     "body": ["```${1:lang}", "$0", "```"],
