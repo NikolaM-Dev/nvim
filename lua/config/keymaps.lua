@@ -68,9 +68,14 @@ map({ 'i', 'x' }, '<C-s>', '<esc><cmd>write<cr>', { desc = 'Write buffer' })
 map('n', 'ZS', '<cmd>wall | qa<cr>', { desc = 'Write All changed buffers and quits' })
 map('n', 'ZX', '<cmd>qa!<cr>', { desc = 'Bails out of everything' })
 
-map('n', '<leader>lG', function()
-	vim.fn.system('tmux new-window -c "#{pane_current_path}" -n "   " lazygit')
-end, { desc = '[L]azy [G]it using Tmux' })
+map('n', '<leader>lg', function()
+	if nkl.tmux.is_running() then
+		vim.system({ 'tmux', 'new-window', '-c', '#{pane_current_path}', '-n', '   ', 'lazygit' }, { text = true })
+	else
+		local cwd = vim.fn.getcwd()
+		vim.system({ 'wezterm', 'cli', 'spawn', '--cwd', cwd, 'lazygit' }, { text = true })
+	end
+end, { desc = '  Lazy Git' })
 
 map('n', '<leader>ld', function()
 	vim.fn.system('tmux new-window -c "#{pane_current_path}" -n "   " lazydocker')
