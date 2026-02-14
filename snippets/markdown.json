@@ -1,4 +1,9 @@
 {
+  "Action Todo": {
+    "body": "#action/todo",
+    "description": "Action Todo",
+    "prefix": "atd"
+  },
   "High Performance Person": {
     "body": "High Performance Person",
     "prefix": "hpp"
@@ -37,11 +42,6 @@
   "checkbox": {
     "body": "- [ ] $0",
     "prefix": "td"
-  },
-  "Action Todo": {
-    "body": "#action/todo",
-    "prefix": "atd",
-    "description": "Action Todo"
   },
   "code": {
     "body": ["```${1:lang}", "$0", "```"],
