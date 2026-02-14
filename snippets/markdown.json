@@ -4,6 +4,26 @@
     "description": "Action Todo",
     "prefix": "atd"
   },
+  "Creates a Road Map": {
+    "body": [
+      "# Project Notes",
+      "",
+      "## 🔥 in Progress",
+      "",
+      "## 🥶 Wait",
+      "",
+      "## 🔮 Next",
+      "",
+      "## 🎒 Backlog",
+      "",
+      "---",
+      "",
+      "## Archive",
+      ""
+    ],
+    "description": "Creates a Road Map",
+    "prefix": "roadmap"
+  },
   "High Performance Person": {
     "body": "High Performance Person",
     "prefix": "hpp"
