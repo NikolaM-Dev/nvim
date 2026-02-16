@@ -44,3 +44,31 @@ command('StraightQuotes', function()
 
 	logger:info('Quotes Straightened')
 end, { desc = '󰘳 Replace curly quotes with straight ones' })
+command('CommitRoadmap', function()
+	local cwd = vim.fn.getcwd()
+	local roadmap_path = cwd .. '/ROADMAP.md'
+
+	-- Check git status for changes
+	local status = vim.fn.systemlist('git status --porcelain ' .. vim.fn.shellescape(roadmap_path))
+	if #status == 0 then
+		logger:info('No changes in ROADMAP.md to commit')
+		return
+	end
+
+	-- Stage the file
+	local add_res = vim.fn.system('git add ' .. vim.fn.shellescape(roadmap_path))
+	if vim.v.shell_error ~= 0 then
+		logger:error('Failed to stage ROADMAP.md: ' .. add_res)
+		return
+	end
+
+	-- Commit
+	local msg = 'docs(roadmap): Change roadmap state'
+	local commit_res = vim.fn.system('git commit -m ' .. vim.fn.shellescape(msg))
+	if vim.v.shell_error ~= 0 then
+		logger:error('Git commit failed: ' .. commit_res)
+		return
+	end
+
+	logger:info('Committed ROADMAP.md')
+end, { desc = '󰘳 Commit ROADMAP changes' })
