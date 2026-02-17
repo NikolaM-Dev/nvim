@@ -14,8 +14,8 @@ return {
 
 	lazy = false,
 	keys = {
-		{ '-', '<cmd>Oil<cr>', desc = 'Open Oil' },
-		{ '<leader>-', '<cmd>Oil .<cr>', desc = 'Open Oil (cwd)' },
+		{ '-', '<cmd>Oil --float<cr>', desc = 'Open Oil' },
+		{ '<leader>-', '<cmd>Oil --float .<cr>', desc = 'Open Oil (cwd)' },
 	},
 
 	---@module 'oil'
@@ -25,6 +25,11 @@ return {
 		prompt_save_on_select_new_entry = false,
 		skip_confirm_for_simple_edits = true,
 		watch_for_changes = true,
+
+		float = {
+			border = 'none',
+			padding = 0,
+		},
 
 		keymaps = {
 			['<C-h>'] = false, -- disable horizontal split
