@@ -39,8 +39,24 @@ command('JQFmt', function()
 end, { desc = '󰘳 Sort JSON keys with jq' })
 
 command('StraightQuotes', function()
-	vim.cmd('%s/[„“‟”〝〞]/"/g')
-	vim.cmd('%s/[’‘‛❛❜]/\'/g')
+	-- Check if the buffer is modifiable
+	if not vim.bo['modifiable'] then
+		return
+	end
+
+	local function safe_substitute(pattern, replacement)
+		-- bail early if nothing matches
+		if vim.fn.search(pattern, 'nw') == 0 then
+			return
+		end
+
+		-- perform a silent global substitute
+		local cmd = string.format('silent! %s/%s/%s/g', '%s', pattern, replacement)
+		vim.cmd(cmd)
+	end
+
+	safe_substitute('[„“‟”〝〞]', '"')
+	safe_substitute('[’‘‛❛❜]', '\'')
 
 	logger:info('Quotes Straightened')
 end, { desc = '󰘳 Replace curly quotes with straight ones' })
