@@ -60,6 +60,12 @@ command('StraightQuotes', function()
 
 	logger:info('Quotes Straightened')
 end, { desc = '󰘳 Replace curly quotes with straight ones' })
+
+command('RemoveDoubleJumpLines', function()
+	vim.cmd('%s/\\n\\n/\\r/g')
+	logger:info('Spaces removed')
+end, { desc = '󰘳 Remove all the spaces between lines' })
+
 command('CommitRoadmap', function()
 	local cwd = vim.fn.getcwd()
 	local roadmap_path = cwd .. '/ROADMAP.md'
