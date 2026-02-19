@@ -1,6 +1,7 @@
 ---@module 'nkl.lib'
 ---@class nkl.lib
 ---@field apply nkl.lib.apply
+---@field g nkl.lib.g
 ---@field key nkl.lib.key
 ---@field logger nkl.lib.logger
 ---@field opt nkl.lib.opt
