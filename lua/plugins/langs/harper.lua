@@ -21,6 +21,7 @@ return {
 							-- CommaFixes = false, -- https://github.com/Automattic/harper/issues/1097
 							SentenceCapitalization = false, -- https://github.com/Automattic/harper/issues/1056
 							UnclosedQuotes = false, -- https://github.com/Automattic/harper/issues/1573
+							UseTitleCase = false,
 
 							-- enable extra rules?
 							BoringWords = false,
