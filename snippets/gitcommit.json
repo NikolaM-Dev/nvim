@@ -1,64 +1,64 @@
 {
-  "feat": {
-    "prefix": "feat",
-    "body": "feat($1): $0",
-    "description": "A new feature"
-  },
-  "fix": {
-    "prefix": "fix",
-    "body": "fix($1): $0",
-    "description": "A bug fix"
-  },
-  "docs": {
-    "prefix": "docs",
-    "body": "docs($1): $0",
-    "description": " Documentation only changes"
-  },
-  "style": {
-    "prefix": "style",
-    "body": "style($1): $0",
-    "description": "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)"
-  },
-  "style change formatting": {
-    "prefix": "scf",
-    "body": "style($1): Change formatting"
-  },
-  "refactor": {
-    "prefix": "refactor",
-    "body": "refactor($1): $0",
-    "description": "A code change that neither fixes a bug nor adds a feature"
-  },
-  "perf": {
-    "prefix": "perf",
-    "body": "perf($1): $0",
-    "description": "A code change that improves performance"
-  },
-  "test": {
-    "prefix": "test",
-    "body": "test($1): $0",
-    "description": "Adding missing tests or correcting existing tests"
-  },
   "build": {
-    "prefix": "build",
     "body": "build($1): $0",
-    "description": "Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)"
-  },
-  "ci": {
-    "prefix": "ci",
-    "body": "ci($1): $0",
-    "description": "Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)"
-  },
-  "chore": {
-    "prefix": "chore",
-    "body": "chore($1): $0",
-    "description": "Other changes that don't modify src or test files"
+    "description": "Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)",
+    "prefix": "build"
   },
   "build change plugins versions": {
-    "prefix": "bcpv",
-    "body": "build(lazy): Change plugins version"
+    "body": "build(lazy): Change plugins version",
+    "prefix": "bcpv"
   },
   "bullet list item": {
-    "prefix": ",",
-    "body": "- $0"
+    "body": "- $0",
+    "prefix": ","
+  },
+  "chore": {
+    "body": "chore($1): $0",
+    "description": "Other changes that don't modify src or test files",
+    "prefix": "chore"
+  },
+  "ci": {
+    "body": "ci($1): $0",
+    "description": "Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)",
+    "prefix": "ci"
+  },
+  "docs": {
+    "body": "docs($1): $0",
+    "description": " Documentation only changes",
+    "prefix": "docs"
+  },
+  "feat": {
+    "body": "feat($1): $0",
+    "description": "A new feature",
+    "prefix": "feat"
+  },
+  "fix": {
+    "body": "fix($1): $0",
+    "description": "A bug fix",
+    "prefix": "fix"
+  },
+  "perf": {
+    "body": "perf($1): $0",
+    "description": "A code change that improves performance",
+    "prefix": "perf"
+  },
+  "refactor": {
+    "body": "refactor($1): $0",
+    "description": "A code change that neither fixes a bug nor adds a feature",
+    "prefix": "refactor"
+  },
+  "style": {
+    "body": "style($1): $0",
+    "description": "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)",
+    "prefix": "style"
+  },
+  "style change formatting": {
+    "body": "style($1): Change formatting",
+    "prefix": "scf"
+  },
+  "test": {
+    "body": "test($1): $0",
+    "description": "Adding missing tests or correcting existing tests",
+    "prefix": "test"
   }
 }
