@@ -1,4 +1,9 @@
 {
+  "Update roadmap": {
+    "body": "docs(roadmap): Change roadmap state",
+    "desc": "Update roadap",
+    "prefix": "roadmap"
+  },
   "build": {
     "body": "build($1): $0",
     "description": "Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)",
