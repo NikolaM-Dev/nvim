@@ -14,7 +14,7 @@ return {
 
 	config = function(_, opts)
 		---@diagnostic disable-next-line: missing-fields
-		require('nvim-treesitter.configs').setup({
+		require('nvim-treesitter').setup({
 			auto_install = false, -- Automatically install missing parsers when entering buffer
 			ensure_installed = opts.languages,
 			highlight = { enable = true },
