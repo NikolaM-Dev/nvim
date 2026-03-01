@@ -10,7 +10,12 @@ return {
 	{
 		'williamboman/mason.nvim',
 		opts = function(_, opts)
-			vim.list_extend(opts.ensure_installed, { 'lua-language-server', 'stylua' })
+			vim.list_extend(opts.ensure_installed, {
+				-- Use this version meanwhile folke comes back
+				-- :MasonInstall lua-language-server@3.16.4
+				-- 'lua-language-server',
+				'stylua',
+			})
 		end,
 	},
 	{
