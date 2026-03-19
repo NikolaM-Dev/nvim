@@ -23,6 +23,7 @@ return {
 			drawio = { glyph = '󱁉', hl = 'MiniIconsOrange' },
 			h = { glyph = '' },
 			o = { glyph = '󰆧' },
+			css = { glyph = '', hl = 'MiniIconsPurple' },
 		},
 
 		file = {
