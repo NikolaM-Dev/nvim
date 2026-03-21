@@ -110,6 +110,22 @@ command('ExtractNotesQF', function(opts)
 		vim.cmd('copen')
 	end)
 end, { desc = '󰘳 Extract Notes Into Qf', range = true })
+
+command('RemoveDatePatterns', function()
+	-- Remove <MM-DD> or <YYYY-MM-DD> patterns only on lines that are marked as completed [x] or canceled [-]
+	local bufnr = vim.api.nvim_get_current_buf()
+	local lines = vim.api.nvim_buf_get_lines(bufnr, 0, -1, false)
+	for i, line in ipairs(lines) do
+		if line:find('%[x%]') or line:find('%[%-%]') then
+			local new = line:gsub(' <%d%d%d%d%-%d%d%-%d%d>', '')
+			new = new:gsub(' <%d%d%-%d%d>', '')
+			lines[i] = new
+		end
+	end
+	vim.api.nvim_buf_set_lines(bufnr, 0, -1, false, lines)
+	logger:info('Date patterns removed where appropriate')
+end, { desc = '󰘳 Remove <MM-DD> and <YYYY-MM-DD> patterns' })
+
 command('CommitRoadmap', function()
 	local cwd = vim.fn.getcwd()
 	local roadmap_path = cwd .. '/ROADMAP.md'
