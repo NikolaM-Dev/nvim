@@ -66,6 +66,50 @@ command('RemoveDoubleJumpLines', function()
 	logger:info('Spaces removed')
 end, { desc = '󰘳 Remove all the spaces between lines' })
 
+command('ExtractNotesQF', function(opts)
+	-- Get the range of lines
+	local start_line, end_line = opts.line1, opts.line2
+	-- Get the current directory of the buffer
+	local buffer_dir = vim.fn.expand('%:p:h')
+
+	-- Create a table to hold the quickfix entries
+	local qf_list = {}
+
+	-- Process each line in the range
+	for line_num = start_line, end_line do
+		local line_content = vim.fn.getline(line_num)
+
+		-- Extract text inside [[...]] using Lua's string.match
+		-- '%[%[' matches the literal '[['
+		-- '(.-)' is a non-greedy capture of any character
+		-- '%]%]' matches the literal ']]'
+		local extracted_text = line_content:match('%[%[(.-)%]%]')
+
+		if extracted_text then
+			-- Construct the file path
+			local file_path = buffer_dir .. '/' .. extracted_text .. '.md'
+
+			-- Create a quickfix entry
+			local entry = {
+				filename = file_path,
+				lnum = 1, -- Jump to line 1
+				col = 1, -- Jump to column 1
+				text = extracted_text, -- The text to display in the quickfix window
+			}
+
+			-- Add the entry to our list
+			table.insert(qf_list, entry)
+		end
+	end
+
+	-- Set the quickfix list with our populated table
+	vim.fn.setqflist(qf_list)
+
+	-- Open the quickfix window to see the results
+	vim.schedule(function()
+		vim.cmd('copen')
+	end)
+end, { desc = '󰘳 Extract Notes Into Qf', range = true })
 command('CommitRoadmap', function()
 	local cwd = vim.fn.getcwd()
 	local roadmap_path = cwd .. '/ROADMAP.md'
