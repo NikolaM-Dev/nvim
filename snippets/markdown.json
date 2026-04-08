@@ -1,4 +1,9 @@
 {
+  "Action": {
+    "body": "#action/",
+    "description": "Action",
+    "prefix": "act"
+  },
   "Action Todo": {
     "body": "#action/todo",
     "description": "Action Todo",
