@@ -3,6 +3,10 @@
     "body": "console.log($0);",
     "prefix": "cl"
   },
+  "fn": {
+    "body": ["function ${1:name}(${2:params}): any {", "\t$0", "};"],
+    "prefix": "fn"
+  },
   "wait": {
     "body": [
       "export async function wait(ms: number): Promise<void> {",
