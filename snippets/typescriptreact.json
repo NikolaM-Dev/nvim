@@ -1,9 +1,9 @@
 {
   "React Functional Component": {
     "body": [
-      "type Props = {};",
+      "type ${TM_FILENAME_BASE}Props = {};",
       "",
-      "export function ${TM_FILENAME_BASE}({}: Props): JSX.Element {",
+      "export function ${TM_FILENAME_BASE}({}: ${TM_FILENAME_BASE}Props): React.JSX.Element {",
       "\treturn (",
       "\t\t<>",
       "\t\t\t$0",
