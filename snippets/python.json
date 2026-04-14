@@ -1,0 +1,42 @@
+{
+  "Function": {
+    "body": ["def ${1:fname}($2):", "\t${3:pass}"],
+    "description": "Function",
+    "prefix": "fn"
+  },
+  "elif": {
+    "body": ["elif ${1:expression}:", "\t${2:pass}"],
+    "description": "elif statement",
+    "prefix": "elif"
+  },
+  "else": {
+    "body": ["else:", "\t${1:pass}"],
+    "description": "else statement",
+    "prefix": "else"
+  },
+  "for": {
+    "body": ["for ${1:value} in ${2:iterable}:", "\t${3:pass}"],
+    "description": "for loop",
+    "prefix": "for"
+  },
+  "for w/ range": {
+    "body": ["for ${1:value} in range($2):", "\t${3:pass}"],
+    "description": "for loop that iterates over range of integers",
+    "prefix": "forr"
+  },
+  "if": {
+    "body": ["if ${1:condition}:", "\t${2:pass}"],
+    "description": "if statement",
+    "prefix": "if"
+  },
+  "if __name__ == __main__": {
+    "body": ["if __name__ == \"__main__\":", "\t${1:main()}"],
+    "description": "Execute code if the file is executed directly",
+    "prefix": "ifmain"
+  },
+  "if/else": {
+    "body": ["if ${1:condition}:", "\t${2:pass}", "else:", "\t${3:pass}"],
+    "description": "if statement with else",
+    "prefix": "ifelse"
+  }
+}
