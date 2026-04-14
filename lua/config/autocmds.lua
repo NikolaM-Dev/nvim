@@ -4,6 +4,17 @@ local autocmd = vim.api.nvim_create_autocmd
 
 nkl.second_brain.create_format_headings_autocmd()
 
+autocmd('FileType', {
+	desc = 'Disable Features in Big Files',
+	group = augroup('disable_features_in_big_files'),
+	pattern = 'bigfile',
+	callback = function(args)
+		vim.schedule(function()
+			vim.bo[args.buf].syntax = vim.filetype.match({ buf = args.buf }) or ''
+		end)
+	end,
+})
+
 autocmd({ 'BufEnter' }, {
 	desc = 'Disables autocommenting on new lines',
 	group = augroup('disables_autocommenting_on_new_lines'),
