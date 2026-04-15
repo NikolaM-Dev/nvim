@@ -3,7 +3,7 @@
 return {
 	'ej-shafran/compile-mode.nvim',
 	desc = 'A plugin for Neovim inspired by Emacs\' Compilation Mode',
-	enabled = false,
+	enabled = true,
 
 	keys = {
 		{ '<leader>cpm', '<cmd>Compile<cr>', desc = ' Compile Mode' },
@@ -24,7 +24,7 @@ return {
 				-- python = "python %",
 				-- lua = "lua %",
 				-- javascript = "bun %",
-				typescript = 'bun run build',
+				typescript = 'bun run typecheck',
 				typescriptreact = 'bun run build',
 				-- c = "cc -o %:r % && ./%:r",
 				-- cpp = "cc -std=c++23 -o %:r % && ./%:r",
