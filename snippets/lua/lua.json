@@ -1,4 +1,14 @@
 {
+  "function": {
+    "prefix": "fn",
+    "body": ["function ${1:name}(${2:params})", "\t${0}", "end"],
+    "description": "Define a function"
+  },
+  "anonymous function": {
+    "prefix": "afn",
+    "body": ["function (${1:params})", "\t${0}", "end"],
+    "description": "Create an anonymous function"
+  },
   "g": {
     "prefix": "g",
     "body": "_G.",
@@ -22,9 +32,8 @@
       "return {",
       "\t'$0',",
       "\tdesc = '',",
-      "\tenabled = true,",
       "",
-      "\tconfig= true",
+      "\tconfig = true",
       "}"
     ]
   },
@@ -75,5 +84,19 @@
       "$0"
     ],
     "description": "Base setup for langs"
+  },
+  "Class": {
+    "body": [
+      "---@class ${1:ClassName}",
+      "local ${1:ClassName} = {",
+      "\t---@return ${1:ClassName}",
+      "\tnew = function(self, newObj) -- https://www.lua.org/pil/16.1.html",
+      "\t\tnewObj = newObj or {}",
+      "\t\tsetmetatable(newObj, { __index = self })",
+      "\t\treturn newObj",
+      "\tend,",
+      "}"
+    ],
+    "prefix": "Class (metatable)"
   }
 }
