@@ -2,9 +2,10 @@
 ---@type LazySpec
 return {
 	'pmizio/typescript-tools.nvim',
-	lazy = false,
 	desc = '⚡ TypeScript integration NeoVim deserves ⚡',
+	enabled = true,
 
+	ft = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
 	cmd = { 'TSToolsAddMissingImports', 'TSToolsRemoveUnusedImports' },
 
 	keys = {
