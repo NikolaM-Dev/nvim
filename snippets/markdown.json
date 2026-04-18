@@ -38,6 +38,11 @@
     "body": "High Performance Person",
     "prefix": "hpp"
   },
+  "Markdown Link": {
+    "body": "[$0]($CLIPBOARD)",
+    "description": "Creates a markdown link",
+    "prefix": "ml"
+  },
   "References": {
     "body": ["# 🧬 References", "", "- $0"],
     "prefix": "references"
@@ -61,20 +66,34 @@
     "description": "Tasks Done",
     "prefix": "done"
   },
+  "Task Due Date": {
+    "body": ["<@$0>"],
+    "description": "Task Due Date",
+    "prefix": "due"
+  },
   "Todos": {
     "body": ["# ✅ TODOs", "", "- [ ] $0"],
     "prefix": "todos"
   },
+  "Why": {
+    "body": "**Why?**",
+    "description": "Answer to Why I Cancelled a Task",
+    "prefix": "why"
+  },
   "bold": {
-    "body": "**$1** $0",
+    "body": "**$0**",
     "prefix": "b"
+  },
+  "callout": {
+    "body": "> [!$0",
+    "prefix": "callout"
   },
   "checkbox": {
     "body": "- [ ] $0",
     "prefix": "td"
   },
   "code": {
-    "body": ["```${1:lang}", "$0", "```"],
+    "body": ["```$0", "", "```"],
     "prefix": "c"
   },
   "h1": {
@@ -123,7 +142,7 @@
     "prefix": "ic"
   },
   "italic": {
-    "body": "_$1_ $0",
+    "body": "_$0_",
     "prefix": "i"
   },
   "list": {
