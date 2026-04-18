@@ -28,5 +28,11 @@ return {
 				{ ']', group = 'next' },
 			},
 		},
+		triggers = {
+			{ 'tt', mode = { 'n' } },
+			{ ']', mode = { 'n' } },
+			{ '[', mode = { 'n' } },
+			{ '<leader><leader>', mode = { 'n' } },
+		},
 	},
 }
