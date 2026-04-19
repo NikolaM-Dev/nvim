@@ -2,6 +2,7 @@
 ---@type LazySpec
 return {
 	'mbbill/undotree',
+	desc = 'The undo history visualizer for VIM',
 	enabled = true,
 
 	keys = {
