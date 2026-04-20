@@ -25,7 +25,7 @@ return {
 	config = function(_, opts)
 		require('rose-pine').setup(opts)
 
-		vim.cmd.colorscheme(' rose-pine-moon')
+		vim.cmd.colorscheme('rose-pine-moon')
 
 		-- snacks.lazygit highlights
 		vim.api.nvim_set_hl(0, 'activeBorderColor', { fg = '#3e8fb0', bold = true })
