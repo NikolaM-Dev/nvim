@@ -18,7 +18,7 @@ return {
 		},
 		foldtext = {
 			lineCount = { template = '󰘖 %d' },
-			padding = 2,
+			padding = { width = 2 },
 		},
 	},
 }
