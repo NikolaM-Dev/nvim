@@ -3,7 +3,7 @@
 return {
 	'NikolaM-Dev/modeline.nvim',
 	desc = 'Neovim statusline plugin blazing fast than any statusline plugin',
-	enabled = true,
+	enabled = false,
 
 	dir = '~/w/1-projects/modeline.nvim',
 	event = { 'BufReadPost */*', 'BufNewFile' },
