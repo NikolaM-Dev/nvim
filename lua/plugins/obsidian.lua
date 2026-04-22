@@ -10,7 +10,9 @@ return {
 	cmd = { 'Obsidian' },
 
 	keys = {
-		{ '<leader>so', '<cmd>Obsidian<cr>', desc = '[S]earch [O]bsidian Commands' },
+		{ '<leader>O', '<cmd>Obsidian open<cr>', desc = '󱗖  Obsidian Open' },
+		{ '<leader>oT', '<cmd>Obsidian toc<cr>', desc = '󱗖  Obsidian Table of Contents' },
+		{ '<leader>so', '<cmd>Obsidian<cr>', desc = '󱗖  Obsidian Search Commands' },
 	},
 
 	---@module 'obsidian'
