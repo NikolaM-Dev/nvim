@@ -9,6 +9,11 @@
     "description": "Action Todo",
     "prefix": "atd"
   },
+  "Connection Tag": {
+    "body": "#action/connection",
+    "description": "Connection Tag",
+    "prefix": "conn"
+  },
   "Creates a Road Map": {
     "body": [
       "# 🛣️️ Road-map",
