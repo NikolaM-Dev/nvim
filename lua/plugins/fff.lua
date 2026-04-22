@@ -3,10 +3,12 @@
 return {
 	'dmtrKovalenko/fff.nvim',
 	desc = 'Finally a Fast Fuzzy File Finder for neovim',
-	enabled = true,
+	enabled = false,
 	lazy = false,
 
-	build = 'cargo build --release',
+	build = function()
+		require('fff.download').download_or_build_binary()
+	end,
 
 	keys = {
 		-- stylua: ignore start
