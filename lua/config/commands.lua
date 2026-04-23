@@ -141,6 +141,7 @@ command('RemoveDatePatterns', function()
 end, { desc = '󰘳 Remove <MM-DD> and <YYYY-MM-DD> patterns' })
 
 command('CommitRoadmap', function()
+command('RoadmapCommit', function()
 	local cwd = vim.fn.getcwd()
 	local roadmap_path = cwd .. '/ROADMAP.md'
 
