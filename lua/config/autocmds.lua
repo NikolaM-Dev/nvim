@@ -35,6 +35,17 @@ autocmd('FileType', {
 		end
 	end,
 })
+
+---@see https://vi.stackexchange.com/questions/14698/how-to-bypass-the-file-has-been-changed-since-reading-it
+autocmd('FileChangedShell', {
+	desc = 'Ignore File Changes',
+	group = augroup('ignore_file_changes'),
+	pattern = '*',
+	callback = function()
+		vim.cmd('echon ""')
+	end,
+})
+
 autocmd('BufReadPost', {
 	desc = 'Enable NoNeckPain from start',
 	group = augroup('enable_noneckpain_from_start'),
