@@ -25,6 +25,16 @@ autocmd({ 'BufEnter' }, {
 	end,
 })
 
+autocmd('FileType', {
+	desc = 'Auto Wrap ROADMAP.md todos',
+	group = augroup('auto_wrap_roadmap.md_todos'),
+	pattern = 'markdown',
+	callback = function(args)
+		if vim.fn.bufname(args.buf) == 'ROADMAP.md' then
+			vim.o.wrap = true
+		end
+	end,
+})
 autocmd('BufReadPost', {
 	desc = 'Enable NoNeckPain from start',
 	group = augroup('enable_noneckpain_from_start'),
