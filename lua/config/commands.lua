@@ -1,6 +1,20 @@
 local api, command, fn = vim.api, vim.api.nvim_create_user_command, vim.fn
 local logger = nkl.logger:new('Commands')
 
+command('SBArchive', function()
+	vim.fn.jobstart('n-sb-archive', {
+		on_exit = function(_, exit_code)
+			if exit_code == 0 then
+				logger:info('Archive completed successfully')
+			else
+				logger:error('Archive failed with exit code: ' .. exit_code)
+			end
+		end,
+	})
+
+	vim.cmd.edit()
+end, { desc = '󰘳 Archive completed tasks from second brain to today\'s journal' })
+
 command('JQFmt', function()
 	local buf = api.nvim_get_current_buf()
 	local path = api.nvim_buf_get_name(buf)
