@@ -70,6 +70,7 @@ return {}
 
 ## 🎒 Backlog
 
+- [ ] [vcraescu/islands-dark.nvim: Islands Dark Neovim theme port](https://github.com/vcraescu/islands-dark.nvim)
 - [ ] My own emoji blink cmp
 - [ ] Setup freciency using snacks
 - [ ] Update emmet cmp
