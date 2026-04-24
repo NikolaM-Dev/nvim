@@ -6,7 +6,8 @@ return {
 	docs = 'https://cmp.saghen.dev',
 	enabled = true,
 
-	build = 'cargo build --release',
+	commit = '90d14caca4ae557665ab105080c27d5f289a2e30',
+	build = 'cargo +nightly build --release',
 	dependencies = { 'saghen/blink.compat' },
 
 	---@module 'blink.cmp'
