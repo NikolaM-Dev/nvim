@@ -1,4 +1,35 @@
 local dmap, map = nkl.key.dmap, nkl.key.map
+local logger = nkl.logger:new('Keymaps')
+
+map('n', '<C-q>', function()
+	-- Closes diffview
+	local diffview_buf = vim.api.nvim_get_current_buf()
+	if vim.bo[diffview_buf].filetype == 'DiffviewFiles' or vim.bo[diffview_buf].filetype == 'DiffviewFileHistory' then
+		vim.cmd('DiffviewClose')
+		return
+	end
+
+	if vim.wo.diff then
+		-- Closes diffview if I'm now focusing on it
+		for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+			if vim.bo[buf].filetype == 'DiffviewFiles' or vim.bo[buf].filetype == 'DiffviewFileHistory' then
+				vim.notify('Diffview is open')
+				vim.cmd('DiffviewClose')
+				return
+			end
+
+			-- Closes gitsigns diffthis
+			if vim.bo[buf].buftype == 'acwrite' and vim.api.nvim_buf_is_valid(buf) then
+				-- vim.cmd.bdelete(buf)
+
+				vim.cmd('bd! ' .. buf)
+				return
+			end
+		end
+	end
+
+	vim.cmd('quit')
+end, { desc = ' Quit' })
 
 -- TODO: :silent mkspell! %, to generate spell files
 
