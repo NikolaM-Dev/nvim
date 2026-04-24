@@ -462,3 +462,14 @@ map('v', '<leader><leader>t', function()
 	-- 5. Set the new text back into that exact range
 	vim.api.nvim_buf_set_text(0, s_row, s_col, e_row, e_col, new_lines)
 end, { desc = 'Title Case Selection' })
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                          tabs                           │
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                          Tabs                           │
+--          ╰─────────────────────────────────────────────────────────╯
+dmap('n', ']t')
+dmap('n', '[t')
+dmap('n', ']T')
+map('n', ']t', '<cmd>tabnext<cr>', { desc = '  Go to next tab' })
+map('n', '[t', '<cmd>tabprevious<cr>', { desc = '  Go to previous tab' })
+map('n', ']T', '<cmd>tabnew<cr>', { desc = '  Create a new tab' })
