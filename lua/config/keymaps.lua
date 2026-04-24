@@ -465,6 +465,22 @@ end, { desc = 'Title Case Selection' })
 --          ╭─────────────────────────────────────────────────────────╮
 --          │                          tabs                           │
 --          ╭─────────────────────────────────────────────────────────╮
+--          │                         Indent                          │
+--          ╰─────────────────────────────────────────────────────────╯
+map('v', '>', function()
+	vim.cmd('>')
+	vim.cmd('normal! gv') -- re‑select the same visual area
+end, { desc = '  Shift‑right (same as >) but keep visual selection' })
+
+map('v', '<', function()
+	vim.cmd('<')
+	vim.cmd('normal! gv')
+end, { desc = '  Shift‑left (same as <) but keep visual selection' })
+
+map('n', '>>', '>>', { desc = '  >> works on the current line' })
+map('n', '<<', '<<', { desc = '  << works on the current line' })
+
+--          ╭─────────────────────────────────────────────────────────╮
 --          │                          Tabs                           │
 --          ╰─────────────────────────────────────────────────────────╯
 dmap('n', ']t')
