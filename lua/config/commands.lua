@@ -140,7 +140,57 @@ command('RemoveDatePatterns', function()
 	logger:info('Date patterns removed where appropriate')
 end, { desc = '󰘳 Remove <MM-DD> and <YYYY-MM-DD> patterns' })
 
-command('CommitRoadmap', function()
+command('ToggleStatusTag', function()
+	local status_tags = {
+		'status/pending',
+		'status/wait',
+		'status/polish',
+		'status/connections',
+		'status/arrange',
+	}
+
+	local bufnr = api.nvim_get_current_buf()
+	local lines = api.nvim_buf_get_lines(bufnr, 0, -1, false)
+
+	-- Find front matter boundaries (lines between the --- markers)
+	local front_start, front_end = nil, nil
+	for i, line in ipairs(lines) do
+		if line == '---' then
+			if not front_start then
+				front_start = i
+			else
+				front_end = i
+				break
+			end
+		end
+	end
+
+	if not front_start or not front_end then
+		logger:error('No YAML front matter found')
+		return
+	end
+
+	-- Scan front matter for a status tag
+	for i = front_start, front_end do
+		for j, tag in ipairs(status_tags) do
+			local pattern = vim.pesc(tag)
+			if lines[i]:find(pattern) then
+				-- Cycle to next status
+				local next = status_tags[(j % #status_tags) + 1]
+				lines[i] = lines[i]:gsub(pattern, next)
+				api.nvim_buf_set_lines(bufnr, 0, -1, false, lines)
+				logger:info('Toggled status: ' .. tag .. ' → ' .. next)
+				return
+			end
+		end
+	end
+
+	-- No status tag found — insert one after front_start (typically after the opening ---)
+	table.insert(lines, front_start + 1, 'tags: [' .. status_tags[1] .. ']')
+	api.nvim_buf_set_lines(bufnr, 0, -1, false, lines)
+	logger:info('Added status tag: ' .. status_tags[1])
+end, { desc = '󰘳 Toggle Markdown Status Tag' })
+
 command('RoadmapCommit', function()
 	local cwd = vim.fn.getcwd()
 	local roadmap_path = cwd .. '/ROADMAP.md'
