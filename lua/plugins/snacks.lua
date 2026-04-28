@@ -146,6 +146,8 @@ return {
 						keys = {
 							['<C-d>'] = { 'preview_scroll_down', mode = { 'i', 'n' } },
 							['<C-u>'] = { 'preview_scroll_up', mode = { 'i', 'n' } },
+							['<Down>'] = { 'history_forward', mode = { 'i', 'n' } },
+							['<Up>'] = { 'history_back', mode = { 'i', 'n' } },
 						},
 					},
 				},
