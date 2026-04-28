@@ -74,9 +74,11 @@ return {
 			rename = enabled,
 			scratch = enabled,
 			statuscolumn = enabled,
+			terminal = enabled,
 			toggle = enabled,
 
 			dashboard = {
+				enabled = false,
 				preset = {
 					header = table.concat({
 						'[N]eo[V]im',
