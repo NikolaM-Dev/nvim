@@ -50,6 +50,7 @@ return {
 				zk.new({
 					content = content,
 					dir = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(0), ':p:h') .. '/',
+					template = 'extracted-note.md',
 					title = title,
 					insertLinkAtLocation = {
 						range = {
