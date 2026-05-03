@@ -8,8 +8,10 @@ return {
 	ft = 'markdown',
 
 	keys = {
-		{ '<C-n><C-i>', '<cmd>ZkInsertLink<cr>', desc = '[Z]k [L]inks', mode = 'i' },
+		{ '<M-i>', '<cmd>ZkInsertLink<cr>', desc = '[Z]k [L]inks', mode = 'i' },
 		{ '<leader>ze', '<cmd>ZkNotes { sort = { \'modified\' } }<cr>', desc = '[Z]k [E]dit' },
+		{ '<leader>zi', '<cmd>ZkIndex<cr>', desc = '[Z]k [I]ndex' },
+		{ '<leader>zt', '<cmd>ZkTags<cr>', desc = '[Z]k [T]ags' },
 		{ 'gb', '<cmd>ZkBacklinks<cr>', desc = '[Z]k [B]acklinks' },
 		{ 'gl', '<cmd>ZkLinks<cr>', desc = '[Z]k [L]inks' },
 		{
