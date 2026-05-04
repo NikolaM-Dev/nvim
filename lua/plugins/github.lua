@@ -4,6 +4,7 @@ return {
 	'projekt0n/github-nvim-theme',
 	desc = 'GitHub\'s Neovim themes',
 	name = 'github-theme',
+	enabled = false,
 
 	lazy = false,
 	priority = 1000,
