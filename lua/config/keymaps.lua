@@ -520,3 +520,19 @@ dmap('n', ']T')
 map('n', ']t', '<cmd>tabnext<cr>', { desc = '  Go to next tab' })
 map('n', '[t', '<cmd>tabprevious<cr>', { desc = '  Go to previous tab' })
 map('n', ']T', '<cmd>tabnew<cr>', { desc = '  Create a new tab' })
+
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                        Terminal                         │
+--          ╰─────────────────────────────────────────────────────────╯
+local esc_sequence = '<C-\\><C-n>'
+map('t', '<C-\\>', esc_sequence, { desc = '  Esc works as normal in terminal mode' })
+map('t', '<Esc>', esc_sequence, { desc = '  Esc works as normal in terminal mode' })
+map('t', '<C-u>', esc_sequence .. '<C-u>zz', { desc = '  Back to normal mode and scroll up' })
+map('t', '<C-d>', esc_sequence .. '<C-d>zz', { desc = '  Back to normal mode and scroll down' })
+-- map({ 't' }, '<M-t>', '<C-\\><C-n><cmd>tabnext<cr>', { desc = 'Go to next tab' })
+-- map({ 'i', 'n' }, '<M-t>', '<esc><cmd>tabnext<cr>', { desc = 'Go to next tab' })
+-- map({ 'n', 't' }, '<tab>1', '<cmd>tabnext 1<cr>', { desc = 'Go to tab 1' })
+-- map({ 'n', 't' }, '<tab>2', '<cmd>tabnext 2<cr>', { desc = 'Go to tab 2' })
+-- map({ 'n', 't' }, '<tab>3', '<cmd>tabnext 3<cr>', { desc = 'Go to tab 3' })
+-- map({ 'n', 't' }, '<tab>4', '<cmd>tabnext 4<cr>', { desc = 'Go to tab 4' })
+-- map({ 'n', 't' }, '<tab>n', '<cmd>tabnew<cr>', { desc = 'Create a new tab' })
