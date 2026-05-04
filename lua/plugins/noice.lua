@@ -3,7 +3,7 @@
 return {
 	'folke/noice.nvim',
 	desc = 'Highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu.',
-	enabled = true,
+	enabled = false,
 
 	event = 'VeryLazy',
 	dependencies = { 'MunifTanjim/nui.nvim' },
