@@ -536,3 +536,10 @@ map('t', '<C-d>', esc_sequence .. '<C-d>zz', { desc = '  Back to normal mode 
 -- map({ 'n', 't' }, '<tab>3', '<cmd>tabnext 3<cr>', { desc = 'Go to tab 3' })
 -- map({ 'n', 't' }, '<tab>4', '<cmd>tabnext 4<cr>', { desc = 'Go to tab 4' })
 -- map({ 'n', 't' }, '<tab>n', '<cmd>tabnew<cr>', { desc = 'Create a new tab' })
+
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                         Pasting                         │
+--          ╰─────────────────────────────────────────────────────────╯
+map({ 'n', 'x' }, '<leader>p', '"_dP', { desc = ' Paste without yank' })
+-- map({ 'n','x' }, '<leader>x', '"_dP')
+-- map({ 'n','x' }, '<leader>c', '"_dP')
