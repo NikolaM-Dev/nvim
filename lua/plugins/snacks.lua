@@ -55,9 +55,6 @@ return {
 
 		-- zoom
 		{ 'ttz', function() Snacks.zen.zoom() end, desc = ' Toggle Zoom' },
-
-		-- spelling
-		{ 'z=', function() Snacks.picker.spelling({ layout = { preset = 'select' } }) end, desc = 'Spelling' },
 		-- stylua: ignore end
 	},
 
