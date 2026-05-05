@@ -66,6 +66,7 @@ return {
 					drive = { icon = ' ', pattern = 'drive.google%.com' },
 					github = { icon = ' ', pattern = 'github%.com' },
 					google = { pattern = 'google%.com', icon = ' ' },
+					instagram = { pattern = 'instagram%.com', icon = '󰋾 ' },
 					neovim = { icon = ' ', pattern = 'neovim%.io' },
 					notion = { icon = ' ', pattern = 'notion%.so' },
 					notion_site = { icon = ' ', pattern = '%notion%.site' },
