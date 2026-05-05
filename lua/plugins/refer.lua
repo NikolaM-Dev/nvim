@@ -1,7 +1,7 @@
 ---@module 'lazy.types'
 ---@type LazySpec
 return {
-	'juniorsundar/refer.nvim',
+	'NikolaM-Dev/refer.nvim',
 	desc = 'Picker that doesn\'t get in your way',
 	enabled = true,
 
