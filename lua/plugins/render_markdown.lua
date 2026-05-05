@@ -21,7 +21,7 @@ return {
 			heading = { enabled = false, icons = { '# ', '## ', '### ', '### ', '#### ', '##### ', '###### ' } },
 			sign = disabled,
 
-			debounce = 42,
+			debounce = nkl.g.timeout,
 			file_types = { 'gitcomit', 'markdown', 'mdx' },
 			render_modes = { 'n', 'i', 'v', 'V', 'c', 't' },
 
