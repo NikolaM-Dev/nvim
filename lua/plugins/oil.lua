@@ -27,7 +27,7 @@ return {
 		watch_for_changes = true,
 
 		float = {
-			border = 'none',
+			max_width = 0.3,
 			padding = 0,
 		},
 
