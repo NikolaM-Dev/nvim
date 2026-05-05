@@ -11,7 +11,7 @@ return {
 
 	keys = {
 		-- stylua: ignore start
-		{ '<M-f>', function() require('neocodeium').accept() end, mode = 'i' },
+		{ '<M-f>', function() require('neocodeium').accept() end, mode = { 'i', 'n' } },
 		-- stylua: ignore end
 	},
 }
