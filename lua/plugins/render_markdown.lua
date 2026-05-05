@@ -18,7 +18,7 @@ return {
 		---@type render.md.UserConfig
 		return {
 			anti_conceal = disabled,
-			heading = disabled,
+			heading = { enabled = false, icons = { '# ', '## ', '### ', '### ', '#### ', '##### ', '###### ' } },
 			sign = disabled,
 
 			debounce = 42,
@@ -30,6 +30,11 @@ return {
 			},
 			bullet = {
 				icons = { '•' },
+			},
+			callout = {
+				cite = { rendered = ' Cite' },
+				quote = { rendered = ' Quote' },
+				tldr = { rendered = '󰨸 TLDR' },
 			},
 			checkbox = {
 				bullet = true,
@@ -47,6 +52,9 @@ return {
 					canceled = { highlight = 'Error', raw = '[-]', rendered = ' ' },
 					todo = { highlight = 'Error', raw = '[-]', rendered = ' ' },
 				},
+			},
+			code = {
+				border = 'thin',
 			},
 			completions = { blink = { enabled = true } },
 			link = {
