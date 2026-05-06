@@ -20,5 +20,4 @@ vim.g.clipboard = {
 
 vim.g.mapleader = ' '
 
-_G.is_in_gitsigns_diffthis = false
 _G.nkl = require('lib')
