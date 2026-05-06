@@ -85,6 +85,11 @@
     "description": "Answer to Why I Cancelled a Task",
     "prefix": "why"
   },
+  "Sparking Idea": {
+    "body": "**Sparking Idea** - $0",
+    "description": "Write a sparking idea while I'm in the middle of a literature note",
+    "prefix": "sp"
+  },
   "bold": {
     "body": "**$0**",
     "prefix": "b"
