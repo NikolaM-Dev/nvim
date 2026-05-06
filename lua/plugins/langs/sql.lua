@@ -25,6 +25,7 @@ return {
 		'jsborjesson/vim-uppercase-sql',
 		desc = 'Automatically uppercase SQL keywords as you type',
 		enabled = true,
+
 		ft = { 'mysql', 'psql', 'sql' },
 	},
 }
