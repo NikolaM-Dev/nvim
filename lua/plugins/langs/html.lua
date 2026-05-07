@@ -25,4 +25,30 @@ return {
 			opts.formatters_by_ft.html = { 'prettier' }
 		end,
 	},
+
+	{
+		'NikolaM-Dev/cmp-emmet_nvim',
+		dir = '~/w/1-projects/nvim/cmp-emmet_nvim',
+		desc = 'nvim-cmp source for emmet',
+
+		build = 'npm run release',
+		ft = { 'html', 'css' },
+	},
+	{
+		'saghen/blink.cmp',
+
+		---@module 'blink-cmp'
+		---@type blink.cmp.Config
+		opts = {
+			sources = {
+				per_filetype = {
+					css = { inherit_defaults = true, 'emmet' },
+					html = { inherit_defaults = true, 'emmet' },
+				},
+				providers = {
+					emmet = { name = 'emmet', module = 'blink.compat.source' },
+				},
+			},
+		},
+	},
 }
