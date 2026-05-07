@@ -2,7 +2,7 @@
 ---@type LazySpec
 return {
 	'chrisgrieser/nvim-justice',
-	desc = ' Just an integration of `just` in nvim.',
+	desc = 'Just an integration of `just` in nvim.',
 	enabled = true,
 
 	keys = {
