@@ -16,7 +16,13 @@ return {
 	{
 		'neovim/nvim-lspconfig',
 		opts = function(_, opts)
-			opts.servers.basedpyright = {}
+			opts.servers.basedpyright = {
+				settings = {
+					basedpyright = {
+						analysis = { typeCheckingMode = 'strict' },
+					},
+				},
+			}
 			opts.servers.ruff = {}
 		end,
 	},
