@@ -15,6 +15,7 @@ return {
 	},
 	{
 		'ruicsh/tailwind-hover.nvim',
+		enabled = true,
 		desc = 'Shows consolidated Tailwind CSS styles applied to the element under the cursor',
 
 		keys = {
