@@ -7,8 +7,18 @@ return {
 		local fzf = require('fzf-lua')
 		return {
 			-- stylua: ignore start
+			-- find
 			{ '<leader>ff', function() fzf.files() end, desc = ' Find Files' },
+
+			-- search
 			{ '<leader>sg', function() fzf.live_grep() end, desc = ' Search Grep' },
+
+			-- git
+			{ '<leader>gS', function() fzf.git_stash() end, desc = ' Git Stash' },
+			{ '<leader>gs', function() fzf.git_status() end, desc = ' Git Status' },
+
+			-- others
+			{ 'z=', function() fzf.spell_suggest() end, desc = ' Spell Suggest' },
 			-- stylua: ignore end
 		}
 	end,
