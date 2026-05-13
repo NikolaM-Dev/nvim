@@ -46,10 +46,6 @@ return {
 		-- buffers
 		{ '<leader>bd', function() Snacks.bufdelete() end, desc = '[D]elete [B]uffer', },
 
-		-- git
-		{ '<leader>gS', function() Snacks.picker.git_stash() end,  desc = '[G]it [S]tash' },
-		{ '<leader>gs', function() Snacks.picker.git_status() end, desc = '[G]it [S]tatus' },
-
 		-- lsp
 		{ 'gd', function() Snacks.picker.lsp_definitions() end, desc = '[G]oto [D]efinition' },
 
