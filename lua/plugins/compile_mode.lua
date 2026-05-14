@@ -24,6 +24,7 @@ return {
 				-- python = "python %",
 				-- lua = "lua %",
 				-- javascript = "bun %",
+				dts = 'just build',
 				typescript = 'bun run typecheck',
 				typescriptreact = 'bun run build',
 				-- c = "cc -o %:r % && ./%:r",
@@ -35,9 +36,33 @@ return {
 			-- to make `:Compile` replace special characters (e.g. `%`) in
 			-- the command (and behave more like `:!`), add:
 			bang_expansion = true,
+
+			directory_change_matchers = {
+				{ regex = [[^> @\?[^@]\+@\S\+ \S\+ \zs\(\S\+\)\ze$]], filename = 1 },
+			},
 			error_regexp_table = {
-				typescript = {
-					regex = '^\\(.\\+\\)(\\([1-9][0-9]*\\)[,:]\\([1-9][0-9]*\\)): error TS[1-9][0-9]*:',
+				custom = {
+					regex = '^\\%(\\[\\%(ERROR\\|\\(WARNING\\)\\|\\(INFO\\)\\)\\] \\)\\?\\([^\n :]\\+\\):\\([1-9][0-9]*\\): ',
+					filename = 3,
+					row = 4,
+					type = { 1, 2 },
+					priority = 2,
+				},
+				nodejs = {
+					regex = '^\\s\\+at .\\+ (\\(.\\+\\):\\([1-9][0-9]*\\):\\([1-9][0-9]*\\))$',
+					filename = 1,
+					row = 2,
+					col = 3,
+					priority = 2,
+				},
+				tsc1 = {
+					regex = [[^\(.\+\)(\([1-9][0-9]*\)[,:]\([1-9][0-9]*\)): error TS[1-9][0-9]*:]],
+					filename = 1,
+					row = 2,
+					col = 3,
+				},
+				tsc2 = {
+					regex = [[^\(.\+\):\([1-9][0-9]*\):\([1-9][0-9]*\)\s\+-\s\+error\s\+TS[1-9][0-9]*:]],
 					filename = 1,
 					row = 2,
 					col = 3,
