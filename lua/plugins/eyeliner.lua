@@ -2,7 +2,7 @@
 ---@type LazySpec
 return {
 	'jinh0/eyeliner.nvim',
-	---@see lua/plugins/clever_f.lua
+	---@see lua/plugins/nvim_ffhighlight.lua
 	desc = '👀 Move faster with unique f/F indicators.',
 	enabled = true,
 
