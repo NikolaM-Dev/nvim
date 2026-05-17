@@ -39,6 +39,7 @@ return {
 			['lazy-lock.json'] = { glyph = '󰒲', hl = 'MiniIconsBlue' },
 			['package.json'] = { glyph = '', hl = 'MiniIconsGreen' },
 			['tsconfig.json'] = { glyph = '', hl = 'MiniIconsAzure' },
+			['pnpm-lock.yaml'] = { glyph = '', hl = 'MiniIconsPurple' },
 		},
 	},
 
