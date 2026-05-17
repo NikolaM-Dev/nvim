@@ -125,6 +125,74 @@ command('ExtractNotesQF', function(opts)
 	end)
 end, { desc = '󰘳 Extract Notes Into Qf', range = true })
 
+command('OpenLinks', function(opts)
+	-- Get the range of lines
+	local start_line, end_line = opts.line1, opts.line2
+
+	-- Table to hold all extracted URLs
+	local urls = {}
+
+	-- Pattern for markdown links: [text](url)
+	local markdown_link_pattern = '%[([^%]]+)%]%((https?://[^%)]+)%)'
+	-- Pattern for direct URLs: https://...
+	local url_pattern = 'https?://[^%s%]]+'
+
+	-- Process each line in the range
+	for line_num = start_line, end_line do
+		local line_content = vim.fn.getline(line_num)
+
+		-- Extract markdown-style links [text](url)
+		for text, url in line_content:gmatch(markdown_link_pattern) do
+			table.insert(urls, url)
+		end
+
+		-- Extract direct URLs
+		for url in line_content:gmatch(url_pattern) do
+			table.insert(urls, url)
+		end
+	end
+
+	-- Remove duplicates while preserving order
+	local seen = {}
+	local unique_urls = {}
+	for _, url in ipairs(urls) do
+		if not seen[url] then
+			seen[url] = true
+			table.insert(unique_urls, url)
+		end
+	end
+
+	if #unique_urls == 0 then
+		logger:warn('No HTTPS links found in selection')
+		return
+	end
+
+	-- Determine the appropriate open command based on OS
+	local open_cmd
+	if vim.fn.has('mac') == 1 then
+		open_cmd = 'open'
+	elseif vim.fn.has('unix') == 1 then
+		-- Check if xdg-open is available, otherwise try firefox
+		if vim.fn.executable('xdg-open') == 1 then
+			open_cmd = 'xdg-open'
+		else
+			open_cmd = 'firefox'
+		end
+	elseif vim.fn.has('win32') == 1 or vim.fn.has('win64') == 1 then
+		open_cmd = 'start'
+	else
+		open_cmd = 'xdg-open'
+	end
+
+	-- Open each URL
+	for _, url in ipairs(unique_urls) do
+		local cmd = open_cmd .. ' ' .. vim.fn.shellescape(url)
+		vim.fn.jobstart(cmd, { detach = true })
+	end
+
+	logger:info('Opened ' .. #unique_urls .. ' link(s) in browser')
+end, { desc = '󰘳 Open all HTTPS links from selection', range = true })
+
 command('RemoveDatePatterns', function()
 	-- Remove <MM-DD> or <YYYY-MM-DD> patterns only on lines that are marked as completed [x] or canceled [-]
 	local bufnr = vim.api.nvim_get_current_buf()
