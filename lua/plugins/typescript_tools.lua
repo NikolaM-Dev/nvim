@@ -13,5 +13,14 @@ return {
 		{ '<leader>am', '<cmd>TSToolsAddMissingImports<cr>', desc = '󱐋 Add Missing Imports' },
 	},
 
-	config = true,
+	config = function()
+		require('typescript-tools').setup({
+			settings = {
+				tsserver_file_preferences = {
+					-- TODO: Change to use relative in no NextJS projects
+					importModuleSpecifierPreference = 'non-relative',
+				},
+			},
+		})
+	end,
 }
