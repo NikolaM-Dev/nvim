@@ -82,10 +82,7 @@ return {
 				gitsigns.blame_line({ full = true })
 			end)
 
-			map('n', '<leader>hd', function()
-				_G.is_in_gitsigns_diffthis = true
-				gitsigns.diffthis()
-			end)
+			map('n', '<leader>hd', gitsigns.diffthis)
 
 			map('n', '<leader>hD', function()
 				gitsigns.diffthis('~')
@@ -98,7 +95,6 @@ return {
 
 			-- Toggles
 			map('n', '<leader>tb', gitsigns.toggle_current_line_blame)
-			map('n', '<leader>td', gitsigns.toggle_deleted)
 			map('n', '<leader>tw', gitsigns.toggle_word_diff)
 
 			-- Text object
