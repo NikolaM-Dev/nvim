@@ -15,6 +15,10 @@ return {
 		{ '<leader>so', '<cmd>Obsidian<cr>', desc = '󱗖  Obsidian Search Commands' },
 	},
 
+	init = function()
+		vim.o.conceallevel = 2
+	end,
+
 	---@module 'obsidian'
 	---@type obsidian.config
 	opts = {
