@@ -124,10 +124,22 @@ return {
 			enable = false,
 		},
 
-		---@param opts { path: string, label: string, id: string|integer|?, anchor: obsidian.note.HeaderAnchor|?, block: obsidian.note.Block|? }
-		wiki_link_func = function(opts)
-			return require('obsidian.builtin').wiki_link_alias_only(opts)
-		end,
+		link = {
+			style =
+				---@param opts obsidian.link.LinkCreationOpts
+				---@return string
+				function(opts)
+					---@type string
+					local header_or_block = ''
+					if opts.anchor then
+						header_or_block = string.format('#%s', opts.anchor.header)
+					elseif opts.block then
+						header_or_block = string.format('#%s', opts.block.id)
+					end
+
+					return string.format('[[%s%s]]', opts.label, header_or_block)
+				end,
+		},
 
 		workspaces = {
 			{
