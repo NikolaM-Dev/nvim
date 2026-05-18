@@ -122,6 +122,7 @@ return {
 		-- Became the maintainer are going to deprecate this module
 		ui = {
 			enable = false,
+			enabled = false,
 		},
 
 		link = {
