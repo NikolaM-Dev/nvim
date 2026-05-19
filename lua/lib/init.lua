@@ -1,6 +1,7 @@
 ---@module 'nkl.lib'
 ---@class nkl.lib
 ---@field apply nkl.lib.apply
+---@field conf nkl.lib.conf
 ---@field g nkl.lib.g
 ---@field key nkl.lib.key
 ---@field logger nkl.lib.logger
@@ -28,11 +29,5 @@ local function setup()
 end
 
 setup()
-
----Create an autogroup with nikola prefix
----@param name string The name of the autogroup
-function M.augroup(name)
-	return vim.api.nvim_create_augroup('nikola_' .. name, { clear = true })
-end
 
 return M
