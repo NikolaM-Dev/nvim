@@ -76,9 +76,10 @@ return {
 	opts = {
 		{ 'hide' },
 		fzf_opts = {
-			['--prompt'] = ' ',
-			['--pointer'] = '',
 			['--border'] = 'none',
+			['--pointer'] = '',
+			['--prompt'] = ' ',
+			['--tiebreak'] = 'score',
 		},
 		fzf_bin = 'sk',
 		keymap = {
