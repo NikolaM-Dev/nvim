@@ -2,7 +2,7 @@ if not nkl.tmux.is_running() then
 	return
 end
 
-local augroup = require('lib').augroup
+local augroup = nkl.conf.augroup
 local autocmd, command = vim.api.nvim_create_autocmd, vim.api.nvim_create_user_command
 
 local TMUX_PREFIX = 'C-z'
