@@ -27,8 +27,17 @@ return {
 		watch_for_changes = true,
 
 		float = {
-			max_width = 0.3,
+			max_width = 0.35,
 			padding = 0,
+			override = function(conf)
+				-- NOTE: Takes the whole width when the screen is small
+				if vim.o.columns <= 95 then
+					conf.width = vim.o.columns
+					conf.border = 'none'
+				end
+
+				return conf
+			end,
 		},
 
 		keymaps = {
