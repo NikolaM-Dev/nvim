@@ -10,6 +10,7 @@ return {
 	---@type table
 	opts = {
 		filetype = {
+			env = { glyph = '', hl = 'MiniIconsGrey' },
 			markdown = { glyph = '󱗖', hl = 'MiniIconsPurple' },
 		},
 
