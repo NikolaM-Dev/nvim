@@ -39,13 +39,14 @@ return {
 			{ '<leader>di', function() require('dap').step_into() end, desc = 'Step Into' },
 			{ '<leader>dj', function() require('dap').down() end, desc = 'Down' },
 			{ '<leader>dk', function() require('dap').up() end, desc = 'Up' },
-			{ '<leader>dl', function() require('dap').run_last() end, desc = 'Run Last' },
+			{ '<leader>dl', function() require('dap').terminate() vim.defer_fn(function () require('dap').run_last() end, 42) end, desc = 'Run Last' },
 			{ '<leader>do', function() require('dap').step_out() end, desc = 'Step Out' },
 			{ '<leader>dO', function() require('dap').step_over() end, desc = 'Step Over' },
-			{ '<leader>dP', function() require('dap').pause() end, desc = 'Pause' },
-			{ '<leader>dr', function() require('dap').repl.toggle() end, desc = 'Toggle REPL' },
+			{ '<leader>dp', function() require('dap').pause() end, desc = 'Pause' },
+			{ '<leader>dr', function() require('dap').restart() end, desc = 'Restart' },
+			{ '<leader>dR', function() require('dap').repl.toggle() end, desc = 'Toggle REPL' },
 			{ '<leader>ds', function() require('dap').session() end, desc = 'Session' },
-			{ '<leader>dt', function() require('dap').terminate() end, desc = 'Terminate' },
+			{ '<leader>dt', function() require('dap').terminate() require('dapui').close() end, desc = 'Terminate' },
 			{ '<leader>dw', function() require('dap.ui.widgets').hover() end, desc = 'Widgets' },
 			{ '<F1>', function() require('dap').step_into() end, desc = '  Step Into' },
 			{ '<F2>', function() require('dap').step_over() end, desc = '  Step Over' },
@@ -92,6 +93,11 @@ return {
 		'rcarriga/nvim-dap-ui',
 		desc = 'A UI for nvim-dap',
 		enabled = true,
+
+		cond = function()
+			local is_using_dap = pcall(require, 'dap')
+			return is_using_dap
+		end,
 
 		dependencies = { 'nvim-neotest/nvim-nio' },
 
