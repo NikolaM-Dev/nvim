@@ -14,8 +14,8 @@ return {
 
 	lazy = false,
 	keys = {
-		{ '-', '<cmd>Oil --float<cr>', desc = 'Open Oil' },
-		{ '<leader>-', '<cmd>Oil --float .<cr>', desc = 'Open Oil (cwd)' },
+		{ '-', '<cmd>Oil <cr>', desc = 'Open Oil' },
+		{ '<leader>-', '<cmd>Oil .<cr>', desc = 'Open Oil (cwd)' },
 	},
 
 	---@module 'oil'
@@ -83,6 +83,12 @@ return {
 			is_always_hidden = function(name)
 				return name == '..'
 			end,
+
+			sort = {
+				---@see `:help oil-columns` to see which columns are sortable
+				{ 'type', 'desc' },
+				{ 'name', 'asc' },
+			},
 		},
 
 		win_options = {
