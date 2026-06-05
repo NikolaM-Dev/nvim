@@ -7,7 +7,7 @@ return {
 
 	keys = {
 		-- stylua: ignore start
-		{ '<C-.>', function() require('sidekick.cli').toggle({ name = 'pi', focus = true }) end, desc = 'Sidekick Toggle', mode = { 'n', 't', 'i', 'x' } },
+		{ '<C-.>', function() require('sidekick.cli').toggle({ focus = true }) end, desc = 'Sidekick Toggle', mode = { 'n', 't', 'i', 'x' } },
 		{ '<leader>ad', function() require('sidekick.cli').close() end, desc = 'Detach a CLI Session' },
 		{ '<leader>at', function() require('sidekick.cli').send({ msg = '{this}' }) end, mode = { 'x', 'n' }, desc = 'Send This' },
 		{ '<leader>af', function() require('sidekick.cli').send({ msg = '{file}' }) end, desc = 'Send File' },
