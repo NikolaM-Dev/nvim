@@ -1,4 +1,29 @@
 {
+  "Create a handleChange on ReactJS": {
+    "body": [
+      "const handleChange = (",
+      "\te: React.ChangeEvent<HTMLInputElement>,",
+      "): void => {",
+      "\t$0",
+      "}",
+      ""
+    ],
+    "description": "Create a handleChange on ReactJS",
+    "prefix": "handleChange"
+  },
+  "Create a handleSubmit on ReactJS": {
+    "body": [
+      "const handleSubmit = async (",
+      "\te: React.FormEvent<HTMLFormElement>,",
+      "): Promise<void> => {",
+      "\te.preventDefault();",
+      "\t$0",
+      "}",
+      ""
+    ],
+    "description": "Create a handlesubmit on ReactJS",
+    "prefix": "handleSubmit"
+  },
   "React Functional Component": {
     "body": [
       "type ${TM_FILENAME_BASE}Props = {};",
@@ -20,7 +45,7 @@
     "prefix": "ue"
   },
   "useState Hook": {
-    "prefix": "us",
-    "body": ["const [${1:state}, set${2:State}] = useState(${3:initValue})"]
+    "body": ["const [${1:state}, set${2:State}] = useState(${3:initValue})"],
+    "prefix": "us"
   }
 }
