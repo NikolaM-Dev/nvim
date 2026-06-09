@@ -1,3 +1,7 @@
+if true then
+	return
+end
+
 if not nkl.tmux.is_running() then
 	return
 end
