@@ -1,4 +1,9 @@
 {
+  "Create an anonymous function": {
+    "body": ["const ${1:name} = (${2:params}): any => {", "\t$0", "};"],
+    "description": "Create an anonymous function",
+    "prefix": "afn"
+  },
   "console.log": {
     "body": "console.log($0);",
     "prefix": "cl"
