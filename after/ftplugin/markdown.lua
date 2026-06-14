@@ -6,6 +6,8 @@ vim.opt_local.textwidth = 80
 vim.opt_local.formatoptions:append('r') -- `<CR>` in insert mode
 vim.opt_local.comments = {
 	'b:>',
+	'b:✗',
+	'b:✓',
 	-- "b:-",
 	-- "b:*",
 }
