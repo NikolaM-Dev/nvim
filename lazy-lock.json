@@ -8,6 +8,7 @@
   "compile-mode.nvim": { "branch": "main", "commit": "dd3e952076a33faba0a55b04b2b73945832c0527" },
   "conform.nvim": { "branch": "master", "commit": "619363c30309d29ffa631e67c8183f2a72caa373" },
   "diffview.nvim": { "branch": "main", "commit": "4516612fe98ff56ae0415a259ff6361a89419b0a" },
+  "env-hide.nvim": { "branch": "main", "commit": "09104f42161fa3fbd33d0349a15232b7c3e43564" },
   "eyeliner.nvim": { "branch": "main", "commit": "8f197eb30cecdf4c2cc9988a5eecc6bc34c0c7d6" },
   "fff.nvim": { "branch": "main", "commit": "4b83987ea121dbdd0c6e1065b9bc480bdf954931" },
   "flash.nvim": { "branch": "main", "commit": "fcea7ff883235d9024dc41e638f164a450c14ca2" },
