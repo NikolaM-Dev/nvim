@@ -39,6 +39,11 @@
     "description": "Creates a Road Map",
     "prefix": "roadmap"
   },
+  "Footer": {
+    "body": ["# 🌟 See Also", "", "- …", "", "# 🧬 References", "", "- …"],
+    "description": "Footer for my permanent notes",
+    "prefix": "footer"
+  },
   "High Performance Person": {
     "body": "High Performance Person",
     "prefix": "hpp"
