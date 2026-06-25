@@ -1,6 +1,6 @@
 {
   "Update roadmap": {
-    "body": "docs(roadmap): Change roadmap state",
+    "body": "docs(roadmap): change roadmap state",
     "desc": "Update roadap",
     "prefix": "roadmap"
   },
@@ -10,7 +10,7 @@
     "prefix": "build"
   },
   "build change plugins versions": {
-    "body": "build(lazy): Change plugins version",
+    "body": "build(lazy): change plugins version",
     "prefix": "bcpv"
   },
   "bullet list item": {
@@ -58,7 +58,7 @@
     "prefix": "style"
   },
   "style change formatting": {
-    "body": "style($1): Change formatting",
+    "body": "style($1): change formatting",
     "prefix": "scf"
   },
   "test": {
