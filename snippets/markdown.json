@@ -9,6 +9,11 @@
     "description": "Action Todo",
     "prefix": "atd"
   },
+  "Attempt": {
+    "body": "### Attempt $0, ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}, ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+    "description": "10x10x10 Attempt",
+    "prefix": "att"
+  },
   "Connection Tag": {
     "body": "#action/connection",
     "description": "Connection Tag",
