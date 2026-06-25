@@ -4,6 +4,11 @@
     "description": "Create an anonymous function",
     "prefix": "afn"
   },
+  "console.dir": {
+    "body": "console.dir($0, { depth: null });",
+    "description": "Recursively print an object",
+    "prefix": "cd"
+  },
   "console.log": {
     "body": "console.log($0);",
     "prefix": "cl"
