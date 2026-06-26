@@ -8,10 +8,11 @@ return {
 	cmd = 'NoNeckPain',
 
 	keys = {
+		{ '<C-S-z>', '<cmd>NoNeckPain<cr>', desc = 'Toggle [Z]en [M]ode' },
 		{ '<leader>zm', '<cmd>NoNeckPain<cr>', desc = 'Toggle [Z]en [M]ode' },
 	},
 
-	---@type table
+	---@module 'no-neck-pain.config'
 	opts = {
 		width = 100,
 		autocmds = {
