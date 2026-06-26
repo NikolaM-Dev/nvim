@@ -526,9 +526,9 @@ map('n', ']T', '<cmd>tabnew<cr>', { desc = '  Create a new tab' })
 --          ╰─────────────────────────────────────────────────────────╯
 local esc_sequence = '<C-\\><C-n>'
 map('t', '<C-\\>', esc_sequence, { desc = '  Esc works as normal in terminal mode' })
-map('t', '<Esc>', esc_sequence, { desc = '  Esc works as normal in terminal mode' })
 map('t', '<C-u>', esc_sequence .. '<C-u>zz', { desc = '  Back to normal mode and scroll up' })
-map('t', '<C-d>', esc_sequence .. '<C-d>zz', { desc = '  Back to normal mode and scroll down' })
+-- map('t', '<Esc>', esc_sequence, { desc = '  Esc works as normal in terminal mode' })
+-- map('t', '<C-d>', esc_sequence .. '<C-d>zz', { desc = '  Back to normal mode and scroll down' })
 -- map({ 't' }, '<M-t>', '<C-\\><C-n><cmd>tabnext<cr>', { desc = 'Go to next tab' })
 -- map({ 'i', 'n' }, '<M-t>', '<esc><cmd>tabnext<cr>', { desc = 'Go to next tab' })
 -- map({ 'n', 't' }, '<tab>1', '<cmd>tabnext 1<cr>', { desc = 'Go to tab 1' })
