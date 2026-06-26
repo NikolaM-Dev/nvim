@@ -33,6 +33,7 @@ vim.o.linebreak = true -- Wrap long lines at characters, not in the middle of a 
 vim.o.list = true -- Useful to see the difference between tabs and spaces and for trailing blanks
 vim.o.number = true -- Show line numbers
 vim.o.relativenumber = true -- Show relative numbers
+vim.o.sessionoptions = 'buffers,curdir,folds,help,tabpages,winsize,resize,winpos,terminal,globals,localoptions'
 vim.o.showmode = false -- Removes the text indicating the mode
 vim.o.showtabline = 0 -- Remove tab page label
 vim.o.signcolumn = 'yes:2' -- Always show the sign column, otherwise it would shift the text each time
