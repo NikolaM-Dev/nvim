@@ -230,7 +230,7 @@ command('RoadmapCommit', function()
 	end
 
 	-- Commit
-	local msg = 'docs(roadmap): Change roadmap state'
+	local msg = 'docs(roadmap): change roadmap state'
 	local commit_res = vim.fn.system('git commit -m ' .. vim.fn.shellescape(msg))
 	if vim.v.shell_error ~= 0 then
 		logger:error('Git commit failed: ' .. commit_res)
