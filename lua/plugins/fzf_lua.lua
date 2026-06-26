@@ -12,6 +12,7 @@ return {
 
 			-- search
 			{ '<leader>sg', function() fzf.live_grep() end, desc = ' Search Grep' },
+			{ '<leader>sw', function() fzf.grep_cword() end, desc = ' Search Word' },
 
 			-- git
 			{ '<leader>gS', function() fzf.git_stash() end, desc = ' Git Stash' },

@@ -41,7 +41,6 @@ return {
 		-- grep
 		{ '<leader>sb', function() Snacks.picker.lines() end,        desc = '[S]earch [B]uffer Lines' },
 		{ '<leader>sB', function() Snacks.picker.grep_buffers() end, desc = 'Grep Open [B]uffers' },
-		{ '<leader>sw', function() Snacks.picker.grep_word() end,    desc = 'Visual selection or word',  mode = { 'n', 'x' } },
 
 		-- buffers
 		{ '<leader>bd', function() Snacks.bufdelete() end, desc = '[D]elete [B]uffer', },
