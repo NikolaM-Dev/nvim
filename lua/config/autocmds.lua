@@ -1,4 +1,4 @@
-local augroup = nkl.augroup
+local augroup = nkl.conf.augroup
 
 local autocmd = vim.api.nvim_create_autocmd
 
