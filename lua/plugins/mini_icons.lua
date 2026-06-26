@@ -20,6 +20,7 @@ return {
 			['test.ts'] = { glyph = '󰂓', hl = 'MiniIconsCyan' },
 			bak = { glyph = '󰁯', hl = 'MiniIconsGrey' },
 			c = { glyph = '' },
+			http = { glyph = '' },
 			db = { glyph = '', hl = 'MiniIconsBlue' },
 			drawio = { glyph = '󱁉', hl = 'MiniIconsOrange' },
 			h = { glyph = '' },
