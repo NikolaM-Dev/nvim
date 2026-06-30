@@ -39,6 +39,7 @@ return {
 			['bun.lock'] = { glyph = '', hl = 'MiniIconsGrey' },
 			['bun.lockdb'] = { glyph = '', hl = 'MiniIconsGrey' },
 			['lazy-lock.json'] = { glyph = '󰒲', hl = 'MiniIconsBlue' },
+			['netlify.toml'] = { glyph = '', hl = 'MiniIconsCyan' },
 			['package.json'] = { glyph = '', hl = 'MiniIconsGreen' },
 			['pnpm-lock.yaml'] = { glyph = '', hl = 'MiniIconsPurple' },
 			['pnpm-workspace.yaml'] = { glyph = '', hl = 'MiniIconsPurple' },
