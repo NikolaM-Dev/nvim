@@ -26,7 +26,7 @@ return {
 				-- javascript = "bun %",
 				dts = 'just build',
 				typescript = 'vp run typecheck',
-				typescriptreact = 'vp run build',
+				typescriptreact = 'nub run build',
 				-- c = "cc -o %:r % && ./%:r",
 				-- cpp = "cc -std=c++23 -o %:r % && ./%:r",
 				-- java = "javac % && java %:r",
