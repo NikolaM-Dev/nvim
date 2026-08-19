@@ -39,6 +39,11 @@ Instructions:
 - **Suggest headings:** Based on the polished file suggest possible a possible heading (max 3)
 ]],
 			},
+			tools = {
+				opencode = {
+					cmd = { 'opencode2' },
+				},
+			},
 			win = {
 				-- layout = 'float',
 				keys = {
