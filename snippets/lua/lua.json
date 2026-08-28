@@ -32,8 +32,9 @@
       "return {",
       "\t'$0',",
       "\tdesc = '',",
+      "\tenabled = true,",
       "",
-      "\tconfig = true",
+      "\tconfig = true,",
       "}"
     ]
   },
