@@ -6,5 +6,17 @@
   "main": {
     "body": ["function main() {", "\t$0", "}", "", "main"],
     "prefix": "main"
+  },
+  "n-log": {
+    "body": [
+      "source \"${XDG_DATA_HOME:-$HOME/.local/share}/bash/lib/n-log.bash\""
+    ],
+    "description": "Source n-log.bash logging library",
+    "prefix": "nlog"
+  },
+  "strict": {
+    "body": ["set -euo pipefail"],
+    "description": "Bash strict mode: exit on error, undefined var, pipe failure",
+    "prefix": "strict"
   }
 }
