@@ -10,7 +10,13 @@ return {
 	{
 		'neovim/nvim-lspconfig',
 		opts = function(_, opts)
-			opts.servers.tailwindcss = {}
+			opts.servers.tailwindcss = {
+				settings = {
+					tailwindCSS = {
+						classFunctions = { 'cva', 'cx' },
+					},
+				},
+			}
 		end,
 	},
 	{
