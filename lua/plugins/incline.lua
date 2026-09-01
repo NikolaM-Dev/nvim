@@ -6,6 +6,10 @@ return {
 	enabled = true,
 	event = 'VeryLazy',
 
+	keys = {
+		{ '<leader>I', '<cmd>lua require("incline").toggle()<cr>', desc = 'Toggle Incline' },
+	},
+
 	config = function()
 		require('incline').setup({
 			highlight = {
