@@ -17,7 +17,12 @@ return {
 		require('typescript-tools').setup({
 			settings = {
 				tsserver_file_preferences = {
-					-- TODO: Change to use relative in no NextJS projects
+					-- importModuleSpecifierPreference = vim.uv.fs_stat(vim.fn.getcwd() .. '/next.config.ts')
+					-- 		-- `non-relative`: Prefers a non-relative import based on the baseUrl (aliases) or paths configured in your jsconfig.json/tsconfig.json.
+					-- 		and 'non-relative'
+					-- 	-- `relative`: Prefers a relative path to the imported file location.
+					-- 	or 'relative',
+
 					importModuleSpecifierPreference = 'non-relative',
 				},
 			},
