@@ -50,6 +50,11 @@
     "description": "Creates a markdown link",
     "prefix": "ml"
   },
+  "Polished": {
+    "body": "**Polished:** $0",
+    "description": "Polished",
+    "prefix": "polished"
+  },
   "References": {
     "body": ["# 🧬 References", "", "- $0"],
     "prefix": "references"
@@ -93,7 +98,7 @@
     "prefix": "todos"
   },
   "Why": {
-    "body": "**Why?**",
+    "body": "**Why?:** $0",
     "description": "Answer to Why I Cancelled a Task",
     "prefix": "why"
   },
