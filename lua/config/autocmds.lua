@@ -50,25 +50,33 @@ autocmd('BufReadPost', {
 	desc = 'Enable NoNeckPain from start',
 	group = augroup('enable_noneckpain_from_start'),
 	once = true,
-	callback = function()
-		-- Skips snacks dashboard
-		if vim.bo.filetype ~= 'snacks_dashboard' then
-			vim.cmd('NoNeckPain')
-		end
-	end,
-})
-
-autocmd('TermOpen', {
-	desc = 'Dynamic terminal settings and options',
-	group = augroup('dynamic_terminal_settings_and_options'),
 	callback = function(args)
-		if vim.bo[args.buf].filetype == 'sidekick_terminal' then
+		-- Skips snacks dashboard
+		local is_skip_buffer = vim.tbl_contains({
+			'help',
+			'nofile',
+			'quickfix',
+			'terminal',
+		}, vim.bo[args.buf].buftype)
+		if is_skip_buffer then
 			return
 		end
 
-		-- vim.opt_local.number = true
-		-- vim.opt_local.relativenumber = true
-		nkl.key.bmap('t', '<esc>', '<C-\\><C-n>', { buffer = args.buf })
+		vim.defer_fn(function()
+			if not _G.is_nnp_enabled() then
+				vim.cmd('NoNeckPain')
+			end
+		end, nkl.g.updatetime * 2)
+	end,
+})
+
+autocmd({ 'VimResized' }, {
+	desc = 'Resize splits if window got resized',
+	group = augroup('resize_splits_if_window_got_resized'),
+	callback = function()
+		local current_tab = vim.fn.tabpagenr()
+		vim.cmd('tabdo wincmd =')
+		vim.cmd('tabnext ' .. current_tab)
 	end,
 })
 
