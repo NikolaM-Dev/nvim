@@ -63,53 +63,129 @@ return {
 		frontmatter = {
 			sort = { 'id', 'aliases', 'tags', 'createdAt', 'updatedAt' },
 			func = function(note)
-				-- Add the title of the note as an alias.
-				if note.title then
-					note:add_alias(note.title)
+				local logger = nkl.logger:new('Obsidian')
+
+				---Return the first `# Heading` in the buffer, or `nil`.
+				---@param bufnr integer|nil
+				---@return string|nil
+				local function get_title(bufnr)
+					if not bufnr or not vim.api.nvim_buf_is_valid(bufnr) then
+						return nil
+					end
+					-- Only scan the top of the file: title should be near the top,
+					-- and this avoids reading huge notes on every save.
+					local lines = vim.api.nvim_buf_get_lines(bufnr, 0, 100, false)
+					for _, line in ipairs(lines) do
+						-- Require a space after `#` so `#tag` is not treated as a heading.
+						local t = line:match('^#+%s+(.+)%s*$')
+						if t then
+							t = vim.trim(t)
+							if t ~= '' then
+								return t
+							end
+						end
+					end
+					return nil
 				end
+
+				local current_title = get_title(note.bufnr)
+				-- Add the title of the note as an alias.
+				-- NOTE: `note.title` was removed from obsidian.nvim, so we parse it from the buffer.
 
 				local updatedAt = os.date('%Y-%m-%d, %H:%M:%S')
 
-				---Verify and return a Denote-style ID (YYYYMMDDTHHmmss) for the current note.
+				---Check whether `id` is a Denote-style ID (YYYYMMDDTHHmmss).
 				---
 				---See: [Denote - The file-naming scheme](https://protesilaos.com/emacs/denote#h:4e9c7512-84dc-4dfb-9fa9-e15d51178e5d)
-				---@return string id Denote-style ID (e.g. "20251125T142530") or `''` on error.
-				local function get_id()
-					local year = os.date('%Y')
-					local has_denote_id_scheme = note.id:sub(1, 4) == year
-					if has_denote_id_scheme then
-						return note.id
+				---@param id any
+				---@return boolean
+				local function is_denote_id(id)
+					if type(id) ~= 'string' then
+						return false
+					end
+					return id:match('^%d%d%d%d%d%d%d%dT%d%d%d%d%d%d$') ~= nil
 					end
 
-					local buf = vim.api.nvim_buf_get_name(0)
+				---Fall back to the file birth time via `n-file-birth-time`.
+				---@param bufnr integer|nil
+				---@return string birth time in Denote format, or `''` on error.
+				local function get_birth_id(bufnr)
+					local buf = (bufnr and vim.api.nvim_buf_is_valid(bufnr)) and vim.api.nvim_buf_get_name(bufnr) or ''
 					if buf == '' then
-						nkl.logger:new('Obsidian'):error('No file in buffer')
+						logger:error('No file in buffer')
+						return ''
+					end
+
+					if vim.fn.executable('n-file-birth-time') == 0 then
+						logger:error('`n-file-birth-time` not found')
 						return ''
 					end
 
 					local file_full_path = vim.fn.fnamemodify(buf, ':p')
 					local birth_time = vim.fn.system({ 'n-file-birth-time', file_full_path })
+					if vim.v.shell_error ~= 0 then
+						logger:warn('Failed to get birth time for: ' .. file_full_path)
+						return ''
+					end
 
-					return vim.trim(birth_time)
+					local trimmed = vim.trim(birth_time)
+					if not is_denote_id(trimmed) then
+						logger:warn('Birth time does not match Denote format: ' .. trimmed)
+						return ''
+					end
+
+					return trimmed
 				end
+
+				local function get_id()
+					if is_denote_id(note.id) then
+						return note.id
+					end
+
+					return get_birth_id(note.bufnr)
+				end
+
+				-- Merge the buffer title into aliases without dropping existing ones.
+				---@param base string[]|nil
+				---@param title string|nil
+				---@return string[]
+				local function get_aliases(base, title)
+					local seen = {}
+					---@type string[]
+					local aliases = {}
+					for _, a in ipairs(base or {}) do
+						if a and a ~= '' and not seen[a] then
+							seen[a] = true
+							table.insert(aliases, a)
+						end
+					end
+					if title and title ~= '' and not seen[title] then
+						table.insert(aliases, 1, title)
+					end
+					return aliases
+				end
+
+				-- Preserve the original creation date instead of resetting it on every save.
+				local createdAt = note.metadata and note.metadata.createdAt
+					or string.format('[[%s]]', os.date('%Y-%m-%d'))
 
 				local frontMatter = {
 					id = get_id(),
-					aliases = note.aliases,
-					tags = note.tags,
-					createdAt = string.format('[[%s]]', os.date('%Y-%m-%d')),
+					aliases = get_aliases(note.aliases, current_title),
+					tags = note.tags or {},
+					createdAt = createdAt,
 					updatedAt = updatedAt,
 				}
 
 				-- `note.metadata` contains any manually added fields in the frontmatter.
-				-- So here we just make sure those fields are kept in the frontmatter.
+				-- So here we just make sure those fields are kept, without clobbering the computed core fields.
 				if note.metadata ~= nil and not vim.tbl_isempty(note.metadata) then
 					for k, v in pairs(note.metadata) do
-						frontMatter[k] = v
+						if frontMatter[k] == nil then
+							frontMatter[k] = v
+						end
 					end
 				end
-
-				frontMatter.updatedAt = updatedAt
 
 				return frontMatter
 			end,
@@ -165,5 +241,50 @@ return {
 	---@param opts obsidian.config
 	config = function(_, opts)
 		require('obsidian').setup(opts)
+		---@type obsidian.config.UIOpts
+		local ui_options = {
+			enable = true,
+			ignore_conceal_warn = false,
+			update_debounce = 200,
+			max_file_length = 5000,
+			checkboxes = {},
+			-- checkboxes = {
+			-- 	[' '] = { char = '󰄱', hl_group = 'obsidiantodo' },
+			-- 	['~'] = { char = '󰰱', hl_group = 'obsidiantilde' },
+			-- 	['!'] = { char = '', hl_group = 'obsidianimportant' },
+			-- 	['>'] = { char = '', hl_group = 'obsidianrightarrow' },
+			-- 	['x'] = { char = '', hl_group = 'obsidiandone' },
+			-- },
+			-- bullets = { char = '•', hl_group = 'ObsidianBullet' },
+			bullets = nil,
+			block_ids = nil,
+			external_link_icon = nil,
+			reference_text = nil,
+			highlight_text = nil,
+			-- external_link_icon = { char = '', hl_group = 'ObsidianExtLinkIcon' },
+			-- reference_text = { hl_group = 'ObsidianRefText' },
+			-- highlight_text = { hl_group = 'ObsidianHighlightText' },
+			tags = { hl_group = 'ObsidianTag' },
+			-- block_ids = { hl_group = 'ObsidianBlockID' },
+			hl_groups = {
+				-- ObsidianTodo = { bold = true, fg = '#f78c6c' },
+				-- ObsidianDone = { bold = true, fg = '#89ddff' },
+				-- ObsidianRightArrow = { bold = true, fg = '#f78c6c' },
+				-- ObsidianTilde = { bold = true, fg = '#ff5370' },
+				-- ObsidianImportant = { bold = true, fg = '#d73128' },
+				-- ObsidianBullet = { bold = true, fg = '#89ddff' },
+				-- ObsidianRefText = { underline = true, fg = '#c792ea' },
+				-- ObsidianExtLinkIcon = { fg = '#c792ea' },
+				ObsidianTag = {
+					-- fg = '#6196A0',
+					fg = '#76e3ea',
+					italic = true,
+				},
+				-- ObsidianBlockID = { italic = true, fg = '#89ddff' },
+				-- ObsidianHighlightText = { bg = '#75662e' },
+			},
+		}
+
+		nkl.markdown_tags.setup(ui_options)
 	end,
 }
