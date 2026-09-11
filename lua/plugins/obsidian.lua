@@ -116,7 +116,7 @@ return {
 		},
 
 		picker = {
-			name = 'snacks.pick',
+			name = 'fzf-lua',
 		},
 
 		-- Became the maintainer are going to deprecate this module
