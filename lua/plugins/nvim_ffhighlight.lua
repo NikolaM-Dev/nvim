@@ -25,6 +25,7 @@ return {
 			desc = ' Clever F',
 		},
 	},
+
 	config = function()
 		require('fFHighlight').setup({
 			disable_keymap = true,
