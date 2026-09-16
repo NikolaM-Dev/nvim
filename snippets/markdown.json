@@ -94,9 +94,69 @@
     "prefix": "done"
   },
   "Task Due Date": {
-    "body": ["<@$0>"],
-    "description": "Task Due Date",
+    "body": ["📅 ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"],
+    "description": "Tasks Due",
     "prefix": "due"
+  },
+  "Task Scheduled": {
+    "body": ["⏳ ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"],
+    "description": "Tasks Scheduled",
+    "prefix": "scheduled"
+  },
+  "Task Start": {
+    "body": ["🛫 ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"],
+    "description": "Tasks Start",
+    "prefix": "start"
+  },
+  "Task Priority": {
+    "body": ["${1|🔺,⏫,🔼,🔽,⏬|}"],
+    "description": "Tasks Priority (highest, high, medium, low, lowest)",
+    "prefix": "priority"
+  },
+  "Task Recurrence": {
+    "body": ["🔁 ${1|every day,every week,every 2 weeks,every month,every month when done,every weekday|}"],
+    "description": "Tasks Recurrence",
+    "prefix": "repeat"
+  },
+  "Task On Completion": {
+    "body": ["🏁 ${1|keep,delete|}"],
+    "description": "Tasks On completion",
+    "prefix": "complete"
+  },
+  "Task ID": {
+    "body": ["🆔 $0"],
+    "description": "Tasks ID for dependencies",
+    "prefix": "taskid"
+  },
+  "Task Depends": {
+    "body": ["⛔ $0"],
+    "description": "Tasks Depends on",
+    "prefix": "depends"
+  },
+  "Task": {
+    "body": ["- [ ] $0 #task ➕ ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"],
+    "description": "Tasks New task",
+    "prefix": "task"
+  },
+  "Task Recurring": {
+    "body": [
+      "- [ ] $0 #task ➕ ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} 🔁 ${1|every day,every week,every 2 weeks,every month,every month when done,every weekday|}"
+    ],
+    "description": "Tasks New recurring task",
+    "prefix": "rtask"
+  },
+  "Task In Progress": {
+    "body": ["- [/] $0"],
+    "description": "Tasks In progress line",
+    "prefix": "doing"
+  },
+  "Task Cancel With Reason": {
+    "body": [
+      "- [-] $1 ➕ ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ❌ ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      "  - [x] **Why?:** $0 ✅ ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"
+    ],
+    "description": "Tasks Cancel with Why reason",
+    "prefix": "cancel"
   },
   "Todos": {
     "body": ["# ✅ TODOs", "", "- [ ] $0"],
