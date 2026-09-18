@@ -20,9 +20,18 @@ return {
 		end,
 	},
 	{
-		'stevearc/conform.nvim',
-		opts = function(_, opts)
-			opts.formatters_by_ft.markdown = { 'prettier' }
+		'nvimdev/guard.nvim',
+		desc = 'Lightweight, fast and async formatting and linting plugin for Neovim',
+		lazy = false,
+
+		config = function()
+			local ft = require('guard.filetype')
+			ft('markdown'):fmt({
+				cmd = cmd,
+				args = { '--stdin-filepath' },
+				fname = true,
+				stdin = true,
+			})
 		end,
 	},
 }
