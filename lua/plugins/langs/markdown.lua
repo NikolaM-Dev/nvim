@@ -34,4 +34,28 @@ return {
 			})
 		end,
 	},
+	{
+		'Gelio/cmp-natdat',
+		desc = 'nvim-cmp source to autocomplete natural dates and turm them into ISO dates',
+		enabled = true,
+		config = true,
+	},
+
+	{
+		'saghen/blink.cmp',
+
+		---@module 'blink-cmp'
+		---@type blink.cmp.Config
+		opts = {
+			sources = {
+				per_filetype = {
+					markdown = { inherit_defaults = true, 'natdat' },
+					text = { inherit_defaults = true, 'natdat' },
+				},
+				providers = {
+					emmet = { name = 'natdat', module = 'blink.compat.source' },
+				},
+			},
+		},
+	},
 }
