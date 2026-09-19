@@ -13,7 +13,16 @@ return {
 		{ '<leader>at', function() require('sidekick.cli').send({ msg = '{this}' }) end, mode = { 'x', 'n' }, desc = 'Send This' },
 		{ '<leader>af', function() require('sidekick.cli').send({ msg = '{file}' }) end, desc = 'Send File' },
 		{ '<leader>av', function() require('sidekick.cli').send({ msg = '{selection}' }) end, mode = { 'x' }, desc = 'Send Visual Selection' },
-		{ '<leader>ap', function() require('sidekick.cli').prompt() end, mode = { 'n', 'x' }, desc = 'Sidekick Select Prompt' },
+		{ '<leader>ap', function()
+				vim.ui.input({ prompt = '  Prompt' }, function(input)
+					if input == nil or input == '' then
+						return
+					end
+
+					require('sidekick.cli').send({ msg = input, submit = true })
+				end)
+			end, mode = { 'n' }, desc = 'Sidekick Send Prompt' },
+		{ '<leader>aP', function() require('sidekick.cli').prompt() end, mode = { 'n', 'x' }, desc = 'Sidekick Select Prompt' },
 		-- stylua: ignore end
 	},
 
