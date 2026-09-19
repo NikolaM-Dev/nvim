@@ -45,12 +45,14 @@ Instructions:
 				},
 			},
 			win = {
-				-- layout = 'float',
 				keys = {
 					buffers = { '<M-n>', 'buffers', mode = 'nt', desc = 'open file picker' },
 					files = { '<M-N>', 'files', mode = 'nt', desc = 'open file picker' },
 					prompt = { '<M-p>', 'prompt', mode = 't', desc = 'insert prompt or context' },
 					-- buffers = nil,
+				},
+				split = {
+					width = 90,
 				},
 			},
 		},
