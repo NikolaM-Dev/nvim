@@ -33,7 +33,21 @@ return {
 	config = function(_, opts)
 		require('stay-centered').setup(opts)
 
-		---Enable stay-centered when inside the second brain, disable elsewhere.
+		---Filetypes considered reading material where centered cursor feels good.
+		local reading_filetypes = {
+			markdown = true,
+			text = true,
+			plaintext = true,
+			rst = true,
+			asciidoc = true,
+			org = true,
+			norg = true,
+			help = true,
+			man = true,
+		}
+
+		---Enable stay-centered inside the second brain or in any reading buffer,
+		---disable elsewhere.
 		---Checks both the cwd and the current buffer path so opening a note
 		---via absolute path from another cwd still counts as "in second brain".
 		local function sync_stay_centered()
@@ -42,23 +56,29 @@ return {
 				return
 			end
 
+			local bufnr = vim.api.nvim_get_current_buf()
+			local bufname = vim.api.nvim_buf_get_name(bufnr)
+
 			local sb_path = nkl.second_brain.get_second_brain_path()
-			if not sb_path then
+			local buf_in_sb = sb_path ~= nil
+				and bufname ~= ''
+				and vim.startswith(vim.fn.fnamemodify(bufname, ':p'), sb_path)
+
+			if nkl.second_brain.is_second_brain_path() or buf_in_sb then
+				stay_centered.enable()
 				return
 			end
 
-			local bufname = vim.api.nvim_buf_get_name(vim.api.nvim_get_current_buf())
-			local buf_in_sb = bufname ~= '' and vim.startswith(vim.fn.fnamemodify(bufname, ':p'), sb_path)
-
-			if nkl.second_brain.is_second_brain_path() or buf_in_sb then
+			local buftype = vim.bo[bufnr].buftype
+			if (buftype == '' or buftype == 'help') and reading_filetypes[vim.bo[bufnr].filetype] then
 				stay_centered.enable()
 			else
 				stay_centered.disable()
 			end
 		end
 
-		vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWinEnter', 'DirChanged', 'VimEnter' }, {
-			desc = 'Auto enable Stay Centered in second brain',
+		vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWinEnter', 'DirChanged', 'VimEnter', 'FileType' }, {
+			desc = 'Auto enable Stay Centered for second brain and reading material',
 			group = nkl.conf.augroup('stay_centered_in_second_brain'),
 			callback = sync_stay_centered,
 		})
