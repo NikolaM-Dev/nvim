@@ -25,13 +25,23 @@ return {
 		lazy = false,
 
 		config = function()
-			local ft = require('guard.filetype')
-			ft('markdown'):fmt({
-				cmd = cmd,
-				args = { '--stdin-filepath' },
-				fname = true,
-				stdin = true,
-			})
+			require('guard.filetype')('markdown'):fmt(function()
+				-- Always format markdown with prettier-sb:
+				-- prefer project-local `node_modules/.bin/prettier`
+				-- (in second-brain this *is* the prettier-sb fork),
+				-- fallback to the global `prettier-sb` binary.
+				local bufname = vim.api.nvim_buf_get_name(vim.api.nvim_get_current_buf())
+				local start_dir = bufname ~= '' and vim.fn.fnamemodify(bufname, ':h') or vim.fn.getcwd()
+				local local_prettier =
+					vim.fs.find('node_modules/.bin/prettier', { upward = true, path = start_dir })[1]
+
+				return {
+					cmd = local_prettier or 'prettier-sb',
+					args = { '--stdin-filepath' },
+					fname = true,
+					stdin = true,
+				}
+			end)
 		end,
 	},
 	{
