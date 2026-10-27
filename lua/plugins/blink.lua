@@ -94,7 +94,7 @@ return {
 		},
 
 		signature = {
-			enabled = true,
+			enabled = false,
 		},
 
 		sources = {
