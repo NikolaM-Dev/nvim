@@ -98,7 +98,26 @@ return {
 		},
 
 		sources = {
-			default = { 'snippets', 'lsp', 'path', 'buffer' },
+
+			default = { 'snippets', 'lsp', 'path', 'buffer', 'natdat' },
+
+			---@see https://cmp.saghen.dev/configuration/sources.html#providers
+			providers = {
+				natdat = {
+					name = 'natdat',
+					module = 'blink.compat.source',
+				},
+
+				path = {
+					opts = {
+						show_hidden_files_by_default = true,
+					},
+				},
+
+				snippets = {
+					score_offset = 4,
+				},
+			},
 		},
 	},
 
