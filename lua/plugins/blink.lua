@@ -60,14 +60,37 @@ return {
 			prebuilt_binaries = { ignore_version_mismatch = true },
 		},
 
+		---@see https://cmp.saghen.dev/configuration/keymap.html
 		keymap = {
 			preset = 'enter',
+			[';'] = { 'select_and_accept', 'fallback' },
+			['<C-n>'] = { 'select_next', 'snippet_forward', 'fallback' },
+			['<C-p>'] = { 'select_prev', 'snippet_backward', 'fallback' },
+			['<C-l>'] = { 'snippet_forward', 'fallback' },
+			['<C-h>'] = { 'snippet_backward', 'fallback' },
+			['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
+			['<C-e>'] = {
+				function()
+					local cmp = require('blink.cmp')
+					if cmp.is_active() then
+						return false -- Keep running the next commands
+					end
 
-			['<C-d>'] = { 'scroll_documentation_down', 'fallback' },
-			['<C-j>'] = { 'select_next', 'fallback_to_mappings' },
-			['<C-k>'] = { 'select_prev', 'fallback_to_mappings' },
-			['<C-u>'] = { 'scroll_documentation_up', 'fallback' },
-			['<S-CR>'] = { 'fallback' },
+					vim.snippet.stop()
+				end,
+				'hide',
+				'fallback',
+			},
+			['<CR>'] = {
+				function(cmp)
+					if vim.bo.filetype == 'markdown' then
+						return cmp.accept()
+					end
+
+					return cmp.select_and_accept()
+				end,
+				'fallback',
+			},
 		},
 
 		signature = {
