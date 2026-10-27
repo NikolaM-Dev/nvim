@@ -30,8 +30,7 @@ return {
 			keymap = {
 				preset = 'cmdline',
 
-				['<C-j>'] = { 'select_next' },
-				['<C-k>'] = { 'select_prev' },
+				[';'] = { 'select_accept_and_enter', 'fallback' },
 				['<CR>'] = { 'accept_and_enter', 'fallback' },
 				['<S-CR>'] = { 'select_accept_and_enter', 'fallback' },
 			},
