@@ -38,11 +38,21 @@ return {
 		},
 
 		completion = {
-			documentation = {
-				auto_show = true,
+			accept = {
+				auto_brackets = {
+					blocked_filetypes = { 'typescriptreact' },
+				},
 			},
-			ghost_text = {
-				enabled = true,
+			documentation = { auto_show = true },
+			ghost_text = { enabled = true },
+			list = { selection = { preselect = false } },
+			trigger = {
+				show_on_insert_on_trigger_character = false,
+			},
+			menu = {
+				draw = {
+					columns = { { 'kind_icon' }, { 'label', 'label_description', 'source_name', gap = 1 } },
+				},
 			},
 		},
 
