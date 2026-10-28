@@ -33,7 +33,7 @@ end
 ---@param mode string
 ---@param lhs string
 ---@param rhs string
----@param desc string
+---@param desc? string
 function M.ab(mode, lhs, rhs, desc)
 	M.map(mode, lhs, rhs, { desc = string.format('󰞘 %s Abbreviation', desc) })
 end
