@@ -20,5 +20,13 @@ return {
 		{ mode = { 'n', 'v' }, '<Leader>ct', '<Cmd>CBllline<CR>' },
 	},
 
-	config = true,
+	opts = {
+		lines = {
+			line = '-',
+			line_start = '-',
+			line_end = '-',
+			title_left = '-',
+			title_right = '-',
+		},
+	},
 }
