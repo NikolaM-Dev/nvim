@@ -18,6 +18,20 @@ return {
 				-- Plugins
 				hl['fFHintChar'] = { link = 'Type' }
 				hl['fFHintNumber'] = { link = 'EyelinerSecondary' }
+
+				-- compile-mode.nvim (see :h compile-mode-highlights)
+				hl['CompileModeError'] = { fg = c.error }
+				hl['CompileModeWarning'] = { fg = c.warn }
+				hl['CompileModeInfo'] = { fg = c.info }
+				hl['CompileModeMessage'] = { underline = true }
+				hl['CompileModeMessageRow'] = { fg = c.potassium }
+				hl['CompileModeMessageCol'] = { fg = c.frost }
+				hl['CompileModeCommandOutput'] = { fg = c.info }
+				hl['CompileModeDirectoryMessage'] = { fg = c.info }
+				hl['CompileModeOutputFile'] = { fg = c.potassium }
+				hl['CompileModeCheckTarget'] = { fg = c.ember }
+				hl['CompileModeCheckResult'] = { fg = c.ember, bold = true }
+				hl['CompileModeErrorLocus'] = { link = 'Visual' }
 			end,
 		})
 
