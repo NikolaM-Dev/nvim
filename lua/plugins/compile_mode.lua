@@ -37,6 +37,7 @@ return {
 			-- to make `:Compile` replace special characters (e.g. `%`) in
 			-- the command (and behave more like `:!`), add:
 			bang_expansion = true,
+			focus_compilation_buffer = true,
 
 			directory_change_matchers = {
 				{ regex = [[^> @\?[^@]\+@\S\+ \S\+ \zs\(\S\+\)\ze$]], filename = 1 },
