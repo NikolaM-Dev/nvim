@@ -75,6 +75,14 @@ return {
 					row = 2,
 					col = 3,
 				},
+				astro = {
+					regex = [[^\(.\+\)\:\([1-9][0-9]*\)\:\([1-9][0-9]*\)\s\+-\s\+\(warnin\(g\)\|\(hint\)\|error\)\s\+ts([1-9][0-9]*):]],
+					filename = 1,
+					row = 2,
+					col = 3,
+					type = { 5, 6 },
+					priority = 2,
+				},
 			},
 		}
 	end,
