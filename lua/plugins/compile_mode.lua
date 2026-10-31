@@ -27,6 +27,7 @@ return {
 				dts = 'just build',
 				typescript = 'vp run typecheck',
 				typescriptreact = 'nub run build',
+				rust = 'cargo check',
 				-- c = "cc -o %:r % && ./%:r",
 				-- cpp = "cc -std=c++23 -o %:r % && ./%:r",
 				-- java = "javac % && java %:r",
