@@ -69,6 +69,12 @@ return {
 					row = 2,
 					col = 3,
 				},
+				rustc = {
+					regex = [[^\s*-->\s*\([^:]\+\):\(\d\+\):\(\d\+\)]],
+					filename = 1,
+					row = 2,
+					col = 3,
+				},
 			},
 		}
 	end,
