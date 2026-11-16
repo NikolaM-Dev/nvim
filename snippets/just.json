@@ -1,6 +1,6 @@
 {
   "default": {
-    "body": ["# List avalible recipes", "default:", "\tjust --list"],
+    "body": ["# List available recipes", "default:", "\tjust --list"],
     "prefix": "default"
   },
   "shebang": {
