@@ -61,6 +61,8 @@ return {
 				email = ' ',
 				hyperlink = ' ',
 				image = '󰈟 ',
+				wiki = { icon = ' ' },
+				footnote = { icon = ' ', superscript = true },
 				custom = {
 					discord = { icon = ' ', pattern = 'discord%.com' },
 					drive = { icon = ' ', pattern = 'drive.google%.com' },
