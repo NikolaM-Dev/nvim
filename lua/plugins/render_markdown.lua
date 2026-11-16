@@ -76,7 +76,7 @@ return {
 					stackoverflow = { icon = '󰓌 ', pattern = 'stackoverflow%.com' },
 					udemy = { icon = ' ', pattern = 'udemy%.com' },
 					web = { icon = ' ', pattern = '^http' },
-					wikipedia = { pattern = 'wikipedia%.org', icon = ' ' },
+					wikipedia = { pattern = 'wikipedia%.org', icon = '  ' },
 					youtube = { icon = ' ', pattern = 'youtube%.com' },
 				},
 			},
