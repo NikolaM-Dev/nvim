@@ -114,7 +114,9 @@
     "prefix": "priority"
   },
   "Task Recurrence": {
-    "body": ["🔁 ${1|every day,every week,every 2 weeks,every month,every month when done,every weekday|}"],
+    "body": [
+      "🔁 ${1|every day,every week,every 2 weeks,every month,every month when done,every weekday|}"
+    ],
     "description": "Tasks Recurrence",
     "prefix": "repeat"
   },
@@ -134,7 +136,9 @@
     "prefix": "depends"
   },
   "Task": {
-    "body": ["- [ ] $0 #task ➕ ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"],
+    "body": [
+      "- [ ] $0 #task ➕ ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"
+    ],
     "description": "Tasks New task",
     "prefix": "task"
   },
