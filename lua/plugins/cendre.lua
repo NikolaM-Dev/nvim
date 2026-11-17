@@ -13,6 +13,7 @@ return {
 			on_highlights = function(hl, c)
 				-- Markdown
 				hl['@markup.italic'] = { fg = c.info, italic = true }
+				hl['@markup.quote.markdown'] = { fg = '#A09384', italic = true }
 				hl['@markup.strong'] = { fg = c.warn, bold = true }
 
 				-- Plugins
