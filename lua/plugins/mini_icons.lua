@@ -11,7 +11,7 @@ return {
 	opts = {
 		filetype = {
 			env = { glyph = '', hl = 'MiniIconsGrey' },
-			markdown = { glyph = '󱗖', hl = 'MiniIconsPurple' },
+			markdown = { glyph = '', hlr = 'MiniIconsGreen' },
 		},
 
 		extension = {
@@ -35,6 +35,7 @@ return {
 			['.prettierignore'] = { glyph = '', hl = 'MiniIconsPurple' },
 			['.prettierrc'] = { glyph = '', hl = 'MiniIconsPurple' },
 			['.python-version'] = { glyph = '', hl = 'MiniIconsGrey' },
+			['CHANGELOG.md'] = { glyph = '', hl = 'MiniIconsGreen' },
 			['LICENSE'] = { glyph = '󰿃', hl = 'MiniIconsOrange' },
 			['bun.lock'] = { glyph = '', hl = 'MiniIconsGrey' },
 			['bun.lockdb'] = { glyph = '', hl = 'MiniIconsGrey' },
